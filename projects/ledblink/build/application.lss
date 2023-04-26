@@ -1,0 +1,5 @@
+
+AVRASM ver. 2.1.57  main.asm Mon Apr 03 11:09:29 2023
+
+main.asm(14): Including file 'include/m328Pdef.inc'
+main.asm(19): error: syntax error, unexpected ',', expecting '='
