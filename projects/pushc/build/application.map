@@ -202,7 +202,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000       0xd0
+.text           0x00000000       0xd2
  *(.vectors)
  .vectors       0x00000000       0x68 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -283,13 +283,13 @@ END GROUP
                 0x0000007c                __vector_20
                 0x00000080                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x00000080       0x4c build/main.o
+ .text.main     0x00000080       0x4e build/main.o
                 0x00000080                main
-                0x000000cc                . = ALIGN (0x2)
+                0x000000ce                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000000cc        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
-                0x000000cc                _exit
-                0x000000cc                exit
+ .fini9         0x000000ce        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x000000ce                _exit
+                0x000000ce                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -308,17 +308,17 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000000cc        0x4 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000000ce        0x4 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x000000d0                . = ALIGN (0x2)
+                0x000000d2                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
-                0x000000d0                _etext = .
+                0x000000d2                _etext = .
 
-.data           0x00800100        0x0 load address 0x000000d0
+.data           0x00800100        0x0 load address 0x000000d2
                 [!provide]                PROVIDE (__data_start = .)
  *(.data)
  *(.data*)
@@ -336,8 +336,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end = .)
-                0x000000d0                __data_load_start = LOADADDR (.data)
-                0x000000d0                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000000d2                __data_load_start = LOADADDR (.data)
+                0x000000d2                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800100        0x0
                 [!provide]                PROVIDE (__noinit_start = .)
@@ -427,11 +427,11 @@ END GROUP
  .debug_abbrev  0x000005a2      0x171 build/main.o
  .debug_abbrev  0x00000713       0x14 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
 
-.debug_line     0x00000000      0x25e
+.debug_line     0x00000000      0x266
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1d d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_line    0x0000001d      0x1f0 build/main.o
- .debug_line    0x0000020d       0x51 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x0000001d      0x1f8 build/main.o
+ .debug_line    0x00000215       0x51 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
 
 .debug_frame    0x00000000       0x44
  *(.debug_frame)

@@ -50,12 +50,14 @@ int main()
             // PORTD = pusher | pushed;
             // _delay_ms(500);
         }
-        if(pushed == pusher) {
-            pushed = pushed << 1;
-            pusher = 0b1;
-
-        } else {
-            pusher = pusher << 1;
+        else{
+            if(pushed == pusher) {
+                pushed = pushed << 1;
+                pusher = 0b1;
+            }
+            else {
+                pusher = pusher << 1;
+            }
         }
 
     }

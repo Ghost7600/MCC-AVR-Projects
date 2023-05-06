@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 1
 
 
    1               		.file	"main.cpp"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
   39:funsape/globalDefines.hpp **** #if !defined(__FUNSAPE_AVR8_LIB_PINOUT_HPP)
   40:funsape/globalDefines.hpp **** #    error "Header file (funsapeAvrPinout.hpp) is corrupted!"
   41:funsape/globalDefines.hpp **** #elif __FUNSAPE_AVR8_LIB_PINOUT_HPP != __FUNSAPE_AVR8_LIB_GLOBAL_DEFINES_HPP
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 2
 
 
   42:funsape/globalDefines.hpp **** #    error "Version mismatch between header file and library dependency (funsapeAvrSevenSegments.hp
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
   96:funsape/globalDefines.hpp **** typedef cuint16_t                       cuint_t;        // 16-bit (AVR)
   97:funsape/globalDefines.hpp **** typedef vint16_t                        vint_t;         // 16-bit (AVR)
   98:funsape/globalDefines.hpp **** typedef vuint16_t                       vuint_t;        // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 3
 
 
   99:funsape/globalDefines.hpp **** typedef uint8_t                         ioPinIndex_t;   // 8-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  153:funsape/globalDefines.hpp ****     Y                                   = (0 << 2) | (1 << 1) | (0 << 0),
  154:funsape/globalDefines.hpp ****     XY                                  = (0 << 2) | (1 << 1) | (1 << 0),
  155:funsape/globalDefines.hpp ****     Z                                   = (1 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 4
 
 
  156:funsape/globalDefines.hpp ****     XZ                                  = (1 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  210:funsape/globalDefines.hpp **** };
  211:funsape/globalDefines.hpp **** 
  212:funsape/globalDefines.hpp **** enum class Error : cuint16_t {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 5
 
 
  213:funsape/globalDefines.hpp ****     // General error codes
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  267:funsape/globalDefines.hpp ****     // Clock configuration related error codes
  268:funsape/globalDefines.hpp ****     // CLOCK_PRESCALER_CHANGE_FAILED                       = 0x0030,   // Clock prescaler change fa
  269:funsape/globalDefines.hpp ****     // CLOCK_PRESCALER_NOT_SUPPORTED                       = 0x0031,   // Clock prescaler configura
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 6
 
 
  270:funsape/globalDefines.hpp ****     // CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  324:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_3                             = 0x0063,   // Generic error (use only o
  325:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_4                             = 0x0064,   // Generic error (use only o
  326:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_5                             = 0x0065,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 7
 
 
  327:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  381:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_5                                 = 0x0095,   // Generic error (use only o
  382:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_6                                 = 0x0096,   // Generic error (use only o
  383:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_7                                 = 0x0097,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 8
 
 
  384:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  438:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_8                                 = 0x00C8,   // Generic error (use only o
  439:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_9                                 = 0x00C9,   // Generic error (use only o
  440:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_10                                = 0x00CA,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 9
 
 
  441:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  495:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_11                             = 0x00FB,   // Generic error (use only o
  496:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_12                             = 0x00FC,   // Generic error (use only o
  497:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_13                             = 0x00FD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 10
 
 
  498:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  552:funsape/globalDefines.hpp ****         (IS_GPIO_ALL_INSTANCE(gpioPort))        \
  553:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
  554:funsape/globalDefines.hpp ****         : (bool_t)false)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 11
 
 
  555:funsape/globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)         (  \
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  609:funsape/globalDefines.hpp **** #endif
  610:funsape/globalDefines.hpp **** #ifndef clrMaskOffset
  611:funsape/globalDefines.hpp **** #   define clrMaskOffset(reg, mask, offset)     ((reg) &= ~((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 12
 
 
  612:funsape/globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  666:funsape/globalDefines.hpp ****         (dwordGetHword2(dataDword) << 16) | \
  667:funsape/globalDefines.hpp ****         (dwordGetHword3(dataDword)))
  668:funsape/globalDefines.hpp **** #define dwordGetWord1(dataDword)         (((dataDword) >> 32) & 0x00000000FFFFFFFF)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 13
 
 
  669:funsape/globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  723:funsape/globalDefines.hpp **** inlined void doNothing(void);
  724:funsape/globalDefines.hpp **** inlined void systemHalt(void (*function_p)(void) = nullptr);
  725:funsape/globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 14
 
 
  726:funsape/globalDefines.hpp **** // =============================================================================
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  780:funsape/globalDefines.hpp **** }
  781:funsape/globalDefines.hpp **** 
  782:funsape/globalDefines.hpp **** inlined void doNop(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 15
 
 
  783:funsape/globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  821:funsape/globalDefines.hpp **** weakened uint32_t getTick(void)
  822:funsape/globalDefines.hpp **** {
   36               		.loc 1 822 1 is_stmt 1 view -0
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 16
 
 
   37               		.cfi_startproc
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
   27:main.cpp      **** 
   28:main.cpp      **** 
   29:main.cpp      ****     //setup
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 17
 
 
   30:main.cpp      ****     UCSR0B = 0;     //USART Control Status register, probably for recording
@@ -1018,45 +1018,50 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
   96               		.loc 2 49 20 view .LVU21
   97 0020 92E0      		ldi r25,lo8(2)
   98               	.LVL3:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 18
 
 
   48:main.cpp      ****             pusher = 0b1;      //starting position
   99               		.loc 2 48 20 view .LVU22
  100 0022 81E0      		ldi r24,lo8(1)
  101               	.LVL4:
- 102               	.L6:
+  48:main.cpp      ****             pusher = 0b1;      //starting position
+ 102               		.loc 2 48 20 view .LVU23
+ 103 0024 00C0      		rjmp .L4
+ 104               	.LVL5:
+ 105               	.L7:
   50:main.cpp      ****             // PORTD = pusher | pushed;
   51:main.cpp      ****             // _delay_ms(500);
   52:main.cpp      ****         }
-  53:main.cpp      ****         if(pushed == pusher) {
-  54:main.cpp      ****             pushed = pushed << 1;
-  55:main.cpp      ****             pusher = 0b1;
-  56:main.cpp      **** 
-  57:main.cpp      ****         } else {
-  58:main.cpp      ****             pusher = pusher << 1;
- 103               		.loc 2 58 13 is_stmt 1 view .LVU23
- 104               		.loc 2 58 20 is_stmt 0 view .LVU24
- 105 0024 880F      		lsl r24
- 106               	.LVL5:
- 107               	.L4:
+  53:main.cpp      ****         else{
+  54:main.cpp      ****             if(pushed == pusher) {
+  55:main.cpp      ****                 pushed = pushed << 1;
+  56:main.cpp      ****                 pusher = 0b1;
+  57:main.cpp      ****             }
+  58:main.cpp      ****             else {
+  59:main.cpp      ****                 pusher = pusher << 1;
+ 106               		.loc 2 59 17 is_stmt 1 view .LVU24
+ 107               		.loc 2 59 24 is_stmt 0 view .LVU25
+ 108 0026 880F      		lsl r24
+ 109               	.LVL6:
+ 110               	.L4:
   40:main.cpp      **** 
- 108               		.loc 2 40 5 is_stmt 1 view .LVU25
+ 111               		.loc 2 40 5 is_stmt 1 view .LVU26
   43:main.cpp      ****         _delay_ms(500);
- 109               		.loc 2 43 9 view .LVU26
+ 112               		.loc 2 43 9 view .LVU27
   43:main.cpp      ****         _delay_ms(500);
- 110               		.loc 2 43 24 is_stmt 0 view .LVU27
- 111 0026 282F      		mov r18,r24
- 112 0028 292B      		or r18,r25
+ 113               		.loc 2 43 24 is_stmt 0 view .LVU28
+ 114 0028 282F      		mov r18,r24
+ 115 002a 292B      		or r18,r25
   43:main.cpp      ****         _delay_ms(500);
- 113               		.loc 2 43 15 view .LVU28
- 114 002a 2BB9      		out 0xb,r18
+ 116               		.loc 2 43 15 view .LVU29
+ 117 002c 2BB9      		out 0xb,r18
   44:main.cpp      **** 
- 115               		.loc 2 44 9 is_stmt 1 view .LVU29
- 116               	.LVL6:
- 117               	.LBB4:
- 118               	.LBI4:
- 119               		.file 3 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\util\\delay.h"
+ 118               		.loc 2 44 9 is_stmt 1 view .LVU30
+ 119               	.LVL7:
+ 120               	.LBB4:
+ 121               	.LBI4:
+ 122               		.file 3 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\util\\delay.h"
    1:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
    2:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
    3:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
@@ -1073,14 +1078,14 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
   14:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      the documentation and/or other materials provided with the
   15:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      distribution.
   16:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 19
+
+
   17:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    * Neither the name of the copyright holders nor the names of
   18:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      contributors may be used to endorse or promote products derived
   19:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      from this software without specific prior written permission.
   20:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
   21:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 19
-
-
   22:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
   23:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
   24:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
@@ -1133,14 +1138,14 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
   71:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     optimizations <em>must</em> be enabled, and the delay time
   72:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     <em>must</em> be an expression that is a known constant at
   73:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     compile-time.  If these requirements are not met, the resulting
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 20
+
+
   74:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     delay will be much longer (and basically unpredictable), and
   75:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     applications that otherwise do not use floating-point calculations
   76:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     will experience severe code bloat by the floating-point library
   77:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     routines linked into the application.
   78:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 20
-
-
   79:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     The functions available allow the specification of microsecond, and
   80:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     millisecond delays directly, using the application-supplied macro
   81:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
@@ -1193,14 +1198,14 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  128:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
  129:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
  130:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 21
+
+
  131:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    When the user request delay which exceed the maximum possible one,
  132:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
  133:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
  134:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
  135:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    user will not be informed about decreased resolution.
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 21
-
-
  136:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
  137:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles()
  138:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
@@ -1232,20 +1237,20 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  164:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****  */
  165:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** void
  166:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** _delay_ms(double __ms)
- 120               		.loc 3 166 1 view .LVU30
- 121               	.LBB5:
+ 123               		.loc 3 166 1 view .LVU31
+ 124               	.LBB5:
  167:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** {
  168:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	double __tmp ;
- 122               		.loc 3 168 2 view .LVU31
+ 125               		.loc 3 168 2 view .LVU32
  169:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
  170:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
  171:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   __STDC_HOSTED__
  172:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	uint32_t __ticks_dc;
- 123               		.loc 3 172 2 view .LVU32
+ 126               		.loc 3 172 2 view .LVU33
  173:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
- 124               		.loc 3 173 2 view .LVU33
+ 127               		.loc 3 173 2 view .LVU34
  174:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
- 125               		.loc 3 174 2 view .LVU34
+ 128               		.loc 3 174 2 view .LVU35
  175:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
  176:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
  177:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
@@ -1253,160 +1258,161 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 1
  179:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
  180:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
  181:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 22
+
+
  182:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#else
  183:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 		//round up by default
  184:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
- 126               		.loc 3 184 3 view .LVU35
+ 129               		.loc 3 184 3 view .LVU36
  185:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#endif
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 22
-
-
  186:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
  187:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
- 127               		.loc 3 187 2 view .LVU36
- 128               		.loc 3 187 28 is_stmt 0 view .LVU37
- 129 002c 2FEF      		ldi r18,lo8(1599999)
- 130 002e 39E6      		ldi r19,hi8(1599999)
- 131 0030 48E1      		ldi r20,hlo8(1599999)
- 132 0032 2150      	1:	subi r18,1
- 133 0034 3040      		sbci r19,0
- 134 0036 4040      		sbci r20,0
- 135 0038 01F4      		brne 1b
- 136 003a 00C0      		rjmp .
- 137 003c 0000      		nop
- 138               	.LVL7:
- 139               		.loc 3 187 28 view .LVU38
- 140               	.LBE5:
- 141               	.LBE4:
+ 130               		.loc 3 187 2 view .LVU37
+ 131               		.loc 3 187 28 is_stmt 0 view .LVU38
+ 132 002e 2FEF      		ldi r18,lo8(1599999)
+ 133 0030 39E6      		ldi r19,hi8(1599999)
+ 134 0032 48E1      		ldi r20,hlo8(1599999)
+ 135 0034 2150      	1:	subi r18,1
+ 136 0036 3040      		sbci r19,0
+ 137 0038 4040      		sbci r20,0
+ 138 003a 01F4      		brne 1b
+ 139 003c 00C0      		rjmp .
+ 140 003e 0000      		nop
+ 141               	.LVL8:
+ 142               		.loc 3 187 28 view .LVU39
+ 143               	.LBE5:
+ 144               	.LBE4:
   47:main.cpp      ****             pusher = 0b1;      //starting position
- 142               		.loc 2 47 9 is_stmt 1 view .LVU39
- 143 003e 8917      		cp r24,r25
- 144 0040 01F0      		breq .L9
- 145               	.L5:
-  53:main.cpp      ****             pushed = pushed << 1;
- 146               		.loc 2 53 9 view .LVU40
- 147 0042 8913      		cpse r24,r25
- 148 0044 00C0      		rjmp .L6
-  54:main.cpp      ****             pusher = 0b1;
+ 145               		.loc 2 47 9 is_stmt 1 view .LVU40
+ 146 0040 8917      		cp r24,r25
+ 147 0042 01F0      		breq .L9
+ 148               	.L5:
+  54:main.cpp      ****                 pushed = pushed << 1;
  149               		.loc 2 54 13 view .LVU41
-  54:main.cpp      ****             pusher = 0b1;
- 150               		.loc 2 54 20 is_stmt 0 view .LVU42
- 151 0046 990F      		lsl r25
- 152               	.LVL8:
-  55:main.cpp      **** 
- 153               		.loc 2 55 13 is_stmt 1 view .LVU43
-  55:main.cpp      **** 
- 154               		.loc 2 55 20 is_stmt 0 view .LVU44
- 155 0048 81E0      		ldi r24,lo8(1)
- 156 004a 00C0      		rjmp .L4
- 157               		.cfi_endproc
- 158               	.LFE25:
- 160               		.text
- 161               	.Letext0:
- 162               		.file 4 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
- 163               		.file 5 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\avr\\builtins.h"
- 164               		.file 6 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\math.h"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 23
+ 150 0044 8913      		cpse r24,r25
+ 151 0046 00C0      		rjmp .L7
+  55:main.cpp      ****                 pusher = 0b1;
+ 152               		.loc 2 55 17 view .LVU42
+  55:main.cpp      ****                 pusher = 0b1;
+ 153               		.loc 2 55 24 is_stmt 0 view .LVU43
+ 154 0048 990F      		lsl r25
+ 155               	.LVL9:
+  56:main.cpp      ****             }
+ 156               		.loc 2 56 17 is_stmt 1 view .LVU44
+  56:main.cpp      ****             }
+ 157               		.loc 2 56 24 is_stmt 0 view .LVU45
+ 158 004a 81E0      		ldi r24,lo8(1)
+ 159 004c 00C0      		rjmp .L4
+ 160               		.cfi_endproc
+ 161               	.LFE25:
+ 163               		.text
+ 164               	.Letext0:
+ 165               		.file 4 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
+ 166               		.file 5 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\avr\\builtins.h"
+ 167               		.file 6 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\math.h"
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.cpp
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:2      *ABS*:0000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:3      *ABS*:0000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:4      *ABS*:0000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:5      *ABS*:00000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:6      *ABS*:00000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:14     .text._Z12assertFailedPcm:00000000 _Z12assertFailedPcm
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:18     .text._Z12assertFailedPcm:00000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:19     .text._Z12assertFailedPcm:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:24     .text._Z12assertFailedPcm:00000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:26     .text._Z12assertFailedPcm:00000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:28     .text._Z12assertFailedPcm:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:34     .text._Z7getTickv:00000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:36     .text._Z7getTickv:00000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:37     .text._Z7getTickv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:42     .text._Z7getTickv:00000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:43     .text._Z7getTickv:00000000 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:49     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:55     .text.main:00000000 main
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:58     .text.main:00000000 .Loc.6
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:59     .text.main:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:64     .text.main:00000000 .Loc.7
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:65     .text.main:00000000 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:67     .text.main:00000004 .Loc.9
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:68     .text.main:00000004 .Loc.10
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:71     .text.main:00000008 .Loc.11
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:72     .text.main:00000008 .Loc.12
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:74     .text.main:0000000a .Loc.13
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:78     .text.main:00000010 .Loc.14
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:82     .text.main:00000016 .Loc.15
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:84     .text.main:00000016 .Loc.16
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:85     .text.main:00000016 .Loc.17
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:86     .text.main:00000016 .Loc.18
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:88     .text.main:00000018 .Loc.19
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:93     .text.main:0000001c .Loc.20
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:96     .text.main:00000020 .Loc.21
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:99     .text.main:00000022 .Loc.22
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:103    .text.main:00000024 .Loc.23
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:104    .text.main:00000024 .Loc.24
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:108    .text.main:00000026 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:109    .text.main:00000026 .Loc.26
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:110    .text.main:00000026 .Loc.27
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:113    .text.main:0000002a .Loc.28
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:115    .text.main:0000002c .Loc.29
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:120    .text.main:0000002c .Loc.30
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:122    .text.main:0000002c .Loc.31
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:123    .text.main:0000002c .Loc.32
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:124    .text.main:0000002c .Loc.33
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:125    .text.main:0000002c .Loc.34
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:126    .text.main:0000002c .Loc.35
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:127    .text.main:0000002c .Loc.36
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:128    .text.main:0000002c .Loc.37
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:136    .text.main:0000003c L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:139    .text.main:0000003e .Loc.38
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:142    .text.main:0000003e .Loc.39
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:146    .text.main:00000042 .Loc.40
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s 			page 24
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:2      *ABS*:0000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:3      *ABS*:0000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:4      *ABS*:0000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:14     .text._Z12assertFailedPcm:00000000 _Z12assertFailedPcm
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:18     .text._Z12assertFailedPcm:00000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:19     .text._Z12assertFailedPcm:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:24     .text._Z12assertFailedPcm:00000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:26     .text._Z12assertFailedPcm:00000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:28     .text._Z12assertFailedPcm:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:34     .text._Z7getTickv:00000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:36     .text._Z7getTickv:00000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:37     .text._Z7getTickv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:42     .text._Z7getTickv:00000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:43     .text._Z7getTickv:00000000 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:49     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:55     .text.main:00000000 main
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:58     .text.main:00000000 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:59     .text.main:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:64     .text.main:00000000 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:65     .text.main:00000000 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:67     .text.main:00000004 .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:68     .text.main:00000004 .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:71     .text.main:00000008 .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:72     .text.main:00000008 .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:74     .text.main:0000000a .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:78     .text.main:00000010 .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:82     .text.main:00000016 .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:84     .text.main:00000016 .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:85     .text.main:00000016 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:86     .text.main:00000016 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:88     .text.main:00000018 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:93     .text.main:0000001c .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:96     .text.main:00000020 .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:99     .text.main:00000022 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:102    .text.main:00000024 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:106    .text.main:00000026 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:107    .text.main:00000026 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:111    .text.main:00000028 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:112    .text.main:00000028 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:113    .text.main:00000028 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:116    .text.main:0000002c .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:118    .text.main:0000002e .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:123    .text.main:0000002e .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:125    .text.main:0000002e .Loc.32
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:126    .text.main:0000002e .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:127    .text.main:0000002e .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:128    .text.main:0000002e .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:129    .text.main:0000002e .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:130    .text.main:0000002e .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:131    .text.main:0000002e .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:139    .text.main:0000003e L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:142    .text.main:00000040 .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:145    .text.main:00000040 .Loc.40
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s 			page 24
 
 
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:149    .text.main:00000046 .Loc.41
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:150    .text.main:00000046 .Loc.42
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:153    .text.main:00000048 .Loc.43
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:154    .text.main:00000048 .Loc.44
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:157    .text.main:0000004c L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:31     .text._Z12assertFailedPcm:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:52     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:160    .text.main:0000004c L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:149    .text.main:00000044 .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:152    .text.main:00000048 .Loc.42
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:153    .text.main:00000048 .Loc.43
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:156    .text.main:0000004a .Loc.44
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:157    .text.main:0000004a .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:160    .text.main:0000004e L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:31     .text._Z12assertFailedPcm:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:52     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:163    .text.main:0000004e L0
                      .debug_frame:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:107    .text.main:00000026 .L4
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:145    .text.main:00000042 .L5
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:132    .text.main:00000032 .L11
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:92     .text.main:0000001c .L9
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:102    .text.main:00000024 .L6
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:403    .debug_abbrev:00000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:899    .debug_rnglists:0000000c .LLRL5
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:912    .debug_line:00000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:56     .text.main:00000000 .LFB25
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:158    .text.main:0000004c .LFE25
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:785    .debug_loclists:00000014 .LLST0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:776    .debug_loclists:0000000c .LVUS0
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:818    .debug_loclists:00000036 .LLST1
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:811    .debug_loclists:00000030 .LVUS1
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:118    .text.main:0000002c .LBI4
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:117    .text.main:0000002c .LBB4
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:141    .text.main:0000003e .LBE4
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:841    .debug_loclists:0000004e .LLST2
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:838    .debug_loclists:0000004c .LVUS2
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:853    .debug_loclists:0000005e .LLST3
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:850    .debug_loclists:0000005c .LVUS3
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:865    .debug_loclists:0000006e .LLST4
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:862    .debug_loclists:0000006c .LVUS4
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:35     .text._Z7getTickv:00000000 .LFB24
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:50     .text._Z7getTickv:00000008 .LFE24
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:16     .text._Z12assertFailedPcm:00000000 .LFB23
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:29     .text._Z12assertFailedPcm:00000002 .LFE23
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:83     .text.main:00000016 .LVL1
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:116    .text.main:0000002c .LVL6
-C:\Users\kenne\AppData\Local\Temp\ccbvXEXg.s:166    .debug_info:00000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:110    .text.main:00000028 .L4
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:148    .text.main:00000044 .L5
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:135    .text.main:00000034 .L11
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:92     .text.main:0000001c .L9
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:105    .text.main:00000026 .L7
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:406    .debug_abbrev:00000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:902    .debug_rnglists:0000000c .LLRL5
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:915    .debug_line:00000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:56     .text.main:00000000 .LFB25
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:161    .text.main:0000004e .LFE25
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:788    .debug_loclists:00000014 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:779    .debug_loclists:0000000c .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:821    .debug_loclists:00000036 .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:814    .debug_loclists:00000030 .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:121    .text.main:0000002e .LBI4
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:120    .text.main:0000002e .LBB4
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:144    .text.main:00000040 .LBE4
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:844    .debug_loclists:0000004e .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:841    .debug_loclists:0000004c .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:856    .debug_loclists:0000005e .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:853    .debug_loclists:0000005c .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:868    .debug_loclists:0000006e .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:865    .debug_loclists:0000006c .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:35     .text._Z7getTickv:00000000 .LFB24
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:50     .text._Z7getTickv:00000008 .LFE24
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:16     .text._Z12assertFailedPcm:00000000 .LFB23
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:29     .text._Z12assertFailedPcm:00000002 .LFE23
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:83     .text.main:00000016 .LVL1
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:119    .text.main:0000002e .LVL7
+C:\Users\kenne\AppData\Local\Temp\ccDXeDbl.s:169    .debug_info:00000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS
