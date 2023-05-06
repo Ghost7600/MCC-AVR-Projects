@@ -4,6 +4,8 @@ d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgc
                               d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
                               build/sevenSegments.o (__tablejump2__)
+d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                              build/main.o (__do_copy_data)
 
 Discarded input sections
 
@@ -77,6 +79,22 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
  .debug_str     0x00000000       0x5f d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
 
 Memory Configuration
 
@@ -202,7 +220,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000       0xd2
+.text           0x00000000      0x13e
  *(.vectors)
  .vectors       0x00000000       0x68 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -241,6 +259,8 @@ END GROUP
  *(.init3)
  *(.init3)
  *(.init4)
+ .init4         0x00000074       0x16 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
  *(.init4)
  *(.init5)
  *(.init5)
@@ -251,45 +271,47 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000074        0x8 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .init9         0x0000008a        0x8 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x0000007c        0x4 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
-                0x0000007c                __vector_22
-                0x0000007c                __vector_1
-                0x0000007c                __vector_24
-                0x0000007c                __vector_12
-                0x0000007c                __bad_interrupt
-                0x0000007c                __vector_6
-                0x0000007c                __vector_3
-                0x0000007c                __vector_23
-                0x0000007c                __vector_25
-                0x0000007c                __vector_11
-                0x0000007c                __vector_13
-                0x0000007c                __vector_17
-                0x0000007c                __vector_19
-                0x0000007c                __vector_7
-                0x0000007c                __vector_5
-                0x0000007c                __vector_4
-                0x0000007c                __vector_9
-                0x0000007c                __vector_2
-                0x0000007c                __vector_21
-                0x0000007c                __vector_15
-                0x0000007c                __vector_8
-                0x0000007c                __vector_14
-                0x0000007c                __vector_10
-                0x0000007c                __vector_16
-                0x0000007c                __vector_18
-                0x0000007c                __vector_20
-                0x00000080                . = ALIGN (0x2)
+ .text          0x00000092        0x4 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000092                __vector_22
+                0x00000092                __vector_1
+                0x00000092                __vector_24
+                0x00000092                __vector_12
+                0x00000092                __bad_interrupt
+                0x00000092                __vector_6
+                0x00000092                __vector_23
+                0x00000092                __vector_25
+                0x00000092                __vector_11
+                0x00000092                __vector_13
+                0x00000092                __vector_17
+                0x00000092                __vector_19
+                0x00000092                __vector_7
+                0x00000092                __vector_5
+                0x00000092                __vector_4
+                0x00000092                __vector_9
+                0x00000092                __vector_2
+                0x00000092                __vector_21
+                0x00000092                __vector_15
+                0x00000092                __vector_8
+                0x00000092                __vector_14
+                0x00000092                __vector_10
+                0x00000092                __vector_16
+                0x00000092                __vector_18
+                0x00000092                __vector_20
+                0x00000096                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x00000080       0x4e build/main.o
-                0x00000080                main
-                0x000000ce                . = ALIGN (0x2)
+ .text.main     0x00000096       0x6c build/main.o
+                0x00000096                main
+ .text.__vector_3
+                0x00000102       0x38 build/main.o
+                0x00000102                __vector_3
+                0x0000013a                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000000ce        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
-                0x000000ce                _exit
-                0x000000ce                exit
+ .fini9         0x0000013a        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x0000013a                _exit
+                0x0000013a                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -308,42 +330,45 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000000ce        0x4 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000013a        0x4 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x000000d2                . = ALIGN (0x2)
+                0x0000013e                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
-                0x000000d2                _etext = .
+                0x0000013e                _etext = .
 
-.data           0x00800100        0x0 load address 0x000000d2
-                [!provide]                PROVIDE (__data_start = .)
+.data           0x00800100        0x2 load address 0x0000013e
+                0x00800100                PROVIDE (__data_start = .)
  *(.data)
  *(.data*)
+ .data.go       0x00800100        0x1 build/main.o
+                0x00800100                go
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.r*)
-                0x00800100                . = ALIGN (0x2)
-                0x00800100                _edata = .
-                [!provide]                PROVIDE (__data_end = .)
+                0x00800102                . = ALIGN (0x2)
+ *fill*         0x00800101        0x1 
+                0x00800102                _edata = .
+                0x00800102                PROVIDE (__data_end = .)
 
-.bss            0x00800100        0x0
+.bss            0x00800102        0x0
                 [!provide]                PROVIDE (__bss_start = .)
  *(.bss)
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end = .)
-                0x000000d2                __data_load_start = LOADADDR (.data)
-                0x000000d2                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000013e                __data_load_start = LOADADDR (.data)
+                0x00000140                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800100        0x0
+.noinit         0x00800102        0x0
                 [!provide]                PROVIDE (__noinit_start = .)
  *(.noinit .noinit.* .gnu.linkonce.n.*)
                 [!provide]                PROVIDE (__noinit_end = .)
-                0x00800100                _end = .
+                0x00800102                _end = .
                 [!provide]                PROVIDE (__heap_start = .)
 
 .eeprom         0x00810000        0x0
@@ -405,44 +430,50 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000       0x50
+.debug_aranges  0x00000000       0x78
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x30 build/main.o
+                0x00000000       0x38 build/main.o
  .debug_aranges
-                0x00000030       0x20 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x00000038       0x20 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000058       0x20 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0x805
+.debug_info     0x00000000      0x891
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x1ed build/main.o
- .debug_info    0x000007e1       0x24 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x000005f4      0x255 build/main.o
+ .debug_info    0x00000849       0x24 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x0000086d       0x24 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
 
-.debug_abbrev   0x00000000      0x727
+.debug_abbrev   0x00000000      0x768
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x171 build/main.o
- .debug_abbrev  0x00000713       0x14 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x000005a2      0x19e build/main.o
+ .debug_abbrev  0x00000740       0x14 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x00000754       0x14 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
 
-.debug_line     0x00000000      0x266
+.debug_line     0x00000000      0x3b3
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1d d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_line    0x0000001d      0x1f8 build/main.o
- .debug_line    0x00000215       0x51 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x0000001d      0x2be build/main.o
+ .debug_line    0x000002db       0x51 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x0000032c       0x87 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
 
-.debug_frame    0x00000000       0x44
+.debug_frame    0x00000000       0x68
  *(.debug_frame)
- .debug_frame   0x00000000       0x44 build/main.o
+ .debug_frame   0x00000000       0x68 build/main.o
 
-.debug_str      0x00000000      0x426
+.debug_str      0x00000000      0x431
  *(.debug_str)
  .debug_str     0x00000000      0x20b d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_str     0x0000020b      0x1bc build/main.o
-                                0x1f5 (size before relaxing)
- .debug_str     0x000003c7       0x5f d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_str     0x0000020b      0x1c7 build/main.o
+                                0x200 (size before relaxing)
+ .debug_str     0x000003d2       0x5f d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_str     0x00000431       0x5f d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
 
 .debug_loc
  *(.debug_loc)
@@ -480,12 +511,14 @@ END GROUP
  .debug_line_str
                 0x00000112       0x53 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
                                  0x5f (size before relaxing)
+ .debug_line_str
+                0x00000165       0x5f d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
 
 .debug_loclists
-                0x00000000       0x7c
+                0x00000000       0xb3
  *(.debug_loclists)
  .debug_loclists
-                0x00000000       0x7c build/main.o
+                0x00000000       0xb3 build/main.o
 
 .debug_macro
  *(.debug_macro)
@@ -494,10 +527,10 @@ END GROUP
  *(.debug_names)
 
 .debug_rnglists
-                0x00000000       0x1f
+                0x00000000       0x25
  *(.debug_rnglists)
  .debug_rnglists
-                0x00000000       0x1f build/main.o
+                0x00000000       0x25 build/main.o
 
 .debug_str_offsets
  *(.debug_str_offsets)
@@ -515,6 +548,11 @@ _Z17hex2SevenSegmentsh13displayType_th            build/sevenSegments.o
 _Z7getTickv                                       build/main.o
 __FUSE_REGION_LENGTH__                            d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
 __bad_interrupt                                   d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__data_end                                        d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+__data_start                                      d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+__do_copy_data                                    d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                                                  build/main.o
 __heap_end                                        d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
 __init                                            d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
 __stack                                           d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
@@ -538,7 +576,8 @@ __vector_22                                       d:/ifsc/vscodeleandro/ex/toolc
 __vector_23                                       d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
 __vector_24                                       d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
 __vector_25                                       d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
-__vector_3                                        d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_3                                        build/main.o
+                                                  d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
 __vector_4                                        d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
 __vector_5                                        d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
 __vector_6                                        d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
@@ -550,5 +589,6 @@ __vectors                                         d:/ifsc/vscodeleandro/ex/toolc
 _exit                                             d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
 exit                                              d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
                                                   d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+go                                                build/main.o
 main                                              build/main.o
                                                   d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
