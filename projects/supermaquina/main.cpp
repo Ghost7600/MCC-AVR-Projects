@@ -43,36 +43,37 @@ int main()
     while(1) {
         for(counter = 0; counter <= 15; counter++) { //laço para bits crescendo
             if(counter == 0) {
-                setBit(DATAPORT, DATABIT);
+                setBit(DATAPORT, DATABIT); //set data bit for first cycle
             } else {
-                clrBit(DATAPORT, DATABIT);
+                clrBit(DATAPORT, DATABIT); //ensures data bit clear for remaining cycles
             }
-            setBit(DATAPORT, DATACLK);
+            setBit(DATAPORT, DATACLK);  //pulses clock for pushing bit forward
             delayUs(10);
             clrBit(DATAPORT, DATACLK);
             delayUs(10);
-            setBit(DATAPORT, LATCH);
+            setBit(DATAPORT, LATCH);    //pulses latch for outputting data
             delayUs(10);
             clrBit(DATAPORT, LATCH);
-            delayMs(250);
+            delayMs(250);               //frame delay
         }
-        for(counter = 14; counter > 0; counter--) { //laço para 1a metade de bits decrescendo
-            setBit(DATAPORT, DATABIT);
+
+        for(counter = 14; counter > 0; counter--) { //laço para bits decrescendo
+            setBit(DATAPORT, DATABIT); //carrega primeiro bit
             setBit(DATAPORT, DATACLK);
             delayUs(10);
             clrBit(DATAPORT, DATACLK);
             clrBit(DATAPORT, DATABIT);
-            for(int c2 = 0; c2 < counter; c2++) {
+            for(int c2 = 0; c2 < counter; c2++) {   //desloca até a posição desejada, no caso 1 anterior ao contador
                 setBit(DATAPORT, DATACLK);
                 delayUs(10);
                 clrBit(DATAPORT, DATACLK);
                 delayUs(10);
             }
-            setBit(DATAPORT, LATCH);
+            setBit(DATAPORT, LATCH);    //outputs bit
             delayUs(10);
             clrBit(DATAPORT, LATCH);
             delayMs(250);
-            if(counter <= 7) {
+            if(counter <= 7) {      //quando lidamos com bits no ultimo quarto da animação
                 for(int c2 = 0; c2 < 16; c2++) { //laço para zerar dados
                     setBit(DATAPORT, DATACLK);
                     delayUs(10);
