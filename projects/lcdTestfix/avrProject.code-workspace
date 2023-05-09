@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "name": "Project Folder"
+        }
+    ],
+    "settings": {
+        "cSpell.enabled": false,
+        "todo-tree.tree.scanMode": "workspace only"
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": []
+    }
+}

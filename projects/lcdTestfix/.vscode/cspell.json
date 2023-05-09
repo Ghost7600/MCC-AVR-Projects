@@ -1,0 +1,28 @@
+{
+    "version": "0.2",
+    "caseSensitive": true,
+    "ignoreWords": [
+        "0bDDDDPPSS",
+        "0bPGFEDCBA",
+        "AVREF",
+        "Adcsr",
+        "Admux",
+        "Leandro",
+        "Schwarz",
+        "Tccr0A",
+        "Tccr0B",
+        "Tccr1",
+        "Tccr2",
+        "_columnsDdr",
+        "_controlDdr",
+        "_linesDdr",
+        "ccr0A"
+    ],
+    "ignorePaths": [
+        "**/settings.json"
+    ],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [],
+    "import": []
+}
