@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 1
 
 
    1               		.file	"timer0.cpp"
@@ -10,7 +10,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
    7               		.text
    8               	.Ltext0:
    9               		.cfi_sections	.debug_frame
-  10               		.file 0 "C:\\Users\\Greici\\Documentos\\Faculdade\\Semestre_2023.1\\MCP\\Projetos_Microcontrolador
+  10               		.file 0 "C:\\D\\IFSC\\MCC\\projects\\lcdTestfix" "funsape/peripheral/timer0.cpp"
   11               		.section	.text._Z7getTickv,"ax",@progbits
   12               		.weak	_Z7getTickv
   14               	_Z7getTickv:
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
   40:funsape/peripheral/../globalDefines.hpp **** #include <stdio.h>
   41:funsape/peripheral/../globalDefines.hpp **** #include <stdlib.h>
   42:funsape/peripheral/../globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 2
 
 
   43:funsape/peripheral/../globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
   97:funsape/peripheral/../globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:funsape/peripheral/../globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:funsape/peripheral/../globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 3
 
 
  100:funsape/peripheral/../globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  154:funsape/peripheral/../globalDefines.hpp **** enum class Axis : cuint8_t {
  155:funsape/peripheral/../globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:funsape/peripheral/../globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 4
 
 
  157:funsape/peripheral/../globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  211:funsape/peripheral/../globalDefines.hpp ****     // General error codes
  212:funsape/peripheral/../globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:funsape/peripheral/../globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 5
 
 
  214:funsape/peripheral/../globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  268:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 6
 
 
  271:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  325:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 7
 
 
  328:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  382:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 8
 
 
  385:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  439:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 9
 
 
  442:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  496:funsape/peripheral/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:funsape/peripheral/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:funsape/peripheral/../globalDefines.hpp **** 
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 10
 
 
  499:funsape/peripheral/../globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  553:funsape/peripheral/../globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:funsape/peripheral/../globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:funsape/peripheral/../globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 11
 
 
  556:funsape/peripheral/../globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  610:funsape/peripheral/../globalDefines.hpp **** #endif
  611:funsape/peripheral/../globalDefines.hpp **** #ifndef cplMaskOffset
  612:funsape/peripheral/../globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 12
 
 
  613:funsape/peripheral/../globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  667:funsape/peripheral/../globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:funsape/peripheral/../globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:funsape/peripheral/../globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 13
 
 
  670:funsape/peripheral/../globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  724:funsape/peripheral/../globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:funsape/peripheral/../globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:funsape/peripheral/../globalDefines.hpp **** {
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 14
 
 
  727:funsape/peripheral/../globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  781:funsape/peripheral/../globalDefines.hpp **** }
  782:funsape/peripheral/../globalDefines.hpp **** 
  783:funsape/peripheral/../globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 15
 
 
  784:funsape/peripheral/../globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
    6:funsape/peripheral/timer0.cpp **** //! \version        23.04
    7:funsape/peripheral/timer0.cpp **** //! \copyright      license
    8:funsape/peripheral/timer0.cpp **** //! \details        TIMER0 peripheral control for the FunSAPE AVR8 Library
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 16
 
 
    9:funsape/peripheral/timer0.cpp **** //! \todo           Todo list
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
   40               		.loc 2 62 1 is_stmt 1 view -0
   41               		.cfi_startproc
   42               	/* prologue: function */
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 17
 
 
   43               	/* frame size = 0 */
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
   85               	.LVL2:
   86               	.LFB54:
   77:funsape/peripheral/timer0.cpp **** 
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 18
 
 
   78:funsape/peripheral/timer0.cpp **** Timer0::~Timer0()
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  112:funsape/peripheral/timer0.cpp ****     TCCR0B          = auxTccr0B;
  113:funsape/peripheral/timer0.cpp **** 
  114:funsape/peripheral/timer0.cpp ****     // Update class members
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 19
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 19
 
 
  115:funsape/peripheral/timer0.cpp ****     this->_mode             = mode_p;
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  169:funsape/peripheral/timer0.cpp **** 
  170:funsape/peripheral/timer0.cpp ****     // Update class members
  171:funsape/peripheral/timer0.cpp ****     this->_clockSource      = clockSource_p;
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 20
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 20
 
 
  172:funsape/peripheral/timer0.cpp **** 
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  226:funsape/peripheral/timer0.cpp **** 
  227:funsape/peripheral/timer0.cpp **** // =============================================================================
  228:funsape/peripheral/timer0.cpp **** // Interrupt callback functions
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 21
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 21
 
 
  229:funsape/peripheral/timer0.cpp **** // =============================================================================
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  116 0000 262F      		mov r18,r22
  117 0002 372F      		mov r19,r23
  118               		.loc 2 275 1 view .LVU27
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 22
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 22
 
 
  119 0004 0197      		sbiw r24,1
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  166               		.loc 2 97 25 is_stmt 0 view .LVU40
  167 0006 35B5      		in r19,0x25
  168               	.LVL10:
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 23
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 23
 
 
   98:funsape/peripheral/timer0.cpp **** 
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  209 0030 6283      		std Z+2,r22
  116:funsape/peripheral/timer0.cpp ****     this->_isInitialized    = true;
  210               		.loc 2 116 5 is_stmt 1 view .LVU55
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 24
 
 
  116:funsape/peripheral/timer0.cpp ****     this->_isInitialized    = true;
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  131:funsape/peripheral/timer0.cpp ****     uint8_t auxTccr0B = TCCR0B;
  252               		.loc 2 131 25 is_stmt 0 view .LVU71
  253 0004 84B5      		in r24,0x24
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 25
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 25
 
 
  254               	.LVL19:
@@ -1498,7 +1498,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  150:funsape/peripheral/timer0.cpp ****     debugMessage(Error::NONE, DEBUG_TIMER0);
  294               		.loc 2 150 5 is_stmt 1 view .LVU86
  150:funsape/peripheral/timer0.cpp ****     debugMessage(Error::NONE, DEBUG_TIMER0);
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 26
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 26
 
 
  295               		.loc 2 150 22 is_stmt 0 view .LVU87
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  337               		.loc 2 168 5 view .LVU101
  168:funsape/peripheral/timer0.cpp **** 
  338               		.loc 2 168 21 is_stmt 0 view .LVU102
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 27
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 27
 
 
  339 000a 85BD      		out 0x25,r24
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  379               		.loc 2 188 5 is_stmt 1 view .LVU118
  380 0004 9F73      		andi r25,lo8(63)
  381               	.LVL33:
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 28
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 28
 
 
  189:funsape/peripheral/timer0.cpp ****     clrMaskOffset(auxTccr0A, constOutputModeAMask, constOutputModeBOffset);
@@ -1678,7 +1678,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  424               	/* prologue: function */
  425               	/* frame size = 0 */
  426               	/* stack size = 0 */
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 29
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 29
 
 
  427               	.L__stack_usage = 0
@@ -1738,7 +1738,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  477               		.weak	_Z22timer0OverflowCallbackv
  479               	_Z22timer0OverflowCallbackv:
  480               	.LFB63:
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 30
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 30
 
 
  242:funsape/peripheral/timer0.cpp ****     return;
@@ -1798,7 +1798,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  533               		.cfi_offset 25, -11
  534 001a AF93      		push r26
  535               		.cfi_def_cfa_offset 13
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 31
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 31
 
 
  536               		.cfi_offset 26, -12
@@ -1858,7 +1858,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  588               		.cfi_offset 0, -3
  589 0004 0FB6      		in r0,__SREG__
  590 0006 0F92      		push r0
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 32
 
 
  591 0008 1124      		clr __zero_reg__
@@ -1918,7 +1918,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  642 002e 9F91      		pop r25
  643 0030 8F91      		pop r24
  644 0032 7F91      		pop r23
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 33
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 33
 
 
  645 0034 6F91      		pop r22
@@ -1978,7 +1978,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  700               		.cfi_offset 26, -12
  701 001c BF93      		push r27
  702               		.cfi_def_cfa_offset 14
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 34
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 34
 
 
  703               		.cfi_offset 27, -13
@@ -2038,7 +2038,7 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  757               	/* epilogue start */
  758 000c 0895      		ret
  759               		.cfi_endproc
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 35
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 35
 
 
  760               	.LFE68:
@@ -2077,359 +2077,359 @@ GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 1
  797      00
  798               		.text
  799               	.Letext0:
- 800               		.file 3 "e:\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
+ 800               		.file 3 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
  801               		.file 4 "funsape/peripheral/timer0.hpp"
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 36
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 36
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 timer0.cpp
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2      *ABS*:0000003e __SP_H__
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:3      *ABS*:0000003d __SP_L__
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:4      *ABS*:0000003f __SREG__
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:5      *ABS*:00000000 __tmp_reg__
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:6      *ABS*:00000001 __zero_reg__
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:14     .text._Z7getTickv:00000000 _Z7getTickv
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:17     .text._Z7getTickv:00000000 .Loc.0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:18     .text._Z7getTickv:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:23     .text._Z7getTickv:00000000 .Loc.1
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:24     .text._Z7getTickv:00000000 .Loc.2
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:30     .text._Z7getTickv:00000008 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:36     .text._ZN6Timer0C2Ev:00000000 _ZN6Timer0C2Ev
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:40     .text._ZN6Timer0C2Ev:00000000 .Loc.3
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:41     .text._ZN6Timer0C2Ev:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:46     .text._ZN6Timer0C2Ev:00000000 .Loc.4
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:50     .text._ZN6Timer0C2Ev:00000004 .Loc.5
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:51     .text._ZN6Timer0C2Ev:00000004 .Loc.6
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:52     .text._ZN6Timer0C2Ev:00000004 .Loc.7
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:53     .text._ZN6Timer0C2Ev:00000004 .Loc.8
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:55     .text._ZN6Timer0C2Ev:00000006 .Loc.9
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:56     .text._ZN6Timer0C2Ev:00000006 .Loc.10
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:58     .text._ZN6Timer0C2Ev:00000008 .Loc.11
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:59     .text._ZN6Timer0C2Ev:00000008 .Loc.12
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:62     .text._ZN6Timer0C2Ev:0000000a .Loc.13
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:65     .text._ZN6Timer0C2Ev:0000000e .Loc.14
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:66     .text._ZN6Timer0C2Ev:0000000e .Loc.15
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:69     .text._ZN6Timer0C2Ev:00000012 .Loc.16
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:70     .text._ZN6Timer0C2Ev:00000012 .Loc.17
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:71     .text._ZN6Timer0C2Ev:00000012 .Loc.18
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:74     .text._ZN6Timer0C2Ev:00000012 .Loc.19
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:76     .text._ZN6Timer0C2Ev:00000014 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:36     .text._ZN6Timer0C2Ev:00000000 _ZN6Timer0C1Ev
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:84     .text._ZN6Timer0D2Ev:00000000 _ZN6Timer0D2Ev
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:87     .text._ZN6Timer0D2Ev:00000000 .Loc.20
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:88     .text._ZN6Timer0D2Ev:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:93     .text._ZN6Timer0D2Ev:00000000 .Loc.21
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:94     .text._ZN6Timer0D2Ev:00000000 .Loc.22
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:95     .text._ZN6Timer0D2Ev:00000000 .Loc.23
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:97     .text._ZN6Timer0D2Ev:00000000 .Loc.24
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:99     .text._ZN6Timer0D2Ev:00000002 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:84     .text._ZN6Timer0D2Ev:00000000 _ZN6Timer0D1Ev
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:106    .text._Z41__static_initialization_and_destruction_0ii:00000000 _Z41__static_initialization_and_destruction_0ii
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:109    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.25
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:110    .text._Z41__static_initialization_and_destruction_0ii:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:115    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.26
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:118    .text._Z41__static_initialization_and_destruction_0ii:00000004 .Loc.27
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:124    .text._Z41__static_initialization_and_destruction_0ii:00000008 .Loc.28
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:128    .text._Z41__static_initialization_and_destruction_0ii:0000000a .Loc.29
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:132    .text._Z41__static_initialization_and_destruction_0ii:0000000e .Loc.30
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:134    .text._Z41__static_initialization_and_destruction_0ii:00000010 .Loc.31
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:796    .bss.timer0:00000000 timer0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:139    .text._Z41__static_initialization_and_destruction_0ii:00000018 .Loc.32
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:141    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:147    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 _ZN6Timer04initENS_4ModeENS_11ClockSourceE
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:150    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 .Loc.33
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 37
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2      *ABS*:0000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:3      *ABS*:0000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:4      *ABS*:0000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:14     .text._Z7getTickv:00000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:17     .text._Z7getTickv:00000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:18     .text._Z7getTickv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:23     .text._Z7getTickv:00000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:24     .text._Z7getTickv:00000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:30     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:36     .text._ZN6Timer0C2Ev:00000000 _ZN6Timer0C2Ev
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:40     .text._ZN6Timer0C2Ev:00000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:41     .text._ZN6Timer0C2Ev:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:46     .text._ZN6Timer0C2Ev:00000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:50     .text._ZN6Timer0C2Ev:00000004 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:51     .text._ZN6Timer0C2Ev:00000004 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:52     .text._ZN6Timer0C2Ev:00000004 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:53     .text._ZN6Timer0C2Ev:00000004 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:55     .text._ZN6Timer0C2Ev:00000006 .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:56     .text._ZN6Timer0C2Ev:00000006 .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:58     .text._ZN6Timer0C2Ev:00000008 .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:59     .text._ZN6Timer0C2Ev:00000008 .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:62     .text._ZN6Timer0C2Ev:0000000a .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:65     .text._ZN6Timer0C2Ev:0000000e .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:66     .text._ZN6Timer0C2Ev:0000000e .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:69     .text._ZN6Timer0C2Ev:00000012 .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:70     .text._ZN6Timer0C2Ev:00000012 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:71     .text._ZN6Timer0C2Ev:00000012 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:74     .text._ZN6Timer0C2Ev:00000012 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:76     .text._ZN6Timer0C2Ev:00000014 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:36     .text._ZN6Timer0C2Ev:00000000 _ZN6Timer0C1Ev
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:84     .text._ZN6Timer0D2Ev:00000000 _ZN6Timer0D2Ev
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:87     .text._ZN6Timer0D2Ev:00000000 .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:88     .text._ZN6Timer0D2Ev:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:93     .text._ZN6Timer0D2Ev:00000000 .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:94     .text._ZN6Timer0D2Ev:00000000 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:95     .text._ZN6Timer0D2Ev:00000000 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:97     .text._ZN6Timer0D2Ev:00000000 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:99     .text._ZN6Timer0D2Ev:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:84     .text._ZN6Timer0D2Ev:00000000 _ZN6Timer0D1Ev
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:106    .text._Z41__static_initialization_and_destruction_0ii:00000000 _Z41__static_initialization_and_destruction_0ii
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:109    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:110    .text._Z41__static_initialization_and_destruction_0ii:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:115    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:118    .text._Z41__static_initialization_and_destruction_0ii:00000004 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:124    .text._Z41__static_initialization_and_destruction_0ii:00000008 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:128    .text._Z41__static_initialization_and_destruction_0ii:0000000a .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:132    .text._Z41__static_initialization_and_destruction_0ii:0000000e .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:134    .text._Z41__static_initialization_and_destruction_0ii:00000010 .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:796    .bss.timer0:00000000 timer0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:139    .text._Z41__static_initialization_and_destruction_0ii:00000018 .Loc.32
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:141    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:147    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 _ZN6Timer04initENS_4ModeENS_11ClockSourceE
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:150    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 .Loc.33
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 37
 
 
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:151    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:156    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 .Loc.34
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:159    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000004 .Loc.35
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:160    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000004 .Loc.36
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:161    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000004 .Loc.37
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:162    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000004 .Loc.38
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:165    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000006 .Loc.39
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:166    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000006 .Loc.40
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:169    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000008 .Loc.41
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:170    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000008 .Loc.42
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:171    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000008 .Loc.43
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:174    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000000a .Loc.44
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:177    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000000c .Loc.45
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:182    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000012 .Loc.46
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:195    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000028 .Loc.47
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:198    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002a .Loc.48
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:201    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002c .Loc.49
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:202    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002c .Loc.50
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:204    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002e .Loc.51
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:205    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002e .Loc.52
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:207    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000030 .Loc.53
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:208    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000030 .Loc.54
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:210    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000032 .Loc.55
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:211    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000032 .Loc.56
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:213    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000034 .Loc.57
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:214    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000034 .Loc.58
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:217    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000036 .Loc.59
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:220    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003a .Loc.60
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:221    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003a .Loc.61
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:224    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003e .Loc.62
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:225    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003e .Loc.63
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:226    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003e .Loc.64
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:227    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003e .Loc.65
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:231    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000042 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:237    .text._ZN6Timer07setModeENS_4ModeE:00000000 _ZN6Timer07setModeENS_4ModeE
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:240    .text._ZN6Timer07setModeENS_4ModeE:00000000 .Loc.66
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:241    .text._ZN6Timer07setModeENS_4ModeE:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:246    .text._ZN6Timer07setModeENS_4ModeE:00000000 .Loc.67
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:249    .text._ZN6Timer07setModeENS_4ModeE:00000004 .Loc.68
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:250    .text._ZN6Timer07setModeENS_4ModeE:00000004 .Loc.69
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:251    .text._ZN6Timer07setModeENS_4ModeE:00000004 .Loc.70
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:252    .text._ZN6Timer07setModeENS_4ModeE:00000004 .Loc.71
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:255    .text._ZN6Timer07setModeENS_4ModeE:00000006 .Loc.72
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:256    .text._ZN6Timer07setModeENS_4ModeE:00000006 .Loc.73
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:259    .text._ZN6Timer07setModeENS_4ModeE:00000008 .Loc.74
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:260    .text._ZN6Timer07setModeENS_4ModeE:00000008 .Loc.75
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:261    .text._ZN6Timer07setModeENS_4ModeE:00000008 .Loc.76
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:264    .text._ZN6Timer07setModeENS_4ModeE:0000000a .Loc.77
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:267    .text._ZN6Timer07setModeENS_4ModeE:0000000c .Loc.78
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:272    .text._ZN6Timer07setModeENS_4ModeE:00000012 .Loc.79
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:285    .text._ZN6Timer07setModeENS_4ModeE:00000028 .Loc.80
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:286    .text._ZN6Timer07setModeENS_4ModeE:00000028 .Loc.81
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:288    .text._ZN6Timer07setModeENS_4ModeE:0000002a .Loc.82
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:289    .text._ZN6Timer07setModeENS_4ModeE:0000002a .Loc.83
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:291    .text._ZN6Timer07setModeENS_4ModeE:0000002c .Loc.84
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:292    .text._ZN6Timer07setModeENS_4ModeE:0000002c .Loc.85
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:294    .text._ZN6Timer07setModeENS_4ModeE:0000002e .Loc.86
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 38
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:151    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:156    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:159    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000004 .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:160    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000004 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:161    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000004 .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:162    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000004 .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:165    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000006 .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:166    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000006 .Loc.40
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:169    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000008 .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:170    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000008 .Loc.42
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:171    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000008 .Loc.43
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:174    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000000a .Loc.44
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:177    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000000c .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:182    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000012 .Loc.46
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:195    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000028 .Loc.47
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:198    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002a .Loc.48
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:201    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002c .Loc.49
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:202    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002c .Loc.50
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:204    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002e .Loc.51
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:205    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000002e .Loc.52
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:207    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000030 .Loc.53
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:208    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000030 .Loc.54
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:210    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000032 .Loc.55
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:211    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000032 .Loc.56
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:213    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000034 .Loc.57
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:214    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000034 .Loc.58
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:217    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000036 .Loc.59
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:220    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003a .Loc.60
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:221    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003a .Loc.61
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:224    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003e .Loc.62
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:225    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003e .Loc.63
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:226    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003e .Loc.64
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:227    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:0000003e .Loc.65
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:231    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000042 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:237    .text._ZN6Timer07setModeENS_4ModeE:00000000 _ZN6Timer07setModeENS_4ModeE
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:240    .text._ZN6Timer07setModeENS_4ModeE:00000000 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:241    .text._ZN6Timer07setModeENS_4ModeE:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:246    .text._ZN6Timer07setModeENS_4ModeE:00000000 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:249    .text._ZN6Timer07setModeENS_4ModeE:00000004 .Loc.68
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:250    .text._ZN6Timer07setModeENS_4ModeE:00000004 .Loc.69
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:251    .text._ZN6Timer07setModeENS_4ModeE:00000004 .Loc.70
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:252    .text._ZN6Timer07setModeENS_4ModeE:00000004 .Loc.71
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:255    .text._ZN6Timer07setModeENS_4ModeE:00000006 .Loc.72
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:256    .text._ZN6Timer07setModeENS_4ModeE:00000006 .Loc.73
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:259    .text._ZN6Timer07setModeENS_4ModeE:00000008 .Loc.74
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:260    .text._ZN6Timer07setModeENS_4ModeE:00000008 .Loc.75
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:261    .text._ZN6Timer07setModeENS_4ModeE:00000008 .Loc.76
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:264    .text._ZN6Timer07setModeENS_4ModeE:0000000a .Loc.77
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:267    .text._ZN6Timer07setModeENS_4ModeE:0000000c .Loc.78
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:272    .text._ZN6Timer07setModeENS_4ModeE:00000012 .Loc.79
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:285    .text._ZN6Timer07setModeENS_4ModeE:00000028 .Loc.80
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:286    .text._ZN6Timer07setModeENS_4ModeE:00000028 .Loc.81
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:288    .text._ZN6Timer07setModeENS_4ModeE:0000002a .Loc.82
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:289    .text._ZN6Timer07setModeENS_4ModeE:0000002a .Loc.83
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:291    .text._ZN6Timer07setModeENS_4ModeE:0000002c .Loc.84
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:292    .text._ZN6Timer07setModeENS_4ModeE:0000002c .Loc.85
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:294    .text._ZN6Timer07setModeENS_4ModeE:0000002e .Loc.86
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 38
 
 
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:295    .text._ZN6Timer07setModeENS_4ModeE:0000002e .Loc.87
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:298    .text._ZN6Timer07setModeENS_4ModeE:00000032 .Loc.88
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:299    .text._ZN6Timer07setModeENS_4ModeE:00000032 .Loc.89
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:300    .text._ZN6Timer07setModeENS_4ModeE:00000032 .Loc.90
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:301    .text._ZN6Timer07setModeENS_4ModeE:00000032 .Loc.91
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:305    .text._ZN6Timer07setModeENS_4ModeE:00000034 .Loc.92
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:307    .text._ZN6Timer07setModeENS_4ModeE:00000036 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:313    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 _ZN6Timer014setClockSourceENS_11ClockSourceE
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:316    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 .Loc.93
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:317    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:322    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 .Loc.94
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:325    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000004 .Loc.95
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:326    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000004 .Loc.96
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:327    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000004 .Loc.97
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:328    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000004 .Loc.98
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:331    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000006 .Loc.99
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:334    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000008 .Loc.100
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:337    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000a .Loc.101
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:338    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000a .Loc.102
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:340    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000c .Loc.103
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:341    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000c .Loc.104
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:343    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000e .Loc.105
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:344    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000e .Loc.106
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:347    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000012 .Loc.107
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:348    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000012 .Loc.108
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:349    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000012 .Loc.109
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:350    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000012 .Loc.110
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:354    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000014 .Loc.111
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:356    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000016 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:362    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 _ZN6Timer013setOutputModeENS_10OutputModeES0_
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:365    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 .Loc.112
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:366    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:371    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 .Loc.113
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:373    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000002 .Loc.114
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:374    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000002 .Loc.115
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:375    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000002 .Loc.116
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:376    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000002 .Loc.117
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:379    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000004 .Loc.118
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:382    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000006 .Loc.119
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:385    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000008 .Loc.120
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:390    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000000e .Loc.121
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:393    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000010 .Loc.122
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:396    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000012 .Loc.123
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:399    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000014 .Loc.124
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:400    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000014 .Loc.125
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:402    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000016 .Loc.126
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:403    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000016 .Loc.127
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:406    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001a .Loc.128
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:407    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001a .Loc.129
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:408    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001a .Loc.130
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:409    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001a .Loc.131
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:413    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001e L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:419    .text._ZN6Timer012getLastErrorEv:00000000 _ZN6Timer012getLastErrorEv
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:422    .text._ZN6Timer012getLastErrorEv:00000000 .Loc.132
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:423    .text._ZN6Timer012getLastErrorEv:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:428    .text._ZN6Timer012getLastErrorEv:00000000 .Loc.133
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:429    .text._ZN6Timer012getLastErrorEv:00000000 .Loc.134
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 39
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:295    .text._ZN6Timer07setModeENS_4ModeE:0000002e .Loc.87
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:298    .text._ZN6Timer07setModeENS_4ModeE:00000032 .Loc.88
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:299    .text._ZN6Timer07setModeENS_4ModeE:00000032 .Loc.89
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:300    .text._ZN6Timer07setModeENS_4ModeE:00000032 .Loc.90
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:301    .text._ZN6Timer07setModeENS_4ModeE:00000032 .Loc.91
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:305    .text._ZN6Timer07setModeENS_4ModeE:00000034 .Loc.92
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:307    .text._ZN6Timer07setModeENS_4ModeE:00000036 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:313    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 _ZN6Timer014setClockSourceENS_11ClockSourceE
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:316    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 .Loc.93
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:317    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:322    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 .Loc.94
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:325    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000004 .Loc.95
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:326    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000004 .Loc.96
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:327    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000004 .Loc.97
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:328    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000004 .Loc.98
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:331    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000006 .Loc.99
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:334    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000008 .Loc.100
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:337    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000a .Loc.101
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:338    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000a .Loc.102
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:340    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000c .Loc.103
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:341    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000c .Loc.104
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:343    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000e .Loc.105
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:344    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:0000000e .Loc.106
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:347    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000012 .Loc.107
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:348    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000012 .Loc.108
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:349    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000012 .Loc.109
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:350    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000012 .Loc.110
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:354    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000014 .Loc.111
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:356    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000016 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:362    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 _ZN6Timer013setOutputModeENS_10OutputModeES0_
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:365    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 .Loc.112
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:366    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:371    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 .Loc.113
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:373    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000002 .Loc.114
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:374    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000002 .Loc.115
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:375    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000002 .Loc.116
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:376    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000002 .Loc.117
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:379    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000004 .Loc.118
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:382    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000006 .Loc.119
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:385    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000008 .Loc.120
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:390    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000000e .Loc.121
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:393    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000010 .Loc.122
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:396    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000012 .Loc.123
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:399    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000014 .Loc.124
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:400    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000014 .Loc.125
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:402    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000016 .Loc.126
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:403    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000016 .Loc.127
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:406    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001a .Loc.128
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:407    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001a .Loc.129
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:408    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001a .Loc.130
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:409    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001a .Loc.131
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:413    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001e L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:419    .text._ZN6Timer012getLastErrorEv:00000000 _ZN6Timer012getLastErrorEv
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:422    .text._ZN6Timer012getLastErrorEv:00000000 .Loc.132
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:423    .text._ZN6Timer012getLastErrorEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:428    .text._ZN6Timer012getLastErrorEv:00000000 .Loc.133
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:429    .text._ZN6Timer012getLastErrorEv:00000000 .Loc.134
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 39
 
 
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:435    .text._ZN6Timer012getLastErrorEv:00000006 .Loc.135
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:437    .text._ZN6Timer012getLastErrorEv:00000008 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:443    .text._Z22timer0CompareACallbackv:00000000 _Z22timer0CompareACallbackv
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:445    .text._Z22timer0CompareACallbackv:00000000 .Loc.136
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:446    .text._Z22timer0CompareACallbackv:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:451    .text._Z22timer0CompareACallbackv:00000000 .Loc.137
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:453    .text._Z22timer0CompareACallbackv:00000000 .Loc.138
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:455    .text._Z22timer0CompareACallbackv:00000002 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:461    .text._Z22timer0CompareBCallbackv:00000000 _Z22timer0CompareBCallbackv
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:463    .text._Z22timer0CompareBCallbackv:00000000 .Loc.139
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:464    .text._Z22timer0CompareBCallbackv:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:469    .text._Z22timer0CompareBCallbackv:00000000 .Loc.140
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:471    .text._Z22timer0CompareBCallbackv:00000000 .Loc.141
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:473    .text._Z22timer0CompareBCallbackv:00000002 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:479    .text._Z22timer0OverflowCallbackv:00000000 _Z22timer0OverflowCallbackv
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:481    .text._Z22timer0OverflowCallbackv:00000000 .Loc.142
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:482    .text._Z22timer0OverflowCallbackv:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:487    .text._Z22timer0OverflowCallbackv:00000000 .Loc.143
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:489    .text._Z22timer0OverflowCallbackv:00000000 .Loc.144
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:491    .text._Z22timer0OverflowCallbackv:00000002 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:497    .text.__vector_14:00000000 __vector_14
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:499    .text.__vector_14:00000000 .Loc.145
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:500    .text.__vector_14:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:550    .text.__vector_14:00000022 .Loc.146
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:551    .text.__vector_14:00000022 .Loc.147
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:555    .text.__vector_14:00000026 .Loc.148
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:573    .text.__vector_14:00000048 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:579    .text.__vector_15:00000000 __vector_15
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:581    .text.__vector_15:00000000 .Loc.149
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:582    .text.__vector_15:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:632    .text.__vector_15:00000022 .Loc.150
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:633    .text.__vector_15:00000022 .Loc.151
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:637    .text.__vector_15:00000026 .Loc.152
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:655    .text.__vector_15:00000048 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:661    .text.__vector_16:00000000 __vector_16
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:663    .text.__vector_16:00000000 .Loc.153
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:664    .text.__vector_16:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:714    .text.__vector_16:00000022 .Loc.154
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:715    .text.__vector_16:00000022 .Loc.155
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:719    .text.__vector_16:00000026 .Loc.156
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:737    .text.__vector_16:00000048 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:742    .text._GLOBAL__sub_I_timer0:00000000 _GLOBAL__sub_I_timer0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:744    .text._GLOBAL__sub_I_timer0:00000000 .Loc.157
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:745    .text._GLOBAL__sub_I_timer0:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:750    .text._GLOBAL__sub_I_timer0:00000000 .Loc.158
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:759    .text._GLOBAL__sub_I_timer0:0000000e L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:768    .text._GLOBAL__sub_D_timer0:00000000 _GLOBAL__sub_D_timer0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:770    .text._GLOBAL__sub_D_timer0:00000000 .Loc.159
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:771    .text._GLOBAL__sub_D_timer0:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:776    .text._GLOBAL__sub_D_timer0:00000000 .Loc.160
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:785    .text._GLOBAL__sub_D_timer0:0000000e L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:33     .text._Z7getTickv:00000008 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:81     .text._ZN6Timer0C2Ev:00000014 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:104    .text._ZN6Timer0D2Ev:00000002 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:144    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:234    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000042 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:310    .text._ZN6Timer07setModeENS_4ModeE:00000036 L0
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 40
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:435    .text._ZN6Timer012getLastErrorEv:00000006 .Loc.135
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:437    .text._ZN6Timer012getLastErrorEv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:443    .text._Z22timer0CompareACallbackv:00000000 _Z22timer0CompareACallbackv
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:445    .text._Z22timer0CompareACallbackv:00000000 .Loc.136
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:446    .text._Z22timer0CompareACallbackv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:451    .text._Z22timer0CompareACallbackv:00000000 .Loc.137
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:453    .text._Z22timer0CompareACallbackv:00000000 .Loc.138
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:455    .text._Z22timer0CompareACallbackv:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:461    .text._Z22timer0CompareBCallbackv:00000000 _Z22timer0CompareBCallbackv
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:463    .text._Z22timer0CompareBCallbackv:00000000 .Loc.139
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:464    .text._Z22timer0CompareBCallbackv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:469    .text._Z22timer0CompareBCallbackv:00000000 .Loc.140
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:471    .text._Z22timer0CompareBCallbackv:00000000 .Loc.141
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:473    .text._Z22timer0CompareBCallbackv:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:479    .text._Z22timer0OverflowCallbackv:00000000 _Z22timer0OverflowCallbackv
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:481    .text._Z22timer0OverflowCallbackv:00000000 .Loc.142
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:482    .text._Z22timer0OverflowCallbackv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:487    .text._Z22timer0OverflowCallbackv:00000000 .Loc.143
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:489    .text._Z22timer0OverflowCallbackv:00000000 .Loc.144
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:491    .text._Z22timer0OverflowCallbackv:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:497    .text.__vector_14:00000000 __vector_14
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:499    .text.__vector_14:00000000 .Loc.145
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:500    .text.__vector_14:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:550    .text.__vector_14:00000022 .Loc.146
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:551    .text.__vector_14:00000022 .Loc.147
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:555    .text.__vector_14:00000026 .Loc.148
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:573    .text.__vector_14:00000048 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:579    .text.__vector_15:00000000 __vector_15
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:581    .text.__vector_15:00000000 .Loc.149
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:582    .text.__vector_15:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:632    .text.__vector_15:00000022 .Loc.150
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:633    .text.__vector_15:00000022 .Loc.151
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:637    .text.__vector_15:00000026 .Loc.152
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:655    .text.__vector_15:00000048 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:661    .text.__vector_16:00000000 __vector_16
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:663    .text.__vector_16:00000000 .Loc.153
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:664    .text.__vector_16:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:714    .text.__vector_16:00000022 .Loc.154
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:715    .text.__vector_16:00000022 .Loc.155
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:719    .text.__vector_16:00000026 .Loc.156
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:737    .text.__vector_16:00000048 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:742    .text._GLOBAL__sub_I_timer0:00000000 _GLOBAL__sub_I_timer0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:744    .text._GLOBAL__sub_I_timer0:00000000 .Loc.157
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:745    .text._GLOBAL__sub_I_timer0:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:750    .text._GLOBAL__sub_I_timer0:00000000 .Loc.158
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:759    .text._GLOBAL__sub_I_timer0:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:768    .text._GLOBAL__sub_D_timer0:00000000 _GLOBAL__sub_D_timer0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:770    .text._GLOBAL__sub_D_timer0:00000000 .Loc.159
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:771    .text._GLOBAL__sub_D_timer0:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:776    .text._GLOBAL__sub_D_timer0:00000000 .Loc.160
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:785    .text._GLOBAL__sub_D_timer0:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:33     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:81     .text._ZN6Timer0C2Ev:00000014 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:104    .text._ZN6Timer0D2Ev:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:144    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:234    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000042 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:310    .text._ZN6Timer07setModeENS_4ModeE:00000036 L0
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 40
 
 
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:359    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000016 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:416    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001e L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:440    .text._ZN6Timer012getLastErrorEv:00000008 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:458    .text._Z22timer0CompareACallbackv:00000002 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:476    .text._Z22timer0CompareBCallbackv:00000002 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:494    .text._Z22timer0OverflowCallbackv:00000002 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:576    .text.__vector_14:00000048 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:658    .text.__vector_15:00000048 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:740    .text.__vector_16:00000048 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:763    .text._GLOBAL__sub_I_timer0:0000000e L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:789    .text._GLOBAL__sub_D_timer0:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:359    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000016 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:416    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001e L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:440    .text._ZN6Timer012getLastErrorEv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:458    .text._Z22timer0CompareACallbackv:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:476    .text._Z22timer0CompareBCallbackv:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:494    .text._Z22timer0OverflowCallbackv:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:576    .text.__vector_14:00000048 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:658    .text.__vector_15:00000048 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:740    .text.__vector_16:00000048 L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:763    .text._GLOBAL__sub_I_timer0:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:789    .text._GLOBAL__sub_D_timer0:0000000e L0
                      .debug_frame:00000000 L0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:127    .text._Z41__static_initialization_and_destruction_0ii:0000000a .L6
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:122    .text._Z41__static_initialization_and_destruction_0ii:00000008 .L4
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:1807   .debug_abbrev:00000000 .Ldebug_abbrev0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:3050   .debug_rnglists:0000000c .LLRL17
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:3105   .debug_line:00000000 .Ldebug_line0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:769    .text._GLOBAL__sub_D_timer0:00000000 .LFB69
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:786    .text._GLOBAL__sub_D_timer0:0000000e .LFE69
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:782    .text._GLOBAL__sub_D_timer0:0000000c .LVL45
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:743    .text._GLOBAL__sub_I_timer0:00000000 .LFB68
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:760    .text._GLOBAL__sub_I_timer0:0000000e .LFE68
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:756    .text._GLOBAL__sub_I_timer0:0000000c .LVL44
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:108    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LFB67
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:142    .text._Z41__static_initialization_and_destruction_0ii:0000001a .LFE67
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2575   .debug_loclists:00000014 .LLST1
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2566   .debug_loclists:0000000c .LVUS1
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2624   .debug_loclists:00000046 .LLST2
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2615   .debug_loclists:0000003e .LVUS2
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:138    .text._Z41__static_initialization_and_destruction_0ii:00000018 .LVL7
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:662    .text.__vector_16:00000000 .LFB66
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:738    .text.__vector_16:00000048 .LFE66
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:717    .text.__vector_16:00000026 .LVL43
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:580    .text.__vector_15:00000000 .LFB65
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:656    .text.__vector_15:00000048 .LFE65
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:635    .text.__vector_15:00000026 .LVL42
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:498    .text.__vector_14:00000000 .LFB64
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:574    .text.__vector_14:00000048 .LFE64
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:553    .text.__vector_14:00000026 .LVL41
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:480    .text._Z22timer0OverflowCallbackv:00000000 .LFB63
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:492    .text._Z22timer0OverflowCallbackv:00000002 .LFE63
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:462    .text._Z22timer0CompareBCallbackv:00000000 .LFB62
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:474    .text._Z22timer0CompareBCallbackv:00000002 .LFE62
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:444    .text._Z22timer0CompareACallbackv:00000000 .LFB61
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:456    .text._Z22timer0CompareACallbackv:00000002 .LFE61
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:421    .text._ZN6Timer012getLastErrorEv:00000000 .LFB60
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:438    .text._ZN6Timer012getLastErrorEv:00000008 .LFE60
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2669   .debug_loclists:00000074 .LLST16
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2664   .debug_loclists:00000070 .LVUS16
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:364    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 .LFB59
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:414    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001e .LFE59
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2698   .debug_loclists:00000092 .LLST13
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2693   .debug_loclists:0000008e .LVUS13
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2727   .debug_loclists:000000b0 .LLST14
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2722   .debug_loclists:000000ac .LVUS14
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2749   .debug_loclists:000000c7 .LLST15
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2744   .debug_loclists:000000c3 .LVUS15
-GAS LISTING C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s 			page 41
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:127    .text._Z41__static_initialization_and_destruction_0ii:0000000a .L6
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:122    .text._Z41__static_initialization_and_destruction_0ii:00000008 .L4
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:1807   .debug_abbrev:00000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:3050   .debug_rnglists:0000000c .LLRL17
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:3105   .debug_line:00000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:769    .text._GLOBAL__sub_D_timer0:00000000 .LFB69
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:786    .text._GLOBAL__sub_D_timer0:0000000e .LFE69
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:782    .text._GLOBAL__sub_D_timer0:0000000c .LVL45
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:743    .text._GLOBAL__sub_I_timer0:00000000 .LFB68
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:760    .text._GLOBAL__sub_I_timer0:0000000e .LFE68
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:756    .text._GLOBAL__sub_I_timer0:0000000c .LVL44
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:108    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LFB67
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:142    .text._Z41__static_initialization_and_destruction_0ii:0000001a .LFE67
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2575   .debug_loclists:00000014 .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2566   .debug_loclists:0000000c .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2624   .debug_loclists:00000046 .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2615   .debug_loclists:0000003e .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:138    .text._Z41__static_initialization_and_destruction_0ii:00000018 .LVL7
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:662    .text.__vector_16:00000000 .LFB66
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:738    .text.__vector_16:00000048 .LFE66
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:717    .text.__vector_16:00000026 .LVL43
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:580    .text.__vector_15:00000000 .LFB65
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:656    .text.__vector_15:00000048 .LFE65
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:635    .text.__vector_15:00000026 .LVL42
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:498    .text.__vector_14:00000000 .LFB64
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:574    .text.__vector_14:00000048 .LFE64
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:553    .text.__vector_14:00000026 .LVL41
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:480    .text._Z22timer0OverflowCallbackv:00000000 .LFB63
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:492    .text._Z22timer0OverflowCallbackv:00000002 .LFE63
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:462    .text._Z22timer0CompareBCallbackv:00000000 .LFB62
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:474    .text._Z22timer0CompareBCallbackv:00000002 .LFE62
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:444    .text._Z22timer0CompareACallbackv:00000000 .LFB61
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:456    .text._Z22timer0CompareACallbackv:00000002 .LFE61
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:421    .text._ZN6Timer012getLastErrorEv:00000000 .LFB60
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:438    .text._ZN6Timer012getLastErrorEv:00000008 .LFE60
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2669   .debug_loclists:00000074 .LLST16
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2664   .debug_loclists:00000070 .LVUS16
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:364    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 .LFB59
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:414    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:0000001e .LFE59
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2698   .debug_loclists:00000092 .LLST13
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2693   .debug_loclists:0000008e .LVUS13
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2727   .debug_loclists:000000b0 .LLST14
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2722   .debug_loclists:000000ac .LVUS14
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2749   .debug_loclists:000000c7 .LLST15
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2744   .debug_loclists:000000c3 .LVUS15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s 			page 41
 
 
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:315    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 .LFB58
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:357    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000016 .LFE58
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2768   .debug_loclists:000000db .LLST11
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2763   .debug_loclists:000000d7 .LVUS11
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2793   .debug_loclists:000000f5 .LLST12
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2790   .debug_loclists:000000f3 .LVUS12
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:239    .text._ZN6Timer07setModeENS_4ModeE:00000000 .LFB57
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:308    .text._ZN6Timer07setModeENS_4ModeE:00000036 .LFE57
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2805   .debug_loclists:00000102 .LLST7
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2800   .debug_loclists:000000fe .LVUS7
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2832   .debug_loclists:0000011e .LLST8
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2827   .debug_loclists:0000011a .LVUS8
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2851   .debug_loclists:00000132 .LLST9
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2846   .debug_loclists:0000012e .LVUS9
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2870   .debug_loclists:00000146 .LLST10
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2865   .debug_loclists:00000142 .LVUS10
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:149    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 .LFB56
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:232    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000042 .LFE56
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2890   .debug_loclists:0000015b .LLST3
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2885   .debug_loclists:00000157 .LVUS3
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2917   .debug_loclists:00000177 .LLST4
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2912   .debug_loclists:00000173 .LVUS4
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2936   .debug_loclists:0000018b .LLST5
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2931   .debug_loclists:00000187 .LVUS5
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2955   .debug_loclists:0000019f .LLST6
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2950   .debug_loclists:0000019b .LVUS6
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:86     .text._ZN6Timer0D2Ev:00000000 .LFB54
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:100    .text._ZN6Timer0D2Ev:00000002 .LFE54
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:38     .text._ZN6Timer0C2Ev:00000000 .LFB51
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:77     .text._ZN6Timer0C2Ev:00000014 .LFE51
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2975   .debug_loclists:000001b4 .LLST0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:2970   .debug_loclists:000001b0 .LVUS0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:15     .text._Z7getTickv:00000000 .LFB32
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:31     .text._Z7getTickv:00000008 .LFE32
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:107    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LVL3
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:420    .text._ZN6Timer012getLastErrorEv:00000000 .LVL39
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:363    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 .LVL31
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:378    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000004 .LVL32
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:314    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 .LVL26
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:330    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000006 .LVL27
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:238    .text._ZN6Timer07setModeENS_4ModeE:00000000 .LVL18
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:254    .text._ZN6Timer07setModeENS_4ModeE:00000006 .LVL19
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:258    .text._ZN6Timer07setModeENS_4ModeE:00000008 .LVL20
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:148    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 .LVL8
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:164    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000006 .LVL9
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:168    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000008 .LVL10
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:37     .text._ZN6Timer0C2Ev:00000000 .LVL0
-C:\Users\Greici\AppData\Local\Temp\cciCHIPD.s:803    .debug_info:00000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:315    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 .LFB58
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:357    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000016 .LFE58
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2768   .debug_loclists:000000db .LLST11
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2763   .debug_loclists:000000d7 .LVUS11
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2793   .debug_loclists:000000f5 .LLST12
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2790   .debug_loclists:000000f3 .LVUS12
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:239    .text._ZN6Timer07setModeENS_4ModeE:00000000 .LFB57
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:308    .text._ZN6Timer07setModeENS_4ModeE:00000036 .LFE57
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2805   .debug_loclists:00000102 .LLST7
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2800   .debug_loclists:000000fe .LVUS7
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2832   .debug_loclists:0000011e .LLST8
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2827   .debug_loclists:0000011a .LVUS8
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2851   .debug_loclists:00000132 .LLST9
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2846   .debug_loclists:0000012e .LVUS9
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2870   .debug_loclists:00000146 .LLST10
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2865   .debug_loclists:00000142 .LVUS10
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:149    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 .LFB56
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:232    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000042 .LFE56
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2890   .debug_loclists:0000015b .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2885   .debug_loclists:00000157 .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2917   .debug_loclists:00000177 .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2912   .debug_loclists:00000173 .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2936   .debug_loclists:0000018b .LLST5
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2931   .debug_loclists:00000187 .LVUS5
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2955   .debug_loclists:0000019f .LLST6
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2950   .debug_loclists:0000019b .LVUS6
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:86     .text._ZN6Timer0D2Ev:00000000 .LFB54
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:100    .text._ZN6Timer0D2Ev:00000002 .LFE54
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:38     .text._ZN6Timer0C2Ev:00000000 .LFB51
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:77     .text._ZN6Timer0C2Ev:00000014 .LFE51
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2975   .debug_loclists:000001b4 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:2970   .debug_loclists:000001b0 .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:15     .text._Z7getTickv:00000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:31     .text._Z7getTickv:00000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:107    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LVL3
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:420    .text._ZN6Timer012getLastErrorEv:00000000 .LVL39
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:363    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000000 .LVL31
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:378    .text._ZN6Timer013setOutputModeENS_10OutputModeES0_:00000004 .LVL32
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:314    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000000 .LVL26
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:330    .text._ZN6Timer014setClockSourceENS_11ClockSourceE:00000006 .LVL27
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:238    .text._ZN6Timer07setModeENS_4ModeE:00000000 .LVL18
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:254    .text._ZN6Timer07setModeENS_4ModeE:00000006 .LVL19
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:258    .text._ZN6Timer07setModeENS_4ModeE:00000008 .LVL20
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:148    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000000 .LVL8
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:164    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000006 .LVL9
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:168    .text._ZN6Timer04initENS_4ModeENS_11ClockSourceE:00000008 .LVL10
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:37     .text._ZN6Timer0C2Ev:00000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\ccBp5UcH.s:803    .debug_info:00000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 __do_global_ctors

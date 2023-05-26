@@ -4,7 +4,6 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include "funsape/globalDefines.hpp"
-#include "funsape/device/hd44780.hpp"
 #include "funsape/peripheral/timer0.hpp"
 #include "funsape/peripheral/timer1.hpp"
 
