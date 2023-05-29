@@ -34,7 +34,7 @@ Discarded input sections
  .debug_line    0x00000000      0x343 build/sevenSegments.o
  .debug_str     0x00000000      0x1c7 build/sevenSegments.o
  .debug_line_str
-                0x00000000       0xbd build/sevenSegments.o
+                0x00000000       0xd3 build/sevenSegments.o
  .comment       0x00000000       0x13 build/sevenSegments.o
  .debug_frame   0x00000000       0x24 build/sevenSegments.o
  .text          0x00000000        0x0 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
@@ -472,13 +472,13 @@ END GROUP
  *(.debug_addr)
 
 .debug_line_str
-                0x00000000      0x16e
+                0x00000000      0x170
  *(.debug_line_str)
  .debug_line_str
-                0x00000000      0x11b build/main.o
-                                0x151 (size before relaxing)
+                0x00000000      0x11d build/main.o
+                                0x155 (size before relaxing)
  .debug_line_str
-                0x0000011b       0x53 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x0000011d       0x53 d:/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
                                  0x5f (size before relaxing)
 
 .debug_loclists
