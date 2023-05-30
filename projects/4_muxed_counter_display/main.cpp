@@ -19,7 +19,8 @@ vuint8_t nOvf = 0;
 
 int main()
 {
-    uint8_t valor = 4;
+    uint16_t valor = 1928;
+    uint8_t digitos[4];
 
     //Disable USART (Fix to solve bootloader issue)
     // UCSR0A = 0;
@@ -45,20 +46,18 @@ int main()
     sei(); // Enable interrupt
 
     while(1) {
-        //stopWatchStart();
-        while(1) {
-            sseg.updateDigitValues(&valor);
-            if(valor >= 255) {
-                valor = 0;
-            }
-            // Show number for a while
-            for(int a = 0; a < 10; a++) {
-                sseg.showNextDigit();
-                delayMs(16);
-            }
-            valor++;
+        uint16_t aux = valor;
+        for(uint8_t i = 0; i < 4; i++) {
+            digitos[i] = aux % 10;
+            aux /= 10;
         }
-        //stopWatchStop();
+        // Show number for a while
+        sseg.updateDigitValues(digitos);
+        valor++;
+        for(uint8_t t = 0; t < 8; t++) {
+            sseg.showNextDigit();
+            delayMs(16);
+        }
     }
     return 0;
 }
