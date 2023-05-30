@@ -22,55 +22,53 @@ int main()
     uint8_t valor = 4;
 
     //Disable USART (Fix to solve bootloader issue)
-    UCSR0A = 0;
-    UCSR0B = 0;
+    // UCSR0A = 0;
+    // UCSR0B = 0;
 
     //Config INT0
-    DDRB = 0x00;    // Setting portB as input for all pins
-    PORTB = 0xFF;   // setting weak high state
-    setBit(PCICR, PCIE0); //Enables PCI0, happens when PCINT7..0 changes
-    PCMSK0 = 0b00001111; // enabling PCINT 0,1,2,3
+    // DDRB = 0x00;    // Setting portB as input for all pins
+    // PORTB = 0xFF;   // setting weak high state
+    // setBit(PCICR, PCIE0); //Enables PCI0, happens when PCINT7..0 changes
+    // PCMSK0 = 0b00001111; // enabling PCINT 0,1,2,3
 
     //Timer1 configuration
-    timer1.setMode(Timer1::Mode::NORMAL);
-    timer1.setClockSource(Timer1::ClockSource::DISABLED);
-    timer1.activateOverflowInterrupt();
-    setBit(DDRB, PB5);
+    // timer1.setMode(Timer1::Mode::NORMAL);
+    // timer1.setClockSource(Timer1::ClockSource::DISABLED);
+    // timer1.activateOverflowInterrupt();
+    // setBit(DDRB, PB5);
 
     //Display Setup
     SevenSegmentsMuxDisplay sseg;
-    sseg.init(SevenSegmentsMuxDisplay::Digits::DIGITS_4, SevenSegmentsDisplayType::COMMON_ANODE);
     sseg.setPorts(&PORTD, &PORTC, PC0, LogicLevel::LOW);
-
+    sseg.init(SevenSegmentsMuxDisplay::Digits::DIGITS_4, SevenSegmentsDisplayType::COMMON_ANODE);
 
     sei(); // Enable interrupt
 
     while(1) {
-        stopWatchStart();
-        sseg.updateDigitValues(&valor);
+        //stopWatchStart();
         while(1) {
-            if (valor>=255){
+            sseg.updateDigitValues(&valor);
+            if(valor >= 255) {
                 valor = 0;
             }
             // Show number for a while
-            for(int a = 0; a < 100; a++) {
+            for(int a = 0; a < 10; a++) {
                 sseg.showNextDigit();
                 delayMs(16);
             }
-            delayMs(1000);
-            stopWatchStop();
+            valor++;
         }
+        //stopWatchStop();
     }
-
     return 0;
 }
 
-ISR(INT0_vect)
-{
-    //stopWatchStart();
-    //stopWatchStop();
+// ISR(INT0_vect)
+// {
+//     //stopWatchStart();
+//     //stopWatchStop();
 
-}
+// }
 
 
 void timer1OverflowCallback(void)
