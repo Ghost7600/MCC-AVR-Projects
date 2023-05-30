@@ -1,4 +1,5 @@
 #define F_CPU 16000000UL
+#define GLOBAL_DEFINES
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -62,6 +63,7 @@ void timer1OverflowCallback(void)
     nOvf++;
     timer1.setCounterValue(0);
 }
+
 
 void stopWatchStart(void)
 {

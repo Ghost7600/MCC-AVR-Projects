@@ -128,7 +128,7 @@ public:
     //! \brief      Display mode
     //! \details    Display mode enumeration.
     //!
-    enum class DisplayMode : bool_t { // qual a direção da escrita
+    enum class DisplayMode : bool_t {
         OVERWRITE   = false,
         SHIFT       = true,
     };
