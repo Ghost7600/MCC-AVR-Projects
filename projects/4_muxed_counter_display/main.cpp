@@ -7,6 +7,9 @@
 #include "funsape/globalDefines.hpp"
 #include "funsape/peripheral/timer0.hpp"
 #include "funsape/peripheral/timer1.hpp"
+#include "funsape/device/sevenSegmentsDisplay.hpp"
+#include "funsape/device/sevenSegmentsMuxDisplay.hpp"
+
 
 void stopWatchStart(void);
 void stopWatchStop(void);
@@ -16,7 +19,7 @@ vuint8_t nOvf = 0;
 
 int main()
 {
-    uint16_t counter = 1820;
+    uint8_t valor = 4;
 
     //Disable USART (Fix to solve bootloader issue)
     UCSR0A = 0;
@@ -34,17 +37,29 @@ int main()
     timer1.activateOverflowInterrupt();
     setBit(DDRB, PB5);
 
+    //Display Setup
+    SevenSegmentsMuxDisplay sseg;
+    sseg.init(SevenSegmentsMuxDisplay::Digits::DIGITS_4, SevenSegmentsDisplayType::COMMON_ANODE);
+    sseg.setPorts(&PORTD, &PORTC, PC0, LogicLevel::LOW);
+
+
     sei(); // Enable interrupt
 
     while(1) {
         stopWatchStart();
-        delayMs(1000);
-        // lcd.clearScreen();
-        // printf("qqr coisa\n");
-        // printf("Num=%d\n",num++)
-        // cplBit(PORTB, PB5);
-        // delayMs(250);
-        stopWatchStop();
+        sseg.updateDigitValues(&valor);
+        while(1) {
+            if (valor>=255){
+                valor = 0;
+            }
+            // Show number for a while
+            for(int a = 0; a < 100; a++) {
+                sseg.showNextDigit();
+                delayMs(16);
+            }
+            delayMs(1000);
+            stopWatchStop();
+        }
     }
 
     return 0;
