@@ -8,7 +8,7 @@
 #include "funsape/device/hd44780.hpp"
 #include "funsape/peripheral/int0.hpp"
 
-#define F_CPU 16000000
+#define F_CPU 16000000UL
 #define LEDDIR  DDRC
 #define LEDOUT  PORTC
 #define LEDBIT  PC0

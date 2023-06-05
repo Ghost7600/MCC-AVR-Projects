@@ -61,11 +61,11 @@ int main()
     while(1) {
         stopWatchStart();
         delayMs(1000);
-        // lcd.clearScreen();
-        // printf("qqr coisa\n");
-        // printf("Num=%d\n",num++)
-        // cplBit(PORTB, PB5);
-        // delayMs(250);
+        lcd.clearScreen();
+        printf("qqr coisa\n");
+        //printf("Num=%d\n",num)
+        cplBit(PORTB, PB5);
+        delayMs(250);
         stopWatchStop();
 
         lcd.clearScreen();

@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 1
 
 
    1               		.file	"timer1.cpp"
@@ -10,7 +10,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
    7               		.text
    8               	.Ltext0:
    9               		.cfi_sections	.debug_frame
-  10               		.file 0 "C:\\D\\IFSC\\MCC\\projects\\segundo_display_project" "funsape/peripheral/timer1.cpp"
+  10               		.file 0 "F:\\IMPORTANTE\\Faculdade\\MCC\\MCC-AVR-Projects\\projects\\segundo_display_project" "fun
   11               		.section	.text._Z7getTickv,"ax",@progbits
   12               		.weak	_Z7getTickv
   14               	_Z7getTickv:
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
   40:funsape/peripheral/../globalDefines.hpp **** #include <stdio.h>
   41:funsape/peripheral/../globalDefines.hpp **** #include <stdlib.h>
   42:funsape/peripheral/../globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 2
 
 
   43:funsape/peripheral/../globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
   97:funsape/peripheral/../globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:funsape/peripheral/../globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:funsape/peripheral/../globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 3
 
 
  100:funsape/peripheral/../globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  154:funsape/peripheral/../globalDefines.hpp **** enum class Axis : cuint8_t {
  155:funsape/peripheral/../globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:funsape/peripheral/../globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 4
 
 
  157:funsape/peripheral/../globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  211:funsape/peripheral/../globalDefines.hpp ****     // General error codes
  212:funsape/peripheral/../globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:funsape/peripheral/../globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 5
 
 
  214:funsape/peripheral/../globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  268:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 6
 
 
  271:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  325:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 7
 
 
  328:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  382:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 8
 
 
  385:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  439:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 9
 
 
  442:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  496:funsape/peripheral/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:funsape/peripheral/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:funsape/peripheral/../globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 10
 
 
  499:funsape/peripheral/../globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  553:funsape/peripheral/../globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:funsape/peripheral/../globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:funsape/peripheral/../globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 11
 
 
  556:funsape/peripheral/../globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  610:funsape/peripheral/../globalDefines.hpp **** #endif
  611:funsape/peripheral/../globalDefines.hpp **** #ifndef cplMaskOffset
  612:funsape/peripheral/../globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 12
 
 
  613:funsape/peripheral/../globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  667:funsape/peripheral/../globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:funsape/peripheral/../globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:funsape/peripheral/../globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 13
 
 
  670:funsape/peripheral/../globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  724:funsape/peripheral/../globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:funsape/peripheral/../globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:funsape/peripheral/../globalDefines.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 14
 
 
  727:funsape/peripheral/../globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  781:funsape/peripheral/../globalDefines.hpp **** }
  782:funsape/peripheral/../globalDefines.hpp **** 
  783:funsape/peripheral/../globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 15
 
 
  784:funsape/peripheral/../globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
    6:funsape/peripheral/timer1.cpp **** //! \version        23.04
    7:funsape/peripheral/timer1.cpp **** //! \copyright      license
    8:funsape/peripheral/timer1.cpp **** //! \details        TIMER1 peripheral control for the FunSAPE AVR8 Library
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 16
 
 
    9:funsape/peripheral/timer1.cpp **** //! \todo           Todo list
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
   40               		.loc 2 62 1 is_stmt 1 view -0
   41               		.cfi_startproc
   42               	/* prologue: function */
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 17
 
 
   43               	/* frame size = 0 */
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
   85               	.LVL2:
   86               	.LFB59:
   77:funsape/peripheral/timer1.cpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 18
 
 
   78:funsape/peripheral/timer1.cpp **** Timer1::~Timer1()
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  112:funsape/peripheral/timer1.cpp ****     TCCR1B          = auxTccr1B;
  113:funsape/peripheral/timer1.cpp **** 
  114:funsape/peripheral/timer1.cpp ****     // Update class members
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 19
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 19
 
 
  115:funsape/peripheral/timer1.cpp ****     this->_mode             = mode_p;
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  169:funsape/peripheral/timer1.cpp **** 
  170:funsape/peripheral/timer1.cpp ****     // Update class members
  171:funsape/peripheral/timer1.cpp ****     this->_clockSource      = clockSource_p;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 20
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 20
 
 
  172:funsape/peripheral/timer1.cpp **** 
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  226:funsape/peripheral/timer1.cpp ****     this->_lastError = Error::NONE;
  227:funsape/peripheral/timer1.cpp ****     debugMessage(Error::NONE, DEBUG_TIMER1);
  228:funsape/peripheral/timer1.cpp ****     return true;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 21
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 21
 
 
  229:funsape/peripheral/timer1.cpp **** }
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  283:funsape/peripheral/timer1.cpp **** 
  284:funsape/peripheral/timer1.cpp **** //!
  285:funsape/peripheral/timer1.cpp **** //! \brief          TIMER1 Compare B Match interrupt service routine
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 22
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 22
 
 
  286:funsape/peripheral/timer1.cpp **** //! \details        TIMER1 Compare B Match interrupt service routine.
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  130 000c 3F4F      		sbci r19,-1
  131               	.LVL6:
  132               		.loc 2 318 1 discriminator 1 view .LVU30
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 23
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 23
 
 
  133 000e 01F4      		brne .L4
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  179               		.loc 2 98 5 is_stmt 1 view .LVU41
  101:funsape/peripheral/timer1.cpp ****     clrMaskOffset(auxTccr1A, constModeMaskPart1, constModeOffsetPart1);
  180               		.loc 2 101 5 view .LVU42
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 24
 
 
  102:funsape/peripheral/timer1.cpp ****     clrMaskOffset(auxTccr1B, constModeMaskPart2, constModeOffsetPart2);
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  221               		.loc 2 116 29 is_stmt 0 view .LVU56
  222 003e 4183      		std Z+1,r20
  117:funsape/peripheral/timer1.cpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 25
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 25
 
 
  223               		.loc 2 117 5 is_stmt 1 view .LVU57
@@ -1498,7 +1498,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  128:funsape/peripheral/timer1.cpp **** 
  268               		.loc 2 128 59 view .LVU69
  131:funsape/peripheral/timer1.cpp ****     uint8_t auxTccr1B = TCCR1B;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 26
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 26
 
 
  269               		.loc 2 131 5 view .LVU70
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  144:funsape/peripheral/timer1.cpp **** 
  311               		.loc 2 144 21 is_stmt 0 view .LVU83
  312 0036 8C93      		st X,r24
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 27
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 27
 
 
  147:funsape/peripheral/timer1.cpp **** 
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  354 0006 B0E0      		ldi r27,0
  355 0008 8C91      		ld r24,X
  356               	.LVL27:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 28
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 28
 
 
  164:funsape/peripheral/timer1.cpp ****     setMaskOffset(auxTccr1B, ((uint8_t)clockSource_p), constClockSourceOffset);
@@ -1678,7 +1678,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  398 0000 DC01      		movw r26,r24
  182:funsape/peripheral/timer1.cpp **** 
  399               		.loc 2 182 5 is_stmt 1 view .LVU114
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 29
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 29
 
 
  182:funsape/peripheral/timer1.cpp **** 
@@ -1738,7 +1738,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  440 0026 1E92      		st -X,__zero_reg__
  441 0028 1397      		sbiw r26,3
  198:funsape/peripheral/timer1.cpp ****     return true;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 30
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 30
 
 
  442               		.loc 2 198 5 is_stmt 1 view .LVU129
@@ -1798,7 +1798,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  485               	.LVL43:
  486               	.L15:
  223:funsape/peripheral/timer1.cpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 31
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 31
 
 
  487               		.loc 2 223 5 view .LVU143
@@ -1858,7 +1858,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  530               	.L__stack_usage = 0
  235:funsape/peripheral/timer1.cpp **** }
  531               		.loc 2 235 5 view .LVU157
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 32
 
 
  236:funsape/peripheral/timer1.cpp **** 
@@ -1918,7 +1918,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  271:funsape/peripheral/timer1.cpp ****     return;
  584               		.loc 2 271 1 is_stmt 1 view -0
  585               		.cfi_startproc
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 33
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 33
 
 
  586               	/* prologue: function */
@@ -1978,7 +1978,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  638               		.cfi_def_cfa_offset 7
  639               		.cfi_offset 20, -6
  640 0010 5F93      		push r21
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 34
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 34
 
 
  641               		.cfi_def_cfa_offset 8
@@ -2038,7 +2038,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  692 0044 1F90      		pop r1
  693 0046 1895      		reti
  694               		.cfi_endproc
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 35
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 35
 
 
  695               	.LFE71:
@@ -2098,7 +2098,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  750               	/* frame size = 0 */
  751               	/* stack size = 15 */
  752               	.L__stack_usage = 15
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 36
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 36
 
 
  299:funsape/peripheral/timer1.cpp **** }
@@ -2158,7 +2158,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  805               		.cfi_def_cfa_offset 8
  806               		.cfi_offset 21, -7
  807 0012 6F93      		push r22
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 37
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 37
 
 
  808               		.cfi_def_cfa_offset 9
@@ -2218,7 +2218,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  859               	.LFE73:
  861               		.section	.text.__vector_13,"ax",@progbits
  862               	.global	__vector_13
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 38
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 38
 
 
  864               	__vector_13:
@@ -2278,7 +2278,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  317:funsape/peripheral/timer1.cpp **** }
  917               		.loc 2 317 5 view .LVU185
  317:funsape/peripheral/timer1.cpp **** }
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 39
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 39
 
 
  918               		.loc 2 317 27 is_stmt 0 view .LVU186
@@ -2338,7 +2338,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  976               	/* frame size = 0 */
  977               	/* stack size = 0 */
  978               	.L__stack_usage = 0
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 40
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 40
 
 
  979               		.loc 2 318 1 is_stmt 0 view .LVU191
@@ -2363,429 +2363,429 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 1
  1000      00
  1001               		.text
  1002               	.Letext0:
- 1003               		.file 3 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
+ 1003               		.file 3 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\stdint
  1004               		.file 4 "funsape/peripheral/timer1.hpp"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 41
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 41
 
 
 DEFINED SYMBOLS
-                            *ABS*:00000000 timer1.cpp
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:2      *ABS*:0000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3      *ABS*:0000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:4      *ABS*:0000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:5      *ABS*:00000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:6      *ABS*:00000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:14     .text._Z7getTickv:00000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:17     .text._Z7getTickv:00000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:18     .text._Z7getTickv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:23     .text._Z7getTickv:00000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:24     .text._Z7getTickv:00000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:30     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:36     .text._ZN6Timer1C2Ev:00000000 _ZN6Timer1C2Ev
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:40     .text._ZN6Timer1C2Ev:00000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:41     .text._ZN6Timer1C2Ev:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:46     .text._ZN6Timer1C2Ev:00000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:50     .text._ZN6Timer1C2Ev:00000004 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:51     .text._ZN6Timer1C2Ev:00000004 .Loc.6
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:52     .text._ZN6Timer1C2Ev:00000004 .Loc.7
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:53     .text._ZN6Timer1C2Ev:00000004 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:55     .text._ZN6Timer1C2Ev:00000006 .Loc.9
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:56     .text._ZN6Timer1C2Ev:00000006 .Loc.10
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:58     .text._ZN6Timer1C2Ev:00000008 .Loc.11
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:59     .text._ZN6Timer1C2Ev:00000008 .Loc.12
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:62     .text._ZN6Timer1C2Ev:0000000a .Loc.13
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:65     .text._ZN6Timer1C2Ev:0000000e .Loc.14
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:66     .text._ZN6Timer1C2Ev:0000000e .Loc.15
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:69     .text._ZN6Timer1C2Ev:00000012 .Loc.16
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:70     .text._ZN6Timer1C2Ev:00000012 .Loc.17
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:71     .text._ZN6Timer1C2Ev:00000012 .Loc.18
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:74     .text._ZN6Timer1C2Ev:00000012 .Loc.19
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:76     .text._ZN6Timer1C2Ev:00000014 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:36     .text._ZN6Timer1C2Ev:00000000 _ZN6Timer1C1Ev
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:84     .text._ZN6Timer1D2Ev:00000000 _ZN6Timer1D2Ev
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:87     .text._ZN6Timer1D2Ev:00000000 .Loc.20
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:88     .text._ZN6Timer1D2Ev:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:93     .text._ZN6Timer1D2Ev:00000000 .Loc.21
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:94     .text._ZN6Timer1D2Ev:00000000 .Loc.22
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:95     .text._ZN6Timer1D2Ev:00000000 .Loc.23
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:97     .text._ZN6Timer1D2Ev:00000000 .Loc.24
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:99     .text._ZN6Timer1D2Ev:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:84     .text._ZN6Timer1D2Ev:00000000 _ZN6Timer1D1Ev
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:106    .text._Z41__static_initialization_and_destruction_0ii:00000000 _Z41__static_initialization_and_destruction_0ii
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:109    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:110    .text._Z41__static_initialization_and_destruction_0ii:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:115    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.26
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:118    .text._Z41__static_initialization_and_destruction_0ii:00000004 .Loc.27
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:124    .text._Z41__static_initialization_and_destruction_0ii:00000008 .Loc.28
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:128    .text._Z41__static_initialization_and_destruction_0ii:0000000a .Loc.29
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:132    .text._Z41__static_initialization_and_destruction_0ii:0000000e .Loc.30
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:134    .text._Z41__static_initialization_and_destruction_0ii:00000010 .Loc.31
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:999    .bss.timer1:00000000 timer1
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:139    .text._Z41__static_initialization_and_destruction_0ii:00000018 .Loc.32
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:141    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:147    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000000 _ZN6Timer14initENS_4ModeENS_11ClockSourceE
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:150    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000000 .Loc.33
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 42
+                            *ABS*:0000000000000000 timer1.cpp
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:14     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:17     .text._Z7getTickv:0000000000000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:18     .text._Z7getTickv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:23     .text._Z7getTickv:0000000000000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:24     .text._Z7getTickv:0000000000000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:30     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:36     .text._ZN6Timer1C2Ev:0000000000000000 _ZN6Timer1C2Ev
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:40     .text._ZN6Timer1C2Ev:0000000000000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:41     .text._ZN6Timer1C2Ev:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:46     .text._ZN6Timer1C2Ev:0000000000000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:50     .text._ZN6Timer1C2Ev:0000000000000004 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:51     .text._ZN6Timer1C2Ev:0000000000000004 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:52     .text._ZN6Timer1C2Ev:0000000000000004 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:53     .text._ZN6Timer1C2Ev:0000000000000004 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:55     .text._ZN6Timer1C2Ev:0000000000000006 .Loc.9
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:56     .text._ZN6Timer1C2Ev:0000000000000006 .Loc.10
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:58     .text._ZN6Timer1C2Ev:0000000000000008 .Loc.11
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:59     .text._ZN6Timer1C2Ev:0000000000000008 .Loc.12
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:62     .text._ZN6Timer1C2Ev:000000000000000a .Loc.13
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:65     .text._ZN6Timer1C2Ev:000000000000000e .Loc.14
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:66     .text._ZN6Timer1C2Ev:000000000000000e .Loc.15
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:69     .text._ZN6Timer1C2Ev:0000000000000012 .Loc.16
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:70     .text._ZN6Timer1C2Ev:0000000000000012 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:71     .text._ZN6Timer1C2Ev:0000000000000012 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:74     .text._ZN6Timer1C2Ev:0000000000000012 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:76     .text._ZN6Timer1C2Ev:0000000000000014 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:36     .text._ZN6Timer1C2Ev:0000000000000000 _ZN6Timer1C1Ev
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:84     .text._ZN6Timer1D2Ev:0000000000000000 _ZN6Timer1D2Ev
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:87     .text._ZN6Timer1D2Ev:0000000000000000 .Loc.20
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:88     .text._ZN6Timer1D2Ev:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:93     .text._ZN6Timer1D2Ev:0000000000000000 .Loc.21
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:94     .text._ZN6Timer1D2Ev:0000000000000000 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:95     .text._ZN6Timer1D2Ev:0000000000000000 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:97     .text._ZN6Timer1D2Ev:0000000000000000 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:99     .text._ZN6Timer1D2Ev:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:84     .text._ZN6Timer1D2Ev:0000000000000000 _ZN6Timer1D1Ev
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:106    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 _Z41__static_initialization_and_destruction_0ii
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:109    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:110    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:115    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:118    .text._Z41__static_initialization_and_destruction_0ii:0000000000000004 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:124    .text._Z41__static_initialization_and_destruction_0ii:0000000000000008 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:128    .text._Z41__static_initialization_and_destruction_0ii:000000000000000a .Loc.29
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:132    .text._Z41__static_initialization_and_destruction_0ii:000000000000000e .Loc.30
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:134    .text._Z41__static_initialization_and_destruction_0ii:0000000000000010 .Loc.31
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:999    .bss.timer1:0000000000000000 timer1
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:139    .text._Z41__static_initialization_and_destruction_0ii:0000000000000018 .Loc.32
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:141    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:147    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000000 _ZN6Timer14initENS_4ModeENS_11ClockSourceE
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:150    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000000 .Loc.33
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 42
 
 
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:151    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:152    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000000 .Loc.34
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:165    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000008 .Loc.35
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:166    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000008 .Loc.36
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:167    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000008 .Loc.37
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:168    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000008 .Loc.38
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:173    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000e .Loc.39
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:174    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000e .Loc.40
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:179    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000014 .Loc.41
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:180    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000014 .Loc.42
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:181    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000014 .Loc.43
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:184    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000016 .Loc.44
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:187    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000018 .Loc.45
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:192    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000001e .Loc.46
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:205    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000034 .Loc.47
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:208    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000036 .Loc.48
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:211    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000038 .Loc.49
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:212    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000038 .Loc.50
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:214    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000003a .Loc.51
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:215    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000003a .Loc.52
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:217    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000003c .Loc.53
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:218    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000003c .Loc.54
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:220    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000003e .Loc.55
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:221    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000003e .Loc.56
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:223    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000040 .Loc.57
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:224    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000040 .Loc.58
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:227    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000042 .Loc.59
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:230    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000046 .Loc.60
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:231    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000046 .Loc.61
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:234    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000004a .Loc.62
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:235    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000004a .Loc.63
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:236    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000004a .Loc.64
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:237    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000004a .Loc.65
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:243    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000052 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:249    .text._ZN6Timer17setModeENS_4ModeE:00000000 _ZN6Timer17setModeENS_4ModeE
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:252    .text._ZN6Timer17setModeENS_4ModeE:00000000 .Loc.66
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:253    .text._ZN6Timer17setModeENS_4ModeE:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:254    .text._ZN6Timer17setModeENS_4ModeE:00000000 .Loc.67
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:267    .text._ZN6Timer17setModeENS_4ModeE:00000008 .Loc.68
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:268    .text._ZN6Timer17setModeENS_4ModeE:00000008 .Loc.69
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:269    .text._ZN6Timer17setModeENS_4ModeE:00000008 .Loc.70
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:270    .text._ZN6Timer17setModeENS_4ModeE:00000008 .Loc.71
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:275    .text._ZN6Timer17setModeENS_4ModeE:0000000e .Loc.72
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:276    .text._ZN6Timer17setModeENS_4ModeE:0000000e .Loc.73
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:281    .text._ZN6Timer17setModeENS_4ModeE:00000014 .Loc.74
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:282    .text._ZN6Timer17setModeENS_4ModeE:00000014 .Loc.75
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:283    .text._ZN6Timer17setModeENS_4ModeE:00000014 .Loc.76
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:286    .text._ZN6Timer17setModeENS_4ModeE:00000016 .Loc.77
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:289    .text._ZN6Timer17setModeENS_4ModeE:00000018 .Loc.78
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:294    .text._ZN6Timer17setModeENS_4ModeE:0000001e .Loc.79
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:307    .text._ZN6Timer17setModeENS_4ModeE:00000034 .Loc.80
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:308    .text._ZN6Timer17setModeENS_4ModeE:00000034 .Loc.81
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:310    .text._ZN6Timer17setModeENS_4ModeE:00000036 .Loc.82
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:311    .text._ZN6Timer17setModeENS_4ModeE:00000036 .Loc.83
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:313    .text._ZN6Timer17setModeENS_4ModeE:00000038 .Loc.84
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:314    .text._ZN6Timer17setModeENS_4ModeE:00000038 .Loc.85
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:316    .text._ZN6Timer17setModeENS_4ModeE:0000003a .Loc.86
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 43
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:151    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:152    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000000 .Loc.34
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:165    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000008 .Loc.35
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:166    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000008 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:167    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000008 .Loc.37
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:168    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000008 .Loc.38
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:173    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000000e .Loc.39
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:174    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000000e .Loc.40
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:179    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000014 .Loc.41
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:180    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000014 .Loc.42
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:181    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000014 .Loc.43
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:184    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000016 .Loc.44
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:187    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000018 .Loc.45
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:192    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000001e .Loc.46
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:205    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000034 .Loc.47
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:208    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000036 .Loc.48
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:211    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000038 .Loc.49
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:212    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000038 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:214    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000003a .Loc.51
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:215    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000003a .Loc.52
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:217    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000003c .Loc.53
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:218    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000003c .Loc.54
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:220    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000003e .Loc.55
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:221    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000003e .Loc.56
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:223    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000040 .Loc.57
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:224    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000040 .Loc.58
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:227    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000042 .Loc.59
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:230    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000046 .Loc.60
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:231    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000046 .Loc.61
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:234    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000004a .Loc.62
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:235    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000004a .Loc.63
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:236    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000004a .Loc.64
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:237    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000004a .Loc.65
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:243    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000052 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:249    .text._ZN6Timer17setModeENS_4ModeE:0000000000000000 _ZN6Timer17setModeENS_4ModeE
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:252    .text._ZN6Timer17setModeENS_4ModeE:0000000000000000 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:253    .text._ZN6Timer17setModeENS_4ModeE:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:254    .text._ZN6Timer17setModeENS_4ModeE:0000000000000000 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:267    .text._ZN6Timer17setModeENS_4ModeE:0000000000000008 .Loc.68
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:268    .text._ZN6Timer17setModeENS_4ModeE:0000000000000008 .Loc.69
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:269    .text._ZN6Timer17setModeENS_4ModeE:0000000000000008 .Loc.70
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:270    .text._ZN6Timer17setModeENS_4ModeE:0000000000000008 .Loc.71
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:275    .text._ZN6Timer17setModeENS_4ModeE:000000000000000e .Loc.72
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:276    .text._ZN6Timer17setModeENS_4ModeE:000000000000000e .Loc.73
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:281    .text._ZN6Timer17setModeENS_4ModeE:0000000000000014 .Loc.74
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:282    .text._ZN6Timer17setModeENS_4ModeE:0000000000000014 .Loc.75
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:283    .text._ZN6Timer17setModeENS_4ModeE:0000000000000014 .Loc.76
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:286    .text._ZN6Timer17setModeENS_4ModeE:0000000000000016 .Loc.77
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:289    .text._ZN6Timer17setModeENS_4ModeE:0000000000000018 .Loc.78
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:294    .text._ZN6Timer17setModeENS_4ModeE:000000000000001e .Loc.79
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:307    .text._ZN6Timer17setModeENS_4ModeE:0000000000000034 .Loc.80
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:308    .text._ZN6Timer17setModeENS_4ModeE:0000000000000034 .Loc.81
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:310    .text._ZN6Timer17setModeENS_4ModeE:0000000000000036 .Loc.82
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:311    .text._ZN6Timer17setModeENS_4ModeE:0000000000000036 .Loc.83
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:313    .text._ZN6Timer17setModeENS_4ModeE:0000000000000038 .Loc.84
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:314    .text._ZN6Timer17setModeENS_4ModeE:0000000000000038 .Loc.85
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:316    .text._ZN6Timer17setModeENS_4ModeE:000000000000003a .Loc.86
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 43
 
 
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:317    .text._ZN6Timer17setModeENS_4ModeE:0000003a .Loc.87
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:320    .text._ZN6Timer17setModeENS_4ModeE:0000003e .Loc.88
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:321    .text._ZN6Timer17setModeENS_4ModeE:0000003e .Loc.89
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:322    .text._ZN6Timer17setModeENS_4ModeE:0000003e .Loc.90
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:323    .text._ZN6Timer17setModeENS_4ModeE:0000003e .Loc.91
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:327    .text._ZN6Timer17setModeENS_4ModeE:00000040 .Loc.92
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:331    .text._ZN6Timer17setModeENS_4ModeE:00000046 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:337    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000000 _ZN6Timer114setClockSourceENS_11ClockSourceE
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:340    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000000 .Loc.93
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:341    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:346    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000000 .Loc.94
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:349    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000004 .Loc.95
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:350    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000004 .Loc.96
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:351    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000004 .Loc.97
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:352    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000004 .Loc.98
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:357    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000a .Loc.99
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:360    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000c .Loc.100
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:363    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000e .Loc.101
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:364    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000e .Loc.102
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:366    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000010 .Loc.103
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:367    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000010 .Loc.104
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:369    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000012 .Loc.105
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:370    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000012 .Loc.106
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:373    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000016 .Loc.107
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:374    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000016 .Loc.108
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:375    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000016 .Loc.109
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:376    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000016 .Loc.110
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:380    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000018 .Loc.111
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:382    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000001a L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:388    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000000 _ZN6Timer113setOutputModeENS_10OutputModeES0_
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:391    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000000 .Loc.112
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:392    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:397    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000000 .Loc.113
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:399    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000002 .Loc.114
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:400    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000002 .Loc.115
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:401    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000002 .Loc.116
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:402    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000002 .Loc.117
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:407    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000008 .Loc.118
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:410    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000a .Loc.119
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:413    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000c .Loc.120
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:419    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000014 .Loc.121
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:422    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000016 .Loc.122
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:425    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000018 .Loc.123
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:430    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000001e .Loc.124
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:433    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000020 .Loc.125
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:434    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000020 .Loc.126
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:436    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000022 .Loc.127
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:437    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000022 .Loc.128
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:442    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000002a .Loc.129
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:443    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000002a .Loc.130
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:444    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000002a .Loc.131
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:445    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000002a .Loc.132
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:449    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000002e L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:455    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000000 _ZN6Timer119setInputCaptureModeE4Edgeb
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:458    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000000 .Loc.133
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:459    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:464    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000000 .Loc.134
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 44
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:317    .text._ZN6Timer17setModeENS_4ModeE:000000000000003a .Loc.87
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:320    .text._ZN6Timer17setModeENS_4ModeE:000000000000003e .Loc.88
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:321    .text._ZN6Timer17setModeENS_4ModeE:000000000000003e .Loc.89
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:322    .text._ZN6Timer17setModeENS_4ModeE:000000000000003e .Loc.90
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:323    .text._ZN6Timer17setModeENS_4ModeE:000000000000003e .Loc.91
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:327    .text._ZN6Timer17setModeENS_4ModeE:0000000000000040 .Loc.92
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:331    .text._ZN6Timer17setModeENS_4ModeE:0000000000000046 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:337    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000000 _ZN6Timer114setClockSourceENS_11ClockSourceE
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:340    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000000 .Loc.93
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:341    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:346    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000000 .Loc.94
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:349    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000004 .Loc.95
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:350    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000004 .Loc.96
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:351    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000004 .Loc.97
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:352    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000004 .Loc.98
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:357    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:000000000000000a .Loc.99
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:360    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:000000000000000c .Loc.100
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:363    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:000000000000000e .Loc.101
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:364    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:000000000000000e .Loc.102
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:366    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000010 .Loc.103
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:367    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000010 .Loc.104
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:369    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000012 .Loc.105
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:370    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000012 .Loc.106
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:373    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000016 .Loc.107
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:374    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000016 .Loc.108
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:375    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000016 .Loc.109
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:376    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000016 .Loc.110
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:380    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000018 .Loc.111
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:382    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:000000000000001a L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:388    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000000 _ZN6Timer113setOutputModeENS_10OutputModeES0_
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:391    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000000 .Loc.112
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:392    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:397    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000000 .Loc.113
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:399    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000002 .Loc.114
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:400    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000002 .Loc.115
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:401    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000002 .Loc.116
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:402    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000002 .Loc.117
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:407    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000008 .Loc.118
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:410    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000000a .Loc.119
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:413    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000000c .Loc.120
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:419    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000014 .Loc.121
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:422    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000016 .Loc.122
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:425    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000018 .Loc.123
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:430    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000001e .Loc.124
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:433    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000020 .Loc.125
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:434    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000020 .Loc.126
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:436    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000022 .Loc.127
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:437    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000022 .Loc.128
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:442    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000002a .Loc.129
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:443    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000002a .Loc.130
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:444    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000002a .Loc.131
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:445    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000002a .Loc.132
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:449    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000002e L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:455    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000000 _ZN6Timer119setInputCaptureModeE4Edgeb
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:458    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000000 .Loc.133
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:459    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:464    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000000 .Loc.134
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 44
 
 
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:467    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000004 .Loc.135
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:468    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000004 .Loc.136
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:469    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000004 .Loc.137
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:470    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000004 .Loc.138
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:473    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000008 .Loc.139
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:476    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000c .Loc.140
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:480    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000e .Loc.141
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:483    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000012 .Loc.142
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:487    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000014 .Loc.143
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:488    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000014 .Loc.144
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:490    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000018 .Loc.145
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:491    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000018 .Loc.146
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:494    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000001c .Loc.147
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:495    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000001c .Loc.148
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:496    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000001c .Loc.149
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:497    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000001c .Loc.150
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:501    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000001e .Loc.151
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:505    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000020 .Loc.152
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:508    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000022 .Loc.153
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:511    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000024 .Loc.154
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:514    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000026 .Loc.155
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:516    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000028 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:522    .text._ZN6Timer112getLastErrorEv:00000000 _ZN6Timer112getLastErrorEv
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:525    .text._ZN6Timer112getLastErrorEv:00000000 .Loc.156
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:526    .text._ZN6Timer112getLastErrorEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:531    .text._ZN6Timer112getLastErrorEv:00000000 .Loc.157
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:532    .text._ZN6Timer112getLastErrorEv:00000000 .Loc.158
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:538    .text._ZN6Timer112getLastErrorEv:00000006 .Loc.159
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:540    .text._ZN6Timer112getLastErrorEv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:546    .text._Z22timer1CompareACallbackv:00000000 _Z22timer1CompareACallbackv
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:548    .text._Z22timer1CompareACallbackv:00000000 .Loc.160
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:549    .text._Z22timer1CompareACallbackv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:554    .text._Z22timer1CompareACallbackv:00000000 .Loc.161
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:556    .text._Z22timer1CompareACallbackv:00000000 .Loc.162
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:558    .text._Z22timer1CompareACallbackv:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:564    .text._Z22timer1CompareBCallbackv:00000000 _Z22timer1CompareBCallbackv
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:566    .text._Z22timer1CompareBCallbackv:00000000 .Loc.163
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:567    .text._Z22timer1CompareBCallbackv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:572    .text._Z22timer1CompareBCallbackv:00000000 .Loc.164
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:574    .text._Z22timer1CompareBCallbackv:00000000 .Loc.165
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:576    .text._Z22timer1CompareBCallbackv:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:582    .text._Z26timer1InputCaptureCallbackv:00000000 _Z26timer1InputCaptureCallbackv
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:584    .text._Z26timer1InputCaptureCallbackv:00000000 .Loc.166
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:585    .text._Z26timer1InputCaptureCallbackv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:590    .text._Z26timer1InputCaptureCallbackv:00000000 .Loc.167
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:592    .text._Z26timer1InputCaptureCallbackv:00000000 .Loc.168
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:594    .text._Z26timer1InputCaptureCallbackv:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:600    .text._Z22timer1OverflowCallbackv:00000000 _Z22timer1OverflowCallbackv
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:602    .text._Z22timer1OverflowCallbackv:00000000 .Loc.169
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:603    .text._Z22timer1OverflowCallbackv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:608    .text._Z22timer1OverflowCallbackv:00000000 .Loc.170
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:610    .text._Z22timer1OverflowCallbackv:00000000 .Loc.171
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:612    .text._Z22timer1OverflowCallbackv:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:618    .text.__vector_11:00000000 __vector_11
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:620    .text.__vector_11:00000000 .Loc.172
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:621    .text.__vector_11:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:671    .text.__vector_11:00000022 .Loc.173
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 45
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:467    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000004 .Loc.135
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:468    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000004 .Loc.136
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:469    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000004 .Loc.137
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:470    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000004 .Loc.138
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:473    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000008 .Loc.139
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:476    .text._ZN6Timer119setInputCaptureModeE4Edgeb:000000000000000c .Loc.140
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:480    .text._ZN6Timer119setInputCaptureModeE4Edgeb:000000000000000e .Loc.141
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:483    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000012 .Loc.142
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:487    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000014 .Loc.143
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:488    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000014 .Loc.144
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:490    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000018 .Loc.145
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:491    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000018 .Loc.146
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:494    .text._ZN6Timer119setInputCaptureModeE4Edgeb:000000000000001c .Loc.147
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:495    .text._ZN6Timer119setInputCaptureModeE4Edgeb:000000000000001c .Loc.148
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:496    .text._ZN6Timer119setInputCaptureModeE4Edgeb:000000000000001c .Loc.149
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:497    .text._ZN6Timer119setInputCaptureModeE4Edgeb:000000000000001c .Loc.150
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:501    .text._ZN6Timer119setInputCaptureModeE4Edgeb:000000000000001e .Loc.151
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:505    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000020 .Loc.152
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:508    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000022 .Loc.153
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:511    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000024 .Loc.154
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:514    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000026 .Loc.155
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:516    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000028 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:522    .text._ZN6Timer112getLastErrorEv:0000000000000000 _ZN6Timer112getLastErrorEv
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:525    .text._ZN6Timer112getLastErrorEv:0000000000000000 .Loc.156
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:526    .text._ZN6Timer112getLastErrorEv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:531    .text._ZN6Timer112getLastErrorEv:0000000000000000 .Loc.157
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:532    .text._ZN6Timer112getLastErrorEv:0000000000000000 .Loc.158
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:538    .text._ZN6Timer112getLastErrorEv:0000000000000006 .Loc.159
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:540    .text._ZN6Timer112getLastErrorEv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:546    .text._Z22timer1CompareACallbackv:0000000000000000 _Z22timer1CompareACallbackv
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:548    .text._Z22timer1CompareACallbackv:0000000000000000 .Loc.160
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:549    .text._Z22timer1CompareACallbackv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:554    .text._Z22timer1CompareACallbackv:0000000000000000 .Loc.161
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:556    .text._Z22timer1CompareACallbackv:0000000000000000 .Loc.162
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:558    .text._Z22timer1CompareACallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:564    .text._Z22timer1CompareBCallbackv:0000000000000000 _Z22timer1CompareBCallbackv
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:566    .text._Z22timer1CompareBCallbackv:0000000000000000 .Loc.163
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:567    .text._Z22timer1CompareBCallbackv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:572    .text._Z22timer1CompareBCallbackv:0000000000000000 .Loc.164
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:574    .text._Z22timer1CompareBCallbackv:0000000000000000 .Loc.165
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:576    .text._Z22timer1CompareBCallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:582    .text._Z26timer1InputCaptureCallbackv:0000000000000000 _Z26timer1InputCaptureCallbackv
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:584    .text._Z26timer1InputCaptureCallbackv:0000000000000000 .Loc.166
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:585    .text._Z26timer1InputCaptureCallbackv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:590    .text._Z26timer1InputCaptureCallbackv:0000000000000000 .Loc.167
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:592    .text._Z26timer1InputCaptureCallbackv:0000000000000000 .Loc.168
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:594    .text._Z26timer1InputCaptureCallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:600    .text._Z22timer1OverflowCallbackv:0000000000000000 _Z22timer1OverflowCallbackv
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:602    .text._Z22timer1OverflowCallbackv:0000000000000000 .Loc.169
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:603    .text._Z22timer1OverflowCallbackv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:608    .text._Z22timer1OverflowCallbackv:0000000000000000 .Loc.170
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:610    .text._Z22timer1OverflowCallbackv:0000000000000000 .Loc.171
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:612    .text._Z22timer1OverflowCallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:618    .text.__vector_11:0000000000000000 __vector_11
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:620    .text.__vector_11:0000000000000000 .Loc.172
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:621    .text.__vector_11:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:671    .text.__vector_11:0000000000000022 .Loc.173
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 45
 
 
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:672    .text.__vector_11:00000022 .Loc.174
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:676    .text.__vector_11:00000026 .Loc.175
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:694    .text.__vector_11:00000048 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:700    .text.__vector_12:00000000 __vector_12
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:702    .text.__vector_12:00000000 .Loc.176
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:703    .text.__vector_12:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:753    .text.__vector_12:00000022 .Loc.177
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:754    .text.__vector_12:00000022 .Loc.178
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:758    .text.__vector_12:00000026 .Loc.179
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:776    .text.__vector_12:00000048 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:782    .text.__vector_10:00000000 __vector_10
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:784    .text.__vector_10:00000000 .Loc.180
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:785    .text.__vector_10:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:835    .text.__vector_10:00000022 .Loc.181
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:836    .text.__vector_10:00000022 .Loc.182
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:840    .text.__vector_10:00000026 .Loc.183
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:858    .text.__vector_10:00000048 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:864    .text.__vector_13:00000000 __vector_13
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:866    .text.__vector_13:00000000 .Loc.184
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:867    .text.__vector_13:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:917    .text.__vector_13:00000022 .Loc.185
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:918    .text.__vector_13:00000022 .Loc.186
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:922    .text.__vector_13:00000026 .Loc.187
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:940    .text.__vector_13:00000048 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:945    .text._GLOBAL__sub_I_timer1:00000000 _GLOBAL__sub_I_timer1
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:947    .text._GLOBAL__sub_I_timer1:00000000 .Loc.188
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:948    .text._GLOBAL__sub_I_timer1:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:953    .text._GLOBAL__sub_I_timer1:00000000 .Loc.189
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:962    .text._GLOBAL__sub_I_timer1:0000000e L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:971    .text._GLOBAL__sub_D_timer1:00000000 _GLOBAL__sub_D_timer1
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:973    .text._GLOBAL__sub_D_timer1:00000000 .Loc.190
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:974    .text._GLOBAL__sub_D_timer1:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:979    .text._GLOBAL__sub_D_timer1:00000000 .Loc.191
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:988    .text._GLOBAL__sub_D_timer1:0000000e L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:33     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:81     .text._ZN6Timer1C2Ev:00000014 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:104    .text._ZN6Timer1D2Ev:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:144    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:246    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000052 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:334    .text._ZN6Timer17setModeENS_4ModeE:00000046 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:385    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000001a L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:452    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000002e L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:519    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000028 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:543    .text._ZN6Timer112getLastErrorEv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:561    .text._Z22timer1CompareACallbackv:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:579    .text._Z22timer1CompareBCallbackv:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:597    .text._Z26timer1InputCaptureCallbackv:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:615    .text._Z22timer1OverflowCallbackv:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:697    .text.__vector_11:00000048 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:779    .text.__vector_12:00000048 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:861    .text.__vector_10:00000048 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:943    .text.__vector_13:00000048 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:966    .text._GLOBAL__sub_I_timer1:0000000e L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:992    .text._GLOBAL__sub_D_timer1:0000000e L0
-                     .debug_frame:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:127    .text._Z41__static_initialization_and_destruction_0ii:0000000a .L6
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:122    .text._Z41__static_initialization_and_destruction_0ii:00000008 .L4
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 46
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:672    .text.__vector_11:0000000000000022 .Loc.174
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:676    .text.__vector_11:0000000000000026 .Loc.175
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:694    .text.__vector_11:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:700    .text.__vector_12:0000000000000000 __vector_12
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:702    .text.__vector_12:0000000000000000 .Loc.176
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:703    .text.__vector_12:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:753    .text.__vector_12:0000000000000022 .Loc.177
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:754    .text.__vector_12:0000000000000022 .Loc.178
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:758    .text.__vector_12:0000000000000026 .Loc.179
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:776    .text.__vector_12:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:782    .text.__vector_10:0000000000000000 __vector_10
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:784    .text.__vector_10:0000000000000000 .Loc.180
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:785    .text.__vector_10:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:835    .text.__vector_10:0000000000000022 .Loc.181
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:836    .text.__vector_10:0000000000000022 .Loc.182
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:840    .text.__vector_10:0000000000000026 .Loc.183
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:858    .text.__vector_10:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:864    .text.__vector_13:0000000000000000 __vector_13
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:866    .text.__vector_13:0000000000000000 .Loc.184
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:867    .text.__vector_13:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:917    .text.__vector_13:0000000000000022 .Loc.185
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:918    .text.__vector_13:0000000000000022 .Loc.186
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:922    .text.__vector_13:0000000000000026 .Loc.187
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:940    .text.__vector_13:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:945    .text._GLOBAL__sub_I_timer1:0000000000000000 _GLOBAL__sub_I_timer1
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:947    .text._GLOBAL__sub_I_timer1:0000000000000000 .Loc.188
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:948    .text._GLOBAL__sub_I_timer1:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:953    .text._GLOBAL__sub_I_timer1:0000000000000000 .Loc.189
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:962    .text._GLOBAL__sub_I_timer1:000000000000000e L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:971    .text._GLOBAL__sub_D_timer1:0000000000000000 _GLOBAL__sub_D_timer1
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:973    .text._GLOBAL__sub_D_timer1:0000000000000000 .Loc.190
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:974    .text._GLOBAL__sub_D_timer1:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:979    .text._GLOBAL__sub_D_timer1:0000000000000000 .Loc.191
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:988    .text._GLOBAL__sub_D_timer1:000000000000000e L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:33     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:81     .text._ZN6Timer1C2Ev:0000000000000014 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:104    .text._ZN6Timer1D2Ev:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:144    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:246    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000052 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:334    .text._ZN6Timer17setModeENS_4ModeE:0000000000000046 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:385    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:000000000000001a L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:452    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000002e L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:519    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000028 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:543    .text._ZN6Timer112getLastErrorEv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:561    .text._Z22timer1CompareACallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:579    .text._Z22timer1CompareBCallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:597    .text._Z26timer1InputCaptureCallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:615    .text._Z22timer1OverflowCallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:697    .text.__vector_11:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:779    .text.__vector_12:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:861    .text.__vector_10:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:943    .text.__vector_13:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:966    .text._GLOBAL__sub_I_timer1:000000000000000e L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:992    .text._GLOBAL__sub_D_timer1:000000000000000e L0
+                     .debug_frame:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:127    .text._Z41__static_initialization_and_destruction_0ii:000000000000000a .L6
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:122    .text._Z41__static_initialization_and_destruction_0ii:0000000000000008 .L4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 46
 
 
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:504    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000020 .L12
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:510    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000024 .L16
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:479    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000e .L13
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:486    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000014 .L15
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:2174   .debug_abbrev:00000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3478   .debug_rnglists:0000000c .LLRL20
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3542   .debug_line:00000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:972    .text._GLOBAL__sub_D_timer1:00000000 .LFB77
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:989    .text._GLOBAL__sub_D_timer1:0000000e .LFE77
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:985    .text._GLOBAL__sub_D_timer1:0000000c .LVL55
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:946    .text._GLOBAL__sub_I_timer1:00000000 .LFB76
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:963    .text._GLOBAL__sub_I_timer1:0000000e .LFE76
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:959    .text._GLOBAL__sub_I_timer1:0000000c .LVL54
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:108    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LFB75
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:142    .text._Z41__static_initialization_and_destruction_0ii:0000001a .LFE75
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:2922   .debug_loclists:00000014 .LLST1
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:2913   .debug_loclists:0000000c .LVUS1
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:2971   .debug_loclists:00000046 .LLST2
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:2962   .debug_loclists:0000003e .LVUS2
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:138    .text._Z41__static_initialization_and_destruction_0ii:00000018 .LVL7
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:865    .text.__vector_13:00000000 .LFB74
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:941    .text.__vector_13:00000048 .LFE74
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:920    .text.__vector_13:00000026 .LVL53
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:783    .text.__vector_10:00000000 .LFB73
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:859    .text.__vector_10:00000048 .LFE73
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:838    .text.__vector_10:00000026 .LVL52
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:701    .text.__vector_12:00000000 .LFB72
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:777    .text.__vector_12:00000048 .LFE72
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:756    .text.__vector_12:00000026 .LVL51
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:619    .text.__vector_11:00000000 .LFB71
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:695    .text.__vector_11:00000048 .LFE71
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:674    .text.__vector_11:00000026 .LVL50
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:601    .text._Z22timer1OverflowCallbackv:00000000 .LFB70
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:613    .text._Z22timer1OverflowCallbackv:00000002 .LFE70
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:583    .text._Z26timer1InputCaptureCallbackv:00000000 .LFB69
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:595    .text._Z26timer1InputCaptureCallbackv:00000002 .LFE69
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:565    .text._Z22timer1CompareBCallbackv:00000000 .LFB68
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:577    .text._Z22timer1CompareBCallbackv:00000002 .LFE68
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:547    .text._Z22timer1CompareACallbackv:00000000 .LFB67
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:559    .text._Z22timer1CompareACallbackv:00000002 .LFE67
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:524    .text._ZN6Timer112getLastErrorEv:00000000 .LFB66
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:541    .text._ZN6Timer112getLastErrorEv:00000008 .LFE66
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3016   .debug_loclists:00000074 .LLST19
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3011   .debug_loclists:00000070 .LVUS19
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:457    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000000 .LFB65
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:517    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000028 .LFE65
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3045   .debug_loclists:00000092 .LLST17
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3040   .debug_loclists:0000008e .LVUS17
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3072   .debug_loclists:000000ae .LLST18
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3067   .debug_loclists:000000aa .LVUS18
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:390    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000000 .LFB64
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:450    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000002e .LFE64
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3091   .debug_loclists:000000c2 .LLST13
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3086   .debug_loclists:000000be .LVUS13
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3120   .debug_loclists:000000e0 .LLST14
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3115   .debug_loclists:000000dc .LVUS14
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3142   .debug_loclists:000000f7 .LLST15
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 47
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:504    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000020 .L12
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:510    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000024 .L16
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:479    .text._ZN6Timer119setInputCaptureModeE4Edgeb:000000000000000e .L13
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:486    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000014 .L15
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:2174   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3478   .debug_rnglists:000000000000000c .LLRL20
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3542   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:972    .text._GLOBAL__sub_D_timer1:0000000000000000 .LFB77
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:989    .text._GLOBAL__sub_D_timer1:000000000000000e .LFE77
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:985    .text._GLOBAL__sub_D_timer1:000000000000000c .LVL55
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:946    .text._GLOBAL__sub_I_timer1:0000000000000000 .LFB76
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:963    .text._GLOBAL__sub_I_timer1:000000000000000e .LFE76
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:959    .text._GLOBAL__sub_I_timer1:000000000000000c .LVL54
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:108    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .LFB75
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:142    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a .LFE75
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:2922   .debug_loclists:0000000000000014 .LLST1
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:2913   .debug_loclists:000000000000000c .LVUS1
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:2971   .debug_loclists:0000000000000046 .LLST2
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:2962   .debug_loclists:000000000000003e .LVUS2
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:138    .text._Z41__static_initialization_and_destruction_0ii:0000000000000018 .LVL7
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:865    .text.__vector_13:0000000000000000 .LFB74
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:941    .text.__vector_13:0000000000000048 .LFE74
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:920    .text.__vector_13:0000000000000026 .LVL53
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:783    .text.__vector_10:0000000000000000 .LFB73
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:859    .text.__vector_10:0000000000000048 .LFE73
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:838    .text.__vector_10:0000000000000026 .LVL52
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:701    .text.__vector_12:0000000000000000 .LFB72
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:777    .text.__vector_12:0000000000000048 .LFE72
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:756    .text.__vector_12:0000000000000026 .LVL51
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:619    .text.__vector_11:0000000000000000 .LFB71
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:695    .text.__vector_11:0000000000000048 .LFE71
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:674    .text.__vector_11:0000000000000026 .LVL50
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:601    .text._Z22timer1OverflowCallbackv:0000000000000000 .LFB70
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:613    .text._Z22timer1OverflowCallbackv:0000000000000002 .LFE70
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:583    .text._Z26timer1InputCaptureCallbackv:0000000000000000 .LFB69
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:595    .text._Z26timer1InputCaptureCallbackv:0000000000000002 .LFE69
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:565    .text._Z22timer1CompareBCallbackv:0000000000000000 .LFB68
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:577    .text._Z22timer1CompareBCallbackv:0000000000000002 .LFE68
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:547    .text._Z22timer1CompareACallbackv:0000000000000000 .LFB67
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:559    .text._Z22timer1CompareACallbackv:0000000000000002 .LFE67
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:524    .text._ZN6Timer112getLastErrorEv:0000000000000000 .LFB66
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:541    .text._ZN6Timer112getLastErrorEv:0000000000000008 .LFE66
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3016   .debug_loclists:0000000000000074 .LLST19
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3011   .debug_loclists:0000000000000070 .LVUS19
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:457    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000000 .LFB65
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:517    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000028 .LFE65
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3045   .debug_loclists:0000000000000092 .LLST17
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3040   .debug_loclists:000000000000008e .LVUS17
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3072   .debug_loclists:00000000000000ae .LLST18
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3067   .debug_loclists:00000000000000aa .LVUS18
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:390    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000000 .LFB64
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:450    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:000000000000002e .LFE64
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3091   .debug_loclists:00000000000000c2 .LLST13
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3086   .debug_loclists:00000000000000be .LVUS13
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3120   .debug_loclists:00000000000000e0 .LLST14
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3115   .debug_loclists:00000000000000dc .LVUS14
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3142   .debug_loclists:00000000000000f7 .LLST15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 47
 
 
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3137   .debug_loclists:000000f3 .LVUS15
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3166   .debug_loclists:00000110 .LLST16
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3159   .debug_loclists:0000010a .LVUS16
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:339    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000000 .LFB63
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:383    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000001a .LFE63
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3190   .debug_loclists:00000129 .LLST11
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3185   .debug_loclists:00000125 .LVUS11
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3215   .debug_loclists:00000143 .LLST12
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3212   .debug_loclists:00000141 .LVUS12
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:251    .text._ZN6Timer17setModeENS_4ModeE:00000000 .LFB62
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:332    .text._ZN6Timer17setModeENS_4ModeE:00000046 .LFE62
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3227   .debug_loclists:00000150 .LLST7
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3222   .debug_loclists:0000014c .LVUS7
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3254   .debug_loclists:0000016c .LLST8
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3249   .debug_loclists:00000168 .LVUS8
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3273   .debug_loclists:00000180 .LLST9
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3268   .debug_loclists:0000017c .LVUS9
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3292   .debug_loclists:00000194 .LLST10
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3287   .debug_loclists:00000190 .LVUS10
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:149    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000000 .LFB61
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:244    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000052 .LFE61
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3312   .debug_loclists:000001a9 .LLST3
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3307   .debug_loclists:000001a5 .LVUS3
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3339   .debug_loclists:000001c5 .LLST4
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3334   .debug_loclists:000001c1 .LVUS4
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3358   .debug_loclists:000001d9 .LLST5
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3353   .debug_loclists:000001d5 .LVUS5
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3377   .debug_loclists:000001ed .LLST6
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3372   .debug_loclists:000001e9 .LVUS6
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:86     .text._ZN6Timer1D2Ev:00000000 .LFB59
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:100    .text._ZN6Timer1D2Ev:00000002 .LFE59
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:38     .text._ZN6Timer1C2Ev:00000000 .LFB56
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:77     .text._ZN6Timer1C2Ev:00000014 .LFE56
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3397   .debug_loclists:00000202 .LLST0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:3392   .debug_loclists:000001fe .LVUS0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:15     .text._Z7getTickv:00000000 .LFB32
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:31     .text._Z7getTickv:00000008 .LFE32
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:107    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LVL3
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:523    .text._ZN6Timer112getLastErrorEv:00000000 .LVL48
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:456    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000000 .LVL40
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:472    .text._ZN6Timer119setInputCaptureModeE4Edgeb:00000008 .LVL41
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:389    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000000 .LVL31
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:406    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:00000008 .LVL32
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:338    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:00000000 .LVL26
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:356    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000a .LVL27
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:250    .text._ZN6Timer17setModeENS_4ModeE:00000000 .LVL18
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:274    .text._ZN6Timer17setModeENS_4ModeE:0000000e .LVL19
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:280    .text._ZN6Timer17setModeENS_4ModeE:00000014 .LVL20
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:148    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000000 .LVL8
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:172    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000e .LVL9
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:178    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:00000014 .LVL10
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:37     .text._ZN6Timer1C2Ev:00000000 .LVL0
-C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s:1006   .debug_info:00000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3137   .debug_loclists:00000000000000f3 .LVUS15
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3166   .debug_loclists:0000000000000110 .LLST16
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3159   .debug_loclists:000000000000010a .LVUS16
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:339    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000000 .LFB63
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:383    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:000000000000001a .LFE63
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3190   .debug_loclists:0000000000000129 .LLST11
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3185   .debug_loclists:0000000000000125 .LVUS11
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3215   .debug_loclists:0000000000000143 .LLST12
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3212   .debug_loclists:0000000000000141 .LVUS12
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:251    .text._ZN6Timer17setModeENS_4ModeE:0000000000000000 .LFB62
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:332    .text._ZN6Timer17setModeENS_4ModeE:0000000000000046 .LFE62
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3227   .debug_loclists:0000000000000150 .LLST7
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3222   .debug_loclists:000000000000014c .LVUS7
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3254   .debug_loclists:000000000000016c .LLST8
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3249   .debug_loclists:0000000000000168 .LVUS8
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3273   .debug_loclists:0000000000000180 .LLST9
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3268   .debug_loclists:000000000000017c .LVUS9
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3292   .debug_loclists:0000000000000194 .LLST10
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3287   .debug_loclists:0000000000000190 .LVUS10
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:149    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000000 .LFB61
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:244    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000052 .LFE61
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3312   .debug_loclists:00000000000001a9 .LLST3
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3307   .debug_loclists:00000000000001a5 .LVUS3
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3339   .debug_loclists:00000000000001c5 .LLST4
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3334   .debug_loclists:00000000000001c1 .LVUS4
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3358   .debug_loclists:00000000000001d9 .LLST5
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3353   .debug_loclists:00000000000001d5 .LVUS5
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3377   .debug_loclists:00000000000001ed .LLST6
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3372   .debug_loclists:00000000000001e9 .LVUS6
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:86     .text._ZN6Timer1D2Ev:0000000000000000 .LFB59
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:100    .text._ZN6Timer1D2Ev:0000000000000002 .LFE59
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:38     .text._ZN6Timer1C2Ev:0000000000000000 .LFB56
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:77     .text._ZN6Timer1C2Ev:0000000000000014 .LFE56
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3397   .debug_loclists:0000000000000202 .LLST0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:3392   .debug_loclists:00000000000001fe .LVUS0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:15     .text._Z7getTickv:0000000000000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:31     .text._Z7getTickv:0000000000000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:107    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .LVL3
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:523    .text._ZN6Timer112getLastErrorEv:0000000000000000 .LVL48
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:456    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000000 .LVL40
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:472    .text._ZN6Timer119setInputCaptureModeE4Edgeb:0000000000000008 .LVL41
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:389    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000000 .LVL31
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:406    .text._ZN6Timer113setOutputModeENS_10OutputModeES0_:0000000000000008 .LVL32
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:338    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:0000000000000000 .LVL26
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:356    .text._ZN6Timer114setClockSourceENS_11ClockSourceE:000000000000000a .LVL27
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:250    .text._ZN6Timer17setModeENS_4ModeE:0000000000000000 .LVL18
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:274    .text._ZN6Timer17setModeENS_4ModeE:000000000000000e .LVL19
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:280    .text._ZN6Timer17setModeENS_4ModeE:0000000000000014 .LVL20
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:148    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000000 .LVL8
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:172    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:000000000000000e .LVL9
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:178    .text._ZN6Timer14initENS_4ModeENS_11ClockSourceE:0000000000000014 .LVL10
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:37     .text._ZN6Timer1C2Ev:0000000000000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s:1006   .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 __do_global_ctors
 __do_global_dtors
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc69VlsB.s 			page 48
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc8RpNXf.s 			page 48
 
 
 __do_clear_bss

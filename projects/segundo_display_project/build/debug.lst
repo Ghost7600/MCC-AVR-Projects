@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 1
 
 
    1               		.file	"debug.cpp"
@@ -10,7 +10,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
    7               		.text
    8               	.Ltext0:
    9               		.cfi_sections	.debug_frame
-  10               		.file 0 "C:\\D\\IFSC\\MCC\\projects\\segundo_display_project" "funsape/util/debug.cpp"
+  10               		.file 0 "F:\\IMPORTANTE\\Faculdade\\MCC\\MCC-AVR-Projects\\projects\\segundo_display_project" "fun
   11               		.section	.text._Z7getTickv,"ax",@progbits
   12               		.weak	_Z7getTickv
   14               	_Z7getTickv:
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
   40:funsape/util/../globalDefines.hpp **** #include <stdio.h>
   41:funsape/util/../globalDefines.hpp **** #include <stdlib.h>
   42:funsape/util/../globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 2
 
 
   43:funsape/util/../globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
   97:funsape/util/../globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:funsape/util/../globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:funsape/util/../globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 3
 
 
  100:funsape/util/../globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  154:funsape/util/../globalDefines.hpp **** enum class Axis : cuint8_t {
  155:funsape/util/../globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:funsape/util/../globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 4
 
 
  157:funsape/util/../globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  211:funsape/util/../globalDefines.hpp ****     // General error codes
  212:funsape/util/../globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:funsape/util/../globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 5
 
 
  214:funsape/util/../globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  268:funsape/util/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:funsape/util/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:funsape/util/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 6
 
 
  271:funsape/util/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  325:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 7
 
 
  328:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  382:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 8
 
 
  385:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  439:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 9
 
 
  442:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  496:funsape/util/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:funsape/util/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:funsape/util/../globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 10
 
 
  499:funsape/util/../globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  553:funsape/util/../globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:funsape/util/../globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:funsape/util/../globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 11
 
 
  556:funsape/util/../globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  610:funsape/util/../globalDefines.hpp **** #endif
  611:funsape/util/../globalDefines.hpp **** #ifndef cplMaskOffset
  612:funsape/util/../globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 12
 
 
  613:funsape/util/../globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  667:funsape/util/../globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:funsape/util/../globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:funsape/util/../globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 13
 
 
  670:funsape/util/../globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  724:funsape/util/../globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:funsape/util/../globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:funsape/util/../globalDefines.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 14
 
 
  727:funsape/util/../globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
  781:funsape/util/../globalDefines.hpp **** }
  782:funsape/util/../globalDefines.hpp **** 
  783:funsape/util/../globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 15
 
 
  784:funsape/util/../globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
    6:funsape/util/debug.cpp **** //! \version        23.04
    7:funsape/util/debug.cpp **** //! \copyright      license
    8:funsape/util/debug.cpp **** //! \details        This file provides extended debug support to all modules of
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 16
 
 
    9:funsape/util/debug.cpp **** //!                     the Funsape AVR8 Library
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
   48 0000 0895      		ret
   49               		.cfi_endproc
   50               	.LFE34:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 17
 
 
   52               	.global	_ZN5DebugC1Ev
@@ -994,52 +994,52 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 1
   80 0000 00        		.zero	1
   81               		.text
   82               	.Letext0:
-  83               		.file 3 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
+  83               		.file 3 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\stdint
   84               		.file 4 "funsape/util/debug.hpp"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s 			page 18
 
 
 DEFINED SYMBOLS
-                            *ABS*:00000000 debug.cpp
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:2      *ABS*:0000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:3      *ABS*:0000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:4      *ABS*:0000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:5      *ABS*:00000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:6      *ABS*:00000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:14     .text._Z7getTickv:00000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:17     .text._Z7getTickv:00000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:18     .text._Z7getTickv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:23     .text._Z7getTickv:00000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:24     .text._Z7getTickv:00000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:30     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:36     .text._ZN5DebugC2Ev:00000000 _ZN5DebugC2Ev
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:40     .text._ZN5DebugC2Ev:00000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:41     .text._ZN5DebugC2Ev:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:47     .text._ZN5DebugC2Ev:00000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:49     .text._ZN5DebugC2Ev:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:36     .text._ZN5DebugC2Ev:00000000 _ZN5DebugC1Ev
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:57     .text._ZN5DebugD2Ev:00000000 _ZN5DebugD2Ev
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:60     .text._ZN5DebugD2Ev:00000000 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:61     .text._ZN5DebugD2Ev:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:66     .text._ZN5DebugD2Ev:00000000 .Loc.6
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:68     .text._ZN5DebugD2Ev:00000000 .Loc.7
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:70     .text._ZN5DebugD2Ev:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:57     .text._ZN5DebugD2Ev:00000000 _ZN5DebugD1Ev
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:79     .bss.debug:00000000 debug
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:33     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:54     .text._ZN5DebugC2Ev:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:76     .text._ZN5DebugD2Ev:00000002 L0
-                     .debug_frame:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:292    .debug_abbrev:00000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:633    .debug_rnglists:0000000c .LLRL0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:646    .debug_line:00000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:59     .text._ZN5DebugD2Ev:00000000 .LFB37
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:71     .text._ZN5DebugD2Ev:00000002 .LFE37
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:38     .text._ZN5DebugC2Ev:00000000 .LFB34
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:50     .text._ZN5DebugC2Ev:00000002 .LFE34
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:15     .text._Z7getTickv:00000000 .LFB32
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:31     .text._Z7getTickv:00000008 .LFE32
-C:\Users\kenne\AppData\Local\Temp\ccuAjLDT.s:86     .debug_info:00000000 .Ldebug_info0
+                            *ABS*:0000000000000000 debug.cpp
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:14     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:17     .text._Z7getTickv:0000000000000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:18     .text._Z7getTickv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:23     .text._Z7getTickv:0000000000000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:24     .text._Z7getTickv:0000000000000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:30     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:36     .text._ZN5DebugC2Ev:0000000000000000 _ZN5DebugC2Ev
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:40     .text._ZN5DebugC2Ev:0000000000000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:41     .text._ZN5DebugC2Ev:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:47     .text._ZN5DebugC2Ev:0000000000000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:49     .text._ZN5DebugC2Ev:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:36     .text._ZN5DebugC2Ev:0000000000000000 _ZN5DebugC1Ev
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:57     .text._ZN5DebugD2Ev:0000000000000000 _ZN5DebugD2Ev
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:60     .text._ZN5DebugD2Ev:0000000000000000 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:61     .text._ZN5DebugD2Ev:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:66     .text._ZN5DebugD2Ev:0000000000000000 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:68     .text._ZN5DebugD2Ev:0000000000000000 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:70     .text._ZN5DebugD2Ev:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:57     .text._ZN5DebugD2Ev:0000000000000000 _ZN5DebugD1Ev
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:79     .bss.debug:0000000000000000 debug
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:33     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:54     .text._ZN5DebugC2Ev:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:76     .text._ZN5DebugD2Ev:0000000000000002 L0
+                     .debug_frame:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:292    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:633    .debug_rnglists:000000000000000c .LLRL0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:646    .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:59     .text._ZN5DebugD2Ev:0000000000000000 .LFB37
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:71     .text._ZN5DebugD2Ev:0000000000000002 .LFE37
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:38     .text._ZN5DebugC2Ev:0000000000000000 .LFB34
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:50     .text._ZN5DebugC2Ev:0000000000000002 .LFE34
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:15     .text._Z7getTickv:0000000000000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:31     .text._Z7getTickv:0000000000000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccAmz8PC.s:86     .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 __do_clear_bss
