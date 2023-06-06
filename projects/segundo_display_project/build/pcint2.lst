@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 1
 
 
    1               		.file	"pcint2.cpp"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
   40:funsape/peripheral/../globalDefines.hpp **** #include <stdio.h>
   41:funsape/peripheral/../globalDefines.hpp **** #include <stdlib.h>
   42:funsape/peripheral/../globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 2
 
 
   43:funsape/peripheral/../globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
   97:funsape/peripheral/../globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:funsape/peripheral/../globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:funsape/peripheral/../globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 3
 
 
  100:funsape/peripheral/../globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  154:funsape/peripheral/../globalDefines.hpp **** enum class Axis : cuint8_t {
  155:funsape/peripheral/../globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:funsape/peripheral/../globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 4
 
 
  157:funsape/peripheral/../globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  211:funsape/peripheral/../globalDefines.hpp ****     // General error codes
  212:funsape/peripheral/../globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:funsape/peripheral/../globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 5
 
 
  214:funsape/peripheral/../globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  268:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 6
 
 
  271:funsape/peripheral/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  325:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 7
 
 
  328:funsape/peripheral/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  382:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 8
 
 
  385:funsape/peripheral/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  439:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 9
 
 
  442:funsape/peripheral/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  496:funsape/peripheral/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:funsape/peripheral/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:funsape/peripheral/../globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 10
 
 
  499:funsape/peripheral/../globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  553:funsape/peripheral/../globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:funsape/peripheral/../globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:funsape/peripheral/../globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 11
 
 
  556:funsape/peripheral/../globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  610:funsape/peripheral/../globalDefines.hpp **** #endif
  611:funsape/peripheral/../globalDefines.hpp **** #ifndef cplMaskOffset
  612:funsape/peripheral/../globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 12
 
 
  613:funsape/peripheral/../globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  667:funsape/peripheral/../globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:funsape/peripheral/../globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:funsape/peripheral/../globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 13
 
 
  670:funsape/peripheral/../globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  724:funsape/peripheral/../globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:funsape/peripheral/../globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:funsape/peripheral/../globalDefines.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 14
 
 
  727:funsape/peripheral/../globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  781:funsape/peripheral/../globalDefines.hpp **** }
  782:funsape/peripheral/../globalDefines.hpp **** 
  783:funsape/peripheral/../globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 15
 
 
  784:funsape/peripheral/../globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
    6:funsape/peripheral/pcint2.cpp **** //! \date           2023-05-07
    7:funsape/peripheral/pcint2.cpp **** //! \version        23.04
    8:funsape/peripheral/pcint2.cpp **** //! \copyright      license
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 16
 
 
    9:funsape/peripheral/pcint2.cpp **** //! \details        External Interrupt PCINT2 peripheral control for the FunSAPE
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
   46               		.loc 2 56 1 is_stmt 0 view .LVU4
   47 0000 E82F      		mov r30,r24
   48 0002 F92F      		mov r31,r25
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 17
 
 
   49               	.LBB2:
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
   72:funsape/peripheral/pcint2.cpp **** {
   73:funsape/peripheral/pcint2.cpp ****     // Returns successfully
   74:funsape/peripheral/pcint2.cpp ****     debugMessage(Error::NONE, DEBUG_PCINT2);
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 18
 
 
   90               		.loc 2 74 5 view .LVU19
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  115:funsape/peripheral/pcint2.cpp ****     uint8_t aux8 = (uint8_t)this->_enabledPins;
  116:funsape/peripheral/pcint2.cpp **** 
  117:funsape/peripheral/pcint2.cpp ****     // Configure mode
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 19
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 19
 
 
  118:funsape/peripheral/pcint2.cpp ****     clrMaskOffset(auxPcmsk2, constInterruptPinsMask, constInterruptPinOffset);
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  172:funsape/peripheral/pcint2.cpp **** 
  173:funsape/peripheral/pcint2.cpp **** // =============================================================================
  174:funsape/peripheral/pcint2.cpp **** // Class protected methods
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 20
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 20
 
 
  175:funsape/peripheral/pcint2.cpp **** // =============================================================================
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  129               		.loc 2 205 1 discriminator 1 view .LVU28
  130 000e 01F4      		brne .L4
   44:funsape/peripheral/pcint2.cpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 21
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 21
 
 
  131               		.loc 2 44 8 view .LVU29
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  173               		.loc 2 100 29 is_stmt 0 view .LVU44
  174 000e 8081      		ld r24,Z
  175 0010 8160      		ori r24,lo8(1<<0)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 22
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 22
 
 
  176 0012 8083      		st Z,r24
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  118:funsape/peripheral/pcint2.cpp ****     setMask(aux8, (uint8_t)enablePins_p);
  218               		.loc 2 118 5 is_stmt 1 view .LVU59
  119:funsape/peripheral/pcint2.cpp ****     setMaskOffset(auxPcmsk2, aux8, constInterruptPinOffset);
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 23
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 23
 
 
  219               		.loc 2 119 5 view .LVU60
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  140:funsape/peripheral/pcint2.cpp ****     uint8_t aux8 = (uint8_t)this->_enabledPins;
  260               		.loc 2 140 5 view .LVU76
  140:funsape/peripheral/pcint2.cpp ****     uint8_t aux8 = (uint8_t)this->_enabledPins;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 24
 
 
  261               		.loc 2 140 25 is_stmt 0 view .LVU77
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  301               	_ZN6Pcint212getLastErrorEv:
  302               	.LVL19:
  303               	.LFB45:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 25
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 25
 
 
  162:funsape/peripheral/pcint2.cpp ****     // Returns last error
@@ -1498,7 +1498,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  354 0006 0F92      		push r0
  355 0008 1124      		clr __zero_reg__
  356 000a 2F93      		push r18
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 26
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 26
 
 
  357               		.cfi_def_cfa_offset 5
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  409 0034 6F91      		pop r22
  410 0036 5F91      		pop r21
  411 0038 4F91      		pop r20
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 27
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 27
 
 
  412 003a 3F91      		pop r19
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  471               		.section .dtors,"a",@progbits
  472               		.p2align	1
  473 0000 0000      		.word	gs(_GLOBAL__sub_D_pcint2)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 28
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 28
 
 
  474               	.global	pcint2
@@ -1629,260 +1629,260 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 1
  481               	.Letext0:
  482               		.file 3 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\stdint
  483               		.file 4 "funsape/peripheral/pcint2.hpp"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 29
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 29
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 pcint2.cpp
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2      *ABS*:000000000000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:3      *ABS*:000000000000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:4      *ABS*:000000000000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:5      *ABS*:0000000000000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:6      *ABS*:0000000000000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:14     .text._Z7getTickv:0000000000000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:17     .text._Z7getTickv:0000000000000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:18     .text._Z7getTickv:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:23     .text._Z7getTickv:0000000000000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:24     .text._Z7getTickv:0000000000000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:30     .text._Z7getTickv:0000000000000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:36     .text._ZN6Pcint2C2Ev:0000000000000000 _ZN6Pcint2C2Ev
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:40     .text._ZN6Pcint2C2Ev:0000000000000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:41     .text._ZN6Pcint2C2Ev:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:46     .text._ZN6Pcint2C2Ev:0000000000000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:50     .text._ZN6Pcint2C2Ev:0000000000000004 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:51     .text._ZN6Pcint2C2Ev:0000000000000004 .Loc.6
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:52     .text._ZN6Pcint2C2Ev:0000000000000004 .Loc.7
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:53     .text._ZN6Pcint2C2Ev:0000000000000004 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:55     .text._ZN6Pcint2C2Ev:0000000000000006 .Loc.9
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:56     .text._ZN6Pcint2C2Ev:0000000000000006 .Loc.10
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:59     .text._ZN6Pcint2C2Ev:0000000000000008 .Loc.11
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:62     .text._ZN6Pcint2C2Ev:000000000000000c .Loc.12
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:63     .text._ZN6Pcint2C2Ev:000000000000000c .Loc.13
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:66     .text._ZN6Pcint2C2Ev:0000000000000010 .Loc.14
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:67     .text._ZN6Pcint2C2Ev:0000000000000010 .Loc.15
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:68     .text._ZN6Pcint2C2Ev:0000000000000010 .Loc.16
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:71     .text._ZN6Pcint2C2Ev:0000000000000010 .Loc.17
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:73     .text._ZN6Pcint2C2Ev:0000000000000012 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:36     .text._ZN6Pcint2C2Ev:0000000000000000 _ZN6Pcint2C1Ev
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:81     .text._ZN6Pcint2D2Ev:0000000000000000 _ZN6Pcint2D2Ev
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:84     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.18
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:85     .text._ZN6Pcint2D2Ev:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:90     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.19
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:91     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.20
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:92     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.21
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:94     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.22
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:96     .text._ZN6Pcint2D2Ev:0000000000000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:81     .text._ZN6Pcint2D2Ev:0000000000000000 _ZN6Pcint2D1Ev
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:103    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 _Z41__static_initialization_and_destruction_0ii
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:106    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .Loc.23
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:107    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:112    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .Loc.24
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:115    .text._Z41__static_initialization_and_destruction_0ii:0000000000000004 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:121    .text._Z41__static_initialization_and_destruction_0ii:0000000000000008 .Loc.26
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:125    .text._Z41__static_initialization_and_destruction_0ii:000000000000000a .Loc.27
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:129    .text._Z41__static_initialization_and_destruction_0ii:000000000000000e .Loc.28
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:131    .text._Z41__static_initialization_and_destruction_0ii:0000000000000010 .Loc.29
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:478    .bss.pcint2:0000000000000000 pcint2
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:136    .text._Z41__static_initialization_and_destruction_0ii:0000000000000018 .Loc.30
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:138    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:144    .text._ZN6Pcint24initENS_3PinE:0000000000000000 _ZN6Pcint24initENS_3PinE
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:147    .text._ZN6Pcint24initENS_3PinE:0000000000000000 .Loc.31
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:148    .text._ZN6Pcint24initENS_3PinE:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:153    .text._ZN6Pcint24initENS_3PinE:0000000000000000 .Loc.32
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 30
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:14     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:17     .text._Z7getTickv:0000000000000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:18     .text._Z7getTickv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:23     .text._Z7getTickv:0000000000000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:24     .text._Z7getTickv:0000000000000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:30     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:36     .text._ZN6Pcint2C2Ev:0000000000000000 _ZN6Pcint2C2Ev
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:40     .text._ZN6Pcint2C2Ev:0000000000000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:41     .text._ZN6Pcint2C2Ev:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:46     .text._ZN6Pcint2C2Ev:0000000000000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:50     .text._ZN6Pcint2C2Ev:0000000000000004 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:51     .text._ZN6Pcint2C2Ev:0000000000000004 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:52     .text._ZN6Pcint2C2Ev:0000000000000004 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:53     .text._ZN6Pcint2C2Ev:0000000000000004 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:55     .text._ZN6Pcint2C2Ev:0000000000000006 .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:56     .text._ZN6Pcint2C2Ev:0000000000000006 .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:59     .text._ZN6Pcint2C2Ev:0000000000000008 .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:62     .text._ZN6Pcint2C2Ev:000000000000000c .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:63     .text._ZN6Pcint2C2Ev:000000000000000c .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:66     .text._ZN6Pcint2C2Ev:0000000000000010 .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:67     .text._ZN6Pcint2C2Ev:0000000000000010 .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:68     .text._ZN6Pcint2C2Ev:0000000000000010 .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:71     .text._ZN6Pcint2C2Ev:0000000000000010 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:73     .text._ZN6Pcint2C2Ev:0000000000000012 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:36     .text._ZN6Pcint2C2Ev:0000000000000000 _ZN6Pcint2C1Ev
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:81     .text._ZN6Pcint2D2Ev:0000000000000000 _ZN6Pcint2D2Ev
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:84     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:85     .text._ZN6Pcint2D2Ev:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:90     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:91     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:92     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:94     .text._ZN6Pcint2D2Ev:0000000000000000 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:96     .text._ZN6Pcint2D2Ev:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:81     .text._ZN6Pcint2D2Ev:0000000000000000 _ZN6Pcint2D1Ev
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:103    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 _Z41__static_initialization_and_destruction_0ii
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:106    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:107    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:112    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:115    .text._Z41__static_initialization_and_destruction_0ii:0000000000000004 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:121    .text._Z41__static_initialization_and_destruction_0ii:0000000000000008 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:125    .text._Z41__static_initialization_and_destruction_0ii:000000000000000a .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:129    .text._Z41__static_initialization_and_destruction_0ii:000000000000000e .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:131    .text._Z41__static_initialization_and_destruction_0ii:0000000000000010 .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:478    .bss.pcint2:0000000000000000 pcint2
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:136    .text._Z41__static_initialization_and_destruction_0ii:0000000000000018 .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:138    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:144    .text._ZN6Pcint24initENS_3PinE:0000000000000000 _ZN6Pcint24initENS_3PinE
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:147    .text._ZN6Pcint24initENS_3PinE:0000000000000000 .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:148    .text._ZN6Pcint24initENS_3PinE:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:153    .text._ZN6Pcint24initENS_3PinE:0000000000000000 .Loc.32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 30
 
 
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:156    .text._ZN6Pcint24initENS_3PinE:0000000000000004 .Loc.33
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:157    .text._ZN6Pcint24initENS_3PinE:0000000000000004 .Loc.34
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:158    .text._ZN6Pcint24initENS_3PinE:0000000000000004 .Loc.35
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:159    .text._ZN6Pcint24initENS_3PinE:0000000000000004 .Loc.36
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:164    .text._ZN6Pcint24initENS_3PinE:000000000000000a .Loc.37
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:165    .text._ZN6Pcint24initENS_3PinE:000000000000000a .Loc.38
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:166    .text._ZN6Pcint24initENS_3PinE:000000000000000a .Loc.39
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:167    .text._ZN6Pcint24initENS_3PinE:000000000000000a .Loc.40
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:169    .text._ZN6Pcint24initENS_3PinE:000000000000000c .Loc.41
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:170    .text._ZN6Pcint24initENS_3PinE:000000000000000c .Loc.42
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:172    .text._ZN6Pcint24initENS_3PinE:000000000000000e .Loc.43
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:173    .text._ZN6Pcint24initENS_3PinE:000000000000000e .Loc.44
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:177    .text._ZN6Pcint24initENS_3PinE:0000000000000014 .Loc.45
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:178    .text._ZN6Pcint24initENS_3PinE:0000000000000014 .Loc.46
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:181    .text._ZN6Pcint24initENS_3PinE:0000000000000018 .Loc.47
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:182    .text._ZN6Pcint24initENS_3PinE:0000000000000018 .Loc.48
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:183    .text._ZN6Pcint24initENS_3PinE:0000000000000018 .Loc.49
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:184    .text._ZN6Pcint24initENS_3PinE:0000000000000018 .Loc.50
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:188    .text._ZN6Pcint24initENS_3PinE:000000000000001c L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:194    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 _ZN6Pcint210enablePinsENS_3PinE
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:197    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 .Loc.51
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:198    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:203    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 .Loc.52
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:206    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000004 .Loc.53
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:207    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000004 .Loc.54
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:208    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000004 .Loc.55
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:209    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000004 .Loc.56
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:214    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000a .Loc.57
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:215    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000a .Loc.58
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:218    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000c .Loc.59
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:219    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000c .Loc.60
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:222    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000e .Loc.61
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:223    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000e .Loc.62
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:224    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000e .Loc.63
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:226    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000010 .Loc.64
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:227    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000010 .Loc.65
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:229    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000012 .Loc.66
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:230    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000012 .Loc.67
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:233    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000016 .Loc.68
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:234    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000016 .Loc.69
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:235    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000016 .Loc.70
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:236    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000016 .Loc.71
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:240    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000001a L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:246    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 _ZN6Pcint211disablePinsENS_3PinE
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:249    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 .Loc.72
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:250    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:255    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 .Loc.73
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:258    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000004 .Loc.74
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:259    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000004 .Loc.75
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:260    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000004 .Loc.76
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:261    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000004 .Loc.77
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:266    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000a .Loc.78
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:267    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000a .Loc.79
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:270    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000c .Loc.80
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:271    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000c .Loc.81
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:274    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000e .Loc.82
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:277    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000010 .Loc.83
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 31
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:156    .text._ZN6Pcint24initENS_3PinE:0000000000000004 .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:157    .text._ZN6Pcint24initENS_3PinE:0000000000000004 .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:158    .text._ZN6Pcint24initENS_3PinE:0000000000000004 .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:159    .text._ZN6Pcint24initENS_3PinE:0000000000000004 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:164    .text._ZN6Pcint24initENS_3PinE:000000000000000a .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:165    .text._ZN6Pcint24initENS_3PinE:000000000000000a .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:166    .text._ZN6Pcint24initENS_3PinE:000000000000000a .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:167    .text._ZN6Pcint24initENS_3PinE:000000000000000a .Loc.40
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:169    .text._ZN6Pcint24initENS_3PinE:000000000000000c .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:170    .text._ZN6Pcint24initENS_3PinE:000000000000000c .Loc.42
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:172    .text._ZN6Pcint24initENS_3PinE:000000000000000e .Loc.43
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:173    .text._ZN6Pcint24initENS_3PinE:000000000000000e .Loc.44
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:177    .text._ZN6Pcint24initENS_3PinE:0000000000000014 .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:178    .text._ZN6Pcint24initENS_3PinE:0000000000000014 .Loc.46
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:181    .text._ZN6Pcint24initENS_3PinE:0000000000000018 .Loc.47
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:182    .text._ZN6Pcint24initENS_3PinE:0000000000000018 .Loc.48
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:183    .text._ZN6Pcint24initENS_3PinE:0000000000000018 .Loc.49
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:184    .text._ZN6Pcint24initENS_3PinE:0000000000000018 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:188    .text._ZN6Pcint24initENS_3PinE:000000000000001c L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:194    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 _ZN6Pcint210enablePinsENS_3PinE
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:197    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 .Loc.51
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:198    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:203    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 .Loc.52
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:206    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000004 .Loc.53
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:207    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000004 .Loc.54
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:208    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000004 .Loc.55
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:209    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000004 .Loc.56
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:214    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000a .Loc.57
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:215    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000a .Loc.58
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:218    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000c .Loc.59
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:219    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000c .Loc.60
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:222    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000e .Loc.61
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:223    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000e .Loc.62
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:224    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000e .Loc.63
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:226    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000010 .Loc.64
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:227    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000010 .Loc.65
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:229    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000012 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:230    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000012 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:233    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000016 .Loc.68
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:234    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000016 .Loc.69
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:235    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000016 .Loc.70
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:236    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000016 .Loc.71
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:240    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000001a L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:246    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 _ZN6Pcint211disablePinsENS_3PinE
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:249    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 .Loc.72
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:250    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:255    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 .Loc.73
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:258    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000004 .Loc.74
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:259    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000004 .Loc.75
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:260    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000004 .Loc.76
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:261    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000004 .Loc.77
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:266    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000a .Loc.78
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:267    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000a .Loc.79
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:270    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000c .Loc.80
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:271    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000c .Loc.81
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:274    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000e .Loc.82
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:277    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000010 .Loc.83
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 31
 
 
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:278    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000010 .Loc.84
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:279    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000010 .Loc.85
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:281    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000012 .Loc.86
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:282    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000012 .Loc.87
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:284    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000014 .Loc.88
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:285    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000014 .Loc.89
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:288    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000018 .Loc.90
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:289    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000018 .Loc.91
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:290    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000018 .Loc.92
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:291    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000018 .Loc.93
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:295    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000001c L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:301    .text._ZN6Pcint212getLastErrorEv:0000000000000000 _ZN6Pcint212getLastErrorEv
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:304    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .Loc.94
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:305    .text._ZN6Pcint212getLastErrorEv:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:310    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .Loc.95
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:311    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .Loc.96
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:317    .text._ZN6Pcint212getLastErrorEv:0000000000000006 .Loc.97
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:319    .text._ZN6Pcint212getLastErrorEv:0000000000000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:325    .text._Z23pcint2InterruptCallbackv:0000000000000000 _Z23pcint2InterruptCallbackv
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:327    .text._Z23pcint2InterruptCallbackv:0000000000000000 .Loc.98
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:328    .text._Z23pcint2InterruptCallbackv:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:333    .text._Z23pcint2InterruptCallbackv:0000000000000000 .Loc.99
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:335    .text._Z23pcint2InterruptCallbackv:0000000000000000 .Loc.100
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:337    .text._Z23pcint2InterruptCallbackv:0000000000000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:343    .text.__vector_5:0000000000000000 __vector_5
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:345    .text.__vector_5:0000000000000000 .Loc.101
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:346    .text.__vector_5:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:396    .text.__vector_5:0000000000000022 .Loc.102
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:397    .text.__vector_5:0000000000000022 .Loc.103
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:401    .text.__vector_5:0000000000000026 .Loc.104
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:419    .text.__vector_5:0000000000000048 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:424    .text._GLOBAL__sub_I_pcint2:0000000000000000 _GLOBAL__sub_I_pcint2
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:426    .text._GLOBAL__sub_I_pcint2:0000000000000000 .Loc.105
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:427    .text._GLOBAL__sub_I_pcint2:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:432    .text._GLOBAL__sub_I_pcint2:0000000000000000 .Loc.106
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:441    .text._GLOBAL__sub_I_pcint2:000000000000000e L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:450    .text._GLOBAL__sub_D_pcint2:0000000000000000 _GLOBAL__sub_D_pcint2
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:452    .text._GLOBAL__sub_D_pcint2:0000000000000000 .Loc.107
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:453    .text._GLOBAL__sub_D_pcint2:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:458    .text._GLOBAL__sub_D_pcint2:0000000000000000 .Loc.108
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:467    .text._GLOBAL__sub_D_pcint2:000000000000000e L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:33     .text._Z7getTickv:0000000000000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:78     .text._ZN6Pcint2C2Ev:0000000000000012 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:101    .text._ZN6Pcint2D2Ev:0000000000000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:141    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:191    .text._ZN6Pcint24initENS_3PinE:000000000000001c L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:243    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000001a L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:298    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000001c L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:322    .text._ZN6Pcint212getLastErrorEv:0000000000000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:340    .text._Z23pcint2InterruptCallbackv:0000000000000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:422    .text.__vector_5:0000000000000048 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:445    .text._GLOBAL__sub_I_pcint2:000000000000000e L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:471    .text._GLOBAL__sub_D_pcint2:000000000000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:278    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000010 .Loc.84
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:279    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000010 .Loc.85
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:281    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000012 .Loc.86
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:282    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000012 .Loc.87
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:284    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000014 .Loc.88
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:285    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000014 .Loc.89
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:288    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000018 .Loc.90
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:289    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000018 .Loc.91
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:290    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000018 .Loc.92
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:291    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000018 .Loc.93
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:295    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000001c L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:301    .text._ZN6Pcint212getLastErrorEv:0000000000000000 _ZN6Pcint212getLastErrorEv
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:304    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .Loc.94
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:305    .text._ZN6Pcint212getLastErrorEv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:310    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .Loc.95
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:311    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .Loc.96
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:317    .text._ZN6Pcint212getLastErrorEv:0000000000000006 .Loc.97
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:319    .text._ZN6Pcint212getLastErrorEv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:325    .text._Z23pcint2InterruptCallbackv:0000000000000000 _Z23pcint2InterruptCallbackv
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:327    .text._Z23pcint2InterruptCallbackv:0000000000000000 .Loc.98
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:328    .text._Z23pcint2InterruptCallbackv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:333    .text._Z23pcint2InterruptCallbackv:0000000000000000 .Loc.99
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:335    .text._Z23pcint2InterruptCallbackv:0000000000000000 .Loc.100
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:337    .text._Z23pcint2InterruptCallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:343    .text.__vector_5:0000000000000000 __vector_5
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:345    .text.__vector_5:0000000000000000 .Loc.101
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:346    .text.__vector_5:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:396    .text.__vector_5:0000000000000022 .Loc.102
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:397    .text.__vector_5:0000000000000022 .Loc.103
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:401    .text.__vector_5:0000000000000026 .Loc.104
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:419    .text.__vector_5:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:424    .text._GLOBAL__sub_I_pcint2:0000000000000000 _GLOBAL__sub_I_pcint2
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:426    .text._GLOBAL__sub_I_pcint2:0000000000000000 .Loc.105
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:427    .text._GLOBAL__sub_I_pcint2:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:432    .text._GLOBAL__sub_I_pcint2:0000000000000000 .Loc.106
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:441    .text._GLOBAL__sub_I_pcint2:000000000000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:450    .text._GLOBAL__sub_D_pcint2:0000000000000000 _GLOBAL__sub_D_pcint2
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:452    .text._GLOBAL__sub_D_pcint2:0000000000000000 .Loc.107
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:453    .text._GLOBAL__sub_D_pcint2:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:458    .text._GLOBAL__sub_D_pcint2:0000000000000000 .Loc.108
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:467    .text._GLOBAL__sub_D_pcint2:000000000000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:33     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:78     .text._ZN6Pcint2C2Ev:0000000000000012 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:101    .text._ZN6Pcint2D2Ev:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:141    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:191    .text._ZN6Pcint24initENS_3PinE:000000000000001c L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:243    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000001a L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:298    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000001c L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:322    .text._ZN6Pcint212getLastErrorEv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:340    .text._Z23pcint2InterruptCallbackv:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:422    .text.__vector_5:0000000000000048 L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:445    .text._GLOBAL__sub_I_pcint2:000000000000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:471    .text._GLOBAL__sub_D_pcint2:000000000000000e L0
                      .debug_frame:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:124    .text._Z41__static_initialization_and_destruction_0ii:000000000000000a .L6
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:119    .text._Z41__static_initialization_and_destruction_0ii:0000000000000008 .L4
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1161   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 32
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:124    .text._Z41__static_initialization_and_destruction_0ii:000000000000000a .L6
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:119    .text._Z41__static_initialization_and_destruction_0ii:0000000000000008 .L4
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1161   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 32
 
 
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2236   .debug_rnglists:000000000000000c .LLRL14
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2276   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:451    .text._GLOBAL__sub_D_pcint2:0000000000000000 .LFB50
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:468    .text._GLOBAL__sub_D_pcint2:000000000000000e .LFE50
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:464    .text._GLOBAL__sub_D_pcint2:000000000000000c .LVL23
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:425    .text._GLOBAL__sub_I_pcint2:0000000000000000 .LFB49
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:442    .text._GLOBAL__sub_I_pcint2:000000000000000e .LFE49
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:438    .text._GLOBAL__sub_I_pcint2:000000000000000c .LVL22
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:105    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .LFB48
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:139    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a .LFE48
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1815   .debug_loclists:0000000000000014 .LLST1
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1806   .debug_loclists:000000000000000c .LVUS1
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1864   .debug_loclists:0000000000000046 .LLST2
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1855   .debug_loclists:000000000000003e .LVUS2
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:135    .text._Z41__static_initialization_and_destruction_0ii:0000000000000018 .LVL7
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:344    .text.__vector_5:0000000000000000 .LFB47
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:420    .text.__vector_5:0000000000000048 .LFE47
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:399    .text.__vector_5:0000000000000026 .LVL21
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:326    .text._Z23pcint2InterruptCallbackv:0000000000000000 .LFB46
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:338    .text._Z23pcint2InterruptCallbackv:0000000000000002 .LFE46
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:303    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .LFB45
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:320    .text._ZN6Pcint212getLastErrorEv:0000000000000008 .LFE45
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1909   .debug_loclists:0000000000000074 .LLST13
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1904   .debug_loclists:0000000000000070 .LVUS13
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:248    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 .LFB44
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:296    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000001c .LFE44
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1938   .debug_loclists:0000000000000092 .LLST9
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1933   .debug_loclists:000000000000008e .LVUS9
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1967   .debug_loclists:00000000000000b0 .LLST10
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1960   .debug_loclists:00000000000000aa .LVUS10
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1997   .debug_loclists:00000000000000cf .LLST11
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:1992   .debug_loclists:00000000000000cb .LVUS11
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2017   .debug_loclists:00000000000000e4 .LLST12
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2012   .debug_loclists:00000000000000e0 .LVUS12
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:196    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 .LFB43
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:241    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000001a .LFE43
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2036   .debug_loclists:00000000000000f8 .LLST5
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2031   .debug_loclists:00000000000000f4 .LVUS5
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2063   .debug_loclists:0000000000000114 .LLST6
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2058   .debug_loclists:0000000000000110 .LVUS6
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2085   .debug_loclists:000000000000012b .LLST7
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2080   .debug_loclists:0000000000000127 .LVUS7
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2105   .debug_loclists:0000000000000140 .LLST8
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2100   .debug_loclists:000000000000013c .LVUS8
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:146    .text._ZN6Pcint24initENS_3PinE:0000000000000000 .LFB42
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:189    .text._ZN6Pcint24initENS_3PinE:000000000000001c .LFE42
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2124   .debug_loclists:0000000000000154 .LLST3
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2119   .debug_loclists:0000000000000150 .LVUS3
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2151   .debug_loclists:0000000000000170 .LLST4
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2146   .debug_loclists:000000000000016c .LVUS4
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:83     .text._ZN6Pcint2D2Ev:0000000000000000 .LFB40
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:97     .text._ZN6Pcint2D2Ev:0000000000000002 .LFE40
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:38     .text._ZN6Pcint2C2Ev:0000000000000000 .LFB37
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:74     .text._ZN6Pcint2C2Ev:0000000000000012 .LFE37
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2171   .debug_loclists:0000000000000185 .LLST0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:2166   .debug_loclists:0000000000000181 .LVUS0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:15     .text._Z7getTickv:0000000000000000 .LFB32
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s 			page 33
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2236   .debug_rnglists:000000000000000c .LLRL14
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2276   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:451    .text._GLOBAL__sub_D_pcint2:0000000000000000 .LFB50
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:468    .text._GLOBAL__sub_D_pcint2:000000000000000e .LFE50
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:464    .text._GLOBAL__sub_D_pcint2:000000000000000c .LVL23
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:425    .text._GLOBAL__sub_I_pcint2:0000000000000000 .LFB49
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:442    .text._GLOBAL__sub_I_pcint2:000000000000000e .LFE49
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:438    .text._GLOBAL__sub_I_pcint2:000000000000000c .LVL22
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:105    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .LFB48
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:139    .text._Z41__static_initialization_and_destruction_0ii:000000000000001a .LFE48
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1815   .debug_loclists:0000000000000014 .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1806   .debug_loclists:000000000000000c .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1864   .debug_loclists:0000000000000046 .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1855   .debug_loclists:000000000000003e .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:135    .text._Z41__static_initialization_and_destruction_0ii:0000000000000018 .LVL7
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:344    .text.__vector_5:0000000000000000 .LFB47
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:420    .text.__vector_5:0000000000000048 .LFE47
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:399    .text.__vector_5:0000000000000026 .LVL21
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:326    .text._Z23pcint2InterruptCallbackv:0000000000000000 .LFB46
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:338    .text._Z23pcint2InterruptCallbackv:0000000000000002 .LFE46
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:303    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .LFB45
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:320    .text._ZN6Pcint212getLastErrorEv:0000000000000008 .LFE45
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1909   .debug_loclists:0000000000000074 .LLST13
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1904   .debug_loclists:0000000000000070 .LVUS13
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:248    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 .LFB44
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:296    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000001c .LFE44
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1938   .debug_loclists:0000000000000092 .LLST9
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1933   .debug_loclists:000000000000008e .LVUS9
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1967   .debug_loclists:00000000000000b0 .LLST10
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1960   .debug_loclists:00000000000000aa .LVUS10
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1997   .debug_loclists:00000000000000cf .LLST11
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:1992   .debug_loclists:00000000000000cb .LVUS11
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2017   .debug_loclists:00000000000000e4 .LLST12
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2012   .debug_loclists:00000000000000e0 .LVUS12
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:196    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 .LFB43
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:241    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000001a .LFE43
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2036   .debug_loclists:00000000000000f8 .LLST5
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2031   .debug_loclists:00000000000000f4 .LVUS5
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2063   .debug_loclists:0000000000000114 .LLST6
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2058   .debug_loclists:0000000000000110 .LVUS6
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2085   .debug_loclists:000000000000012b .LLST7
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2080   .debug_loclists:0000000000000127 .LVUS7
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2105   .debug_loclists:0000000000000140 .LLST8
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2100   .debug_loclists:000000000000013c .LVUS8
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:146    .text._ZN6Pcint24initENS_3PinE:0000000000000000 .LFB42
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:189    .text._ZN6Pcint24initENS_3PinE:000000000000001c .LFE42
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2124   .debug_loclists:0000000000000154 .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2119   .debug_loclists:0000000000000150 .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2151   .debug_loclists:0000000000000170 .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2146   .debug_loclists:000000000000016c .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:83     .text._ZN6Pcint2D2Ev:0000000000000000 .LFB40
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:97     .text._ZN6Pcint2D2Ev:0000000000000002 .LFE40
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:38     .text._ZN6Pcint2C2Ev:0000000000000000 .LFB37
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:74     .text._ZN6Pcint2C2Ev:0000000000000012 .LFE37
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2171   .debug_loclists:0000000000000185 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:2166   .debug_loclists:0000000000000181 .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:15     .text._Z7getTickv:0000000000000000 .LFB32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s 			page 33
 
 
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:31     .text._Z7getTickv:0000000000000008 .LFE32
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:104    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .LVL3
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:302    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .LVL19
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:247    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 .LVL14
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:269    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000c .LVL16
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:195    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 .LVL10
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:217    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000c .LVL12
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:145    .text._ZN6Pcint24initENS_3PinE:0000000000000000 .LVL8
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:163    .text._ZN6Pcint24initENS_3PinE:000000000000000a .LVL9
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:37     .text._ZN6Pcint2C2Ev:0000000000000000 .LVL0
-C:\Users\kenne\AppData\Local\Temp\ccRL1i12.s:485    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:31     .text._Z7getTickv:0000000000000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:104    .text._Z41__static_initialization_and_destruction_0ii:0000000000000000 .LVL3
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:302    .text._ZN6Pcint212getLastErrorEv:0000000000000000 .LVL19
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:247    .text._ZN6Pcint211disablePinsENS_3PinE:0000000000000000 .LVL14
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:269    .text._ZN6Pcint211disablePinsENS_3PinE:000000000000000c .LVL16
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:195    .text._ZN6Pcint210enablePinsENS_3PinE:0000000000000000 .LVL10
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:217    .text._ZN6Pcint210enablePinsENS_3PinE:000000000000000c .LVL12
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:145    .text._ZN6Pcint24initENS_3PinE:0000000000000000 .LVL8
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:163    .text._ZN6Pcint24initENS_3PinE:000000000000000a .LVL9
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:37     .text._ZN6Pcint2C2Ev:0000000000000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\ccxikbjM.s:485    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 __do_global_ctors

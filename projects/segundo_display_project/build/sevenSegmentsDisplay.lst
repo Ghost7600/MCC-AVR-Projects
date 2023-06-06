@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 1
 
 
    1               		.file	"sevenSegmentsDisplay.cpp"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
   40:funsape/device/../globalDefines.hpp **** #include <stdio.h>
   41:funsape/device/../globalDefines.hpp **** #include <stdlib.h>
   42:funsape/device/../globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 2
 
 
   43:funsape/device/../globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
   97:funsape/device/../globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:funsape/device/../globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:funsape/device/../globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 3
 
 
  100:funsape/device/../globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  154:funsape/device/../globalDefines.hpp **** enum class Axis : cuint8_t {
  155:funsape/device/../globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:funsape/device/../globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 4
 
 
  157:funsape/device/../globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  211:funsape/device/../globalDefines.hpp ****     // General error codes
  212:funsape/device/../globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:funsape/device/../globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 5
 
 
  214:funsape/device/../globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  268:funsape/device/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:funsape/device/../globalDefines.hpp ****     // CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:funsape/device/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 6
 
 
  271:funsape/device/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  325:funsape/device/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:funsape/device/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:funsape/device/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 7
 
 
  328:funsape/device/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  382:funsape/device/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:funsape/device/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:funsape/device/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 8
 
 
  385:funsape/device/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  439:funsape/device/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:funsape/device/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:funsape/device/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 9
 
 
  442:funsape/device/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  496:funsape/device/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:funsape/device/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:funsape/device/../globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 10
 
 
  499:funsape/device/../globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  553:funsape/device/../globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:funsape/device/../globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:funsape/device/../globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 11
 
 
  556:funsape/device/../globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  610:funsape/device/../globalDefines.hpp **** #endif
  611:funsape/device/../globalDefines.hpp **** #ifndef cplMaskOffset
  612:funsape/device/../globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 12
 
 
  613:funsape/device/../globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  667:funsape/device/../globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:funsape/device/../globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:funsape/device/../globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 13
 
 
  670:funsape/device/../globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  724:funsape/device/../globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:funsape/device/../globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:funsape/device/../globalDefines.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 14
 
 
  727:funsape/device/../globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  781:funsape/device/../globalDefines.hpp **** }
  782:funsape/device/../globalDefines.hpp **** 
  783:funsape/device/../globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 15
 
 
  784:funsape/device/../globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
    6:funsape/device/sevenSegmentsDisplay.cpp **** //! \version        23.04
    7:funsape/device/sevenSegmentsDisplay.cpp **** //! \copyright      license
    8:funsape/device/sevenSegmentsDisplay.cpp **** //! \details        Seven segments display controller with support to both
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 16
 
 
    9:funsape/device/sevenSegmentsDisplay.cpp **** //!                     common anode and common cathode displays. The following
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
   40               		.loc 2 62 1 is_stmt 1 view -0
   41               		.cfi_startproc
   42               	/* prologue: function */
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 17
 
 
   43               	/* frame size = 0 */
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
   94 004c 0000      		.word gs(.L3)
   95 004e 0000      		.word gs(.L3)
   96 0050 0000      		.word gs(.L3)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 18
 
 
   97 0052 0000      		.word gs(.L3)
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  151 00be 0000      		.word gs(.L3)
  152 00c0 0000      		.word gs(.L3)
  153 00c2 0000      		.word gs(.L3)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 19
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 19
 
 
  154 00c4 0000      		.word gs(.L3)
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  208 0130 0000      		.word gs(.L3)
  209 0132 0000      		.word gs(.L3)
  210 0134 0000      		.word gs(.L3)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 20
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 20
 
 
  211 0136 0000      		.word gs(.L3)
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  265 01a2 0000      		.word gs(.L3)
  266 01a4 0000      		.word gs(.L3)
  267 01a6 0000      		.word gs(.L3)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 21
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 21
 
 
  268 01a8 0000      		.word gs(.L3)
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
   68:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::HEX_1:      auxData = 0b00000110;   break;
   69:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::HEX_2:      auxData = 0b01011011;   break;
  320               		.loc 2 69 5 is_stmt 1 view .LVU7
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 22
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 22
 
 
  321               		.loc 2 69 49 view .LVU8
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  335 0016 4111      		cpse r20,__zero_reg__
  336 0018 00C0      		rjmp .L2
  337               		.loc 2 109 13 discriminator 2 view .LVU15
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 23
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 23
 
 
  338 001a 8095      		com r24
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
   73:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::HEX_6:      auxData = 0b01111101;   break;
  374               		.loc 2 73 73 view .LVU33
  375 0028 00C0      		rjmp .L34
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 24
 
 
  376               	.LVL12:
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  411               		.loc 2 79 73 view .LVU52
   79:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::LETTER_B:
  412               		.loc 2 79 57 is_stmt 0 view .LVU53
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 25
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 25
 
 
  413 0036 87E7      		ldi r24,lo8(119)
@@ -1498,7 +1498,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  448               		.loc 2 85 73 view .LVU72
  449 0044 00C0      		rjmp .L34
  450               	.LVL26:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 26
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 26
 
 
  451               	.L21:
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
   91:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::LETTER_J:   auxData = 0b00011110;   break;
  486               		.loc 2 91 73 view .LVU92
   91:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::LETTER_J:   auxData = 0b00011110;   break;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 27
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 27
 
 
  487               		.loc 2 91 57 is_stmt 0 view .LVU93
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  524               		.loc 2 95 5 is_stmt 1 view .LVU110
   95:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::LETTER_Q:   auxData = 0b01100111;   break;
  525               		.loc 2 95 49 view .LVU111
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 28
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 28
 
 
   95:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::LETTER_Q:   auxData = 0b01100111;   break;
@@ -1678,7 +1678,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  562               	.LVL48:
  563               	.L14:
   99:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::LETTER_Y:   auxData = 0b01101110;   break;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 29
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 29
 
 
  564               		.loc 2 99 5 is_stmt 1 view .LVU130
@@ -1738,7 +1738,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  102:funsape/device/sevenSegmentsDisplay.cpp ****     case(uint8_t)SevenSegmentsCode::OFF:        auxData = 0b00000000;   break;
  600               		.loc 2 102 73 view .LVU149
  601 0080 00C0      		rjmp .L34
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 30
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 30
 
 
  602               	.LVL56:
@@ -1798,7 +1798,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  644               		.loc 2 56 5 view .LVU163
   58:funsape/device/sevenSegmentsDisplay.cpp **** }
  645               		.loc 2 58 5 view .LVU164
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 31
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 31
 
 
   58:funsape/device/sevenSegmentsDisplay.cpp **** }
@@ -1815,266 +1815,266 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 1
  656               	.Letext0:
  657               		.file 3 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\stdint
  658               		.file 4 "funsape/device/sevenSegmentsDisplay.hpp"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 32
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 sevenSegmentsDisplay.cpp
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2      *ABS*:000000000000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:3      *ABS*:000000000000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:4      *ABS*:000000000000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:5      *ABS*:0000000000000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:6      *ABS*:0000000000000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:14     .text._Z7getTickv:0000000000000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:17     .text._Z7getTickv:0000000000000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:18     .text._Z7getTickv:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:23     .text._Z7getTickv:0000000000000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:24     .text._Z7getTickv:0000000000000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:30     .text._Z7getTickv:0000000000000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:36     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 _Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:40     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:41     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:46     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:47     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:316    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000000e .Loc.6
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:320    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .Loc.7
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:321    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:322    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .Loc.9
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:323    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .Loc.10
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:327    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000012 .Loc.11
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:329    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000014 .Loc.12
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:333    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000016 .Loc.13
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:334    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000016 .Loc.14
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:337    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001a .Loc.15
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:340    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001c .Loc.16
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:343    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001c .Loc.17
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:347    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .Loc.18
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:348    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .Loc.19
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:349    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .Loc.20
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:350    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .Loc.21
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:353    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000020 .Loc.22
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:357    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .Loc.23
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:358    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .Loc.24
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:359    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:360    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .Loc.26
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:363    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000024 .Loc.27
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:367    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.28
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:368    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.29
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:369    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.30
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:370    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.31
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:371    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.32
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:374    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000028 .Loc.33
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:378    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .Loc.34
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:379    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .Loc.35
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:380    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .Loc.36
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:381    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .Loc.37
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:384    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002c .Loc.38
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:388    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .Loc.39
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:389    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .Loc.40
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:390    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .Loc.41
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:391    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .Loc.42
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:394    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000030 .Loc.43
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:398    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .Loc.44
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 33
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:14     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:17     .text._Z7getTickv:0000000000000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:18     .text._Z7getTickv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:23     .text._Z7getTickv:0000000000000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:24     .text._Z7getTickv:0000000000000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:30     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:36     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 _Z22convertToSevenSegmentshb24SevenSegmentsDisplayType
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:40     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:41     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:46     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:47     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:316    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000000e .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:320    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:321    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:322    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:323    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:327    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000012 .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:329    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000014 .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:333    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000016 .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:334    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000016 .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:337    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001a .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:340    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001c .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:343    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001c .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:347    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:348    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:349    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:350    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:353    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000020 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:357    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:358    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:359    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:360    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:363    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000024 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:367    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:368    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:369    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:370    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:371    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .Loc.32
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:374    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000028 .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:378    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:379    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:380    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:381    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:384    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002c .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:388    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:389    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .Loc.40
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:390    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:391    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .Loc.42
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:394    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000030 .Loc.43
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:398    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .Loc.44
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 33
 
 
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:399    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .Loc.45
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:400    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .Loc.46
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:401    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .Loc.47
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:404    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000034 .Loc.48
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:408    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.49
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:409    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.50
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:410    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.51
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:411    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.52
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:412    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.53
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:415    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000038 .Loc.54
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:419    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.55
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:420    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.56
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:421    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.57
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:422    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.58
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:423    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.59
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:426    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003c .Loc.60
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:430    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.61
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:431    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.62
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:432    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.63
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:433    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.64
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:434    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.65
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:437    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000040 .Loc.66
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:441    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.67
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:442    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.68
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:443    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.69
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:444    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.70
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:445    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.71
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:448    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000044 .Loc.72
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:452    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.73
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:453    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.74
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:454    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.75
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:455    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.76
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:456    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.77
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:459    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000048 .Loc.78
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:463    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.79
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:464    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.80
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:465    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.81
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:466    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.82
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:467    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.83
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:470    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004c .Loc.84
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:474    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .Loc.85
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:475    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .Loc.86
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:476    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .Loc.87
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:477    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .Loc.88
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:480    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000050 .Loc.89
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:484    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .Loc.90
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:485    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .Loc.91
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:486    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .Loc.92
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:487    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .Loc.93
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:490    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000054 .Loc.94
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:494    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .Loc.95
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:495    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .Loc.96
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:496    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .Loc.97
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:497    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .Loc.98
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:500    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000058 .Loc.99
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:504    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .Loc.100
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:505    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .Loc.101
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 34
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:399    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:400    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .Loc.46
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:401    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .Loc.47
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:404    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000034 .Loc.48
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:408    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.49
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:409    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:410    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.51
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:411    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.52
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:412    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .Loc.53
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:415    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000038 .Loc.54
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:419    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.55
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:420    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.56
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:421    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.57
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:422    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.58
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:423    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .Loc.59
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:426    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003c .Loc.60
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:430    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.61
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:431    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.62
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:432    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.63
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:433    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.64
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:434    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .Loc.65
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:437    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000040 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:441    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:442    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.68
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:443    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.69
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:444    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.70
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:445    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .Loc.71
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:448    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000044 .Loc.72
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:452    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.73
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:453    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.74
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:454    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.75
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:455    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.76
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:456    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .Loc.77
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:459    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000048 .Loc.78
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:463    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.79
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:464    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.80
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:465    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.81
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:466    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.82
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:467    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .Loc.83
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:470    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004c .Loc.84
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:474    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .Loc.85
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:475    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .Loc.86
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:476    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .Loc.87
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:477    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .Loc.88
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:480    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000050 .Loc.89
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:484    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .Loc.90
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:485    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .Loc.91
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:486    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .Loc.92
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:487    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .Loc.93
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:490    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000054 .Loc.94
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:494    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .Loc.95
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:495    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .Loc.96
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:496    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .Loc.97
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:497    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .Loc.98
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:500    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000058 .Loc.99
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:504    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .Loc.100
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:505    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .Loc.101
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 34
 
 
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:506    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .Loc.102
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:507    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .Loc.103
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:510    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005c .Loc.104
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:514    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .Loc.105
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:515    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .Loc.106
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:516    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .Loc.107
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:517    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .Loc.108
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:520    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000060 .Loc.109
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:524    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .Loc.110
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:525    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .Loc.111
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:526    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .Loc.112
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:527    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .Loc.113
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:530    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000064 .Loc.114
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:534    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .Loc.115
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:535    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .Loc.116
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:536    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .Loc.117
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:537    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .Loc.118
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:540    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000068 .Loc.119
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:544    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .Loc.120
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:545    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .Loc.121
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:546    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .Loc.122
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:547    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .Loc.123
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:550    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006c .Loc.124
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:554    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .Loc.125
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:555    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .Loc.126
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:556    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .Loc.127
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:557    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .Loc.128
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:560    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000070 .Loc.129
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:564    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .Loc.130
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:565    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .Loc.131
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:566    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .Loc.132
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:567    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .Loc.133
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:570    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000074 .Loc.134
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:574    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .Loc.135
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:575    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .Loc.136
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:576    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .Loc.137
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:577    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .Loc.138
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:580    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000078 .Loc.139
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:584    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .Loc.140
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:585    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .Loc.141
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:586    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .Loc.142
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:587    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .Loc.143
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:590    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007c .Loc.144
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:594    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .Loc.145
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:595    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .Loc.146
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:596    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .Loc.147
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:597    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .Loc.148
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:600    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000080 .Loc.149
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:604    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .Loc.150
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:605    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .Loc.151
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:606    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .Loc.152
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:607    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .Loc.153
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:610    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000084 .Loc.154
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:614    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .Loc.155
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:615    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .Loc.156
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:616    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .Loc.157
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:617    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .Loc.158
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 35
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:506    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .Loc.102
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:507    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .Loc.103
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:510    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005c .Loc.104
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:514    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .Loc.105
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:515    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .Loc.106
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:516    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .Loc.107
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:517    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .Loc.108
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:520    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000060 .Loc.109
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:524    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .Loc.110
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:525    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .Loc.111
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:526    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .Loc.112
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:527    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .Loc.113
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:530    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000064 .Loc.114
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:534    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .Loc.115
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:535    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .Loc.116
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:536    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .Loc.117
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:537    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .Loc.118
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:540    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000068 .Loc.119
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:544    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .Loc.120
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:545    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .Loc.121
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:546    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .Loc.122
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:547    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .Loc.123
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:550    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006c .Loc.124
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:554    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .Loc.125
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:555    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .Loc.126
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:556    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .Loc.127
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:557    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .Loc.128
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:560    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000070 .Loc.129
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:564    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .Loc.130
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:565    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .Loc.131
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:566    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .Loc.132
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:567    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .Loc.133
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:570    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000074 .Loc.134
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:574    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .Loc.135
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:575    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .Loc.136
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:576    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .Loc.137
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:577    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .Loc.138
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:580    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000078 .Loc.139
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:584    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .Loc.140
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:585    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .Loc.141
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:586    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .Loc.142
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:587    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .Loc.143
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:590    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007c .Loc.144
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:594    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .Loc.145
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:595    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .Loc.146
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:596    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .Loc.147
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:597    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .Loc.148
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:600    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000080 .Loc.149
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:604    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .Loc.150
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:605    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .Loc.151
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:606    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .Loc.152
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:607    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .Loc.153
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:610    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000084 .Loc.154
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:614    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .Loc.155
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:615    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .Loc.156
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:616    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .Loc.157
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:617    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .Loc.158
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 35
 
 
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:620    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000088 .Loc.159
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:624    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008a .Loc.160
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:627    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008c .Loc.161
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:629    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008e L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:635    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 _Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:638    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .Loc.162
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:639    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:644    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .Loc.163
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:645    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .Loc.164
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:646    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .Loc.165
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:650    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000004 .Loc.166
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:652    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000006 L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:33     .text._Z7getTickv:0000000000000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:632    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008e L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:655    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000006 L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:620    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000088 .Loc.159
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:624    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008a .Loc.160
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:627    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008c .Loc.161
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:629    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008e L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:635    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 _Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:638    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .Loc.162
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:639    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:644    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .Loc.163
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:645    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .Loc.164
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:646    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .Loc.165
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:650    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000004 .Loc.166
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:652    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000006 L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:33     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:632    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008e L0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:655    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000006 L0
                      .debug_frame:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:55     .jumptables.gcc._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .L5
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:326    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000012 .L34
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:341    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001c .L2
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:313    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000000c .L17
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:623    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008a .L37
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:319    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .L33
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:346    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .L32
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:356    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .L31
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:366    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .L15
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:377    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .L30
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:387    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .L28
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:397    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .L27
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:407    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .L25
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:418    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .L24
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:429    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .L23
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:440    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .L22
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:451    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .L21
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:462    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .L20
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:613    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .L3
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:583    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .L26
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:473    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .L19
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:503    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .L18
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:523    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .L16
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:563    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .L14
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:483    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .L13
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:493    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .L12
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:513    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .L11
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:533    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .L10
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:543    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .L9
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:553    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .L8
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:573    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .L7
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:593    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .L6
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:603    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .L4
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:998    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2347   .debug_rnglists:000000000000000c .LLRL6
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2360   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:38     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .LFB34
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:630    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008e .LFE34
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:1380   .debug_loclists:0000000000000084 .LLST0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:1259   .debug_loclists:000000000000000c .LVUS0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:1883   .debug_loclists:000000000000028b .LLST1
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s 			page 36
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:55     .jumptables.gcc._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .L5
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:326    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000012 .L34
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:341    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001c .L2
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:313    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000000c .L17
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:623    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008a .L37
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:319    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000010 .L33
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:346    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000001e .L32
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:356    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000022 .L31
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:366    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000026 .L15
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:377    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002a .L30
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:387    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000002e .L28
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:397    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000032 .L27
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:407    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000036 .L25
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:418    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003a .L24
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:429    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000003e .L23
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:440    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000042 .L22
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:451    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000046 .L21
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:462    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004a .L20
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:613    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000086 .L3
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:583    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007a .L26
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:473    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000004e .L19
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:503    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005a .L18
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:523    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000062 .L16
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:563    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000072 .L14
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:483    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000052 .L13
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:493    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000056 .L12
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:513    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000005e .L11
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:533    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000066 .L10
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:543    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006a .L9
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:553    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000006e .L8
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:573    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000076 .L7
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:593    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000007e .L6
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:603    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000082 .L4
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:998    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2347   .debug_rnglists:000000000000000c .LLRL6
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2360   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:38     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .LFB34
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:630    .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:000000000000008e .LFE34
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:1380   .debug_loclists:0000000000000084 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:1259   .debug_loclists:000000000000000c .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:1883   .debug_loclists:000000000000028b .LLST1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s 			page 36
 
 
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:1774   .debug_loclists:000000000000021f .LVUS1
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:637    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .LFB33
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:653    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000006 .LFE33
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2239   .debug_loclists:00000000000003f3 .LLST2
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2234   .debug_loclists:00000000000003ef .LVUS2
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2261   .debug_loclists:000000000000040a .LLST3
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2256   .debug_loclists:0000000000000406 .LVUS3
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2283   .debug_loclists:0000000000000421 .LLST4
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2278   .debug_loclists:000000000000041d .LVUS4
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2305   .debug_loclists:0000000000000438 .LLST5
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:2300   .debug_loclists:0000000000000434 .LVUS5
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:648    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000004 .LVL63
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:15     .text._Z7getTickv:0000000000000000 .LFB32
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:31     .text._Z7getTickv:0000000000000008 .LFE32
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:37     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .LVL0
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:636    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .LVL62
-C:\Users\kenne\AppData\Local\Temp\ccMNBkYY.s:660    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:1774   .debug_loclists:000000000000021f .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:637    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .LFB33
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:653    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000006 .LFE33
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2239   .debug_loclists:00000000000003f3 .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2234   .debug_loclists:00000000000003ef .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2261   .debug_loclists:000000000000040a .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2256   .debug_loclists:0000000000000406 .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2283   .debug_loclists:0000000000000421 .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2278   .debug_loclists:000000000000041d .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2305   .debug_loclists:0000000000000438 .LLST5
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:2300   .debug_loclists:0000000000000434 .LVUS5
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:648    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000004 .LVL63
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:15     .text._Z7getTickv:0000000000000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:31     .text._Z7getTickv:0000000000000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:37     .text._Z22convertToSevenSegmentshb24SevenSegmentsDisplayType:0000000000000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:636    .text._Z22convertToSevenSegments17SevenSegmentsCodeb24SevenSegmentsDisplayType:0000000000000000 .LVL62
+C:\Users\kenne\AppData\Local\Temp\ccgcXIKz.s:660    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 __tablejump2__
