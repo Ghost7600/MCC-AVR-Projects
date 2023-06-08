@@ -1,0 +1,9 @@
+# Compilation debries
+build/
+
+
+# Proteus files
+Backup*
+*.pdsprj*
+
+
