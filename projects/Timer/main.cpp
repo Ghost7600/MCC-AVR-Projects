@@ -1,6 +1,6 @@
 
 #include <avr/io.h>
-#include "globalDefines.hpp"
+#include "funsape/globalDefines.hpp"
 #include "timer1.hpp"
 
 int main()

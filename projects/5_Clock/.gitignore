@@ -1,24 +1,13 @@
 # Compilation debries
 build/
-
-# Makefile files
-Makefile
-makefile-*
-*.mk
-gmsl
-__gmsl
-
-# VS Code files and folders
-.vscode/
-*.code-workspace
+!build/application.hex
 
 # Test files
 # main.cpp
 
 # Proteus files
 Backup*
-*.pdsprj*
-*.pdsbak*
+
 
 # Hidden directories
 _hide/
