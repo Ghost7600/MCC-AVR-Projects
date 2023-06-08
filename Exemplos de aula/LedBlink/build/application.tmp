@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega168PA"</DEVICE>
+ <WORKING_DIR>E:\LedBlink</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>include/m168PAdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>build/application.o</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>build/application.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>build/application.map</FILE>
+  <FILE>build/application.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>main.asm</FILE><LINE>23</LINE></start>
+  <animationstart><FILE>main.asm</FILE><LINE>27</LINE></animationstart>
+  <animationloop><FILE>main.asm</FILE><LINE>30</LINE></animationloop>
+  <delay><FILE>main.asm</FILE><LINE>37</LINE></delay>
+  <delay_loop><FILE>main.asm</FILE><LINE>42</LINE></delay_loop>
+ </LABELS>
+</ASSEMBLER_INFO>
