@@ -14,6 +14,31 @@
     uint32_t aux = 2999;
     int16_t angulo;
 
+int16_t typing (uint16_t valor,uint8_t ndigit){
+    switch (ndigit)
+    {
+    case 1:
+        valor = ndigit;
+        break;
+    case 2:
+        valor = valor*10+ndigit;
+        break;
+    case 3:
+        valor = valor*10+ndigit;
+        break;
+    default:
+        //valor = 999;
+        valor = valor*10+ndigit;
+        break;
+    }
+    return valor;
+}
+
+void setangle (uint16_t angulo){
+    uint32_t aux = ((100*angulo+13500)/135)*10+1999;
+    timer1.setCompareAValue(aux);
+}
+
 int16_t getangle (uint32_t aux){
     int32_t aux2;
     int16_t angulo;
@@ -74,6 +99,8 @@ int main()
     timer1.setCompareAValue(aux);
 
     uint8_t estado = 0;
+    uint8_t subestado =1;
+    int16_t valor =0;
     while(1) {
             switch (estado)
             {
@@ -122,11 +149,51 @@ int main()
                 lcd.clearScreen();
                 printf("Angulo = %d \n", angulo);
                 printf("Novo=");
-                // lcd.displayStateSet(Hd44780::DisplayState::CURSOR_ON);
                 lcd.displayStateSet(Hd44780::DisplayState::BLINK_ON);
                 lcd.cursorGoTo(2,5);
                 while (estado == 1){
                     keypad.readKeyPressed(&tecla);
+                    switch (tecla)
+                    {
+                    case 'E':
+                        estado = 0;
+                        break;
+                    case 'F':
+                        if (valor>=-135 && valor<=135){
+                            setangle(valor);
+                            estado = 0;
+                        }
+                        else{
+                            printf("Valor invalido!");
+                            delayMs(1500);
+                            estado =0;
+                        }
+                        break;
+                    case 0xFF:
+                        break;
+                    default:
+                        switch (subestado)
+                        {
+                        case 1:
+                            valor = typing(0,subestado);
+                            lcd.clearScreen();
+                            printf("Angulo = %d \n", angulo);
+                            printf("Novo= %d",valor);
+                            subestado++;
+                            break;
+                        case 2:
+                            valor = typing(valor,subestado);
+                            subestado++;
+                            break;
+                        case 3:
+                            valor = typing(valor,subestado);
+                            subestado++;
+                            break;
+                        default:
+                            break;
+                        }
+                        break;
+                    }
                 }
             }
             //Início do modo ocioso
