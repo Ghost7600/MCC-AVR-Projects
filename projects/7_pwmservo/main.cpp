@@ -122,35 +122,51 @@ int main()
         switch(estado) {
         case 0:
             //entrando no modo ocioso
+            lcd.displayStateSet(Hd44780::DisplayState::CURSOR_OFF);
+            angulo = getangle(aux);
+            lcd.clearScreen();
+            printf("Angulo = %d\n", angulo);
+            delayMs(50);
             while(estado == 0) {
                 angulo = getangle(aux);
-                lcd.clearScreen();
-                printf("Angulo = %d\n %d", angulo, aux);
-                delayMs(50);
                 keypad.readKeyPressed(&tecla);
                 switch(tecla) {
                 case 0xFF:
-                    lcd.clearScreen();
                     break;
 
                 case '0':
                     aux = 2999;
                     OCR1A = aux;
+                    angulo = getangle(aux);
+                    lcd.clearScreen();
+                    printf("Angulo = %d\n", angulo);
+                    delayMs(50);
                     break;
+
                 case 'C':
                     aux = aux - 37;
                     if(aux < 1999) {
                         aux = 1999;
                     }
                     OCR1A = aux;
+                    angulo = getangle(aux);
+                    lcd.clearScreen();
+                    printf("Angulo = %d\n", angulo);
+                    delayMs(50);
                     break;
+
                 case 'D':
                     aux = aux + 37;
                     if(aux > 3999) {
                         aux = 3999;
                     }
                     OCR1A = aux;
+                    angulo = getangle(aux);
+                    lcd.clearScreen();
+                    printf("Angulo = %d\n", angulo);
+                    delayMs(50);
                     break;
+
                 case 'F':
                     estado = 1;
                     subestado = 1;
@@ -171,10 +187,11 @@ int main()
                 keypad.readKeyPressed(&tecla);
                 switch(tecla) {
                 case 'C':
-                    printf("tecla %c pressionada", tecla);
-                    delayMs(300);
-                    lcd.clearScreen();
+                    // printf("tecla %c pressionada", tecla);
+                    // delayMs(300);
+                    // lcd.clearScreen();
                     valor = -valor;
+                    lcd.clearScreen();
                     printf("Angulo = %d \n", angulo);
                     printf("Novo= %d", valor);
                     break;
@@ -186,6 +203,9 @@ int main()
                         setangle(valor);
                         estado = 0;
                     } else {
+                        lcd.clearScreen();
+                        lcd.displayStateSet(Hd44780::DisplayState::CURSOR_OFF);
+                        printf("Angulo = %d \n", angulo);
                         printf("Valor invalido!");
                         delayMs(1500);
                         estado = 0;
@@ -194,9 +214,9 @@ int main()
                 case 0xFF:
                     break;
                 default:
-                    lcd.clearScreen();
-                    printf("tecla %c pressionada", tecla);
-                    delayMs(300);
+                    //lcd.clearScreen();
+                    //printf("tecla %c pressionada", tecla);
+                    //delayMs(300);
                     switch(subestado) {
                     case 1:
                         valor = typing(0, tecla - '0', subestado);
