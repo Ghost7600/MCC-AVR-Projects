@@ -11,44 +11,61 @@
 #include "funsape/device/keypad.hpp"
 
 //globals
-    uint32_t aux = 2999;
-    int16_t angulo;
+uint32_t aux = 2999;
+int16_t angulo;
 
-int16_t typing (uint16_t valor,uint8_t ndigit){
-    switch (ndigit)
-    {
+int16_t typing(int16_t valor, uint8_t digitado, uint8_t subestado)
+{
+    switch(subestado) {
     case 1:
-        valor = ndigit;
+        valor = digitado;
         break;
     case 2:
-        valor = valor*10+ndigit;
-        break;
+        if(valor < 0) {
+            valor = valor * 10 - digitado;
+            break;
+        } else {
+            valor = valor * 10 + digitado;
+            break;
+        }
+
     case 3:
-        valor = valor*10+ndigit;
-        break;
+        if(valor < 0) {
+            valor = valor * 10 - digitado;
+            break;
+        } else {
+            valor = valor * 10 + digitado;
+            break;
+        }
     default:
-        //valor = 999;
-        valor = valor*10+ndigit;
-        break;
+        if(valor < 0) {
+            valor = valor * 10 - digitado;
+            break;
+        } else {
+            valor = valor * 10 + digitado;
+            break;
+        }
     }
     return valor;
 }
 
-void setangle (uint16_t angulo){
-    uint32_t aux = ((100*angulo+13500)/135)*10+1999;
+void setangle(uint16_t angulo)
+{
+    aux = ((100 * angulo + 13500) / 135) * 10 + 1999;
     timer1.setCompareAValue(aux);
 }
 
-int16_t getangle (uint32_t aux){
+int16_t getangle(uint32_t aux)
+{
     int32_t aux2;
     int16_t angulo;
-    aux2 = 10*aux -29999;
-    angulo = 10*aux2/741;
-    if (angulo >0){
-    angulo++;
+    aux2 = 10 * aux - 29999;
+    angulo = 10 * aux2 / 741;
+    if(angulo > 0) {
+        angulo++;
     }
-    if (angulo ==1){
-        angulo =0;
+    if(angulo == 1) {
+        angulo = 0;
     }
     return angulo;
 }
@@ -99,104 +116,122 @@ int main()
     timer1.setCompareAValue(aux);
 
     uint8_t estado = 0;
-    uint8_t subestado =1;
-    int16_t valor =0;
+    uint8_t subestado = 1;
+    int16_t valor = 0;
     while(1) {
-            switch (estado)
-            {
-            case 0:
-                //entrando no modo ocioso
-                while (estado == 0)
-                {
-                    angulo = getangle(aux);
-                    lcd.clearScreen();
-                    printf("Angulo = %d\n %d", angulo,aux);
-                    delayMs(50);
-                    keypad.readKeyPressed(&tecla);
-                    switch (tecla)
-                    {
-                    case 0xFF:
+        switch(estado) {
+        case 0:
+            //entrando no modo ocioso
+            while(estado == 0) {
+                angulo = getangle(aux);
+                lcd.clearScreen();
+                printf("Angulo = %d\n %d", angulo, aux);
+                delayMs(50);
+                keypad.readKeyPressed(&tecla);
+                switch(tecla) {
+                case 0xFF:
                     lcd.clearScreen();
                     break;
 
-                    case '0':
-                        aux = 2999;
-                        OCR1A = aux;
-                        break;
-                    case 'C':
-                        aux = aux - 37;
-                        if (aux<1999){
-                            aux = 1999;
-                        }
-                        OCR1A = aux;
-                        break;
-                    case 'D':
-                        aux = aux + 37;
-                        if (aux>3999){
-                            aux = 3999;
-                        }
-                        OCR1A = aux;
-                        break;
-                    case 'F':
-                        estado = 1;
-                        break;
-                    default:
-                        break;
+                case '0':
+                    aux = 2999;
+                    OCR1A = aux;
+                    break;
+                case 'C':
+                    aux = aux - 37;
+                    if(aux < 1999) {
+                        aux = 1999;
                     }
-                }
-            case 1:
-                angulo = getangle(aux);
-                lcd.clearScreen();
-                printf("Angulo = %d \n", angulo);
-                printf("Novo=");
-                lcd.displayStateSet(Hd44780::DisplayState::BLINK_ON);
-                lcd.cursorGoTo(2,5);
-                while (estado == 1){
-                    keypad.readKeyPressed(&tecla);
-                    switch (tecla)
-                    {
-                    case 'E':
-                        estado = 0;
-                        break;
-                    case 'F':
-                        if (valor>=-135 && valor<=135){
-                            setangle(valor);
-                            estado = 0;
-                        }
-                        else{
-                            printf("Valor invalido!");
-                            delayMs(1500);
-                            estado =0;
-                        }
-                        break;
-                    case 0xFF:
-                        break;
-                    default:
-                        switch (subestado)
-                        {
-                        case 1:
-                            valor = typing(0,subestado);
-                            lcd.clearScreen();
-                            printf("Angulo = %d \n", angulo);
-                            printf("Novo= %d",valor);
-                            subestado++;
-                            break;
-                        case 2:
-                            valor = typing(valor,subestado);
-                            subestado++;
-                            break;
-                        case 3:
-                            valor = typing(valor,subestado);
-                            subestado++;
-                            break;
-                        default:
-                            break;
-                        }
-                        break;
+                    OCR1A = aux;
+                    break;
+                case 'D':
+                    aux = aux + 37;
+                    if(aux > 3999) {
+                        aux = 3999;
                     }
+                    OCR1A = aux;
+                    break;
+                case 'F':
+                    estado = 1;
+                    subestado = 1;
+                    valor = 0;
+                    break;
+                default:
+                    break;
                 }
             }
-            //Início do modo ocioso
+        case 1:
+            angulo = getangle(aux);
+            lcd.clearScreen();
+            printf("Angulo = %d \n", angulo);
+            printf("Novo=");
+            lcd.displayStateSet(Hd44780::DisplayState::BLINK_ON);
+            lcd.cursorGoTo(2, 5);
+            while(estado == 1) {
+                keypad.readKeyPressed(&tecla);
+                switch(tecla) {
+                case 'C':
+                    printf("tecla %c pressionada", tecla);
+                    delayMs(300);
+                    lcd.clearScreen();
+                    valor = -valor;
+                    printf("Angulo = %d \n", angulo);
+                    printf("Novo= %d", valor);
+                    break;
+                case 'E':
+                    estado = 0;
+                    break;
+                case 'F':
+                    if(valor >= -135 && valor <= 135) {
+                        setangle(valor);
+                        estado = 0;
+                    } else {
+                        printf("Valor invalido!");
+                        delayMs(1500);
+                        estado = 0;
+                    }
+                    break;
+                case 0xFF:
+                    break;
+                default:
+                    lcd.clearScreen();
+                    printf("tecla %c pressionada", tecla);
+                    delayMs(300);
+                    switch(subestado) {
+                    case 1:
+                        valor = typing(0, tecla - '0', subestado);
+                        lcd.clearScreen();
+                        printf("Angulo = %d \n", angulo);
+                        printf("Novo= %d", valor);
+                        subestado++;
+                        break;
+                    case 2:
+                        valor = typing(valor, tecla - '0', subestado);
+                        lcd.clearScreen();
+                        printf("Angulo = %d \n", angulo);
+                        printf("Novo= %d", valor);
+                        subestado++;
+                        break;
+                    case 3:
+                        valor = typing(valor, tecla - '0', subestado);
+                        lcd.clearScreen();
+                        printf("Angulo = %d \n", angulo);
+                        printf("Novo= %d", valor);
+                        subestado++;
+                        break;
+                    default:
+                        valor = typing(valor, tecla - '0', subestado);
+                        lcd.clearScreen();
+                        printf("Angulo = %d \n", angulo);
+                        printf("Novo= %d", valor);
+                        subestado++;
+                        break;
+                    }
+                    break;
+                }
+            }
+        }
+        //Início do modo ocioso
 
 
 
