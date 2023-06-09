@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>e3e1590a-119c-4952-8a21-3574140995bf</id>
-      <revision>2</revision>
+      <revision>3</revision>
     </identity>
     <calculation>
       <precision>8</precision>
@@ -90,14 +90,14 @@
         </input>
       </math>
     </region>
-    <region left="126" top="342" width="187" height="26" color="#000000" fontSize="10">
+    <region left="126" top="342" width="195" height="26" color="#000000" fontSize="10">
       <math>
         <input>
-          <e type="operand">1</e>
+          <e type="operand">90</e>
           <e type="function" args="1">aux</e>
         </input>
         <result action="numeric">
-          <e type="operand">22148.14814815</e>
+          <e type="operand">35333.33333333</e>
         </result>
       </math>
     </region>
