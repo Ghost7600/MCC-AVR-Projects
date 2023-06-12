@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 1
 
 
    1               		.file	"main.cpp"
@@ -10,7 +10,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
    7               		.text
    8               	.Ltext0:
    9               		.cfi_sections	.debug_frame
-  10               		.file 0 "D:\\IFSC\\MCC\\projects\\pushc" "main.cpp"
+  10               		.file 0 "F:\\IMPORTANTE\\Faculdade\\MCC\\MCC-AVR-Projects\\projects\\2_push_leds_c" "main.cpp"
   11               		.section	.text._Z12assertFailedPcm,"ax",@progbits
   12               		.weak	_Z12assertFailedPcm
   14               	_Z12assertFailedPcm:
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
   39:funsape/globalDefines.hpp **** #if !defined(__FUNSAPE_AVR8_LIB_PINOUT_HPP)
   40:funsape/globalDefines.hpp **** #    error "Header file (funsapeAvrPinout.hpp) is corrupted!"
   41:funsape/globalDefines.hpp **** #elif __FUNSAPE_AVR8_LIB_PINOUT_HPP != __FUNSAPE_AVR8_LIB_GLOBAL_DEFINES_HPP
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 2
 
 
   42:funsape/globalDefines.hpp **** #    error "Version mismatch between header file and library dependency (funsapeAvrSevenSegments.hp
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
   96:funsape/globalDefines.hpp **** typedef cuint16_t                       cuint_t;        // 16-bit (AVR)
   97:funsape/globalDefines.hpp **** typedef vint16_t                        vint_t;         // 16-bit (AVR)
   98:funsape/globalDefines.hpp **** typedef vuint16_t                       vuint_t;        // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 3
 
 
   99:funsape/globalDefines.hpp **** typedef uint8_t                         ioPinIndex_t;   // 8-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  153:funsape/globalDefines.hpp ****     Y                                   = (0 << 2) | (1 << 1) | (0 << 0),
  154:funsape/globalDefines.hpp ****     XY                                  = (0 << 2) | (1 << 1) | (1 << 0),
  155:funsape/globalDefines.hpp ****     Z                                   = (1 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 4
 
 
  156:funsape/globalDefines.hpp ****     XZ                                  = (1 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  210:funsape/globalDefines.hpp **** };
  211:funsape/globalDefines.hpp **** 
  212:funsape/globalDefines.hpp **** enum class Error : cuint16_t {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 5
 
 
  213:funsape/globalDefines.hpp ****     // General error codes
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  267:funsape/globalDefines.hpp ****     // Clock configuration related error codes
  268:funsape/globalDefines.hpp ****     // CLOCK_PRESCALER_CHANGE_FAILED                       = 0x0030,   // Clock prescaler change fa
  269:funsape/globalDefines.hpp ****     // CLOCK_PRESCALER_NOT_SUPPORTED                       = 0x0031,   // Clock prescaler configura
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 6
 
 
  270:funsape/globalDefines.hpp ****     // CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  324:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_3                             = 0x0063,   // Generic error (use only o
  325:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_4                             = 0x0064,   // Generic error (use only o
  326:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_5                             = 0x0065,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 7
 
 
  327:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  381:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_5                                 = 0x0095,   // Generic error (use only o
  382:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_6                                 = 0x0096,   // Generic error (use only o
  383:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_7                                 = 0x0097,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 8
 
 
  384:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  438:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_8                                 = 0x00C8,   // Generic error (use only o
  439:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_9                                 = 0x00C9,   // Generic error (use only o
  440:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_10                                = 0x00CA,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 9
 
 
  441:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  495:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_11                             = 0x00FB,   // Generic error (use only o
  496:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_12                             = 0x00FC,   // Generic error (use only o
  497:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_13                             = 0x00FD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 10
 
 
  498:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  552:funsape/globalDefines.hpp ****         (IS_GPIO_ALL_INSTANCE(gpioPort))        \
  553:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
  554:funsape/globalDefines.hpp ****         : (bool_t)false)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 11
 
 
  555:funsape/globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)         (  \
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  609:funsape/globalDefines.hpp **** #endif
  610:funsape/globalDefines.hpp **** #ifndef clrMaskOffset
  611:funsape/globalDefines.hpp **** #   define clrMaskOffset(reg, mask, offset)     ((reg) &= ~((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 12
 
 
  612:funsape/globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  666:funsape/globalDefines.hpp ****         (dwordGetHword2(dataDword) << 16) | \
  667:funsape/globalDefines.hpp ****         (dwordGetHword3(dataDword)))
  668:funsape/globalDefines.hpp **** #define dwordGetWord1(dataDword)         (((dataDword) >> 32) & 0x00000000FFFFFFFF)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 13
 
 
  669:funsape/globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  723:funsape/globalDefines.hpp **** inlined void doNothing(void);
  724:funsape/globalDefines.hpp **** inlined void systemHalt(void (*function_p)(void) = nullptr);
  725:funsape/globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 14
 
 
  726:funsape/globalDefines.hpp **** // =============================================================================
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  780:funsape/globalDefines.hpp **** }
  781:funsape/globalDefines.hpp **** 
  782:funsape/globalDefines.hpp **** inlined void doNop(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 15
 
 
  783:funsape/globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  821:funsape/globalDefines.hpp **** weakened uint32_t getTick(void)
  822:funsape/globalDefines.hpp **** {
   36               		.loc 1 822 1 is_stmt 1 view -0
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 16
 
 
   37               		.cfi_startproc
@@ -948,7 +948,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
   23:main.cpp      **** #define waitWhileClr(auxreg,auxbit)   do{}while(isbitclr(auxreg,auxbit))
   24:main.cpp      **** #define waitWhileSet(auxreg,auxbit)   do{}while(isbitset(auxreg,auxbit))
   25:main.cpp      **** 
-  26:main.cpp      **** volatile bool go =1; //flag that pauses and plays operation
+  26:main.cpp      **** volatile bool go = 1; //flag that pauses and plays operation
   27:main.cpp      **** 
   28:main.cpp      **** int main()
   29:main.cpp      **** 
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
   60               	/* prologue: function */
   61               	/* frame size = 0 */
   62               	/* stack size = 0 */
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 17
 
 
   63               	.L__stack_usage = 0
@@ -1001,14 +1001,14 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
   45:main.cpp      **** 
   46:main.cpp      ****     //setup interrupt on button release
   47:main.cpp      **** 
-  48:main.cpp      ****     setBit(PCICR,PCIE0); //Enables Pin change interrupt for PCINT0..7
+  48:main.cpp      ****     setBit(PCICR, PCIE0); //Enables Pin change interrupt for PCINT0..7
   86               		.loc 2 48 5 view .LVU18
   87 0016 E8E6      		ldi r30,lo8(104)
   88 0018 F0E0      		ldi r31,0
   89 001a 8081      		ld r24,Z
   90 001c 8160      		ori r24,lo8(1)
   91 001e 8083      		st Z,r24
-  49:main.cpp      ****     setbit(PCMSK0,PCINT2); //Enable interrupt for pin PB2, PCINT2
+  49:main.cpp      ****     setbit(PCMSK0, PCINT2); //Enable interrupt for pin PB2, PCINT2
   92               		.loc 2 49 5 view .LVU19
   93 0020 EBE6      		ldi r30,lo8(107)
   94 0022 F0E0      		ldi r31,0
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
   50:main.cpp      ****     sei();
   98               		.loc 2 50 5 view .LVU20
   99               	/* #APP */
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 18
 
 
  100               	 ;  50 "main.cpp" 1
@@ -1039,11 +1039,11 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
   53:main.cpp      **** 
   54:main.cpp      ****     while(1) {
   55:main.cpp      **** 
-  56:main.cpp      ****         if (go){
-  57:main.cpp      ****         PORTD = pusher | pushed;
-  58:main.cpp      ****         _delay_ms(500);
+  56:main.cpp      ****         if(go) {
+  57:main.cpp      ****             PORTD = pusher | pushed;
+  58:main.cpp      ****             _delay_ms(500);
   59:main.cpp      **** 
-  60:main.cpp      ****         //main loop
+  60:main.cpp      ****             //main loop
   61:main.cpp      ****             if((pusher == pushed) && (pushed == 0b10000000)) {
  111               		.loc 2 61 35 discriminator 1 view .LVU23
  112 0032 2038      		cpi r18,lo8(-128)
@@ -1064,252 +1064,251 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  123               	.L11:
   64:main.cpp      ****                 // PORTD = pusher | pushed;
   65:main.cpp      ****                 // _delay_ms(500);
-  66:main.cpp      ****             }
-  67:main.cpp      ****             else{
-  68:main.cpp      ****                 if(pushed == pusher) {
-  69:main.cpp      ****                     pushed = pushed << 1;
- 124               		.loc 2 69 21 is_stmt 1 view .LVU27
- 125               		.loc 2 69 28 is_stmt 0 view .LVU28
+  66:main.cpp      ****             } else {
+  67:main.cpp      ****                 if(pushed == pusher) {
+  68:main.cpp      ****                     pushed = pushed << 1;
+ 124               		.loc 2 68 21 is_stmt 1 view .LVU27
+ 125               		.loc 2 68 28 is_stmt 0 view .LVU28
  126 003c 220F      		lsl r18
  127               	.LVL6:
-  70:main.cpp      ****                     pusher = 0b1;
- 128               		.loc 2 70 21 is_stmt 1 view .LVU29
- 129               		.loc 2 70 28 is_stmt 0 view .LVU30
+  69:main.cpp      ****                     pusher = 0b1;
+ 128               		.loc 2 69 21 is_stmt 1 view .LVU29
+ 129               		.loc 2 69 28 is_stmt 0 view .LVU30
  130 003e 91E0      		ldi r25,lo8(1)
  131               	.LVL7:
  132               	.L5:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 19
-
-
   54:main.cpp      **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 19
+
+
  133               		.loc 2 54 5 is_stmt 1 view .LVU31
-  56:main.cpp      ****         PORTD = pusher | pushed;
+  56:main.cpp      ****             PORTD = pusher | pushed;
  134               		.loc 2 56 9 view .LVU32
-  56:main.cpp      ****         PORTD = pusher | pushed;
- 135               		.loc 2 56 13 is_stmt 0 view .LVU33
+  56:main.cpp      ****             PORTD = pusher | pushed;
+ 135               		.loc 2 56 12 is_stmt 0 view .LVU33
  136 0040 8091 0000 		lds r24,go
-  56:main.cpp      ****         PORTD = pusher | pushed;
+  56:main.cpp      ****             PORTD = pusher | pushed;
  137               		.loc 2 56 9 view .LVU34
  138 0044 8823      		tst r24
  139 0046 01F0      		breq .L5
-  57:main.cpp      ****         _delay_ms(500);
- 140               		.loc 2 57 9 is_stmt 1 view .LVU35
-  57:main.cpp      ****         _delay_ms(500);
- 141               		.loc 2 57 24 is_stmt 0 view .LVU36
+  57:main.cpp      ****             _delay_ms(500);
+ 140               		.loc 2 57 13 is_stmt 1 view .LVU35
+  57:main.cpp      ****             _delay_ms(500);
+ 141               		.loc 2 57 28 is_stmt 0 view .LVU36
  142 0048 892F      		mov r24,r25
  143 004a 822B      		or r24,r18
-  57:main.cpp      ****         _delay_ms(500);
- 144               		.loc 2 57 15 view .LVU37
+  57:main.cpp      ****             _delay_ms(500);
+ 144               		.loc 2 57 19 view .LVU37
  145 004c 8BB9      		out 0xb,r24
   58:main.cpp      **** 
- 146               		.loc 2 58 9 is_stmt 1 view .LVU38
+ 146               		.loc 2 58 13 is_stmt 1 view .LVU38
  147               	.LVL8:
  148               	.LBB6:
  149               	.LBI6:
- 150               		.file 3 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\util\\delay.h"
-   1:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
-   2:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
-   3:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
-   4:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    All rights reserved.
-   5:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-   6:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Redistribution and use in source and binary forms, with or without
-   7:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    modification, are permitted provided that the following conditions are met:
-   8:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-   9:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    * Redistributions of source code must retain the above copyright
-  10:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      notice, this list of conditions and the following disclaimer.
-  11:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  12:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    * Redistributions in binary form must reproduce the above copyright
-  13:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      notice, this list of conditions and the following disclaimer in
-  14:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      the documentation and/or other materials provided with the
-  15:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      distribution.
-  16:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  17:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    * Neither the name of the copyright holders nor the names of
-  18:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      contributors may be used to endorse or promote products derived
-  19:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****      from this software without specific prior written permission.
-  20:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  21:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  22:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  23:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-  24:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
-  25:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-  26:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-  27:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-  28:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-  29:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-  30:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-  31:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 20
+ 150               		.file 3 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\util\\
+   1:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    All rights reserved.
+   5:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+   6:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+   9:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    * Redistributions of source code must retain the above copyright
+  10:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  12:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****      the documentation and/or other materials provided with the
+  15:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****      distribution.
+  16:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  17:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****      contributors may be used to endorse or promote products derived
+  19:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****      from this software without specific prior written permission.
+  20:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  21:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 20
 
 
-  32:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  33:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** /* $Id$ */
-  34:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  35:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #ifndef _UTIL_DELAY_H_
-  36:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #define _UTIL_DELAY_H_ 1
-  37:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  38:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #ifndef __DOXYGEN__
-  39:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #  ifndef __HAS_DELAY_CYCLES
-  40:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #    define __HAS_DELAY_CYCLES 1
-  41:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #  endif
-  42:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #endif  /* __DOXYGEN__ */
-  43:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  44:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #include <inttypes.h>
-  45:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #include <util/delay_basic.h>
-  46:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #include <math.h>
-  47:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  48:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** /** \file */
-  49:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
-  50:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     \code
-  51:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     #define F_CPU 1000000UL  // 1 MHz
-  52:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     //#define F_CPU 14.7456E6
-  53:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     #include <util/delay.h>
-  54:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     \endcode
-  55:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  56:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     \note As an alternative method, it is possible to pass the
-  57:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     F_CPU macro down to the compiler from the Makefile.
-  58:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     Obviously, in that case, no \c \#define statement should be
-  59:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     used.
-  60:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  61:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     The functions in this header file are wrappers around the basic
-  62:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
-  63:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     convenience functions where actual time values can be specified
-  64:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     rather than a number of cycles to wait for.  The idea behind is
-  65:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     that compile-time constant expressions will be eliminated by
-  66:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     compiler optimization so floating-point expressions can be used
-  67:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     to calculate the number of delay cycles needed based on the CPU
-  68:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     frequency passed by the macro F_CPU.
-  69:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  70:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     \note In order for these functions to work as intended, compiler
-  71:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     optimizations <em>must</em> be enabled, and the delay time
-  72:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     <em>must</em> be an expression that is a known constant at
-  73:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     compile-time.  If these requirements are not met, the resulting
-  74:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     delay will be much longer (and basically unpredictable), and
-  75:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     applications that otherwise do not use floating-point calculations
-  76:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     will experience severe code bloat by the floating-point library
-  77:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     routines linked into the application.
-  78:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  79:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     The functions available allow the specification of microsecond, and
-  80:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     millisecond delays directly, using the application-supplied macro
-  81:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
-  82:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  83:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** */
-  84:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  85:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #if !defined(__DOXYGEN__)
-  86:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** static __inline__ void _delay_us(double __us) __attribute__((__always_inline__));
-  87:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** static __inline__ void _delay_ms(double __ms) __attribute__((__always_inline__));
-  88:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 21
+  33:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** /* $Id$ */
+  34:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  35:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #ifndef _UTIL_DELAY_H_
+  36:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #define _UTIL_DELAY_H_ 1
+  37:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  38:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #ifndef __DOXYGEN__
+  39:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #  ifndef __HAS_DELAY_CYCLES
+  40:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #    define __HAS_DELAY_CYCLES 1
+  41:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #  endif
+  42:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #endif  /* __DOXYGEN__ */
+  43:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  44:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #include <inttypes.h>
+  45:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #include <util/delay_basic.h>
+  46:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #include <math.h>
+  47:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  48:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** /** \file */
+  49:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  50:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     \code
+  51:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  52:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     //#define F_CPU 14.7456E6
+  53:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     #include <util/delay.h>
+  54:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     \endcode
+  55:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  56:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     \note As an alternative method, it is possible to pass the
+  57:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  58:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     Obviously, in that case, no \c \#define statement should be
+  59:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     used.
+  60:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  61:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     The functions in this header file are wrappers around the basic
+  62:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  63:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     convenience functions where actual time values can be specified
+  64:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  65:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     that compile-time constant expressions will be eliminated by
+  66:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     compiler optimization so floating-point expressions can be used
+  67:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  68:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     frequency passed by the macro F_CPU.
+  69:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  70:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     \note In order for these functions to work as intended, compiler
+  71:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  72:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     <em>must</em> be an expression that is a known constant at
+  73:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     compile-time.  If these requirements are not met, the resulting
+  74:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     delay will be much longer (and basically unpredictable), and
+  75:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     applications that otherwise do not use floating-point calculations
+  76:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     will experience severe code bloat by the floating-point library
+  77:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     routines linked into the application.
+  78:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  79:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     The functions available allow the specification of microsecond, and
+  80:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     millisecond delays directly, using the application-supplied macro
+  81:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  82:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  83:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** */
+  84:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  85:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #if !defined(__DOXYGEN__)
+  86:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** static __inline__ void _delay_us(double __us) __attribute__((__always_inline__));
+  87:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** static __inline__ void _delay_ms(double __ms) __attribute__((__always_inline__));
+  88:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
+  89:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 21
 
 
-  89:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  90:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #ifndef F_CPU
-  91:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** /* prevent compiler error by supplying a default */
-  92:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** # warning "F_CPU not defined for <util/delay.h>"
-  93:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** /** \ingroup util_delay
-  94:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     \def F_CPU
-  95:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     \brief CPU frequency in Hz
-  96:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
-  97:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     The macro F_CPU specifies the CPU frequency to be considered by
-  98:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     the delay macros.  This macro is normally supplied by the
-  99:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     environment (e.g. from within a project header, or the project's
- 100:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     Makefile).  The value 1 MHz here is only provided as a "vanilla"
- 101:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     fallback if no such user-provided definition could be found.
- 102:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 103:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     In terms of the delay functions, the CPU frequency can be given as
- 104:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     a floating-point constant (e.g. 3.6864E6 for 3.6864 MHz).
- 105:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     However, the macros in <util/setbaud.h> require it to be an
- 106:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****     integer value.
- 107:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****  */
- 108:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** # define F_CPU 1000000UL
- 109:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
- 110:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 111:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #ifndef __OPTIMIZE__
- 112:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
- 113:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
- 114:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 115:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
- 116:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
- 117:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   __STDC_HOSTED__
- 118:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #  include <math.h>
- 119:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
- 120:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 121:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** /**
- 122:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    \ingroup util_delay
- 123:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 124:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
- 125:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 126:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    The macro F_CPU is supposed to be defined to a
- 127:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    constant defining the CPU clock frequency (in Hertz).
- 128:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 129:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
- 130:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 131:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    When the user request delay which exceed the maximum possible one,
- 132:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
- 133:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
- 134:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
- 135:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    user will not be informed about decreased resolution.
- 136:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 137:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles()
- 138:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
- 139:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    values greater than the maximal possible delay, overflows results in
- 140:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    no delay i.e., 0ms.
- 141:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 142:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Conversion of \c __ms into clock cycles may not always result in
- 143:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    integer.  By default, the clock cycles rounded up to next
- 144:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    integer. This ensures that the user gets at least \c __ms
- 145:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    microseconds of delay.
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 22
+  90:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #ifndef F_CPU
+  91:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** /* prevent compiler error by supplying a default */
+  92:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  93:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** /** \ingroup util_delay
+  94:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     \def F_CPU
+  95:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     \brief CPU frequency in Hz
+  96:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+  97:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     The macro F_CPU specifies the CPU frequency to be considered by
+  98:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     the delay macros.  This macro is normally supplied by the
+  99:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     environment (e.g. from within a project header, or the project's
+ 100:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     Makefile).  The value 1 MHz here is only provided as a "vanilla"
+ 101:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     fallback if no such user-provided definition could be found.
+ 102:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 103:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     In terms of the delay functions, the CPU frequency can be given as
+ 104:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     a floating-point constant (e.g. 3.6864E6 for 3.6864 MHz).
+ 105:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     However, the macros in <util/setbaud.h> require it to be an
+ 106:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****     integer value.
+ 107:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****  */
+ 108:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** # define F_CPU 1000000UL
+ 109:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
+ 110:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 111:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #ifndef __OPTIMIZE__
+ 112:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+ 113:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
+ 114:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 115:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 116:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 117:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   __STDC_HOSTED__
+ 118:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #  include <math.h>
+ 119:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
+ 120:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 121:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** /**
+ 122:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    \ingroup util_delay
+ 123:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 124:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 125:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 126:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    The macro F_CPU is supposed to be defined to a
+ 127:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 128:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 129:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 130:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 131:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    When the user request delay which exceed the maximum possible one,
+ 132:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 133:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 134:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 135:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    user will not be informed about decreased resolution.
+ 136:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 137:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles()
+ 138:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 139:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    values greater than the maximal possible delay, overflows results in
+ 140:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    no delay i.e., 0ms.
+ 141:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 142:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    Conversion of \c __ms into clock cycles may not always result in
+ 143:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    integer.  By default, the clock cycles rounded up to next
+ 144:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    integer. This ensures that the user gets at least \c __ms
+ 145:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    microseconds of delay.
+ 146:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 22
 
 
- 146:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 147:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Alternatively, by defining the macro \c __DELAY_ROUND_DOWN__, or
- 148:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    \c __DELAY_ROUND_CLOSEST__, before including this header file, the
- 149:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    algorithm can be made to round down, or round to closest integer,
- 150:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    respectively.
- 151:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 152:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    \note
- 153:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 154:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    The implementation of _delay_ms() based on
- 155:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    __builtin_avr_delay_cycles() is not backward compatible with older
- 156:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    implementations.  In order to get functionality backward compatible
- 157:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    with previous versions, the macro \c "__DELAY_BACKWARD_COMPATIBLE__"
- 158:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    must be defined before including this header file. Also, the
- 159:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    backward compatible algorithm will be chosen if the code is
- 160:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    compiled in a <em>freestanding environment</em> (GCC option
- 161:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    \c -ffreestanding), as the math functions required for rounding are
- 162:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    not available to the compiler then.
- 163:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 164:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****  */
- 165:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** void
- 166:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** _delay_ms(double __ms)
+ 147:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    Alternatively, by defining the macro \c __DELAY_ROUND_DOWN__, or
+ 148:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    \c __DELAY_ROUND_CLOSEST__, before including this header file, the
+ 149:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    algorithm can be made to round down, or round to closest integer,
+ 150:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    respectively.
+ 151:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 152:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    \note
+ 153:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 154:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    The implementation of _delay_ms() based on
+ 155:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    __builtin_avr_delay_cycles() is not backward compatible with older
+ 156:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    implementations.  In order to get functionality backward compatible
+ 157:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    with previous versions, the macro \c "__DELAY_BACKWARD_COMPATIBLE__"
+ 158:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    must be defined before including this header file. Also, the
+ 159:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    backward compatible algorithm will be chosen if the code is
+ 160:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    compiled in a <em>freestanding environment</em> (GCC option
+ 161:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    \c -ffreestanding), as the math functions required for rounding are
+ 162:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****    not available to the compiler then.
+ 163:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 164:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****  */
+ 165:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** void
+ 166:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** _delay_ms(double __ms)
  151               		.loc 3 166 1 view .LVU39
  152               	.LBB7:
- 167:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** {
- 168:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	double __tmp ;
+ 167:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** {
+ 168:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	double __tmp ;
  153               		.loc 3 168 2 view .LVU40
- 169:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
- 170:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
- 171:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   __STDC_HOSTED__
- 172:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	uint32_t __ticks_dc;
+ 169:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 170:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 171:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h ****   __STDC_HOSTED__
+ 172:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	uint32_t __ticks_dc;
  154               		.loc 3 172 2 view .LVU41
- 173:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 173:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
  155               		.loc 3 173 2 view .LVU42
- 174:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 174:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
  156               		.loc 3 174 2 view .LVU43
- 175:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 176:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
- 177:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
- 178:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 179:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
- 180:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
- 181:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 182:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#else
- 183:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 		//round up by default
- 184:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 175:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 176:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 177:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 178:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 179:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 180:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 181:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 182:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	#else
+ 183:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 		//round up by default
+ 184:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
  157               		.loc 3 184 3 view .LVU44
- 185:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#endif
- 186:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
- 187:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 185:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	#endif
+ 186:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 187:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
  158               		.loc 3 187 2 view .LVU45
  159               		.loc 3 187 28 is_stmt 0 view .LVU46
  160 004e 3FEF      		ldi r19,lo8(1599999)
@@ -1318,10 +1317,10 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  163 0054 3150      	1:	subi r19,1
  164 0056 4040      		sbci r20,0
  165 0058 8040      		sbci r24,0
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 23
-
-
  166 005a 01F4      		brne 1b
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 23
+
+
  167 005c 00C0      		rjmp .
  168 005e 0000      		nop
  169               	.LVL9:
@@ -1333,18 +1332,17 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  174 0060 9217      		cp r25,r18
  175 0062 01F0      		breq .L10
  176               	.L6:
-  68:main.cpp      ****                     pushed = pushed << 1;
- 177               		.loc 2 68 17 view .LVU49
+  67:main.cpp      ****                     pushed = pushed << 1;
+ 177               		.loc 2 67 17 view .LVU49
  178 0064 9217      		cp r25,r18
  179 0066 01F0      		breq .L11
-  71:main.cpp      ****                 }
-  72:main.cpp      ****                 else {
-  73:main.cpp      ****                     pusher = pusher << 1;
- 180               		.loc 2 73 21 view .LVU50
- 181               		.loc 2 73 28 is_stmt 0 view .LVU51
+  70:main.cpp      ****                 } else {
+  71:main.cpp      ****                     pusher = pusher << 1;
+ 180               		.loc 2 71 21 view .LVU50
+ 181               		.loc 2 71 28 is_stmt 0 view .LVU51
  182 0068 990F      		lsl r25
  183               	.LVL10:
- 184               		.loc 2 73 28 view .LVU52
+ 184               		.loc 2 71 28 view .LVU52
  185 006a 00C0      		rjmp .L5
  186               		.cfi_endproc
  187               	.LFE25:
@@ -1352,17 +1350,18 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  190               	.global	__vector_3
  192               	__vector_3:
  193               	.LFB26:
-  74:main.cpp      ****                 }
-  75:main.cpp      ****             }
-  76:main.cpp      ****         }
-  77:main.cpp      **** 
-  78:main.cpp      **** 
-  79:main.cpp      ****     }
-  80:main.cpp      ****     return 0;
-  81:main.cpp      **** }
-  82:main.cpp      **** 
-  83:main.cpp      **** ISR(PCINT0_vect) {
- 194               		.loc 2 83 18 is_stmt 1 view -0
+  72:main.cpp      ****                 }
+  73:main.cpp      ****             }
+  74:main.cpp      ****         }
+  75:main.cpp      **** 
+  76:main.cpp      **** 
+  77:main.cpp      ****     }
+  78:main.cpp      ****     return 0;
+  79:main.cpp      **** }
+  80:main.cpp      **** 
+  81:main.cpp      **** ISR(PCINT0_vect)
+  82:main.cpp      **** {
+ 194               		.loc 2 82 1 is_stmt 1 view -0
  195               		.cfi_startproc
  196 0000 1F92      		push r1
  197               		.cfi_def_cfa_offset 3
@@ -1378,32 +1377,32 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  207               		.cfi_offset 24, -4
  208 000c 9F93      		push r25
  209               		.cfi_def_cfa_offset 6
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 24
-
-
  210               		.cfi_offset 25, -5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 24
+
+
  211               	/* prologue: Signal */
  212               	/* frame size = 0 */
  213               	/* stack size = 5 */
  214               	.L__stack_usage = 5
-  84:main.cpp      ****     // Debounce button by waiting 10ms
-  85:main.cpp      ****     _delay_ms(10);
- 215               		.loc 2 85 5 view .LVU54
+  83:main.cpp      ****     // Debounce button by waiting 10ms
+  84:main.cpp      ****     _delay_ms(10);
+ 215               		.loc 2 84 5 view .LVU54
  216               	.LVL11:
  217               	.LBB8:
  218               	.LBI8:
- 166:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** {
+ 166:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** {
  219               		.loc 3 166 1 view .LVU55
  220               	.LBB9:
- 168:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 168:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
  221               		.loc 3 168 2 view .LVU56
- 172:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 172:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
  222               		.loc 3 172 2 view .LVU57
- 173:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 173:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
  223               		.loc 3 173 2 view .LVU58
- 174:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 
+ 174:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 
  224               		.loc 3 174 2 view .LVU59
- 184:d:\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** 	#endif
+ 184:f:\importante\faculdade\mcc\vscode-avr-win\toolchains\avr-gcc\avr\include\util\delay.h **** 	#endif
  225               		.loc 3 184 3 view .LVU60
  226               		.loc 3 187 2 view .LVU61
  227               		.loc 3 187 28 is_stmt 0 view .LVU62
@@ -1417,32 +1416,31 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  235               		.loc 3 187 28 view .LVU63
  236               	.LBE9:
  237               	.LBE8:
-  86:main.cpp      ****     if (BTNPIN & (1 << BTNBIT)) { // BOTÃO mudou de LOW para HIGH;
- 238               		.loc 2 86 5 is_stmt 1 view .LVU64
+  85:main.cpp      ****     if(BTNPIN & (1 << BTNBIT)) {  // BOTÃO mudou de LOW para HIGH;
+ 238               		.loc 2 85 5 is_stmt 1 view .LVU64
  239 001a 1A9B      		sbis 0x3,2
  240 001c 00C0      		rjmp .L12
-  87:main.cpp      ****         go = !go;
- 241               		.loc 2 87 9 view .LVU65
- 242               		.loc 2 87 15 is_stmt 0 view .LVU66
+  86:main.cpp      ****         go = !go;
+ 241               		.loc 2 86 9 view .LVU65
+ 242               		.loc 2 86 15 is_stmt 0 view .LVU66
  243 001e 8091 0000 		lds r24,go
- 244               		.loc 2 87 14 view .LVU67
+ 244               		.loc 2 86 14 view .LVU67
  245 0022 91E0      		ldi r25,lo8(1)
  246 0024 8927      		eor r24,r25
- 247               		.loc 2 87 12 view .LVU68
+ 247               		.loc 2 86 12 view .LVU68
  248 0026 8093 0000 		sts go,r24
  249               	.L12:
  250               	/* epilogue start */
-  88:main.cpp      ****     }
-  89:main.cpp      ****     else {
-  90:main.cpp      ****         // BOTÃO mudou de HIGH para LOW;
-  91:main.cpp      ****     }
-  92:main.cpp      **** };
- 251               		.loc 2 92 1 view .LVU69
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 25
-
-
+  87:main.cpp      ****     } else {
+  88:main.cpp      ****         // BOTÃO mudou de HIGH para LOW;
+  89:main.cpp      ****     }
+  90:main.cpp      **** };
+ 251               		.loc 2 90 1 view .LVU69
  252 002a 9F91      		pop r25
  253 002c 8F91      		pop r24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 25
+
+
  254 002e 0F90      		pop r0
  255 0030 0FBE      		out __SREG__,r0
  256 0032 0F90      		pop r0
@@ -1456,159 +1454,159 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 1
  267 0000 01        		.byte	1
  268               		.text
  269               	.Letext0:
- 270               		.file 4 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
- 271               		.file 5 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\avr\\builtins.h"
- 272               		.file 6 "d:\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\math.h"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 26
+ 270               		.file 4 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\stdint
+ 271               		.file 5 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\avr\\b
+ 272               		.file 6 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\math.h
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 26
 
 
 DEFINED SYMBOLS
-                            *ABS*:00000000 main.cpp
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:2      *ABS*:0000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:3      *ABS*:0000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:4      *ABS*:0000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:5      *ABS*:00000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:6      *ABS*:00000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:14     .text._Z12assertFailedPcm:00000000 _Z12assertFailedPcm
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:18     .text._Z12assertFailedPcm:00000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:19     .text._Z12assertFailedPcm:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:24     .text._Z12assertFailedPcm:00000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:26     .text._Z12assertFailedPcm:00000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:28     .text._Z12assertFailedPcm:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:34     .text._Z7getTickv:00000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:36     .text._Z7getTickv:00000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:37     .text._Z7getTickv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:42     .text._Z7getTickv:00000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:43     .text._Z7getTickv:00000000 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:49     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:55     .text.main:00000000 main
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:58     .text.main:00000000 .Loc.6
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:59     .text.main:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:64     .text.main:00000000 .Loc.7
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:65     .text.main:00000000 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:67     .text.main:00000004 .Loc.9
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:68     .text.main:00000004 .Loc.10
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:71     .text.main:00000008 .Loc.11
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:72     .text.main:00000008 .Loc.12
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:74     .text.main:0000000a .Loc.13
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:78     .text.main:00000010 .Loc.14
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:82     .text.main:00000016 .Loc.15
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:84     .text.main:00000016 .Loc.16
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:85     .text.main:00000016 .Loc.17
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:86     .text.main:00000016 .Loc.18
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:92     .text.main:00000020 .Loc.19
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:98     .text.main:0000002a .Loc.20
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:103    .text.main:0000002c .Loc.21
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:106    .text.main:0000002e .Loc.22
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:111    .text.main:00000032 .Loc.23
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:114    .text.main:00000036 .Loc.24
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:117    .text.main:00000038 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:120    .text.main:0000003a .Loc.26
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:124    .text.main:0000003c .Loc.27
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:125    .text.main:0000003c .Loc.28
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:128    .text.main:0000003e .Loc.29
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:129    .text.main:0000003e .Loc.30
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:133    .text.main:00000040 .Loc.31
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:134    .text.main:00000040 .Loc.32
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:135    .text.main:00000040 .Loc.33
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:266    .data.go:00000000 go
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:137    .text.main:00000044 .Loc.34
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:140    .text.main:00000048 .Loc.35
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:141    .text.main:00000048 .Loc.36
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:144    .text.main:0000004c .Loc.37
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:146    .text.main:0000004e .Loc.38
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:151    .text.main:0000004e .Loc.39
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:153    .text.main:0000004e .Loc.40
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 27
+                            *ABS*:0000000000000000 main.cpp
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:14     .text._Z12assertFailedPcm:0000000000000000 _Z12assertFailedPcm
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:18     .text._Z12assertFailedPcm:0000000000000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:19     .text._Z12assertFailedPcm:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:24     .text._Z12assertFailedPcm:0000000000000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:26     .text._Z12assertFailedPcm:0000000000000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:28     .text._Z12assertFailedPcm:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:34     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:36     .text._Z7getTickv:0000000000000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:37     .text._Z7getTickv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:42     .text._Z7getTickv:0000000000000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:43     .text._Z7getTickv:0000000000000000 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:49     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:55     .text.main:0000000000000000 main
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:58     .text.main:0000000000000000 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:59     .text.main:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:64     .text.main:0000000000000000 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:65     .text.main:0000000000000000 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:67     .text.main:0000000000000004 .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:68     .text.main:0000000000000004 .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:71     .text.main:0000000000000008 .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:72     .text.main:0000000000000008 .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:74     .text.main:000000000000000a .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:78     .text.main:0000000000000010 .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:82     .text.main:0000000000000016 .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:84     .text.main:0000000000000016 .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:85     .text.main:0000000000000016 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:86     .text.main:0000000000000016 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:92     .text.main:0000000000000020 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:98     .text.main:000000000000002a .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:103    .text.main:000000000000002c .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:106    .text.main:000000000000002e .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:111    .text.main:0000000000000032 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:114    .text.main:0000000000000036 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:117    .text.main:0000000000000038 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:120    .text.main:000000000000003a .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:124    .text.main:000000000000003c .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:125    .text.main:000000000000003c .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:128    .text.main:000000000000003e .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:129    .text.main:000000000000003e .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:133    .text.main:0000000000000040 .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:134    .text.main:0000000000000040 .Loc.32
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:135    .text.main:0000000000000040 .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:266    .data.go:0000000000000000 go
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:137    .text.main:0000000000000044 .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:140    .text.main:0000000000000048 .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:141    .text.main:0000000000000048 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:144    .text.main:000000000000004c .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:146    .text.main:000000000000004e .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:151    .text.main:000000000000004e .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:153    .text.main:000000000000004e .Loc.40
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 27
 
 
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:154    .text.main:0000004e .Loc.41
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:155    .text.main:0000004e .Loc.42
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:156    .text.main:0000004e .Loc.43
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:157    .text.main:0000004e .Loc.44
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:158    .text.main:0000004e .Loc.45
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:159    .text.main:0000004e .Loc.46
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:167    .text.main:0000005e L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:170    .text.main:00000060 .Loc.47
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:173    .text.main:00000060 .Loc.48
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:177    .text.main:00000064 .Loc.49
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:180    .text.main:00000068 .Loc.50
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:181    .text.main:00000068 .Loc.51
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:184    .text.main:0000006a .Loc.52
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:186    .text.main:0000006c L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:192    .text.__vector_3:00000000 __vector_3
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:194    .text.__vector_3:00000000 .Loc.53
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:195    .text.__vector_3:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:215    .text.__vector_3:0000000e .Loc.54
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:219    .text.__vector_3:0000000e .Loc.55
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:221    .text.__vector_3:0000000e .Loc.56
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:222    .text.__vector_3:0000000e .Loc.57
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:223    .text.__vector_3:0000000e .Loc.58
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:224    .text.__vector_3:0000000e .Loc.59
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:225    .text.__vector_3:0000000e .Loc.60
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:226    .text.__vector_3:0000000e .Loc.61
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:227    .text.__vector_3:0000000e .Loc.62
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:232    .text.__vector_3:00000018 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:235    .text.__vector_3:0000001a .Loc.63
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:238    .text.__vector_3:0000001a .Loc.64
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:241    .text.__vector_3:0000001e .Loc.65
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:242    .text.__vector_3:0000001e .Loc.66
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:244    .text.__vector_3:00000022 .Loc.67
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:247    .text.__vector_3:00000026 .Loc.68
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:251    .text.__vector_3:0000002a .Loc.69
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:259    .text.__vector_3:00000038 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:31     .text._Z12assertFailedPcm:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:52     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:189    .text.main:0000006c L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:263    .text.__vector_3:00000038 L0
-                     .debug_frame:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:132    .text.main:00000040 .L5
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:176    .text.main:00000064 .L6
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:163    .text.main:00000054 .L11
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:110    .text.main:00000032 .L10
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:123    .text.main:0000003c .L11
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:230    .text.__vector_3:00000012 .L12
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:249    .text.__vector_3:0000002a .L12
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:553    .debug_abbrev:00000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1139   .debug_rnglists:0000000c .LLRL8
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1155   .debug_line:00000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:193    .text.__vector_3:00000000 .LFB26
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:260    .text.__vector_3:00000038 .LFE26
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:218    .text.__vector_3:0000000e .LBI8
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:217    .text.__vector_3:0000000e .LBB8
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:237    .text.__vector_3:0000001a .LBE8
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:974    .debug_loclists:0000000e .LLST5
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:971    .debug_loclists:0000000c .LVUS5
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s 			page 28
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:154    .text.main:000000000000004e .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:155    .text.main:000000000000004e .Loc.42
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:156    .text.main:000000000000004e .Loc.43
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:157    .text.main:000000000000004e .Loc.44
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:158    .text.main:000000000000004e .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:159    .text.main:000000000000004e .Loc.46
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:167    .text.main:000000000000005e L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:170    .text.main:0000000000000060 .Loc.47
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:173    .text.main:0000000000000060 .Loc.48
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:177    .text.main:0000000000000064 .Loc.49
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:180    .text.main:0000000000000068 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:181    .text.main:0000000000000068 .Loc.51
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:184    .text.main:000000000000006a .Loc.52
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:186    .text.main:000000000000006c L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:192    .text.__vector_3:0000000000000000 __vector_3
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:194    .text.__vector_3:0000000000000000 .Loc.53
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:195    .text.__vector_3:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:215    .text.__vector_3:000000000000000e .Loc.54
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:219    .text.__vector_3:000000000000000e .Loc.55
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:221    .text.__vector_3:000000000000000e .Loc.56
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:222    .text.__vector_3:000000000000000e .Loc.57
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:223    .text.__vector_3:000000000000000e .Loc.58
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:224    .text.__vector_3:000000000000000e .Loc.59
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:225    .text.__vector_3:000000000000000e .Loc.60
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:226    .text.__vector_3:000000000000000e .Loc.61
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:227    .text.__vector_3:000000000000000e .Loc.62
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:232    .text.__vector_3:0000000000000018 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:235    .text.__vector_3:000000000000001a .Loc.63
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:238    .text.__vector_3:000000000000001a .Loc.64
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:241    .text.__vector_3:000000000000001e .Loc.65
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:242    .text.__vector_3:000000000000001e .Loc.66
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:244    .text.__vector_3:0000000000000022 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:247    .text.__vector_3:0000000000000026 .Loc.68
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:251    .text.__vector_3:000000000000002a .Loc.69
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:259    .text.__vector_3:0000000000000038 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:31     .text._Z12assertFailedPcm:0000000000000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:52     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:189    .text.main:000000000000006c L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:263    .text.__vector_3:0000000000000038 L0
+                     .debug_frame:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:132    .text.main:0000000000000040 .L5
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:176    .text.main:0000000000000064 .L6
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:163    .text.main:0000000000000054 .L11
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:110    .text.main:0000000000000032 .L10
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:123    .text.main:000000000000003c .L11
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:230    .text.__vector_3:0000000000000012 .L12
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:249    .text.__vector_3:000000000000002a .L12
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:553    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1139   .debug_rnglists:000000000000000c .LLRL8
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1155   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:193    .text.__vector_3:0000000000000000 .LFB26
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:260    .text.__vector_3:0000000000000038 .LFE26
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:218    .text.__vector_3:000000000000000e .LBI8
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:217    .text.__vector_3:000000000000000e .LBB8
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:237    .text.__vector_3:000000000000001a .LBE8
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:974    .debug_loclists:000000000000000e .LLST5
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:971    .debug_loclists:000000000000000c .LVUS5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s 			page 28
 
 
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:986    .debug_loclists:0000001e .LLST6
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:983    .debug_loclists:0000001c .LVUS6
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:998    .debug_loclists:0000002e .LLST7
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:995    .debug_loclists:0000002c .LVUS7
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:56     .text.main:00000000 .LFB25
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:187    .text.main:0000006c .LFE25
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1018   .debug_loclists:00000046 .LLST0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1007   .debug_loclists:0000003c .LVUS0
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1056   .debug_loclists:0000006d .LLST1
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1049   .debug_loclists:00000067 .LVUS1
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:149    .text.main:0000004e .LBI6
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:148    .text.main:0000004e .LBB6
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:172    .text.main:00000060 .LBE6
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1079   .debug_loclists:00000085 .LLST2
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1076   .debug_loclists:00000083 .LVUS2
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1091   .debug_loclists:00000095 .LLST3
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1088   .debug_loclists:00000093 .LVUS3
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1103   .debug_loclists:000000a5 .LLST4
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:1100   .debug_loclists:000000a3 .LVUS4
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:35     .text._Z7getTickv:00000000 .LFB24
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:50     .text._Z7getTickv:00000008 .LFE24
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:16     .text._Z12assertFailedPcm:00000000 .LFB23
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:29     .text._Z12assertFailedPcm:00000002 .LFE23
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:216    .text.__vector_3:0000000e .LVL11
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:83     .text.main:00000016 .LVL1
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:147    .text.main:0000004e .LVL8
-C:\Users\kenne\AppData\Local\Temp\ccnM0gyh.s:274    .debug_info:00000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:986    .debug_loclists:000000000000001e .LLST6
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:983    .debug_loclists:000000000000001c .LVUS6
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:998    .debug_loclists:000000000000002e .LLST7
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:995    .debug_loclists:000000000000002c .LVUS7
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:56     .text.main:0000000000000000 .LFB25
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:187    .text.main:000000000000006c .LFE25
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1018   .debug_loclists:0000000000000046 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1007   .debug_loclists:000000000000003c .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1056   .debug_loclists:000000000000006d .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1049   .debug_loclists:0000000000000067 .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:149    .text.main:000000000000004e .LBI6
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:148    .text.main:000000000000004e .LBB6
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:172    .text.main:0000000000000060 .LBE6
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1079   .debug_loclists:0000000000000085 .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1076   .debug_loclists:0000000000000083 .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1091   .debug_loclists:0000000000000095 .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1088   .debug_loclists:0000000000000093 .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1103   .debug_loclists:00000000000000a5 .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:1100   .debug_loclists:00000000000000a3 .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:35     .text._Z7getTickv:0000000000000000 .LFB24
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:50     .text._Z7getTickv:0000000000000008 .LFE24
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:16     .text._Z12assertFailedPcm:0000000000000000 .LFB23
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:29     .text._Z12assertFailedPcm:0000000000000002 .LFE23
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:216    .text.__vector_3:000000000000000e .LVL11
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:83     .text.main:0000000000000016 .LVL1
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:147    .text.main:000000000000004e .LVL8
+C:\Users\kenne\AppData\Local\Temp\ccLrLje9.s:274    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 __do_copy_data
