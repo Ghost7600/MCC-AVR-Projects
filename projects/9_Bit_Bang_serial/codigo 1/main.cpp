@@ -18,10 +18,12 @@ vbool_t timer0flag;
 void bitbang(uint8_t tecla)
 {
     timer0flag = 1;
+    timer0.clearCompareAInterruptRequest();
     timer0.setCounterValue(0);
     clrBit(PORTD, PD2);
     timer0.activateCompareAInterrupt();
-    delayUs(104);
+    while(timer0flag){}
+    //delayUs(104);
     timer0.deactivateCompareAInterrupt();
     timer0flag = 1;
     for(uint8_t i = 0; i < 8; i++) {
@@ -33,7 +35,8 @@ void bitbang(uint8_t tecla)
             }
             timer0.deactivateCompareAInterrupt();
             timer0flag = 1;
-        } else {
+        }
+        else {
             clrBit(PORTD, PD2);
             timer0.activateCompareAInterrupt();
             while(timer0flag) {
