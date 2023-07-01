@@ -1,0 +1,1001 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-pc-mingw32
+ 
+
+# Make data base, printed on Fri Jun 30 19:14:27 2023
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile
+MAKEFLAGS = Rrqp
+# makefile (from `makefile', line 20)
+COMPILER_STD_CPP = c++14
+# makefile (from `makefile', line 309)
+SOURCES_CPP := Adafruit_Fingerprint.cpp funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+# makefile (from `makefile', line 189)
+CODE_SOURCES_AXX := 
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `makefile', line 344)
+FLAG_MCU = -mmcu=$(MCU_DEVICE_NAME)
+# makefile (from `makefile', line 18)
+COMPILER_PATH = 
+# makefile (from `makefile', line 31)
+USER_FLAGS_ASM = 
+# makefile (from `port.mk', line 2)
+PROGRAMMER_PORT := COM12
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := c:/D/IFSC/MCC/projects/testeusart
+# default
+SHELL := C:/WinAVR-20100110/utils/bin/sh.exe
+# makefile (from `makefile', line 88)
+BIN := avr-objcopy -O binary -S
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"7251b8a49eea176da7ed6934e85b8341.pt-br","_translationsConfigFile":"C:\\D\\IFSC\\vscodeleandro\\ex\\data\\user-data\\clp\\7251b8a49eea176da7ed6934e85b8341.pt-br\\tcf.json","_cacheRoot":"C:\\D\\IFSC\\vscodeleandro\\ex\\data\\user-data\\clp\\7251b8a49eea176da7ed6934e85b8341.pt-br","_resolvedLanguagePackCoreLocation":"C:\\D\\IFSC\\vscodeleandro\\ex\\data\\user-data\\clp\\7251b8a49eea176da7ed6934e85b8341.pt-br\\441438abd1ac652551dbe4d408dfcec8a499b8bf","_corruptedFile":"C:\\D\\IFSC\\vscodeleandro\\ex\\data\\user-data\\clp\\7251b8a49eea176da7ed6934e85b8341.pt-br\\corrupted.info","_languagePackSupport":true}
+# makefile (from `makefile', line 93)
+SZ := avr-size -x
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
+ONEDRIVE = C:\Users\kenne\OneDrive
+# makefile (from `makefile', line 32)
+USER_FLAGS_C = -Wno-switch
+# makefile (from `makefile', line 270)
+FUNSAPE_SOURCES_ASM := 
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from `port.mk', line 1)
+MAKEFILE_LIST :=  makefile port.mk
+# makefile (from `makefile', line 208)
+CODE_SOURCES_CPP := Adafruit_Fingerprint.cpp funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# makefile (from `makefile', line 91)
+CP := avr-objcopy
+# makefile (from `makefile', line 284)
+FUNSAPE_SOURCES_C := 
+# environment
+TMP = C:\Users\kenne\AppData\Local\Temp
+# makefile (from `makefile', line 265)
+FUNSAPE_SOURCES_S := 
+# makefile (from `makefile', line 58)
+MCU_DEVICE_PLATFORM = AVR
+# makefile (from `makefile', line 89)
+CC := avr-gcc
+# makefile (from `makefile', line 328)
+DEFINES_ASM := 
+# environment
+PROGRAMW6432 = C:\Program Files
+# makefile (from `makefile', line 28)
+USER_DEFINES_ASM = 
+# makefile (from `makefile', line 25)
+MCU_DEVICE_NAME = STM32F103C8Tx
+# environment
+PROGRAMDATA = C:\ProgramData
+# makefile (from `makefile', line 42)
+filter-out-any = $(foreach v,$(2),$(if $(findstring $(1),$(v)),,$(v)))
+# makefile (from `makefile', line 333)
+DEFINES_C := -DUSE_HAL_DRIVER -D__AVR_ATmega328P__
+# environment
+VSCODE_CWD = C:\D\IFSC\vscodeleandro\ex
+# makefile (from `makefile', line 331)
+USER_DEFINES_C := -DUSE_HAL_DRIVER
+# makefile (from `makefile', line 323)
+INCLUDES_ALL := -I./ -Ifunsape/ -Ifunsape/device/ -Ifunsape/peripheral/ -Ifunsape/util/
+# environment
+PATH = C:\WinAVR-20100110\bin;C:\WinAVR-20100110\utils\bin;C:\Windows\System32\HWAudioDriverLibs;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microchip\xc16\v2.00\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;D:\Work\android\platform-tools;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\usbipd-win\;C:\Program Files (x86)\dotnet\;C:\Users\kenne\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;
+# makefile (from `makefile', line 48)
+MCU_STM32_CODE_OFFSET := 300
+# makefile (from `makefile', line 302)
+HEADERS_H := ./
+# makefile (from `makefile', line 33)
+USER_FLAGS_CPP = -Wno-switch
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+ZES_ENABLE_SYSMAN = 1
+# makefile (from `makefile', line 304)
+HEADERS_HXX := ./ funsape/ funsape/device/ funsape/peripheral/ funsape/util/
+# makefile (from `makefile', line 57)
+MCU_DEVICE_MACRO = __AVR_ATmega328P__
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# makefile (from `makefile', line 22)
+LIBRARY_PATH = 
+# makefile (from `port.mk', line 1)
+PROGRAMMER_BAUDRATE := 57600
+# environment
+USERPROFILE = C:\Users\kenne
+# makefile (from `makefile', line 293)
+FUNSAPE_SOURCES_CPP := 
+# makefile (from `makefile', line 138)
+CODE_HEADERS_ASM := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# makefile (from `makefile', line 433)
+FLAGS_LINKER = $(FLAG_MCU) $(LIBRARY_PATH) $(USER_LIBS) -Wl,--gc-sections -Wl,-Map=$(BUILD_DIR)/$(BUILD_NAME).map,--cref
+# makefile (from `makefile', line 86)
+AR := avr-ar
+# makefile (from `makefile', line 72)
+COMPILER_PREFIX = avr-
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `makefile', line 476)
+OBJECTS = $(addprefix $(BUILD_DIR)/,$(notdir $(SOURCES_C:.c=.o))) $(addprefix $(BUILD_DIR)/,$(notdir $(SOURCES_CPP:.cpp=.o))) $(addprefix $(BUILD_DIR)/,$(notdir $(SOURCES_S:.s=.o))) $(addprefix $(BUILD_DIR)/,$(notdir $(SOURCES_ASM:.asm=.o)))
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives
+# makefile (from `makefile', line 16)
+COMPILER_DEBUG = 0
+# makefile (from `makefile', line 148)
+CODE_HEADERS_H := ./
+# makefile (from `makefile', line 14)
+BUILD_NAME = application
+# makefile (from `makefile', line 301)
+HEADERS_ASM := 
+# makefile (from `makefile', line 337)
+DEFINES_CPP := -DUSE_HAL_DRIVER -D__AVR_ATmega328P__
+# automatic
+%F = $(notdir $%)
+# makefile (from `makefile', line 335)
+USER_DEFINES_CPP := -DUSE_HAL_DRIVER
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_2568_XARQFIPXHCRCMAEL
+# makefile (from `makefile', line 412)
+FLAGS_CXX = $(FLAG_MCU) -std=$(COMPILER_STD_CPP) $(COMPILER_OPT) -Wall -fdata-sections -ffunction-sections -fno-exceptions -fno-rtti $(USER_FLAGS_CPP) $(DEFINES_CXX) $(INCLUDES_HXX) -MMD -MP -MF"$(@:%.o=%.d)"
+# makefile (from `makefile', line 34)
+USER_LIBS = 
+# makefile (from `makefile', line 303)
+HEADERS_HPP := funsape/ funsape/device/ funsape/peripheral/ funsape/util/
+# makefile (from `makefile', line 26)
+PROGRAMMER_CONFIG_FILE = avrdude.conf
+# environment
+COMPUTERNAME = LAPTOP-7SEDC4D7
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# makefile (from `makefile', line 27)
+PROGRAMMER_TYPE = ST_LINK_SWD
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# makefile (from `makefile', line 56)
+MCU_DEVICE_CODE = ($(MCU_AVR_CODE_OFFSET) + 107)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+AVR32_HOME = C:\WinAVR-20100110
+# environment
+USERNAME = kenne
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (from `makefile', line 228)
+FUNSAPE_HEADERS_ASM := 
+# environment
+VSCODE_PORTABLE = C:\D\IFSC\vscodeleandro\ex\data
+# makefile (from `makefile', line 24)
+MCU_DEVICE_CORE_FPU = 
+# environment
+VSCODE_CODE_CACHE_PATH = C:\D\IFSC\vscodeleandro\ex\data\user-data\CachedData\441438abd1ac652551dbe4d408dfcec8a499b8bf
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\LAPTOP-7SEDC4D7
+# makefile (from `makefile', line 23)
+MCU_DEVICE_CORE_FLOAT_ABI = 
+# makefile (from `makefile', line 158)
+CODE_HEADERS_HPP := funsape/ funsape/device/ funsape/peripheral/ funsape/util/
+# makefile (from `makefile', line 17)
+COMPILER_OPT = -Og
+# makefile (from `makefile', line 237)
+FUNSAPE_HEADERS_H := 
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = LAPTOP-7SEDC4D7
+# makefile (from `makefile', line 251)
+FUNSAPE_HEADERS_HXX := 
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `makefile', line 163)
+CODE_HEADERS_HXX := ./ funsape/ funsape/device/ funsape/peripheral/ funsape/util/
+# makefile (from `makefile', line 92)
+HEX := avr-objcopy -O ihex
+# makefile (from `makefile', line 87)
+AS := avr-gcc -x assemble-with-cpp
+# makefile (from `makefile', line 307)
+SOURCES_AXX := 
+# makefile (from `makefile', line 360)
+FLAGS_ASM = $(FLAG_MCU) $(COMPILER_OPT) -Wall -fdata-sections -ffunction-sections $(USER_FLAGS_ASM) $(DEFINES_ASM) $(INCLUDES_AXX)
+# makefile (from `makefile', line 13)
+BUILD_DIR = build
+# default
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := assemble
+# makefile (from `makefile', line 378)
+FLAGS_C = $(FLAG_MCU) -std=$(COMPILER_STD_C) $(COMPILER_OPT) -Wall -fdata-sections -ffunction-sections -fno-exceptions $(USER_FLAGS_C) $(DEFINES_C) $(INCLUDES_HXX) -MMD -MP -MF"$(@:%.o=%.d)"
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `makefile', line 310)
+SOURCES_CXX := Adafruit_Fingerprint.cpp funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+# environment
+LOCALAPPDATA = C:\Users\kenne\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# makefile (from `makefile', line 41)
+rwildcard = $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subst *,%,$2),$d))
+# default
+MAKE_COMMAND := make
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile (from `makefile', line 246)
+FUNSAPE_HEADERS_HPP := 
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\12fda5823253dc55bd4b85961b31345a-1.75.1-main-sock
+# makefile (from `makefile', line 319)
+INCLUDES_ASM := 
+# environment
+HOMEPATH = \Users\kenne
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = file:///c%3A/D/IFSC/vscodeleandro/ex/data/extensions/ms-ceintl.vscode-language-pack-pt-br-1.75.2023020809/translations/extensions/vscode.json-language-features.i18n.json
+# makefile (from `makefile', line 90)
+CCPP := avr-g++
+# makefile (from `makefile', line 214)
+CODE_SOURCES_CXX := Adafruit_Fingerprint.cpp funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\kenne\AppData\Roaming
+# environment
+TEMP = C:\Users\kenne\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# makefile (from `makefile', line 395)
+FLAGS_CPP = $(FLAG_MCU) -std=$(COMPILER_STD_CPP) $(COMPILER_OPT) -Wall -fdata-sections -ffunction-sections -fno-exceptions -fno-rtti $(USER_FLAGS_CPP) $(DEFINES_CPP) $(INCLUDES_HXX) -MMD -MP -MF"$(@:%.o=%.d)"
+# makefile (from `makefile', line 256)
+FUNSAPE_HEADERS_ALL := 
+# makefile (from `makefile', line 320)
+INCLUDES_H := -I./
+# default
+MAKEFILES := 
+# makefile (from `makefile', line 168)
+CODE_HEADERS_ALL := ./ funsape/ funsape/device/ funsape/peripheral/ funsape/util/
+# makefile (from `makefile', line 322)
+INCLUDES_HXX := -I./ -Ifunsape/ -Ifunsape/device/ -Ifunsape/peripheral/ -Ifunsape/util/
+# automatic
+<F = $(notdir $<)
+# makefile (from `makefile', line 305)
+SOURCES_ASM := 
+# makefile (from `makefile', line 15)
+COMPILE_C_AS_CPP = 0
+# environment
+LC_ALL = C
+# makefile (from `makefile', line 21)
+FUNSAPE_PATH = funsapeLib
+# makefile (from `makefile', line 275)
+FUNSAPE_SOURCES_AXX := 
+# environment
+EFC_5248 = 1
+# makefile (from `makefile', line 19)
+COMPILER_STD_C = c11
+# makefile (from `makefile', line 308)
+SOURCES_C := 
+# automatic
+^F = $(notdir $^)
+# makefile (from `makefile', line 306)
+SOURCES_S := 
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 8c01
+# makefile (from `makefile', line 298)
+FUNSAPE_SOURCES_CXX := 
+# environment
+MAKELEVEL := 0
+# makefile (from `makefile', line 184)
+CODE_SOURCES_ASM := 
+# makefile (from `makefile', line 321)
+INCLUDES_HPP := -Ifunsape/ -Ifunsape/device/ -Ifunsape/peripheral/ -Ifunsape/util/
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 2568
+# makefile (from `makefile', line 198)
+CODE_SOURCES_C := 
+# makefile (from `makefile', line 338)
+DEFINES_CXX := -DUSE_HAL_DRIVER -D__AVR_ATmega328P__
+# makefile (from `makefile', line 47)
+MCU_AVR_CODE_OFFSET := 0
+# environment
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-7SEDC4D7
+# makefile (from `makefile', line 178)
+CODE_SOURCES_S := 
+# variable set hash-table stats:
+# Load=177/1024=17%, Rehash=0, Collisions=64/2557=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# funsape/util/systemStatus.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/systemStatus.cpp, mtime 1686658780): could not be opened.
+# build/timer0.o (key c:/D/IFSC/MCC/projects/testeusart/build/timer0.o, mtime 1688089459): could not be opened.
+# build/pcint0.lst (key c:/D/IFSC/MCC/projects/testeusart/build/pcint0.lst, mtime 1688089459): could not be opened.
+# build/debug.d (key c:/D/IFSC/MCC/projects/testeusart/build/debug.d, mtime 1688089460): could not be opened.
+# build/int1.d (key c:/D/IFSC/MCC/projects/testeusart/build/int1.d, mtime 1688089459): could not be opened.
+# build/keypad.d (key c:/D/IFSC/MCC/projects/testeusart/build/keypad.d, mtime 1688089458): could not be opened.
+# build/sevenSegmentsDisplay.lst (key c:/D/IFSC/MCC/projects/testeusart/build/sevenSegmentsDisplay.lst, mtime 1688089458): could not be opened.
+# vars.mk (key c:/D/IFSC/MCC/projects/testeusart/vars.mk, mtime 1686522646): could not be opened.
+# funsape/device/sevenSegmentsMuxDisplay.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/sevenSegmentsMuxDisplay.hpp, mtime 1686658780): could not be opened.
+# funsape/util (key c:/D/IFSC/MCC/projects/testeusart/funsape/util, mtime 1688163247): 11 files, no impossibilities.
+# funsape/device (key c:/D/IFSC/MCC/projects/testeusart/funsape/device, mtime 1688163247): 12 files, no impossibilities.
+# build/systemStatus.o (key c:/D/IFSC/MCC/projects/testeusart/build/systemStatus.o, mtime 1688089461): could not be opened.
+# build/timer1.lst (key c:/D/IFSC/MCC/projects/testeusart/build/timer1.lst, mtime 1688089459): could not be opened.
+# funsape/util/sound.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/sound.cpp, mtime 1688061544): could not be opened.
+# build/main.d (key c:/D/IFSC/MCC/projects/testeusart/build/main.d, mtime 1688161771): could not be opened.
+# build/ds1307.o (key c:/D/IFSC/MCC/projects/testeusart/build/ds1307.o, mtime 1688089457): could not be opened.
+# funsape/peripheral/timer2.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/timer2.cpp, mtime 1686658780): could not be opened.
+# funsape/device/sevenSegmentsDisplay.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/sevenSegmentsDisplay.hpp, mtime 1686658780): could not be opened.
+# funsape/globalDefines.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/globalDefines.hpp, mtime 1686658780): could not be opened.
+# build/Adafruit_Fingerprint.lst (key c:/D/IFSC/MCC/projects/testeusart/build/Adafruit_Fingerprint.lst, mtime 1688161657): could not be opened.
+# makefile-ARM-STM32.mk (key c:/D/IFSC/MCC/projects/testeusart/makefile-ARM-STM32.mk, mtime 1686522646): could not be opened.
+# funsape/peripheral/int1.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/int1.hpp, mtime 1686658780): could not be opened.
+# funsape/pinout.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/pinout.hpp, mtime 1686658780): could not be opened.
+# funsape/peripheral/pcint2.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/pcint2.cpp, mtime 1686658780): could not be opened.
+# . (key c:/D/IFSC/MCC/projects/testeusart, mtime 1688163247): 18 files, no impossibilities.
+# funsape/peripheral/int1.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/int1.cpp, mtime 1686658780): could not be opened.
+# build/application.elf (key c:/D/IFSC/MCC/projects/testeusart/build/application.elf, mtime 1688161771): could not be opened.
+# build/debug.o (key c:/D/IFSC/MCC/projects/testeusart/build/debug.o, mtime 1688089460): could not be opened.
+# build/twi.d (key c:/D/IFSC/MCC/projects/testeusart/build/twi.d, mtime 1688089460): could not be opened.
+# funsape/util/debug.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/debug.cpp, mtime 1686658780): could not be opened.
+# build/int1.o (key c:/D/IFSC/MCC/projects/testeusart/build/int1.o, mtime 1688089459): could not be opened.
+# build/keypad.o (key c:/D/IFSC/MCC/projects/testeusart/build/keypad.o, mtime 1688089458): could not be opened.
+# build/hd44780.lst (key c:/D/IFSC/MCC/projects/testeusart/build/hd44780.lst, mtime 1688089458): could not be opened.
+# build/dateTime.lst (key c:/D/IFSC/MCC/projects/testeusart/build/dateTime.lst, mtime 1688089460): could not be opened.
+# build/sevenSegmentsMuxDisplay.d (key c:/D/IFSC/MCC/projects/testeusart/build/sevenSegmentsMuxDisplay.d, mtime 1688089458): could not be opened.
+# build/sound.lst (key c:/D/IFSC/MCC/projects/testeusart/build/sound.lst, mtime 1688089460): could not be opened.
+# funsape/peripheral/pcint1.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/pcint1.cpp, mtime 1686658780): could not be opened.
+# funsape/peripheral/usart0.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/usart0.cpp, mtime 1688085307): could not be opened.
+# build/pcint0.d (key c:/D/IFSC/MCC/projects/testeusart/build/pcint0.d, mtime 1688089459): could not be opened.
+# build/main.o (key c:/D/IFSC/MCC/projects/testeusart/build/main.o, mtime 1688161771): could not be opened.
+# funsape/device/keypad.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/keypad.cpp, mtime 1686658780): could not be opened.
+# build/timer1.d (key c:/D/IFSC/MCC/projects/testeusart/build/timer1.d, mtime 1688089459): could not be opened.
+# funsape/peripheral/pcint1.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/pcint1.hpp, mtime 1686658780): could not be opened.
+# build/sevenSegmentsDisplay.d (key c:/D/IFSC/MCC/projects/testeusart/build/sevenSegmentsDisplay.d, mtime 1688089458): could not be opened.
+# funsape/device/ds1307.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/ds1307.cpp, mtime 1686658780): could not be opened.
+# funsape/peripheral/twi.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/twi.hpp, mtime 1686658780): could not be opened.
+# __gmsl (key c:/D/IFSC/MCC/projects/testeusart/__gmsl, mtime 1686522646): could not be opened.
+# build/int0.lst (key c:/D/IFSC/MCC/projects/testeusart/build/int0.lst, mtime 1688089459): could not be opened.
+# build/timer2.o (key c:/D/IFSC/MCC/projects/testeusart/build/timer2.o, mtime 1688089460): could not be opened.
+# funsape/peripheral/adc.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/adc.cpp, mtime 1686658780): could not be opened.
+# funsape/device/hd44780.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/hd44780.hpp, mtime 1686658780): could not be opened.
+# build/twi.o (key c:/D/IFSC/MCC/projects/testeusart/build/twi.o, mtime 1688089460): could not be opened.
+# build/pcint2.lst (key c:/D/IFSC/MCC/projects/testeusart/build/pcint2.lst, mtime 1688089459): could not be opened.
+# build (key c:/D/IFSC/MCC/projects/testeusart/build, mtime 1688163247): 72 files, no impossibilities.
+# funsape/peripheral/pcint0.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/pcint0.hpp, mtime 1686658780): could not be opened.
+# build/Adafruit_Fingerprint.d (key c:/D/IFSC/MCC/projects/testeusart/build/Adafruit_Fingerprint.d, mtime 1688161657): could not be opened.
+# build/sevenSegmentsMuxDisplay.o (key c:/D/IFSC/MCC/projects/testeusart/build/sevenSegmentsMuxDisplay.o, mtime 1688089458): could not be opened.
+# funsape/peripheral/timer1.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/timer1.hpp, mtime 1686658780): could not be opened.
+# C:\WinAVR-20100110\bin (key C:/WinAVR-20100110/bin, mtime 1685121949): 75 files, no impossibilities.
+# build/pcint0.o (key c:/D/IFSC/MCC/projects/testeusart/build/pcint0.o, mtime 1688089459): could not be opened.
+# build/application.bin (key c:/D/IFSC/MCC/projects/testeusart/build/application.bin, mtime 1688161771): could not be opened.
+# funsape/util/sound.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/sound.hpp, mtime 1688061544): could not be opened.
+# avrProject.code-workspace (key c:/D/IFSC/MCC/projects/testeusart/avrProject.code-workspace, mtime 1677245697): could not be opened.
+# build/timer1.o (key c:/D/IFSC/MCC/projects/testeusart/build/timer1.o, mtime 1688089459): could not be opened.
+# funsape/peripheral/timer2.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/timer2.hpp, mtime 1686658780): could not be opened.
+# Adafruit_Fingerprint.cpp (key c:/D/IFSC/MCC/projects/testeusart/Adafruit_Fingerprint.cpp, mtime 1688161657): could not be opened.
+# build/sevenSegmentsDisplay.o (key c:/D/IFSC/MCC/projects/testeusart/build/sevenSegmentsDisplay.o, mtime 1688089458): could not be opened.
+# build/pcint1.lst (key c:/D/IFSC/MCC/projects/testeusart/build/pcint1.lst, mtime 1688089459): could not be opened.
+# build/dateTime.d (key c:/D/IFSC/MCC/projects/testeusart/build/dateTime.d, mtime 1688089460): could not be opened.
+# funsape/device/sevenSegmentsMuxDisplay.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/sevenSegmentsMuxDisplay.cpp, mtime 1686658780): could not be opened.
+# funsape/peripheral/timer0.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/timer0.cpp, mtime 1686658780): could not be opened.
+# funsape/peripheral (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral, mtime 1688163247): 24 files, no impossibilities.
+# build/sound.o (key c:/D/IFSC/MCC/projects/testeusart/build/sound.o, mtime 1688089460): could not be opened.
+# build/usart0.lst (key c:/D/IFSC/MCC/projects/testeusart/build/usart0.lst, mtime 1688089460): could not be opened.
+# funsape/device/sevenSegmentsDisplay.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/sevenSegmentsDisplay.cpp, mtime 1686658780): could not be opened.
+# build/adc.lst (key c:/D/IFSC/MCC/projects/testeusart/build/adc.lst, mtime 1688089458): could not be opened.
+# build/Adafruit_Fingerprint.o (key c:/D/IFSC/MCC/projects/testeusart/build/Adafruit_Fingerprint.o, mtime 1688161657): could not be opened.
+# build/timer2.d (key c:/D/IFSC/MCC/projects/testeusart/build/timer2.d, mtime 1688089459): could not be opened.
+# funsape/util/systemStatus.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/systemStatus.hpp, mtime 1686658780): could not be opened.
+# build/int0.d (key c:/D/IFSC/MCC/projects/testeusart/build/int0.d, mtime 1688089459): could not be opened.
+# build/timer0.lst (key c:/D/IFSC/MCC/projects/testeusart/build/timer0.lst, mtime 1688089459): could not be opened.
+# C:\WinAVR-20100110\utils\bin (key C:/WinAVR-20100110/utils/bin, mtime 1685121960): 99 files, no impossibilities so far.
+# build/int0.o (key c:/D/IFSC/MCC/projects/testeusart/build/int0.o, mtime 1688089459): could not be opened.
+# funsape/util/bus.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/bus.hpp, mtime 1686658780): could not be opened.
+# build/pcint2.d (key c:/D/IFSC/MCC/projects/testeusart/build/pcint2.d, mtime 1688089459): could not be opened.
+# Adafruit_Fingerprint.h (key c:/D/IFSC/MCC/projects/testeusart/Adafruit_Fingerprint.h, mtime 1688161657): could not be opened.
+# build/dateTime.o (key c:/D/IFSC/MCC/projects/testeusart/build/dateTime.o, mtime 1688089460): could not be opened.
+# funsape/device/ds1307.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/ds1307.hpp, mtime 1686658780): could not be opened.
+# build/systemStatus.lst (key c:/D/IFSC/MCC/projects/testeusart/build/systemStatus.lst, mtime 1688089461): could not be opened.
+# ports.tmp (key c:/D/IFSC/MCC/projects/testeusart/ports.tmp, mtime 1686522646): could not be opened.
+# funsape/util/debug.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/debug.hpp, mtime 1686658780): could not be opened.
+# build/ds1307.lst (key c:/D/IFSC/MCC/projects/testeusart/build/ds1307.lst, mtime 1688089457): could not be opened.
+# port.mk (key c:/D/IFSC/MCC/projects/testeusart/port.mk, mtime 1688068956): could not be opened.
+# funsape/peripheral/int0.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/int0.hpp, mtime 1686658780): could not be opened.
+# funsape/util/dateTime.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/dateTime.cpp, mtime 1686658780): could not be opened.
+# funsape/device/hd44780.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/hd44780.cpp, mtime 1686658780): could not be opened.
+# build/pcint1.d (key c:/D/IFSC/MCC/projects/testeusart/build/pcint1.d, mtime 1688089459): could not be opened.
+# funsape/peripheral/twi.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/twi.cpp, mtime 1686658780): could not be opened.
+# funsape/peripheral/pcint2.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/pcint2.hpp, mtime 1686658780): could not be opened.
+# build/hd44780.o (key c:/D/IFSC/MCC/projects/testeusart/build/hd44780.o, mtime 1688089458): could not be opened.
+# build/application.hex (key c:/D/IFSC/MCC/projects/testeusart/build/application.hex, mtime 1688161771): could not be opened.
+# funsape/peripheral/pcint0.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/pcint0.cpp, mtime 1686658780): could not be opened.
+# build/debug.lst (key c:/D/IFSC/MCC/projects/testeusart/build/debug.lst, mtime 1688089460): could not be opened.
+# main.cpp (key c:/D/IFSC/MCC/projects/testeusart/main.cpp, mtime 1688161770): could not be opened.
+# build/usart0.d (key c:/D/IFSC/MCC/projects/testeusart/build/usart0.d, mtime 1688089460): could not be opened.
+# build/int1.lst (key c:/D/IFSC/MCC/projects/testeusart/build/int1.lst, mtime 1688089459): could not be opened.
+# build/keypad.lst (key c:/D/IFSC/MCC/projects/testeusart/build/keypad.lst, mtime 1688089458): could not be opened.
+# build/pcint2.o (key c:/D/IFSC/MCC/projects/testeusart/build/pcint2.o, mtime 1688089459): could not be opened.
+# funsape/peripheral/int0.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/int0.cpp, mtime 1686658780): could not be opened.
+# build/adc.d (key c:/D/IFSC/MCC/projects/testeusart/build/adc.d, mtime 1688089458): could not be opened.
+# build/usart0.o (key c:/D/IFSC/MCC/projects/testeusart/build/usart0.o, mtime 1688089460): could not be opened.
+# gmsl (key c:/D/IFSC/MCC/projects/testeusart/gmsl, mtime 1686522646): could not be opened.
+# funsape/peripheral/timer1.cpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/timer1.cpp, mtime 1686658780): could not be opened.
+# makefile-AVR.mk (key c:/D/IFSC/MCC/projects/testeusart/makefile-AVR.mk, mtime 1686522646): could not be opened.
+# build/hd44780.d (key c:/D/IFSC/MCC/projects/testeusart/build/hd44780.d, mtime 1688089458): could not be opened.
+# build/timer0.d (key c:/D/IFSC/MCC/projects/testeusart/build/timer0.d, mtime 1688089459): could not be opened.
+# funsape (key c:/D/IFSC/MCC/projects/testeusart/funsape, mtime 1688163247): 7 files, no impossibilities.
+# LICENSE (key c:/D/IFSC/MCC/projects/testeusart/LICENSE, mtime 1686522646): could not be opened.
+# build/main.lst (key c:/D/IFSC/MCC/projects/testeusart/build/main.lst, mtime 1688161771): could not be opened.
+# funsape/device/keypad.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/device/keypad.hpp, mtime 1686658780): could not be opened.
+# Makefile (key c:/D/IFSC/MCC/projects/testeusart/Makefile, mtime 1686522646): could not be opened.
+# build/pcint1.o (key c:/D/IFSC/MCC/projects/testeusart/build/pcint1.o, mtime 1688089459): could not be opened.
+# funsape/peripheral/usart0.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/usart0.hpp, mtime 1688085253): could not be opened.
+# build/sound.d (key c:/D/IFSC/MCC/projects/testeusart/build/sound.d, mtime 1688089460): could not be opened.
+# build/systemStatus.d (key c:/D/IFSC/MCC/projects/testeusart/build/systemStatus.d, mtime 1688089461): could not be opened.
+# build/timer2.lst (key c:/D/IFSC/MCC/projects/testeusart/build/timer2.lst, mtime 1688089460): could not be opened.
+# funsape/peripheral/adc.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/adc.hpp, mtime 1686658780): could not be opened.
+# build/twi.lst (key c:/D/IFSC/MCC/projects/testeusart/build/twi.lst, mtime 1688089460): could not be opened.
+# build/ds1307.d (key c:/D/IFSC/MCC/projects/testeusart/build/ds1307.d, mtime 1688089457): could not be opened.
+# build/application.map (key c:/D/IFSC/MCC/projects/testeusart/build/application.map, mtime 1688161771): could not be opened.
+# funsape/peripheral/timer0.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/peripheral/timer0.hpp, mtime 1686658780): could not be opened.
+# funsape/util/dateTime.hpp (key c:/D/IFSC/MCC/projects/testeusart/funsape/util/dateTime.hpp, mtime 1686658780): could not be opened.
+# build/adc.o (key c:/D/IFSC/MCC/projects/testeusart/build/adc.o, mtime 1688089458): could not be opened.
+# build/sevenSegmentsMuxDisplay.lst (key c:/D/IFSC/MCC/projects/testeusart/build/sevenSegmentsMuxDisplay.lst, mtime 1688089458): could not be opened.
+
+# 318 files, no impossibilities in 134 directories.
+
+# Implicit Rules
+
+build/%.o: %.c Makefile | build
+#  commands to execute (from `makefile', line 480):
+	$(CC) -c $(FLAGS_C) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+	
+
+build/%.o: %.cpp Makefile | build
+#  commands to execute (from `makefile', line 483):
+	$(CCPP) -c $(FLAGS_CPP) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.cpp=.lst)) $< -o $@
+	
+
+build/%.o: %.s Makefile | build
+#  commands to execute (from `makefile', line 486):
+	$(AS) -c $(FLAGS_ASM) $< -o $@
+	
+
+build/%.o: %.asm Makefile | build
+#  commands to execute (from `makefile', line 489):
+	$(AS) -c $(FLAGS_ASM) $< -o $@
+	
+
+build/%.hex: build/%.elf | build
+#  commands to execute (from `makefile', line 496):
+	$(HEX) $< $@
+	
+
+build/%.bin: build/%.elf | build
+#  commands to execute (from `makefile', line 499):
+	$(BIN) $< $@
+	
+
+# 6 implicit rules, 0 (0,0%) terminal.
+
+# Files
+
+# Not a target:
+build/timer0.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleanCompile: clean compile
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+flashErase:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 564):
+	@echo
+	@echo ================================================================================
+	@echo Fixing bootloader...
+	@echo ================================================================================
+	@echo
+	@echo Hold Reset button until ST-LINK respond!
+	@sleep 5s
+	@echo This feature was not implemented for AVR architecture.
+	@echo --------------------------------------------------------------------------------
+	@echo Bootloader fixed!
+	@echo ================================================================================
+	@echo
+	
+
+program:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 532):
+	@echo
+	@echo ================================================================================
+	@echo Loading program...
+	@echo ================================================================================
+	@echo
+	avrdude -C $(PROGRAMMER_CONFIG_FILE) -v -p $(MCU_DEVICE_NAME) -c $(PROGRAMMER_TYPE) -P $(PROGRAMMER_PORT) -b$(PROGRAMMER_BAUDRATE) -D -Uflash:w:$(BUILD_DIR)/$(BUILD_NAME).hex:i
+	@echo
+	@echo --------------------------------------------------------------------------------
+	@echo Program loaded!
+	@echo ================================================================================
+	
+
+# Not a target:
+build/keypad.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleanCompileProgram: clean compile program
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+build/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/twi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+build/timer1.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+assemble: build
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 455):
+	avrasm2 -fI -o "$(BUILD_DIR)/application.hex" -m "$(BUILD_DIR)/application.map" -l "$(BUILD_DIR)/application.lss" -e "$(BUILD_DIR)/application.eep" -S "$(BUILD_DIR)/application.tmp" -W+ie -d "$(BUILD_DIR)/application.o" main.asm
+	
+
+.PHONY: assemble compile program cleanCompile cleanCompileProgram clean compileProgram compileCleanProgram cleanCompileCleanProgram cleanAssemble cleanAssembleProgram assembleProgram assembleCleanProgram cleanAssembleCleanProgram flashErase doNothing
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/application.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+assembleProgram: assemble program
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+build/usart0.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/dateTime.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/debug.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+port.mk:
+#  Implicit rule search has been done.
+#  Last modified 2023-06-29 17:02:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+build/timer2.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-06-11 19:30:46
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 502):
+	mkdir build
+	
+
+cleanAssembleCleanProgram: clean assemble clean program
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+build/application.elf: build/Adafruit_Fingerprint.o build/ds1307.o build/hd44780.o build/keypad.o build/sevenSegmentsDisplay.o build/sevenSegmentsMuxDisplay.o build/adc.o build/int0.o build/int1.o build/pcint0.o build/pcint1.o build/pcint2.o build/timer0.o build/timer1.o build/timer2.o build/twi.o build/usart0.o build/dateTime.o build/debug.o build/sound.o build/systemStatus.o build/main.o makefile
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 492):
+	$(CCPP) $(OBJECTS) $(FLAGS_LINKER) -o $@
+	$(SZ) $@
+	
+
+# Not a target:
+build/hd44780.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleanCompileCleanProgram: clean compile clean program
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+build/application.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/systemStatus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/ds1307.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+assembleCleanProgram: assemble clean program
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+compile: build/application.elf build/application.hex build/application.bin
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+doNothing:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 613):
+	@echo
+	@echo ================================================================================
+	@echo Dumping...
+	@echo ================================================================================
+	@echo
+	@echo ------------------------------
+	@echo GCC
+	@echo ------------------------------
+	@echo
+	$(COMPILER_PATH)$(CC) --version
+	@echo
+	@echo ------------------------------
+	@echo SYSTEM PATH
+	@echo ------------------------------
+	@echo
+	@echo PATH                      = $(PATH)
+	@echo
+	@echo ------------------------------
+	@echo MAKEFILE VARIABLES
+	@echo ------------------------------
+	@echo
+	@echo BUILD_DIR                 = $(BUILD_DIR)
+	@echo BUILD_NAME                = $(BUILD_NAME)
+	@echo COMPILE_C_AS_CPP          = $(COMPILE_C_AS_CPP)
+	@echo COMPILER_DEBUG            = $(COMPILER_DEBUG)
+	@echo COMPILER_OPT              = $(COMPILER_OPT)
+	@echo COMPILER_STD_C            = $(COMPILER_STD_C)
+	@echo COMPILER_STD_CPP          = $(COMPILER_STD_CPP)
+	@echo DEVICE_FLASH              = $(DEVICE_FLASH)
+	@echo DEVICE_LINE               = $(DEVICE_LINE)
+	@echo DEVICE_PACKAGE            = $(DEVICE_PACKAGE)
+	@echo DEVICE_PINS               = $(DEVICE_PINS)
+	@echo FUNSAPE_PATH              = $(FUNSAPE_PATH)
+	@echo LIBRARY_PATH              = $(LIBRARY_PATH)
+	@echo MCU_DEVICE_CORE_FLOAT_ABI = $(MCU_DEVICE_CORE_FLOAT_ABI)
+	@echo MCU_DEVICE_CORE_FPU       = $(MCU_DEVICE_CORE_FPU)
+	@echo MCU_DEVICE_CORE_ID        = $(MCU_DEVICE_CORE_ID)
+	@echo MCU_DEVICE_FLASH          = $(MCU_DEVICE_FLASH)
+	@echo MCU_DEVICE_LINE           = $(MCU_DEVICE_LINE)
+	@echo MCU_DEVICE_MACRO          = $(MCU_DEVICE_MACRO)
+	@echo MCU_DEVICE_NAME           = $(MCU_DEVICE_NAME)
+	@echo MCU_DEVICE_NAME           = $(MCU_DEVICE_NAME)
+	@echo MCU_DEVICE_PLATFORM       = $(MCU_DEVICE_PLATFORM)
+	@echo MCU_LINKER_FILE           = $(MCU_LINKER_FILE)
+	@echo MY_SHELL                  = $(MY_SHELL)
+	@echo OBJECTS                   = $(OBJECTS)
+	@echo SHELL                     = $(SHELL)
+	@echo SPACE                     = $(SPACE)
+	@echo USED_ARC                  = $(USED_ARC)
+	@echo USED_OS                   = $(USED_OS)
+	@echo USED_SHELL                = $(USED_SHELL)
+	@echo USER_DEFINES_ASM          = $(USER_DEFINES_ASM)
+	@echo USER_DEFINES_C            = $(USER_DEFINES_C)
+	@echo USER_DEFINES_CPP          = $(USER_DEFINES_CPP)
+	@echo USER_FLAGS_ASM            = $(USER_FLAGS_ASM)
+	@echo USER_FLAGS_C              = $(USER_FLAGS_C)
+	@echo USER_FLAGS_CPP            = $(USER_FLAGS_CPP)
+	@echo USER_LIBS                 = $(USER_LIBS)
+	@echo CODE_SOURCES_ASM          = $(CODE_SOURCES_ASM)
+	@echo CODE_SOURCES_C            = $(CODE_SOURCES_C)
+	@echo CODE_SOURCES_CPP          = $(CODE_SOURCES_CPP)
+	@echo CODE_HEADERS_ASM          = $(CODE_HEADERS_ASM)
+	@echo CODE_HEADERS_C            = $(CODE_HEADERS_C)
+	@echo CODE_HEADERS_CPP          = $(CODE_HEADERS_CPP)
+	@echo FUNSAPE_SOURCES_ASM       = $(FUNSAPE_SOURCES_ASM)
+	@echo FUNSAPE_SOURCES_C         = $(FUNSAPE_SOURCES_C)
+	@echo FUNSAPE_SOURCES_CPP       = $(FUNSAPE_SOURCES_CPP)
+	@echo FUNSAPE_HEADERS_ASM       = $(FUNSAPE_HEADERS_ASM)
+	@echo FUNSAPE_HEADERS_C         = $(FUNSAPE_HEADERS_C)
+	@echo FUNSAPE_HEADERS_CPP       = $(FUNSAPE_HEADERS_CPP)
+	@echo
+	@echo SOURCES_ASM               = $(SOURCES_ASM)
+	@echo SOURCES_C                 = $(SOURCES_C)
+	@echo SOURCES_CPP               = $(SOURCES_CPP)
+	@echo HEADERS_ASM               = $(HEADERS_ASM)
+	@echo HEADERS_C                 = $(HEADERS_C)
+	@echo HEADERS_CPP               = $(HEADERS_CPP)
+	@echo --------------------------------------------------------------------------------
+	@echo end of dump process!
+	@echo ================================================================================
+	
+
+# Not a target:
+build/sevenSegmentsMuxDisplay.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/pcint0.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compileProgram: compile program
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 509):
+	@echo
+	@echo ================================================================================
+	@echo Removing auxiliary files...
+	@echo ================================================================================
+	@echo
+	@rm -r -f -v $(BUILD_DIR)/*.d
+	@rm -r -f -v $(BUILD_DIR)/*.lst
+	@rm -r -f -v $(BUILD_DIR)/*.o
+	@rm -r -f -v $(BUILD_DIR)/*.lss
+	@rm -r -f -v $(BUILD_DIR)/*.map
+	@rm -r -f -v $(BUILD_DIR)/*.tmp
+	@echo Auxiliary files removed!
+	@echo
+	@echo --------------------------------------------------------------------------------
+	@echo End of clean process!
+	@echo ================================================================================
+	@echo
+	
+
+# Not a target:
+build/int0.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/pcint1.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/adc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/int1.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/sevenSegmentsDisplay.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/Adafruit_Fingerprint.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/sound.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleanAssemble: clean assemble
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+build/pcint2.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleanAssembleProgram: clean assemble program
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+compileCleanProgram: compile clean program
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=48/1024=5%, Rehash=0, Collisions=4/131=3%
+# VPATH Search Paths
+
+vpath %.cpp funsape/device;funsape/peripheral;funsape/util
+
+# 1 `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 2
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4079 / max = 4079 / min = 4079 / avg = 4079
+
+# Finished Make data base on Fri Jun 30 19:14:27 2023
+
+ 
+make: *** No rule to make target `all'.  Stop.
+

@@ -1,6 +1,9 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `c:/D/IFSC/MCC/projects/9_Bit_Bang_serial/codigo 1'
+ 
 mkdir build
+ 
 avrasm2 -fI -o "build/application.hex" -m "build/application.map" -l "build/application.lss" -e "build/application.eep" -S "build/application.tmp" -W+ie -d "build/application.o" main.asm
+ 
 make: Leaving directory `c:/D/IFSC/MCC/projects/9_Bit_Bang_serial/codigo 1'
  

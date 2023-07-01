@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-pc-mingw32
  
 
-# Make data base, printed on Thu Jun 29 18:20:33 2023
+# Make data base, printed on Fri Jun 30 20:38:28 2023
 
 # Variables
 
@@ -21,7 +21,7 @@ MAKEFLAGS = Rrqp
 # makefile (from `makefile', line 20)
 COMPILER_STD_CPP = c++14
 # makefile (from `makefile', line 309)
-SOURCES_CPP := funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+SOURCES_CPP := Adafruit_Fingerprint.cpp funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
 # makefile (from `makefile', line 189)
 CODE_SOURCES_AXX := 
 # automatic
@@ -67,7 +67,9 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from `port.mk', line 1)
 MAKEFILE_LIST :=  makefile port.mk
 # makefile (from `makefile', line 208)
-CODE_SOURCES_CPP := funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+CODE_SOURCES_CPP := Adafruit_Fingerprint.cpp funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # makefile (from `makefile', line 91)
 CP := avr-objcopy
 # makefile (from `makefile', line 284)
@@ -99,13 +101,13 @@ VSCODE_CWD = C:\D\IFSC\vscodeleandro\ex
 # makefile (from `makefile', line 331)
 USER_DEFINES_C := -DUSE_HAL_DRIVER
 # makefile (from `makefile', line 323)
-INCLUDES_ALL := -Ifunsape/ -Ifunsape/device/ -Ifunsape/peripheral/ -Ifunsape/util/
+INCLUDES_ALL := -I./ -Ifunsape/ -Ifunsape/device/ -Ifunsape/peripheral/ -Ifunsape/util/
 # environment
 PATH = C:\WinAVR-20100110\bin;C:\WinAVR-20100110\utils\bin;C:\Windows\System32\HWAudioDriverLibs;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microchip\xc16\v2.00\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;D:\Work\android\platform-tools;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\usbipd-win\;C:\Program Files (x86)\dotnet\;C:\Users\kenne\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;
 # makefile (from `makefile', line 48)
 MCU_STM32_CODE_OFFSET := 300
 # makefile (from `makefile', line 302)
-HEADERS_H := 
+HEADERS_H := ./
 # makefile (from `makefile', line 33)
 USER_FLAGS_CPP = -Wno-switch
 # environment
@@ -113,7 +115,7 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
 ZES_ENABLE_SYSMAN = 1
 # makefile (from `makefile', line 304)
-HEADERS_HXX := funsape/ funsape/device/ funsape/peripheral/ funsape/util/
+HEADERS_HXX := ./ funsape/ funsape/device/ funsape/peripheral/ funsape/util/
 # makefile (from `makefile', line 57)
 MCU_DEVICE_MACRO = __AVR_ATmega328P__
 # environment
@@ -147,7 +149,7 @@ OBJECTS = $(addprefix $(BUILD_DIR)/,$(notdir $(SOURCES_C:.c=.o))) $(addprefix $(
 # makefile (from `makefile', line 16)
 COMPILER_DEBUG = 0
 # makefile (from `makefile', line 148)
-CODE_HEADERS_H := 
+CODE_HEADERS_H := ./
 # makefile (from `makefile', line 14)
 BUILD_NAME = application
 # makefile (from `makefile', line 301)
@@ -159,7 +161,7 @@ DEFINES_CPP := -DUSE_HAL_DRIVER -D__AVR_ATmega328P__
 # makefile (from `makefile', line 335)
 USER_DEFINES_CPP := -DUSE_HAL_DRIVER
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_19436_MZFAQAMKVXTCAKPG
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_8164_OFGRGOMKPHTVKDPB
 # makefile (from `makefile', line 412)
 FLAGS_CXX = $(FLAG_MCU) -std=$(COMPILER_STD_CPP) $(COMPILER_OPT) -Wall -fdata-sections -ffunction-sections -fno-exceptions -fno-rtti $(USER_FLAGS_CPP) $(DEFINES_CXX) $(INCLUDES_HXX) -MMD -MP -MF"$(@:%.o=%.d)"
 # makefile (from `makefile', line 34)
@@ -221,7 +223,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from `makefile', line 163)
-CODE_HEADERS_HXX := funsape/ funsape/device/ funsape/peripheral/ funsape/util/
+CODE_HEADERS_HXX := ./ funsape/ funsape/device/ funsape/peripheral/ funsape/util/
 # makefile (from `makefile', line 92)
 HEX := avr-objcopy -O ihex
 # makefile (from `makefile', line 87)
@@ -243,7 +245,7 @@ PROGRAMFILES(X86) = C:\Program Files (x86)
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # makefile (from `makefile', line 310)
-SOURCES_CXX := funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+SOURCES_CXX := Adafruit_Fingerprint.cpp funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
 # environment
 LOCALAPPDATA = C:\Users\kenne\AppData\Local
 # environment
@@ -282,10 +284,12 @@ MFLAGS = -Rrqp
 SYSTEMROOT = C:\WINDOWS
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = file:///c%3A/D/IFSC/vscodeleandro/ex/data/extensions/ms-ceintl.vscode-language-pack-pt-br-1.75.2023020809/translations/extensions/vscode.json-language-features.i18n.json
 # makefile (from `makefile', line 90)
 CCPP := avr-g++
 # makefile (from `makefile', line 214)
-CODE_SOURCES_CXX := funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
+CODE_SOURCES_CXX := Adafruit_Fingerprint.cpp funsape/device/ds1307.cpp funsape/device/hd44780.cpp funsape/device/keypad.cpp funsape/device/sevenSegmentsDisplay.cpp funsape/device/sevenSegmentsMuxDisplay.cpp funsape/peripheral/adc.cpp funsape/peripheral/int0.cpp funsape/peripheral/int1.cpp funsape/peripheral/pcint0.cpp funsape/peripheral/pcint1.cpp funsape/peripheral/pcint2.cpp funsape/peripheral/timer0.cpp funsape/peripheral/timer1.cpp funsape/peripheral/timer2.cpp funsape/peripheral/twi.cpp funsape/peripheral/usart0.cpp funsape/util/dateTime.cpp funsape/util/debug.cpp funsape/util/sound.cpp funsape/util/systemStatus.cpp main.cpp
 # automatic
 +F = $(notdir $+)
 # environment
@@ -299,13 +303,13 @@ FLAGS_CPP = $(FLAG_MCU) -std=$(COMPILER_STD_CPP) $(COMPILER_OPT) -Wall -fdata-se
 # makefile (from `makefile', line 256)
 FUNSAPE_HEADERS_ALL := 
 # makefile (from `makefile', line 320)
-INCLUDES_H := 
+INCLUDES_H := -I./
 # default
 MAKEFILES := 
 # makefile (from `makefile', line 168)
-CODE_HEADERS_ALL := funsape/ funsape/device/ funsape/peripheral/ funsape/util/
+CODE_HEADERS_ALL := ./ funsape/ funsape/device/ funsape/peripheral/ funsape/util/
 # makefile (from `makefile', line 322)
-INCLUDES_HXX := -Ifunsape/ -Ifunsape/device/ -Ifunsape/peripheral/ -Ifunsape/util/
+INCLUDES_HXX := -I./ -Ifunsape/ -Ifunsape/device/ -Ifunsape/peripheral/ -Ifunsape/util/
 # automatic
 <F = $(notdir $<)
 # makefile (from `makefile', line 305)
@@ -318,14 +322,14 @@ LC_ALL = C
 FUNSAPE_PATH = funsapeLib
 # makefile (from `makefile', line 275)
 FUNSAPE_SOURCES_AXX := 
+# environment
+EFC_5248 = 1
 # makefile (from `makefile', line 19)
 COMPILER_STD_C = c11
 # makefile (from `makefile', line 308)
 SOURCES_C := 
 # automatic
 ^F = $(notdir $^)
-# environment
-EFC_5560 = 1
 # makefile (from `makefile', line 306)
 SOURCES_S := 
 # default
@@ -349,7 +353,9 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 19436
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 8164
 # makefile (from `makefile', line 198)
 CODE_SOURCES_C := 
 # makefile (from `makefile', line 338)
@@ -361,7 +367,7 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-7SEDC4D7
 # makefile (from `makefile', line 178)
 CODE_SOURCES_S := 
 # variable set hash-table stats:
-# Load=174/1024=17%, Rehash=0, Collisions=64/2484=3%
+# Load=177/1024=17%, Rehash=0, Collisions=64/2557=3%
 
 # Pattern-specific Variable Values
 
@@ -370,136 +376,141 @@ CODE_SOURCES_S :=
 # Directories
 
 # funsape/util/systemStatus.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/systemStatus.cpp, mtime 1686658780): could not be opened.
-# build/timer0.o (key c:/D/IFSC/MCC/projects/final_laptop/build/timer0.o, mtime 1688068436): could not be opened.
-# build/pcint0.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint0.lst, mtime 1688068435): could not be opened.
-# build/debug.d (key c:/D/IFSC/MCC/projects/final_laptop/build/debug.d, mtime 1688068437): could not be opened.
-# build/int1.d (key c:/D/IFSC/MCC/projects/final_laptop/build/int1.d, mtime 1688068435): could not be opened.
-# build/keypad.d (key c:/D/IFSC/MCC/projects/final_laptop/build/keypad.d, mtime 1688068435): could not be opened.
-# build/sevenSegmentsDisplay.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsDisplay.lst, mtime 1688068435): could not be opened.
+# build/timer0.o (key c:/D/IFSC/MCC/projects/final_laptop/build/timer0.o, mtime 1688089459): could not be opened.
+# build/pcint0.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint0.lst, mtime 1688089459): could not be opened.
+# build/debug.d (key c:/D/IFSC/MCC/projects/final_laptop/build/debug.d, mtime 1688089460): could not be opened.
+# build/int1.d (key c:/D/IFSC/MCC/projects/final_laptop/build/int1.d, mtime 1688089459): could not be opened.
+# build/keypad.d (key c:/D/IFSC/MCC/projects/final_laptop/build/keypad.d, mtime 1688089458): could not be opened.
+# build/sevenSegmentsDisplay.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsDisplay.lst, mtime 1688089458): could not be opened.
 # vars.mk (key c:/D/IFSC/MCC/projects/final_laptop/vars.mk, mtime 1686522646): could not be opened.
 # funsape/device/sevenSegmentsMuxDisplay.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/sevenSegmentsMuxDisplay.hpp, mtime 1686658780): could not be opened.
 # funsape/util (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util, mtime 1688061859): 11 files, no impossibilities.
 # funsape/device (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device, mtime 1688061859): 12 files, no impossibilities.
-# build/systemStatus.o (key c:/D/IFSC/MCC/projects/final_laptop/build/systemStatus.o, mtime 1688068437): could not be opened.
-# build/timer1.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/timer1.lst, mtime 1688068436): could not be opened.
+# build/systemStatus.o (key c:/D/IFSC/MCC/projects/final_laptop/build/systemStatus.o, mtime 1688089461): could not be opened.
+# build/timer1.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/timer1.lst, mtime 1688089459): could not be opened.
 # funsape/util/sound.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/sound.cpp, mtime 1688061544): could not be opened.
-# build/main.d (key c:/D/IFSC/MCC/projects/final_laptop/build/main.d, mtime 1688072439): could not be opened.
-# build/ds1307.o (key c:/D/IFSC/MCC/projects/final_laptop/build/ds1307.o, mtime 1688068434): could not be opened.
+# build/main.d (key c:/D/IFSC/MCC/projects/final_laptop/build/main.d, mtime 1688166037): could not be opened.
+# build/ds1307.o (key c:/D/IFSC/MCC/projects/final_laptop/build/ds1307.o, mtime 1688089457): could not be opened.
 # funsape/peripheral/timer2.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/timer2.cpp, mtime 1686658780): could not be opened.
 # funsape/device/sevenSegmentsDisplay.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/sevenSegmentsDisplay.hpp, mtime 1686658780): could not be opened.
-# funsape/globalDefines.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/globalDefines.hpp, mtime 1686658780): could not be opened.
+# funsape/globalDefines.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/globalDefines.hpp, mtime 1688166036): could not be opened.
+# build/Adafruit_Fingerprint.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/Adafruit_Fingerprint.lst, mtime 1688164096): could not be opened.
 # makefile-ARM-STM32.mk (key c:/D/IFSC/MCC/projects/final_laptop/makefile-ARM-STM32.mk, mtime 1686522646): could not be opened.
 # funsape/peripheral/int1.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/int1.hpp, mtime 1686658780): could not be opened.
+# funsape/pinout.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/pinout.hpp, mtime 1686658780): could not be opened.
 # funsape/peripheral/pcint2.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/pcint2.cpp, mtime 1686658780): could not be opened.
-# . (key c:/D/IFSC/MCC/projects/final_laptop, mtime 1688068431): 16 files, no impossibilities.
+# . (key c:/D/IFSC/MCC/projects/final_laptop, mtime 1688083694): 18 files, no impossibilities.
 # funsape/peripheral/int1.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/int1.cpp, mtime 1686658780): could not be opened.
-# build/application.elf (key c:/D/IFSC/MCC/projects/final_laptop/build/application.elf, mtime 1688072440): could not be opened.
-# build/debug.o (key c:/D/IFSC/MCC/projects/final_laptop/build/debug.o, mtime 1688068437): could not be opened.
-# build/twi.d (key c:/D/IFSC/MCC/projects/final_laptop/build/twi.d, mtime 1688068436): could not be opened.
+# build/application.elf (key c:/D/IFSC/MCC/projects/final_laptop/build/application.elf, mtime 1688165853): could not be opened.
+# build/debug.o (key c:/D/IFSC/MCC/projects/final_laptop/build/debug.o, mtime 1688089460): could not be opened.
+# build/twi.d (key c:/D/IFSC/MCC/projects/final_laptop/build/twi.d, mtime 1688089460): could not be opened.
 # funsape/util/debug.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/debug.cpp, mtime 1686658780): could not be opened.
-# build/int1.o (key c:/D/IFSC/MCC/projects/final_laptop/build/int1.o, mtime 1688068435): could not be opened.
-# build/keypad.o (key c:/D/IFSC/MCC/projects/final_laptop/build/keypad.o, mtime 1688068435): could not be opened.
-# build/hd44780.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/hd44780.lst, mtime 1688068435): could not be opened.
-# build/dateTime.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/dateTime.lst, mtime 1688068437): could not be opened.
-# build/sevenSegmentsMuxDisplay.d (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsMuxDisplay.d, mtime 1688068435): could not be opened.
+# build/int1.o (key c:/D/IFSC/MCC/projects/final_laptop/build/int1.o, mtime 1688089459): could not be opened.
+# build/keypad.o (key c:/D/IFSC/MCC/projects/final_laptop/build/keypad.o, mtime 1688089458): could not be opened.
+# build/hd44780.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/hd44780.lst, mtime 1688089458): could not be opened.
+# build/dateTime.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/dateTime.lst, mtime 1688089460): could not be opened.
+# build/sevenSegmentsMuxDisplay.d (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsMuxDisplay.d, mtime 1688089458): could not be opened.
+# build/sound.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/sound.lst, mtime 1688089460): could not be opened.
 # funsape/peripheral/pcint1.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/pcint1.cpp, mtime 1686658780): could not be opened.
-# funsape/peripheral/usart0.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/usart0.cpp, mtime 1686658780): could not be opened.
-# build/pcint0.d (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint0.d, mtime 1688068435): could not be opened.
-# build/main.o (key c:/D/IFSC/MCC/projects/final_laptop/build/main.o, mtime 1688072439): could not be opened.
+# funsape/peripheral/usart0.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/usart0.cpp, mtime 1688085307): could not be opened.
+# build/pcint0.d (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint0.d, mtime 1688089459): could not be opened.
+# build/main.o (key c:/D/IFSC/MCC/projects/final_laptop/build/main.o, mtime 1688165853): could not be opened.
 # funsape/device/keypad.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/keypad.cpp, mtime 1686658780): could not be opened.
-# build/timer1.d (key c:/D/IFSC/MCC/projects/final_laptop/build/timer1.d, mtime 1688068436): could not be opened.
+# build/timer1.d (key c:/D/IFSC/MCC/projects/final_laptop/build/timer1.d, mtime 1688089459): could not be opened.
 # funsape/peripheral/pcint1.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/pcint1.hpp, mtime 1686658780): could not be opened.
-# build/sevenSegmentsDisplay.d (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsDisplay.d, mtime 1688068435): could not be opened.
+# build/sevenSegmentsDisplay.d (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsDisplay.d, mtime 1688089458): could not be opened.
 # funsape/device/ds1307.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/ds1307.cpp, mtime 1686658780): could not be opened.
 # funsape/peripheral/twi.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/twi.hpp, mtime 1686658780): could not be opened.
 # __gmsl (key c:/D/IFSC/MCC/projects/final_laptop/__gmsl, mtime 1686522646): could not be opened.
-# build/int0.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/int0.lst, mtime 1688068435): could not be opened.
-# build/timer2.o (key c:/D/IFSC/MCC/projects/final_laptop/build/timer2.o, mtime 1688068436): could not be opened.
+# build/int0.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/int0.lst, mtime 1688089459): could not be opened.
+# build/timer2.o (key c:/D/IFSC/MCC/projects/final_laptop/build/timer2.o, mtime 1688089460): could not be opened.
 # funsape/peripheral/adc.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/adc.cpp, mtime 1686658780): could not be opened.
 # funsape/device/hd44780.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/hd44780.hpp, mtime 1686658780): could not be opened.
-# build/twi.o (key c:/D/IFSC/MCC/projects/final_laptop/build/twi.o, mtime 1688068436): could not be opened.
-# build/pcint2.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint2.lst, mtime 1688068436): could not be opened.
-# build (key c:/D/IFSC/MCC/projects/final_laptop/build, mtime 1688072440): 69 files, no impossibilities.
+# build/twi.o (key c:/D/IFSC/MCC/projects/final_laptop/build/twi.o, mtime 1688089460): could not be opened.
+# build/pcint2.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint2.lst, mtime 1688089459): could not be opened.
+# build (key c:/D/IFSC/MCC/projects/final_laptop/build, mtime 1688165853): 72 files, no impossibilities.
 # funsape/peripheral/pcint0.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/pcint0.hpp, mtime 1686658780): could not be opened.
-# build/sevenSegmentsMuxDisplay.o (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsMuxDisplay.o, mtime 1688068435): could not be opened.
+# build/Adafruit_Fingerprint.d (key c:/D/IFSC/MCC/projects/final_laptop/build/Adafruit_Fingerprint.d, mtime 1688164096): could not be opened.
+# build/sevenSegmentsMuxDisplay.o (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsMuxDisplay.o, mtime 1688089458): could not be opened.
 # funsape/peripheral/timer1.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/timer1.hpp, mtime 1686658780): could not be opened.
 # C:\WinAVR-20100110\bin (key C:/WinAVR-20100110/bin, mtime 1685121949): 75 files, no impossibilities.
-# build/pcint0.o (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint0.o, mtime 1688068435): could not be opened.
-# build/application.bin (key c:/D/IFSC/MCC/projects/final_laptop/build/application.bin, mtime 1688072440): could not be opened.
+# build/pcint0.o (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint0.o, mtime 1688089459): could not be opened.
+# build/application.bin (key c:/D/IFSC/MCC/projects/final_laptop/build/application.bin, mtime 1688165853): could not be opened.
 # funsape/util/sound.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/sound.hpp, mtime 1688061544): could not be opened.
 # avrProject.code-workspace (key c:/D/IFSC/MCC/projects/final_laptop/avrProject.code-workspace, mtime 1677245697): could not be opened.
-# build/timer1.o (key c:/D/IFSC/MCC/projects/final_laptop/build/timer1.o, mtime 1688068436): could not be opened.
+# build/timer1.o (key c:/D/IFSC/MCC/projects/final_laptop/build/timer1.o, mtime 1688089459): could not be opened.
 # funsape/peripheral/timer2.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/timer2.hpp, mtime 1686658780): could not be opened.
-# build/sevenSegmentsDisplay.o (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsDisplay.o, mtime 1688068435): could not be opened.
-# build/pcint1.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint1.lst, mtime 1688068436): could not be opened.
-# build/dateTime.d (key c:/D/IFSC/MCC/projects/final_laptop/build/dateTime.d, mtime 1688068437): could not be opened.
+# Adafruit_Fingerprint.cpp (key c:/D/IFSC/MCC/projects/final_laptop/Adafruit_Fingerprint.cpp, mtime 1688164096): could not be opened.
+# build/sevenSegmentsDisplay.o (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsDisplay.o, mtime 1688089458): could not be opened.
+# build/pcint1.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint1.lst, mtime 1688089459): could not be opened.
+# build/dateTime.d (key c:/D/IFSC/MCC/projects/final_laptop/build/dateTime.d, mtime 1688089460): could not be opened.
 # funsape/device/sevenSegmentsMuxDisplay.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/sevenSegmentsMuxDisplay.cpp, mtime 1686658780): could not be opened.
 # funsape/peripheral/timer0.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/timer0.cpp, mtime 1686658780): could not be opened.
 # funsape/peripheral (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral, mtime 1688061859): 24 files, no impossibilities.
-# build/sound.o (key c:/D/IFSC/MCC/projects/final_laptop/build/sound.o, mtime 1688068437): could not be opened.
-# build/usart0.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/usart0.lst, mtime 1688068436): could not be opened.
+# build/sound.o (key c:/D/IFSC/MCC/projects/final_laptop/build/sound.o, mtime 1688089460): could not be opened.
+# build/usart0.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/usart0.lst, mtime 1688089460): could not be opened.
 # funsape/device/sevenSegmentsDisplay.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/sevenSegmentsDisplay.cpp, mtime 1686658780): could not be opened.
-# build/adc.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/adc.lst, mtime 1688068435): could not be opened.
-# build/sound.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/sound.lst, mtime 1688068437): could not be opened.
-# build/timer2.d (key c:/D/IFSC/MCC/projects/final_laptop/build/timer2.d, mtime 1688068436): could not be opened.
+# build/adc.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/adc.lst, mtime 1688089458): could not be opened.
+# build/Adafruit_Fingerprint.o (key c:/D/IFSC/MCC/projects/final_laptop/build/Adafruit_Fingerprint.o, mtime 1688164096): could not be opened.
+# build/timer2.d (key c:/D/IFSC/MCC/projects/final_laptop/build/timer2.d, mtime 1688089459): could not be opened.
 # funsape/util/systemStatus.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/systemStatus.hpp, mtime 1686658780): could not be opened.
-# build/int0.d (key c:/D/IFSC/MCC/projects/final_laptop/build/int0.d, mtime 1688068435): could not be opened.
-# build/timer0.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/timer0.lst, mtime 1688068436): could not be opened.
+# build/int0.d (key c:/D/IFSC/MCC/projects/final_laptop/build/int0.d, mtime 1688089459): could not be opened.
+# build/timer0.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/timer0.lst, mtime 1688089459): could not be opened.
 # C:\WinAVR-20100110\utils\bin (key C:/WinAVR-20100110/utils/bin, mtime 1685121960): 99 files, no impossibilities so far.
-# build/int0.o (key c:/D/IFSC/MCC/projects/final_laptop/build/int0.o, mtime 1688068435): could not be opened.
+# build/int0.o (key c:/D/IFSC/MCC/projects/final_laptop/build/int0.o, mtime 1688089459): could not be opened.
 # funsape/util/bus.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/bus.hpp, mtime 1686658780): could not be opened.
-# build/pcint2.d (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint2.d, mtime 1688068436): could not be opened.
-# funsape/pinout.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/pinout.hpp, mtime 1686658780): could not be opened.
-# build/dateTime.o (key c:/D/IFSC/MCC/projects/final_laptop/build/dateTime.o, mtime 1688068437): could not be opened.
+# build/pcint2.d (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint2.d, mtime 1688089459): could not be opened.
+# Adafruit_Fingerprint.h (key c:/D/IFSC/MCC/projects/final_laptop/Adafruit_Fingerprint.h, mtime 1688161657): could not be opened.
+# build/dateTime.o (key c:/D/IFSC/MCC/projects/final_laptop/build/dateTime.o, mtime 1688089460): could not be opened.
 # funsape/device/ds1307.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/ds1307.hpp, mtime 1686658780): could not be opened.
-# build/systemStatus.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/systemStatus.lst, mtime 1688068437): could not be opened.
+# build/systemStatus.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/systemStatus.lst, mtime 1688089461): could not be opened.
 # ports.tmp (key c:/D/IFSC/MCC/projects/final_laptop/ports.tmp, mtime 1686522646): could not be opened.
 # funsape/util/debug.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/debug.hpp, mtime 1686658780): could not be opened.
-# build/ds1307.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/ds1307.lst, mtime 1688068434): could not be opened.
+# build/ds1307.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/ds1307.lst, mtime 1688089457): could not be opened.
 # port.mk (key c:/D/IFSC/MCC/projects/final_laptop/port.mk, mtime 1688068956): could not be opened.
 # funsape/peripheral/int0.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/int0.hpp, mtime 1686658780): could not be opened.
 # funsape/util/dateTime.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/dateTime.cpp, mtime 1686658780): could not be opened.
 # funsape/device/hd44780.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/hd44780.cpp, mtime 1686658780): could not be opened.
-# build/pcint1.d (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint1.d, mtime 1688068436): could not be opened.
+# build/pcint1.d (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint1.d, mtime 1688089459): could not be opened.
 # funsape/peripheral/twi.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/twi.cpp, mtime 1686658780): could not be opened.
 # funsape/peripheral/pcint2.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/pcint2.hpp, mtime 1686658780): could not be opened.
-# build/hd44780.o (key c:/D/IFSC/MCC/projects/final_laptop/build/hd44780.o, mtime 1688068435): could not be opened.
-# build/application.hex (key c:/D/IFSC/MCC/projects/final_laptop/build/application.hex, mtime 1688072440): could not be opened.
+# build/hd44780.o (key c:/D/IFSC/MCC/projects/final_laptop/build/hd44780.o, mtime 1688089458): could not be opened.
+# build/application.hex (key c:/D/IFSC/MCC/projects/final_laptop/build/application.hex, mtime 1688165853): could not be opened.
 # funsape/peripheral/pcint0.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/pcint0.cpp, mtime 1686658780): could not be opened.
-# build/debug.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/debug.lst, mtime 1688068437): could not be opened.
-# main.cpp (key c:/D/IFSC/MCC/projects/final_laptop/main.cpp, mtime 1688072439): could not be opened.
-# build/usart0.d (key c:/D/IFSC/MCC/projects/final_laptop/build/usart0.d, mtime 1688068436): could not be opened.
-# build/int1.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/int1.lst, mtime 1688068435): could not be opened.
-# build/keypad.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/keypad.lst, mtime 1688068435): could not be opened.
-# build/pcint2.o (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint2.o, mtime 1688068436): could not be opened.
+# build/debug.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/debug.lst, mtime 1688089460): could not be opened.
+# main.cpp (key c:/D/IFSC/MCC/projects/final_laptop/main.cpp, mtime 1688168308): could not be opened.
+# build/usart0.d (key c:/D/IFSC/MCC/projects/final_laptop/build/usart0.d, mtime 1688089460): could not be opened.
+# build/int1.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/int1.lst, mtime 1688089459): could not be opened.
+# build/keypad.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/keypad.lst, mtime 1688089458): could not be opened.
+# build/pcint2.o (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint2.o, mtime 1688089459): could not be opened.
 # funsape/peripheral/int0.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/int0.cpp, mtime 1686658780): could not be opened.
-# build/adc.d (key c:/D/IFSC/MCC/projects/final_laptop/build/adc.d, mtime 1688068435): could not be opened.
-# build/usart0.o (key c:/D/IFSC/MCC/projects/final_laptop/build/usart0.o, mtime 1688068436): could not be opened.
+# build/adc.d (key c:/D/IFSC/MCC/projects/final_laptop/build/adc.d, mtime 1688089458): could not be opened.
+# build/usart0.o (key c:/D/IFSC/MCC/projects/final_laptop/build/usart0.o, mtime 1688089460): could not be opened.
 # gmsl (key c:/D/IFSC/MCC/projects/final_laptop/gmsl, mtime 1686522646): could not be opened.
 # funsape/peripheral/timer1.cpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/timer1.cpp, mtime 1686658780): could not be opened.
 # makefile-AVR.mk (key c:/D/IFSC/MCC/projects/final_laptop/makefile-AVR.mk, mtime 1686522646): could not be opened.
-# build/hd44780.d (key c:/D/IFSC/MCC/projects/final_laptop/build/hd44780.d, mtime 1688068434): could not be opened.
-# build/timer0.d (key c:/D/IFSC/MCC/projects/final_laptop/build/timer0.d, mtime 1688068436): could not be opened.
+# build/hd44780.d (key c:/D/IFSC/MCC/projects/final_laptop/build/hd44780.d, mtime 1688089458): could not be opened.
+# build/timer0.d (key c:/D/IFSC/MCC/projects/final_laptop/build/timer0.d, mtime 1688089459): could not be opened.
 # funsape (key c:/D/IFSC/MCC/projects/final_laptop/funsape, mtime 1688061859): 7 files, no impossibilities.
 # LICENSE (key c:/D/IFSC/MCC/projects/final_laptop/LICENSE, mtime 1686522646): could not be opened.
-# build/main.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/main.lst, mtime 1688072439): could not be opened.
+# build/main.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/main.lst, mtime 1688165853): could not be opened.
 # funsape/device/keypad.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/device/keypad.hpp, mtime 1686658780): could not be opened.
 # Makefile (key c:/D/IFSC/MCC/projects/final_laptop/Makefile, mtime 1686522646): could not be opened.
-# build/pcint1.o (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint1.o, mtime 1688068436): could not be opened.
-# funsape/peripheral/usart0.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/usart0.hpp, mtime 1688061544): could not be opened.
-# build/sound.d (key c:/D/IFSC/MCC/projects/final_laptop/build/sound.d, mtime 1688068437): could not be opened.
-# build/systemStatus.d (key c:/D/IFSC/MCC/projects/final_laptop/build/systemStatus.d, mtime 1688068437): could not be opened.
-# build/timer2.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/timer2.lst, mtime 1688068436): could not be opened.
+# build/pcint1.o (key c:/D/IFSC/MCC/projects/final_laptop/build/pcint1.o, mtime 1688089459): could not be opened.
+# funsape/peripheral/usart0.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/usart0.hpp, mtime 1688085253): could not be opened.
+# build/sound.d (key c:/D/IFSC/MCC/projects/final_laptop/build/sound.d, mtime 1688089460): could not be opened.
+# build/systemStatus.d (key c:/D/IFSC/MCC/projects/final_laptop/build/systemStatus.d, mtime 1688089461): could not be opened.
+# build/timer2.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/timer2.lst, mtime 1688089460): could not be opened.
 # funsape/peripheral/adc.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/adc.hpp, mtime 1686658780): could not be opened.
-# build/twi.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/twi.lst, mtime 1688068436): could not be opened.
-# build/ds1307.d (key c:/D/IFSC/MCC/projects/final_laptop/build/ds1307.d, mtime 1688068434): could not be opened.
-# build/application.map (key c:/D/IFSC/MCC/projects/final_laptop/build/application.map, mtime 1688072440): could not be opened.
+# build/twi.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/twi.lst, mtime 1688089460): could not be opened.
+# build/ds1307.d (key c:/D/IFSC/MCC/projects/final_laptop/build/ds1307.d, mtime 1688089457): could not be opened.
+# build/application.map (key c:/D/IFSC/MCC/projects/final_laptop/build/application.map, mtime 1688165853): could not be opened.
 # funsape/peripheral/timer0.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/peripheral/timer0.hpp, mtime 1686658780): could not be opened.
 # funsape/util/dateTime.hpp (key c:/D/IFSC/MCC/projects/final_laptop/funsape/util/dateTime.hpp, mtime 1686658780): could not be opened.
-# build/adc.o (key c:/D/IFSC/MCC/projects/final_laptop/build/adc.o, mtime 1688068435): could not be opened.
-# build/sevenSegmentsMuxDisplay.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsMuxDisplay.lst, mtime 1688068435): could not be opened.
+# build/adc.o (key c:/D/IFSC/MCC/projects/final_laptop/build/adc.o, mtime 1688089458): could not be opened.
+# build/sevenSegmentsMuxDisplay.lst (key c:/D/IFSC/MCC/projects/final_laptop/build/sevenSegmentsMuxDisplay.lst, mtime 1688089458): could not be opened.
 
-# 313 files, no impossibilities in 129 directories.
+# 318 files, no impossibilities in 134 directories.
 
 # Implicit Rules
 
@@ -714,7 +725,7 @@ cleanAssembleCleanProgram: clean assemble clean program
 #  File does not exist.
 #  File has not been updated.
 
-build/application.elf: build/ds1307.o build/hd44780.o build/keypad.o build/sevenSegmentsDisplay.o build/sevenSegmentsMuxDisplay.o build/adc.o build/int0.o build/int1.o build/pcint0.o build/pcint1.o build/pcint2.o build/timer0.o build/timer1.o build/timer2.o build/twi.o build/usart0.o build/dateTime.o build/debug.o build/sound.o build/systemStatus.o build/main.o makefile
+build/application.elf: build/Adafruit_Fingerprint.o build/ds1307.o build/hd44780.o build/keypad.o build/sevenSegmentsDisplay.o build/sevenSegmentsMuxDisplay.o build/adc.o build/int0.o build/int1.o build/pcint0.o build/pcint1.o build/pcint2.o build/timer0.o build/timer1.o build/timer2.o build/twi.o build/usart0.o build/dateTime.o build/debug.o build/sound.o build/systemStatus.o build/main.o makefile
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -933,6 +944,12 @@ build/sevenSegmentsDisplay.o:
 #  File has not been updated.
 
 # Not a target:
+build/Adafruit_Fingerprint.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 build/sound.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -963,7 +980,7 @@ compileCleanProgram: compile clean program
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=47/1024=5%, Rehash=0, Collisions=4/129=3%
+# Load=48/1024=5%, Rehash=0, Collisions=4/131=3%
 # VPATH Search Paths
 
 vpath %.cpp funsape/device;funsape/peripheral;funsape/util
@@ -977,7 +994,7 @@ vpath %.cpp funsape/device;funsape/peripheral;funsape/util
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4079 / max = 4079 / min = 4079 / avg = 4079
 
-# Finished Make data base on Thu Jun 29 18:20:33 2023
+# Finished Make data base on Fri Jun 30 20:38:28 2023
 
  
 make: *** No rule to make target `all'.  Stop.

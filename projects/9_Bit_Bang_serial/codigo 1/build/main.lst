@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 1
 
 
    1               		.file	"main.cpp"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
   40:funsape/globalDefines.hpp **** #include <stdio.h>
   41:funsape/globalDefines.hpp **** #include <stdlib.h>
   42:funsape/globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 2
 
 
   43:funsape/globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
   97:funsape/globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:funsape/globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:funsape/globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 3
 
 
  100:funsape/globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  154:funsape/globalDefines.hpp **** enum class Axis : cuint8_t {
  155:funsape/globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:funsape/globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 4
 
 
  157:funsape/globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  211:funsape/globalDefines.hpp ****     // General error codes
  212:funsape/globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:funsape/globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 5
 
 
  214:funsape/globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  268:funsape/globalDefines.hpp ****     CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:funsape/globalDefines.hpp ****     CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 6
 
 
  271:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  325:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 7
 
 
  328:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  382:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 8
 
 
  385:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  439:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 9
 
 
  442:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  496:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:funsape/globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 10
 
 
  499:funsape/globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  553:funsape/globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:funsape/globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 11
 
 
  556:funsape/globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  610:funsape/globalDefines.hpp **** #endif
  611:funsape/globalDefines.hpp **** #ifndef cplMaskOffset
  612:funsape/globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 12
 
 
  613:funsape/globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  667:funsape/globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:funsape/globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:funsape/globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 13
 
 
  670:funsape/globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  724:funsape/globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:funsape/globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:funsape/globalDefines.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 14
 
 
  727:funsape/globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  781:funsape/globalDefines.hpp **** }
  782:funsape/globalDefines.hpp **** 
  783:funsape/globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 15
 
 
  784:funsape/globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
    6:main.cpp      **** //---INCLUDES---//
    7:main.cpp      **** #include <avr/io.h>
    8:main.cpp      **** #include <util/delay.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 16
 
 
    9:main.cpp      **** #include <avr/interrupt.h>
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
   28:funsape/peripheral/timer0.hpp **** #    error "Version mismatch between file header and global definitions file!"
   29:funsape/peripheral/timer0.hpp **** #endif
   30:funsape/peripheral/timer0.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 17
 
 
   31:funsape/peripheral/timer0.hpp **** //     //////////////////     LIBRARY DEPENDENCIES     //////////////////     //
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
   85:funsape/peripheral/timer0.hpp **** // =============================================================================
   86:funsape/peripheral/timer0.hpp **** // Timer0 Class
   87:funsape/peripheral/timer0.hpp **** // =============================================================================
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 18
 
 
   88:funsape/peripheral/timer0.hpp **** 
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  142:funsape/peripheral/timer0.hpp ****     //!
  143:funsape/peripheral/timer0.hpp ****     //! \brief      Output Mode enumeration
  144:funsape/peripheral/timer0.hpp ****     //! \details    Output Mode options associated with TIMER0.
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 19
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 19
 
 
  145:funsape/peripheral/timer0.hpp ****     //! \warning    The value associate with the symbolic names may change
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  199:funsape/peripheral/timer0.hpp ****     //! \details    Configures the clock source and the clock prescaler.
  200:funsape/peripheral/timer0.hpp ****     //! \param      clockSource_p       Clock source and prescaler
  201:funsape/peripheral/timer0.hpp ****     //! \return     bool_t              True on success / False on failure
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 20
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 20
 
 
  202:funsape/peripheral/timer0.hpp ****     //!
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  256:funsape/peripheral/timer0.hpp ****     );
  257:funsape/peripheral/timer0.hpp **** 
  258:funsape/peripheral/timer0.hpp ****     //!
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 21
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 21
 
 
  259:funsape/peripheral/timer0.hpp ****     //! \brief      Deactivates Compare A Match interrupt
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  313:funsape/peripheral/timer0.hpp ****             void
  314:funsape/peripheral/timer0.hpp ****     );
  315:funsape/peripheral/timer0.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 22
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 22
 
 
  316:funsape/peripheral/timer0.hpp ****     //!
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  370:funsape/peripheral/timer0.hpp ****     uint8_t inlined getCounterValue(
  371:funsape/peripheral/timer0.hpp ****             void
  372:funsape/peripheral/timer0.hpp ****     );
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 23
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 23
 
 
  373:funsape/peripheral/timer0.hpp **** 
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  413:funsape/peripheral/timer0.hpp **** 
  414:funsape/peripheral/timer0.hpp **** void inlined Timer0::forceCompareA(void)
  415:funsape/peripheral/timer0.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 24
 
 
  416:funsape/peripheral/timer0.hpp ****     setBit(TCCR0B, FOC0A);
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  470:funsape/peripheral/timer0.hpp **** void inlined Timer0::activateOverflowInterrupt(void)
  471:funsape/peripheral/timer0.hpp **** {
  472:funsape/peripheral/timer0.hpp ****     setBit(TIMSK0, TOIE0);
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 25
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 25
 
 
  473:funsape/peripheral/timer0.hpp ****     return;
@@ -1498,7 +1498,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
   92               		.loc 3 399 5 view .LVU20
   93               	.L3:
   94               	.LBE34:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 26
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 26
 
 
   95               	.LBE33:
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  134               	 ;  778 "funsape/globalDefines.hpp" 1
  135 003a 0000      		nop
  136               	 ;  0 "" 2
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 27
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 27
 
 
  780:funsape/globalDefines.hpp **** }
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  179 0062 5595      		asr r21
  180 0064 4795      		ror r20
  181               		2:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 28
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 28
 
 
  182 0066 0A94      		dec r0
@@ -1678,7 +1678,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  223 0090 00C0      		rjmp .L9
  224               	.L10:
  225               	.LBE45:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 29
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 29
 
 
  226               	.LBE44:
@@ -1738,7 +1738,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
   47:main.cpp      ****         }
   48:main.cpp      ****     }
   49:main.cpp      ****     setBit(PORTD, PD2);
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 30
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 30
 
 
  268               		.loc 2 49 5 is_stmt 1 view .LVU69
@@ -1798,7 +1798,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  311               	.LFE53:
  313               		.section	.text.main,"ax",@progbits
  314               	.global	main
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 31
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 31
 
 
  316               	main:
@@ -1858,7 +1858,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  357               		.loc 2 67 24 is_stmt 0 view .LVU89
  358 0032 1F92      		push __zero_reg__
  359 0034 84E4      		ldi r24,lo8(68)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 32
 
 
  360 0036 8F93      		push r24
@@ -1918,7 +1918,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
   71:main.cpp      ****             'E', '0', 'F', 'D');
   72:main.cpp      ****     keypad.init(10);
  411               		.loc 2 72 5 is_stmt 1 view .LVU90
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 33
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 33
 
 
  412               		.loc 2 72 16 is_stmt 0 view .LVU91
@@ -1978,7 +1978,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  455 00d2 0E94 0000 		call _ZN6Timer014setClockSourceENS_11ClockSourceE
  456               	.LVL13:
   84:main.cpp      ****     timer0.setCompareAValue(208);
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 34
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 34
 
 
  457               		.loc 2 84 5 is_stmt 1 view .LVU103
@@ -2038,7 +2038,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  496               	.LFE54:
  498               		.section	.text._Z22timer0CompareACallbackv,"ax",@progbits
  499               	.global	_Z22timer0CompareACallbackv
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 35
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 35
 
 
  501               	_Z22timer0CompareACallbackv:
@@ -2075,259 +2075,259 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 1
  523 0000 00        		.zero	1
  524               		.text
  525               	.Letext0:
- 526               		.file 4 "c:\\d\\ifsc\\vscodeleandro2\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
+ 526               		.file 4 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
  527               		.file 5 "funsape/device/keypad.hpp"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 36
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 36
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.cpp
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2      *ABS*:0000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:3      *ABS*:0000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:4      *ABS*:0000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:5      *ABS*:00000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:6      *ABS*:00000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:14     .text._Z7getTickv:00000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:17     .text._Z7getTickv:00000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:18     .text._Z7getTickv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:23     .text._Z7getTickv:00000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:24     .text._Z7getTickv:00000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:30     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:36     .text._Z7bitbangh:00000000 _Z7bitbangh
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:40     .text._Z7bitbangh:00000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:41     .text._Z7bitbangh:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:46     .text._Z7bitbangh:00000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:47     .text._Z7bitbangh:00000000 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:522    .bss.timer0flag:00000000 timer0flag
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:50     .text._Z7bitbangh:00000006 .Loc.6
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:54     .text._Z7bitbangh:00000006 .Loc.7
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:56     .text._Z7bitbangh:00000006 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:60     .text._Z7bitbangh:0000000c .Loc.9
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:63     .text._Z7bitbangh:0000000c .Loc.10
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:67     .text._Z7bitbangh:0000000c .Loc.11
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:69     .text._Z7bitbangh:0000000c .Loc.12
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:70     .text._Z7bitbangh:0000000c .Loc.13
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:72     .text._Z7bitbangh:0000000e .Loc.14
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:74     .text._Z7bitbangh:0000000e .Loc.15
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:77     .text._Z7bitbangh:0000000e .Loc.16
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:81     .text._Z7bitbangh:00000014 .Loc.17
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:84     .text._Z7bitbangh:00000014 .Loc.18
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:86     .text._Z7bitbangh:00000014 .Loc.19
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:92     .text._Z7bitbangh:0000001e .Loc.20
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:96     .text._Z7bitbangh:0000001e .Loc.21
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:100    .text._Z7bitbangh:00000026 .Loc.22
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:103    .text._Z7bitbangh:00000026 .Loc.23
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:105    .text._Z7bitbangh:00000026 .Loc.24
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:111    .text._Z7bitbangh:00000030 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:114    .text._Z7bitbangh:00000030 .Loc.26
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:115    .text._Z7bitbangh:00000030 .Loc.27
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:118    .text._Z7bitbangh:00000036 .Loc.28
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:121    .text._Z7bitbangh:00000036 .Loc.29
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:123    .text._Z7bitbangh:00000038 .Loc.30
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:127    .text._Z7bitbangh:0000003a .Loc.31
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:130    .text._Z7bitbangh:0000003a .Loc.32
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:132    .text._Z7bitbangh:0000003a .Loc.33
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:137    .text._Z7bitbangh:0000003c .Loc.34
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:142    .text._Z7bitbangh:0000003c .Loc.35
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:146    .text._Z7bitbangh:00000044 .Loc.36
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:149    .text._Z7bitbangh:00000044 .Loc.37
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:151    .text._Z7bitbangh:00000044 .Loc.38
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:157    .text._Z7bitbangh:0000004e .Loc.39
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:160    .text._Z7bitbangh:0000004e .Loc.40
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:161    .text._Z7bitbangh:0000004e .Loc.41
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:165    .text._Z7bitbangh:00000054 .Loc.42
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:169    .text._Z7bitbangh:00000056 .Loc.43
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 37
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2      *ABS*:0000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:3      *ABS*:0000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:4      *ABS*:0000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:14     .text._Z7getTickv:00000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:17     .text._Z7getTickv:00000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:18     .text._Z7getTickv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:23     .text._Z7getTickv:00000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:24     .text._Z7getTickv:00000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:30     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:36     .text._Z7bitbangh:00000000 _Z7bitbangh
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:40     .text._Z7bitbangh:00000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:41     .text._Z7bitbangh:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:46     .text._Z7bitbangh:00000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:47     .text._Z7bitbangh:00000000 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:522    .bss.timer0flag:00000000 timer0flag
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:50     .text._Z7bitbangh:00000006 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:54     .text._Z7bitbangh:00000006 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:56     .text._Z7bitbangh:00000006 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:60     .text._Z7bitbangh:0000000c .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:63     .text._Z7bitbangh:0000000c .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:67     .text._Z7bitbangh:0000000c .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:69     .text._Z7bitbangh:0000000c .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:70     .text._Z7bitbangh:0000000c .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:72     .text._Z7bitbangh:0000000e .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:74     .text._Z7bitbangh:0000000e .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:77     .text._Z7bitbangh:0000000e .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:81     .text._Z7bitbangh:00000014 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:84     .text._Z7bitbangh:00000014 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:86     .text._Z7bitbangh:00000014 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:92     .text._Z7bitbangh:0000001e .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:96     .text._Z7bitbangh:0000001e .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:100    .text._Z7bitbangh:00000026 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:103    .text._Z7bitbangh:00000026 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:105    .text._Z7bitbangh:00000026 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:111    .text._Z7bitbangh:00000030 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:114    .text._Z7bitbangh:00000030 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:115    .text._Z7bitbangh:00000030 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:118    .text._Z7bitbangh:00000036 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:121    .text._Z7bitbangh:00000036 .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:123    .text._Z7bitbangh:00000038 .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:127    .text._Z7bitbangh:0000003a .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:130    .text._Z7bitbangh:0000003a .Loc.32
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:132    .text._Z7bitbangh:0000003a .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:137    .text._Z7bitbangh:0000003c .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:142    .text._Z7bitbangh:0000003c .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:146    .text._Z7bitbangh:00000044 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:149    .text._Z7bitbangh:00000044 .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:151    .text._Z7bitbangh:00000044 .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:157    .text._Z7bitbangh:0000004e .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:160    .text._Z7bitbangh:0000004e .Loc.40
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:161    .text._Z7bitbangh:0000004e .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:165    .text._Z7bitbangh:00000054 .Loc.42
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:169    .text._Z7bitbangh:00000056 .Loc.43
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 37
 
 
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:172    .text._Z7bitbangh:0000005a .Loc.44
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:173    .text._Z7bitbangh:0000005a .Loc.45
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:184    .text._Z7bitbangh:0000006a .Loc.46
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:187    .text._Z7bitbangh:0000006e .Loc.47
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:191    .text._Z7bitbangh:00000074 .Loc.48
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:194    .text._Z7bitbangh:00000074 .Loc.49
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:196    .text._Z7bitbangh:00000074 .Loc.50
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:202    .text._Z7bitbangh:0000007e .Loc.51
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:207    .text._Z7bitbangh:00000080 .Loc.52
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:211    .text._Z7bitbangh:00000086 .Loc.53
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:214    .text._Z7bitbangh:00000086 .Loc.54
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:216    .text._Z7bitbangh:00000086 .Loc.55
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:222    .text._Z7bitbangh:00000090 .Loc.56
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:227    .text._Z7bitbangh:00000092 .Loc.57
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:230    .text._Z7bitbangh:00000092 .Loc.58
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:232    .text._Z7bitbangh:00000092 .Loc.59
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:237    .text._Z7bitbangh:00000094 .Loc.60
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:242    .text._Z7bitbangh:00000094 .Loc.61
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:246    .text._Z7bitbangh:0000009c .Loc.62
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:249    .text._Z7bitbangh:0000009c .Loc.63
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:251    .text._Z7bitbangh:0000009c .Loc.64
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:257    .text._Z7bitbangh:000000a6 .Loc.65
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:260    .text._Z7bitbangh:000000a6 .Loc.66
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:261    .text._Z7bitbangh:000000a6 .Loc.67
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:266    .text._Z7bitbangh:000000ae .Loc.68
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:268    .text._Z7bitbangh:000000ae .Loc.69
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:271    .text._Z7bitbangh:000000b0 .Loc.70
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:274    .text._Z7bitbangh:000000b4 .Loc.71
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:277    .text._Z7bitbangh:000000b4 .Loc.72
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:279    .text._Z7bitbangh:000000b4 .Loc.73
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:285    .text._Z7bitbangh:000000be .Loc.74
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:289    .text._Z7bitbangh:000000be .Loc.75
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:293    .text._Z7bitbangh:000000c6 .Loc.76
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:296    .text._Z7bitbangh:000000c6 .Loc.77
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:298    .text._Z7bitbangh:000000c6 .Loc.78
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:304    .text._Z7bitbangh:000000d0 .Loc.79
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:308    .text._Z7bitbangh:000000d0 .Loc.80
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:310    .text._Z7bitbangh:000000d2 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:316    .text.main:00000000 main
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:318    .text.main:00000000 .Loc.81
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:319    .text.main:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:334    .text.main:00000010 .Loc.82
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:335    .text.main:00000010 .Loc.83
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:338    .text.main:00000016 .Loc.84
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:339    .text.main:00000016 .Loc.85
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:345    .text.main:00000020 .Loc.86
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:346    .text.main:00000020 .Loc.87
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:356    .text.main:00000032 .Loc.88
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:357    .text.main:00000032 .Loc.89
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:411    .text.main:0000009c .Loc.90
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:412    .text.main:0000009c .Loc.91
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:422    .text.main:000000ae .Loc.92
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:423    .text.main:000000ae .Loc.93
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:428    .text.main:000000b0 .Loc.94
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:429    .text.main:000000b0 .Loc.95
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:433    .text.main:000000b4 .Loc.96
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:437    .text.main:000000ba .Loc.97
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 38
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:172    .text._Z7bitbangh:0000005a .Loc.44
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:173    .text._Z7bitbangh:0000005a .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:184    .text._Z7bitbangh:0000006a .Loc.46
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:187    .text._Z7bitbangh:0000006e .Loc.47
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:191    .text._Z7bitbangh:00000074 .Loc.48
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:194    .text._Z7bitbangh:00000074 .Loc.49
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:196    .text._Z7bitbangh:00000074 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:202    .text._Z7bitbangh:0000007e .Loc.51
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:207    .text._Z7bitbangh:00000080 .Loc.52
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:211    .text._Z7bitbangh:00000086 .Loc.53
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:214    .text._Z7bitbangh:00000086 .Loc.54
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:216    .text._Z7bitbangh:00000086 .Loc.55
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:222    .text._Z7bitbangh:00000090 .Loc.56
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:227    .text._Z7bitbangh:00000092 .Loc.57
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:230    .text._Z7bitbangh:00000092 .Loc.58
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:232    .text._Z7bitbangh:00000092 .Loc.59
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:237    .text._Z7bitbangh:00000094 .Loc.60
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:242    .text._Z7bitbangh:00000094 .Loc.61
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:246    .text._Z7bitbangh:0000009c .Loc.62
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:249    .text._Z7bitbangh:0000009c .Loc.63
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:251    .text._Z7bitbangh:0000009c .Loc.64
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:257    .text._Z7bitbangh:000000a6 .Loc.65
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:260    .text._Z7bitbangh:000000a6 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:261    .text._Z7bitbangh:000000a6 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:266    .text._Z7bitbangh:000000ae .Loc.68
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:268    .text._Z7bitbangh:000000ae .Loc.69
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:271    .text._Z7bitbangh:000000b0 .Loc.70
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:274    .text._Z7bitbangh:000000b4 .Loc.71
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:277    .text._Z7bitbangh:000000b4 .Loc.72
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:279    .text._Z7bitbangh:000000b4 .Loc.73
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:285    .text._Z7bitbangh:000000be .Loc.74
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:289    .text._Z7bitbangh:000000be .Loc.75
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:293    .text._Z7bitbangh:000000c6 .Loc.76
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:296    .text._Z7bitbangh:000000c6 .Loc.77
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:298    .text._Z7bitbangh:000000c6 .Loc.78
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:304    .text._Z7bitbangh:000000d0 .Loc.79
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:308    .text._Z7bitbangh:000000d0 .Loc.80
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:310    .text._Z7bitbangh:000000d2 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:316    .text.main:00000000 main
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:318    .text.main:00000000 .Loc.81
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:319    .text.main:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:334    .text.main:00000010 .Loc.82
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:335    .text.main:00000010 .Loc.83
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:338    .text.main:00000016 .Loc.84
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:339    .text.main:00000016 .Loc.85
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:345    .text.main:00000020 .Loc.86
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:346    .text.main:00000020 .Loc.87
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:356    .text.main:00000032 .Loc.88
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:357    .text.main:00000032 .Loc.89
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:411    .text.main:0000009c .Loc.90
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:412    .text.main:0000009c .Loc.91
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:422    .text.main:000000ae .Loc.92
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:423    .text.main:000000ae .Loc.93
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:428    .text.main:000000b0 .Loc.94
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:429    .text.main:000000b0 .Loc.95
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:433    .text.main:000000b4 .Loc.96
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:437    .text.main:000000ba .Loc.97
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 38
 
 
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:438    .text.main:000000ba .Loc.98
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:443    .text.main:000000c2 .Loc.99
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:444    .text.main:000000c2 .Loc.100
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:450    .text.main:000000cc .Loc.101
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:451    .text.main:000000cc .Loc.102
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:457    .text.main:000000d6 .Loc.103
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:460    .text.main:000000d6 .Loc.104
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:462    .text.main:000000d6 .Loc.105
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:463    .text.main:000000d6 .Loc.106
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:466    .text.main:000000da .Loc.107
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:469    .text.main:000000da .Loc.108
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:472    .text.main:000000da .Loc.109
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:473    .text.main:000000da .Loc.110
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:474    .text.main:000000da .Loc.111
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:482    .text.main:000000e8 .Loc.112
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:483    .text.main:000000e8 .Loc.113
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:485    .text.main:000000ea .Loc.114
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:488    .text.main:000000ee .Loc.115
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:489    .text.main:000000ee .Loc.116
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:490    .text.main:000000ee .Loc.117
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:493    .text.main:000000f2 .Loc.118
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:495    .text.main:000000f4 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:501    .text._Z22timer0CompareACallbackv:00000000 _Z22timer0CompareACallbackv
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:503    .text._Z22timer0CompareACallbackv:00000000 .Loc.119
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:504    .text._Z22timer0CompareACallbackv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:509    .text._Z22timer0CompareACallbackv:00000000 .Loc.120
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:510    .text._Z22timer0CompareACallbackv:00000000 .Loc.121
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:513    .text._Z22timer0CompareACallbackv:00000004 .Loc.122
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:515    .text._Z22timer0CompareACallbackv:00000006 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:33     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:313    .text._Z7bitbangh:000000d2 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:498    .text.main:000000f4 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:519    .text._Z22timer0CompareACallbackv:00000006 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:438    .text.main:000000ba .Loc.98
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:443    .text.main:000000c2 .Loc.99
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:444    .text.main:000000c2 .Loc.100
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:450    .text.main:000000cc .Loc.101
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:451    .text.main:000000cc .Loc.102
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:457    .text.main:000000d6 .Loc.103
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:460    .text.main:000000d6 .Loc.104
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:462    .text.main:000000d6 .Loc.105
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:463    .text.main:000000d6 .Loc.106
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:466    .text.main:000000da .Loc.107
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:469    .text.main:000000da .Loc.108
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:472    .text.main:000000da .Loc.109
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:473    .text.main:000000da .Loc.110
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:474    .text.main:000000da .Loc.111
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:482    .text.main:000000e8 .Loc.112
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:483    .text.main:000000e8 .Loc.113
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:485    .text.main:000000ea .Loc.114
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:488    .text.main:000000ee .Loc.115
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:489    .text.main:000000ee .Loc.116
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:490    .text.main:000000ee .Loc.117
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:493    .text.main:000000f2 .Loc.118
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:495    .text.main:000000f4 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:501    .text._Z22timer0CompareACallbackv:00000000 _Z22timer0CompareACallbackv
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:503    .text._Z22timer0CompareACallbackv:00000000 .Loc.119
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:504    .text._Z22timer0CompareACallbackv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:509    .text._Z22timer0CompareACallbackv:00000000 .Loc.120
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:510    .text._Z22timer0CompareACallbackv:00000000 .Loc.121
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:513    .text._Z22timer0CompareACallbackv:00000004 .Loc.122
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:515    .text._Z22timer0CompareACallbackv:00000006 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:33     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:313    .text._Z7bitbangh:000000d2 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:498    .text.main:000000f4 L0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:519    .text._Z22timer0CompareACallbackv:00000006 L0
                      .debug_frame:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:93     .text._Z7bitbangh:0000001e .L3
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:168    .text._Z7bitbangh:00000056 .L4
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:126    .text._Z7bitbangh:0000003a .L7
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:265    .text._Z7bitbangh:000000ae .L13
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:181    .text._Z7bitbangh:00000066 .L21
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:178    .text._Z7bitbangh:00000062 .L11
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:204    .text._Z7bitbangh:00000080 .L5
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:139    .text._Z7bitbangh:0000003c .L6
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:239    .text._Z7bitbangh:00000094 .L9
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:224    .text._Z7bitbangh:00000092 .L10
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:164    .text._Z7bitbangh:00000054 .L8
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:286    .text._Z7bitbangh:000000be .L12
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:468    .text.main:000000da .L15
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:1894   .debug_abbrev:00000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2845   .debug_rnglists:0000000c .LLRL5
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2861   .debug_line:00000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:502    .text._Z22timer0CompareACallbackv:00000000 .LFB55
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:516    .text._Z22timer0CompareACallbackv:00000006 .LFE55
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:317    .text.main:00000000 .LFB54
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:496    .text.main:000000f4 .LFE54
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:459    .text.main:000000d6 .LBI54
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:458    .text.main:000000d6 .LBB54
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:471    .text.main:000000da .LBE54
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 39
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:93     .text._Z7bitbangh:0000001e .L3
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:168    .text._Z7bitbangh:00000056 .L4
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:126    .text._Z7bitbangh:0000003a .L7
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:265    .text._Z7bitbangh:000000ae .L13
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:181    .text._Z7bitbangh:00000066 .L21
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:178    .text._Z7bitbangh:00000062 .L11
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:204    .text._Z7bitbangh:00000080 .L5
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:139    .text._Z7bitbangh:0000003c .L6
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:239    .text._Z7bitbangh:00000094 .L9
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:224    .text._Z7bitbangh:00000092 .L10
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:164    .text._Z7bitbangh:00000054 .L8
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:286    .text._Z7bitbangh:000000be .L12
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:468    .text.main:000000da .L15
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:1894   .debug_abbrev:00000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2845   .debug_rnglists:0000000c .LLRL5
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2861   .debug_line:00000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:502    .text._Z22timer0CompareACallbackv:00000000 .LFB55
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:516    .text._Z22timer0CompareACallbackv:00000006 .LFE55
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:317    .text.main:00000000 .LFB54
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:496    .text.main:000000f4 .LFE54
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:459    .text.main:000000d6 .LBI54
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:458    .text.main:000000d6 .LBB54
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:471    .text.main:000000da .LBE54
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 39
 
 
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2744   .debug_loclists:0000000e .LLST3
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2741   .debug_loclists:0000000c .LVUS3
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2756   .debug_loclists:0000001b .LLST4
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2753   .debug_loclists:00000019 .LVUS4
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:344    .text.main:00000020 .LVL7
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:355    .text.main:00000032 .LVL8
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:410    .text.main:0000009c .LVL9
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:421    .text.main:000000ae .LVL10
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:442    .text.main:000000c2 .LVL11
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:449    .text.main:000000cc .LVL12
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:456    .text.main:000000d6 .LVL13
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:481    .text.main:000000e8 .LVL15
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:492    .text.main:000000f2 .LVL16
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:38     .text._Z7bitbangh:00000000 .LFB53
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:311    .text._Z7bitbangh:000000d2 .LFE53
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2770   .debug_loclists:0000002a .LLST0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2765   .debug_loclists:00000026 .LVUS0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:120    .text._Z7bitbangh:00000036 .LBB37
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:267    .text._Z7bitbangh:000000ae .LBE37
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2792   .debug_loclists:00000044 .LLST2
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2787   .debug_loclists:00000040 .LVUS2
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:129    .text._Z7bitbangh:0000003a .LBI38
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:128    .text._Z7bitbangh:0000003a .LBB38
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:141    .text._Z7bitbangh:0000003c .LBE38
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:148    .text._Z7bitbangh:00000044 .LBI40
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:147    .text._Z7bitbangh:00000044 .LBB40
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:159    .text._Z7bitbangh:0000004e .LBE40
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:193    .text._Z7bitbangh:00000074 .LBI42
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:192    .text._Z7bitbangh:00000074 .LBB42
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:206    .text._Z7bitbangh:00000080 .LBE42
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:213    .text._Z7bitbangh:00000086 .LBI44
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:212    .text._Z7bitbangh:00000086 .LBB44
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:226    .text._Z7bitbangh:00000092 .LBE44
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:229    .text._Z7bitbangh:00000092 .LBI46
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:228    .text._Z7bitbangh:00000092 .LBB46
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:241    .text._Z7bitbangh:00000094 .LBE46
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:248    .text._Z7bitbangh:0000009c .LBI48
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:247    .text._Z7bitbangh:0000009c .LBB48
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:259    .text._Z7bitbangh:000000a6 .LBE48
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:52     .text._Z7bitbangh:00000006 .LBI29
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:51     .text._Z7bitbangh:00000006 .LBB29
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:62     .text._Z7bitbangh:0000000c .LBE29
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:66     .text._Z7bitbangh:0000000c .LBI31
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:65     .text._Z7bitbangh:0000000c .LBB31
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:76     .text._Z7bitbangh:0000000e .LBE31
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2810   .debug_loclists:00000058 .LLST1
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:2807   .debug_loclists:00000056 .LVUS1
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:83     .text._Z7bitbangh:00000014 .LBI33
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:82     .text._Z7bitbangh:00000014 .LBB33
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:95     .text._Z7bitbangh:0000001e .LBE33
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:102    .text._Z7bitbangh:00000026 .LBI35
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:101    .text._Z7bitbangh:00000026 .LBB35
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:113    .text._Z7bitbangh:00000030 .LBE35
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:276    .text._Z7bitbangh:000000b4 .LBI50
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:275    .text._Z7bitbangh:000000b4 .LBB50
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:288    .text._Z7bitbangh:000000be .LBE50
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:295    .text._Z7bitbangh:000000c6 .LBI52
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s 			page 40
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2744   .debug_loclists:0000000e .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2741   .debug_loclists:0000000c .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2756   .debug_loclists:0000001b .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2753   .debug_loclists:00000019 .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:344    .text.main:00000020 .LVL7
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:355    .text.main:00000032 .LVL8
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:410    .text.main:0000009c .LVL9
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:421    .text.main:000000ae .LVL10
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:442    .text.main:000000c2 .LVL11
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:449    .text.main:000000cc .LVL12
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:456    .text.main:000000d6 .LVL13
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:481    .text.main:000000e8 .LVL15
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:492    .text.main:000000f2 .LVL16
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:38     .text._Z7bitbangh:00000000 .LFB53
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:311    .text._Z7bitbangh:000000d2 .LFE53
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2770   .debug_loclists:0000002a .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2765   .debug_loclists:00000026 .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:120    .text._Z7bitbangh:00000036 .LBB37
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:267    .text._Z7bitbangh:000000ae .LBE37
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2792   .debug_loclists:00000044 .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2787   .debug_loclists:00000040 .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:129    .text._Z7bitbangh:0000003a .LBI38
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:128    .text._Z7bitbangh:0000003a .LBB38
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:141    .text._Z7bitbangh:0000003c .LBE38
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:148    .text._Z7bitbangh:00000044 .LBI40
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:147    .text._Z7bitbangh:00000044 .LBB40
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:159    .text._Z7bitbangh:0000004e .LBE40
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:193    .text._Z7bitbangh:00000074 .LBI42
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:192    .text._Z7bitbangh:00000074 .LBB42
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:206    .text._Z7bitbangh:00000080 .LBE42
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:213    .text._Z7bitbangh:00000086 .LBI44
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:212    .text._Z7bitbangh:00000086 .LBB44
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:226    .text._Z7bitbangh:00000092 .LBE44
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:229    .text._Z7bitbangh:00000092 .LBI46
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:228    .text._Z7bitbangh:00000092 .LBB46
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:241    .text._Z7bitbangh:00000094 .LBE46
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:248    .text._Z7bitbangh:0000009c .LBI48
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:247    .text._Z7bitbangh:0000009c .LBB48
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:259    .text._Z7bitbangh:000000a6 .LBE48
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:52     .text._Z7bitbangh:00000006 .LBI29
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:51     .text._Z7bitbangh:00000006 .LBB29
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:62     .text._Z7bitbangh:0000000c .LBE29
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:66     .text._Z7bitbangh:0000000c .LBI31
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:65     .text._Z7bitbangh:0000000c .LBB31
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:76     .text._Z7bitbangh:0000000e .LBE31
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2810   .debug_loclists:00000058 .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:2807   .debug_loclists:00000056 .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:83     .text._Z7bitbangh:00000014 .LBI33
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:82     .text._Z7bitbangh:00000014 .LBB33
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:95     .text._Z7bitbangh:0000001e .LBE33
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:102    .text._Z7bitbangh:00000026 .LBI35
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:101    .text._Z7bitbangh:00000026 .LBB35
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:113    .text._Z7bitbangh:00000030 .LBE35
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:276    .text._Z7bitbangh:000000b4 .LBI50
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:275    .text._Z7bitbangh:000000b4 .LBB50
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:288    .text._Z7bitbangh:000000be .LBE50
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:295    .text._Z7bitbangh:000000c6 .LBI52
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s 			page 40
 
 
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:294    .text._Z7bitbangh:000000c6 .LBB52
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:307    .text._Z7bitbangh:000000d0 .LBE52
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:15     .text._Z7getTickv:00000000 .LFB32
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:31     .text._Z7getTickv:00000008 .LFE32
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:37     .text._Z7bitbangh:00000000 .LVL0
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:119    .text._Z7bitbangh:00000036 .LVL3
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:64     .text._Z7bitbangh:0000000c .LVL1
-C:\Users\kenne\AppData\Local\Temp\ccTXwAPG.s:529    .debug_info:00000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:294    .text._Z7bitbangh:000000c6 .LBB52
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:307    .text._Z7bitbangh:000000d0 .LBE52
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:15     .text._Z7getTickv:00000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:31     .text._Z7getTickv:00000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:37     .text._Z7bitbangh:00000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:119    .text._Z7bitbangh:00000036 .LVL3
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:64     .text._Z7bitbangh:0000000c .LVL1
+C:\Users\kenne\AppData\Local\Temp\ccX0tufr.s:529    .debug_info:00000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 _ZN6KeypadC1Ev

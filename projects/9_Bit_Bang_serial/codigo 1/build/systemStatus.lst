@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 1
 
 
    1               		.file	"systemStatus.cpp"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
   40:funsape/util/../globalDefines.hpp **** #include <stdio.h>
   41:funsape/util/../globalDefines.hpp **** #include <stdlib.h>
   42:funsape/util/../globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 2
 
 
   43:funsape/util/../globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
   97:funsape/util/../globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:funsape/util/../globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:funsape/util/../globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 3
 
 
  100:funsape/util/../globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  154:funsape/util/../globalDefines.hpp **** enum class Axis : cuint8_t {
  155:funsape/util/../globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:funsape/util/../globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 4
 
 
  157:funsape/util/../globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  211:funsape/util/../globalDefines.hpp ****     // General error codes
  212:funsape/util/../globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:funsape/util/../globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 5
 
 
  214:funsape/util/../globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  268:funsape/util/../globalDefines.hpp ****     CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:funsape/util/../globalDefines.hpp ****     CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:funsape/util/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 6
 
 
  271:funsape/util/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  325:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 7
 
 
  328:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  382:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 8
 
 
  385:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  439:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 9
 
 
  442:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  496:funsape/util/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:funsape/util/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:funsape/util/../globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 10
 
 
  499:funsape/util/../globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  553:funsape/util/../globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:funsape/util/../globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:funsape/util/../globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 11
 
 
  556:funsape/util/../globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  610:funsape/util/../globalDefines.hpp **** #endif
  611:funsape/util/../globalDefines.hpp **** #ifndef cplMaskOffset
  612:funsape/util/../globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 12
 
 
  613:funsape/util/../globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  667:funsape/util/../globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:funsape/util/../globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:funsape/util/../globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 13
 
 
  670:funsape/util/../globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  724:funsape/util/../globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:funsape/util/../globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:funsape/util/../globalDefines.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 14
 
 
  727:funsape/util/../globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  781:funsape/util/../globalDefines.hpp **** }
  782:funsape/util/../globalDefines.hpp **** 
  783:funsape/util/../globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 15
 
 
  784:funsape/util/../globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
    6:funsape/util/systemStatus.cpp **** //! \version        23.04
    7:funsape/util/systemStatus.cpp **** //! \copyright      license
    8:funsape/util/systemStatus.cpp **** //! \details        This file provides support to system-wide features for all
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 16
 
 
    9:funsape/util/systemStatus.cpp **** //!                     modules of the Funsape AVR8 Library
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
   49               	.LBB12:
   54:funsape/util/systemStatus.cpp **** {
   55:funsape/util/systemStatus.cpp ****     // Reset data members
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 17
 
 
   56:funsape/util/systemStatus.cpp ****     this->_cpuClockValue    = F_CPU;
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
   95               	.global	_ZN12SystemStatusC1Ev
   96               		.set	_ZN12SystemStatusC1Ev,_ZN12SystemStatusC2Ev
   97               		.section	.text._ZN12SystemStatusD2Ev,"ax",@progbits
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 18
 
 
   98               	.global	_ZN12SystemStatusD2Ev
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
   98:funsape/util/systemStatus.cpp ****         aux16 = 8;
   99:funsape/util/systemStatus.cpp ****         break;
  100:funsape/util/systemStatus.cpp ****     case ClockPrescaler::PRESCALER_32:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 19
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 19
 
 
  101:funsape/util/systemStatus.cpp ****         aux8 = 4;
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  155:funsape/util/systemStatus.cpp **** uint32_t SystemStatus::readStopwatch(void)
  156:funsape/util/systemStatus.cpp **** {
  157:funsape/util/systemStatus.cpp ****     // Returns value
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 20
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 20
 
 
  158:funsape/util/systemStatus.cpp ****     return this->_stopwatchValue;
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  212:funsape/util/systemStatus.cpp ****     uint32_t start = this->_stopwatchMark;
  213:funsape/util/systemStatus.cpp ****     uint32_t current = this->_stopwatchValue;
  214:funsape/util/systemStatus.cpp ****     uint32_t elapsed = 0;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 21
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 21
 
 
  215:funsape/util/systemStatus.cpp **** 
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  165               		.cfi_startproc
   78:funsape/util/systemStatus.cpp ****     uint8_t aux8 = 0;
  166               		.loc 2 78 1 is_stmt 0 view .LVU32
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 22
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 22
 
 
  167 0000 CF93      		push r28
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  215               		.loc 2 93 9 view .LVU38
  216               	.LVL11:
   94:funsape/util/systemStatus.cpp ****         break;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 23
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 23
 
 
  217               		.loc 2 94 9 view .LVU39
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  253               		.loc 2 103 9 view .LVU57
  254 003c 00C0      		rjmp .L16
  255               	.LVL17:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 24
 
 
  256               	.L12:
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  291 0050 71E0      		ldi r23,lo8(1)
  292               	.LVL22:
  113:funsape/util/systemStatus.cpp ****         aux16 = 256;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 25
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 25
 
 
  293               		.loc 2 113 14 view .LVU77
@@ -1486,68 +1486,68 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  326               	.LVL26:
  327               	.LBB14:
  328               	.LBI14:
- 329               		.file 3 "c:\\d\\ifsc\\vscodeleandro2\\toolchains\\avr-gcc\\avr\\include\\util\\atomic.h"
-   1:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** /* Copyright (c) 2007 Dean Camera
-   2:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****    All rights reserved.
-   3:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-   4:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****    Redistribution and use in source and binary forms, with or without
-   5:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****    modification, are permitted provided that the following conditions are met:
-   6:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-   7:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****    * Redistributions of source code must retain the above copyright
-   8:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****      notice, this list of conditions and the following disclaimer.
-   9:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  10:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****    * Redistributions in binary form must reproduce the above copyright
-  11:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****      notice, this list of conditions and the following disclaimer in
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 26
+ 329               		.file 3 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\util\\atomic.h"
+   1:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** /* Copyright (c) 2007 Dean Camera
+   2:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****    All rights reserved.
+   3:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+   4:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****    Redistribution and use in source and binary forms, with or without
+   5:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****    modification, are permitted provided that the following conditions are met:
+   6:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+   7:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****    * Redistributions of source code must retain the above copyright
+   8:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****      notice, this list of conditions and the following disclaimer.
+   9:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  10:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****    * Redistributions in binary form must reproduce the above copyright
+  11:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****      notice, this list of conditions and the following disclaimer in
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 26
 
 
-  12:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****      the documentation and/or other materials provided with the
-  13:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****      distribution.
-  14:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  15:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****    * Neither the name of the copyright holders nor the names of
-  16:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****      contributors may be used to endorse or promote products derived
-  17:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****      from this software without specific prior written permission.
-  18:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  19:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  20:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  21:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-  22:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
-  23:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-  24:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-  25:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-  26:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-  27:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-  28:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-  29:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****   POSSIBILITY OF SUCH DAMAGE.
-  30:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** */
-  31:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  32:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** /* $Id$ */
-  33:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  34:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** #ifndef _UTIL_ATOMIC_H_
-  35:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** #define _UTIL_ATOMIC_H_ 1
-  36:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  37:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** #include <avr/io.h>
-  38:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** #include <avr/interrupt.h>
-  39:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  40:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** #if !defined(__DOXYGEN__)
-  41:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** /* Internal helper functions. */
-  42:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ uint8_t __iSeiRetVal(void)
-  43:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** {
-  44:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     sei();
-  45:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     return 1;
-  46:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** }
-  47:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  48:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ uint8_t __iCliRetVal(void)
+  12:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****      the documentation and/or other materials provided with the
+  13:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****      distribution.
+  14:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  15:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****    * Neither the name of the copyright holders nor the names of
+  16:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****      contributors may be used to endorse or promote products derived
+  17:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****      from this software without specific prior written permission.
+  18:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  19:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  20:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  21:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  22:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  23:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  24:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  25:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  26:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  27:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  28:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  29:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****   POSSIBILITY OF SUCH DAMAGE.
+  30:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** */
+  31:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  32:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** /* $Id$ */
+  33:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  34:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** #ifndef _UTIL_ATOMIC_H_
+  35:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** #define _UTIL_ATOMIC_H_ 1
+  36:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  37:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** #include <avr/io.h>
+  38:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** #include <avr/interrupt.h>
+  39:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  40:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** #if !defined(__DOXYGEN__)
+  41:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** /* Internal helper functions. */
+  42:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ uint8_t __iSeiRetVal(void)
+  43:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** {
+  44:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     sei();
+  45:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     return 1;
+  46:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** }
+  47:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  48:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ uint8_t __iCliRetVal(void)
  330               		.loc 3 48 27 view .LVU87
  331               	.LBB15:
-  49:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** {
-  50:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     cli();
+  49:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** {
+  50:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     cli();
  332               		.loc 3 50 5 view .LVU88
  333               	/* #APP */
- 334               	 ;  50 "c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h" 1
+ 334               	 ;  50 "c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h" 1
  335 0072 F894      		cli
  336               	 ;  0 "" 2
-  51:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     return 1;
+  51:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     return 1;
  337               		.loc 3 51 5 view .LVU89
  338               	.LVL27:
  339               		.loc 3 51 5 is_stmt 0 view .LVU90
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  343               		.loc 2 122 5 is_stmt 1 view .LVU91
  123:funsape/util/systemStatus.cpp ****         CLKPR = aux8;
  344               		.loc 2 123 9 view .LVU92
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 27
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 27
 
 
  123:funsape/util/systemStatus.cpp ****         CLKPR = aux8;
@@ -1579,31 +1579,31 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  355               		.loc 2 122 5 view .LVU97
  356               	.LBB16:
  357               	.LBI16:
-  52:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** }
-  53:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  54:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ void __iSeiParam(const uint8_t *__s)
-  55:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** {
-  56:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     sei();
-  57:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     __asm__ volatile ("" ::: "memory");
-  58:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     (void)__s;
-  59:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** }
-  60:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  61:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ void __iCliParam(const uint8_t *__s)
-  62:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** {
-  63:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     cli();
-  64:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     __asm__ volatile ("" ::: "memory");
-  65:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     (void)__s;
-  66:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** }
-  67:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** 
-  68:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ void __iRestore(const  uint8_t *__s)
+  52:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** }
+  53:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  54:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ void __iSeiParam(const uint8_t *__s)
+  55:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** {
+  56:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     sei();
+  57:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     __asm__ volatile ("" ::: "memory");
+  58:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     (void)__s;
+  59:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** }
+  60:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  61:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ void __iCliParam(const uint8_t *__s)
+  62:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** {
+  63:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     cli();
+  64:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     __asm__ volatile ("" ::: "memory");
+  65:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     (void)__s;
+  66:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** }
+  67:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
+  68:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** static __inline__ void __iRestore(const  uint8_t *__s)
  358               		.loc 3 68 24 view .LVU98
  359               	.LBB17:
-  69:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h **** {
-  70:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     SREG = *__s;
+  69:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** {
+  70:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     SREG = *__s;
  360               		.loc 3 70 5 view .LVU99
  361               		.loc 3 70 10 is_stmt 0 view .LVU100
  362 007e 2FBF      		out __SREG__,r18
-  71:c:\d\ifsc\vscodeleandro2\toolchains\avr-gcc\avr\include\util\atomic.h ****     __asm__ volatile ("" ::: "memory");
+  71:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****     __asm__ volatile ("" ::: "memory");
  363               		.loc 3 71 5 is_stmt 1 view .LVU101
  364               	.LVL29:
  365               		.loc 3 71 5 is_stmt 0 view .LVU102
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  372               		.loc 1 776 14 view .LVU104
  373               	.LBB19:
  778:funsape/util/../globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 28
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 28
 
 
  374               		.loc 1 778 5 view .LVU105
@@ -1678,7 +1678,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  418 00ac 70E0      		ldi r23,0
  419               	.LVL32:
   89:funsape/util/systemStatus.cpp ****         aux16 = 2;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 29
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 29
 
 
  420               		.loc 2 89 14 view .LVU116
@@ -1738,7 +1738,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  464               		.loc 2 139 22 is_stmt 0 view .LVU126
  465 00ea 148A      		std Z+20,__zero_reg__
  466 00ec 138A      		std Z+19,__zero_reg__
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 30
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 30
 
 
  140:funsape/util/systemStatus.cpp **** }
@@ -1798,7 +1798,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  516 0026 0F90      		pop __tmp_reg__
  517 0028 0F90      		pop __tmp_reg__
  518 002a DF91      		pop r29
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 31
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 31
 
 
  519 002c CF91      		pop r28
@@ -1858,7 +1858,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  571               	/* stack size = 6 */
  572               	.L__stack_usage = 6
  573 000c E82F      		mov r30,r24
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 32
 
 
  574 000e F92F      		mov r31,r25
@@ -1918,7 +1918,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  621 0006 8E7F      		andi r24,lo8(~(1<<0))
  622 0008 828B      		std Z+18,r24
  167:funsape/util/systemStatus.cpp **** }
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 33
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 33
 
 
  623               		.loc 2 167 5 is_stmt 1 view .LVU149
@@ -1978,7 +1978,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  671               		.loc 2 180 1 is_stmt 0 view .LVU159
  672 0000 E82F      		mov r30,r24
  673 0002 F92F      		mov r31,r25
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 34
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 34
 
 
  182:funsape/util/systemStatus.cpp ****     this->_stopwatchMark = 0;
@@ -2038,7 +2038,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  719 0012 B18B      		std Z+17,r27
  195:funsape/util/systemStatus.cpp **** }
  720               		.loc 2 195 5 is_stmt 1 view .LVU171
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 35
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 35
 
 
  721               	/* epilogue start */
@@ -2098,7 +2098,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  766               		.loc 2 207 1 is_stmt 0 view .LVU182
  767 0020 0895      		ret
  768               		.cfi_endproc
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 36
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 36
 
 
  769               	.LFE49:
@@ -2158,7 +2158,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  821 0022 3189      		ldd r19,Z+17
  822               	.LVL52:
  213:funsape/util/systemStatus.cpp ****     uint32_t elapsed = 0;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 37
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 37
 
 
  823               		.loc 2 213 5 is_stmt 1 view .LVU187
@@ -2218,7 +2218,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  869 0060 1F91      		pop r17
  870 0062 0F91      		pop r16
  871               	.LVL56:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 38
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 38
 
 
  872               		.loc 2 226 1 view .LVU198
@@ -2278,7 +2278,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  931               		.global __do_global_dtors
  932               		.section .dtors,"a",@progbits
  933               		.p2align	1
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 39
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 39
 
 
  934 0000 0000      		.word	gs(_GLOBAL__sub_D_systemStatus)
@@ -2292,445 +2292,445 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 1
  940      0000 0000 
  941               		.text
  942               	.Letext0:
- 943               		.file 4 "c:\\d\\ifsc\\vscodeleandro2\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
+ 943               		.file 4 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
  944               		.file 5 "funsape/util/systemStatus.hpp"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 40
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 40
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 systemStatus.cpp
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2      *ABS*:0000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3      *ABS*:0000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:4      *ABS*:0000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:5      *ABS*:00000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:6      *ABS*:00000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:14     .text._Z7getTickv:00000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:17     .text._Z7getTickv:00000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:18     .text._Z7getTickv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:23     .text._Z7getTickv:00000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:24     .text._Z7getTickv:00000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:30     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:36     .text._ZN12SystemStatusC2Ev:00000000 _ZN12SystemStatusC2Ev
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:40     .text._ZN12SystemStatusC2Ev:00000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:41     .text._ZN12SystemStatusC2Ev:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:46     .text._ZN12SystemStatusC2Ev:00000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:50     .text._ZN12SystemStatusC2Ev:00000004 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:51     .text._ZN12SystemStatusC2Ev:00000004 .Loc.6
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:57     .text._ZN12SystemStatusC2Ev:0000000c .Loc.7
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:62     .text._ZN12SystemStatusC2Ev:00000014 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:63     .text._ZN12SystemStatusC2Ev:00000014 .Loc.9
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:68     .text._ZN12SystemStatusC2Ev:0000001c .Loc.10
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:69     .text._ZN12SystemStatusC2Ev:0000001c .Loc.11
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:72     .text._ZN12SystemStatusC2Ev:00000020 .Loc.12
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:73     .text._ZN12SystemStatusC2Ev:00000020 .Loc.13
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:78     .text._ZN12SystemStatusC2Ev:00000028 .Loc.14
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:79     .text._ZN12SystemStatusC2Ev:00000028 .Loc.15
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:83     .text._ZN12SystemStatusC2Ev:0000002e .Loc.16
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:84     .text._ZN12SystemStatusC2Ev:0000002e .Loc.17
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:87     .text._ZN12SystemStatusC2Ev:00000032 .Loc.18
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:90     .text._ZN12SystemStatusC2Ev:00000032 .Loc.19
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:92     .text._ZN12SystemStatusC2Ev:00000034 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:36     .text._ZN12SystemStatusC2Ev:00000000 _ZN12SystemStatusC1Ev
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:100    .text._ZN12SystemStatusD2Ev:00000000 _ZN12SystemStatusD2Ev
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:103    .text._ZN12SystemStatusD2Ev:00000000 .Loc.20
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:104    .text._ZN12SystemStatusD2Ev:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:109    .text._ZN12SystemStatusD2Ev:00000000 .Loc.21
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:111    .text._ZN12SystemStatusD2Ev:00000000 .Loc.22
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:113    .text._ZN12SystemStatusD2Ev:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:100    .text._ZN12SystemStatusD2Ev:00000000 _ZN12SystemStatusD1Ev
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:120    .text._Z41__static_initialization_and_destruction_0ii:00000000 _Z41__static_initialization_and_destruction_0ii
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:123    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.23
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:124    .text._Z41__static_initialization_and_destruction_0ii:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:129    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.24
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:132    .text._Z41__static_initialization_and_destruction_0ii:00000004 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:138    .text._Z41__static_initialization_and_destruction_0ii:00000008 .Loc.26
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:142    .text._Z41__static_initialization_and_destruction_0ii:0000000a .Loc.27
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:146    .text._Z41__static_initialization_and_destruction_0ii:0000000e .Loc.28
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:148    .text._Z41__static_initialization_and_destruction_0ii:00000010 .Loc.29
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:939    .bss.systemStatus:00000000 systemStatus
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:153    .text._Z41__static_initialization_and_destruction_0ii:00000018 .Loc.30
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:155    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:161    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 _ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:164    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .Loc.31
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:165    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:166    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .Loc.32
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 41
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2      *ABS*:0000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3      *ABS*:0000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:4      *ABS*:0000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:14     .text._Z7getTickv:00000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:17     .text._Z7getTickv:00000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:18     .text._Z7getTickv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:23     .text._Z7getTickv:00000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:24     .text._Z7getTickv:00000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:30     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:36     .text._ZN12SystemStatusC2Ev:00000000 _ZN12SystemStatusC2Ev
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:40     .text._ZN12SystemStatusC2Ev:00000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:41     .text._ZN12SystemStatusC2Ev:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:46     .text._ZN12SystemStatusC2Ev:00000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:50     .text._ZN12SystemStatusC2Ev:00000004 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:51     .text._ZN12SystemStatusC2Ev:00000004 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:57     .text._ZN12SystemStatusC2Ev:0000000c .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:62     .text._ZN12SystemStatusC2Ev:00000014 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:63     .text._ZN12SystemStatusC2Ev:00000014 .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:68     .text._ZN12SystemStatusC2Ev:0000001c .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:69     .text._ZN12SystemStatusC2Ev:0000001c .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:72     .text._ZN12SystemStatusC2Ev:00000020 .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:73     .text._ZN12SystemStatusC2Ev:00000020 .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:78     .text._ZN12SystemStatusC2Ev:00000028 .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:79     .text._ZN12SystemStatusC2Ev:00000028 .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:83     .text._ZN12SystemStatusC2Ev:0000002e .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:84     .text._ZN12SystemStatusC2Ev:0000002e .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:87     .text._ZN12SystemStatusC2Ev:00000032 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:90     .text._ZN12SystemStatusC2Ev:00000032 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:92     .text._ZN12SystemStatusC2Ev:00000034 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:36     .text._ZN12SystemStatusC2Ev:00000000 _ZN12SystemStatusC1Ev
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:100    .text._ZN12SystemStatusD2Ev:00000000 _ZN12SystemStatusD2Ev
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:103    .text._ZN12SystemStatusD2Ev:00000000 .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:104    .text._ZN12SystemStatusD2Ev:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:109    .text._ZN12SystemStatusD2Ev:00000000 .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:111    .text._ZN12SystemStatusD2Ev:00000000 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:113    .text._ZN12SystemStatusD2Ev:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:100    .text._ZN12SystemStatusD2Ev:00000000 _ZN12SystemStatusD1Ev
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:120    .text._Z41__static_initialization_and_destruction_0ii:00000000 _Z41__static_initialization_and_destruction_0ii
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:123    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:124    .text._Z41__static_initialization_and_destruction_0ii:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:129    .text._Z41__static_initialization_and_destruction_0ii:00000000 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:132    .text._Z41__static_initialization_and_destruction_0ii:00000004 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:138    .text._Z41__static_initialization_and_destruction_0ii:00000008 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:142    .text._Z41__static_initialization_and_destruction_0ii:0000000a .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:146    .text._Z41__static_initialization_and_destruction_0ii:0000000e .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:148    .text._Z41__static_initialization_and_destruction_0ii:00000010 .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:939    .bss.systemStatus:00000000 systemStatus
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:153    .text._Z41__static_initialization_and_destruction_0ii:00000018 .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:155    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:161    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 _ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:164    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:165    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:166    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .Loc.32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 41
 
 
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:173    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000006 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:174    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:175    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000000a L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:188    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000014 .Loc.33
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:190    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000016 .Loc.34
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:192    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000016 .Loc.35
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:193    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000016 .Loc.36
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:214    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.37
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:215    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.38
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:217    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.39
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:218    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.40
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:219    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.41
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:223    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002a .Loc.42
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:225    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002c .Loc.43
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:229    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.44
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:230    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.45
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:231    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.46
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:232    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.47
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:233    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.48
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:237    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000032 .Loc.49
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:239    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000034 .Loc.50
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:243    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.51
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:244    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.52
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:245    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.53
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:246    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.54
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:247    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.55
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:251    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003a .Loc.56
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:253    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003c .Loc.57
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:257    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.58
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:258    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.59
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:259    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.60
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:260    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.61
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:261    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.62
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:265    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000042 .Loc.63
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:267    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000044 .Loc.64
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:271    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.65
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:272    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.66
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:273    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.67
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:274    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.68
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:275    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.69
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:279    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004a .Loc.70
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:281    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004c .Loc.71
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:285    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.72
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:286    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.73
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:287    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.74
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:288    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.75
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:289    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.76
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:293    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000052 .Loc.77
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:295    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000054 .Loc.78
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:299    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000056 .Loc.79
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:300    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000056 .Loc.80
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:301    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000056 .Loc.81
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:310    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000066 .Loc.82
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:311    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000066 .Loc.83
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:315    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000006a .Loc.84
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:319    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000006e .Loc.85
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:323    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000070 .Loc.86
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 42
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:173    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000006 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:174    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:175    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000000a L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:188    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000014 .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:190    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000016 .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:192    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000016 .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:193    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000016 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:214    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:215    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:217    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:218    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.40
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:219    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:223    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002a .Loc.42
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:225    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002c .Loc.43
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:229    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.44
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:230    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:231    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.46
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:232    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.47
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:233    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .Loc.48
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:237    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000032 .Loc.49
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:239    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000034 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:243    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.51
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:244    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.52
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:245    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.53
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:246    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.54
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:247    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .Loc.55
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:251    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003a .Loc.56
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:253    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003c .Loc.57
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:257    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.58
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:258    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.59
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:259    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.60
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:260    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.61
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:261    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .Loc.62
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:265    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000042 .Loc.63
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:267    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000044 .Loc.64
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:271    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.65
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:272    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:273    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:274    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.68
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:275    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .Loc.69
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:279    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004a .Loc.70
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:281    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004c .Loc.71
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:285    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.72
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:286    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.73
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:287    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.74
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:288    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.75
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:289    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .Loc.76
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:293    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000052 .Loc.77
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:295    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000054 .Loc.78
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:299    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000056 .Loc.79
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:300    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000056 .Loc.80
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:301    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000056 .Loc.81
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:310    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000066 .Loc.82
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:311    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000066 .Loc.83
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:315    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000006a .Loc.84
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:319    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000006e .Loc.85
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:323    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000070 .Loc.86
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 42
 
 
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:330    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .Loc.87
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:332    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .Loc.88
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:337    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.89
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:339    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.90
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:343    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.91
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:344    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.92
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:345    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.93
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:350    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007c .Loc.94
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:351    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007c .Loc.95
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:353    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.96
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:355    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.97
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:358    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.98
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:360    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.99
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:361    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.100
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:363    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.101
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:365    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.102
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:369    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.103
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:372    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.104
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:374    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.105
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:379    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000082 .Loc.106
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:383    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000082 .Loc.107
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:384    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000082 .Loc.108
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:386    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000084 .Loc.109
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:390    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000008a .Loc.110
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:391    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000008a .Loc.111
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:398    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000096 .Loc.112
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:399    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000096 .Loc.113
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:404    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000098 .Loc.114
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:416    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000aa .Loc.115
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:420    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ae .Loc.116
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:425    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000b2 .Loc.117
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:426    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000b2 .Loc.118
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:433    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000be .Loc.119
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:434    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000be .Loc.120
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:444    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000d0 .Loc.121
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:449    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000d6 .Loc.122
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:453    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000da .Loc.123
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:456    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000de .Loc.124
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:463    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ea .Loc.125
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:464    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ea .Loc.126
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:467    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ee .Loc.127
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:468    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ee .Loc.128
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:471    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000f2 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:477    .text._ZN12SystemStatus11getCpuClockEv:00000000 _ZN12SystemStatus11getCpuClockEv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:480    .text._ZN12SystemStatus11getCpuClockEv:00000000 .Loc.129
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:481    .text._ZN12SystemStatus11getCpuClockEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:482    .text._ZN12SystemStatus11getCpuClockEv:00000000 .Loc.130
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:489    .text._ZN12SystemStatus11getCpuClockEv:00000006 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:490    .text._ZN12SystemStatus11getCpuClockEv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:499    .text._ZN12SystemStatus11getCpuClockEv:0000000c .Loc.131
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:500    .text._ZN12SystemStatus11getCpuClockEv:0000000c .Loc.132
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:510    .text._ZN12SystemStatus11getCpuClockEv:0000001e .Loc.133
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:521    .text._ZN12SystemStatus11getCpuClockEv:00000030 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:527    .text._ZN12SystemStatus12getLastErrorEv:00000000 _ZN12SystemStatus12getLastErrorEv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:530    .text._ZN12SystemStatus12getLastErrorEv:00000000 .Loc.134
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:531    .text._ZN12SystemStatus12getLastErrorEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:536    .text._ZN12SystemStatus12getLastErrorEv:00000000 .Loc.135
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 43
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:330    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .Loc.87
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:332    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .Loc.88
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:337    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.89
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:339    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.90
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:343    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.91
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:344    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.92
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:345    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .Loc.93
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:350    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007c .Loc.94
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:351    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007c .Loc.95
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:353    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.96
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:355    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.97
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:358    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.98
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:360    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.99
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:361    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .Loc.100
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:363    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.101
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:365    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.102
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:369    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.103
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:372    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.104
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:374    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .Loc.105
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:379    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000082 .Loc.106
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:383    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000082 .Loc.107
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:384    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000082 .Loc.108
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:386    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000084 .Loc.109
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:390    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000008a .Loc.110
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:391    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000008a .Loc.111
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:398    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000096 .Loc.112
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:399    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000096 .Loc.113
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:404    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000098 .Loc.114
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:416    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000aa .Loc.115
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:420    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ae .Loc.116
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:425    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000b2 .Loc.117
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:426    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000b2 .Loc.118
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:433    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000be .Loc.119
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:434    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000be .Loc.120
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:444    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000d0 .Loc.121
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:449    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000d6 .Loc.122
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:453    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000da .Loc.123
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:456    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000de .Loc.124
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:463    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ea .Loc.125
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:464    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ea .Loc.126
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:467    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ee .Loc.127
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:468    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000ee .Loc.128
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:471    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000f2 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:477    .text._ZN12SystemStatus11getCpuClockEv:00000000 _ZN12SystemStatus11getCpuClockEv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:480    .text._ZN12SystemStatus11getCpuClockEv:00000000 .Loc.129
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:481    .text._ZN12SystemStatus11getCpuClockEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:482    .text._ZN12SystemStatus11getCpuClockEv:00000000 .Loc.130
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:489    .text._ZN12SystemStatus11getCpuClockEv:00000006 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:490    .text._ZN12SystemStatus11getCpuClockEv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:499    .text._ZN12SystemStatus11getCpuClockEv:0000000c .Loc.131
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:500    .text._ZN12SystemStatus11getCpuClockEv:0000000c .Loc.132
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:510    .text._ZN12SystemStatus11getCpuClockEv:0000001e .Loc.133
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:521    .text._ZN12SystemStatus11getCpuClockEv:00000030 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:527    .text._ZN12SystemStatus12getLastErrorEv:00000000 _ZN12SystemStatus12getLastErrorEv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:530    .text._ZN12SystemStatus12getLastErrorEv:00000000 .Loc.134
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:531    .text._ZN12SystemStatus12getLastErrorEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:536    .text._ZN12SystemStatus12getLastErrorEv:00000000 .Loc.135
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 43
 
 
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:537    .text._ZN12SystemStatus12getLastErrorEv:00000000 .Loc.136
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:543    .text._ZN12SystemStatus12getLastErrorEv:00000006 .Loc.137
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:545    .text._ZN12SystemStatus12getLastErrorEv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:551    .text._ZN12SystemStatus13readStopwatchEv:00000000 _ZN12SystemStatus13readStopwatchEv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:554    .text._ZN12SystemStatus13readStopwatchEv:00000000 .Loc.138
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:555    .text._ZN12SystemStatus13readStopwatchEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:556    .text._ZN12SystemStatus13readStopwatchEv:00000000 .Loc.139
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:563    .text._ZN12SystemStatus13readStopwatchEv:00000006 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:564    .text._ZN12SystemStatus13readStopwatchEv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:575    .text._ZN12SystemStatus13readStopwatchEv:00000010 .Loc.140
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:576    .text._ZN12SystemStatus13readStopwatchEv:00000010 .Loc.141
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:582    .text._ZN12SystemStatus13readStopwatchEv:00000018 .Loc.142
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:587    .text._ZN12SystemStatus13readStopwatchEv:00000020 .Loc.143
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:598    .text._ZN12SystemStatus13readStopwatchEv:00000032 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:604    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 _ZN12SystemStatus15resumeStopwatchEv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:607    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 .Loc.144
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:608    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:613    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 .Loc.145
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:616    .text._ZN12SystemStatus15resumeStopwatchEv:00000004 .Loc.146
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:617    .text._ZN12SystemStatus15resumeStopwatchEv:00000004 .Loc.147
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:620    .text._ZN12SystemStatus15resumeStopwatchEv:00000006 .Loc.148
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:623    .text._ZN12SystemStatus15resumeStopwatchEv:0000000a .Loc.149
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:625    .text._ZN12SystemStatus15resumeStopwatchEv:0000000a .Loc.150
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:627    .text._ZN12SystemStatus15resumeStopwatchEv:0000000c L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:633    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 _ZN12SystemStatus14pauseStopwatchEv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:636    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 .Loc.151
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:637    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:642    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 .Loc.152
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:645    .text._ZN12SystemStatus14pauseStopwatchEv:00000004 .Loc.153
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:646    .text._ZN12SystemStatus14pauseStopwatchEv:00000004 .Loc.154
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:649    .text._ZN12SystemStatus14pauseStopwatchEv:00000006 .Loc.155
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:652    .text._ZN12SystemStatus14pauseStopwatchEv:0000000a .Loc.156
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:654    .text._ZN12SystemStatus14pauseStopwatchEv:0000000a .Loc.157
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:656    .text._ZN12SystemStatus14pauseStopwatchEv:0000000c L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:662    .text._ZN12SystemStatus14resetStopwatchEv:00000000 _ZN12SystemStatus14resetStopwatchEv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:665    .text._ZN12SystemStatus14resetStopwatchEv:00000000 .Loc.158
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:666    .text._ZN12SystemStatus14resetStopwatchEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:671    .text._ZN12SystemStatus14resetStopwatchEv:00000000 .Loc.159
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:674    .text._ZN12SystemStatus14resetStopwatchEv:00000004 .Loc.160
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:675    .text._ZN12SystemStatus14resetStopwatchEv:00000004 .Loc.161
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:680    .text._ZN12SystemStatus14resetStopwatchEv:0000000c .Loc.162
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:681    .text._ZN12SystemStatus14resetStopwatchEv:0000000c .Loc.163
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:686    .text._ZN12SystemStatus14resetStopwatchEv:00000014 .Loc.164
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:688    .text._ZN12SystemStatus14resetStopwatchEv:00000014 .Loc.165
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:690    .text._ZN12SystemStatus14resetStopwatchEv:00000016 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:696    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 _ZN12SystemStatus16setStopwatchMarkEv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:699    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 .Loc.166
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:700    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:705    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 .Loc.167
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:708    .text._ZN12SystemStatus16setStopwatchMarkEv:00000004 .Loc.168
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:709    .text._ZN12SystemStatus16setStopwatchMarkEv:00000004 .Loc.169
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:715    .text._ZN12SystemStatus16setStopwatchMarkEv:0000000c .Loc.170
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:720    .text._ZN12SystemStatus16setStopwatchMarkEv:00000014 .Loc.171
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:722    .text._ZN12SystemStatus16setStopwatchMarkEv:00000014 .Loc.172
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:724    .text._ZN12SystemStatus16setStopwatchMarkEv:00000016 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:730    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 _ZN12SystemStatus18incrementStopwatchEv
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:733    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 .Loc.173
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 44
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:537    .text._ZN12SystemStatus12getLastErrorEv:00000000 .Loc.136
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:543    .text._ZN12SystemStatus12getLastErrorEv:00000006 .Loc.137
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:545    .text._ZN12SystemStatus12getLastErrorEv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:551    .text._ZN12SystemStatus13readStopwatchEv:00000000 _ZN12SystemStatus13readStopwatchEv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:554    .text._ZN12SystemStatus13readStopwatchEv:00000000 .Loc.138
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:555    .text._ZN12SystemStatus13readStopwatchEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:556    .text._ZN12SystemStatus13readStopwatchEv:00000000 .Loc.139
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:563    .text._ZN12SystemStatus13readStopwatchEv:00000006 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:564    .text._ZN12SystemStatus13readStopwatchEv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:575    .text._ZN12SystemStatus13readStopwatchEv:00000010 .Loc.140
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:576    .text._ZN12SystemStatus13readStopwatchEv:00000010 .Loc.141
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:582    .text._ZN12SystemStatus13readStopwatchEv:00000018 .Loc.142
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:587    .text._ZN12SystemStatus13readStopwatchEv:00000020 .Loc.143
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:598    .text._ZN12SystemStatus13readStopwatchEv:00000032 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:604    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 _ZN12SystemStatus15resumeStopwatchEv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:607    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 .Loc.144
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:608    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:613    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 .Loc.145
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:616    .text._ZN12SystemStatus15resumeStopwatchEv:00000004 .Loc.146
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:617    .text._ZN12SystemStatus15resumeStopwatchEv:00000004 .Loc.147
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:620    .text._ZN12SystemStatus15resumeStopwatchEv:00000006 .Loc.148
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:623    .text._ZN12SystemStatus15resumeStopwatchEv:0000000a .Loc.149
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:625    .text._ZN12SystemStatus15resumeStopwatchEv:0000000a .Loc.150
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:627    .text._ZN12SystemStatus15resumeStopwatchEv:0000000c L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:633    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 _ZN12SystemStatus14pauseStopwatchEv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:636    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 .Loc.151
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:637    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:642    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 .Loc.152
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:645    .text._ZN12SystemStatus14pauseStopwatchEv:00000004 .Loc.153
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:646    .text._ZN12SystemStatus14pauseStopwatchEv:00000004 .Loc.154
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:649    .text._ZN12SystemStatus14pauseStopwatchEv:00000006 .Loc.155
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:652    .text._ZN12SystemStatus14pauseStopwatchEv:0000000a .Loc.156
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:654    .text._ZN12SystemStatus14pauseStopwatchEv:0000000a .Loc.157
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:656    .text._ZN12SystemStatus14pauseStopwatchEv:0000000c L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:662    .text._ZN12SystemStatus14resetStopwatchEv:00000000 _ZN12SystemStatus14resetStopwatchEv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:665    .text._ZN12SystemStatus14resetStopwatchEv:00000000 .Loc.158
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:666    .text._ZN12SystemStatus14resetStopwatchEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:671    .text._ZN12SystemStatus14resetStopwatchEv:00000000 .Loc.159
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:674    .text._ZN12SystemStatus14resetStopwatchEv:00000004 .Loc.160
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:675    .text._ZN12SystemStatus14resetStopwatchEv:00000004 .Loc.161
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:680    .text._ZN12SystemStatus14resetStopwatchEv:0000000c .Loc.162
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:681    .text._ZN12SystemStatus14resetStopwatchEv:0000000c .Loc.163
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:686    .text._ZN12SystemStatus14resetStopwatchEv:00000014 .Loc.164
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:688    .text._ZN12SystemStatus14resetStopwatchEv:00000014 .Loc.165
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:690    .text._ZN12SystemStatus14resetStopwatchEv:00000016 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:696    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 _ZN12SystemStatus16setStopwatchMarkEv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:699    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 .Loc.166
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:700    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:705    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 .Loc.167
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:708    .text._ZN12SystemStatus16setStopwatchMarkEv:00000004 .Loc.168
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:709    .text._ZN12SystemStatus16setStopwatchMarkEv:00000004 .Loc.169
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:715    .text._ZN12SystemStatus16setStopwatchMarkEv:0000000c .Loc.170
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:720    .text._ZN12SystemStatus16setStopwatchMarkEv:00000014 .Loc.171
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:722    .text._ZN12SystemStatus16setStopwatchMarkEv:00000014 .Loc.172
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:724    .text._ZN12SystemStatus16setStopwatchMarkEv:00000016 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:730    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 _ZN12SystemStatus18incrementStopwatchEv
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:733    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 .Loc.173
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 44
 
 
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:734    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:739    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 .Loc.174
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:742    .text._ZN12SystemStatus18incrementStopwatchEv:00000004 .Loc.175
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:743    .text._ZN12SystemStatus18incrementStopwatchEv:00000004 .Loc.176
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:746    .text._ZN12SystemStatus18incrementStopwatchEv:00000006 .Loc.177
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:749    .text._ZN12SystemStatus18incrementStopwatchEv:0000000a .Loc.178
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:750    .text._ZN12SystemStatus18incrementStopwatchEv:0000000a .Loc.179
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:755    .text._ZN12SystemStatus18incrementStopwatchEv:00000012 .Loc.180
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:763    .text._ZN12SystemStatus18incrementStopwatchEv:00000020 .Loc.181
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:766    .text._ZN12SystemStatus18incrementStopwatchEv:00000020 .Loc.182
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:768    .text._ZN12SystemStatus18incrementStopwatchEv:00000022 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:774    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 _ZN12SystemStatus14getElapsedTimeEb
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:777    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 .Loc.183
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:778    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:779    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 .Loc.184
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:804    .text._ZN12SystemStatus14getElapsedTimeEb:00000012 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:805    .text._ZN12SystemStatus14getElapsedTimeEb:00000014 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:816    .text._ZN12SystemStatus14getElapsedTimeEb:0000001c .Loc.185
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:817    .text._ZN12SystemStatus14getElapsedTimeEb:0000001c .Loc.186
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:823    .text._ZN12SystemStatus14getElapsedTimeEb:00000024 .Loc.187
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:824    .text._ZN12SystemStatus14getElapsedTimeEb:00000024 .Loc.188
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:830    .text._ZN12SystemStatus14getElapsedTimeEb:0000002c .Loc.189
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:831    .text._ZN12SystemStatus14getElapsedTimeEb:0000002c .Loc.190
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:832    .text._ZN12SystemStatus14getElapsedTimeEb:0000002c .Loc.191
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:844    .text._ZN12SystemStatus14getElapsedTimeEb:00000040 .Loc.192
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:847    .text._ZN12SystemStatus14getElapsedTimeEb:00000044 .Loc.193
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:848    .text._ZN12SystemStatus14getElapsedTimeEb:00000044 .Loc.194
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:853    .text._ZN12SystemStatus14getElapsedTimeEb:0000004c .Loc.195
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:855    .text._ZN12SystemStatus14getElapsedTimeEb:0000004c .Loc.196
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:862    .text._ZN12SystemStatus14getElapsedTimeEb:00000054 .Loc.197
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:872    .text._ZN12SystemStatus14getElapsedTimeEb:00000064 .Loc.198
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:878    .text._ZN12SystemStatus14getElapsedTimeEb:0000006c .Loc.199
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:880    .text._ZN12SystemStatus14getElapsedTimeEb:0000006e L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:885    .text._GLOBAL__sub_I_systemStatus:00000000 _GLOBAL__sub_I_systemStatus
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:887    .text._GLOBAL__sub_I_systemStatus:00000000 .Loc.200
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:888    .text._GLOBAL__sub_I_systemStatus:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:893    .text._GLOBAL__sub_I_systemStatus:00000000 .Loc.201
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:902    .text._GLOBAL__sub_I_systemStatus:0000000e L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:911    .text._GLOBAL__sub_D_systemStatus:00000000 _GLOBAL__sub_D_systemStatus
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:913    .text._GLOBAL__sub_D_systemStatus:00000000 .Loc.202
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:914    .text._GLOBAL__sub_D_systemStatus:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:919    .text._GLOBAL__sub_D_systemStatus:00000000 .Loc.203
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:928    .text._GLOBAL__sub_D_systemStatus:0000000e L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:33     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:97     .text._ZN12SystemStatusC2Ev:00000034 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:118    .text._ZN12SystemStatusD2Ev:00000002 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:158    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:474    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000f2 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:524    .text._ZN12SystemStatus11getCpuClockEv:00000030 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:548    .text._ZN12SystemStatus12getLastErrorEv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:601    .text._ZN12SystemStatus13readStopwatchEv:00000032 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:630    .text._ZN12SystemStatus15resumeStopwatchEv:0000000c L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:659    .text._ZN12SystemStatus14pauseStopwatchEv:0000000c L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:693    .text._ZN12SystemStatus14resetStopwatchEv:00000016 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:727    .text._ZN12SystemStatus16setStopwatchMarkEv:00000016 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:771    .text._ZN12SystemStatus18incrementStopwatchEv:00000022 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:883    .text._ZN12SystemStatus14getElapsedTimeEb:0000006e L0
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 45
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:734    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:739    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 .Loc.174
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:742    .text._ZN12SystemStatus18incrementStopwatchEv:00000004 .Loc.175
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:743    .text._ZN12SystemStatus18incrementStopwatchEv:00000004 .Loc.176
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:746    .text._ZN12SystemStatus18incrementStopwatchEv:00000006 .Loc.177
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:749    .text._ZN12SystemStatus18incrementStopwatchEv:0000000a .Loc.178
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:750    .text._ZN12SystemStatus18incrementStopwatchEv:0000000a .Loc.179
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:755    .text._ZN12SystemStatus18incrementStopwatchEv:00000012 .Loc.180
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:763    .text._ZN12SystemStatus18incrementStopwatchEv:00000020 .Loc.181
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:766    .text._ZN12SystemStatus18incrementStopwatchEv:00000020 .Loc.182
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:768    .text._ZN12SystemStatus18incrementStopwatchEv:00000022 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:774    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 _ZN12SystemStatus14getElapsedTimeEb
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:777    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 .Loc.183
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:778    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:779    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 .Loc.184
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:804    .text._ZN12SystemStatus14getElapsedTimeEb:00000012 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:805    .text._ZN12SystemStatus14getElapsedTimeEb:00000014 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:816    .text._ZN12SystemStatus14getElapsedTimeEb:0000001c .Loc.185
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:817    .text._ZN12SystemStatus14getElapsedTimeEb:0000001c .Loc.186
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:823    .text._ZN12SystemStatus14getElapsedTimeEb:00000024 .Loc.187
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:824    .text._ZN12SystemStatus14getElapsedTimeEb:00000024 .Loc.188
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:830    .text._ZN12SystemStatus14getElapsedTimeEb:0000002c .Loc.189
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:831    .text._ZN12SystemStatus14getElapsedTimeEb:0000002c .Loc.190
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:832    .text._ZN12SystemStatus14getElapsedTimeEb:0000002c .Loc.191
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:844    .text._ZN12SystemStatus14getElapsedTimeEb:00000040 .Loc.192
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:847    .text._ZN12SystemStatus14getElapsedTimeEb:00000044 .Loc.193
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:848    .text._ZN12SystemStatus14getElapsedTimeEb:00000044 .Loc.194
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:853    .text._ZN12SystemStatus14getElapsedTimeEb:0000004c .Loc.195
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:855    .text._ZN12SystemStatus14getElapsedTimeEb:0000004c .Loc.196
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:862    .text._ZN12SystemStatus14getElapsedTimeEb:00000054 .Loc.197
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:872    .text._ZN12SystemStatus14getElapsedTimeEb:00000064 .Loc.198
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:878    .text._ZN12SystemStatus14getElapsedTimeEb:0000006c .Loc.199
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:880    .text._ZN12SystemStatus14getElapsedTimeEb:0000006e L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:885    .text._GLOBAL__sub_I_systemStatus:00000000 _GLOBAL__sub_I_systemStatus
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:887    .text._GLOBAL__sub_I_systemStatus:00000000 .Loc.200
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:888    .text._GLOBAL__sub_I_systemStatus:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:893    .text._GLOBAL__sub_I_systemStatus:00000000 .Loc.201
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:902    .text._GLOBAL__sub_I_systemStatus:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:911    .text._GLOBAL__sub_D_systemStatus:00000000 _GLOBAL__sub_D_systemStatus
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:913    .text._GLOBAL__sub_D_systemStatus:00000000 .Loc.202
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:914    .text._GLOBAL__sub_D_systemStatus:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:919    .text._GLOBAL__sub_D_systemStatus:00000000 .Loc.203
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:928    .text._GLOBAL__sub_D_systemStatus:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:33     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:97     .text._ZN12SystemStatusC2Ev:00000034 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:118    .text._ZN12SystemStatusD2Ev:00000002 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:158    .text._Z41__static_initialization_and_destruction_0ii:0000001a L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:474    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000f2 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:524    .text._ZN12SystemStatus11getCpuClockEv:00000030 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:548    .text._ZN12SystemStatus12getLastErrorEv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:601    .text._ZN12SystemStatus13readStopwatchEv:00000032 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:630    .text._ZN12SystemStatus15resumeStopwatchEv:0000000c L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:659    .text._ZN12SystemStatus14pauseStopwatchEv:0000000c L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:693    .text._ZN12SystemStatus14resetStopwatchEv:00000016 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:727    .text._ZN12SystemStatus16setStopwatchMarkEv:00000016 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:771    .text._ZN12SystemStatus18incrementStopwatchEv:00000022 L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:883    .text._ZN12SystemStatus14getElapsedTimeEb:0000006e L0
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 45
 
 
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:906    .text._GLOBAL__sub_I_systemStatus:0000000e L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:932    .text._GLOBAL__sub_D_systemStatus:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:906    .text._GLOBAL__sub_I_systemStatus:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:932    .text._GLOBAL__sub_D_systemStatus:0000000e L0
                      .debug_frame:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:141    .text._Z41__static_initialization_and_destruction_0ii:0000000a .L6
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:136    .text._Z41__static_initialization_and_destruction_0ii:00000008 .L4
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:298    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000056 .L8
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:203    .jumptables.gcc._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .L10
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:322    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000070 .L16
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:402    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000098 .L7
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:424    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000b2 .L19
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:314    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000006a .L17
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:415    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000aa .L20
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:213    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .L15
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:228    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .L14
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:242    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .L13
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:256    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .L12
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:270    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .L11
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:284    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .L9
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:764    .text._ZN12SystemStatus18incrementStopwatchEv:00000020 .L28
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:854    .text._ZN12SystemStatus14getElapsedTimeEb:0000004c .L30
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:1907   .debug_abbrev:00000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3651   .debug_rnglists:0000000c .LLRL21
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3703   .debug_line:00000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:912    .text._GLOBAL__sub_D_systemStatus:00000000 .LFB53
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:929    .text._GLOBAL__sub_D_systemStatus:0000000e .LFE53
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:925    .text._GLOBAL__sub_D_systemStatus:0000000c .LVL59
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:886    .text._GLOBAL__sub_I_systemStatus:00000000 .LFB52
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:903    .text._GLOBAL__sub_I_systemStatus:0000000e .LFE52
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:899    .text._GLOBAL__sub_I_systemStatus:0000000c .LVL58
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:122    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LFB51
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:156    .text._Z41__static_initialization_and_destruction_0ii:0000001a .LFE51
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2643   .debug_loclists:00000014 .LLST1
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2634   .debug_loclists:0000000c .LVUS1
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2692   .debug_loclists:00000046 .LLST2
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2683   .debug_loclists:0000003e .LVUS2
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:152    .text._Z41__static_initialization_and_destruction_0ii:00000018 .LVL7
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:776    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 .LFB50
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:881    .text._ZN12SystemStatus14getElapsedTimeEb:0000006e .LFE50
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2737   .debug_loclists:00000074 .LLST16
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2732   .debug_loclists:00000070 .LVUS16
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2764   .debug_loclists:00000090 .LLST17
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2759   .debug_loclists:0000008c .LVUS17
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2784   .debug_loclists:000000a5 .LLST18
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2781   .debug_loclists:000000a3 .LVUS18
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2805   .debug_loclists:000000bb .LLST19
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2802   .debug_loclists:000000b9 .LVUS19
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2830   .debug_loclists:000000d5 .LLST20
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2823   .debug_loclists:000000cf .LVUS20
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:732    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 .LFB49
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:769    .text._ZN12SystemStatus18incrementStopwatchEv:00000022 .LFE49
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2867   .debug_loclists:000000fb .LLST15
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2862   .debug_loclists:000000f7 .LVUS15
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:698    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 .LFB48
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:725    .text._ZN12SystemStatus16setStopwatchMarkEv:00000016 .LFE48
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2894   .debug_loclists:00000117 .LLST14
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2889   .debug_loclists:00000113 .LVUS14
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:664    .text._ZN12SystemStatus14resetStopwatchEv:00000000 .LFB47
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 46
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:141    .text._Z41__static_initialization_and_destruction_0ii:0000000a .L6
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:136    .text._Z41__static_initialization_and_destruction_0ii:00000008 .L4
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:298    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000056 .L8
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:203    .jumptables.gcc._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .L10
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:322    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000070 .L16
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:402    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000098 .L7
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:424    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000b2 .L19
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:314    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000006a .L17
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:415    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000aa .L20
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:213    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000026 .L15
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:228    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000002e .L14
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:242    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000036 .L13
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:256    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000003e .L12
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:270    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000046 .L11
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:284    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000004e .L9
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:764    .text._ZN12SystemStatus18incrementStopwatchEv:00000020 .L28
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:854    .text._ZN12SystemStatus14getElapsedTimeEb:0000004c .L30
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:1907   .debug_abbrev:00000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3651   .debug_rnglists:0000000c .LLRL21
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3703   .debug_line:00000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:912    .text._GLOBAL__sub_D_systemStatus:00000000 .LFB53
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:929    .text._GLOBAL__sub_D_systemStatus:0000000e .LFE53
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:925    .text._GLOBAL__sub_D_systemStatus:0000000c .LVL59
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:886    .text._GLOBAL__sub_I_systemStatus:00000000 .LFB52
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:903    .text._GLOBAL__sub_I_systemStatus:0000000e .LFE52
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:899    .text._GLOBAL__sub_I_systemStatus:0000000c .LVL58
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:122    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LFB51
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:156    .text._Z41__static_initialization_and_destruction_0ii:0000001a .LFE51
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2643   .debug_loclists:00000014 .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2634   .debug_loclists:0000000c .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2692   .debug_loclists:00000046 .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2683   .debug_loclists:0000003e .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:152    .text._Z41__static_initialization_and_destruction_0ii:00000018 .LVL7
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:776    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 .LFB50
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:881    .text._ZN12SystemStatus14getElapsedTimeEb:0000006e .LFE50
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2737   .debug_loclists:00000074 .LLST16
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2732   .debug_loclists:00000070 .LVUS16
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2764   .debug_loclists:00000090 .LLST17
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2759   .debug_loclists:0000008c .LVUS17
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2784   .debug_loclists:000000a5 .LLST18
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2781   .debug_loclists:000000a3 .LVUS18
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2805   .debug_loclists:000000bb .LLST19
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2802   .debug_loclists:000000b9 .LVUS19
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2830   .debug_loclists:000000d5 .LLST20
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2823   .debug_loclists:000000cf .LVUS20
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:732    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 .LFB49
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:769    .text._ZN12SystemStatus18incrementStopwatchEv:00000022 .LFE49
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2867   .debug_loclists:000000fb .LLST15
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2862   .debug_loclists:000000f7 .LVUS15
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:698    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 .LFB48
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:725    .text._ZN12SystemStatus16setStopwatchMarkEv:00000016 .LFE48
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2894   .debug_loclists:00000117 .LLST14
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2889   .debug_loclists:00000113 .LVUS14
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:664    .text._ZN12SystemStatus14resetStopwatchEv:00000000 .LFB47
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 46
 
 
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:691    .text._ZN12SystemStatus14resetStopwatchEv:00000016 .LFE47
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:635    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 .LFB46
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:657    .text._ZN12SystemStatus14pauseStopwatchEv:0000000c .LFE46
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2921   .debug_loclists:00000133 .LLST13
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2916   .debug_loclists:0000012f .LVUS13
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:606    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 .LFB45
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:628    .text._ZN12SystemStatus15resumeStopwatchEv:0000000c .LFE45
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2948   .debug_loclists:0000014f .LLST12
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2943   .debug_loclists:0000014b .LVUS12
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:553    .text._ZN12SystemStatus13readStopwatchEv:00000000 .LFB44
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:599    .text._ZN12SystemStatus13readStopwatchEv:00000032 .LFE44
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2975   .debug_loclists:0000016b .LLST11
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2970   .debug_loclists:00000167 .LVUS11
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:529    .text._ZN12SystemStatus12getLastErrorEv:00000000 .LFB43
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:546    .text._ZN12SystemStatus12getLastErrorEv:00000008 .LFE43
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3002   .debug_loclists:00000187 .LLST10
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:2997   .debug_loclists:00000183 .LVUS10
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:479    .text._ZN12SystemStatus11getCpuClockEv:00000000 .LFB42
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:522    .text._ZN12SystemStatus11getCpuClockEv:00000030 .LFE42
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:163    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .LFB41
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:472    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000f2 .LFE41
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3031   .debug_loclists:000001a5 .LLST3
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3026   .debug_loclists:000001a1 .LVUS3
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3086   .debug_loclists:000001de .LLST4
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3053   .debug_loclists:000001be .LVUS4
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3267   .debug_loclists:00000299 .LLST5
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3234   .debug_loclists:00000279 .LVUS5
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3400   .debug_loclists:00000324 .LLST6
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3365   .debug_loclists:00000302 .LVUS6
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:324    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000070 .LBB13
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:368    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .LBE13
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3525   .debug_loclists:000003aa .LLST7
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3522   .debug_loclists:000003a8 .LVUS7
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3539   .debug_loclists:000003b9 .LLST8
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3532   .debug_loclists:000003b3 .LVUS8
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:328    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .LBI14
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:327    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .LBB14
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:342    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .LBE14
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:357    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .LBI16
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:356    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .LBB16
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:367    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .LBE16
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3564   .debug_loclists:000003d3 .LLST9
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3561   .debug_loclists:000003d1 .LVUS9
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:371    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .LBI18
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:370    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .LBB18
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:382    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000082 .LBE18
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:102    .text._ZN12SystemStatusD2Ev:00000000 .LFB39
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:114    .text._ZN12SystemStatusD2Ev:00000002 .LFE39
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:38     .text._ZN12SystemStatusC2Ev:00000000 .LFB36
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:93     .text._ZN12SystemStatusC2Ev:00000034 .LFE36
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3578   .debug_loclists:000003e5 .LLST0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:3573   .debug_loclists:000003e1 .LVUS0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:15     .text._Z7getTickv:00000000 .LFB32
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:31     .text._Z7getTickv:00000008 .LFE32
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:121    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LVL3
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:775    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 .LVL51
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:822    .text._ZN12SystemStatus14getElapsedTimeEb:00000024 .LVL52
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s 			page 47
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:691    .text._ZN12SystemStatus14resetStopwatchEv:00000016 .LFE47
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:635    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 .LFB46
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:657    .text._ZN12SystemStatus14pauseStopwatchEv:0000000c .LFE46
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2921   .debug_loclists:00000133 .LLST13
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2916   .debug_loclists:0000012f .LVUS13
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:606    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 .LFB45
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:628    .text._ZN12SystemStatus15resumeStopwatchEv:0000000c .LFE45
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2948   .debug_loclists:0000014f .LLST12
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2943   .debug_loclists:0000014b .LVUS12
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:553    .text._ZN12SystemStatus13readStopwatchEv:00000000 .LFB44
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:599    .text._ZN12SystemStatus13readStopwatchEv:00000032 .LFE44
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2975   .debug_loclists:0000016b .LLST11
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2970   .debug_loclists:00000167 .LVUS11
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:529    .text._ZN12SystemStatus12getLastErrorEv:00000000 .LFB43
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:546    .text._ZN12SystemStatus12getLastErrorEv:00000008 .LFE43
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3002   .debug_loclists:00000187 .LLST10
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:2997   .debug_loclists:00000183 .LVUS10
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:479    .text._ZN12SystemStatus11getCpuClockEv:00000000 .LFB42
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:522    .text._ZN12SystemStatus11getCpuClockEv:00000030 .LFE42
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:163    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .LFB41
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:472    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:000000f2 .LFE41
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3031   .debug_loclists:000001a5 .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3026   .debug_loclists:000001a1 .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3086   .debug_loclists:000001de .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3053   .debug_loclists:000001be .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3267   .debug_loclists:00000299 .LLST5
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3234   .debug_loclists:00000279 .LVUS5
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3400   .debug_loclists:00000324 .LLST6
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3365   .debug_loclists:00000302 .LVUS6
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:324    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000070 .LBB13
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:368    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .LBE13
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3525   .debug_loclists:000003aa .LLST7
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3522   .debug_loclists:000003a8 .LVUS7
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3539   .debug_loclists:000003b9 .LLST8
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3532   .debug_loclists:000003b3 .LVUS8
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:328    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .LBI14
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:327    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .LBB14
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:342    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .LBE14
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:357    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .LBI16
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:356    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .LBB16
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:367    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .LBE16
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3564   .debug_loclists:000003d3 .LLST9
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3561   .debug_loclists:000003d1 .LVUS9
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:371    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .LBI18
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:370    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000080 .LBB18
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:382    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000082 .LBE18
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:102    .text._ZN12SystemStatusD2Ev:00000000 .LFB39
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:114    .text._ZN12SystemStatusD2Ev:00000002 .LFE39
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:38     .text._ZN12SystemStatusC2Ev:00000000 .LFB36
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:93     .text._ZN12SystemStatusC2Ev:00000034 .LFE36
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3578   .debug_loclists:000003e5 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:3573   .debug_loclists:000003e1 .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:15     .text._Z7getTickv:00000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:31     .text._Z7getTickv:00000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:121    .text._Z41__static_initialization_and_destruction_0ii:00000000 .LVL3
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:775    .text._ZN12SystemStatus14getElapsedTimeEb:00000000 .LVL51
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:822    .text._ZN12SystemStatus14getElapsedTimeEb:00000024 .LVL52
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s 			page 47
 
 
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:829    .text._ZN12SystemStatus14getElapsedTimeEb:0000002c .LVL53
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:731    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 .LVL49
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:697    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 .LVL47
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:634    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 .LVL44
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:605    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 .LVL42
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:552    .text._ZN12SystemStatus13readStopwatchEv:00000000 .LVL40
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:528    .text._ZN12SystemStatus12getLastErrorEv:00000000 .LVL38
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:162    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .LVL8
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:191    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000016 .LVL10
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:326    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .LVL26
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:338    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .LVL27
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:354    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .LVL28
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:946    .debug_info:00000000 .Ldebug_info0
-C:\Users\kenne\AppData\Local\Temp\ccl00L5q.s:37     .text._ZN12SystemStatusC2Ev:00000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:829    .text._ZN12SystemStatus14getElapsedTimeEb:0000002c .LVL53
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:731    .text._ZN12SystemStatus18incrementStopwatchEv:00000000 .LVL49
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:697    .text._ZN12SystemStatus16setStopwatchMarkEv:00000000 .LVL47
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:634    .text._ZN12SystemStatus14pauseStopwatchEv:00000000 .LVL44
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:605    .text._ZN12SystemStatus15resumeStopwatchEv:00000000 .LVL42
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:552    .text._ZN12SystemStatus13readStopwatchEv:00000000 .LVL40
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:528    .text._ZN12SystemStatus12getLastErrorEv:00000000 .LVL38
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:162    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000000 .LVL8
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:191    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000016 .LVL10
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:326    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000072 .LVL26
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:338    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:00000074 .LVL27
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:354    .text._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE:0000007e .LVL28
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:946    .debug_info:00000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccppxr8i.s:37     .text._ZN12SystemStatusC2Ev:00000000 .LVL0
 
 UNDEFINED SYMBOLS
 __tablejump2__

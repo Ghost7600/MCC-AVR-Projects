@@ -37,7 +37,7 @@ c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../..
 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
                               build/hd44780.o (__iob)
 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(printf.o)
-                              build/main.o (printf)
+                              build/Adafruit_Fingerprint.o (printf)
 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
                               c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(printf.o) (vfprintf)
 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
@@ -63,14 +63,28 @@ Discarded input sections
  .bss           0x00000000        0x0 build/Adafruit_Fingerprint.o
  .text._Z7getTickv
                 0x00000000        0x8 build/Adafruit_Fingerprint.o
+ .text._ZN27Adafruit_Fingerprint_PacketC2EhjPh
+                0x00000000       0x62 build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint5beginEm
                 0x00000000       0x14 build/Adafruit_Fingerprint.o
+ .rodata._ZN20Adafruit_Fingerprint21writeStructuredPacketERK27Adafruit_Fingerprint_Packet.str1.1
+                0x00000000       0x11 build/Adafruit_Fingerprint.o
+ .text._ZN20Adafruit_Fingerprint21writeStructuredPacketERK27Adafruit_Fingerprint_Packet
+                0x00000000      0x136 build/Adafruit_Fingerprint.o
+ .text._ZN20Adafruit_Fingerprint19getStructuredPacketEP27Adafruit_Fingerprint_Packetj
+                0x00000000      0x104 build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint13checkPasswordEv
                 0x00000000       0xa0 build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint14verifyPasswordEv
                 0x00000000        0xe build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint13getParametersEv
                 0x00000000      0x150 build/Adafruit_Fingerprint.o
+ .rodata._ZN20Adafruit_Fingerprint8getImageEv.str1.1
+                0x00000000       0x18 build/Adafruit_Fingerprint.o
+ .text._ZN20Adafruit_Fingerprint8getImageEv
+                0x00000000       0xae build/Adafruit_Fingerprint.o
+ .text._ZN20Adafruit_Fingerprint8image2TzEh
+                0x00000000       0x88 build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint11createModelEv
                 0x00000000       0x82 build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint10storeModelEj
@@ -90,6 +104,8 @@ Discarded input sections
                 0x00000000       0xdc build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint10LEDcontrolEhhhh
                 0x00000000       0x98 build/Adafruit_Fingerprint.o
+ .text._ZN20Adafruit_Fingerprint12fingerSearchEh
+                0x00000000       0xd2 build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint16getTemplateCountEv
                 0x00000000       0x98 build/Adafruit_Fingerprint.o
  .text._ZN20Adafruit_Fingerprint11setPasswordEm
@@ -504,12 +520,6 @@ Discarded input sections
                 0x00000000        0x8 build/usart0.o
  .text._ZN6Usart0D2Ev
                 0x00000000        0x2 build/usart0.o
- .text._ZN6Usart04initEv
-                0x00000000      0x1de build/usart0.o
- .jumptables.gcc._ZN6Usart04initEv
-                0x00000000       0x10 build/usart0.o
- .text._ZN6Usart011setDataSizeENS_8DataSizeE
-                0x00000000       0x28 build/usart0.o
  .text._ZN6Usart011setStopBitsENS_8StopBitsE
                 0x00000000       0x24 build/usart0.o
  .text._ZN6Usart09setParityENS_6ParityE
@@ -524,6 +534,12 @@ Discarded input sections
                 0x00000000        0xc build/usart0.o
  .text._ZN6Usart017_clearParityErrorEv
                 0x00000000        0xc build/usart0.o
+ .rodata._ZN6Usart05writeEj.str1.1
+                0x00000000        0x3 build/usart0.o
+ .text._ZN6Usart05writeEj
+                0x00000000       0x5c build/usart0.o
+ .text._ZN6Usart04readEPh
+                0x00000000       0x4c build/usart0.o
  .text._ZN6Usart020flushReceptionBufferEv
                 0x00000000       0x10 build/usart0.o
  .text._ZN6Usart014receiveDataStdEP6__file
@@ -653,8 +669,6 @@ Discarded input sections
                 0x00000000       0xf2 build/systemStatus.o
  .jumptables.gcc._ZN12SystemStatus17setClockPrescalerENS_14ClockPrescalerE
                 0x00000000       0x10 build/systemStatus.o
- .text._ZN12SystemStatus11getCpuClockEv
-                0x00000000       0x30 build/systemStatus.o
  .text._ZN12SystemStatus12getLastErrorEv
                 0x00000000        0x8 build/systemStatus.o
  .text._ZN12SystemStatus15resumeStopwatchEv
@@ -674,10 +688,16 @@ Discarded input sections
  .bss           0x00000000        0x0 build/main.o
  .text._Z7getTickv
                 0x00000000        0x8 build/main.o
- .text._Z7bitbangh
-                0x00000000       0xd2 build/main.o
- .text._Z10sendstringPPc
-                0x00000000       0x3e build/main.o
+ .text._Z10sendstringPc
+                0x00000000       0x34 build/main.o
+ .text._Z11uartgetcharv
+                0x00000000       0x12 build/main.o
+ .text._Z14usartgetstringPc
+                0x00000000       0x2e build/main.o
+ .rodata._Z16getFingerprintIDP20Adafruit_Fingerprint.str1.1
+                0x00000000      0x11c build/main.o
+ .text._Z16getFingerprintIDP20Adafruit_Fingerprint
+                0x00000000      0x120 build/main.o
  .rodata._Z18getFingerprintIDezP20Adafruit_Fingerprint.str1.1
                 0x00000000        0x3 build/main.o
  .text._Z18getFingerprintIDezP20Adafruit_Fingerprint
@@ -711,8 +731,6 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc.div
-                0x00000000       0x44 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc   0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
@@ -722,14 +740,6 @@ Discarded input sections
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
- .debug_line    0x00000000      0x111 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
- .debug_line_str
-                0x00000000       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
- .debug_info    0x00000000       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
- .debug_abbrev  0x00000000       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
- .debug_aranges
-                0x00000000       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
- .debug_str     0x00000000       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .text          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
  .data          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
@@ -828,8 +838,6 @@ Discarded input sections
  .text          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
  .data          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
  .bss           0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.mul
-                0x00000000       0x1e c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.div
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc   0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
@@ -841,19 +849,9 @@ Discarded input sections
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
- .debug_line    0x00000000       0x9f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
- .debug_line_str
-                0x00000000       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
- .debug_info    0x00000000       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
- .debug_abbrev  0x00000000       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
- .debug_aranges
-                0x00000000       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
- .debug_str     0x00000000       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
  .text          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
  .data          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
  .bss           0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
- .text.libgcc.mul
-                0x00000000       0x16 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
  .text.libgcc.div
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
  .text.libgcc   0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
@@ -865,14 +863,6 @@ Discarded input sections
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
- .debug_line    0x00000000       0x81 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
- .debug_line_str
-                0x00000000       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
- .debug_info    0x00000000       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
- .debug_abbrev  0x00000000       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
- .debug_aranges
-                0x00000000       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
- .debug_str     0x00000000       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
  .text          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
  .data          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
  .bss           0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
@@ -883,20 +873,10 @@ Discarded input sections
  .text.libgcc   0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
  .text.libgcc.prologue
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
- .text.libgcc.builtins
-                0x00000000       0x3a c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
  .text.libgcc.fmul
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
- .debug_line    0x00000000       0xf3 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
- .debug_line_str
-                0x00000000       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
- .debug_info    0x00000000       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
- .debug_abbrev  0x00000000       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
- .debug_aranges
-                0x00000000       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
- .debug_str     0x00000000       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
  .text          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
  .data          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
  .bss           0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodhi4.o)
@@ -942,6 +922,8 @@ Discarded input sections
  .text          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
  .data          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
  .bss           0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text.avr-libc
+                0x00000000       0x12 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
  .text          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
  .data          0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
  .bss           0x00000000        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memset.o)
@@ -1140,7 +1122,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x214a
+.text           0x00000000     0x1ee0
  *(.vectors)
  .vectors       0x00000000       0x68 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -1231,401 +1213,398 @@ END GROUP
                 0x000000e8                __vector_22
                 0x000000ec                . = ALIGN (0x2)
  *(.text.*)
- .text._ZN27Adafruit_Fingerprint_PacketC2EhjPh
-                0x000000ec       0x62 build/Adafruit_Fingerprint.o
-                0x000000ec                _ZN27Adafruit_Fingerprint_PacketC2EhjPh
-                0x000000ec                _ZN27Adafruit_Fingerprint_PacketC1EhjPh
  .text._ZN20Adafruit_FingerprintC2EP6Usart0m
-                0x0000014e       0x54 build/Adafruit_Fingerprint.o
-                0x0000014e                _ZN20Adafruit_FingerprintC2EP6Usart0m
-                0x0000014e                _ZN20Adafruit_FingerprintC1EP6Usart0m
- .text._ZN20Adafruit_Fingerprint21writeStructuredPacketERK27Adafruit_Fingerprint_Packet
-                0x000001a2      0x126 build/Adafruit_Fingerprint.o
-                0x000001a2                _ZN20Adafruit_Fingerprint21writeStructuredPacketERK27Adafruit_Fingerprint_Packet
- .text._ZN20Adafruit_Fingerprint19getStructuredPacketEP27Adafruit_Fingerprint_Packetj
-                0x000002c8      0x104 build/Adafruit_Fingerprint.o
-                0x000002c8                _ZN20Adafruit_Fingerprint19getStructuredPacketEP27Adafruit_Fingerprint_Packetj
- .text._ZN20Adafruit_Fingerprint8getImageEv
-                0x000003cc       0x82 build/Adafruit_Fingerprint.o
-                0x000003cc                _ZN20Adafruit_Fingerprint8getImageEv
- .text._ZN20Adafruit_Fingerprint8image2TzEh
-                0x0000044e       0x88 build/Adafruit_Fingerprint.o
-                0x0000044e                _ZN20Adafruit_Fingerprint8image2TzEh
- .text._ZN20Adafruit_Fingerprint12fingerSearchEh
-                0x000004d6       0xd2 build/Adafruit_Fingerprint.o
-                0x000004d6                _ZN20Adafruit_Fingerprint12fingerSearchEh
+                0x000000ec       0x54 build/Adafruit_Fingerprint.o
+                0x000000ec                _ZN20Adafruit_FingerprintC2EP6Usart0m
+                0x000000ec                _ZN20Adafruit_FingerprintC1EP6Usart0m
  .text._ZN3AdcC2Ev
-                0x000005a8       0x2c build/adc.o
-                0x000005a8                _ZN3AdcC1Ev
-                0x000005a8                _ZN3AdcC2Ev
+                0x00000140       0x2c build/adc.o
+                0x00000140                _ZN3AdcC1Ev
+                0x00000140                _ZN3AdcC2Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x000005d4       0x1a build/adc.o
+                0x0000016c       0x1a build/adc.o
  .text._Z29adcConversionCompleteCallbackv
-                0x000005ee        0x2 build/adc.o
-                0x000005ee                _Z29adcConversionCompleteCallbackv
+                0x00000186        0x2 build/adc.o
+                0x00000186                _Z29adcConversionCompleteCallbackv
  .text.__vector_21
-                0x000005f0       0x48 build/adc.o
-                0x000005f0                __vector_21
+                0x00000188       0x48 build/adc.o
+                0x00000188                __vector_21
  .text._GLOBAL__sub_I_adc
-                0x00000638        0xe build/adc.o
+                0x000001d0        0xe build/adc.o
  .text._GLOBAL__sub_D_adc
-                0x00000646        0xe build/adc.o
+                0x000001de        0xe build/adc.o
  .text._ZN4Int0C2Ev
-                0x00000654       0x12 build/int0.o
-                0x00000654                _ZN4Int0C1Ev
-                0x00000654                _ZN4Int0C2Ev
+                0x000001ec       0x12 build/int0.o
+                0x000001ec                _ZN4Int0C1Ev
+                0x000001ec                _ZN4Int0C2Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x00000666       0x1a build/int0.o
+                0x000001fe       0x1a build/int0.o
  .text._Z21int0InterruptCallbackv
-                0x00000680        0x2 build/int0.o
-                0x00000680                _Z21int0InterruptCallbackv
+                0x00000218        0x2 build/int0.o
+                0x00000218                _Z21int0InterruptCallbackv
  .text.__vector_1
-                0x00000682       0x48 build/int0.o
-                0x00000682                __vector_1
+                0x0000021a       0x48 build/int0.o
+                0x0000021a                __vector_1
  .text._GLOBAL__sub_I_int0
-                0x000006ca        0xe build/int0.o
+                0x00000262        0xe build/int0.o
  .text._GLOBAL__sub_D_int0
-                0x000006d8        0xe build/int0.o
+                0x00000270        0xe build/int0.o
  .text._ZN4Int1C2Ev
-                0x000006e6       0x12 build/int1.o
-                0x000006e6                _ZN4Int1C1Ev
-                0x000006e6                _ZN4Int1C2Ev
+                0x0000027e       0x12 build/int1.o
+                0x0000027e                _ZN4Int1C1Ev
+                0x0000027e                _ZN4Int1C2Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x000006f8       0x1a build/int1.o
+                0x00000290       0x1a build/int1.o
  .text._Z21int1InterruptCallbackv
-                0x00000712        0x2 build/int1.o
-                0x00000712                _Z21int1InterruptCallbackv
+                0x000002aa        0x2 build/int1.o
+                0x000002aa                _Z21int1InterruptCallbackv
  .text.__vector_2
-                0x00000714       0x48 build/int1.o
-                0x00000714                __vector_2
+                0x000002ac       0x48 build/int1.o
+                0x000002ac                __vector_2
  .text._GLOBAL__sub_I_int1
-                0x0000075c        0xe build/int1.o
+                0x000002f4        0xe build/int1.o
  .text._GLOBAL__sub_D_int1
-                0x0000076a        0xe build/int1.o
+                0x00000302        0xe build/int1.o
  .text._ZN6Pcint0C2Ev
-                0x00000778       0x12 build/pcint0.o
-                0x00000778                _ZN6Pcint0C2Ev
-                0x00000778                _ZN6Pcint0C1Ev
+                0x00000310       0x12 build/pcint0.o
+                0x00000310                _ZN6Pcint0C2Ev
+                0x00000310                _ZN6Pcint0C1Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x0000078a       0x1a build/pcint0.o
+                0x00000322       0x1a build/pcint0.o
  .text._Z23pcint0InterruptCallbackv
-                0x000007a4        0x2 build/pcint0.o
-                0x000007a4                _Z23pcint0InterruptCallbackv
+                0x0000033c        0x2 build/pcint0.o
+                0x0000033c                _Z23pcint0InterruptCallbackv
  .text.__vector_3
-                0x000007a6       0x48 build/pcint0.o
-                0x000007a6                __vector_3
+                0x0000033e       0x48 build/pcint0.o
+                0x0000033e                __vector_3
  .text._GLOBAL__sub_I_pcint0
-                0x000007ee        0xe build/pcint0.o
+                0x00000386        0xe build/pcint0.o
  .text._GLOBAL__sub_D_pcint0
-                0x000007fc        0xe build/pcint0.o
+                0x00000394        0xe build/pcint0.o
  .text._ZN6Pcint1C2Ev
-                0x0000080a       0x12 build/pcint1.o
-                0x0000080a                _ZN6Pcint1C1Ev
-                0x0000080a                _ZN6Pcint1C2Ev
+                0x000003a2       0x12 build/pcint1.o
+                0x000003a2                _ZN6Pcint1C1Ev
+                0x000003a2                _ZN6Pcint1C2Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x0000081c       0x1a build/pcint1.o
+                0x000003b4       0x1a build/pcint1.o
  .text._Z23pcint1InterruptCallbackv
-                0x00000836        0x2 build/pcint1.o
-                0x00000836                _Z23pcint1InterruptCallbackv
+                0x000003ce        0x2 build/pcint1.o
+                0x000003ce                _Z23pcint1InterruptCallbackv
  .text.__vector_4
-                0x00000838       0x48 build/pcint1.o
-                0x00000838                __vector_4
+                0x000003d0       0x48 build/pcint1.o
+                0x000003d0                __vector_4
  .text._GLOBAL__sub_I_pcint1
-                0x00000880        0xe build/pcint1.o
+                0x00000418        0xe build/pcint1.o
  .text._GLOBAL__sub_D_pcint1
-                0x0000088e        0xe build/pcint1.o
+                0x00000426        0xe build/pcint1.o
  .text._ZN6Pcint2C2Ev
-                0x0000089c       0x12 build/pcint2.o
-                0x0000089c                _ZN6Pcint2C1Ev
-                0x0000089c                _ZN6Pcint2C2Ev
+                0x00000434       0x12 build/pcint2.o
+                0x00000434                _ZN6Pcint2C1Ev
+                0x00000434                _ZN6Pcint2C2Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x000008ae       0x1a build/pcint2.o
+                0x00000446       0x1a build/pcint2.o
  .text._Z23pcint2InterruptCallbackv
-                0x000008c8        0x2 build/pcint2.o
-                0x000008c8                _Z23pcint2InterruptCallbackv
+                0x00000460        0x2 build/pcint2.o
+                0x00000460                _Z23pcint2InterruptCallbackv
  .text.__vector_5
-                0x000008ca       0x48 build/pcint2.o
-                0x000008ca                __vector_5
+                0x00000462       0x48 build/pcint2.o
+                0x00000462                __vector_5
  .text._GLOBAL__sub_I_pcint2
-                0x00000912        0xe build/pcint2.o
+                0x000004aa        0xe build/pcint2.o
  .text._GLOBAL__sub_D_pcint2
-                0x00000920        0xe build/pcint2.o
+                0x000004b8        0xe build/pcint2.o
  .text._ZN6Timer0C2Ev
-                0x0000092e       0x14 build/timer0.o
-                0x0000092e                _ZN6Timer0C2Ev
-                0x0000092e                _ZN6Timer0C1Ev
+                0x000004c6       0x14 build/timer0.o
+                0x000004c6                _ZN6Timer0C2Ev
+                0x000004c6                _ZN6Timer0C1Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x00000942       0x1a build/timer0.o
+                0x000004da       0x1a build/timer0.o
  .text._ZN6Timer07setModeENS_4ModeE
-                0x0000095c       0x36 build/timer0.o
-                0x0000095c                _ZN6Timer07setModeENS_4ModeE
+                0x000004f4       0x36 build/timer0.o
+                0x000004f4                _ZN6Timer07setModeENS_4ModeE
  .text._ZN6Timer014setClockSourceENS_11ClockSourceE
-                0x00000992       0x16 build/timer0.o
-                0x00000992                _ZN6Timer014setClockSourceENS_11ClockSourceE
+                0x0000052a       0x16 build/timer0.o
+                0x0000052a                _ZN6Timer014setClockSourceENS_11ClockSourceE
  .text._Z22timer0CompareBCallbackv
-                0x000009a8        0x2 build/timer0.o
-                0x000009a8                _Z22timer0CompareBCallbackv
+                0x00000540        0x2 build/timer0.o
+                0x00000540                _Z22timer0CompareBCallbackv
  .text._Z22timer0OverflowCallbackv
-                0x000009aa        0x2 build/timer0.o
-                0x000009aa                _Z22timer0OverflowCallbackv
+                0x00000542        0x2 build/timer0.o
+                0x00000542                _Z22timer0OverflowCallbackv
  .text.__vector_14
-                0x000009ac       0x48 build/timer0.o
-                0x000009ac                __vector_14
+                0x00000544       0x48 build/timer0.o
+                0x00000544                __vector_14
  .text.__vector_15
-                0x000009f4       0x48 build/timer0.o
-                0x000009f4                __vector_15
+                0x0000058c       0x48 build/timer0.o
+                0x0000058c                __vector_15
  .text.__vector_16
-                0x00000a3c       0x48 build/timer0.o
-                0x00000a3c                __vector_16
+                0x000005d4       0x48 build/timer0.o
+                0x000005d4                __vector_16
  .text._GLOBAL__sub_I_timer0
-                0x00000a84        0xe build/timer0.o
+                0x0000061c        0xe build/timer0.o
  .text._GLOBAL__sub_D_timer0
-                0x00000a92        0xe build/timer0.o
+                0x0000062a        0xe build/timer0.o
  .text._ZN6Timer1C2Ev
-                0x00000aa0       0x14 build/timer1.o
-                0x00000aa0                _ZN6Timer1C1Ev
-                0x00000aa0                _ZN6Timer1C2Ev
+                0x00000638       0x14 build/timer1.o
+                0x00000638                _ZN6Timer1C1Ev
+                0x00000638                _ZN6Timer1C2Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x00000ab4       0x1a build/timer1.o
+                0x0000064c       0x1a build/timer1.o
  .text._Z22timer1CompareACallbackv
-                0x00000ace        0x2 build/timer1.o
-                0x00000ace                _Z22timer1CompareACallbackv
+                0x00000666        0x2 build/timer1.o
+                0x00000666                _Z22timer1CompareACallbackv
  .text._Z22timer1CompareBCallbackv
-                0x00000ad0        0x2 build/timer1.o
-                0x00000ad0                _Z22timer1CompareBCallbackv
+                0x00000668        0x2 build/timer1.o
+                0x00000668                _Z22timer1CompareBCallbackv
  .text._Z26timer1InputCaptureCallbackv
-                0x00000ad2        0x2 build/timer1.o
-                0x00000ad2                _Z26timer1InputCaptureCallbackv
+                0x0000066a        0x2 build/timer1.o
+                0x0000066a                _Z26timer1InputCaptureCallbackv
  .text._Z22timer1OverflowCallbackv
-                0x00000ad4        0x2 build/timer1.o
-                0x00000ad4                _Z22timer1OverflowCallbackv
+                0x0000066c        0x2 build/timer1.o
+                0x0000066c                _Z22timer1OverflowCallbackv
  .text.__vector_11
-                0x00000ad6       0x48 build/timer1.o
-                0x00000ad6                __vector_11
+                0x0000066e       0x48 build/timer1.o
+                0x0000066e                __vector_11
  .text.__vector_12
-                0x00000b1e       0x48 build/timer1.o
-                0x00000b1e                __vector_12
+                0x000006b6       0x48 build/timer1.o
+                0x000006b6                __vector_12
  .text.__vector_10
-                0x00000b66       0x48 build/timer1.o
-                0x00000b66                __vector_10
+                0x000006fe       0x48 build/timer1.o
+                0x000006fe                __vector_10
  .text.__vector_13
-                0x00000bae       0x48 build/timer1.o
-                0x00000bae                __vector_13
+                0x00000746       0x48 build/timer1.o
+                0x00000746                __vector_13
  .text._GLOBAL__sub_I_timer1
-                0x00000bf6        0xe build/timer1.o
+                0x0000078e        0xe build/timer1.o
  .text._GLOBAL__sub_D_timer1
-                0x00000c04        0xe build/timer1.o
+                0x0000079c        0xe build/timer1.o
  .text._ZN6Timer2C2Ev
-                0x00000c12       0x14 build/timer2.o
-                0x00000c12                _ZN6Timer2C2Ev
-                0x00000c12                _ZN6Timer2C1Ev
+                0x000007aa       0x14 build/timer2.o
+                0x000007aa                _ZN6Timer2C2Ev
+                0x000007aa                _ZN6Timer2C1Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x00000c26       0x1a build/timer2.o
+                0x000007be       0x1a build/timer2.o
  .text._Z22timer2CompareACallbackv
-                0x00000c40        0x2 build/timer2.o
-                0x00000c40                _Z22timer2CompareACallbackv
+                0x000007d8        0x2 build/timer2.o
+                0x000007d8                _Z22timer2CompareACallbackv
  .text._Z22timer2CompareBCallbackv
-                0x00000c42        0x2 build/timer2.o
-                0x00000c42                _Z22timer2CompareBCallbackv
+                0x000007da        0x2 build/timer2.o
+                0x000007da                _Z22timer2CompareBCallbackv
  .text._Z22timer2OverflowCallbackv
-                0x00000c44        0x2 build/timer2.o
-                0x00000c44                _Z22timer2OverflowCallbackv
+                0x000007dc        0x2 build/timer2.o
+                0x000007dc                _Z22timer2OverflowCallbackv
  .text.__vector_7
-                0x00000c46       0x48 build/timer2.o
-                0x00000c46                __vector_7
+                0x000007de       0x48 build/timer2.o
+                0x000007de                __vector_7
  .text.__vector_8
-                0x00000c8e       0x48 build/timer2.o
-                0x00000c8e                __vector_8
+                0x00000826       0x48 build/timer2.o
+                0x00000826                __vector_8
  .text.__vector_9
-                0x00000cd6       0x48 build/timer2.o
-                0x00000cd6                __vector_9
+                0x0000086e       0x48 build/timer2.o
+                0x0000086e                __vector_9
  .text._GLOBAL__sub_I_timer2
-                0x00000d1e        0xe build/timer2.o
+                0x000008b6        0xe build/timer2.o
  .text._GLOBAL__sub_D_timer2
-                0x00000d2c        0xe build/timer2.o
+                0x000008c4        0xe build/timer2.o
  .text._ZN3Bus7readRegEhPhj
-                0x00000d3a        0xe build/twi.o
-                0x00000d3a                _ZN3Bus7readRegEhPhj
+                0x000008d2        0xe build/twi.o
+                0x000008d2                _ZN3Bus7readRegEhPhj
  .text._ZN3Bus8sendDataEPhj
-                0x00000d48        0xe build/twi.o
-                0x00000d48                _ZN3Bus8sendDataEPhj
+                0x000008e0        0xe build/twi.o
+                0x000008e0                _ZN3Bus8sendDataEPhj
  .text._ZN3Bus8sendDataEPKhPhj
-                0x00000d56        0xe build/twi.o
-                0x00000d56                _ZN3Bus8sendDataEPKhPhj
+                0x000008ee        0xe build/twi.o
+                0x000008ee                _ZN3Bus8sendDataEPKhPhj
  .text._ZN3Bus8writeRegEhPKhj
-                0x00000d64        0xe build/twi.o
-                0x00000d64                _ZN3Bus8writeRegEhPKhj
+                0x000008fc        0xe build/twi.o
+                0x000008fc                _ZN3Bus8writeRegEhPKhj
  .text._ZN3Bus9setDeviceEjb
-                0x00000d72        0xe build/twi.o
-                0x00000d72                _ZN3Bus9setDeviceEjb
+                0x0000090a        0xe build/twi.o
+                0x0000090a                _ZN3Bus9setDeviceEjb
  .text._ZN3Bus9setDeviceEPFvvES1_
-                0x00000d80        0xe build/twi.o
-                0x00000d80                _ZN3Bus9setDeviceEPFvvES1_
+                0x00000918        0xe build/twi.o
+                0x00000918                _ZN3Bus9setDeviceEPFvvES1_
  .text._ZN3Bus10getBusTypeEv
-                0x00000d8e        0x6 build/twi.o
-                0x00000d8e                _ZN3Bus10getBusTypeEv
+                0x00000926        0x6 build/twi.o
+                0x00000926                _ZN3Bus10getBusTypeEv
  .text._ZN3Bus12getLastErrorEv
-                0x00000d94        0x8 build/twi.o
-                0x00000d94                _ZN3Bus12getLastErrorEv
+                0x0000092c        0x8 build/twi.o
+                0x0000092c                _ZN3Bus12getLastErrorEv
  .text._ZN3Twi9setDeviceEjb
-                0x00000d9c       0x4c build/twi.o
-                0x00000d9c                _ZN3Twi9setDeviceEjb
+                0x00000934       0x4c build/twi.o
+                0x00000934                _ZN3Twi9setDeviceEjb
  .text._ZN3Twi10getBusTypeEv
-                0x00000de8        0x6 build/twi.o
-                0x00000de8                _ZN3Twi10getBusTypeEv
+                0x00000980        0x6 build/twi.o
+                0x00000980                _ZN3Twi10getBusTypeEv
  .text._ZN3Twi12getLastErrorEv
-                0x00000dee        0x8 build/twi.o
-                0x00000dee                _ZN3Twi12getLastErrorEv
+                0x00000986        0x8 build/twi.o
+                0x00000986                _ZN3Twi12getLastErrorEv
  .text._ZN3TwiC2Ev
-                0x00000df6       0x46 build/twi.o
-                0x00000df6                _ZN3TwiC1Ev
-                0x00000df6                _ZN3TwiC2Ev
+                0x0000098e       0x46 build/twi.o
+                0x0000098e                _ZN3TwiC1Ev
+                0x0000098e                _ZN3TwiC2Ev
  .text._ZN3TwiD2Ev
-                0x00000e3c        0xc build/twi.o
-                0x00000e3c                _ZN3TwiD2Ev
-                0x00000e3c                _ZN3TwiD1Ev
+                0x000009d4        0xc build/twi.o
+                0x000009d4                _ZN3TwiD2Ev
+                0x000009d4                _ZN3TwiD1Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x00000e48       0x44 build/twi.o
+                0x000009e0       0x44 build/twi.o
  .text._ZN3Twi16_waitWhileIsBusyEv
-                0x00000e8c       0xb4 build/twi.o
-                0x00000e8c                _ZN3Twi16_waitWhileIsBusyEv
+                0x00000a24       0xb4 build/twi.o
+                0x00000a24                _ZN3Twi16_waitWhileIsBusyEv
  .text._ZN3Twi17_startTrasmissionEv
-                0x00000f40       0x20 build/twi.o
-                0x00000f40                _ZN3Twi17_startTrasmissionEv
+                0x00000ad8       0x20 build/twi.o
+                0x00000ad8                _ZN3Twi17_startTrasmissionEv
  .text._ZN3Twi15_readFromBufferEPhh
-                0x00000f60       0x54 build/twi.o
-                0x00000f60                _ZN3Twi15_readFromBufferEPhh
+                0x00000af8       0x54 build/twi.o
+                0x00000af8                _ZN3Twi15_readFromBufferEPhh
  .text._ZN3Twi8sendDataEhNS_9OperationEhPhh
-                0x00000fb4      0x15a build/twi.o
-                0x00000fb4                _ZN3Twi8sendDataEhNS_9OperationEhPhh
+                0x00000b4c      0x15a build/twi.o
+                0x00000b4c                _ZN3Twi8sendDataEhNS_9OperationEhPhh
  .text._ZN3Twi7readRegEhPhj
-                0x0000110e       0x58 build/twi.o
-                0x0000110e                _ZN3Twi7readRegEhPhj
+                0x00000ca6       0x58 build/twi.o
+                0x00000ca6                _ZN3Twi7readRegEhPhj
  .text._ZN3Twi8writeRegEhPKhj
-                0x00001166       0x58 build/twi.o
-                0x00001166                _ZN3Twi8writeRegEhPKhj
+                0x00000cfe       0x58 build/twi.o
+                0x00000cfe                _ZN3Twi8writeRegEhPKhj
  .text._ZN3Twi16interruptHandlerEv
-                0x000011be      0x102 build/twi.o
-                0x000011be                _ZN3Twi16interruptHandlerEv
+                0x00000d56      0x102 build/twi.o
+                0x00000d56                _ZN3Twi16interruptHandlerEv
  .text.__vector_24
-                0x000012c0       0x4c build/twi.o
-                0x000012c0                __vector_24
+                0x00000e58       0x4c build/twi.o
+                0x00000e58                __vector_24
  .text._GLOBAL__sub_I_twi
-                0x0000130c        0xe build/twi.o
+                0x00000ea4        0xe build/twi.o
  .text._GLOBAL__sub_D_twi
-                0x0000131a        0xe build/twi.o
+                0x00000eb2        0xe build/twi.o
+ .text._ZN6Usart04initEv
+                0x00000ec0      0x1de build/usart0.o
+                0x00000ec0                _ZN6Usart04initEv
  .text._ZN6Usart07setModeENS_4ModeE
-                0x00001328       0x24 build/usart0.o
-                0x00001328                _ZN6Usart07setModeENS_4ModeE
+                0x0000109e       0x24 build/usart0.o
+                0x0000109e                _ZN6Usart07setModeENS_4ModeE
+ .text._ZN6Usart011setDataSizeENS_8DataSizeE
+                0x000010c2       0x28 build/usart0.o
+                0x000010c2                _ZN6Usart011setDataSizeENS_8DataSizeE
  .text._ZN6Usart011setBaudRateENS_8BaudRateE
-                0x0000134c      0x10a build/usart0.o
-                0x0000134c                _ZN6Usart011setBaudRateENS_8BaudRateE
+                0x000010ea      0x10a build/usart0.o
+                0x000010ea                _ZN6Usart011setBaudRateENS_8BaudRateE
  .text._ZN6Usart014setFrameFormatENS_11FrameFormatE
-                0x00001456       0xfa build/usart0.o
-                0x00001456                _ZN6Usart014setFrameFormatENS_11FrameFormatE
+                0x000011f4       0xfa build/usart0.o
+                0x000011f4                _ZN6Usart014setFrameFormatENS_11FrameFormatE
  .text._ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
-                0x00001550       0x58 build/usart0.o
-                0x00001550                _ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE
-                0x00001550                _ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+                0x000012ee       0x58 build/usart0.o
+                0x000012ee                _ZN6Usart0C1ENS_8BaudRateENS_4ModeENS_11FrameFormatE
+                0x000012ee                _ZN6Usart0C2ENS_8BaudRateENS_4ModeENS_11FrameFormatE
  .text._Z41__static_initialization_and_destruction_0ii
-                0x000015a8       0x2a build/usart0.o
- .text._ZN6Usart05writeEj
-                0x000015d2       0x52 build/usart0.o
-                0x000015d2                _ZN6Usart05writeEj
- .text._ZN6Usart04readEPh
-                0x00001624       0x4c build/usart0.o
-                0x00001624                _ZN6Usart04readEPh
+                0x00001346       0x2a build/usart0.o
  .text._ZN6Usart011sendDataStdEcP6__file
-                0x00001670       0x12 build/usart0.o
-                0x00001670                _ZN6Usart011sendDataStdEcP6__file
+                0x00001370       0x12 build/usart0.o
+                0x00001370                _ZN6Usart011sendDataStdEcP6__file
  .text._Z23usartTransmitStdWrappercP6__file
-                0x00001682       0x14 build/usart0.o
-                0x00001682                _Z23usartTransmitStdWrappercP6__file
+                0x00001382       0x14 build/usart0.o
+                0x00001382                _Z23usartTransmitStdWrappercP6__file
  .text._Z30usartReceptionCompleteCallbackv
-                0x00001696        0x2 build/usart0.o
-                0x00001696                _Z30usartReceptionCompleteCallbackv
+                0x00001396        0x2 build/usart0.o
+                0x00001396                _Z30usartReceptionCompleteCallbackv
  .text._Z36usartTransmissionBufferEmptyCallbackv
-                0x00001698        0x2 build/usart0.o
-                0x00001698                _Z36usartTransmissionBufferEmptyCallbackv
+                0x00001398        0x2 build/usart0.o
+                0x00001398                _Z36usartTransmissionBufferEmptyCallbackv
  .text._Z33usartTransmissionCompleteCallbackv
-                0x0000169a        0x2 build/usart0.o
-                0x0000169a                _Z33usartTransmissionCompleteCallbackv
+                0x0000139a        0x2 build/usart0.o
+                0x0000139a                _Z33usartTransmissionCompleteCallbackv
  .text.__vector_18
-                0x0000169c       0x48 build/usart0.o
-                0x0000169c                __vector_18
+                0x0000139c       0x48 build/usart0.o
+                0x0000139c                __vector_18
  .text.__vector_20
-                0x000016e4       0x48 build/usart0.o
-                0x000016e4                __vector_20
+                0x000013e4       0x48 build/usart0.o
+                0x000013e4                __vector_20
  .text.__vector_19
-                0x0000172c       0x48 build/usart0.o
-                0x0000172c                __vector_19
+                0x0000142c       0x48 build/usart0.o
+                0x0000142c                __vector_19
  .text._GLOBAL__sub_I_usartDefaultHandler
-                0x00001774        0xe build/usart0.o
+                0x00001474        0xe build/usart0.o
  .text._GLOBAL__sub_D_usartDefaultHandler
-                0x00001782        0xe build/usart0.o
+                0x00001482        0xe build/usart0.o
  .text._ZN12SystemStatusC2Ev
-                0x00001790       0x34 build/systemStatus.o
-                0x00001790                _ZN12SystemStatusC2Ev
-                0x00001790                _ZN12SystemStatusC1Ev
+                0x00001490       0x34 build/systemStatus.o
+                0x00001490                _ZN12SystemStatusC2Ev
+                0x00001490                _ZN12SystemStatusC1Ev
  .text._Z41__static_initialization_and_destruction_0ii
-                0x000017c4       0x1a build/systemStatus.o
+                0x000014c4       0x1a build/systemStatus.o
+ .text._ZN12SystemStatus11getCpuClockEv
+                0x000014de       0x30 build/systemStatus.o
+                0x000014de                _ZN12SystemStatus11getCpuClockEv
  .text._ZN12SystemStatus13readStopwatchEv
-                0x000017de       0x32 build/systemStatus.o
-                0x000017de                _ZN12SystemStatus13readStopwatchEv
+                0x0000150e       0x32 build/systemStatus.o
+                0x0000150e                _ZN12SystemStatus13readStopwatchEv
  .text._GLOBAL__sub_I_systemStatus
-                0x00001810        0xe build/systemStatus.o
+                0x00001540        0xe build/systemStatus.o
  .text._GLOBAL__sub_D_systemStatus
-                0x0000181e        0xe build/systemStatus.o
- .text._Z16getFingerprintIDP20Adafruit_Fingerprint
-                0x0000182c      0x1a2 build/main.o
-                0x0000182c                _Z16getFingerprintIDP20Adafruit_Fingerprint
- .text.main     0x000019ce       0xc6 build/main.o
-                0x000019ce                main
+                0x0000154e        0xe build/systemStatus.o
+ .text._Z7bitbangh
+                0x0000155c       0xd2 build/main.o
+                0x0000155c                _Z7bitbangh
+ .text._Z15usartsendstringPc
+                0x0000162e       0x38 build/main.o
+                0x0000162e                _Z15usartsendstringPc
+ .text.main     0x00001666      0x114 build/main.o
+                0x00001666                main
  .text._Z22timer0CompareACallbackv
-                0x00001a94        0x6 build/main.o
-                0x00001a94                _Z22timer0CompareACallbackv
- .text.libgcc   0x00001a9a        0xc c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
-                0x00001a9a                __tablejump2__
+                0x0000177a        0x6 build/main.o
+                0x0000177a                _Z22timer0CompareACallbackv
+ .text.libgcc.div
+                0x00001780       0x44 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001780                __udivmodsi4
+ .text.libgcc   0x000017c4        0xc c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+                0x000017c4                __tablejump2__
+ .text.libgcc.mul
+                0x000017d0       0x1e c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+                0x000017d0                __umulhisi3
+ .text.libgcc.mul
+                0x000017ee       0x16 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+                0x000017ee                __muluhisi3
+ .text.libgcc.builtins
+                0x00001804       0x3a c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+                0x00001804                __ashrdi3
+                0x00001808                __lshrdi3
  .text.avr-libc
-                0x00001aa6       0x12 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x00001aa6                memcpy
+                0x0000183e       0x2c c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(printf.o)
+                0x0000183e                printf
  .text.avr-libc
-                0x00001ab8       0x2c c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(printf.o)
-                0x00001ab8                printf
+                0x0000186a      0x402 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x0000186a                vfprintf
  .text.avr-libc
-                0x00001ae4      0x402 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x00001ae4                vfprintf
+                0x00001c6c       0x16 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00001c6c                strnlen_P
  .text.avr-libc
-                0x00001ee6       0x16 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x00001ee6                strnlen_P
+                0x00001c82       0x16 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x00001c82                strnlen
  .text.avr-libc
-                0x00001efc       0x16 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x00001efc                strnlen
+                0x00001c98       0x60 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00001c98                fputc
  .text.avr-libc
-                0x00001f12       0x60 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x00001f12                fputc
- .text.avr-libc
-                0x00001f72       0xbc c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x00001f72                __ultoa_invert
+                0x00001cf8       0xbc c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00001cf8                __ultoa_invert
  .text.libgcc.prologue
-                0x0000202e       0x38 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
-                0x0000202e                __prologue_saves__
+                0x00001db4       0x38 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+                0x00001db4                __prologue_saves__
  .text.libgcc.prologue
-                0x00002066       0x36 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
-                0x00002066                __epilogue_restores__
-                0x0000209c                . = ALIGN (0x2)
+                0x00001dec       0x36 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+                0x00001dec                __epilogue_restores__
+                0x00001e22                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000209c        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
-                0x0000209c                _exit
-                0x0000209c                exit
+ .fini9         0x00001e22        0x0 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x00001e22                _exit
+                0x00001e22                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x0000209c       0x16 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
-                0x0000209c                __do_global_dtors
+ .fini6         0x00001e22       0x16 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
+                0x00001e22                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1638,19 +1617,21 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000020b2        0x4 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00001e38        0x4 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x000020b6                . = ALIGN (0x2)
+                0x00001e3c                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
+ .jumptables.gcc._ZN6Usart04initEv
+                0x00001e3c       0x10 build/usart0.o
  .jumptables.gcc._ZN6Usart014setFrameFormatENS_11FrameFormatE
-                0x000020b6       0x94 build/usart0.o
-                0x0000214a                _etext = .
+                0x00001e4c       0x94 build/usart0.o
+                0x00001ee0                _etext = .
 
-.data           0x00800100      0x120 load address 0x0000214a
+.data           0x00800100       0x64 load address 0x00001ee0
                 0x00800100                PROVIDE (__data_start = .)
  *(.data)
  *(.data*)
@@ -1663,68 +1644,69 @@ END GROUP
  .rodata._ZTV3Twi
                 0x00800114       0x14 build/twi.o
                 0x00800114                _ZTV3Twi
- .rodata._Z16getFingerprintIDP20Adafruit_Fingerprint.str1.1
-                0x00800128       0xdd build/main.o
+ .rodata._Z15usartsendstringPc.str1.1
+                0x00800128       0x12 build/main.o
  .rodata.main.str1.1
-                0x00800205       0x1b build/main.o
+                0x0080013a       0x29 build/main.o
  *(.gnu.linkonce.r*)
-                0x00800220                . = ALIGN (0x2)
-                0x00800220                _edata = .
-                0x00800220                PROVIDE (__data_end = .)
+                0x00800164                . = ALIGN (0x2)
+ *fill*         0x00800163        0x1 
+                0x00800164                _edata = .
+                0x00800164                PROVIDE (__data_end = .)
 
-.bss            0x00800220       0x78
-                0x00800220                PROVIDE (__bss_start = .)
+.bss            0x00800164       0x78
+                0x00800164                PROVIDE (__bss_start = .)
  *(.bss)
- .bss           0x00800220        0x6 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
-                0x00800220                __iob
+ .bss           0x00800164        0x6 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(iob.o)
+                0x00800164                __iob
  *(.bss*)
- .bss.adc       0x00800226        0x9 build/adc.o
-                0x00800226                adc
- .bss.int0      0x0080022f        0x4 build/int0.o
-                0x0080022f                int0
- .bss.int1      0x00800233        0x4 build/int1.o
-                0x00800233                int1
- .bss.pcint0    0x00800237        0x4 build/pcint0.o
-                0x00800237                pcint0
- .bss.pcint1    0x0080023b        0x4 build/pcint1.o
-                0x0080023b                pcint1
- .bss.pcint2    0x0080023f        0x4 build/pcint2.o
-                0x0080023f                pcint2
- .bss.timer0    0x00800243        0x5 build/timer0.o
-                0x00800243                timer0
- .bss.timer1    0x00800248        0x5 build/timer1.o
-                0x00800248                timer1
- .bss.timer2    0x0080024d        0x5 build/timer2.o
-                0x0080024d                timer2
+ .bss.adc       0x0080016a        0x9 build/adc.o
+                0x0080016a                adc
+ .bss.int0      0x00800173        0x4 build/int0.o
+                0x00800173                int0
+ .bss.int1      0x00800177        0x4 build/int1.o
+                0x00800177                int1
+ .bss.pcint0    0x0080017b        0x4 build/pcint0.o
+                0x0080017b                pcint0
+ .bss.pcint1    0x0080017f        0x4 build/pcint1.o
+                0x0080017f                pcint1
+ .bss.pcint2    0x00800183        0x4 build/pcint2.o
+                0x00800183                pcint2
+ .bss.timer0    0x00800187        0x5 build/timer0.o
+                0x00800187                timer0
+ .bss.timer1    0x0080018c        0x5 build/timer1.o
+                0x0080018c                timer1
+ .bss.timer2    0x00800191        0x5 build/timer2.o
+                0x00800191                timer2
  .bss._ZZN3Twi16interruptHandlerEvE16twiBufferPointer
-                0x00800252        0x1 build/twi.o
- .bss.twi       0x00800253       0x13 build/twi.o
-                0x00800253                twi
+                0x00800196        0x1 build/twi.o
+ .bss.twi       0x00800197       0x13 build/twi.o
+                0x00800197                twi
  .bss.usartStream
-                0x00800266        0xe build/usart0.o
-                0x00800266                usartStream
- .bss.usart0    0x00800274        0xc build/usart0.o
-                0x00800274                usart0
+                0x008001aa        0xe build/usart0.o
+                0x008001aa                usartStream
+ .bss.usart0    0x008001b8        0xc build/usart0.o
+                0x008001b8                usart0
  .bss.usartDefaultHandler
-                0x00800280        0x2 build/usart0.o
-                0x00800280                usartDefaultHandler
+                0x008001c4        0x2 build/usart0.o
+                0x008001c4                usartDefaultHandler
  .bss.systemStatus
-                0x00800282       0x15 build/systemStatus.o
-                0x00800282                systemStatus
+                0x008001c6       0x15 build/systemStatus.o
+                0x008001c6                systemStatus
  .bss.timer0flag
-                0x00800297        0x1 build/main.o
-                0x00800297                timer0flag
+                0x008001db        0x1 build/main.o
+                0x008001db                timer0flag
  *(COMMON)
-                0x00800298                PROVIDE (__bss_end = .)
-                0x0000214a                __data_load_start = LOADADDR (.data)
-                0x0000226a                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x008001dc                PROVIDE (__bss_end = .)
+                0x00001ee0                __data_load_start = LOADADDR (.data)
+                0x00001f44                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800298        0x0
+.noinit         0x008001dc        0x0
                 [!provide]                PROVIDE (__noinit_start = .)
  *(.noinit .noinit.* .gnu.linkonce.n.*)
                 [!provide]                PROVIDE (__noinit_end = .)
-                0x00800298                _end = .
-                0x00800298                PROVIDE (__heap_start = .)
+                0x008001dc                _end = .
+                0x008001dc                PROVIDE (__heap_start = .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1802,7 +1784,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x9e8
+.debug_aranges  0x00000000      0xa80
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0xf0 build/Adafruit_Fingerprint.o
@@ -1831,161 +1813,185 @@ END GROUP
  .debug_aranges
                 0x00000800       0x98 build/systemStatus.o
  .debug_aranges
-                0x00000898       0x50 build/main.o
+                0x00000898       0x68 build/main.o
  .debug_aranges
-                0x000008e8       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x00000900       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
  .debug_aranges
-                0x00000908       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000920       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
  .debug_aranges
-                0x00000928       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                0x00000940       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
  .debug_aranges
-                0x00000948       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000960       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
  .debug_aranges
-                0x00000968       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+                0x00000980       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
  .debug_aranges
-                0x00000988       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
+                0x000009a0       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
  .debug_aranges
-                0x000009a8       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+                0x000009c0       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
  .debug_aranges
-                0x000009c8       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+                0x000009e0       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_aranges
+                0x00000a00       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_aranges
+                0x00000a20       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_aranges
+                0x00000a40       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_aranges
+                0x00000a60       0x20 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xbeaa
+.debug_info     0x00000000     0xc394
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_info    0x000005f4     0x205c build/Adafruit_Fingerprint.o
- .debug_info    0x00002650      0xc20 build/adc.o
- .debug_info    0x00003270      0x5ba build/int0.o
- .debug_info    0x0000382a      0x5ba build/int1.o
- .debug_info    0x00003de4      0x671 build/pcint0.o
- .debug_info    0x00004455      0x66b build/pcint1.o
- .debug_info    0x00004ac0      0x671 build/pcint2.o
- .debug_info    0x00005131      0x9c6 build/timer0.o
- .debug_info    0x00005af7      0xb72 build/timer1.o
- .debug_info    0x00006669      0x9c6 build/timer2.o
- .debug_info    0x0000702f     0x1528 build/twi.o
- .debug_info    0x00008557     0x155d build/usart0.o
- .debug_info    0x00009ab4      0x8a8 build/systemStatus.o
- .debug_info    0x0000a35c     0x1a2e build/main.o
- .debug_info    0x0000bd8a       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
- .debug_info    0x0000bdae       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
- .debug_info    0x0000bdd2       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
- .debug_info    0x0000bdf6       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
- .debug_info    0x0000be1a       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
- .debug_info    0x0000be3e       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
- .debug_info    0x0000be62       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
- .debug_info    0x0000be86       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .debug_info    0x000005f4     0x20b2 build/Adafruit_Fingerprint.o
+ .debug_info    0x000026a6      0xc20 build/adc.o
+ .debug_info    0x000032c6      0x5ba build/int0.o
+ .debug_info    0x00003880      0x5ba build/int1.o
+ .debug_info    0x00003e3a      0x671 build/pcint0.o
+ .debug_info    0x000044ab      0x66b build/pcint1.o
+ .debug_info    0x00004b16      0x671 build/pcint2.o
+ .debug_info    0x00005187      0x9c6 build/timer0.o
+ .debug_info    0x00005b4d      0xb72 build/timer1.o
+ .debug_info    0x000066bf      0x9c6 build/timer2.o
+ .debug_info    0x00007085     0x1528 build/twi.o
+ .debug_info    0x000085ad     0x1589 build/usart0.o
+ .debug_info    0x00009b36      0x8a8 build/systemStatus.o
+ .debug_info    0x0000a3de     0x1e06 build/main.o
+ .debug_info    0x0000c1e4       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_info    0x0000c208       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x0000c22c       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_info    0x0000c250       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x0000c274       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_info    0x0000c298       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_info    0x0000c2bc       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
+ .debug_info    0x0000c2e0       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_info    0x0000c304       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_info    0x0000c328       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_info    0x0000c34c       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_info    0x0000c370       0x24 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
 
-.debug_abbrev   0x00000000     0x354e
+.debug_abbrev   0x00000000     0x3628
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x4a3 build/Adafruit_Fingerprint.o
- .debug_abbrev  0x00000a45      0x318 build/adc.o
- .debug_abbrev  0x00000d5d      0x282 build/int0.o
- .debug_abbrev  0x00000fdf      0x282 build/int1.o
- .debug_abbrev  0x00001261      0x280 build/pcint0.o
- .debug_abbrev  0x000014e1      0x280 build/pcint1.o
- .debug_abbrev  0x00001761      0x280 build/pcint2.o
- .debug_abbrev  0x000019e1      0x2f5 build/timer0.o
- .debug_abbrev  0x00001cd6      0x2e0 build/timer1.o
- .debug_abbrev  0x00001fb6      0x2f5 build/timer2.o
- .debug_abbrev  0x000022ab      0x4de build/twi.o
- .debug_abbrev  0x00002789      0x4f7 build/usart0.o
- .debug_abbrev  0x00002c80      0x2d4 build/systemStatus.o
- .debug_abbrev  0x00002f54      0x55a build/main.o
- .debug_abbrev  0x000034ae       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
- .debug_abbrev  0x000034c2       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
- .debug_abbrev  0x000034d6       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
- .debug_abbrev  0x000034ea       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
- .debug_abbrev  0x000034fe       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
- .debug_abbrev  0x00003512       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
- .debug_abbrev  0x00003526       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
- .debug_abbrev  0x0000353a       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .debug_abbrev  0x000005a2      0x4bd build/Adafruit_Fingerprint.o
+ .debug_abbrev  0x00000a5f      0x318 build/adc.o
+ .debug_abbrev  0x00000d77      0x282 build/int0.o
+ .debug_abbrev  0x00000ff9      0x282 build/int1.o
+ .debug_abbrev  0x0000127b      0x280 build/pcint0.o
+ .debug_abbrev  0x000014fb      0x280 build/pcint1.o
+ .debug_abbrev  0x0000177b      0x280 build/pcint2.o
+ .debug_abbrev  0x000019fb      0x2f5 build/timer0.o
+ .debug_abbrev  0x00001cf0      0x2e0 build/timer1.o
+ .debug_abbrev  0x00001fd0      0x2f5 build/timer2.o
+ .debug_abbrev  0x000022c5      0x4de build/twi.o
+ .debug_abbrev  0x000027a3      0x511 build/usart0.o
+ .debug_abbrev  0x00002cb4      0x2d4 build/systemStatus.o
+ .debug_abbrev  0x00002f88      0x5b0 build/main.o
+ .debug_abbrev  0x00003538       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x0000354c       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x00003560       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_abbrev  0x00003574       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x00003588       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x0000359c       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_abbrev  0x000035b0       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
+ .debug_abbrev  0x000035c4       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_abbrev  0x000035d8       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_abbrev  0x000035ec       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_abbrev  0x00003600       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_abbrev  0x00003614       0x14 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
 
-.debug_line     0x00000000     0x882d
+.debug_line     0x00000000     0x8e55
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1d c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_line    0x0000001d     0x156a build/Adafruit_Fingerprint.o
- .debug_line    0x00001587      0xba4 build/adc.o
- .debug_line    0x0000212b      0x39c build/int0.o
- .debug_line    0x000024c7      0x3ac build/int1.o
- .debug_line    0x00002873      0x46a build/pcint0.o
- .debug_line    0x00002cdd      0x47c build/pcint1.o
- .debug_line    0x00003159      0x46a build/pcint2.o
- .debug_line    0x000035c3      0x646 build/timer0.o
- .debug_line    0x00003c09      0x762 build/timer1.o
- .debug_line    0x0000436b      0x646 build/timer2.o
- .debug_line    0x000049b1     0x1356 build/twi.o
- .debug_line    0x00005d07     0x14a8 build/usart0.o
- .debug_line    0x000071af      0x7a3 build/systemStatus.o
- .debug_line    0x00007952      0xa4f build/main.o
- .debug_line    0x000083a1       0x51 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
- .debug_line    0x000083f2       0x69 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
- .debug_line    0x0000845b       0x87 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
- .debug_line    0x000084e2       0x75 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
- .debug_line    0x00008557       0x81 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
- .debug_line    0x000085d8       0x81 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
- .debug_line    0x00008659       0xed c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
- .debug_line    0x00008746       0xe7 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .debug_line    0x0000001d     0x15a4 build/Adafruit_Fingerprint.o
+ .debug_line    0x000015c1      0xba4 build/adc.o
+ .debug_line    0x00002165      0x39c build/int0.o
+ .debug_line    0x00002501      0x3ac build/int1.o
+ .debug_line    0x000028ad      0x46a build/pcint0.o
+ .debug_line    0x00002d17      0x47c build/pcint1.o
+ .debug_line    0x00003193      0x46a build/pcint2.o
+ .debug_line    0x000035fd      0x646 build/timer0.o
+ .debug_line    0x00003c43      0x762 build/timer1.o
+ .debug_line    0x000043a5      0x646 build/timer2.o
+ .debug_line    0x000049eb     0x1356 build/twi.o
+ .debug_line    0x00005d41     0x1499 build/usart0.o
+ .debug_line    0x000071da      0x7a3 build/systemStatus.o
+ .debug_line    0x0000797d      0xd28 build/main.o
+ .debug_line    0x000086a5      0x111 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_line    0x000087b6       0x51 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x00008807       0x69 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_line    0x00008870       0x87 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x000088f7       0x75 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line    0x0000896c       0x81 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_line    0x000089ed       0x81 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
+ .debug_line    0x00008a6e       0x9f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_line    0x00008b0d       0x81 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_line    0x00008b8e       0xf3 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_line    0x00008c81       0xed c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_line    0x00008d6e       0xe7 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
 
-.debug_frame    0x00000000     0x1b1c
+.debug_frame    0x00000000     0x1b08
  *(.debug_frame)
- .debug_frame   0x00000000      0x410 build/Adafruit_Fingerprint.o
- .debug_frame   0x00000410      0x1dc build/adc.o
- .debug_frame   0x000005ec      0x10c build/int0.o
- .debug_frame   0x000006f8      0x10c build/int1.o
- .debug_frame   0x00000804      0x11c build/pcint0.o
- .debug_frame   0x00000920      0x11c build/pcint1.o
- .debug_frame   0x00000a3c      0x11c build/pcint2.o
- .debug_frame   0x00000b58      0x1fc build/timer0.o
- .debug_frame   0x00000d54      0x28c build/timer1.o
- .debug_frame   0x00000fe0      0x214 build/timer2.o
- .debug_frame   0x000011f4      0x2f0 build/twi.o
- .debug_frame   0x000014e4      0x344 build/usart0.o
- .debug_frame   0x00001828      0x174 build/systemStatus.o
- .debug_frame   0x0000199c      0x180 build/main.o
+ .debug_frame   0x00000000      0x41c build/Adafruit_Fingerprint.o
+ .debug_frame   0x0000041c      0x1dc build/adc.o
+ .debug_frame   0x000005f8      0x10c build/int0.o
+ .debug_frame   0x00000704      0x10c build/int1.o
+ .debug_frame   0x00000810      0x11c build/pcint0.o
+ .debug_frame   0x0000092c      0x11c build/pcint1.o
+ .debug_frame   0x00000a48      0x11c build/pcint2.o
+ .debug_frame   0x00000b64      0x1fc build/timer0.o
+ .debug_frame   0x00000d60      0x28c build/timer1.o
+ .debug_frame   0x00000fec      0x214 build/timer2.o
+ .debug_frame   0x00001200      0x2f0 build/twi.o
+ .debug_frame   0x000014f0      0x368 build/usart0.o
+ .debug_frame   0x00001858      0x174 build/systemStatus.o
+ .debug_frame   0x000019cc      0x13c build/main.o
 
-.debug_str      0x00000000     0x4d9e
+.debug_str      0x00000000     0x4e05
  *(.debug_str)
  .debug_str     0x00000000      0x20b c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
- .debug_str     0x0000020b     0x18d7 build/Adafruit_Fingerprint.o
-                               0x1a89 (size before relaxing)
- .debug_str     0x00001ae2      0x727 build/adc.o
+ .debug_str     0x0000020b     0x18de build/Adafruit_Fingerprint.o
+                               0x1a90 (size before relaxing)
+ .debug_str     0x00001ae9      0x727 build/adc.o
                                 0xd57 (size before relaxing)
- .debug_str     0x00002209      0x1b2 build/int0.o
+ .debug_str     0x00002210      0x1b2 build/int0.o
                                 0x86c (size before relaxing)
- .debug_str     0x000023bb      0x144 build/int1.o
+ .debug_str     0x000023c2      0x144 build/int1.o
                                 0x86c (size before relaxing)
- .debug_str     0x000024ff      0x260 build/pcint0.o
+ .debug_str     0x00002506      0x260 build/pcint0.o
                                 0x8e5 (size before relaxing)
- .debug_str     0x0000275f      0x1e7 build/pcint1.o
+ .debug_str     0x00002766      0x1e7 build/pcint1.o
                                 0x8df (size before relaxing)
- .debug_str     0x00002946      0x1f5 build/pcint2.o
+ .debug_str     0x0000294d      0x1f5 build/pcint2.o
                                 0x8ed (size before relaxing)
- .debug_str     0x00002b3b      0x79c build/timer0.o
+ .debug_str     0x00002b42      0x79c build/timer0.o
                                 0xe9a (size before relaxing)
- .debug_str     0x000032d7      0x75e build/timer1.o
+ .debug_str     0x000032de      0x75e build/timer1.o
                                0x1178 (size before relaxing)
- .debug_str     0x00003a35      0x466 build/timer2.o
+ .debug_str     0x00003a3c      0x466 build/timer2.o
                                 0xe93 (size before relaxing)
- .debug_str     0x00003e9b      0x9bb build/twi.o
+ .debug_str     0x00003ea2      0x9bb build/twi.o
                                0x10bf (size before relaxing)
- .debug_str     0x00004856      0x2a5 build/usart0.o
-                               0x19eb (size before relaxing)
- .debug_str     0x00004afb       0xca build/systemStatus.o
+ .debug_str     0x0000485d      0x2a5 build/usart0.o
+                               0x19f2 (size before relaxing)
+ .debug_str     0x00004b02       0xca build/systemStatus.o
                                 0xac6 (size before relaxing)
- .debug_str     0x00004bc5      0x17a build/main.o
-                               0x21e1 (size before relaxing)
- .debug_str     0x00004d3f       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
- .debug_str     0x00004d9e       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
- .debug_str     0x00004d9e       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
- .debug_str     0x00004d9e       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
- .debug_str     0x00004d9e       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
- .debug_str     0x00004d9e       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
- .debug_str     0x00004d9e       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
- .debug_str     0x00004d9e       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
+ .debug_str     0x00004bcc      0x1da build/main.o
+                               0x2270 (size before relaxing)
+ .debug_str     0x00004da6       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ctors.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
+ .debug_str     0x00004e05       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
 
 .debug_loc
  *(.debug_loc)
@@ -2060,8 +2066,10 @@ END GROUP
                 0x000003a9       0x6c build/main.o
                                 0x1b9 (size before relaxing)
  .debug_line_str
-                0x00000415       0x53 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x00000415       0x53 c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
                                  0x5f (size before relaxing)
+ .debug_line_str
+                0x00000468       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
  .debug_line_str
                 0x00000468       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
  .debug_line_str
@@ -2073,12 +2081,18 @@ END GROUP
  .debug_line_str
                 0x00000468       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_dtors.o)
  .debug_line_str
+                0x00000468       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_umulhisi3.o)
+ .debug_line_str
+                0x00000468       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_muluhisi3.o)
+ .debug_line_str
+                0x00000468       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_ashrdi3.o)
+ .debug_line_str
                 0x00000468       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_prologue.o)
  .debug_line_str
                 0x00000468       0x5f c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_epilogue.o)
 
 .debug_loclists
-                0x00000000     0x2a33
+                0x00000000     0x2abf
  *(.debug_loclists)
  .debug_loclists
                 0x00000000      0x638 build/Adafruit_Fingerprint.o
@@ -2103,11 +2117,11 @@ END GROUP
  .debug_loclists
                 0x000015ff      0x7b2 build/twi.o
  .debug_loclists
-                0x00001db1      0x68e build/usart0.o
+                0x00001db1      0x6cc build/usart0.o
  .debug_loclists
-                0x0000243f      0x3fd build/systemStatus.o
+                0x0000247d      0x3fd build/systemStatus.o
  .debug_loclists
-                0x0000283c      0x1f7 build/main.o
+                0x0000287a      0x245 build/main.o
 
 .debug_macro
  *(.debug_macro)
@@ -2116,7 +2130,7 @@ END GROUP
  *(.debug_names)
 
 .debug_rnglists
-                0x00000000      0x6ab
+                0x00000000      0x6bd
  *(.debug_rnglists)
  .debug_rnglists
                 0x00000000       0xce build/Adafruit_Fingerprint.o
@@ -2145,7 +2159,7 @@ END GROUP
  .debug_rnglists
                 0x00000602       0x6e build/systemStatus.o
  .debug_rnglists
-                0x00000670       0x3b build/main.o
+                0x00000670       0x4d build/main.o
 
 .debug_str_offsets
  *(.debug_str_offsets)
@@ -2158,7 +2172,10 @@ LOAD linker stubs
 Cross Reference Table
 
 Symbol                                            File
-_Z10sendstringPPc                                 build/main.o
+_Z10sendstringPc                                  build/main.o
+_Z11uartgetcharv                                  build/main.o
+_Z14usartgetstringPc                              build/main.o
+_Z15usartsendstringPc                             build/main.o
 _Z16getFingerprintIDP20Adafruit_Fingerprint       build/main.o
 _Z18getFingerprintIDezP20Adafruit_Fingerprint     build/main.o
 _Z21int0InterruptCallbackv                        build/int0.o
@@ -2397,6 +2414,7 @@ _ZN6Timer2D2Ev                                    build/timer2.o
 _ZN6Usart011sendDataStdEcP6__file                 build/usart0.o
 _ZN6Usart011setBaudRateENS_8BaudRateE             build/usart0.o
 _ZN6Usart011setDataSizeENS_8DataSizeE             build/usart0.o
+                                                  build/main.o
 _ZN6Usart011setStopBitsENS_8StopBitsE             build/usart0.o
 _ZN6Usart014receiveDataStdEP6__file               build/usart0.o
 _ZN6Usart014setFrameFormatENS_11FrameFormatE      build/usart0.o
@@ -2407,6 +2425,7 @@ _ZN6Usart018getReceptionStatusEPNS_14ReceptionErrorE build/usart0.o
 _ZN6Usart020flushReceptionBufferEv                build/usart0.o
 _ZN6Usart022_clearDataOverrunErrorEv              build/usart0.o
 _ZN6Usart04initEv                                 build/usart0.o
+                                                  build/main.o
 _ZN6Usart04readEPh                                build/usart0.o
                                                   build/Adafruit_Fingerprint.o
 _ZN6Usart05writeEj                                build/usart0.o
@@ -2515,6 +2534,7 @@ __do_copy_data                                    c:/d/ifsc/vscodeleandro/ex/too
                                                   build/main.o
                                                   build/sound.o
                                                   build/dateTime.o
+                                                  build/usart0.o
                                                   build/twi.o
                                                   build/sevenSegmentsMuxDisplay.o
                                                   build/Adafruit_Fingerprint.o
@@ -2676,6 +2696,8 @@ pcint1                                            build/pcint1.o
 pcint2                                            build/pcint2.o
 printf                                            c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(printf.o)
                                                   build/main.o
+                                                  build/usart0.o
+                                                  build/Adafruit_Fingerprint.o
 realloc                                           c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(realloc.o)
                                                   build/keypad.o
 strnlen                                           c:/d/ifsc/vscodeleandro/ex/toolchains/avr-gcc/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(strnlen.o)

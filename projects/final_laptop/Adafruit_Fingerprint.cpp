@@ -147,6 +147,8 @@ uint8_t Adafruit_Fingerprint::getParameters(void) {
 */
 /**************************************************************************/
 uint8_t Adafruit_Fingerprint::getImage(void) {
+  printf("entrou na imageblau ");
+  printf("%d",FINGERPRINT_GETIMAGE);
   SEND_CMD_PACKET(FINGERPRINT_GETIMAGE);
 }
 
@@ -432,7 +434,7 @@ uint8_t Adafruit_Fingerprint::setPacketSize(uint8_t size) {
 
 void Adafruit_Fingerprint::writeStructuredPacket(
     const Adafruit_Fingerprint_Packet &packet) {
-
+  printf("entrounaadafruit");
   mySerial->write((uint8_t)(packet.start_code >> 8));
   mySerial->write((uint8_t)(packet.start_code & 0xFF));
   mySerial->write(packet.address[0]);

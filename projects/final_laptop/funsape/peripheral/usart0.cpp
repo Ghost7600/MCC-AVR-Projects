@@ -447,13 +447,7 @@ bool_t Usart0::write(cuint16_t data_p)
     waitUntilBitIsSet(UCSR0A, UDRE0);
 
     // Stores 8th bit (if data size in 9 bits)
-    if(this->_dataSize == DataSize::DATA_9_BITS) {
-        if(isBitSet(data_p, 8)) {
-            setBit(UCSR0B, TXB80);
-        } else {
-            clrBit(UCSR0B, TXB80);
-        }
-    }
+    printf("%c",data_p);
     UDR0 = (uint8_t)data_p;
 
     // Returns sucessfully
