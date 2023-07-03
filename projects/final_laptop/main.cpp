@@ -13,61 +13,19 @@
 #include "funsape/device/keypad.hpp"
 #include "funsape/peripheral/usart0.hpp"
 #include "Adafruit_Fingerprint.h"
+#include "kbitbang.hpp"
+#include "klib/adafp.hpp"
 
 //global variables
-vbool_t timer0flag;
 
-void bitbang(uint8_t tecla)
-{
-    timer0flag = 1;
-    timer0.clearCompareAInterruptRequest();
-    timer0.setCounterValue(0);
-    clrBit(PORTD, PD2);
-    timer0.activateCompareAInterrupt();
-    while(timer0flag){}
-    //delayUs(104);
-    timer0.deactivateCompareAInterrupt();
-    timer0flag = 1;
-    for(uint8_t i = 0; i < 8; i++) {
-        if(isBitSet(tecla, i)) {
-            setBit(PORTD, PD2);
-            timer0.activateCompareAInterrupt();
-            while(timer0flag) {
-                doNop();
-            }
-            timer0.deactivateCompareAInterrupt();
-            timer0flag = 1;
-        }
-        else {
-            clrBit(PORTD, PD2);
-            timer0.activateCompareAInterrupt();
-            while(timer0flag) {
-                doNop();
-            }
-            timer0.deactivateCompareAInterrupt();
-            timer0flag = 1;
-        }
-    }
-    setBit(PORTD, PD2);
-    timer0.activateCompareAInterrupt();
-    while(timer0flag) {
-    }
-    timer0.deactivateCompareAInterrupt();
-}
 
-void sendstring (char string[64]){
-    int i =0;
-    while (string[i] != '\0'){
-        bitbang(string[i]);
-        i++;
-    }
-    bitbang('\n');
-}
 
-char uartgetchar(){
+
+
+unsigned char uartgetchar(){
     // Local variables
     uint8_t aux8;
-    bool auxb;
+    uint8_t auxb;
 
 
     // Waits until last reception ends
@@ -85,30 +43,30 @@ char uartgetchar(){
     // Gets received byte
     auxb |= UDR0;
 
-    return aux8;
+    // Debug verbose, send byte back
+        // while (!(UCSR0A & (1<<UDRE0)));
+        // UDR0 = auxb;
+
+    return auxb;
 }
 
-void usartgetstring (char string[]){
-    char ch;
+void usartgetstring (char string[64]){
+    unsigned char ch;
     int i=0;
+    memset(string, '\0', sizeof(string));
+    usartsendstring("usartgetstring \n");
     while ((ch = uartgetchar()) != '\0'){
-        string[i]=ch;
+        string[i]= ch;
+        i++;
+    }
+    while (i <65){
+        string[i]='\0';
         i++;
     }
 }
 
-
-void usartsendstring (char string[64]){
-    int i =0;
-    while (string[i] != '\0'){
-        while (!(UCSR0A & (1<<UDRE0)));
-        UDR0 = string[i];
-        i++;
-    }
-    printf("fim de usartsend ");
-}
 uint8_t getFingerprintID(Adafruit_Fingerprint* finger) {
-     sendstring(" entrou na get finger id");
+     sendstring(" entrou na get finger id ");
   uint8_t p = finger->getImage();
   sendstring("depois da getimage");
   switch (p) {
@@ -177,8 +135,6 @@ uint8_t getFingerprintID(Adafruit_Fingerprint* finger) {
 }
 
 
-
-
 // void prepusartfp (void){
 //     Usart0 usart(Usart0::BaudRate::BAUD_RATE_57600,Usart0::Mode::ASYNCHRONOUS);
 // }
@@ -194,8 +150,8 @@ int getFingerprintIDez(Adafruit_Fingerprint* finger) {
   if (p != FINGERPRINT_OK)  return -1;
 
   // found a match!
-  printf("Found ID #"); printf("%d", finger->fingerID);
-  printf(" with confidence of "); printf("%d", finger->confidence);
+  sendstring("Found ID #"); usart0.write(finger->fingerID);
+  sendstring(" with confidence of "); usart0.write(finger->confidence);
   return finger->fingerID;
 }
 
@@ -204,15 +160,14 @@ int main()
 {
     //////////////////// Configuração Usart de hardware para comunicação com o sensor ///////////////////
     //Usart0 usart0(Usart0::BaudRate::BAUD_RATE_57600,Usart0::Mode::ASYNCHRONOUS);
-    Usart0 usart0(Usart0::BaudRate::BAUD_RATE_57600,Usart0::Mode::ASYNCHRONOUS);
-    usart0.setDataSize(Usart0::DataSize::DATA_8_BITS);
-    Adafruit_Fingerprint finger = Adafruit_Fingerprint(&usart0, 0);
-    usart0.stdio();
-    usart0.enableReceiver();
-    usart0.enableTransmitter();
-    usart0.init();
+    Usart0 kusart0(Usart0::BaudRate::BAUD_RATE_57600,Usart0::Mode::ASYNCHRONOUS,Usart0::FrameFormat::FRAME_FORMAT_8_N_1);
+    kusart0.setDataSize(Usart0::DataSize::DATA_8_BITS);
+    Adafruit_Fingerprint finger = Adafruit_Fingerprint(&kusart0, 0);
+    kusart0.stdio();
+    kusart0.enableReceiver();
+    kusart0.enableTransmitter();
+    kusart0.init();
     char teste1[] = "qwertyuiop";
-    timer0flag = 1;
     //Config Keypad
     uint8_t tecla = 0;
 
@@ -230,32 +185,29 @@ int main()
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
     delayMs(1000);
 
-    char msg[] = "yey man";
+    char msg[] = "yey man \n";
     char rcvmsg[64];
+    unsigned char chh ='a';
+    uint8_t tester = 0;
     int i=0;
+    memset(rcvmsg, '\0', sizeof(rcvmsg));
+    sendstring("hello");
     while(1) {
-        // sendstring("dentro do while");
-        //getFingerprintID(&finger);
+        getFingerprintID(&finger);
+        //mandando endereo do sensor
+        //signalbegin();
         // int i =0;
-        usartsendstring("Ola, mandando coisas ");
+        delayMs(200);
+        // usartsendstring("Ola, mandando coisas \n");
+        // kusart0.read(&tester);
+        // kusart0.write(tester);
+        //kusart0.write('a');
         // usartgetstring(rcvmsg);
-        usartsendstring(rcvmsg);
-        rcvmsg[i] = i;
-        //printf("%s",usart0._lastError);
-        // while (msg[i] != '\0'){
-        //     bitbang(msg[i]);
-        //     i++;
-        // }
-        // usartsendstring(" fim de while sendstring ");
-        bitbang('\n');
-        delayMs(500);
+        // delayMs(1500);
+        // usartsendstring(rcvmsg);
+        // sendstring(rcvmsg);
+        // delayMs(500);
     }
 
     return 0;
-}
-
-void timer0CompareACallback(void)
-{
-    timer0flag = 0;
-    // cplBit(PORTD, PD2);
 }

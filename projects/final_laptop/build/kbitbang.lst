@@ -1,0 +1,2135 @@
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 1
+
+
+   1               		.file	"kbitbang.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               	.Ltext0:
+   9               		.cfi_sections	.debug_frame
+  10               		.file 0 "F:\\IMPORTANTE\\Faculdade\\MCC\\MCC-AVR-Projects\\projects\\final_laptop" "kbitbang.cpp"
+  11               		.section	.text._Z7getTickv,"ax",@progbits
+  12               		.weak	_Z7getTickv
+  14               	_Z7getTickv:
+  15               	.LFB32:
+  16               		.file 1 "funsape/globalDefines.hpp"
+   1:funsape/globalDefines.hpp **** //!
+   2:funsape/globalDefines.hpp **** //! \file           globalDefines.hpp
+   3:funsape/globalDefines.hpp **** //! \brief          Global definitions file
+   4:funsape/globalDefines.hpp **** //! \author         Leandro Schwarz (bladabuska+funsapeavr8lib@gmail.com)
+   5:funsape/globalDefines.hpp **** //! \date           2023-04-05
+   6:funsape/globalDefines.hpp **** //! \version        23.04
+   7:funsape/globalDefines.hpp **** //! \copyright      license
+   8:funsape/globalDefines.hpp **** //! \details        Global definitions file.
+   9:funsape/globalDefines.hpp **** //! \todo           Todo list
+  10:funsape/globalDefines.hpp **** //!
+  11:funsape/globalDefines.hpp **** 
+  12:funsape/globalDefines.hpp **** // =============================================================================
+  13:funsape/globalDefines.hpp **** // Include guard (START)
+  14:funsape/globalDefines.hpp **** // =============================================================================
+  15:funsape/globalDefines.hpp **** 
+  16:funsape/globalDefines.hpp **** #ifndef __GLOBAL_DEFINES_HPP
+  17:funsape/globalDefines.hpp **** #define __GLOBAL_DEFINES_HPP                    2304
+  18:funsape/globalDefines.hpp **** 
+  19:funsape/globalDefines.hpp **** // =============================================================================
+  20:funsape/globalDefines.hpp **** // Basic definitions
+  21:funsape/globalDefines.hpp **** // =============================================================================
+  22:funsape/globalDefines.hpp **** 
+  23:funsape/globalDefines.hpp **** #ifndef F_CPU
+  24:funsape/globalDefines.hpp **** #   define F_CPU    16000000UL
+  25:funsape/globalDefines.hpp **** #endif
+  26:funsape/globalDefines.hpp **** 
+  27:funsape/globalDefines.hpp **** // =============================================================================
+  28:funsape/globalDefines.hpp **** // Dependencies
+  29:funsape/globalDefines.hpp **** // =============================================================================
+  30:funsape/globalDefines.hpp **** 
+  31:funsape/globalDefines.hpp **** //     //////////////////     AVR STANDARD LIBRARY     //////////////////     //
+  32:funsape/globalDefines.hpp **** #include <avr/io.h>
+  33:funsape/globalDefines.hpp **** #include <avr/interrupt.h>
+  34:funsape/globalDefines.hpp **** #include <util/delay.h>
+  35:funsape/globalDefines.hpp **** #include <util/atomic.h>
+  36:funsape/globalDefines.hpp **** 
+  37:funsape/globalDefines.hpp **** //     ///////////////////     STANDARD C LIBRARY     ///////////////////     //
+  38:funsape/globalDefines.hpp **** #include <stddef.h>
+  39:funsape/globalDefines.hpp **** #include <stdint.h>
+  40:funsape/globalDefines.hpp **** #include <stdio.h>
+  41:funsape/globalDefines.hpp **** #include <stdlib.h>
+  42:funsape/globalDefines.hpp **** #include <string.h>
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 2
+
+
+  43:funsape/globalDefines.hpp **** 
+  44:funsape/globalDefines.hpp **** //     //////////////////     LIBRARY DEPENDENCIES     //////////////////     //
+  45:funsape/globalDefines.hpp **** #include "pinout.hpp"
+  46:funsape/globalDefines.hpp **** #if !defined(__PINOUT_HPP)
+  47:funsape/globalDefines.hpp **** #   error "Header file (pinout.hpp) is corrupted!"
+  48:funsape/globalDefines.hpp **** #elif __PINOUT_HPP != __GLOBAL_DEFINES_HPP
+  49:funsape/globalDefines.hpp **** #   error "Version mismatch between header file and library dependency (pinout.hpp)!"
+  50:funsape/globalDefines.hpp **** #endif
+  51:funsape/globalDefines.hpp **** 
+  52:funsape/globalDefines.hpp **** // =============================================================================
+  53:funsape/globalDefines.hpp **** // Undefining previous definitions
+  54:funsape/globalDefines.hpp **** // =============================================================================
+  55:funsape/globalDefines.hpp **** 
+  56:funsape/globalDefines.hpp **** // NONE
+  57:funsape/globalDefines.hpp **** 
+  58:funsape/globalDefines.hpp **** // =============================================================================
+  59:funsape/globalDefines.hpp **** // Constant definitions
+  60:funsape/globalDefines.hpp **** // =============================================================================
+  61:funsape/globalDefines.hpp **** 
+  62:funsape/globalDefines.hpp **** #define inlined                         inline __attribute__((always_inline))
+  63:funsape/globalDefines.hpp **** #define weakened                        __attribute__((weak))
+  64:funsape/globalDefines.hpp **** 
+  65:funsape/globalDefines.hpp **** // =============================================================================
+  66:funsape/globalDefines.hpp **** // New data types
+  67:funsape/globalDefines.hpp **** // =============================================================================
+  68:funsape/globalDefines.hpp **** 
+  69:funsape/globalDefines.hpp **** //     ////////////////////     BASIC VARIABLES     /////////////////////     //
+  70:funsape/globalDefines.hpp **** typedef bool                            bool_t;
+  71:funsape/globalDefines.hpp **** typedef char                            char_t;
+  72:funsape/globalDefines.hpp **** 
+  73:funsape/globalDefines.hpp **** //     ///////////////////     CONSTANT VARIABLES    ////////////////////     //
+  74:funsape/globalDefines.hpp **** typedef const bool_t                    cbool_t;
+  75:funsape/globalDefines.hpp **** typedef const char_t                    cchar_t;
+  76:funsape/globalDefines.hpp **** typedef const int8_t                    cint8_t;
+  77:funsape/globalDefines.hpp **** typedef const int16_t                   cint16_t;
+  78:funsape/globalDefines.hpp **** typedef const int32_t                   cint32_t;
+  79:funsape/globalDefines.hpp **** typedef const int64_t                   cint64_t;
+  80:funsape/globalDefines.hpp **** typedef const uint8_t                   cuint8_t;
+  81:funsape/globalDefines.hpp **** typedef const uint16_t                  cuint16_t;
+  82:funsape/globalDefines.hpp **** typedef const uint32_t                  cuint32_t;
+  83:funsape/globalDefines.hpp **** typedef const uint64_t                  cuint64_t;
+  84:funsape/globalDefines.hpp **** 
+  85:funsape/globalDefines.hpp **** //     ///////////////////     VOLATILE VARIABLES    ////////////////////     //
+  86:funsape/globalDefines.hpp **** typedef volatile bool_t                 vbool_t;
+  87:funsape/globalDefines.hpp **** typedef volatile char_t                 vchar_t;
+  88:funsape/globalDefines.hpp **** typedef volatile int8_t                 vint8_t;
+  89:funsape/globalDefines.hpp **** typedef volatile int16_t                vint16_t;
+  90:funsape/globalDefines.hpp **** typedef volatile int32_t                vint32_t;
+  91:funsape/globalDefines.hpp **** typedef volatile int64_t                vint64_t;
+  92:funsape/globalDefines.hpp **** typedef volatile uint8_t                vuint8_t;
+  93:funsape/globalDefines.hpp **** typedef volatile uint16_t               vuint16_t;
+  94:funsape/globalDefines.hpp **** typedef volatile uint32_t               vuint32_t;
+  95:funsape/globalDefines.hpp **** typedef volatile uint64_t               vuint64_t;
+  96:funsape/globalDefines.hpp **** 
+  97:funsape/globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
+  98:funsape/globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
+  99:funsape/globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 3
+
+
+ 100:funsape/globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
+ 101:funsape/globalDefines.hpp **** typedef cuint16_t                       cuint_t;        // 16-bit (AVR)
+ 102:funsape/globalDefines.hpp **** typedef vint16_t                        vint_t;         // 16-bit (AVR)
+ 103:funsape/globalDefines.hpp **** typedef vuint16_t                       vuint_t;        // 16-bit (AVR)
+ 104:funsape/globalDefines.hpp **** typedef uint8_t                         ioPinIndex_t;   // 8-bit (AVR)
+ 105:funsape/globalDefines.hpp **** typedef vuint8_t                       *ioRegAddress_t; // 8-bit address (AVR)
+ 106:funsape/globalDefines.hpp **** 
+ 107:funsape/globalDefines.hpp **** //     //////////////////     BINARY ENUMERATIONS     ///////////////////     //
+ 108:funsape/globalDefines.hpp **** enum class Activation : cbool_t {
+ 109:funsape/globalDefines.hpp ****     OFF                                 = false,
+ 110:funsape/globalDefines.hpp ****     ON                                  = true
+ 111:funsape/globalDefines.hpp **** };
+ 112:funsape/globalDefines.hpp **** 
+ 113:funsape/globalDefines.hpp **** enum class DisplayOrientation : cbool_t {
+ 114:funsape/globalDefines.hpp ****     LANDSCAPE                           = false,
+ 115:funsape/globalDefines.hpp ****     PORTRAIT                            = true
+ 116:funsape/globalDefines.hpp **** };
+ 117:funsape/globalDefines.hpp **** 
+ 118:funsape/globalDefines.hpp **** enum class DriverMode : cbool_t {
+ 119:funsape/globalDefines.hpp ****     PUSH_PULL                           = false,
+ 120:funsape/globalDefines.hpp ****     OPEN_DRAIN                          = true,
+ 121:funsape/globalDefines.hpp **** };
+ 122:funsape/globalDefines.hpp **** 
+ 123:funsape/globalDefines.hpp **** enum class Edge : cbool_t {
+ 124:funsape/globalDefines.hpp ****     FALLING                             = false,
+ 125:funsape/globalDefines.hpp ****     RISING                              = true
+ 126:funsape/globalDefines.hpp **** };
+ 127:funsape/globalDefines.hpp **** 
+ 128:funsape/globalDefines.hpp **** enum class IoOperation : cbool_t {
+ 129:funsape/globalDefines.hpp ****     WRITE                               = false,
+ 130:funsape/globalDefines.hpp ****     READ                                = true
+ 131:funsape/globalDefines.hpp **** };
+ 132:funsape/globalDefines.hpp **** 
+ 133:funsape/globalDefines.hpp **** enum class LogicLevel : cbool_t {
+ 134:funsape/globalDefines.hpp ****     LOW                                 = false,
+ 135:funsape/globalDefines.hpp ****     HIGH                                = true
+ 136:funsape/globalDefines.hpp **** };
+ 137:funsape/globalDefines.hpp **** 
+ 138:funsape/globalDefines.hpp **** enum class PinDirection : cbool_t {
+ 139:funsape/globalDefines.hpp ****     INPUT                               = false,
+ 140:funsape/globalDefines.hpp ****     OUTPUT                              = true,
+ 141:funsape/globalDefines.hpp **** };
+ 142:funsape/globalDefines.hpp **** 
+ 143:funsape/globalDefines.hpp **** enum class Rotation : cbool_t {
+ 144:funsape/globalDefines.hpp ****     CLOCKWISE                           = false,
+ 145:funsape/globalDefines.hpp ****     COUNTERCLOCKWISE                    = true
+ 146:funsape/globalDefines.hpp **** };
+ 147:funsape/globalDefines.hpp **** 
+ 148:funsape/globalDefines.hpp **** enum class State : cbool_t {
+ 149:funsape/globalDefines.hpp ****     OFF                                 = false,
+ 150:funsape/globalDefines.hpp ****     ON                                  = true
+ 151:funsape/globalDefines.hpp **** };
+ 152:funsape/globalDefines.hpp **** 
+ 153:funsape/globalDefines.hpp **** //     ///////////////////     PLAIN ENUMERATIONS    ////////////////////     //
+ 154:funsape/globalDefines.hpp **** enum class Axis : cuint8_t {
+ 155:funsape/globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
+ 156:funsape/globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 4
+
+
+ 157:funsape/globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
+ 158:funsape/globalDefines.hpp ****     Y                                   = (0 << 2) | (1 << 1) | (0 << 0),
+ 159:funsape/globalDefines.hpp ****     XY                                  = (0 << 2) | (1 << 1) | (1 << 0),
+ 160:funsape/globalDefines.hpp ****     Z                                   = (1 << 2) | (0 << 1) | (0 << 0),
+ 161:funsape/globalDefines.hpp ****     XZ                                  = (1 << 2) | (0 << 1) | (1 << 0),
+ 162:funsape/globalDefines.hpp ****     YZ                                  = (1 << 2) | (1 << 1) | (0 << 0),
+ 163:funsape/globalDefines.hpp ****     ALL                                 = (1 << 2) | (1 << 1) | (1 << 0)
+ 164:funsape/globalDefines.hpp **** };
+ 165:funsape/globalDefines.hpp **** 
+ 166:funsape/globalDefines.hpp **** inlined Axis operator|(Axis a, Axis b)
+ 167:funsape/globalDefines.hpp **** {
+ 168:funsape/globalDefines.hpp ****     return static_cast<Axis>(static_cast<cint8_t>(a) | static_cast<uint8_t>(b));
+ 169:funsape/globalDefines.hpp **** }
+ 170:funsape/globalDefines.hpp **** 
+ 171:funsape/globalDefines.hpp **** inlined Axis &operator|=(Axis &a, Axis b)
+ 172:funsape/globalDefines.hpp **** {
+ 173:funsape/globalDefines.hpp ****     return a = static_cast<Axis>(static_cast<uint8_t>(a) | static_cast<uint8_t>(b));
+ 174:funsape/globalDefines.hpp **** }
+ 175:funsape/globalDefines.hpp **** 
+ 176:funsape/globalDefines.hpp **** inlined Axis operator&(Axis a, Axis b)
+ 177:funsape/globalDefines.hpp **** {
+ 178:funsape/globalDefines.hpp ****     return static_cast<Axis>(static_cast<uint8_t>(a) & static_cast<uint8_t>(b));
+ 179:funsape/globalDefines.hpp **** }
+ 180:funsape/globalDefines.hpp **** 
+ 181:funsape/globalDefines.hpp **** inlined Axis &operator&=(Axis &a, Axis b)
+ 182:funsape/globalDefines.hpp **** {
+ 183:funsape/globalDefines.hpp ****     return a = static_cast<Axis>(static_cast<uint8_t>(a) & static_cast<uint8_t>(b));
+ 184:funsape/globalDefines.hpp **** }
+ 185:funsape/globalDefines.hpp **** 
+ 186:funsape/globalDefines.hpp **** enum class Direction : cuint8_t {
+ 187:funsape/globalDefines.hpp ****     LEFT                                = 0,
+ 188:funsape/globalDefines.hpp ****     RIGHT                               = 1,
+ 189:funsape/globalDefines.hpp ****     UP                                  = 2,
+ 190:funsape/globalDefines.hpp ****     DOWN                                = 3
+ 191:funsape/globalDefines.hpp **** };
+ 192:funsape/globalDefines.hpp **** 
+ 193:funsape/globalDefines.hpp **** enum class InterfaceMode : cuint8_t {
+ 194:funsape/globalDefines.hpp ****     BLOCKING_MODE                       = 0,
+ 195:funsape/globalDefines.hpp ****     INTERRUPT_MODE                      = 1,
+ 196:funsape/globalDefines.hpp ****     DMA_MODE                            = 2
+ 197:funsape/globalDefines.hpp **** };
+ 198:funsape/globalDefines.hpp **** 
+ 199:funsape/globalDefines.hpp **** enum class ThermometricScale : cuint8_t {
+ 200:funsape/globalDefines.hpp ****     CELSIUS                             = 0,
+ 201:funsape/globalDefines.hpp ****     DELISLE                             = 1,
+ 202:funsape/globalDefines.hpp ****     FAHRENHEIT                          = 2,
+ 203:funsape/globalDefines.hpp ****     KELVIN                              = 3,
+ 204:funsape/globalDefines.hpp ****     NEWTON                              = 4,
+ 205:funsape/globalDefines.hpp ****     RANKINE                             = 5,
+ 206:funsape/globalDefines.hpp ****     REAUMUR                             = 6,
+ 207:funsape/globalDefines.hpp ****     ROMER                               = 7
+ 208:funsape/globalDefines.hpp **** };
+ 209:funsape/globalDefines.hpp **** 
+ 210:funsape/globalDefines.hpp **** enum class Error : cuint16_t {
+ 211:funsape/globalDefines.hpp ****     // General error codes
+ 212:funsape/globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
+ 213:funsape/globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 5
+
+
+ 214:funsape/globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
+ 215:funsape/globalDefines.hpp ****     UNDER_DEVELOPMENT                                   = 0x0003,   // This part of the code is sti
+ 216:funsape/globalDefines.hpp ****     NOT_INITIALIZED                                     = 0x0004,   // Not initialized
+ 217:funsape/globalDefines.hpp ****     // BUSY                                                = 0x0005,   // TODO: Describe parameter
+ 218:funsape/globalDefines.hpp ****     // DEVICE_NOT_SUPPORTED                                = 0x0006,   // Device is not currently s
+ 219:funsape/globalDefines.hpp ****     FEATURE_NOT_SUPPORTED                               = 0x0007,   // Unsupported feature or confi
+ 220:funsape/globalDefines.hpp ****     // FUNCTION_POINTER_NULL                               = 0x0008,   // TODO: Describe parameter
+ 221:funsape/globalDefines.hpp ****     // INSTANCE_INVALID                                    = 0x0009,   // Invalid instance
+ 222:funsape/globalDefines.hpp ****     // LOCKED                                              = 0x000A,   // Accessed a locked device
+ 223:funsape/globalDefines.hpp ****     MEMORY_ALLOCATION                                   = 0x000B,   // Memory allocation failed
+ 224:funsape/globalDefines.hpp ****     // MODE_NOT_SUPPORTED                                  = 0x000C,   // Mode is not currently sup
+ 225:funsape/globalDefines.hpp ****     // NOT_READY                                           = 0x000D,   // TODO: Describe parameter
+ 226:funsape/globalDefines.hpp ****     // READ_PROTECTED                                      = 0x000E,   // Tried to read a read prot
+ 227:funsape/globalDefines.hpp ****     // WRITE_PROTECTED                                     = 0x000F,   // Tried to write a write pr
+ 228:funsape/globalDefines.hpp **** 
+ 229:funsape/globalDefines.hpp ****     // Function arguments related error codes
+ 230:funsape/globalDefines.hpp ****     ARGUMENT_CANNOT_BE_ZERO                             = 0x0010,   // TODO: Describe parameter
+ 231:funsape/globalDefines.hpp ****     ARGUMENT_POINTER_NULL                               = 0x0011,   // NULL pointer was passed as a
+ 232:funsape/globalDefines.hpp ****     ARGUMENT_VALUE_INVALID                              = 0x0012,   // TODO: Describe parameter
+ 233:funsape/globalDefines.hpp ****     // ARGUMENTS_MISMATCH                                  = 0x0013,   // A function was called wit
+ 234:funsape/globalDefines.hpp ****     // ARGUMENTS_WRONG_NUMBER                              = 0x0014,   // A function was called wit
+ 235:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_5                            = 0x0015,   // Generic error (use only o
+ 236:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_6                            = 0x0016,   // Generic error (use only o
+ 237:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_7                            = 0x0017,   // Generic error (use only o
+ 238:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_8                            = 0x0018,   // Generic error (use only o
+ 239:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_9                            = 0x0019,   // Generic error (use only o
+ 240:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_10                           = 0x001A,   // Generic error (use only o
+ 241:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_11                           = 0x001B,   // Generic error (use only o
+ 242:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_12                           = 0x001C,   // Generic error (use only o
+ 243:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_13                           = 0x001D,   // Generic error (use only o
+ 244:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_14                           = 0x001E,   // Generic error (use only o
+ 245:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR                              = 0x001F,   // Generic error (use only o
+ 246:funsape/globalDefines.hpp **** 
+ 247:funsape/globalDefines.hpp ****     // Buffer related error codes
+ 248:funsape/globalDefines.hpp ****     // BUFFER_EMPTY                                        = 0x0020,   // Buffer is empty
+ 249:funsape/globalDefines.hpp ****     // BUFFER_FULL                                         = 0x0021,   // Buffer is full
+ 250:funsape/globalDefines.hpp ****     // BUFFER_NOT_ENOUGH_ELEMENTS                          = 0x0022,   // Not enough space in buffe
+ 251:funsape/globalDefines.hpp ****     // BUFFER_NOT_ENOUGH_SPACE                             = 0x0023,   // Not enough space in buffe
+ 252:funsape/globalDefines.hpp ****     // BUFFER_POINTER_NULL                                 = 0x0024,   // Buffer size was set to ze
+ 253:funsape/globalDefines.hpp ****     BUFFER_SIZE_TOO_LARGE                               = 0x0025,   // Buffer size was set to a lar
+ 254:funsape/globalDefines.hpp ****     BUFFER_SIZE_TOO_SMALL                               = 0x0026,   // Buffer size was set to a ver
+ 255:funsape/globalDefines.hpp ****     // BUFFER_SIZE_ZERO                                    = 0x0027,   // Buffer size was set to ze
+ 256:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_8                              = 0x0028,   // Generic error (use only o
+ 257:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_9                              = 0x0029,   // Generic error (use only o
+ 258:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_10                             = 0x002A,   // Generic error (use only o
+ 259:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_11                             = 0x002B,   // Generic error (use only o
+ 260:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_12                             = 0x002C,   // Generic error (use only o
+ 261:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_13                             = 0x002D,   // Generic error (use only o
+ 262:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_14                             = 0x002E,   // Generic error (use only o
+ 263:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_15                             = 0x002F,   // Generic error (use only o
+ 264:funsape/globalDefines.hpp **** 
+ 265:funsape/globalDefines.hpp ****     // Clock configuration related error codes
+ 266:funsape/globalDefines.hpp ****     CLOCK_PRESCALER_CHANGE_FAILED                       = 0x0030,   // Clock prescaler change faile
+ 267:funsape/globalDefines.hpp ****     CLOCK_PRESCALER_NOT_SUPPORTED                       = 0x0031,   // Clock prescaler configuratio
+ 268:funsape/globalDefines.hpp ****     CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
+ 269:funsape/globalDefines.hpp ****     CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
+ 270:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 6
+
+
+ 271:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
+ 272:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_6                               = 0x0036,   // Generic error (use only o
+ 273:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_7                               = 0x0037,   // Generic error (use only o
+ 274:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_8                               = 0x0038,   // Generic error (use only o
+ 275:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_9                               = 0x0039,   // Generic error (use only o
+ 276:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_10                              = 0x003A,   // Generic error (use only o
+ 277:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_11                              = 0x003B,   // Generic error (use only o
+ 278:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_12                              = 0x003C,   // Generic error (use only o
+ 279:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_13                              = 0x003D,   // Generic error (use only o
+ 280:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_14                              = 0x003E,   // Generic error (use only o
+ 281:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_15                              = 0x003F,   // Generic error (use only o
+ 282:funsape/globalDefines.hpp **** 
+ 283:funsape/globalDefines.hpp ****     // Communication related error codes
+ 284:funsape/globalDefines.hpp ****     COMMUNICATION_FAILED                                = 0x0040,   // TODO: Describe parameter
+ 285:funsape/globalDefines.hpp ****     COMMUNICATION_NO_DEVICE_SELECTED                    = 0x0041,   // TODO: Describe parameter
+ 286:funsape/globalDefines.hpp ****     // COMMUNICATION_PORT_NOT_SET                          = 0x0042,   // TODO: Describe parameter
+ 287:funsape/globalDefines.hpp ****     COMMUNICATION_TIMEOUT                               = 0x0043,   // The operation timed out
+ 288:funsape/globalDefines.hpp ****     // COMMUNICATION_DEVICE_ID_MATCH_FAILED                = 0x0044,   // TODO: Describe parameter
+ 289:funsape/globalDefines.hpp ****     // CHECKSUM_ERROR                                      = 0x0045,   // TODO: Describe parameter
+ 290:funsape/globalDefines.hpp ****     // FRAME_ERROR                                         = 0x0046,   // TODO: Describe parameter
+ 291:funsape/globalDefines.hpp ****     // PACKAGE_AWAITING                                    = 0x0047,   // Try to write data to a re
+ 292:funsape/globalDefines.hpp ****     // PACKAGE_NOT_READY                                   = 0x0048,   // Try to read data from a n
+ 293:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_9                       = 0x0049,   // Generic error (use only o
+ 294:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_10                      = 0x004A,   // Generic error (use only o
+ 295:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_11                      = 0x004B,   // Generic error (use only o
+ 296:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_12                      = 0x004C,   // Generic error (use only o
+ 297:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_13                      = 0x004D,   // Generic error (use only o
+ 298:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_14                      = 0x004E,   // Generic error (use only o
+ 299:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_15                      = 0x004F,   // Generic error (use only o
+ 300:funsape/globalDefines.hpp **** 
+ 301:funsape/globalDefines.hpp ****     // DateTime class related error codes
+ 302:funsape/globalDefines.hpp ****     DATE_NOT_INITIALIZED                                = 0x0050,   // TODO: Describe parameter
+ 303:funsape/globalDefines.hpp ****     // HOUR_INVALID                                        = 0x0051,   // TODO: Describe parameter
+ 304:funsape/globalDefines.hpp ****     // MILLISECOND_INVALID                                 = 0x0052,   // TODO: Describe parameter
+ 305:funsape/globalDefines.hpp ****     // MINUTE_INVALID                                      = 0x0053,   // TODO: Describe parameter
+ 306:funsape/globalDefines.hpp ****     // MONTH_DAY_INVALID                                   = 0x0054,   // TODO: Describe parameter
+ 307:funsape/globalDefines.hpp ****     // MONTH_INVALID                                       = 0x0055,   // TODO: Describe parameter
+ 308:funsape/globalDefines.hpp ****     // SECOND_INVALID                                      = 0x0056,   // TODO: Describe parameter
+ 309:funsape/globalDefines.hpp ****     TIME_NOT_INITIALIZED                                = 0x0057,   // TODO: Describe parameter
+ 310:funsape/globalDefines.hpp ****     // TIMEZONE_INVALID                                    = 0x0058,   // TODO: Describe parameter
+ 311:funsape/globalDefines.hpp ****     // YEAR_INVALID                                        = 0x0059,   // TODO: Describe parameter
+ 312:funsape/globalDefines.hpp ****     DATE_INVALID                                        = 0x005A,   // TODO: Describe parameter
+ 313:funsape/globalDefines.hpp ****     TIME_INVALID                                        = 0x005B,   // TODO: Describe parameter
+ 314:funsape/globalDefines.hpp ****     // GENERIC_ERROR_13                                    = 0x005C,   // Generic error (use only o
+ 315:funsape/globalDefines.hpp ****     // GENERIC_ERROR_14                                    = 0x005D,   // Generic error (use only o
+ 316:funsape/globalDefines.hpp ****     // GENERIC_ERROR_15                                    = 0x005F,   // Generic error (use only o
+ 317:funsape/globalDefines.hpp **** 
+ 318:funsape/globalDefines.hpp ****     // Handler related error codes
+ 319:funsape/globalDefines.hpp ****     BUS_HANDLER_NOT_SUPPORTED                           = 0x0060,   // TODO: Describe parameter
+ 320:funsape/globalDefines.hpp ****     BUS_HANDLER_POINTER_NULL                            = 0x0061,   // TODO: Describe parameter
+ 321:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_2                             = 0x0062,   // Generic error (use only o
+ 322:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_3                             = 0x0063,   // Generic error (use only o
+ 323:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_4                             = 0x0064,   // Generic error (use only o
+ 324:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_5                             = 0x0065,   // Generic error (use only o
+ 325:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
+ 326:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
+ 327:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 7
+
+
+ 328:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
+ 329:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_10                            = 0x006A,   // Generic error (use only o
+ 330:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_11                            = 0x006B,   // Generic error (use only o
+ 331:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_12                            = 0x006C,   // Generic error (use only o
+ 332:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_13                            = 0x006D,   // Generic error (use only o
+ 333:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_14                            = 0x006E,   // Generic error (use only o
+ 334:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_15                            = 0x006F,   // Generic error (use only o
+ 335:funsape/globalDefines.hpp **** 
+ 336:funsape/globalDefines.hpp ****     // External interrupts related error codes
+ 337:funsape/globalDefines.hpp ****     // INTERRUPT_NOT_AVAILABLE                             = 0x0070,   // TODO: Describe parameter
+ 338:funsape/globalDefines.hpp ****     // INTERRUPT_PORT_OUTPUT_MODE_NOT_SUPPORTED            = 0x0071,   // TODO: Describe parameter
+ 339:funsape/globalDefines.hpp ****     // INTERRUPT_SENSE_MODE_NOT_SUPPORTED                  = 0x0072,   // TODO: Describe parameter
+ 340:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_3                           = 0x0073,   // Generic error (use only o
+ 341:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_4                           = 0x0074,   // Generic error (use only o
+ 342:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_5                           = 0x0075,   // Generic error (use only o
+ 343:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_6                           = 0x0076,   // Generic error (use only o
+ 344:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_7                           = 0x0077,   // Generic error (use only o
+ 345:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_8                           = 0x0078,   // Generic error (use only o
+ 346:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_9                           = 0x0079,   // Generic error (use only o
+ 347:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_10                          = 0x007A,   // Generic error (use only o
+ 348:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_11                          = 0x007B,   // Generic error (use only o
+ 349:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_12                          = 0x007C,   // Generic error (use only o
+ 350:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_13                          = 0x007D,   // Generic error (use only o
+ 351:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_14                          = 0x007E,   // Generic error (use only o
+ 352:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_15                          = 0x007F,   // Generic error (use only o
+ 353:funsape/globalDefines.hpp **** 
+ 354:funsape/globalDefines.hpp **** 
+ 355:funsape/globalDefines.hpp ****     // Package API class related error codes
+ 356:funsape/globalDefines.hpp ****     // PACKAGE_API_PACKAGE_DATA_FULL                       = 0x0080,   // TODO: Describe parameter
+ 357:funsape/globalDefines.hpp ****     // PACKAGE_API_PACKAGE_NOT_READY                       = 0x0081,   // TODO: Describe parameter
+ 358:funsape/globalDefines.hpp ****     // PACKAGE_API_PAYLOAD_DATA_NULL                       = 0x0082,   // TODO: Describe parameter
+ 359:funsape/globalDefines.hpp ****     // PACKAGE_API_PAYLOAD_SIZE_NULL                       = 0x0083,   // TODO: Describe parameter
+ 360:funsape/globalDefines.hpp ****     // PACKAGE_API_SOURCE_ADDRESS_INVALID                  = 0x0084,   // TODO: Describe parameter
+ 361:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_5                         = 0x0085,   // Generic error (use only o
+ 362:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_6                         = 0x0086,   // Generic error (use only o
+ 363:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_7                         = 0x0087,   // Generic error (use only o
+ 364:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_8                         = 0x0088,   // Generic error (use only o
+ 365:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_9                         = 0x0089,   // Generic error (use only o
+ 366:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_10                        = 0x008A,   // Generic error (use only o
+ 367:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_11                        = 0x008B,   // Generic error (use only o
+ 368:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_12                        = 0x008C,   // Generic error (use only o
+ 369:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_13                        = 0x008D,   // Generic error (use only o
+ 370:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_14                        = 0x008E,   // Generic error (use only o
+ 371:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_15                        = 0x008F,   // Generic error (use only o
+ 372:funsape/globalDefines.hpp **** 
+ 373:funsape/globalDefines.hpp ****     // SPI related error codes
+ 374:funsape/globalDefines.hpp ****     // SPI_BUSY_FLAG                                       = 0x0090,   // TODO: Describe parameter
+ 375:funsape/globalDefines.hpp ****     // SPI_CRC                                             = 0x0091,   // TODO: Describe parameter
+ 376:funsape/globalDefines.hpp ****     // SPI_DMA                                             = 0x0092,   // TODO: Describe parameter
+ 377:funsape/globalDefines.hpp ****     // SPI_MODE_FAULT                                      = 0x0093,   // TODO: Describe parameter
+ 378:funsape/globalDefines.hpp ****     // SPI_OVERRUN                                         = 0x0094,   // TODO: Describe parameter
+ 379:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_5                                 = 0x0095,   // Generic error (use only o
+ 380:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_6                                 = 0x0096,   // Generic error (use only o
+ 381:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_7                                 = 0x0097,   // Generic error (use only o
+ 382:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
+ 383:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
+ 384:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 8
+
+
+ 385:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
+ 386:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_12                                = 0x009C,   // Generic error (use only o
+ 387:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_13                                = 0x009D,   // Generic error (use only o
+ 388:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_14                                = 0x009E,   // Generic error (use only o
+ 389:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_15                                = 0x009F,   // Generic error (use only o
+ 390:funsape/globalDefines.hpp **** 
+ 391:funsape/globalDefines.hpp ****     // TWI related error codes
+ 392:funsape/globalDefines.hpp ****     // TWI_AF_FLAG                                         = 0x00A0,   // TWI AF flag error
+ 393:funsape/globalDefines.hpp ****     // TWI_ARBITRATION_LOST                                = 0x00A1,   // TWI bus arbitration lost
+ 394:funsape/globalDefines.hpp ****     // TWI_BUS_ERROR                                       = 0x00A2,   // TWI bus error
+ 395:funsape/globalDefines.hpp ****     // TWI_DMA                                             = 0x00A3,   // DMA parameter error
+ 396:funsape/globalDefines.hpp ****     // TWI_DMA_PARAM                                       = 0x00A4,   // DMA transfer error
+ 397:funsape/globalDefines.hpp ****     // TWI_OVERRUN                                         = 0x00A5,   // TWI overrun
+ 398:funsape/globalDefines.hpp ****     // TWI_SIZE_MANAGEMENT_ERROR                           = 0x00A6,   // Size management error
+ 399:funsape/globalDefines.hpp ****     // TWI_INVALID_DEVICE_ADDRESS                          = 0x00A7,   // TODO: Describe parameter
+ 400:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_8                                 = 0x00A8,   // Generic error (use only o
+ 401:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_9                                 = 0x00A9,   // Generic error (use only o
+ 402:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_10                                = 0x00AA,   // Generic error (use only o
+ 403:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_11                                = 0x00AB,   // Generic error (use only o
+ 404:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_12                                = 0x00AC,   // Generic error (use only o
+ 405:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_13                                = 0x00AD,   // Generic error (use only o
+ 406:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_14                                = 0x00AE,   // Generic error (use only o
+ 407:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_15                                = 0x00AF,   // Generic error (use only o
+ 408:funsape/globalDefines.hpp **** 
+ 409:funsape/globalDefines.hpp ****     // USART related error codes
+ 410:funsape/globalDefines.hpp ****     USART_BAUD_RATE_NOT_SUPPORTED                       = 0x00B0,   // TODO: Describe parameter
+ 411:funsape/globalDefines.hpp ****     // USART_CONFIGURATION_PARAMETER_WRONG                 = 0x00B1,   // TODO: Describe parameter
+ 412:funsape/globalDefines.hpp ****     USART_DATA_SIZE_NOT_SUPPORTED                       = 0x00B2,   // TODO: Describe parameter
+ 413:funsape/globalDefines.hpp ****     USART_FRAME_FORMAT_NOT_SUPPORTED                    = 0x00B3,   // TODO: Describe parameter
+ 414:funsape/globalDefines.hpp ****     USART_PARITY_NOT_SUPPORTED                          = 0x00B4,   // TODO: Describe parameter
+ 415:funsape/globalDefines.hpp ****     USART_STOP_BIT_NOT_SUPPORTED                        = 0x00B5,   // TODO: Describe parameter
+ 416:funsape/globalDefines.hpp ****     USART_MODE_NOT_SUPPORTED                            = 0x00B6,   // TODO: Describe parameter
+ 417:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_7                               = 0x00B7,   // Generic error (use only o
+ 418:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_8                               = 0x00B8,   // Generic error (use only o
+ 419:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_9                               = 0x00B9,   // Generic error (use only o
+ 420:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_10                              = 0x00BA,   // Generic error (use only o
+ 421:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_11                              = 0x00BB,   // Generic error (use only o
+ 422:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_12                              = 0x00BC,   // Generic error (use only o
+ 423:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_13                              = 0x00BD,   // Generic error (use only o
+ 424:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_14                              = 0x00BE,   // Generic error (use only o
+ 425:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_15                              = 0x00BF,   // Generic error (use only o
+ 426:funsape/globalDefines.hpp **** 
+ 427:funsape/globalDefines.hpp ****     // LCD related error codes
+ 428:funsape/globalDefines.hpp ****     // LCD_CONTROL_PORT_NOT_SET                            = 0x00C0,   // TODO: Describe parameter
+ 429:funsape/globalDefines.hpp ****     // LCD_CONTROL_PIN_E_INVALID                           = 0x00C1,   // TODO: Describe parameter
+ 430:funsape/globalDefines.hpp ****     // LCD_CONTROL_PIN_RS_INVALID                          = 0x00C2,   // TODO: Describe parameter
+ 431:funsape/globalDefines.hpp ****     // LCD_CONTROL_PIN_RW_INVALID                          = 0x00C3,   // TODO: Describe parameter
+ 432:funsape/globalDefines.hpp ****     // LCD_DATA_PORT_NOT_SET                               = 0x00C4,   // TODO: Describe parameter
+ 433:funsape/globalDefines.hpp ****     // LCD_DATA_PIN_INDEX_OUT_OF_BOUNDARIES                = 0x00C5,   // TODO: Describe parameter
+ 434:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_6                                 = 0x00C6,   // Generic error (use only o
+ 435:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_7                                 = 0x00C7,   // Generic error (use only o
+ 436:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_8                                 = 0x00C8,   // Generic error (use only o
+ 437:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_9                                 = 0x00C9,   // Generic error (use only o
+ 438:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_10                                = 0x00CA,   // Generic error (use only o
+ 439:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
+ 440:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
+ 441:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 9
+
+
+ 442:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
+ 443:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_15                                = 0x00CF,   // Generic error (use only o
+ 444:funsape/globalDefines.hpp **** 
+ 445:funsape/globalDefines.hpp ****     // GPIO related error codes
+ 446:funsape/globalDefines.hpp ****     GPIO_PORT_NOT_SET                                   = 0x00D0,   // Gpio port was not set before
+ 447:funsape/globalDefines.hpp ****     GPIO_DATA_PORT_NOT_SET                              = 0x00D1,   // Gpio data port was not set b
+ 448:funsape/globalDefines.hpp ****     GPIO_CONTROL_PORT_NOT_SET                           = 0x00D2,   // Gpio control port was not se
+ 449:funsape/globalDefines.hpp ****     GPIO_PORT_INVALID                                   = 0x00D3,   // Gpio port address is invalid
+ 450:funsape/globalDefines.hpp ****     GPIO_DATA_PORT_INVALID                              = 0x00D4,   // Gpio data port address is in
+ 451:funsape/globalDefines.hpp ****     GPIO_CONTROL_PORT_INVALID                           = 0x00D5,   // Gpio control port address is
+ 452:funsape/globalDefines.hpp ****     GPIO_PIN_INDEX_INVALID                              = 0x00D6,   // Invalid GPIO Pin
+ 453:funsape/globalDefines.hpp ****     GPIO_PIN_INDEX_OUT_OF_BOUNDARIES                    = 0x00D7,   // Gpio pin index was out of bo
+ 454:funsape/globalDefines.hpp ****     // GPIO_NO_PIN_SET                                     = 0x00D8,   // No pin selected at Gpio p
+ 455:funsape/globalDefines.hpp ****     // GPIO_ADDRESS_INVALID                                = 0x00D9,   // Invalid GPIO Port
+ 456:funsape/globalDefines.hpp ****     // GPIO_PORT_LOGIC_CONTENTION                          = 0x00DA,   // TODO: Describe parameter
+ 457:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_11                               = 0x00DB,   // Generic error (use only o
+ 458:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_12                               = 0x00DC,   // Generic error (use only o
+ 459:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_13                               = 0x00DD,   // Generic error (use only o
+ 460:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_14                               = 0x00DE,   // Generic error (use only o
+ 461:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_15                               = 0x00DF,   // Generic error (use only o
+ 462:funsape/globalDefines.hpp **** 
+ 463:funsape/globalDefines.hpp ****     // HAL related error codes
+ 464:funsape/globalDefines.hpp ****     // HAL_UNKNOWN_ERROR                                   = 0x00E0,   // TODO: Describe parameter
+ 465:funsape/globalDefines.hpp ****     // HAL_STATUS_ERROR                                    = 0x00E1,   // TODO: Describe parameter
+ 466:funsape/globalDefines.hpp ****     // HAL_STATUS_BUSY                                     = 0x00E2,   // TODO: Describe parameter
+ 467:funsape/globalDefines.hpp ****     // HAL_STATUS_TIMEOUT                                  = 0x00E3,   // TODO: Describe parameter
+ 468:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_4                                 = 0x00E4,   // Generic error (use only o
+ 469:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_5                                 = 0x00E5,   // Generic error (use only o
+ 470:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_6                                 = 0x00E6,   // Generic error (use only o
+ 471:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_7                                 = 0x00E7,   // Generic error (use only o
+ 472:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_8                                 = 0x00E8,   // Generic error (use only o
+ 473:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_9                                 = 0x00E9,   // Generic error (use only o
+ 474:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_10                                = 0x00EA,   // Generic error (use only o
+ 475:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_11                                = 0x00EB,   // Generic error (use only o
+ 476:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_12                                = 0x00EC,   // Generic error (use only o
+ 477:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_13                                = 0x00ED,   // Generic error (use only o
+ 478:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_14                                = 0x00EE,   // Generic error (use only o
+ 479:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_15                                = 0x00EF,   // Generic error (use only o
+ 480:funsape/globalDefines.hpp **** 
+ 481:funsape/globalDefines.hpp ****     // System related error codes
+ 482:funsape/globalDefines.hpp ****     // SYSTEM_US_TIMER_HANDLER_NULL                        = 0x00F0,   // TODO: Describe parameter
+ 483:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_1                              = 0x00F1,   // Generic error (use only o
+ 484:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_2                              = 0x00F2,   // Generic error (use only o
+ 485:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_3                              = 0x00F3,   // Generic error (use only o
+ 486:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_4                              = 0x00F4,   // Generic error (use only o
+ 487:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_5                              = 0x00F5,   // Generic error (use only o
+ 488:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_6                              = 0x00F6,   // Generic error (use only o
+ 489:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_7                              = 0x00F7,   // Generic error (use only o
+ 490:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_8                              = 0x00F8,   // Generic error (use only o
+ 491:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_9                              = 0x00F9,   // Generic error (use only o
+ 492:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_10                             = 0x00FA,   // Generic error (use only o
+ 493:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_11                             = 0x00FB,   // Generic error (use only o
+ 494:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_12                             = 0x00FC,   // Generic error (use only o
+ 495:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_13                             = 0x00FD,   // Generic error (use only o
+ 496:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
+ 497:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
+ 498:funsape/globalDefines.hpp **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 10
+
+
+ 499:funsape/globalDefines.hpp ****     // FatFs related error codes
+ 500:funsape/globalDefines.hpp ****     // FAT_FS_UNKNOWN_ERROR                                = 0x0100,   // TODO: Describe parameter
+ 501:funsape/globalDefines.hpp ****     // FAT_FS_DRIVE_UNSUPPORTED                            = 0x0101,   // TODO: Describe parameter
+ 502:funsape/globalDefines.hpp ****     // FAT_FS_DISK_NOT_INSERTED                            = 0x0102,   // TODO: Describe parameter
+ 503:funsape/globalDefines.hpp ****     // FAT_FS_INITIALIZATION_FAILED                        = 0x0103,   // TODO: Describe parameter
+ 504:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_4                              = 0x0104,   // Generic error (use only o
+ 505:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_5                              = 0x0105,   // Generic error (use only o
+ 506:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_6                              = 0x0106,   // Generic error (use only o
+ 507:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_7                              = 0x0107,   // Generic error (use only o
+ 508:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_8                              = 0x0108,   // Generic error (use only o
+ 509:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_9                              = 0x0109,   // Generic error (use only o
+ 510:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_10                             = 0x010A,   // Generic error (use only o
+ 511:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_11                             = 0x010B,   // Generic error (use only o
+ 512:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_12                             = 0x010C,   // Generic error (use only o
+ 513:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_13                             = 0x010D,   // Generic error (use only o
+ 514:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_14                             = 0x010E,   // Generic error (use only o
+ 515:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_15                             = 0x010F,   // Generic error (use only o
+ 516:funsape/globalDefines.hpp **** 
+ 517:funsape/globalDefines.hpp ****     // Uncategorized error codes
+ 518:funsape/globalDefines.hpp ****     // LCD_OUT_OF_BOUNDARIES                               = 0xFFF1,   // TODO: Describe parameter
+ 519:funsape/globalDefines.hpp ****     // CONTROLLER_NOT_SUPPORTED                            = 0xFFF2,   // Unsupported controller
+ 520:funsape/globalDefines.hpp ****     // DEVICE_ID_MATCH_FAILED                              = 0xFFF3,   // Device ID doesn't match
+ 521:funsape/globalDefines.hpp ****     // DMA_NOT_SUPPORTED                                   = 0xFFF4,   // DMA interface mode is not
+ 522:funsape/globalDefines.hpp ****     // DMA_TRANSFER_ERROR                                  = 0xFFF5,   // DMA transfer error
+ 523:funsape/globalDefines.hpp ****     // MESSAGE_TOO_LONG                                    = 0xFFF6,   // Message is to long to be 
+ 524:funsape/globalDefines.hpp ****     // VALID_DATA_NOT_AVAILABLE                            = 0xFFF7,   // Valid data was unavailabl
+ 525:funsape/globalDefines.hpp ****     // PERIPHERAL_NOT_READY                                = 0xFFF8,   // TODO: Describe parameter
+ 526:funsape/globalDefines.hpp ****     // STOPWATCH_NOT_STARTED                               = 0xFFF9,   // TODO: Describe parameter
+ 527:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_10                      = 0xFFFA,   // Generic error (use only o
+ 528:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_11                      = 0xFFFB,   // Generic error (use only o
+ 529:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_12                      = 0xFFFC,   // Generic error (use only o
+ 530:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_13                      = 0xFFFD,   // Generic error (use only o
+ 531:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_14                      = 0xFFFE,   // Generic error (use only o
+ 532:funsape/globalDefines.hpp **** 
+ 533:funsape/globalDefines.hpp ****     KEYPAD_COLUMNS_PIN_INDEX_INVALID                    = 0xFFF9,
+ 534:funsape/globalDefines.hpp ****     KEYPAD_LINES_PIN_INDEX_INVALID                      = 0xFFFA,
+ 535:funsape/globalDefines.hpp **** 
+ 536:funsape/globalDefines.hpp ****     KEYPAD_LINES_GPIO_PORT_INVALID                      = 0xFFFB,
+ 537:funsape/globalDefines.hpp ****     KEYPAD_COLUMNS_GPIO_PORT_INVALID                    = 0xFFFC,
+ 538:funsape/globalDefines.hpp ****     KEYPAD_TYPE_UNSUPPORTED                             = 0xFFFD,
+ 539:funsape/globalDefines.hpp ****     KEY_VALUES_NOT_SET                                  = 0xFFFE,
+ 540:funsape/globalDefines.hpp ****     // "I don't have the slightest idea" error code
+ 541:funsape/globalDefines.hpp ****     UNKNOWN                                             = 0xFFFF,   // Unknown error - Ops!!!!
+ 542:funsape/globalDefines.hpp **** };
+ 543:funsape/globalDefines.hpp **** 
+ 544:funsape/globalDefines.hpp **** // =============================================================================
+ 545:funsape/globalDefines.hpp **** // Macrofunctions
+ 546:funsape/globalDefines.hpp **** // =============================================================================
+ 547:funsape/globalDefines.hpp **** 
+ 548:funsape/globalDefines.hpp **** //     //////////////////////     DATA VALIDITY    //////////////////////     //
+ 549:funsape/globalDefines.hpp **** #define isGpioAddressValid(gpioPort)    (       \
+ 550:funsape/globalDefines.hpp ****         (IS_GPIO_ALL_INSTANCE(gpioPort))        \
+ 551:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
+ 552:funsape/globalDefines.hpp ****         : (bool_t)false)
+ 553:funsape/globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
+ 554:funsape/globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
+ 555:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 11
+
+
+ 556:funsape/globalDefines.hpp ****         : (bool_t)false)
+ 557:funsape/globalDefines.hpp **** #define isPointerValid(ptr)             (       \
+ 558:funsape/globalDefines.hpp ****         ((void *)(ptr))                         \
+ 559:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
+ 560:funsape/globalDefines.hpp ****         : (bool_t)false)
+ 561:funsape/globalDefines.hpp **** 
+ 562:funsape/globalDefines.hpp **** //     //////////////////////     BIT HANDLING     //////////////////////     //
+ 563:funsape/globalDefines.hpp **** #ifndef setBit
+ 564:funsape/globalDefines.hpp **** #   define setBit(reg, bit)                     ((reg) |= (1 << (bit)))
+ 565:funsape/globalDefines.hpp **** #endif
+ 566:funsape/globalDefines.hpp **** #ifndef clrBit
+ 567:funsape/globalDefines.hpp **** #   define clrBit(reg, bit)                     ((reg) &= ~(1 << (bit)))
+ 568:funsape/globalDefines.hpp **** #endif
+ 569:funsape/globalDefines.hpp **** #ifndef cplBit
+ 570:funsape/globalDefines.hpp **** #   define cplBit(reg, bit)                     ((reg) ^= (1 << (bit)))
+ 571:funsape/globalDefines.hpp **** #endif
+ 572:funsape/globalDefines.hpp **** 
+ 573:funsape/globalDefines.hpp **** //     ///////////////////////     BIT TESTING    ///////////////////////     //
+ 574:funsape/globalDefines.hpp **** #ifndef isBitSet
+ 575:funsape/globalDefines.hpp **** #   define isBitSet(reg, bit)                   (((reg) >> (bit)) & 1)
+ 576:funsape/globalDefines.hpp **** #endif
+ 577:funsape/globalDefines.hpp **** #ifndef isBitClr
+ 578:funsape/globalDefines.hpp **** #   define isBitClr(reg, bit)                   (!isBitSet(reg,bit))
+ 579:funsape/globalDefines.hpp **** #endif
+ 580:funsape/globalDefines.hpp **** 
+ 581:funsape/globalDefines.hpp **** //     ///////////////////////     BIT LOOPING    ///////////////////////     //
+ 582:funsape/globalDefines.hpp **** #ifndef waitUntilBitIsSet
+ 583:funsape/globalDefines.hpp **** #   define waitUntilBitIsSet(reg, bit)          do{     \
+ 584:funsape/globalDefines.hpp ****         doNothing();                                    \
+ 585:funsape/globalDefines.hpp ****     } while (isBitClr((reg), (bit)))
+ 586:funsape/globalDefines.hpp **** #endif
+ 587:funsape/globalDefines.hpp **** #ifndef waitUntilBitIsClear
+ 588:funsape/globalDefines.hpp **** #   define waitUntilBitIsClear(reg, bit)        do{     \
+ 589:funsape/globalDefines.hpp ****         doNothing();                                    \
+ 590:funsape/globalDefines.hpp ****     }while(isBitSet((reg), (bit)))
+ 591:funsape/globalDefines.hpp **** #endif
+ 592:funsape/globalDefines.hpp **** 
+ 593:funsape/globalDefines.hpp **** //     ////////////////////     BIT MASK HANDLING    ////////////////////     //
+ 594:funsape/globalDefines.hpp **** #ifndef setMask
+ 595:funsape/globalDefines.hpp **** #   define setMask(reg, mask)                   ((reg) |= (mask))
+ 596:funsape/globalDefines.hpp **** #endif
+ 597:funsape/globalDefines.hpp **** #ifndef clrMask
+ 598:funsape/globalDefines.hpp **** #   define clrMask(reg, mask)                   ((reg) &= ~(mask))
+ 599:funsape/globalDefines.hpp **** #endif
+ 600:funsape/globalDefines.hpp **** #ifndef cplMask
+ 601:funsape/globalDefines.hpp **** #   define cplMask(reg, mask)                   ((reg) ^= (mask))
+ 602:funsape/globalDefines.hpp **** #endif
+ 603:funsape/globalDefines.hpp **** 
+ 604:funsape/globalDefines.hpp **** //     ////////////////     BIT MASK OFFSET HANDLING     ////////////////     //
+ 605:funsape/globalDefines.hpp **** #ifndef setMaskOffset
+ 606:funsape/globalDefines.hpp **** #   define setMaskOffset(reg, mask, offset)     ((reg) |= ((mask) << (offset)))
+ 607:funsape/globalDefines.hpp **** #endif
+ 608:funsape/globalDefines.hpp **** #ifndef clrMaskOffset
+ 609:funsape/globalDefines.hpp **** #   define clrMaskOffset(reg, mask, offset)     ((reg) &= ~((mask) << (offset)))
+ 610:funsape/globalDefines.hpp **** #endif
+ 611:funsape/globalDefines.hpp **** #ifndef cplMaskOffset
+ 612:funsape/globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 12
+
+
+ 613:funsape/globalDefines.hpp **** #endif
+ 614:funsape/globalDefines.hpp **** 
+ 615:funsape/globalDefines.hpp **** //     /////////////     DATA MANIPULATION (8-BITS WIDE)    /////////////     //
+ 616:funsape/globalDefines.hpp **** #define byteGetNibble1(dataByte)        (((dataByte) >> 4) & 0x0F)
+ 617:funsape/globalDefines.hpp **** #define byteGetNibble0(dataByte)        ((dataByte) & 0x0F)
+ 618:funsape/globalDefines.hpp **** #define byteSwitchNibbles(dataByte)     ((byteGetNibble0(dataByte) << 4) | \
+ 619:funsape/globalDefines.hpp ****         (byteGetNibble1(dataByte)))
+ 620:funsape/globalDefines.hpp **** 
+ 621:funsape/globalDefines.hpp **** //     ////////////     DATA MANIPULATION (16-BITS WIDE)     ////////////     //
+ 622:funsape/globalDefines.hpp **** #define hwordGetByte1(dataHword)        (((dataHword) >> 8) & 0x00FF)
+ 623:funsape/globalDefines.hpp **** #define hwordGetByte0(dataHword)        ((dataHword) & 0x00FF)
+ 624:funsape/globalDefines.hpp **** #define hwordSwitchBytes(dataHword)     ((hwordGetByte0(dataHword) << 8) | \
+ 625:funsape/globalDefines.hpp ****         (hwordGetByte1(dataHword)))
+ 626:funsape/globalDefines.hpp **** 
+ 627:funsape/globalDefines.hpp **** //     ////////////     DATA MANIPULATION (32-BITS WIDE)     ////////////     //
+ 628:funsape/globalDefines.hpp **** #define wordGetByte3(dataWord)          (((dataWord) >> 24) & 0x000000FF)
+ 629:funsape/globalDefines.hpp **** #define wordGetByte2(dataWord)          (((dataWord) >> 16) & 0x000000FF)
+ 630:funsape/globalDefines.hpp **** #define wordGetByte1(dataWord)          (((dataWord) >> 8) & 0x000000FF)
+ 631:funsape/globalDefines.hpp **** #define wordGetByte0(dataWord)          ((dataWord) & 0x000000FF)
+ 632:funsape/globalDefines.hpp **** #define wordSwitchBytes(dataWord)       ((wordGetByte0(dataWord) << 24)  | \
+ 633:funsape/globalDefines.hpp ****         (wordGetByte1(dataWord) << 16) | \
+ 634:funsape/globalDefines.hpp ****         (wordGetByte2(dataWord) << 8)  | \
+ 635:funsape/globalDefines.hpp ****         (wordGetByte3(dataWord)))
+ 636:funsape/globalDefines.hpp **** #define wordGetHword1(dataWord)         (((dataWord) >> 16) & 0x0000FFFF)
+ 637:funsape/globalDefines.hpp **** #define wordGetHword0(dataWord)         ((dataWord) & 0x0000FFFF)
+ 638:funsape/globalDefines.hpp **** #define wordSwitchHwords(dataWord)      ((wordGetHword0(dataWord) << 16) | \
+ 639:funsape/globalDefines.hpp ****         (wordGetHword1(dataWord)))
+ 640:funsape/globalDefines.hpp **** 
+ 641:funsape/globalDefines.hpp **** //     ////////////     DATA MANIPULATION (64-BITS WIDE)     ////////////     //
+ 642:funsape/globalDefines.hpp **** #define dwordGetByte7(dataDword)        (((dataDword) >> 56) & 0x00000000000000FF)
+ 643:funsape/globalDefines.hpp **** #define dwordGetByte6(dataDword)        (((dataDword) >> 48) & 0x00000000000000FF)
+ 644:funsape/globalDefines.hpp **** #define dwordGetByte5(dataDword)        (((dataDword) >> 40) & 0x00000000000000FF)
+ 645:funsape/globalDefines.hpp **** #define dwordGetByte4(dataDword)        (((dataDword) >> 32) & 0x00000000000000FF)
+ 646:funsape/globalDefines.hpp **** #define dwordGetByte3(dataDword)        (((dataDword) >> 24) & 0x00000000000000FF)
+ 647:funsape/globalDefines.hpp **** #define dwordGetByte2(dataDword)        (((dataDword) >> 16) & 0x00000000000000FF)
+ 648:funsape/globalDefines.hpp **** #define dwordGetByte1(dataDword)        (((dataDword) >> 8) & 0x00000000000000FF)
+ 649:funsape/globalDefines.hpp **** #define dwordGetByte0(dataDword)        ((dataDword) & 0x00000000000000FF)
+ 650:funsape/globalDefines.hpp **** #define dwordSwitchBytes(dataDword)     ((dwordGetByte0(dataDword) << 56)  | \
+ 651:funsape/globalDefines.hpp ****         (dwordGetByte1(dataDword) << 48) | \
+ 652:funsape/globalDefines.hpp ****         (dwordGetByte2(dataDword) << 40) | \
+ 653:funsape/globalDefines.hpp ****         (dwordGetByte3(dataDword) << 32) | \
+ 654:funsape/globalDefines.hpp ****         (dwordGetByte4(dataDword) << 24) | \
+ 655:funsape/globalDefines.hpp ****         (dwordGetByte5(dataDword) << 16) | \
+ 656:funsape/globalDefines.hpp ****         (dwordGetByte6(dataDword) << 8)  | \
+ 657:funsape/globalDefines.hpp ****         (dwordGetByte7(dataDword)))
+ 658:funsape/globalDefines.hpp **** #define dwordGetHword3(dataDword)       ((dataDword >> 48) & 0x000000000000FFFF)
+ 659:funsape/globalDefines.hpp **** #define dwordGetHword2(dataDword)       ((dataDword >> 32) & 0x000000000000FFFF)
+ 660:funsape/globalDefines.hpp **** #define dwordGetHword1(dataDword)       ((dataDword >> 16) & 0x000000000000FFFF)
+ 661:funsape/globalDefines.hpp **** #define dwordGetHword0(dataDword)       ((dataDword >> 0) & 0x000000000000FFFF)
+ 662:funsape/globalDefines.hpp **** #define dwordSwitchHwords(dataDword)    ((dwordGetHword0(dataDword) << 48)  | \
+ 663:funsape/globalDefines.hpp ****         (dwordGetHword1(dataDword) << 32) | \
+ 664:funsape/globalDefines.hpp ****         (dwordGetHword2(dataDword) << 16) | \
+ 665:funsape/globalDefines.hpp ****         (dwordGetHword3(dataDword)))
+ 666:funsape/globalDefines.hpp **** #define dwordGetWord1(dataDword)         (((dataDword) >> 32) & 0x00000000FFFFFFFF)
+ 667:funsape/globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
+ 668:funsape/globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
+ 669:funsape/globalDefines.hpp ****         (dwordGetWord1(dataDword)))
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 13
+
+
+ 670:funsape/globalDefines.hpp **** 
+ 671:funsape/globalDefines.hpp **** //     /////////////////////     TRUNCATE VALUES    /////////////////////     //
+ 672:funsape/globalDefines.hpp **** #define getMaximumOf(var1, var2)        (       \
+ 673:funsape/globalDefines.hpp ****         ((var1) > (var2))                       \
+ 674:funsape/globalDefines.hpp ****         ? (var1)                                \
+ 675:funsape/globalDefines.hpp ****         : (var2))
+ 676:funsape/globalDefines.hpp **** #define getMinimumOf(var1, var2)        (       \
+ 677:funsape/globalDefines.hpp ****         ((var1) < (var2))                       \
+ 678:funsape/globalDefines.hpp ****         ? (var1)                                \
+ 679:funsape/globalDefines.hpp ****         : (var2))
+ 680:funsape/globalDefines.hpp **** #define truncateBetween(var, min, max)  (       \
+ 681:funsape/globalDefines.hpp ****         ((var) < (min))                         \
+ 682:funsape/globalDefines.hpp ****         ? (min)                                 \
+ 683:funsape/globalDefines.hpp ****         : (((var) > (max))                      \
+ 684:funsape/globalDefines.hpp ****                 ? (max)                         \
+ 685:funsape/globalDefines.hpp ****                 : (var)                         \
+ 686:funsape/globalDefines.hpp ****         ))
+ 687:funsape/globalDefines.hpp **** 
+ 688:funsape/globalDefines.hpp **** //     //////////////////////     STRINGIFYING    ///////////////////////     //
+ 689:funsape/globalDefines.hpp **** #define stringifyName(constant)         #constant
+ 690:funsape/globalDefines.hpp **** #define stringifyValue(constant)        stringifyName(constant)
+ 691:funsape/globalDefines.hpp **** 
+ 692:funsape/globalDefines.hpp **** // =============================================================================
+ 693:funsape/globalDefines.hpp **** // Extern global variables
+ 694:funsape/globalDefines.hpp **** // =============================================================================
+ 695:funsape/globalDefines.hpp **** 
+ 696:funsape/globalDefines.hpp **** // NONE
+ 697:funsape/globalDefines.hpp **** 
+ 698:funsape/globalDefines.hpp **** // =============================================================================
+ 699:funsape/globalDefines.hpp **** // Inline functions declaration
+ 700:funsape/globalDefines.hpp **** // =============================================================================
+ 701:funsape/globalDefines.hpp **** 
+ 702:funsape/globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
+ 703:funsape/globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p);
+ 704:funsape/globalDefines.hpp **** char_t inlined toUpperCase(cchar_t character_p);
+ 705:funsape/globalDefines.hpp **** 
+ 706:funsape/globalDefines.hpp **** //     /////////////////////     DATA VALIDITY     //////////////////////     //
+ 707:funsape/globalDefines.hpp **** bool_t inlined isAsciiLowerCaseLetter(cchar_t character_p);
+ 708:funsape/globalDefines.hpp **** bool_t inlined isAsciiUpperCaseLetter(cchar_t character_p);
+ 709:funsape/globalDefines.hpp **** bool_t inlined isAsciiCommand(cchar_t character_p);
+ 710:funsape/globalDefines.hpp **** bool_t inlined isAsciiLetter(cchar_t character_p);
+ 711:funsape/globalDefines.hpp **** bool_t inlined isAsciiNumber(cchar_t character_p);
+ 712:funsape/globalDefines.hpp **** bool_t inlined isAsciiSymbol(cchar_t character_p);
+ 713:funsape/globalDefines.hpp **** 
+ 714:funsape/globalDefines.hpp **** //     /////////////////////     SYSTEM ACTIONS    //////////////////////     //
+ 715:funsape/globalDefines.hpp **** void inlined die(Error errorCode_p);
+ 716:funsape/globalDefines.hpp **** void inlined doNop(void);
+ 717:funsape/globalDefines.hpp **** void inlined doNothing(void);
+ 718:funsape/globalDefines.hpp **** void inlined systemHalt(void (*function_p)(void) = nullptr);
+ 719:funsape/globalDefines.hpp **** 
+ 720:funsape/globalDefines.hpp **** // =============================================================================
+ 721:funsape/globalDefines.hpp **** // Inline functions definitions
+ 722:funsape/globalDefines.hpp **** // =============================================================================
+ 723:funsape/globalDefines.hpp **** 
+ 724:funsape/globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
+ 725:funsape/globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
+ 726:funsape/globalDefines.hpp **** {
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 14
+
+
+ 727:funsape/globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
+ 728:funsape/globalDefines.hpp **** }
+ 729:funsape/globalDefines.hpp **** 
+ 730:funsape/globalDefines.hpp **** char_t inlined toUpperCase(cchar_t character_p)
+ 731:funsape/globalDefines.hpp **** {
+ 732:funsape/globalDefines.hpp ****     return ((isAsciiLowerCaseLetter(character_p)) ? (character_p - 0x20) : character_p);
+ 733:funsape/globalDefines.hpp **** }
+ 734:funsape/globalDefines.hpp **** 
+ 735:funsape/globalDefines.hpp **** //     /////////////////////     DATA VALIDITY     //////////////////////     //
+ 736:funsape/globalDefines.hpp **** bool_t inlined isAsciiLowerCaseLetter(cchar_t character_p)
+ 737:funsape/globalDefines.hpp **** {
+ 738:funsape/globalDefines.hpp ****     return ((bool_t)(((character_p >= 'a') && (character_p <= 'z')) ? true : false));
+ 739:funsape/globalDefines.hpp **** }
+ 740:funsape/globalDefines.hpp **** 
+ 741:funsape/globalDefines.hpp **** bool_t inlined isAsciiUpperCaseLetter(cchar_t character_p)
+ 742:funsape/globalDefines.hpp **** {
+ 743:funsape/globalDefines.hpp ****     return ((bool_t)(((character_p >= 'A') && (character_p <= 'Z')) ? true : false));
+ 744:funsape/globalDefines.hpp **** }
+ 745:funsape/globalDefines.hpp **** 
+ 746:funsape/globalDefines.hpp **** bool_t inlined isAsciiCommand(cchar_t character_p)
+ 747:funsape/globalDefines.hpp **** {
+ 748:funsape/globalDefines.hpp ****     return ((bool_t)((character_p < ' ') ? true : false));
+ 749:funsape/globalDefines.hpp **** }
+ 750:funsape/globalDefines.hpp **** 
+ 751:funsape/globalDefines.hpp **** bool_t inlined isAsciiLetter(cchar_t character_p)
+ 752:funsape/globalDefines.hpp **** {
+ 753:funsape/globalDefines.hpp ****     return ((bool_t)((isAsciiLowerCaseLetter(character_p) || (isAsciiUpperCaseLetter(character_p)) 
+ 754:funsape/globalDefines.hpp **** }
+ 755:funsape/globalDefines.hpp **** 
+ 756:funsape/globalDefines.hpp **** bool_t inlined isAsciiNumber(cchar_t character_p)
+ 757:funsape/globalDefines.hpp **** {
+ 758:funsape/globalDefines.hpp ****     return ((bool_t)(((character_p >= '0') && (character_p <= '9')) ? true : false));
+ 759:funsape/globalDefines.hpp **** }
+ 760:funsape/globalDefines.hpp **** 
+ 761:funsape/globalDefines.hpp **** bool_t inlined isAsciiSymbol(cchar_t character_p)
+ 762:funsape/globalDefines.hpp **** {
+ 763:funsape/globalDefines.hpp ****     return ((bool_t)(((!isAsciiNumber(character_p)) && (!isAsciiCommand(character_p)) &&
+ 764:funsape/globalDefines.hpp ****                                     (!isAsciiLetter(character_p))) ? true : false));
+ 765:funsape/globalDefines.hpp **** }
+ 766:funsape/globalDefines.hpp **** 
+ 767:funsape/globalDefines.hpp **** //     /////////////////////     SYSTEM ACTIONS    //////////////////////     //
+ 768:funsape/globalDefines.hpp **** void inlined die(Error errorCode_p)
+ 769:funsape/globalDefines.hpp **** {
+ 770:funsape/globalDefines.hpp ****     printf("Failed with error=%u (0x%04x).\r", (cuint16_t)errorCode_p, (cuint16_t)errorCode_p);
+ 771:funsape/globalDefines.hpp ****     systemHalt();
+ 772:funsape/globalDefines.hpp **** 
+ 773:funsape/globalDefines.hpp ****     return;
+ 774:funsape/globalDefines.hpp **** }
+ 775:funsape/globalDefines.hpp **** 
+ 776:funsape/globalDefines.hpp **** void inlined doNop(void)
+ 777:funsape/globalDefines.hpp **** {
+ 778:funsape/globalDefines.hpp ****     asm volatile("nop");
+ 779:funsape/globalDefines.hpp **** 
+ 780:funsape/globalDefines.hpp ****     return;
+ 781:funsape/globalDefines.hpp **** }
+ 782:funsape/globalDefines.hpp **** 
+ 783:funsape/globalDefines.hpp **** void inlined doNothing(void)
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 15
+
+
+ 784:funsape/globalDefines.hpp **** {
+ 785:funsape/globalDefines.hpp ****     return;
+ 786:funsape/globalDefines.hpp **** }
+ 787:funsape/globalDefines.hpp **** 
+ 788:funsape/globalDefines.hpp **** void inlined systemHalt(void (*function_p)(void))
+ 789:funsape/globalDefines.hpp **** {
+ 790:funsape/globalDefines.hpp ****     if(isPointerValid(function_p)) {
+ 791:funsape/globalDefines.hpp ****         function_p();
+ 792:funsape/globalDefines.hpp ****     }
+ 793:funsape/globalDefines.hpp ****     while(1) {
+ 794:funsape/globalDefines.hpp ****         doNothing();
+ 795:funsape/globalDefines.hpp ****     }
+ 796:funsape/globalDefines.hpp **** 
+ 797:funsape/globalDefines.hpp ****     return;
+ 798:funsape/globalDefines.hpp **** }
+ 799:funsape/globalDefines.hpp **** 
+ 800:funsape/globalDefines.hpp **** // =============================================================================
+ 801:funsape/globalDefines.hpp **** // Public functions weakly defined
+ 802:funsape/globalDefines.hpp **** // =============================================================================
+ 803:funsape/globalDefines.hpp **** 
+ 804:funsape/globalDefines.hpp **** #define delayMs(time_p)                 _delay_ms(time_p)
+ 805:funsape/globalDefines.hpp **** #define delayUs(time_p)                 _delay_us(time_p)
+ 806:funsape/globalDefines.hpp **** 
+ 807:funsape/globalDefines.hpp **** weakened uint32_t getTick(void)
+ 808:funsape/globalDefines.hpp **** {
+  17               		.loc 1 808 1 view -0
+  18               		.cfi_startproc
+  19               	/* prologue: function */
+  20               	/* frame size = 0 */
+  21               	/* stack size = 0 */
+  22               	.L__stack_usage = 0
+ 809:funsape/globalDefines.hpp ****     // TODO
+ 810:funsape/globalDefines.hpp ****     return 0;
+  23               		.loc 1 810 5 view .LVU1
+ 811:funsape/globalDefines.hpp **** }
+  24               		.loc 1 811 1 is_stmt 0 view .LVU2
+  25 0000 60E0      		ldi r22,0
+  26 0002 70E0      		ldi r23,0
+  27 0004 CB01      		movw r24,r22
+  28               	/* epilogue start */
+  29 0006 0895      		ret
+  30               		.cfi_endproc
+  31               	.LFE32:
+  33               		.section	.text._Z7bitbangh,"ax",@progbits
+  34               	.global	_Z7bitbangh
+  36               	_Z7bitbangh:
+  37               	.LVL0:
+  38               	.LFB53:
+  39               		.file 2 "kbitbang.cpp"
+   1:kbitbang.cpp  **** #include <avr/io.h>
+   2:kbitbang.cpp  **** #include <util/delay.h>
+   3:kbitbang.cpp  **** #include <avr/interrupt.h>
+   4:kbitbang.cpp  **** #include "funsape/globalDefines.hpp"
+   5:kbitbang.cpp  **** #include "funsape/peripheral/int0.hpp"
+   6:kbitbang.cpp  **** #include "funsape/peripheral/timer0.hpp"
+   7:kbitbang.cpp  **** #include "kbitbang.hpp"
+   8:kbitbang.cpp  **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 16
+
+
+   9:kbitbang.cpp  **** 
+  10:kbitbang.cpp  **** vbool_t timer0flag;
+  11:kbitbang.cpp  **** 
+  12:kbitbang.cpp  **** void bitbang(uint8_t tecla)
+  13:kbitbang.cpp  **** {
+  40               		.loc 2 13 1 is_stmt 1 view -0
+  41               		.cfi_startproc
+  42               	/* prologue: function */
+  43               	/* frame size = 0 */
+  44               	/* stack size = 0 */
+  45               	.L__stack_usage = 0
+  14:kbitbang.cpp  ****     timer0flag = true;
+  46               		.loc 2 14 5 view .LVU4
+  47               		.loc 2 14 16 is_stmt 0 view .LVU5
+  48 0000 91E0      		ldi r25,lo8(1)
+  49 0002 9093 0000 		sts timer0flag,r25
+  15:kbitbang.cpp  ****     timer0.clearCompareAInterruptRequest();
+  50               		.loc 2 15 5 is_stmt 1 view .LVU6
+  51               	.LBB27:
+  52               	.LBI27:
+  53               		.file 3 "funsape/peripheral/timer0.hpp"
+   1:funsape/peripheral/timer0.hpp **** //!
+   2:funsape/peripheral/timer0.hpp **** //! \file           timer0.hpp
+   3:funsape/peripheral/timer0.hpp **** //! \brief          TIMER0 peripheral control for the FunSAPE AVR8 Library
+   4:funsape/peripheral/timer0.hpp **** //! \author         Leandro Schwarz (bladabuska+funsapeavr8lib@gmail.com)
+   5:funsape/peripheral/timer0.hpp **** //! \date           2023-04-05
+   6:funsape/peripheral/timer0.hpp **** //! \version        23.04
+   7:funsape/peripheral/timer0.hpp **** //! \copyright      license
+   8:funsape/peripheral/timer0.hpp **** //! \details        TIMER0 peripheral control for the FunSAPE AVR8 Library
+   9:funsape/peripheral/timer0.hpp **** //! \todo           Todo list
+  10:funsape/peripheral/timer0.hpp **** //!
+  11:funsape/peripheral/timer0.hpp **** 
+  12:funsape/peripheral/timer0.hpp **** // =============================================================================
+  13:funsape/peripheral/timer0.hpp **** // Include guard (START)
+  14:funsape/peripheral/timer0.hpp **** // =============================================================================
+  15:funsape/peripheral/timer0.hpp **** 
+  16:funsape/peripheral/timer0.hpp **** #ifndef __TIMER0_HPP
+  17:funsape/peripheral/timer0.hpp **** #define __TIMER0_HPP                            2304
+  18:funsape/peripheral/timer0.hpp **** 
+  19:funsape/peripheral/timer0.hpp **** // =============================================================================
+  20:funsape/peripheral/timer0.hpp **** // Dependencies
+  21:funsape/peripheral/timer0.hpp **** // =============================================================================
+  22:funsape/peripheral/timer0.hpp **** 
+  23:funsape/peripheral/timer0.hpp **** //     /////////////////     GLOBAL DEFINITIONS FILE    /////////////////     //
+  24:funsape/peripheral/timer0.hpp **** #include "../globalDefines.hpp"
+  25:funsape/peripheral/timer0.hpp **** #if !defined(__GLOBAL_DEFINES_HPP)
+  26:funsape/peripheral/timer0.hpp **** #    error "Global definitions file is corrupted!"
+  27:funsape/peripheral/timer0.hpp **** #elif __GLOBAL_DEFINES_HPP != __TIMER0_HPP
+  28:funsape/peripheral/timer0.hpp **** #    error "Version mismatch between file header and global definitions file!"
+  29:funsape/peripheral/timer0.hpp **** #endif
+  30:funsape/peripheral/timer0.hpp **** 
+  31:funsape/peripheral/timer0.hpp **** //     //////////////////     LIBRARY DEPENDENCIES     //////////////////     //
+  32:funsape/peripheral/timer0.hpp **** #include "../util/debug.hpp"
+  33:funsape/peripheral/timer0.hpp **** #if !defined(__DEBUG_HPP)
+  34:funsape/peripheral/timer0.hpp **** #   error "Header file (debug.hpp) is corrupted!"
+  35:funsape/peripheral/timer0.hpp **** #elif __DEBUG_HPP != __TIMER0_HPP
+  36:funsape/peripheral/timer0.hpp **** #   error "Version mismatch between header file and library dependency (debug.hpp)!"
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 17
+
+
+  37:funsape/peripheral/timer0.hpp **** #endif
+  38:funsape/peripheral/timer0.hpp **** 
+  39:funsape/peripheral/timer0.hpp **** // =============================================================================
+  40:funsape/peripheral/timer0.hpp **** // Undefining previous definitions
+  41:funsape/peripheral/timer0.hpp **** // =============================================================================
+  42:funsape/peripheral/timer0.hpp **** 
+  43:funsape/peripheral/timer0.hpp **** // NONE
+  44:funsape/peripheral/timer0.hpp **** 
+  45:funsape/peripheral/timer0.hpp **** // =============================================================================
+  46:funsape/peripheral/timer0.hpp **** // Constant definitions
+  47:funsape/peripheral/timer0.hpp **** // =============================================================================
+  48:funsape/peripheral/timer0.hpp **** 
+  49:funsape/peripheral/timer0.hpp **** // NONE
+  50:funsape/peripheral/timer0.hpp **** 
+  51:funsape/peripheral/timer0.hpp **** // =============================================================================
+  52:funsape/peripheral/timer0.hpp **** // New data types
+  53:funsape/peripheral/timer0.hpp **** // =============================================================================
+  54:funsape/peripheral/timer0.hpp **** 
+  55:funsape/peripheral/timer0.hpp **** // NONE
+  56:funsape/peripheral/timer0.hpp **** 
+  57:funsape/peripheral/timer0.hpp **** // =============================================================================
+  58:funsape/peripheral/timer0.hpp **** // Interrupt callback functions
+  59:funsape/peripheral/timer0.hpp **** // =============================================================================
+  60:funsape/peripheral/timer0.hpp **** 
+  61:funsape/peripheral/timer0.hpp **** //!
+  62:funsape/peripheral/timer0.hpp **** //! \brief          TIMER0 compare A match interrupt callback function
+  63:funsape/peripheral/timer0.hpp **** //! \details        This function is called when the TIMER0 compare A match
+  64:funsape/peripheral/timer0.hpp **** //!                     interrupt is treated. It is a weak function that can be
+  65:funsape/peripheral/timer0.hpp **** //!                     overwritten by user code.
+  66:funsape/peripheral/timer0.hpp **** //!
+  67:funsape/peripheral/timer0.hpp **** void timer0CompareACallback();
+  68:funsape/peripheral/timer0.hpp **** 
+  69:funsape/peripheral/timer0.hpp **** //!
+  70:funsape/peripheral/timer0.hpp **** //! \brief          TIMER0 compare B match interrupt callback function
+  71:funsape/peripheral/timer0.hpp **** //! \details        This function is called when the TIMER0 compare B match
+  72:funsape/peripheral/timer0.hpp **** //!                     interrupt is treated. It is a weak function that can be
+  73:funsape/peripheral/timer0.hpp **** //!                     overwritten by user code.
+  74:funsape/peripheral/timer0.hpp **** //!
+  75:funsape/peripheral/timer0.hpp **** void timer0CompareBCallback();
+  76:funsape/peripheral/timer0.hpp **** 
+  77:funsape/peripheral/timer0.hpp **** //!
+  78:funsape/peripheral/timer0.hpp **** //! \brief          TIMER0 overflow interrupt callback function
+  79:funsape/peripheral/timer0.hpp **** //! \details        This function is called when the TIMER0 overflow interrupt
+  80:funsape/peripheral/timer0.hpp **** //!                     is treated. It is a weak function that can be
+  81:funsape/peripheral/timer0.hpp **** //!                     overwritten by user code.
+  82:funsape/peripheral/timer0.hpp **** //!
+  83:funsape/peripheral/timer0.hpp **** void timer0OverflowCallback();
+  84:funsape/peripheral/timer0.hpp **** 
+  85:funsape/peripheral/timer0.hpp **** // =============================================================================
+  86:funsape/peripheral/timer0.hpp **** // Timer0 Class
+  87:funsape/peripheral/timer0.hpp **** // =============================================================================
+  88:funsape/peripheral/timer0.hpp **** 
+  89:funsape/peripheral/timer0.hpp **** //!
+  90:funsape/peripheral/timer0.hpp **** //! \brief          Timer0 class
+  91:funsape/peripheral/timer0.hpp **** //! \details        Timer0 class
+  92:funsape/peripheral/timer0.hpp **** //!
+  93:funsape/peripheral/timer0.hpp **** class Timer0
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 18
+
+
+  94:funsape/peripheral/timer0.hpp **** {
+  95:funsape/peripheral/timer0.hpp ****     // -------------------------------------------------------------------------
+  96:funsape/peripheral/timer0.hpp ****     // New data types ----------------------------------------------------------
+  97:funsape/peripheral/timer0.hpp **** public:
+  98:funsape/peripheral/timer0.hpp **** 
+  99:funsape/peripheral/timer0.hpp ****     //     ////////////////     TIMER0 Clock Source     /////////////////     //
+ 100:funsape/peripheral/timer0.hpp ****     //!
+ 101:funsape/peripheral/timer0.hpp ****     //! \brief      Clock source enumeration
+ 102:funsape/peripheral/timer0.hpp ****     //! \details    Clock prescaler options associated with TIMER0.
+ 103:funsape/peripheral/timer0.hpp ****     //! \warning    The value associate with the symbolic names may change
+ 104:funsape/peripheral/timer0.hpp ****     //!                 between builds and might not reflect the register/bits
+ 105:funsape/peripheral/timer0.hpp ****     //!                 real values. In order to ensure compatibility between
+ 106:funsape/peripheral/timer0.hpp ****     //!                 builds, always refer to the SYMBOLIC NAME, instead of
+ 107:funsape/peripheral/timer0.hpp ****     //!                 the VALUE.
+ 108:funsape/peripheral/timer0.hpp ****     //!
+ 109:funsape/peripheral/timer0.hpp ****     enum class ClockSource : uint8_t {
+ 110:funsape/peripheral/timer0.hpp ****         DISABLED                    = 0,    //!< Disables clock, timer is off
+ 111:funsape/peripheral/timer0.hpp ****         PRESCALER_1                 = 1,    //!< Disables prescaler, timer clock frequency will be 
+ 112:funsape/peripheral/timer0.hpp ****         PRESCALER_8                 = 2,    //!< Timer clock frequency will be CPU clock divided by
+ 113:funsape/peripheral/timer0.hpp ****         PRESCALER_64                = 3,    //!< Timer clock frequency will be CPU clock divided by
+ 114:funsape/peripheral/timer0.hpp ****         PRESCALER_256               = 4,    //!< Timer clock frequency will be CPU clock divided by
+ 115:funsape/peripheral/timer0.hpp ****         PRESCALER_1024              = 5,    //!< Timer clock frequency will be CPU clock divided by
+ 116:funsape/peripheral/timer0.hpp ****         T0_FALLING_EDGE             = 6,    //!< Timer clock will be based on the falling edge of a
+ 117:funsape/peripheral/timer0.hpp ****         T0_RISING_EDGE              = 7     //!< Timer clock will be based on the rising edge of a 
+ 118:funsape/peripheral/timer0.hpp ****     };
+ 119:funsape/peripheral/timer0.hpp **** 
+ 120:funsape/peripheral/timer0.hpp ****     //     ////////////////////     TIMER0 Mode     /////////////////////     //
+ 121:funsape/peripheral/timer0.hpp ****     //!
+ 122:funsape/peripheral/timer0.hpp ****     //! \brief      Operation Mode enumeration
+ 123:funsape/peripheral/timer0.hpp ****     //! \details    Operation Mode options associated with TIMER0.
+ 124:funsape/peripheral/timer0.hpp ****     //! \warning    The value associate with the symbolic names may change
+ 125:funsape/peripheral/timer0.hpp ****     //!                 between builds and might not reflect the register/bits
+ 126:funsape/peripheral/timer0.hpp ****     //!                 real values. In order to ensure compatibility between
+ 127:funsape/peripheral/timer0.hpp ****     //!                 builds, always refer to the SYMBOLIC NAME, instead of
+ 128:funsape/peripheral/timer0.hpp ****     //!                 the VALUE.
+ 129:funsape/peripheral/timer0.hpp ****     //!
+ 130:funsape/peripheral/timer0.hpp ****     enum class Mode : uint8_t {
+ 131:funsape/peripheral/timer0.hpp ****         NORMAL                          = 0,    //!< Normal mode (direction = UP / TOP = 0xFF / UPD
+ 132:funsape/peripheral/timer0.hpp ****         PWM_PHASE_CORRECTED_MAX         = 1,    //!< PWM mode with phase correction (direction = DO
+ 133:funsape/peripheral/timer0.hpp ****         CTC_OCRA                        = 2,    //!< CTC mode (direction = UP / TOP = OCR0A / UPDAT
+ 134:funsape/peripheral/timer0.hpp ****         PWM_FAST_MAX                    = 3,    //!< PWM mode fast (direction = UP / TOP = 0xFF / U
+ 135:funsape/peripheral/timer0.hpp ****         // RESERVED                     = 4,
+ 136:funsape/peripheral/timer0.hpp ****         PWM_PHASE_CORRECTED_OCRA        = 5,    //!< PWM mode fast (direction = UP / TOP = OCR0A / 
+ 137:funsape/peripheral/timer0.hpp ****         // RESERVED                     = 6,
+ 138:funsape/peripheral/timer0.hpp ****         PWM_FAST_OCRA                   = 7,    //!< PWM mode with phase correction (direction = DO
+ 139:funsape/peripheral/timer0.hpp ****     };
+ 140:funsape/peripheral/timer0.hpp **** 
+ 141:funsape/peripheral/timer0.hpp ****     //     /////////////////     TIMER0 Output Mode    //////////////////     //
+ 142:funsape/peripheral/timer0.hpp ****     //!
+ 143:funsape/peripheral/timer0.hpp ****     //! \brief      Output Mode enumeration
+ 144:funsape/peripheral/timer0.hpp ****     //! \details    Output Mode options associated with TIMER0.
+ 145:funsape/peripheral/timer0.hpp ****     //! \warning    The value associate with the symbolic names may change
+ 146:funsape/peripheral/timer0.hpp ****     //!                 between builds and might not reflect the register/bits
+ 147:funsape/peripheral/timer0.hpp ****     //!                 real values. In order to ensure compatibility between
+ 148:funsape/peripheral/timer0.hpp ****     //!                 builds, always refer to the SYMBOLIC NAME, instead of
+ 149:funsape/peripheral/timer0.hpp ****     //!                 the VALUE.
+ 150:funsape/peripheral/timer0.hpp ****     //!
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 19
+
+
+ 151:funsape/peripheral/timer0.hpp ****     enum class OutputMode : uint8_t {
+ 152:funsape/peripheral/timer0.hpp ****         NORMAL                          = 0,    //!< OC0x disabled. Normal port operation
+ 153:funsape/peripheral/timer0.hpp ****         TOGGLE_ON_COMPARE               = 1,    //!< OC0x will toggle on OCR0x compare match
+ 154:funsape/peripheral/timer0.hpp ****         CLEAR_ON_COMPARE                = 2,    //!< OC0x will clear on OCR0x compare match
+ 155:funsape/peripheral/timer0.hpp ****         SET_ON_COMPARE                  = 3,    //!< OC0x will set on OCR0x compare match
+ 156:funsape/peripheral/timer0.hpp ****         NON_INVERTING_MODE              = 2,    //!< OC0x will produce a non-inverted PWM signal
+ 157:funsape/peripheral/timer0.hpp ****         INVERTING_MODE                  = 3,    //!< OC0x will produce a inverted PWM signal
+ 158:funsape/peripheral/timer0.hpp ****     };
+ 159:funsape/peripheral/timer0.hpp **** 
+ 160:funsape/peripheral/timer0.hpp ****     // -------------------------------------------------------------------------
+ 161:funsape/peripheral/timer0.hpp ****     // Constructors ------------------------------------------------------------
+ 162:funsape/peripheral/timer0.hpp **** public:
+ 163:funsape/peripheral/timer0.hpp **** 
+ 164:funsape/peripheral/timer0.hpp ****     //!
+ 165:funsape/peripheral/timer0.hpp ****     //! \brief      Timer0 class constructor
+ 166:funsape/peripheral/timer0.hpp ****     //! \details    Creates an Timer0 object
+ 167:funsape/peripheral/timer0.hpp ****     //!
+ 168:funsape/peripheral/timer0.hpp ****     Timer0(
+ 169:funsape/peripheral/timer0.hpp ****             void
+ 170:funsape/peripheral/timer0.hpp ****     );
+ 171:funsape/peripheral/timer0.hpp **** 
+ 172:funsape/peripheral/timer0.hpp ****     //!
+ 173:funsape/peripheral/timer0.hpp ****     //! \brief      Timer0 class destructor
+ 174:funsape/peripheral/timer0.hpp ****     //! \details    Destroys an Timer0 object
+ 175:funsape/peripheral/timer0.hpp ****     //!
+ 176:funsape/peripheral/timer0.hpp ****     ~Timer0(
+ 177:funsape/peripheral/timer0.hpp ****             void
+ 178:funsape/peripheral/timer0.hpp ****     );
+ 179:funsape/peripheral/timer0.hpp **** 
+ 180:funsape/peripheral/timer0.hpp ****     // -------------------------------------------------------------------------
+ 181:funsape/peripheral/timer0.hpp ****     // Methods -----------------------------------------------------------------
+ 182:funsape/peripheral/timer0.hpp **** public:
+ 183:funsape/peripheral/timer0.hpp ****     //     ///////////////////     INITIALIZATION    ////////////////////     //
+ 184:funsape/peripheral/timer0.hpp **** 
+ 185:funsape/peripheral/timer0.hpp ****     //!
+ 186:funsape/peripheral/timer0.hpp ****     //! \brief      Initializes the TIMER0 module
+ 187:funsape/peripheral/timer0.hpp ****     //! \details    Initializes the TIMER0 module.
+ 188:funsape/peripheral/timer0.hpp ****     //! \param      mode_p              Operation mode
+ 189:funsape/peripheral/timer0.hpp ****     //! \param      clockSource_p       Clock source and prescaler
+ 190:funsape/peripheral/timer0.hpp ****     //! \return     bool_t              True on success / False on failure
+ 191:funsape/peripheral/timer0.hpp ****     //!
+ 192:funsape/peripheral/timer0.hpp ****     bool_t init(
+ 193:funsape/peripheral/timer0.hpp ****             Mode mode_p,
+ 194:funsape/peripheral/timer0.hpp ****             ClockSource clockSource_p
+ 195:funsape/peripheral/timer0.hpp ****     );
+ 196:funsape/peripheral/timer0.hpp **** 
+ 197:funsape/peripheral/timer0.hpp ****     //!
+ 198:funsape/peripheral/timer0.hpp ****     //! \brief      Configures the clock source and the clock prescaler
+ 199:funsape/peripheral/timer0.hpp ****     //! \details    Configures the clock source and the clock prescaler.
+ 200:funsape/peripheral/timer0.hpp ****     //! \param      clockSource_p       Clock source and prescaler
+ 201:funsape/peripheral/timer0.hpp ****     //! \return     bool_t              True on success / False on failure
+ 202:funsape/peripheral/timer0.hpp ****     //!
+ 203:funsape/peripheral/timer0.hpp ****     bool_t setClockSource(
+ 204:funsape/peripheral/timer0.hpp ****             ClockSource clockSource_p
+ 205:funsape/peripheral/timer0.hpp ****     );
+ 206:funsape/peripheral/timer0.hpp **** 
+ 207:funsape/peripheral/timer0.hpp ****     //!
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 20
+
+
+ 208:funsape/peripheral/timer0.hpp ****     //! \brief      Configures the operation mode
+ 209:funsape/peripheral/timer0.hpp ****     //! \details    Configures the operation mode.
+ 210:funsape/peripheral/timer0.hpp ****     //! \param      mode_p              Operation mode
+ 211:funsape/peripheral/timer0.hpp ****     //! \return     bool_t              True on success / False on failure
+ 212:funsape/peripheral/timer0.hpp ****     //!
+ 213:funsape/peripheral/timer0.hpp ****     bool_t setMode(
+ 214:funsape/peripheral/timer0.hpp ****             Mode mode_p
+ 215:funsape/peripheral/timer0.hpp ****     );
+ 216:funsape/peripheral/timer0.hpp **** 
+ 217:funsape/peripheral/timer0.hpp ****     //!
+ 218:funsape/peripheral/timer0.hpp ****     //! \brief      Configures the desired behavior of OCR0x pins during compare match
+ 219:funsape/peripheral/timer0.hpp ****     //! \details    Configures the desired behavior of OCR0x pins during compare match.
+ 220:funsape/peripheral/timer0.hpp ****     //! \param      compA_p             Behavior of OCR0A pin during a compare A match
+ 221:funsape/peripheral/timer0.hpp ****     //! \param      compB_p             Behavior of OCR0B pin during a compare B match
+ 222:funsape/peripheral/timer0.hpp ****     //! \return     bool_t              True on success / False on failure
+ 223:funsape/peripheral/timer0.hpp ****     //!
+ 224:funsape/peripheral/timer0.hpp ****     bool_t setOutputMode(
+ 225:funsape/peripheral/timer0.hpp ****             OutputMode compA_p,
+ 226:funsape/peripheral/timer0.hpp ****             OutputMode compB_p
+ 227:funsape/peripheral/timer0.hpp ****     );
+ 228:funsape/peripheral/timer0.hpp **** 
+ 229:funsape/peripheral/timer0.hpp ****     //     /////////////////     CONTROL AND STATUS    //////////////////     //
+ 230:funsape/peripheral/timer0.hpp **** 
+ 231:funsape/peripheral/timer0.hpp ****     //!
+ 232:funsape/peripheral/timer0.hpp ****     //! \brief      Returns the last error
+ 233:funsape/peripheral/timer0.hpp ****     //! \details    Returns the last error.
+ 234:funsape/peripheral/timer0.hpp ****     //! \return     Error               Error status of the last operation
+ 235:funsape/peripheral/timer0.hpp ****     //!
+ 236:funsape/peripheral/timer0.hpp ****     Error           getLastError(
+ 237:funsape/peripheral/timer0.hpp ****             void
+ 238:funsape/peripheral/timer0.hpp ****     );
+ 239:funsape/peripheral/timer0.hpp **** 
+ 240:funsape/peripheral/timer0.hpp ****     //     /////////////////////     COMPARE A     //////////////////////     //
+ 241:funsape/peripheral/timer0.hpp **** 
+ 242:funsape/peripheral/timer0.hpp ****     //!
+ 243:funsape/peripheral/timer0.hpp ****     //! \brief      Activates Compare A Match interrupt
+ 244:funsape/peripheral/timer0.hpp ****     //! \details    Activates Compare A Match interrupt.
+ 245:funsape/peripheral/timer0.hpp ****     //!
+ 246:funsape/peripheral/timer0.hpp ****     void inlined activateCompareAInterrupt(
+ 247:funsape/peripheral/timer0.hpp ****             void
+ 248:funsape/peripheral/timer0.hpp ****     );
+ 249:funsape/peripheral/timer0.hpp **** 
+ 250:funsape/peripheral/timer0.hpp ****     //!
+ 251:funsape/peripheral/timer0.hpp ****     //! \brief      Clears Compare A Match interrupt flag
+ 252:funsape/peripheral/timer0.hpp ****     //! \details    Clears Compare A Match interrupt flag.
+ 253:funsape/peripheral/timer0.hpp ****     //!
+ 254:funsape/peripheral/timer0.hpp ****     void inlined clearCompareAInterruptRequest(
+ 255:funsape/peripheral/timer0.hpp ****             void
+ 256:funsape/peripheral/timer0.hpp ****     );
+ 257:funsape/peripheral/timer0.hpp **** 
+ 258:funsape/peripheral/timer0.hpp ****     //!
+ 259:funsape/peripheral/timer0.hpp ****     //! \brief      Deactivates Compare A Match interrupt
+ 260:funsape/peripheral/timer0.hpp ****     //! \details    Deactivates Compare A Match interrupt.
+ 261:funsape/peripheral/timer0.hpp ****     //!
+ 262:funsape/peripheral/timer0.hpp ****     void inlined deactivateCompareAInterrupt(
+ 263:funsape/peripheral/timer0.hpp ****             void
+ 264:funsape/peripheral/timer0.hpp ****     );
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 21
+
+
+ 265:funsape/peripheral/timer0.hpp **** 
+ 266:funsape/peripheral/timer0.hpp ****     //!
+ 267:funsape/peripheral/timer0.hpp ****     //! \brief      Forces a Compare A Match condition on output pin
+ 268:funsape/peripheral/timer0.hpp ****     //! \details    Forces a Compare A Match condition on output pin.
+ 269:funsape/peripheral/timer0.hpp ****     //!
+ 270:funsape/peripheral/timer0.hpp ****     void inlined forceCompareA(
+ 271:funsape/peripheral/timer0.hpp ****             void
+ 272:funsape/peripheral/timer0.hpp ****     );
+ 273:funsape/peripheral/timer0.hpp **** 
+ 274:funsape/peripheral/timer0.hpp ****     //!
+ 275:funsape/peripheral/timer0.hpp ****     //! \brief      Gets Compare A Match value
+ 276:funsape/peripheral/timer0.hpp ****     //! \details    Gets Compare A Match value.
+ 277:funsape/peripheral/timer0.hpp ****     //!
+ 278:funsape/peripheral/timer0.hpp ****     uint8_t inlined getCompareAValue(
+ 279:funsape/peripheral/timer0.hpp ****             void
+ 280:funsape/peripheral/timer0.hpp ****     );
+ 281:funsape/peripheral/timer0.hpp **** 
+ 282:funsape/peripheral/timer0.hpp ****     //!
+ 283:funsape/peripheral/timer0.hpp ****     //! \brief      Sets Compare A Match value
+ 284:funsape/peripheral/timer0.hpp ****     //! \details    Sets Compare A Match value.
+ 285:funsape/peripheral/timer0.hpp ****     //!
+ 286:funsape/peripheral/timer0.hpp ****     void inlined setCompareAValue(
+ 287:funsape/peripheral/timer0.hpp ****             uint8_t value_p
+ 288:funsape/peripheral/timer0.hpp ****     );
+ 289:funsape/peripheral/timer0.hpp **** 
+ 290:funsape/peripheral/timer0.hpp ****     //     /////////////////////     COMPARE B     //////////////////////     //
+ 291:funsape/peripheral/timer0.hpp **** 
+ 292:funsape/peripheral/timer0.hpp ****     //!
+ 293:funsape/peripheral/timer0.hpp ****     //! \brief      Activates Compare B Match interrupt
+ 294:funsape/peripheral/timer0.hpp ****     //! \details    Activates Compare B Match interrupt.
+ 295:funsape/peripheral/timer0.hpp ****     //!
+ 296:funsape/peripheral/timer0.hpp ****     void inlined activateCompareBInterrupt(
+ 297:funsape/peripheral/timer0.hpp ****             void
+ 298:funsape/peripheral/timer0.hpp ****     );
+ 299:funsape/peripheral/timer0.hpp **** 
+ 300:funsape/peripheral/timer0.hpp ****     //!
+ 301:funsape/peripheral/timer0.hpp ****     //! \brief      Clears Compare B Match interrupt flag
+ 302:funsape/peripheral/timer0.hpp ****     //! \details    Clears Compare B Match interrupt flag.
+ 303:funsape/peripheral/timer0.hpp ****     //!
+ 304:funsape/peripheral/timer0.hpp ****     void inlined clearCompareBInterruptRequest(
+ 305:funsape/peripheral/timer0.hpp ****             void
+ 306:funsape/peripheral/timer0.hpp ****     );
+ 307:funsape/peripheral/timer0.hpp **** 
+ 308:funsape/peripheral/timer0.hpp ****     //!
+ 309:funsape/peripheral/timer0.hpp ****     //! \brief      Deactivates Compare B Match interrupt
+ 310:funsape/peripheral/timer0.hpp ****     //! \details    Deactivates Compare B Match interrupt.
+ 311:funsape/peripheral/timer0.hpp ****     //!
+ 312:funsape/peripheral/timer0.hpp ****     void inlined deactivateCompareBInterrupt(
+ 313:funsape/peripheral/timer0.hpp ****             void
+ 314:funsape/peripheral/timer0.hpp ****     );
+ 315:funsape/peripheral/timer0.hpp **** 
+ 316:funsape/peripheral/timer0.hpp ****     //!
+ 317:funsape/peripheral/timer0.hpp ****     //! \brief      Forces a Compare B Match condition on output pin
+ 318:funsape/peripheral/timer0.hpp ****     //! \details    Forces a Compare B Match condition on output pin.
+ 319:funsape/peripheral/timer0.hpp ****     //!
+ 320:funsape/peripheral/timer0.hpp ****     void inlined forceCompareB(
+ 321:funsape/peripheral/timer0.hpp ****             void
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 22
+
+
+ 322:funsape/peripheral/timer0.hpp ****     );
+ 323:funsape/peripheral/timer0.hpp **** 
+ 324:funsape/peripheral/timer0.hpp ****     //!
+ 325:funsape/peripheral/timer0.hpp ****     //! \brief      Gets Compare B Match value
+ 326:funsape/peripheral/timer0.hpp ****     //! \details    Gets Compare B Match value.
+ 327:funsape/peripheral/timer0.hpp ****     //!
+ 328:funsape/peripheral/timer0.hpp ****     uint8_t inlined getCompareBValue(
+ 329:funsape/peripheral/timer0.hpp ****             void
+ 330:funsape/peripheral/timer0.hpp ****     );
+ 331:funsape/peripheral/timer0.hpp **** 
+ 332:funsape/peripheral/timer0.hpp ****     //!
+ 333:funsape/peripheral/timer0.hpp ****     //! \brief      Sets Compare B Match value
+ 334:funsape/peripheral/timer0.hpp ****     //! \details    Sets Compare B Match value.
+ 335:funsape/peripheral/timer0.hpp ****     //!
+ 336:funsape/peripheral/timer0.hpp ****     void inlined setCompareBValue(
+ 337:funsape/peripheral/timer0.hpp ****             uint8_t value_p
+ 338:funsape/peripheral/timer0.hpp ****     );
+ 339:funsape/peripheral/timer0.hpp **** 
+ 340:funsape/peripheral/timer0.hpp ****     //     //////////////////////     OVERFLOW    ///////////////////////     //
+ 341:funsape/peripheral/timer0.hpp **** 
+ 342:funsape/peripheral/timer0.hpp ****     //!
+ 343:funsape/peripheral/timer0.hpp ****     //! \brief      Activates Overflow interrupt
+ 344:funsape/peripheral/timer0.hpp ****     //! \details    Activates Overflow interrupt.
+ 345:funsape/peripheral/timer0.hpp ****     //!
+ 346:funsape/peripheral/timer0.hpp ****     void inlined activateOverflowInterrupt(
+ 347:funsape/peripheral/timer0.hpp ****             void
+ 348:funsape/peripheral/timer0.hpp ****     );
+ 349:funsape/peripheral/timer0.hpp **** 
+ 350:funsape/peripheral/timer0.hpp ****     //!
+ 351:funsape/peripheral/timer0.hpp ****     //! \brief      Clears Compare A Match interrupt flag
+ 352:funsape/peripheral/timer0.hpp ****     //! \details    Clears Compare A Match interrupt flag.
+ 353:funsape/peripheral/timer0.hpp ****     //!
+ 354:funsape/peripheral/timer0.hpp ****     void inlined clearOverflowInterruptRequest(
+ 355:funsape/peripheral/timer0.hpp ****             void
+ 356:funsape/peripheral/timer0.hpp ****     );
+ 357:funsape/peripheral/timer0.hpp **** 
+ 358:funsape/peripheral/timer0.hpp ****     //!
+ 359:funsape/peripheral/timer0.hpp ****     //! \brief      Deactivates Overflow Match interrupt
+ 360:funsape/peripheral/timer0.hpp ****     //! \details    Deactivates Overflow Match interrupt.
+ 361:funsape/peripheral/timer0.hpp ****     //!
+ 362:funsape/peripheral/timer0.hpp ****     void inlined deactivateOverflowInterrupt(
+ 363:funsape/peripheral/timer0.hpp ****             void
+ 364:funsape/peripheral/timer0.hpp ****     );
+ 365:funsape/peripheral/timer0.hpp **** 
+ 366:funsape/peripheral/timer0.hpp ****     //!
+ 367:funsape/peripheral/timer0.hpp ****     //! \brief      Gets counter value
+ 368:funsape/peripheral/timer0.hpp ****     //! \details    Gets counter value.
+ 369:funsape/peripheral/timer0.hpp ****     //!
+ 370:funsape/peripheral/timer0.hpp ****     uint8_t inlined getCounterValue(
+ 371:funsape/peripheral/timer0.hpp ****             void
+ 372:funsape/peripheral/timer0.hpp ****     );
+ 373:funsape/peripheral/timer0.hpp **** 
+ 374:funsape/peripheral/timer0.hpp ****     //!
+ 375:funsape/peripheral/timer0.hpp ****     //! \brief      Sets counter value
+ 376:funsape/peripheral/timer0.hpp ****     //! \details    Sets counter value.
+ 377:funsape/peripheral/timer0.hpp ****     //!
+ 378:funsape/peripheral/timer0.hpp ****     void inlined setCounterValue(
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 23
+
+
+ 379:funsape/peripheral/timer0.hpp ****             uint8_t value_p
+ 380:funsape/peripheral/timer0.hpp ****     );
+ 381:funsape/peripheral/timer0.hpp **** 
+ 382:funsape/peripheral/timer0.hpp ****     // -------------------------------------------------------------------------
+ 383:funsape/peripheral/timer0.hpp ****     // Properties --------------------------------------------------------------
+ 384:funsape/peripheral/timer0.hpp **** private:
+ 385:funsape/peripheral/timer0.hpp ****     bool_t          _isInitialized      : 1;
+ 386:funsape/peripheral/timer0.hpp ****     ClockSource     _clockSource;
+ 387:funsape/peripheral/timer0.hpp ****     Mode            _mode;
+ 388:funsape/peripheral/timer0.hpp ****     Error           _lastError;
+ 389:funsape/peripheral/timer0.hpp **** }; // class Timer0
+ 390:funsape/peripheral/timer0.hpp **** 
+ 391:funsape/peripheral/timer0.hpp **** // =============================================================================
+ 392:funsape/peripheral/timer0.hpp **** // Inlined class functions
+ 393:funsape/peripheral/timer0.hpp **** // =============================================================================
+ 394:funsape/peripheral/timer0.hpp **** 
+ 395:funsape/peripheral/timer0.hpp **** //     ///////////////////////     COMPARE A     ////////////////////////     //
+ 396:funsape/peripheral/timer0.hpp **** void inlined Timer0::activateCompareAInterrupt(void)
+ 397:funsape/peripheral/timer0.hpp **** {
+ 398:funsape/peripheral/timer0.hpp ****     setBit(TIMSK0, OCIE0A);
+ 399:funsape/peripheral/timer0.hpp ****     return;
+ 400:funsape/peripheral/timer0.hpp **** }
+ 401:funsape/peripheral/timer0.hpp **** 
+ 402:funsape/peripheral/timer0.hpp **** void inlined Timer0::clearCompareAInterruptRequest(void)
+  54               		.loc 3 402 14 view .LVU7
+  55               	.LBB28:
+ 403:funsape/peripheral/timer0.hpp **** {
+ 404:funsape/peripheral/timer0.hpp ****     setBit(TIFR0, OCF0A);
+  56               		.loc 3 404 5 view .LVU8
+  57 0006 95B3      		in r25,0x15
+  58 0008 9260      		ori r25,lo8(2)
+  59 000a 95BB      		out 0x15,r25
+ 405:funsape/peripheral/timer0.hpp ****     return;
+  60               		.loc 3 405 5 view .LVU9
+  61               	.LBE28:
+  62               	.LBE27:
+  16:kbitbang.cpp  ****     timer0.setCounterValue(0);
+  63               		.loc 2 16 5 view .LVU10
+  64               	.LVL1:
+  65               	.LBB29:
+  66               	.LBI29:
+ 406:funsape/peripheral/timer0.hpp **** }
+ 407:funsape/peripheral/timer0.hpp **** 
+ 408:funsape/peripheral/timer0.hpp **** void inlined Timer0::deactivateCompareAInterrupt(void)
+ 409:funsape/peripheral/timer0.hpp **** {
+ 410:funsape/peripheral/timer0.hpp ****     clrBit(TIMSK0, OCIE0A);
+ 411:funsape/peripheral/timer0.hpp ****     return;
+ 412:funsape/peripheral/timer0.hpp **** }
+ 413:funsape/peripheral/timer0.hpp **** 
+ 414:funsape/peripheral/timer0.hpp **** void inlined Timer0::forceCompareA(void)
+ 415:funsape/peripheral/timer0.hpp **** {
+ 416:funsape/peripheral/timer0.hpp ****     setBit(TCCR0B, FOC0A);
+ 417:funsape/peripheral/timer0.hpp ****     return;
+ 418:funsape/peripheral/timer0.hpp **** }
+ 419:funsape/peripheral/timer0.hpp **** 
+ 420:funsape/peripheral/timer0.hpp **** uint8_t inlined Timer0::getCompareAValue(void)
+ 421:funsape/peripheral/timer0.hpp **** {
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 24
+
+
+ 422:funsape/peripheral/timer0.hpp ****     return OCR0A;
+ 423:funsape/peripheral/timer0.hpp **** }
+ 424:funsape/peripheral/timer0.hpp **** 
+ 425:funsape/peripheral/timer0.hpp **** void inlined Timer0::setCompareAValue(uint8_t value_p)
+ 426:funsape/peripheral/timer0.hpp **** {
+ 427:funsape/peripheral/timer0.hpp ****     OCR0A = value_p;
+ 428:funsape/peripheral/timer0.hpp ****     return;
+ 429:funsape/peripheral/timer0.hpp **** }
+ 430:funsape/peripheral/timer0.hpp **** 
+ 431:funsape/peripheral/timer0.hpp **** //     ///////////////////////     COMPARE B     ////////////////////////     //
+ 432:funsape/peripheral/timer0.hpp **** 
+ 433:funsape/peripheral/timer0.hpp **** void inlined Timer0::activateCompareBInterrupt(void)
+ 434:funsape/peripheral/timer0.hpp **** {
+ 435:funsape/peripheral/timer0.hpp ****     setBit(TIMSK0, OCIE0B);
+ 436:funsape/peripheral/timer0.hpp ****     return;
+ 437:funsape/peripheral/timer0.hpp **** }
+ 438:funsape/peripheral/timer0.hpp **** 
+ 439:funsape/peripheral/timer0.hpp **** void inlined Timer0::clearCompareBInterruptRequest(void)
+ 440:funsape/peripheral/timer0.hpp **** {
+ 441:funsape/peripheral/timer0.hpp ****     setBit(TIFR0, OCF0B);
+ 442:funsape/peripheral/timer0.hpp ****     return;
+ 443:funsape/peripheral/timer0.hpp **** }
+ 444:funsape/peripheral/timer0.hpp **** 
+ 445:funsape/peripheral/timer0.hpp **** void inlined Timer0::deactivateCompareBInterrupt(void)
+ 446:funsape/peripheral/timer0.hpp **** {
+ 447:funsape/peripheral/timer0.hpp ****     clrBit(TIMSK0, OCIE0B);
+ 448:funsape/peripheral/timer0.hpp ****     return;
+ 449:funsape/peripheral/timer0.hpp **** }
+ 450:funsape/peripheral/timer0.hpp **** 
+ 451:funsape/peripheral/timer0.hpp **** void inlined Timer0::forceCompareB(void)
+ 452:funsape/peripheral/timer0.hpp **** {
+ 453:funsape/peripheral/timer0.hpp ****     setBit(TCCR0B, FOC0B);
+ 454:funsape/peripheral/timer0.hpp ****     return;
+ 455:funsape/peripheral/timer0.hpp **** }
+ 456:funsape/peripheral/timer0.hpp **** 
+ 457:funsape/peripheral/timer0.hpp **** uint8_t inlined Timer0::getCompareBValue(void)
+ 458:funsape/peripheral/timer0.hpp **** {
+ 459:funsape/peripheral/timer0.hpp ****     return OCR0B;
+ 460:funsape/peripheral/timer0.hpp **** }
+ 461:funsape/peripheral/timer0.hpp **** 
+ 462:funsape/peripheral/timer0.hpp **** void inlined Timer0::setCompareBValue(uint8_t value_p)
+ 463:funsape/peripheral/timer0.hpp **** {
+ 464:funsape/peripheral/timer0.hpp ****     OCR0B = value_p;
+ 465:funsape/peripheral/timer0.hpp ****     return;
+ 466:funsape/peripheral/timer0.hpp **** }
+ 467:funsape/peripheral/timer0.hpp **** 
+ 468:funsape/peripheral/timer0.hpp **** //     ////////////////////////     OVERFLOW    /////////////////////////     //
+ 469:funsape/peripheral/timer0.hpp **** 
+ 470:funsape/peripheral/timer0.hpp **** void inlined Timer0::activateOverflowInterrupt(void)
+ 471:funsape/peripheral/timer0.hpp **** {
+ 472:funsape/peripheral/timer0.hpp ****     setBit(TIMSK0, TOIE0);
+ 473:funsape/peripheral/timer0.hpp ****     return;
+ 474:funsape/peripheral/timer0.hpp **** }
+ 475:funsape/peripheral/timer0.hpp **** 
+ 476:funsape/peripheral/timer0.hpp **** void inlined Timer0::clearOverflowInterruptRequest(void)
+ 477:funsape/peripheral/timer0.hpp **** {
+ 478:funsape/peripheral/timer0.hpp ****     setBit(TIFR0, TOV0);
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 25
+
+
+ 479:funsape/peripheral/timer0.hpp ****     return;
+ 480:funsape/peripheral/timer0.hpp **** }
+ 481:funsape/peripheral/timer0.hpp **** 
+ 482:funsape/peripheral/timer0.hpp **** void inlined Timer0::deactivateOverflowInterrupt(void)
+ 483:funsape/peripheral/timer0.hpp **** {
+ 484:funsape/peripheral/timer0.hpp ****     clrBit(TIMSK0, TOIE0);
+ 485:funsape/peripheral/timer0.hpp ****     return;
+ 486:funsape/peripheral/timer0.hpp **** }
+ 487:funsape/peripheral/timer0.hpp **** 
+ 488:funsape/peripheral/timer0.hpp **** uint8_t inlined Timer0::getCounterValue(void)
+ 489:funsape/peripheral/timer0.hpp **** {
+ 490:funsape/peripheral/timer0.hpp ****     return TCNT0;
+ 491:funsape/peripheral/timer0.hpp **** }
+ 492:funsape/peripheral/timer0.hpp **** 
+ 493:funsape/peripheral/timer0.hpp **** void inlined Timer0::setCounterValue(uint8_t value_p)
+  67               		.loc 3 493 14 view .LVU11
+  68               	.LBB30:
+ 494:funsape/peripheral/timer0.hpp **** {
+ 495:funsape/peripheral/timer0.hpp ****     TCNT0 = value_p;
+  69               		.loc 3 495 5 view .LVU12
+  70               		.loc 3 495 11 is_stmt 0 view .LVU13
+  71 000c 16BC      		out 0x26,__zero_reg__
+ 496:funsape/peripheral/timer0.hpp ****     return;
+  72               		.loc 3 496 5 is_stmt 1 view .LVU14
+  73               	.LVL2:
+  74               		.loc 3 496 5 is_stmt 0 view .LVU15
+  75               	.LBE30:
+  76               	.LBE29:
+  17:kbitbang.cpp  ****     clrBit(PORTD, PD2);
+  77               		.loc 2 17 5 is_stmt 1 view .LVU16
+  78 000e 9BB1      		in r25,0xb
+  79 0010 9B7F      		andi r25,lo8(-5)
+  80 0012 9BB9      		out 0xb,r25
+  18:kbitbang.cpp  ****     timer0.activateCompareAInterrupt();
+  81               		.loc 2 18 5 view .LVU17
+  82               	.LBB31:
+  83               	.LBI31:
+ 396:funsape/peripheral/timer0.hpp **** {
+  84               		.loc 3 396 14 view .LVU18
+  85               	.LBB32:
+ 398:funsape/peripheral/timer0.hpp ****     return;
+  86               		.loc 3 398 5 view .LVU19
+  87 0014 EEE6      		ldi r30,lo8(110)
+  88 0016 F0E0      		ldi r31,0
+  89 0018 9081      		ld r25,Z
+  90 001a 9260      		ori r25,lo8(2)
+  91 001c 9083      		st Z,r25
+ 399:funsape/peripheral/timer0.hpp **** }
+  92               		.loc 3 399 5 view .LVU20
+  93               	.L3:
+  94               	.LBE32:
+  95               	.LBE31:
+  19:kbitbang.cpp  ****     while(timer0flag){}
+  96               		.loc 2 19 11 discriminator 1 view .LVU21
+  97 001e 9091 0000 		lds r25,timer0flag
+  98 0022 9111      		cpse r25,__zero_reg__
+  99 0024 00C0      		rjmp .L3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 26
+
+
+  20:kbitbang.cpp  ****     //delayUs(104);
+  21:kbitbang.cpp  ****     timer0.deactivateCompareAInterrupt();
+ 100               		.loc 2 21 5 view .LVU22
+ 101               	.LBB33:
+ 102               	.LBI33:
+ 408:funsape/peripheral/timer0.hpp **** {
+ 103               		.loc 3 408 14 view .LVU23
+ 104               	.LBB34:
+ 410:funsape/peripheral/timer0.hpp ****     return;
+ 105               		.loc 3 410 5 view .LVU24
+ 106 0026 EEE6      		ldi r30,lo8(110)
+ 107 0028 F0E0      		ldi r31,0
+ 108 002a 9081      		ld r25,Z
+ 109 002c 9D7F      		andi r25,lo8(-3)
+ 110 002e 9083      		st Z,r25
+ 411:funsape/peripheral/timer0.hpp **** }
+ 111               		.loc 3 411 5 view .LVU25
+ 112               	.LBE34:
+ 113               	.LBE33:
+  22:kbitbang.cpp  ****     timer0flag = 1;
+ 114               		.loc 2 22 5 view .LVU26
+ 115               		.loc 2 22 16 is_stmt 0 view .LVU27
+ 116 0030 91E0      		ldi r25,lo8(1)
+ 117 0032 9093 0000 		sts timer0flag,r25
+  23:kbitbang.cpp  ****     for(uint8_t i = 0; i < 8; i++) {
+ 118               		.loc 2 23 5 is_stmt 1 view .LVU28
+ 119               	.LVL3:
+ 120               	.LBB35:
+ 121               		.loc 2 23 17 is_stmt 0 view .LVU29
+ 122 0036 20E0      		ldi r18,0
+ 123               		.loc 2 23 5 view .LVU30
+ 124 0038 00C0      		rjmp .L4
+ 125               	.LVL4:
+ 126               	.L7:
+  24:kbitbang.cpp  ****         if(isBitSet(tecla, i)) {
+  25:kbitbang.cpp  ****             setBit(PORTD, PD2);
+  26:kbitbang.cpp  ****             timer0.activateCompareAInterrupt();
+  27:kbitbang.cpp  ****             while(timer0flag) {
+  28:kbitbang.cpp  ****                 doNop();
+ 127               		.loc 2 28 17 is_stmt 1 view .LVU31
+ 128               	.LBB36:
+ 129               	.LBI36:
+ 776:funsape/globalDefines.hpp **** {
+ 130               		.loc 1 776 14 view .LVU32
+ 131               	.LBB37:
+ 778:funsape/globalDefines.hpp **** 
+ 132               		.loc 1 778 5 view .LVU33
+ 133               	/* #APP */
+ 134               	 ;  778 "funsape/globalDefines.hpp" 1
+ 135 003a 0000      		nop
+ 136               	 ;  0 "" 2
+ 780:funsape/globalDefines.hpp **** }
+ 137               		.loc 1 780 5 view .LVU34
+ 138               	/* #NOAPP */
+ 139               	.L6:
+ 140               	.LBE37:
+ 141               	.LBE36:
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 27
+
+
+  27:kbitbang.cpp  ****                 doNop();
+ 142               		.loc 2 27 19 view .LVU35
+ 143 003c 9091 0000 		lds r25,timer0flag
+ 144 0040 9111      		cpse r25,__zero_reg__
+ 145 0042 00C0      		rjmp .L7
+  29:kbitbang.cpp  ****             }
+  30:kbitbang.cpp  ****             timer0.deactivateCompareAInterrupt();
+ 146               		.loc 2 30 13 view .LVU36
+ 147               	.LBB38:
+ 148               	.LBI38:
+ 408:funsape/peripheral/timer0.hpp **** {
+ 149               		.loc 3 408 14 view .LVU37
+ 150               	.LBB39:
+ 410:funsape/peripheral/timer0.hpp ****     return;
+ 151               		.loc 3 410 5 view .LVU38
+ 152 0044 EEE6      		ldi r30,lo8(110)
+ 153 0046 F0E0      		ldi r31,0
+ 154 0048 9081      		ld r25,Z
+ 155 004a 9D7F      		andi r25,lo8(-3)
+ 156 004c 9083      		st Z,r25
+ 411:funsape/peripheral/timer0.hpp **** }
+ 157               		.loc 3 411 5 view .LVU39
+ 158               	.LBE39:
+ 159               	.LBE38:
+  31:kbitbang.cpp  ****             timer0flag = 1;
+ 160               		.loc 2 31 13 view .LVU40
+ 161               		.loc 2 31 24 is_stmt 0 view .LVU41
+ 162 004e 91E0      		ldi r25,lo8(1)
+ 163 0050 9093 0000 		sts timer0flag,r25
+ 164               	.L8:
+  23:kbitbang.cpp  ****         if(isBitSet(tecla, i)) {
+ 165               		.loc 2 23 5 is_stmt 1 discriminator 2 view .LVU42
+ 166 0054 2F5F      		subi r18,lo8(-(1))
+ 167               	.LVL5:
+ 168               	.L4:
+  23:kbitbang.cpp  ****         if(isBitSet(tecla, i)) {
+ 169               		.loc 2 23 26 discriminator 1 view .LVU43
+ 170 0056 2830      		cpi r18,lo8(8)
+ 171 0058 00F4      		brsh .L13
+  24:kbitbang.cpp  ****             setBit(PORTD, PD2);
+ 172               		.loc 2 24 9 view .LVU44
+  24:kbitbang.cpp  ****             setBit(PORTD, PD2);
+ 173               		.loc 2 24 12 is_stmt 0 view .LVU45
+ 174 005a 482F      		mov r20,r24
+ 175 005c 50E0      		ldi r21,0
+ 176 005e 022E      		mov r0,r18
+ 177 0060 00C0      		rjmp 2f
+ 178               		1:
+ 179 0062 5595      		asr r21
+ 180 0064 4795      		ror r20
+ 181               		2:
+ 182 0066 0A94      		dec r0
+ 183 0068 02F4      		brpl 1b
+  24:kbitbang.cpp  ****             setBit(PORTD, PD2);
+ 184               		.loc 2 24 9 view .LVU46
+ 185 006a 40FF      		sbrs r20,0
+ 186 006c 00C0      		rjmp .L5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 28
+
+
+  25:kbitbang.cpp  ****             timer0.activateCompareAInterrupt();
+ 187               		.loc 2 25 13 is_stmt 1 view .LVU47
+ 188 006e 9BB1      		in r25,0xb
+ 189 0070 9460      		ori r25,lo8(4)
+ 190 0072 9BB9      		out 0xb,r25
+  26:kbitbang.cpp  ****             while(timer0flag) {
+ 191               		.loc 2 26 13 view .LVU48
+ 192               	.LBB40:
+ 193               	.LBI40:
+ 396:funsape/peripheral/timer0.hpp **** {
+ 194               		.loc 3 396 14 view .LVU49
+ 195               	.LBB41:
+ 398:funsape/peripheral/timer0.hpp ****     return;
+ 196               		.loc 3 398 5 view .LVU50
+ 197 0074 EEE6      		ldi r30,lo8(110)
+ 198 0076 F0E0      		ldi r31,0
+ 199 0078 9081      		ld r25,Z
+ 200 007a 9260      		ori r25,lo8(2)
+ 201 007c 9083      		st Z,r25
+ 399:funsape/peripheral/timer0.hpp **** }
+ 202               		.loc 3 399 5 view .LVU51
+ 203 007e 00C0      		rjmp .L6
+ 204               	.L5:
+ 205               	.LBE41:
+ 206               	.LBE40:
+  32:kbitbang.cpp  ****         }
+  33:kbitbang.cpp  ****         else {
+  34:kbitbang.cpp  ****             clrBit(PORTD, PD2);
+ 207               		.loc 2 34 13 view .LVU52
+ 208 0080 9BB1      		in r25,0xb
+ 209 0082 9B7F      		andi r25,lo8(-5)
+ 210 0084 9BB9      		out 0xb,r25
+  35:kbitbang.cpp  ****             timer0.activateCompareAInterrupt();
+ 211               		.loc 2 35 13 view .LVU53
+ 212               	.LBB42:
+ 213               	.LBI42:
+ 396:funsape/peripheral/timer0.hpp **** {
+ 214               		.loc 3 396 14 view .LVU54
+ 215               	.LBB43:
+ 398:funsape/peripheral/timer0.hpp ****     return;
+ 216               		.loc 3 398 5 view .LVU55
+ 217 0086 EEE6      		ldi r30,lo8(110)
+ 218 0088 F0E0      		ldi r31,0
+ 219 008a 9081      		ld r25,Z
+ 220 008c 9260      		ori r25,lo8(2)
+ 221 008e 9083      		st Z,r25
+ 399:funsape/peripheral/timer0.hpp **** }
+ 222               		.loc 3 399 5 view .LVU56
+ 223 0090 00C0      		rjmp .L9
+ 224               	.L10:
+ 225               	.LBE43:
+ 226               	.LBE42:
+  36:kbitbang.cpp  ****             while(timer0flag) {
+  37:kbitbang.cpp  ****                 doNop();
+ 227               		.loc 2 37 17 view .LVU57
+ 228               	.LBB44:
+ 229               	.LBI44:
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 29
+
+
+ 776:funsape/globalDefines.hpp **** {
+ 230               		.loc 1 776 14 view .LVU58
+ 231               	.LBB45:
+ 778:funsape/globalDefines.hpp **** 
+ 232               		.loc 1 778 5 view .LVU59
+ 233               	/* #APP */
+ 234               	 ;  778 "funsape/globalDefines.hpp" 1
+ 235 0092 0000      		nop
+ 236               	 ;  0 "" 2
+ 780:funsape/globalDefines.hpp **** }
+ 237               		.loc 1 780 5 view .LVU60
+ 238               	/* #NOAPP */
+ 239               	.L9:
+ 240               	.LBE45:
+ 241               	.LBE44:
+  36:kbitbang.cpp  ****                 doNop();
+ 242               		.loc 2 36 19 view .LVU61
+ 243 0094 9091 0000 		lds r25,timer0flag
+ 244 0098 9111      		cpse r25,__zero_reg__
+ 245 009a 00C0      		rjmp .L10
+  38:kbitbang.cpp  ****             }
+  39:kbitbang.cpp  ****             timer0.deactivateCompareAInterrupt();
+ 246               		.loc 2 39 13 view .LVU62
+ 247               	.LBB46:
+ 248               	.LBI46:
+ 408:funsape/peripheral/timer0.hpp **** {
+ 249               		.loc 3 408 14 view .LVU63
+ 250               	.LBB47:
+ 410:funsape/peripheral/timer0.hpp ****     return;
+ 251               		.loc 3 410 5 view .LVU64
+ 252 009c EEE6      		ldi r30,lo8(110)
+ 253 009e F0E0      		ldi r31,0
+ 254 00a0 9081      		ld r25,Z
+ 255 00a2 9D7F      		andi r25,lo8(-3)
+ 256 00a4 9083      		st Z,r25
+ 411:funsape/peripheral/timer0.hpp **** }
+ 257               		.loc 3 411 5 view .LVU65
+ 258               	.LBE47:
+ 259               	.LBE46:
+  40:kbitbang.cpp  ****             timer0flag = 1;
+ 260               		.loc 2 40 13 view .LVU66
+ 261               		.loc 2 40 24 is_stmt 0 view .LVU67
+ 262 00a6 91E0      		ldi r25,lo8(1)
+ 263 00a8 9093 0000 		sts timer0flag,r25
+ 264 00ac 00C0      		rjmp .L8
+ 265               	.L13:
+ 266               		.loc 2 40 24 view .LVU68
+ 267               	.LBE35:
+  41:kbitbang.cpp  ****         }
+  42:kbitbang.cpp  ****     }
+  43:kbitbang.cpp  ****     setBit(PORTD, PD2);
+ 268               		.loc 2 43 5 is_stmt 1 view .LVU69
+ 269 00ae 8BB1      		in r24,0xb
+ 270               	.LVL6:
+ 271               		.loc 2 43 5 is_stmt 0 view .LVU70
+ 272 00b0 8460      		ori r24,lo8(4)
+ 273 00b2 8BB9      		out 0xb,r24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 30
+
+
+  44:kbitbang.cpp  ****     timer0.activateCompareAInterrupt();
+ 274               		.loc 2 44 5 is_stmt 1 view .LVU71
+ 275               	.LBB48:
+ 276               	.LBI48:
+ 396:funsape/peripheral/timer0.hpp **** {
+ 277               		.loc 3 396 14 view .LVU72
+ 278               	.LBB49:
+ 398:funsape/peripheral/timer0.hpp ****     return;
+ 279               		.loc 3 398 5 view .LVU73
+ 280 00b4 EEE6      		ldi r30,lo8(110)
+ 281 00b6 F0E0      		ldi r31,0
+ 282 00b8 8081      		ld r24,Z
+ 283 00ba 8260      		ori r24,lo8(2)
+ 284 00bc 8083      		st Z,r24
+ 399:funsape/peripheral/timer0.hpp **** }
+ 285               		.loc 3 399 5 view .LVU74
+ 286               	.L12:
+ 287               	.LBE49:
+ 288               	.LBE48:
+  45:kbitbang.cpp  ****     while(timer0flag) {
+ 289               		.loc 2 45 11 discriminator 1 view .LVU75
+ 290 00be 8091 0000 		lds r24,timer0flag
+ 291 00c2 8111      		cpse r24,__zero_reg__
+ 292 00c4 00C0      		rjmp .L12
+  46:kbitbang.cpp  ****     }
+  47:kbitbang.cpp  ****     timer0.deactivateCompareAInterrupt();
+ 293               		.loc 2 47 5 view .LVU76
+ 294               	.LBB50:
+ 295               	.LBI50:
+ 408:funsape/peripheral/timer0.hpp **** {
+ 296               		.loc 3 408 14 view .LVU77
+ 297               	.LBB51:
+ 410:funsape/peripheral/timer0.hpp ****     return;
+ 298               		.loc 3 410 5 view .LVU78
+ 299 00c6 EEE6      		ldi r30,lo8(110)
+ 300 00c8 F0E0      		ldi r31,0
+ 301 00ca 8081      		ld r24,Z
+ 302 00cc 8D7F      		andi r24,lo8(-3)
+ 303 00ce 8083      		st Z,r24
+ 411:funsape/peripheral/timer0.hpp **** }
+ 304               		.loc 3 411 5 view .LVU79
+ 305               	/* epilogue start */
+ 306               	.LBE51:
+ 307               	.LBE50:
+  48:kbitbang.cpp  **** }
+ 308               		.loc 2 48 1 is_stmt 0 view .LVU80
+ 309 00d0 0895      		ret
+ 310               		.cfi_endproc
+ 311               	.LFE53:
+ 313               		.section	.text._Z10sendstringPc,"ax",@progbits
+ 314               	.global	_Z10sendstringPc
+ 316               	_Z10sendstringPc:
+ 317               	.LVL7:
+ 318               	.LFB54:
+  49:kbitbang.cpp  **** 
+  50:kbitbang.cpp  **** void sendstring (char string[64]){
+ 319               		.loc 2 50 34 is_stmt 1 view -0
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 31
+
+
+ 320               		.cfi_startproc
+ 321               		.loc 2 50 34 is_stmt 0 view .LVU82
+ 322 0000 0F93      		push r16
+ 323               		.cfi_def_cfa_offset 3
+ 324               		.cfi_offset 16, -2
+ 325 0002 1F93      		push r17
+ 326               		.cfi_def_cfa_offset 4
+ 327               		.cfi_offset 17, -3
+ 328 0004 CF93      		push r28
+ 329               		.cfi_def_cfa_offset 5
+ 330               		.cfi_offset 28, -4
+ 331 0006 DF93      		push r29
+ 332               		.cfi_def_cfa_offset 6
+ 333               		.cfi_offset 29, -5
+ 334               	/* prologue: function */
+ 335               	/* frame size = 0 */
+ 336               	/* stack size = 4 */
+ 337               	.L__stack_usage = 4
+ 338 0008 082F      		mov r16,r24
+ 339 000a 192F      		mov r17,r25
+  51:kbitbang.cpp  ****     int i =0;
+ 340               		.loc 2 51 5 is_stmt 1 view .LVU83
+ 341               	.LVL8:
+  52:kbitbang.cpp  ****     while (string[i] != '\0'){
+ 342               		.loc 2 52 5 view .LVU84
+  51:kbitbang.cpp  ****     int i =0;
+ 343               		.loc 2 51 9 is_stmt 0 view .LVU85
+ 344 000c C0E0      		ldi r28,0
+ 345 000e D0E0      		ldi r29,0
+ 346               		.loc 2 52 5 view .LVU86
+ 347 0010 00C0      		rjmp .L15
+ 348               	.LVL9:
+ 349               	.L16:
+  53:kbitbang.cpp  ****         bitbang(string[i]);
+ 350               		.loc 2 53 9 is_stmt 1 view .LVU87
+ 351               		.loc 2 53 16 is_stmt 0 view .LVU88
+ 352 0012 0E94 0000 		call _Z7bitbangh
+ 353               	.LVL10:
+  54:kbitbang.cpp  ****         i++;
+ 354               		.loc 2 54 9 is_stmt 1 view .LVU89
+ 355               		.loc 2 54 10 is_stmt 0 view .LVU90
+ 356 0016 2196      		adiw r28,1
+ 357               	.LVL11:
+ 358               	.L15:
+  52:kbitbang.cpp  ****     while (string[i] != '\0'){
+ 359               		.loc 2 52 22 is_stmt 1 view .LVU91
+  52:kbitbang.cpp  ****     while (string[i] != '\0'){
+ 360               		.loc 2 52 20 is_stmt 0 view .LVU92
+ 361 0018 F801      		movw r30,r16
+ 362 001a EC0F      		add r30,r28
+ 363 001c FD1F      		adc r31,r29
+ 364 001e 8081      		ld r24,Z
+  52:kbitbang.cpp  ****     while (string[i] != '\0'){
+ 365               		.loc 2 52 22 view .LVU93
+ 366 0020 8111      		cpse r24,__zero_reg__
+ 367 0022 00C0      		rjmp .L16
+  55:kbitbang.cpp  ****     }
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 32
+
+
+  56:kbitbang.cpp  ****     bitbang('\n');
+ 368               		.loc 2 56 5 is_stmt 1 view .LVU94
+ 369               		.loc 2 56 12 is_stmt 0 view .LVU95
+ 370 0024 8AE0      		ldi r24,lo8(10)
+ 371 0026 0E94 0000 		call _Z7bitbangh
+ 372               	.LVL12:
+ 373               	/* epilogue start */
+  57:kbitbang.cpp  **** }
+ 374               		.loc 2 57 1 view .LVU96
+ 375 002a DF91      		pop r29
+ 376 002c CF91      		pop r28
+ 377               	.LVL13:
+ 378               		.loc 2 57 1 view .LVU97
+ 379 002e 1F91      		pop r17
+ 380 0030 0F91      		pop r16
+ 381 0032 0895      		ret
+ 382               		.cfi_endproc
+ 383               	.LFE54:
+ 385               		.section	.text._Z22timer0CompareACallbackv,"ax",@progbits
+ 386               	.global	_Z22timer0CompareACallbackv
+ 388               	_Z22timer0CompareACallbackv:
+ 389               	.LFB55:
+  58:kbitbang.cpp  **** 
+  59:kbitbang.cpp  **** void timer0CompareACallback(void)
+  60:kbitbang.cpp  **** {
+ 390               		.loc 2 60 1 is_stmt 1 view -0
+ 391               		.cfi_startproc
+ 392               	/* prologue: function */
+ 393               	/* frame size = 0 */
+ 394               	/* stack size = 0 */
+ 395               	.L__stack_usage = 0
+  61:kbitbang.cpp  ****     timer0flag = 0;
+ 396               		.loc 2 61 5 view .LVU99
+ 397               		.loc 2 61 16 is_stmt 0 view .LVU100
+ 398 0000 1092 0000 		sts timer0flag,__zero_reg__
+ 399               	/* epilogue start */
+  62:kbitbang.cpp  ****     // cplBit(PORTD, PD2);
+  63:kbitbang.cpp  **** }
+ 400               		.loc 2 63 1 view .LVU101
+ 401 0004 0895      		ret
+ 402               		.cfi_endproc
+ 403               	.LFE55:
+ 405               	.global	timer0flag
+ 406               		.section	.bss.timer0flag,"aw",@nobits
+ 409               	timer0flag:
+ 410 0000 00        		.zero	1
+ 411               		.text
+ 412               	.Letext0:
+ 413               		.file 4 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\stdint
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 33
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 kbitbang.cpp
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2      *ABS*:000000000000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:3      *ABS*:000000000000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:4      *ABS*:000000000000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:5      *ABS*:0000000000000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:6      *ABS*:0000000000000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:14     .text._Z7getTickv:0000000000000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:17     .text._Z7getTickv:0000000000000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:18     .text._Z7getTickv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:23     .text._Z7getTickv:0000000000000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:24     .text._Z7getTickv:0000000000000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:30     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:36     .text._Z7bitbangh:0000000000000000 _Z7bitbangh
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:40     .text._Z7bitbangh:0000000000000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:41     .text._Z7bitbangh:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:46     .text._Z7bitbangh:0000000000000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:47     .text._Z7bitbangh:0000000000000000 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:409    .bss.timer0flag:0000000000000000 timer0flag
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:50     .text._Z7bitbangh:0000000000000006 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:54     .text._Z7bitbangh:0000000000000006 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:56     .text._Z7bitbangh:0000000000000006 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:60     .text._Z7bitbangh:000000000000000c .Loc.9
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:63     .text._Z7bitbangh:000000000000000c .Loc.10
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:67     .text._Z7bitbangh:000000000000000c .Loc.11
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:69     .text._Z7bitbangh:000000000000000c .Loc.12
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:70     .text._Z7bitbangh:000000000000000c .Loc.13
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:72     .text._Z7bitbangh:000000000000000e .Loc.14
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:74     .text._Z7bitbangh:000000000000000e .Loc.15
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:77     .text._Z7bitbangh:000000000000000e .Loc.16
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:81     .text._Z7bitbangh:0000000000000014 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:84     .text._Z7bitbangh:0000000000000014 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:86     .text._Z7bitbangh:0000000000000014 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:92     .text._Z7bitbangh:000000000000001e .Loc.20
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:96     .text._Z7bitbangh:000000000000001e .Loc.21
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:100    .text._Z7bitbangh:0000000000000026 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:103    .text._Z7bitbangh:0000000000000026 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:105    .text._Z7bitbangh:0000000000000026 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:111    .text._Z7bitbangh:0000000000000030 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:114    .text._Z7bitbangh:0000000000000030 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:115    .text._Z7bitbangh:0000000000000030 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:118    .text._Z7bitbangh:0000000000000036 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:121    .text._Z7bitbangh:0000000000000036 .Loc.29
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:123    .text._Z7bitbangh:0000000000000038 .Loc.30
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:127    .text._Z7bitbangh:000000000000003a .Loc.31
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:130    .text._Z7bitbangh:000000000000003a .Loc.32
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:132    .text._Z7bitbangh:000000000000003a .Loc.33
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:137    .text._Z7bitbangh:000000000000003c .Loc.34
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:142    .text._Z7bitbangh:000000000000003c .Loc.35
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:146    .text._Z7bitbangh:0000000000000044 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:149    .text._Z7bitbangh:0000000000000044 .Loc.37
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:151    .text._Z7bitbangh:0000000000000044 .Loc.38
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:157    .text._Z7bitbangh:000000000000004e .Loc.39
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:160    .text._Z7bitbangh:000000000000004e .Loc.40
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:161    .text._Z7bitbangh:000000000000004e .Loc.41
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:165    .text._Z7bitbangh:0000000000000054 .Loc.42
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:169    .text._Z7bitbangh:0000000000000056 .Loc.43
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 34
+
+
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:172    .text._Z7bitbangh:000000000000005a .Loc.44
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:173    .text._Z7bitbangh:000000000000005a .Loc.45
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:184    .text._Z7bitbangh:000000000000006a .Loc.46
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:187    .text._Z7bitbangh:000000000000006e .Loc.47
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:191    .text._Z7bitbangh:0000000000000074 .Loc.48
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:194    .text._Z7bitbangh:0000000000000074 .Loc.49
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:196    .text._Z7bitbangh:0000000000000074 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:202    .text._Z7bitbangh:000000000000007e .Loc.51
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:207    .text._Z7bitbangh:0000000000000080 .Loc.52
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:211    .text._Z7bitbangh:0000000000000086 .Loc.53
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:214    .text._Z7bitbangh:0000000000000086 .Loc.54
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:216    .text._Z7bitbangh:0000000000000086 .Loc.55
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:222    .text._Z7bitbangh:0000000000000090 .Loc.56
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:227    .text._Z7bitbangh:0000000000000092 .Loc.57
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:230    .text._Z7bitbangh:0000000000000092 .Loc.58
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:232    .text._Z7bitbangh:0000000000000092 .Loc.59
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:237    .text._Z7bitbangh:0000000000000094 .Loc.60
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:242    .text._Z7bitbangh:0000000000000094 .Loc.61
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:246    .text._Z7bitbangh:000000000000009c .Loc.62
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:249    .text._Z7bitbangh:000000000000009c .Loc.63
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:251    .text._Z7bitbangh:000000000000009c .Loc.64
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:257    .text._Z7bitbangh:00000000000000a6 .Loc.65
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:260    .text._Z7bitbangh:00000000000000a6 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:261    .text._Z7bitbangh:00000000000000a6 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:266    .text._Z7bitbangh:00000000000000ae .Loc.68
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:268    .text._Z7bitbangh:00000000000000ae .Loc.69
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:271    .text._Z7bitbangh:00000000000000b0 .Loc.70
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:274    .text._Z7bitbangh:00000000000000b4 .Loc.71
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:277    .text._Z7bitbangh:00000000000000b4 .Loc.72
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:279    .text._Z7bitbangh:00000000000000b4 .Loc.73
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:285    .text._Z7bitbangh:00000000000000be .Loc.74
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:289    .text._Z7bitbangh:00000000000000be .Loc.75
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:293    .text._Z7bitbangh:00000000000000c6 .Loc.76
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:296    .text._Z7bitbangh:00000000000000c6 .Loc.77
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:298    .text._Z7bitbangh:00000000000000c6 .Loc.78
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:304    .text._Z7bitbangh:00000000000000d0 .Loc.79
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:308    .text._Z7bitbangh:00000000000000d0 .Loc.80
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:310    .text._Z7bitbangh:00000000000000d2 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:316    .text._Z10sendstringPc:0000000000000000 _Z10sendstringPc
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:319    .text._Z10sendstringPc:0000000000000000 .Loc.81
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:320    .text._Z10sendstringPc:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:321    .text._Z10sendstringPc:0000000000000000 .Loc.82
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:340    .text._Z10sendstringPc:000000000000000c .Loc.83
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:342    .text._Z10sendstringPc:000000000000000c .Loc.84
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:343    .text._Z10sendstringPc:000000000000000c .Loc.85
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:346    .text._Z10sendstringPc:0000000000000010 .Loc.86
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:350    .text._Z10sendstringPc:0000000000000012 .Loc.87
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:351    .text._Z10sendstringPc:0000000000000012 .Loc.88
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:354    .text._Z10sendstringPc:0000000000000016 .Loc.89
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:355    .text._Z10sendstringPc:0000000000000016 .Loc.90
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:359    .text._Z10sendstringPc:0000000000000018 .Loc.91
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:360    .text._Z10sendstringPc:0000000000000018 .Loc.92
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:365    .text._Z10sendstringPc:0000000000000020 .Loc.93
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:368    .text._Z10sendstringPc:0000000000000024 .Loc.94
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:369    .text._Z10sendstringPc:0000000000000024 .Loc.95
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:374    .text._Z10sendstringPc:000000000000002a .Loc.96
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:378    .text._Z10sendstringPc:000000000000002e .Loc.97
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 35
+
+
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:382    .text._Z10sendstringPc:0000000000000034 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:388    .text._Z22timer0CompareACallbackv:0000000000000000 _Z22timer0CompareACallbackv
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:390    .text._Z22timer0CompareACallbackv:0000000000000000 .Loc.98
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:391    .text._Z22timer0CompareACallbackv:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:396    .text._Z22timer0CompareACallbackv:0000000000000000 .Loc.99
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:397    .text._Z22timer0CompareACallbackv:0000000000000000 .Loc.100
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:400    .text._Z22timer0CompareACallbackv:0000000000000004 .Loc.101
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:402    .text._Z22timer0CompareACallbackv:0000000000000006 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:33     .text._Z7getTickv:0000000000000008 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:313    .text._Z7bitbangh:00000000000000d2 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:385    .text._Z10sendstringPc:0000000000000034 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:406    .text._Z22timer0CompareACallbackv:0000000000000006 L0
+                     .debug_frame:0000000000000000 L0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:93     .text._Z7bitbangh:000000000000001e .L3
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:168    .text._Z7bitbangh:0000000000000056 .L4
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:126    .text._Z7bitbangh:000000000000003a .L7
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:265    .text._Z7bitbangh:00000000000000ae .L13
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:181    .text._Z7bitbangh:0000000000000066 .L21
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:178    .text._Z7bitbangh:0000000000000062 .L11
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:204    .text._Z7bitbangh:0000000000000080 .L5
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:139    .text._Z7bitbangh:000000000000003c .L6
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:239    .text._Z7bitbangh:0000000000000094 .L9
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:224    .text._Z7bitbangh:0000000000000092 .L10
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:164    .text._Z7bitbangh:0000000000000054 .L8
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:286    .text._Z7bitbangh:00000000000000be .L12
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:358    .text._Z10sendstringPc:0000000000000018 .L15
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:349    .text._Z10sendstringPc:0000000000000012 .L16
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:1313   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2146   .debug_rnglists:000000000000000c .LLRL5
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2162   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:389    .text._Z22timer0CompareACallbackv:0000000000000000 .LFB55
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:403    .text._Z22timer0CompareACallbackv:0000000000000006 .LFE55
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:318    .text._Z10sendstringPc:0000000000000000 .LFB54
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:383    .text._Z10sendstringPc:0000000000000034 .LFE54
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2019   .debug_loclists:0000000000000010 .LLST3
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2014   .debug_loclists:000000000000000c .LVUS3
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2046   .debug_loclists:000000000000002c .LLST4
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2041   .debug_loclists:0000000000000028 .LVUS4
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:353    .text._Z10sendstringPc:0000000000000016 .LVL10
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:372    .text._Z10sendstringPc:000000000000002a .LVL12
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:38     .text._Z7bitbangh:0000000000000000 .LFB53
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:311    .text._Z7bitbangh:00000000000000d2 .LFE53
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2071   .debug_loclists:0000000000000046 .LLST0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2066   .debug_loclists:0000000000000042 .LVUS0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:120    .text._Z7bitbangh:0000000000000036 .LBB35
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:267    .text._Z7bitbangh:00000000000000ae .LBE35
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2093   .debug_loclists:0000000000000060 .LLST2
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2088   .debug_loclists:000000000000005c .LVUS2
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:129    .text._Z7bitbangh:000000000000003a .LBI36
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:128    .text._Z7bitbangh:000000000000003a .LBB36
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:141    .text._Z7bitbangh:000000000000003c .LBE36
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:148    .text._Z7bitbangh:0000000000000044 .LBI38
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:147    .text._Z7bitbangh:0000000000000044 .LBB38
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:159    .text._Z7bitbangh:000000000000004e .LBE38
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:193    .text._Z7bitbangh:0000000000000074 .LBI40
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:192    .text._Z7bitbangh:0000000000000074 .LBB40
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:206    .text._Z7bitbangh:0000000000000080 .LBE40
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s 			page 36
+
+
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:213    .text._Z7bitbangh:0000000000000086 .LBI42
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:212    .text._Z7bitbangh:0000000000000086 .LBB42
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:226    .text._Z7bitbangh:0000000000000092 .LBE42
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:229    .text._Z7bitbangh:0000000000000092 .LBI44
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:228    .text._Z7bitbangh:0000000000000092 .LBB44
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:241    .text._Z7bitbangh:0000000000000094 .LBE44
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:248    .text._Z7bitbangh:000000000000009c .LBI46
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:247    .text._Z7bitbangh:000000000000009c .LBB46
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:259    .text._Z7bitbangh:00000000000000a6 .LBE46
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:52     .text._Z7bitbangh:0000000000000006 .LBI27
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:51     .text._Z7bitbangh:0000000000000006 .LBB27
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:62     .text._Z7bitbangh:000000000000000c .LBE27
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:66     .text._Z7bitbangh:000000000000000c .LBI29
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:65     .text._Z7bitbangh:000000000000000c .LBB29
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:76     .text._Z7bitbangh:000000000000000e .LBE29
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2111   .debug_loclists:0000000000000074 .LLST1
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:2108   .debug_loclists:0000000000000072 .LVUS1
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:83     .text._Z7bitbangh:0000000000000014 .LBI31
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:82     .text._Z7bitbangh:0000000000000014 .LBB31
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:95     .text._Z7bitbangh:000000000000001e .LBE31
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:102    .text._Z7bitbangh:0000000000000026 .LBI33
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:101    .text._Z7bitbangh:0000000000000026 .LBB33
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:113    .text._Z7bitbangh:0000000000000030 .LBE33
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:276    .text._Z7bitbangh:00000000000000b4 .LBI48
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:275    .text._Z7bitbangh:00000000000000b4 .LBB48
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:288    .text._Z7bitbangh:00000000000000be .LBE48
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:295    .text._Z7bitbangh:00000000000000c6 .LBI50
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:294    .text._Z7bitbangh:00000000000000c6 .LBB50
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:307    .text._Z7bitbangh:00000000000000d0 .LBE50
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:15     .text._Z7getTickv:0000000000000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:31     .text._Z7getTickv:0000000000000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:317    .text._Z10sendstringPc:0000000000000000 .LVL7
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:341    .text._Z10sendstringPc:000000000000000c .LVL8
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:37     .text._Z7bitbangh:0000000000000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:119    .text._Z7bitbangh:0000000000000036 .LVL3
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:64     .text._Z7bitbangh:000000000000000c .LVL1
+C:\Users\kenne\AppData\Local\Temp\cc3nHv9Q.s:415    .debug_info:0000000000000000 .Ldebug_info0
+
+UNDEFINED SYMBOLS
+__do_clear_bss

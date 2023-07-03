@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.43  main.asm Mon Jun 12 19:17:58 2023
+AVRASM ver. 2.1.43  main.asm Mon Jun 12 19:29:13 2023
 
 main.asm(13): Including file 'include/m328Pdef.inc'
                  
@@ -1073,6 +1073,7 @@ main.asm(13): Including file 'include/m328Pdef.inc'
 000037 e012          ldi pushed, 0b10 ; Initialize pushed with 0b10
                  
                  main_loop:
+                 
                      ;outputing pusher or pushed
 000038 e030          ldi aux, 0
 000039 2f30          mov aux ,pusher

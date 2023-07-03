@@ -27,7 +27,7 @@
  */
 
 #include "Adafruit_Fingerprint.h"
-
+#include "kbitbang.hpp"
 //#define FINGERPRINT_DEBUG
 
 /*!
@@ -37,10 +37,14 @@
   uint8_t data[] = {__VA_ARGS__};                                              \
   Adafruit_Fingerprint_Packet packet(FINGERPRINT_COMMANDPACKET, sizeof(data),  \
                                      data);                                    \
+                                     sendstring("1");                          \
   writeStructuredPacket(packet);                                               \
+  sendstring("2");                                                             \
   if (getStructuredPacket(&packet) != FINGERPRINT_OK)                          \
+  sendstring("3");                                                             \
     return FINGERPRINT_PACKETRECIEVEERR;                                       \
   if (packet.type != FINGERPRINT_ACKPACKET)                                    \
+  sendstring("4");                                                             \
     return FINGERPRINT_PACKETRECIEVEERR;
 
 /*!
@@ -48,6 +52,7 @@
  */
 #define SEND_CMD_PACKET(...)                                                   \
   GET_CMD_PACKET(__VA_ARGS__);                                                 \
+  sendstring("exited get image ");\
   return packet.data[0];
 
 /***************************************************************************
@@ -147,9 +152,9 @@ uint8_t Adafruit_Fingerprint::getParameters(void) {
 */
 /**************************************************************************/
 uint8_t Adafruit_Fingerprint::getImage(void) {
-  printf("entrou na imageblau ");
-  printf("%d",FINGERPRINT_GETIMAGE);
+  sendstring("entered getimage ");
   SEND_CMD_PACKET(FINGERPRINT_GETIMAGE);
+  sendstring("pos send package ");
 }
 
 /**************************************************************************/
@@ -434,14 +439,13 @@ uint8_t Adafruit_Fingerprint::setPacketSize(uint8_t size) {
 
 void Adafruit_Fingerprint::writeStructuredPacket(
     const Adafruit_Fingerprint_Packet &packet) {
-  printf("entrounaadafruit");
-  mySerial->write((uint8_t)(packet.start_code >> 8));
-  mySerial->write((uint8_t)(packet.start_code & 0xFF));
-  mySerial->write(packet.address[0]);
-  mySerial->write(packet.address[1]);
-  mySerial->write(packet.address[2]);
-  mySerial->write(packet.address[3]);
-  mySerial->write(packet.type);
+  mySerial->write((uint16_t)(packet.start_code >> 8));
+  mySerial->write(((uint16_t)(packet.start_code & 0xFF)));
+  mySerial->write((packet.address[0]));
+  mySerial->write((packet.address[1]));
+  mySerial->write((packet.address[2]));
+  mySerial->write((packet.address[3]));
+  mySerial->write((packet.type));
 
   uint16_t wire_length = packet.length + 2;
   mySerial->write((uint8_t)(wire_length >> 8));
@@ -470,7 +474,7 @@ void Adafruit_Fingerprint::writeStructuredPacket(
 
   uint16_t sum = ((wire_length) >> 8) + ((wire_length)&0xFF) + packet.type;
   for (uint8_t i = 0; i < packet.length; i++) {
-    mySerial->write(packet.data[i]);
+    mySerial->write((packet.data[i]));
     sum += packet.data[i];
 #ifdef FINGERPRINT_DEBUG
     Serial.print(", 0x");
@@ -478,8 +482,8 @@ void Adafruit_Fingerprint::writeStructuredPacket(
 #endif
   }
 
-  mySerial->write((uint8_t)(sum >> 8));
-  mySerial->write((uint8_t)(sum & 0xFF));
+  mySerial->write(((uint8_t)(sum >> 8)));
+  mySerial->write(((uint8_t)(sum & 0xFF)));
 
 #ifdef FINGERPRINT_DEBUG
   Serial.print(", 0x");
@@ -508,17 +512,16 @@ Adafruit_Fingerprint::getStructuredPacket(Adafruit_Fingerprint_Packet *packet,
   uint8_t byte;
   uint16_t idx = 0, timer = 0;
 
-#ifdef FINGERPRINT_DEBUG
-  Serial.print("<- ");
-#endif
+
+  sendstring("<- ");
+
 
   while (true) {
     mySerial->read(&byte);
-#ifdef FINGERPRINT_DEBUG
-    Serial.print("0x");
-    Serial.print(byte, HEX);
-    Serial.print(", ");
-#endif
+    sendstring("0x");
+    char bytecast = static_cast<char>(byte);
+    bitbang(bytecast);
+    sendstring(", ");
     switch (idx) {
     case 0:
       if (byte != (FINGERPRINT_STARTCODE >> 8))

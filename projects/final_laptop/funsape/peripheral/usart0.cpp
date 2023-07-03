@@ -436,18 +436,12 @@ void Usart0::_clearParityError(void)
 
 bool_t Usart0::write(cuint16_t data_p)
 {
-    // Checks initialization
-    if(!this->_isInitialized) {
-        // Returns error
-        this->_lastError = Error::NOT_INITIALIZED;
-        return false;
-    }
 
     // Waits until last transmission ends
     waitUntilBitIsSet(UCSR0A, UDRE0);
 
     // Stores 8th bit (if data size in 9 bits)
-    printf("%c",data_p);
+    //printf("%c",data_p);
     UDR0 = (uint8_t)data_p;
 
     // Returns sucessfully
@@ -459,13 +453,6 @@ bool_t Usart0::read(uint8_t *data_p)
 {
     // Local variables
     uint8_t aux8;
-
-    // Checks initialization
-    if(!this->_isInitialized) {
-        // Returns error
-        this->_lastError = Error::NOT_INITIALIZED;
-        return false;
-    }
 
     // Waits until last reception ends
     waitUntilBitIsSet(UCSR0A, RXC0);

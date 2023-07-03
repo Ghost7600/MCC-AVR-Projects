@@ -91,6 +91,7 @@ main:
     ldi pushed, 0b10 ; Initialize pushed with 0b10
 
 main_loop:
+
     ;outputing pusher or pushed
     ldi aux, 0
     mov aux ,pusher
