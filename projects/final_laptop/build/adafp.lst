@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 1
 
 
    1               		.file	"adafp.cpp"
@@ -10,7 +10,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
    7               		.text
    8               	.Ltext0:
    9               		.cfi_sections	.debug_frame
-  10               		.file 0 "F:\\IMPORTANTE\\Faculdade\\MCC\\MCC-AVR-Projects\\projects\\final_laptop" "klib/adafp.cpp
+  10               		.file 0 "C:\\D\\IFSC\\MCC\\projects\\final_laptop" "klib/adafp.cpp"
   11               		.section	.text._Z7getTickv,"ax",@progbits
   12               		.weak	_Z7getTickv
   14               	_Z7getTickv:
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
   40:klib/../funsape/globalDefines.hpp **** #include <stdio.h>
   41:klib/../funsape/globalDefines.hpp **** #include <stdlib.h>
   42:klib/../funsape/globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 2
 
 
   43:klib/../funsape/globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
   97:klib/../funsape/globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:klib/../funsape/globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:klib/../funsape/globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 3
 
 
  100:klib/../funsape/globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  154:klib/../funsape/globalDefines.hpp **** enum class Axis : cuint8_t {
  155:klib/../funsape/globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:klib/../funsape/globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 4
 
 
  157:klib/../funsape/globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  211:klib/../funsape/globalDefines.hpp ****     // General error codes
  212:klib/../funsape/globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:klib/../funsape/globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 5
 
 
  214:klib/../funsape/globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  268:klib/../funsape/globalDefines.hpp ****     CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:klib/../funsape/globalDefines.hpp ****     CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:klib/../funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 6
 
 
  271:klib/../funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  325:klib/../funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:klib/../funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:klib/../funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 7
 
 
  328:klib/../funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  382:klib/../funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:klib/../funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:klib/../funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 8
 
 
  385:klib/../funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  439:klib/../funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:klib/../funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:klib/../funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 9
 
 
  442:klib/../funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  496:klib/../funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:klib/../funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:klib/../funsape/globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 10
 
 
  499:klib/../funsape/globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  553:klib/../funsape/globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:klib/../funsape/globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:klib/../funsape/globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 11
 
 
  556:klib/../funsape/globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  610:klib/../funsape/globalDefines.hpp **** #endif
  611:klib/../funsape/globalDefines.hpp **** #ifndef cplMaskOffset
  612:klib/../funsape/globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 12
 
 
  613:klib/../funsape/globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  667:klib/../funsape/globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:klib/../funsape/globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:klib/../funsape/globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 13
 
 
  670:klib/../funsape/globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  724:klib/../funsape/globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:klib/../funsape/globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:klib/../funsape/globalDefines.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 14
 
 
  727:klib/../funsape/globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  781:klib/../funsape/globalDefines.hpp **** }
  782:klib/../funsape/globalDefines.hpp **** 
  783:klib/../funsape/globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 15
 
 
  784:klib/../funsape/globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
   42               	/* frame size = 0 */
   43               	/* stack size = 0 */
   44               	.L__stack_usage = 0
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 16
 
 
   45               	.LVL0:
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
   91 000e 85FF      		sbrs r24,5
   92 0010 00C0      		rjmp .L6
   13:klib/adafp.cpp ****         UDR0 = string[i];
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 17
 
 
   93               		.loc 2 13 9 is_stmt 1 view .LVU19
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
   22:klib/adafp.cpp ****     //mandando endereço
   23:klib/adafp.cpp ****     usartsendbyte(0xFF);
  138               		.loc 2 23 5 is_stmt 1 view .LVU32
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 18
 
 
  139               		.loc 2 23 18 is_stmt 0 view .LVU33
@@ -1051,107 +1051,107 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 1
  162               	.LFE55:
  164               		.text
  165               	.Letext0:
- 166               		.file 3 "f:\\importante\\faculdade\\mcc\\vscode-avr-win\\toolchains\\avr-gcc\\avr\\include\\stdint
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 19
+ 166               		.file 3 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 19
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 adafp.cpp
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:2      *ABS*:000000000000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:3      *ABS*:000000000000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:4      *ABS*:000000000000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:5      *ABS*:0000000000000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:6      *ABS*:0000000000000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:14     .text._Z7getTickv:0000000000000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:17     .text._Z7getTickv:0000000000000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:18     .text._Z7getTickv:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:23     .text._Z7getTickv:0000000000000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:24     .text._Z7getTickv:0000000000000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:30     .text._Z7getTickv:0000000000000008 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:36     .text._Z13usartsendbyteh:0000000000000000 _Z13usartsendbyteh
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:39     .text._Z13usartsendbyteh:0000000000000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:40     .text._Z13usartsendbyteh:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:47     .text._Z13usartsendbyteh:0000000000000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:48     .text._Z13usartsendbyteh:0000000000000000 .Loc.5
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:50     .text._Z13usartsendbyteh:0000000000000004 .Loc.6
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:53     .text._Z13usartsendbyteh:0000000000000008 .Loc.7
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:54     .text._Z13usartsendbyteh:0000000000000008 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:57     .text._Z13usartsendbyteh:000000000000000c .Loc.9
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:59     .text._Z13usartsendbyteh:000000000000000e L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:65     .text._Z15usartsendstringPc:0000000000000000 _Z15usartsendstringPc
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:68     .text._Z15usartsendstringPc:0000000000000000 .Loc.10
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:69     .text._Z15usartsendstringPc:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:74     .text._Z15usartsendstringPc:0000000000000000 .Loc.11
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:77     .text._Z15usartsendstringPc:0000000000000004 .Loc.12
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:79     .text._Z15usartsendstringPc:0000000000000004 .Loc.13
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:80     .text._Z15usartsendstringPc:0000000000000004 .Loc.14
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:83     .text._Z15usartsendstringPc:0000000000000008 .Loc.15
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:87     .text._Z15usartsendstringPc:000000000000000a .Loc.16
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:88     .text._Z15usartsendstringPc:000000000000000a .Loc.17
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:90     .text._Z15usartsendstringPc:000000000000000e .Loc.18
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:93     .text._Z15usartsendstringPc:0000000000000012 .Loc.19
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:94     .text._Z15usartsendstringPc:0000000000000012 .Loc.20
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:96     .text._Z15usartsendstringPc:0000000000000016 .Loc.21
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:97     .text._Z15usartsendstringPc:0000000000000016 .Loc.22
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:102    .text._Z15usartsendstringPc:000000000000001a .Loc.23
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:103    .text._Z15usartsendstringPc:000000000000001a .Loc.24
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:108    .text._Z15usartsendstringPc:0000000000000022 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:112    .text._Z15usartsendstringPc:0000000000000026 .Loc.26
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:114    .text._Z15usartsendstringPc:0000000000000028 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:120    .text._Z11signalbeginv:0000000000000000 _Z11signalbeginv
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:122    .text._Z11signalbeginv:0000000000000000 .Loc.27
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:123    .text._Z11signalbeginv:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:128    .text._Z11signalbeginv:0000000000000000 .Loc.28
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:129    .text._Z11signalbeginv:0000000000000000 .Loc.29
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:133    .text._Z11signalbeginv:0000000000000006 .Loc.30
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:134    .text._Z11signalbeginv:0000000000000006 .Loc.31
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:138    .text._Z11signalbeginv:000000000000000c .Loc.32
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:139    .text._Z11signalbeginv:000000000000000c .Loc.33
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:143    .text._Z11signalbeginv:0000000000000012 .Loc.34
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:144    .text._Z11signalbeginv:0000000000000012 .Loc.35
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:148    .text._Z11signalbeginv:0000000000000018 .Loc.36
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:149    .text._Z11signalbeginv:0000000000000018 .Loc.37
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:153    .text._Z11signalbeginv:000000000000001e .Loc.38
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s 			page 20
+                            *ABS*:00000000 adafp.cpp
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:2      *ABS*:0000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:3      *ABS*:0000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:4      *ABS*:0000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:14     .text._Z7getTickv:00000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:17     .text._Z7getTickv:00000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:18     .text._Z7getTickv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:23     .text._Z7getTickv:00000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:24     .text._Z7getTickv:00000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:30     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:36     .text._Z13usartsendbyteh:00000000 _Z13usartsendbyteh
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:39     .text._Z13usartsendbyteh:00000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:40     .text._Z13usartsendbyteh:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:47     .text._Z13usartsendbyteh:00000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:48     .text._Z13usartsendbyteh:00000000 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:50     .text._Z13usartsendbyteh:00000004 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:53     .text._Z13usartsendbyteh:00000008 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:54     .text._Z13usartsendbyteh:00000008 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:57     .text._Z13usartsendbyteh:0000000c .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:59     .text._Z13usartsendbyteh:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:65     .text._Z15usartsendstringPc:00000000 _Z15usartsendstringPc
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:68     .text._Z15usartsendstringPc:00000000 .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:69     .text._Z15usartsendstringPc:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:74     .text._Z15usartsendstringPc:00000000 .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:77     .text._Z15usartsendstringPc:00000004 .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:79     .text._Z15usartsendstringPc:00000004 .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:80     .text._Z15usartsendstringPc:00000004 .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:83     .text._Z15usartsendstringPc:00000008 .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:87     .text._Z15usartsendstringPc:0000000a .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:88     .text._Z15usartsendstringPc:0000000a .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:90     .text._Z15usartsendstringPc:0000000e .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:93     .text._Z15usartsendstringPc:00000012 .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:94     .text._Z15usartsendstringPc:00000012 .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:96     .text._Z15usartsendstringPc:00000016 .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:97     .text._Z15usartsendstringPc:00000016 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:102    .text._Z15usartsendstringPc:0000001a .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:103    .text._Z15usartsendstringPc:0000001a .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:108    .text._Z15usartsendstringPc:00000022 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:112    .text._Z15usartsendstringPc:00000026 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:114    .text._Z15usartsendstringPc:00000028 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:120    .text._Z11signalbeginv:00000000 _Z11signalbeginv
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:122    .text._Z11signalbeginv:00000000 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:123    .text._Z11signalbeginv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:128    .text._Z11signalbeginv:00000000 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:129    .text._Z11signalbeginv:00000000 .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:133    .text._Z11signalbeginv:00000006 .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:134    .text._Z11signalbeginv:00000006 .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:138    .text._Z11signalbeginv:0000000c .Loc.32
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:139    .text._Z11signalbeginv:0000000c .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:143    .text._Z11signalbeginv:00000012 .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:144    .text._Z11signalbeginv:00000012 .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:148    .text._Z11signalbeginv:00000018 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:149    .text._Z11signalbeginv:00000018 .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:153    .text._Z11signalbeginv:0000001e .Loc.38
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s 			page 20
 
 
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:154    .text._Z11signalbeginv:000000000000001e .Loc.39
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:159    .text._Z11signalbeginv:0000000000000024 .Loc.40
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:161    .text._Z11signalbeginv:0000000000000026 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:33     .text._Z7getTickv:0000000000000008 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:62     .text._Z13usartsendbyteh:000000000000000e L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:117    .text._Z15usartsendstringPc:0000000000000028 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:164    .text._Z11signalbeginv:0000000000000026 L0
-                     .debug_frame:0000000000000000 L0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:46     .text._Z13usartsendbyteh:0000000000000000 .L3
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:101    .text._Z15usartsendstringPc:000000000000001a .L5
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:86     .text._Z15usartsendstringPc:000000000000000a .L6
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:368    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:673    .debug_rnglists:000000000000000c .LLRL3
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:689    .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:121    .text._Z11signalbeginv:0000000000000000 .LFB55
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:162    .text._Z11signalbeginv:0000000000000026 .LFE55
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:132    .text._Z11signalbeginv:0000000000000006 .LVL5
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:137    .text._Z11signalbeginv:000000000000000c .LVL6
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:142    .text._Z11signalbeginv:0000000000000012 .LVL7
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:147    .text._Z11signalbeginv:0000000000000018 .LVL8
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:152    .text._Z11signalbeginv:000000000000001e .LVL9
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:157    .text._Z11signalbeginv:0000000000000024 .LVL10
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:67     .text._Z15usartsendstringPc:0000000000000000 .LFB54
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:115    .text._Z15usartsendstringPc:0000000000000028 .LFE54
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:589    .debug_loclists:0000000000000010 .LLST1
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:584    .debug_loclists:000000000000000c .LVUS1
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:616    .debug_loclists:000000000000002c .LLST2
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:611    .debug_loclists:0000000000000028 .LVUS2
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:37     .text._Z13usartsendbyteh:0000000000000000 .LFB53
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:60     .text._Z13usartsendbyteh:000000000000000e .LFE53
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:639    .debug_loclists:0000000000000044 .LLST0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:636    .debug_loclists:0000000000000042 .LVUS0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:15     .text._Z7getTickv:0000000000000000 .LFB32
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:31     .text._Z7getTickv:0000000000000008 .LFE32
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:66     .text._Z15usartsendstringPc:0000000000000000 .LVL1
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:78     .text._Z15usartsendstringPc:0000000000000004 .LVL2
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:45     .text._Z13usartsendbyteh:0000000000000000 .LVL0
-C:\Users\kenne\AppData\Local\Temp\cc7n6T32.s:168    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:154    .text._Z11signalbeginv:0000001e .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:159    .text._Z11signalbeginv:00000024 .Loc.40
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:161    .text._Z11signalbeginv:00000026 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:33     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:62     .text._Z13usartsendbyteh:0000000e L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:117    .text._Z15usartsendstringPc:00000028 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:164    .text._Z11signalbeginv:00000026 L0
+                     .debug_frame:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:46     .text._Z13usartsendbyteh:00000000 .L3
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:101    .text._Z15usartsendstringPc:0000001a .L5
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:86     .text._Z15usartsendstringPc:0000000a .L6
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:368    .debug_abbrev:00000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:673    .debug_rnglists:0000000c .LLRL3
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:689    .debug_line:00000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:121    .text._Z11signalbeginv:00000000 .LFB55
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:162    .text._Z11signalbeginv:00000026 .LFE55
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:132    .text._Z11signalbeginv:00000006 .LVL5
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:137    .text._Z11signalbeginv:0000000c .LVL6
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:142    .text._Z11signalbeginv:00000012 .LVL7
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:147    .text._Z11signalbeginv:00000018 .LVL8
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:152    .text._Z11signalbeginv:0000001e .LVL9
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:157    .text._Z11signalbeginv:00000024 .LVL10
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:67     .text._Z15usartsendstringPc:00000000 .LFB54
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:115    .text._Z15usartsendstringPc:00000028 .LFE54
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:589    .debug_loclists:00000010 .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:584    .debug_loclists:0000000c .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:616    .debug_loclists:0000002c .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:611    .debug_loclists:00000028 .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:37     .text._Z13usartsendbyteh:00000000 .LFB53
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:60     .text._Z13usartsendbyteh:0000000e .LFE53
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:639    .debug_loclists:00000044 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:636    .debug_loclists:00000042 .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:15     .text._Z7getTickv:00000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:31     .text._Z7getTickv:00000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:66     .text._Z15usartsendstringPc:00000000 .LVL1
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:78     .text._Z15usartsendstringPc:00000004 .LVL2
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:45     .text._Z13usartsendbyteh:00000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\ccRT0FsM.s:168    .debug_info:00000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS

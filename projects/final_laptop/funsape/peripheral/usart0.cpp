@@ -47,6 +47,7 @@ bool_t Usart0::init(void)
     // Clear errors
     ucsr0a &= ~((1 << FE0) | (1 << DOR0) | (1 << UPE0));
 
+    this->_isInitialized = true;
     // Configure stop bit
     switch(this->_stopBits) {
     case Usart0::StopBits::SINGLE:

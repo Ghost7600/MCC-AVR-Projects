@@ -9,7 +9,7 @@
 
 vbool_t timer0flag;
 
-void bitbang(uint8_t tecla)
+void bitbang0(uint8_t tecla)
 {
     timer0flag = true;
     timer0.clearCompareAInterruptRequest();
@@ -47,7 +47,7 @@ void bitbang(uint8_t tecla)
     timer0.deactivateCompareAInterrupt();
 }
 
-void sendstring (char string[64]){
+void sendstring0 (char string[64]){
     int i =0;
     while (string[i] != '\0'){
         bitbang(string[i]);

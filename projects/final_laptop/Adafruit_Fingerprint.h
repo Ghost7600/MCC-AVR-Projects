@@ -4,12 +4,10 @@
 
 #include "funsape/globalDefines.hpp"
 #include "funsape/peripheral/usart0.hpp"
+
 /*!
  * @file Adafruit_Fingerprint.h
  */
-
-
-
 
 #define FINGERPRINT_OK 0x00               //!< Command execution is complete
 #define FINGERPRINT_PACKETRECIEVEERR 0x01 //!< Error when receiving data package
@@ -161,7 +159,7 @@ class Adafruit_Fingerprint {
 public:
 
   Adafruit_Fingerprint(Usart0 *hs, uint32_t password = 0x0);
-
+//   Adafruit_Fingerprint(Stream *serial, uint32_t password = 0x0);
 
   void begin(uint32_t baud);
 
@@ -216,6 +214,9 @@ private:
   uint32_t thePassword;
   uint32_t theAddress;
   uint8_t recvPacket[20];
+
+ // Stream *mySerial;
+
   Usart0 *hwSerial;
-  Usart0* mySerial;
+  Usart0 *mySerial;
 };
