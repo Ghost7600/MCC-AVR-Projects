@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 1
 
 
    1               		.file	"sound.cpp"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
   40:funsape/util/../globalDefines.hpp **** #include <stdio.h>
   41:funsape/util/../globalDefines.hpp **** #include <stdlib.h>
   42:funsape/util/../globalDefines.hpp **** #include <string.h>
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 2
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 2
 
 
   43:funsape/util/../globalDefines.hpp **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
   97:funsape/util/../globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
   98:funsape/util/../globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
   99:funsape/util/../globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 3
 
 
  100:funsape/util/../globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  154:funsape/util/../globalDefines.hpp **** enum class Axis : cuint8_t {
  155:funsape/util/../globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
  156:funsape/util/../globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 4
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 4
 
 
  157:funsape/util/../globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  211:funsape/util/../globalDefines.hpp ****     // General error codes
  212:funsape/util/../globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
  213:funsape/util/../globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 5
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 5
 
 
  214:funsape/util/../globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  268:funsape/util/../globalDefines.hpp ****     CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
  269:funsape/util/../globalDefines.hpp ****     CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
  270:funsape/util/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 6
 
 
  271:funsape/util/../globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  325:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
  326:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
  327:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 7
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 7
 
 
  328:funsape/util/../globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  382:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
  383:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
  384:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 8
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 8
 
 
  385:funsape/util/../globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  439:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
  440:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
  441:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 9
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 9
 
 
  442:funsape/util/../globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  496:funsape/util/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
  497:funsape/util/../globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
  498:funsape/util/../globalDefines.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 10
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 10
 
 
  499:funsape/util/../globalDefines.hpp ****     // FatFs related error codes
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  553:funsape/util/../globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
  554:funsape/util/../globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
  555:funsape/util/../globalDefines.hpp ****         ? (bool_t)true                          \
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 11
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 11
 
 
  556:funsape/util/../globalDefines.hpp ****         : (bool_t)false)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  610:funsape/util/../globalDefines.hpp **** #endif
  611:funsape/util/../globalDefines.hpp **** #ifndef cplMaskOffset
  612:funsape/util/../globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 12
 
 
  613:funsape/util/../globalDefines.hpp **** #endif
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  667:funsape/util/../globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
  668:funsape/util/../globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
  669:funsape/util/../globalDefines.hpp ****         (dwordGetWord1(dataDword)))
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 13
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 13
 
 
  670:funsape/util/../globalDefines.hpp **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  724:funsape/util/../globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
  725:funsape/util/../globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
  726:funsape/util/../globalDefines.hpp **** {
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 14
 
 
  727:funsape/util/../globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  781:funsape/util/../globalDefines.hpp **** }
  782:funsape/util/../globalDefines.hpp **** 
  783:funsape/util/../globalDefines.hpp **** void inlined doNothing(void)
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 15
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 15
 
 
  784:funsape/util/../globalDefines.hpp **** {
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
   40               		.loc 2 5 1 is_stmt 1 view -0
   41               		.cfi_startproc
   42               		.loc 2 5 1 is_stmt 0 view .LVU4
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 16
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 16
 
 
   43 0000 FF92      		push r15
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
   16:funsape/util/../peripheral/timer1.hpp **** #ifndef __TIMER1_HPP
   17:funsape/util/../peripheral/timer1.hpp **** #define __TIMER1_HPP                            2304
   18:funsape/util/../peripheral/timer1.hpp **** 
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 17
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 17
 
 
   19:funsape/util/../peripheral/timer1.hpp **** // =============================================================================
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
   73:funsape/util/../peripheral/timer1.hpp **** //!                     overwritten by user code.
   74:funsape/util/../peripheral/timer1.hpp **** //!
   75:funsape/util/../peripheral/timer1.hpp **** void timer1CompareBCallback(void);
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 18
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 18
 
 
   76:funsape/util/../peripheral/timer1.hpp **** 
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  130:funsape/util/../peripheral/timer1.hpp ****     //! \brief      Operation Mode enumeration
  131:funsape/util/../peripheral/timer1.hpp ****     //! \details    Operation Mode options associated with TIMER1.
  132:funsape/util/../peripheral/timer1.hpp ****     //! \warning    The value associate with the symbolic names may change
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 19
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 19
 
 
  133:funsape/util/../peripheral/timer1.hpp ****     //!                 between builds and might not reflect the register/bits
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  187:funsape/util/../peripheral/timer1.hpp **** 
  188:funsape/util/../peripheral/timer1.hpp ****     //!
  189:funsape/util/../peripheral/timer1.hpp ****     //! \brief      Timer1 class destructor
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 20
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 20
 
 
  190:funsape/util/../peripheral/timer1.hpp ****     //! \details    Destroys an Timer1 object
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  244:funsape/util/../peripheral/timer1.hpp **** 
  245:funsape/util/../peripheral/timer1.hpp ****     //!
  246:funsape/util/../peripheral/timer1.hpp ****     //! \brief      Configures the desired behavior of OCR1x pins during compare match
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 21
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 21
 
 
  247:funsape/util/../peripheral/timer1.hpp ****     //! \details    Configures the desired behavior of OCR1x pins during compare match.
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  301:funsape/util/../peripheral/timer1.hpp **** 
  302:funsape/util/../peripheral/timer1.hpp ****     //!
  303:funsape/util/../peripheral/timer1.hpp ****     //! \brief      Gets Compare A Match value
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 22
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 22
 
 
  304:funsape/util/../peripheral/timer1.hpp ****     //! \details    Gets Compare A Match value.
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  358:funsape/util/../peripheral/timer1.hpp ****     );
  359:funsape/util/../peripheral/timer1.hpp **** 
  360:funsape/util/../peripheral/timer1.hpp ****     //!
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 23
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 23
 
 
  361:funsape/util/../peripheral/timer1.hpp ****     //! \brief      Sets Compare B Match value
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  415:funsape/util/../peripheral/timer1.hpp ****     //!
  416:funsape/util/../peripheral/timer1.hpp ****     void inlined activateOverflowInterrupt(
  417:funsape/util/../peripheral/timer1.hpp ****             void
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 24
 
 
  418:funsape/util/../peripheral/timer1.hpp ****     );
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  472:funsape/util/../peripheral/timer1.hpp **** void inlined Timer1::clearCompareAInterruptRequest(void)
  473:funsape/util/../peripheral/timer1.hpp **** {
  474:funsape/util/../peripheral/timer1.hpp ****     setBit(TIFR1, OCF1A);
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 25
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 25
 
 
  475:funsape/util/../peripheral/timer1.hpp ****     return;
@@ -1498,7 +1498,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  529:funsape/util/../peripheral/timer1.hpp **** {
  530:funsape/util/../peripheral/timer1.hpp ****     setBit(TCCR1C, FOC1B);
  531:funsape/util/../peripheral/timer1.hpp ****     return;
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 26
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 26
 
 
  532:funsape/util/../peripheral/timer1.hpp **** }
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  586:funsape/util/../peripheral/timer1.hpp ****     }
  587:funsape/util/../peripheral/timer1.hpp ****     return;
  588:funsape/util/../peripheral/timer1.hpp **** }
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 27
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 27
 
 
  589:funsape/util/../peripheral/timer1.hpp **** 
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
   13:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****      distribution.
   14:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** 
   15:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****    * Neither the name of the copyright holders nor the names of
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 28
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 28
 
 
   16:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h ****      contributors may be used to endorse or promote products derived
@@ -1678,7 +1678,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  102 001a 1092 8400 		sts 132,__zero_reg__
  622:funsape/util/../peripheral/timer1.hpp ****         TCNT1 = value_p;
  103               		.loc 3 622 5 is_stmt 1 view .LVU19
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 29
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 29
 
 
  104               	.LVL5:
@@ -1738,7 +1738,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  134               	.LVL7:
   11:funsape/util/sound.cpp ****         timer1.setCompareAValue(notesOcrValue[(uint8_t)notes_p[i]]);
  135               		.loc 2 11 9 is_stmt 1 view .LVU32
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 30
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 30
 
 
  136               		.loc 2 11 65 is_stmt 0 view .LVU33
@@ -1798,7 +1798,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  179               	.LBI50:
   68:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\atomic.h **** {
  180               		.loc 4 68 24 view .LVU47
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 31
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 31
 
 
  181               	.LBB51:
@@ -1858,7 +1858,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
   28:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
   29:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
   30:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 32
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 32
 
 
   31:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
@@ -1918,7 +1918,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
   85:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #if !defined(__DOXYGEN__)
   86:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** static __inline__ void _delay_us(double __us) __attribute__((__always_inline__));
   87:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** static __inline__ void _delay_ms(double __ms) __attribute__((__always_inline__));
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 33
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 33
 
 
   88:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h **** #endif
@@ -1978,7 +1978,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  142:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    Conversion of \c __ms into clock cycles may not always result in
  143:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    integer.  By default, the clock cycles rounded up to next
  144:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    integer. This ensures that the user gets at least \c __ms
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 34
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 34
 
 
  145:c:\d\ifsc\vscodeleandro\ex\toolchains\avr-gcc\avr\include\util\delay.h ****    microseconds of delay.
@@ -2038,7 +2038,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  213 0056 96E0      		ldi r25,hlo8(399999)
  214 0058 2150      	1:	subi r18,1
  215 005a 8040      		sbci r24,0
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 35
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 35
 
 
  216 005c 9040      		sbci r25,0
@@ -2098,7 +2098,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  258               		.loc 3 622 5 is_stmt 1 view .LVU76
  623:funsape/util/../peripheral/timer1.hpp ****     }
  259               		.loc 3 623 9 view .LVU77
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 36
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 36
 
 
  623:funsape/util/../peripheral/timer1.hpp ****     }
@@ -2158,7 +2158,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  303               		.loc 2 20 1 view .LVU93
  304 009a 0895      		ret
  305               		.cfi_endproc
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 37
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 37
 
 
  306               	.LFE57:
@@ -2218,7 +2218,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  363 0066 7064      		.word	25712
  364 0068 CD5E      		.word	24269
  365 006a 7B59      		.word	22907
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 38
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 38
 
 
  366 006c 7554      		.word	21621
@@ -2278,7 +2278,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  420               	.global	notesPrescaler
  421               		.section	.data.notesPrescaler,"aw"
  424               	notesPrescaler:
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 39
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 39
 
 
  425 0000 02        		.byte	2
@@ -2338,7 +2338,7 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  479 0036 01        		.byte	1
  480 0037 01        		.byte	1
  481 0038 01        		.byte	1
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 40
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 40
 
 
  482 0039 01        		.byte	1
@@ -2397,229 +2397,229 @@ GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 1
  535               		.file 6 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
  536               		.file 7 "funsape/util/sound.hpp"
  537               		.file 8 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\math.h"
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 41
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 41
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 sound.cpp
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2      *ABS*:0000003e __SP_H__
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3      *ABS*:0000003d __SP_L__
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:4      *ABS*:0000003f __SREG__
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:5      *ABS*:00000000 __tmp_reg__
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:6      *ABS*:00000001 __zero_reg__
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:14     .text._Z7getTickv:00000000 _Z7getTickv
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:17     .text._Z7getTickv:00000000 .Loc.0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:18     .text._Z7getTickv:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:23     .text._Z7getTickv:00000000 .Loc.1
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:24     .text._Z7getTickv:00000000 .Loc.2
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:30     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:36     .text._Z9playNotesP4Note:00000000 _Z9playNotesP4Note
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:40     .text._Z9playNotesP4Note:00000000 .Loc.3
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:41     .text._Z9playNotesP4Note:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:42     .text._Z9playNotesP4Note:00000000 .Loc.4
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:64     .text._Z9playNotesP4Note:0000000e .Loc.5
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:66     .text._Z9playNotesP4Note:0000000e .Loc.6
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:67     .text._Z9playNotesP4Note:0000000e .Loc.7
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:69     .text._Z9playNotesP4Note:00000010 .Loc.8
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:73     .text._Z9playNotesP4Note:00000012 .Loc.9
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:77     .text._Z9playNotesP4Note:00000012 .Loc.10
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:78     .text._Z9playNotesP4Note:00000012 .Loc.11
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:85     .text._Z9playNotesP4Note:00000014 .Loc.12
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:87     .text._Z9playNotesP4Note:00000014 .Loc.13
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:92     .text._Z9playNotesP4Note:00000016 .Loc.14
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:94     .text._Z9playNotesP4Note:00000016 .Loc.15
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:98     .text._Z9playNotesP4Note:00000016 .Loc.16
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:99     .text._Z9playNotesP4Note:00000016 .Loc.17
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:100    .text._Z9playNotesP4Note:00000016 .Loc.18
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:103    .text._Z9playNotesP4Note:0000001e .Loc.19
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:105    .text._Z9playNotesP4Note:0000001e .Loc.20
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:108    .text._Z9playNotesP4Note:0000001e .Loc.21
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:110    .text._Z9playNotesP4Note:0000001e .Loc.22
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:111    .text._Z9playNotesP4Note:0000001e .Loc.23
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:113    .text._Z9playNotesP4Note:00000020 .Loc.24
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:115    .text._Z9playNotesP4Note:00000020 .Loc.25
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:119    .text._Z9playNotesP4Note:00000020 .Loc.26
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:120    .text._Z9playNotesP4Note:00000020 .Loc.27
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:122    .text._Z9playNotesP4Note:00000020 .Loc.28
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:123    .text._Z9playNotesP4Note:00000020 .Loc.29
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:125    .text._Z9playNotesP4Note:00000022 .Loc.30
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:127    .text._Z9playNotesP4Note:00000024 .Loc.31
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:424    .data.notesPrescaler:00000000 notesPrescaler
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:135    .text._Z9playNotesP4Note:00000032 .Loc.32
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:136    .text._Z9playNotesP4Note:00000032 .Loc.33
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:138    .text._Z9playNotesP4Note:00000034 .Loc.34
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:140    .text._Z9playNotesP4Note:00000036 .Loc.35
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:311    .rodata._ZL13notesOcrValue:00000000 _ZL13notesOcrValue
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:150    .text._Z9playNotesP4Note:00000042 .Loc.36
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:151    .text._Z9playNotesP4Note:00000042 .Loc.37
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:157    .text._Z9playNotesP4Note:00000044 .Loc.38
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:159    .text._Z9playNotesP4Note:00000044 .Loc.39
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:164    .text._Z9playNotesP4Note:00000046 .Loc.40
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:166    .text._Z9playNotesP4Note:00000046 .Loc.41
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:170    .text._Z9playNotesP4Note:00000046 .Loc.42
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 42
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2      *ABS*:0000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3      *ABS*:0000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:4      *ABS*:0000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:14     .text._Z7getTickv:00000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:17     .text._Z7getTickv:00000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:18     .text._Z7getTickv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:23     .text._Z7getTickv:00000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:24     .text._Z7getTickv:00000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:30     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:36     .text._Z9playNotesP4Note:00000000 _Z9playNotesP4Note
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:40     .text._Z9playNotesP4Note:00000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:41     .text._Z9playNotesP4Note:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:42     .text._Z9playNotesP4Note:00000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:64     .text._Z9playNotesP4Note:0000000e .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:66     .text._Z9playNotesP4Note:0000000e .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:67     .text._Z9playNotesP4Note:0000000e .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:69     .text._Z9playNotesP4Note:00000010 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:73     .text._Z9playNotesP4Note:00000012 .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:77     .text._Z9playNotesP4Note:00000012 .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:78     .text._Z9playNotesP4Note:00000012 .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:85     .text._Z9playNotesP4Note:00000014 .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:87     .text._Z9playNotesP4Note:00000014 .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:92     .text._Z9playNotesP4Note:00000016 .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:94     .text._Z9playNotesP4Note:00000016 .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:98     .text._Z9playNotesP4Note:00000016 .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:99     .text._Z9playNotesP4Note:00000016 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:100    .text._Z9playNotesP4Note:00000016 .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:103    .text._Z9playNotesP4Note:0000001e .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:105    .text._Z9playNotesP4Note:0000001e .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:108    .text._Z9playNotesP4Note:0000001e .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:110    .text._Z9playNotesP4Note:0000001e .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:111    .text._Z9playNotesP4Note:0000001e .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:113    .text._Z9playNotesP4Note:00000020 .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:115    .text._Z9playNotesP4Note:00000020 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:119    .text._Z9playNotesP4Note:00000020 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:120    .text._Z9playNotesP4Note:00000020 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:122    .text._Z9playNotesP4Note:00000020 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:123    .text._Z9playNotesP4Note:00000020 .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:125    .text._Z9playNotesP4Note:00000022 .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:127    .text._Z9playNotesP4Note:00000024 .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:424    .data.notesPrescaler:00000000 notesPrescaler
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:135    .text._Z9playNotesP4Note:00000032 .Loc.32
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:136    .text._Z9playNotesP4Note:00000032 .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:138    .text._Z9playNotesP4Note:00000034 .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:140    .text._Z9playNotesP4Note:00000036 .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:311    .rodata._ZL13notesOcrValue:00000000 _ZL13notesOcrValue
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:150    .text._Z9playNotesP4Note:00000042 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:151    .text._Z9playNotesP4Note:00000042 .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:157    .text._Z9playNotesP4Note:00000044 .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:159    .text._Z9playNotesP4Note:00000044 .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:164    .text._Z9playNotesP4Note:00000046 .Loc.40
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:166    .text._Z9playNotesP4Note:00000046 .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:170    .text._Z9playNotesP4Note:00000046 .Loc.42
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 42
 
 
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:171    .text._Z9playNotesP4Note:00000046 .Loc.43
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:172    .text._Z9playNotesP4Note:00000046 .Loc.44
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:175    .text._Z9playNotesP4Note:0000004e .Loc.45
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:177    .text._Z9playNotesP4Note:0000004e .Loc.46
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:180    .text._Z9playNotesP4Note:0000004e .Loc.47
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:182    .text._Z9playNotesP4Note:0000004e .Loc.48
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:183    .text._Z9playNotesP4Note:0000004e .Loc.49
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:185    .text._Z9playNotesP4Note:00000050 .Loc.50
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:187    .text._Z9playNotesP4Note:00000050 .Loc.51
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:191    .text._Z9playNotesP4Note:00000050 .Loc.52
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:192    .text._Z9playNotesP4Note:00000050 .Loc.53
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:194    .text._Z9playNotesP4Note:00000050 .Loc.54
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:195    .text._Z9playNotesP4Note:00000050 .Loc.55
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:198    .text._Z9playNotesP4Note:00000052 .Loc.56
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:202    .text._Z9playNotesP4Note:00000052 .Loc.57
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:204    .text._Z9playNotesP4Note:00000052 .Loc.58
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:205    .text._Z9playNotesP4Note:00000052 .Loc.59
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:206    .text._Z9playNotesP4Note:00000052 .Loc.60
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:207    .text._Z9playNotesP4Note:00000052 .Loc.61
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:208    .text._Z9playNotesP4Note:00000052 .Loc.62
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:209    .text._Z9playNotesP4Note:00000052 .Loc.63
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:210    .text._Z9playNotesP4Note:00000052 .Loc.64
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:218    .text._Z9playNotesP4Note:00000062 L0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:222    .text._Z9playNotesP4Note:00000064 .Loc.65
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:225    .text._Z9playNotesP4Note:00000064 .Loc.66
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:226    .text._Z9playNotesP4Note:00000064 .Loc.67
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:230    .text._Z9playNotesP4Note:0000006a .Loc.68
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:234    .text._Z9playNotesP4Note:00000070 .Loc.69
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:238    .text._Z9playNotesP4Note:00000070 .Loc.70
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:239    .text._Z9playNotesP4Note:00000070 .Loc.71
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:245    .text._Z9playNotesP4Note:00000072 .Loc.72
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:247    .text._Z9playNotesP4Note:00000072 .Loc.73
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:252    .text._Z9playNotesP4Note:00000074 .Loc.74
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:254    .text._Z9playNotesP4Note:00000074 .Loc.75
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:258    .text._Z9playNotesP4Note:00000074 .Loc.76
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:259    .text._Z9playNotesP4Note:00000074 .Loc.77
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:260    .text._Z9playNotesP4Note:00000074 .Loc.78
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:263    .text._Z9playNotesP4Note:0000007c .Loc.79
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:265    .text._Z9playNotesP4Note:0000007c .Loc.80
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:268    .text._Z9playNotesP4Note:0000007c .Loc.81
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:270    .text._Z9playNotesP4Note:0000007c .Loc.82
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:271    .text._Z9playNotesP4Note:0000007c .Loc.83
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:273    .text._Z9playNotesP4Note:0000007e .Loc.84
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:275    .text._Z9playNotesP4Note:0000007e .Loc.85
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:279    .text._Z9playNotesP4Note:0000007e .Loc.86
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:280    .text._Z9playNotesP4Note:0000007e .Loc.87
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:282    .text._Z9playNotesP4Note:0000007e .Loc.88
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:283    .text._Z9playNotesP4Note:0000007e .Loc.89
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:289    .text._Z9playNotesP4Note:00000088 .Loc.90
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:293    .text._Z9playNotesP4Note:0000008e .Loc.91
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:294    .text._Z9playNotesP4Note:0000008e .Loc.92
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:303    .text._Z9playNotesP4Note:0000009a .Loc.93
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:305    .text._Z9playNotesP4Note:0000009c L0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:33     .text._Z7getTickv:00000008 L0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:308    .text._Z9playNotesP4Note:0000009c L0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:171    .text._Z9playNotesP4Note:00000046 .Loc.43
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:172    .text._Z9playNotesP4Note:00000046 .Loc.44
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:175    .text._Z9playNotesP4Note:0000004e .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:177    .text._Z9playNotesP4Note:0000004e .Loc.46
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:180    .text._Z9playNotesP4Note:0000004e .Loc.47
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:182    .text._Z9playNotesP4Note:0000004e .Loc.48
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:183    .text._Z9playNotesP4Note:0000004e .Loc.49
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:185    .text._Z9playNotesP4Note:00000050 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:187    .text._Z9playNotesP4Note:00000050 .Loc.51
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:191    .text._Z9playNotesP4Note:00000050 .Loc.52
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:192    .text._Z9playNotesP4Note:00000050 .Loc.53
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:194    .text._Z9playNotesP4Note:00000050 .Loc.54
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:195    .text._Z9playNotesP4Note:00000050 .Loc.55
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:198    .text._Z9playNotesP4Note:00000052 .Loc.56
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:202    .text._Z9playNotesP4Note:00000052 .Loc.57
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:204    .text._Z9playNotesP4Note:00000052 .Loc.58
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:205    .text._Z9playNotesP4Note:00000052 .Loc.59
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:206    .text._Z9playNotesP4Note:00000052 .Loc.60
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:207    .text._Z9playNotesP4Note:00000052 .Loc.61
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:208    .text._Z9playNotesP4Note:00000052 .Loc.62
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:209    .text._Z9playNotesP4Note:00000052 .Loc.63
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:210    .text._Z9playNotesP4Note:00000052 .Loc.64
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:218    .text._Z9playNotesP4Note:00000062 L0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:222    .text._Z9playNotesP4Note:00000064 .Loc.65
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:225    .text._Z9playNotesP4Note:00000064 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:226    .text._Z9playNotesP4Note:00000064 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:230    .text._Z9playNotesP4Note:0000006a .Loc.68
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:234    .text._Z9playNotesP4Note:00000070 .Loc.69
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:238    .text._Z9playNotesP4Note:00000070 .Loc.70
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:239    .text._Z9playNotesP4Note:00000070 .Loc.71
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:245    .text._Z9playNotesP4Note:00000072 .Loc.72
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:247    .text._Z9playNotesP4Note:00000072 .Loc.73
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:252    .text._Z9playNotesP4Note:00000074 .Loc.74
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:254    .text._Z9playNotesP4Note:00000074 .Loc.75
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:258    .text._Z9playNotesP4Note:00000074 .Loc.76
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:259    .text._Z9playNotesP4Note:00000074 .Loc.77
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:260    .text._Z9playNotesP4Note:00000074 .Loc.78
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:263    .text._Z9playNotesP4Note:0000007c .Loc.79
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:265    .text._Z9playNotesP4Note:0000007c .Loc.80
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:268    .text._Z9playNotesP4Note:0000007c .Loc.81
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:270    .text._Z9playNotesP4Note:0000007c .Loc.82
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:271    .text._Z9playNotesP4Note:0000007c .Loc.83
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:273    .text._Z9playNotesP4Note:0000007e .Loc.84
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:275    .text._Z9playNotesP4Note:0000007e .Loc.85
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:279    .text._Z9playNotesP4Note:0000007e .Loc.86
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:280    .text._Z9playNotesP4Note:0000007e .Loc.87
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:282    .text._Z9playNotesP4Note:0000007e .Loc.88
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:283    .text._Z9playNotesP4Note:0000007e .Loc.89
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:289    .text._Z9playNotesP4Note:00000088 .Loc.90
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:293    .text._Z9playNotesP4Note:0000008e .Loc.91
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:294    .text._Z9playNotesP4Note:0000008e .Loc.92
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:303    .text._Z9playNotesP4Note:0000009a .Loc.93
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:305    .text._Z9playNotesP4Note:0000009c L0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:33     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:308    .text._Z9playNotesP4Note:0000009c L0
                      .debug_frame:00000000 L0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:221    .text._Z9playNotesP4Note:00000064 .L3
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 43
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:221    .text._Z9playNotesP4Note:00000064 .L3
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 43
 
 
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:214    .text._Z9playNotesP4Note:00000058 .L11
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:72     .text._Z9playNotesP4Note:00000012 .L4
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2001   .debug_abbrev:00000000 .Ldebug_abbrev0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3169   .debug_rnglists:0000000c .LLRL17
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3179   .debug_line:00000000 .Ldebug_line0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:38     .text._Z9playNotesP4Note:00000000 .LFB57
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:306    .text._Z9playNotesP4Note:0000009c .LFE57
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2902   .debug_loclists:00000010 .LLST0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2897   .debug_loclists:0000000c .LVUS0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2929   .debug_loclists:0000002d .LLST1
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2924   .debug_loclists:00000029 .LVUS1
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:75     .text._Z9playNotesP4Note:00000012 .LBI40
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:74     .text._Z9playNotesP4Note:00000012 .LBB40
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:121    .text._Z9playNotesP4Note:00000020 .LBE40
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2947   .debug_loclists:00000041 .LLST2
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2944   .debug_loclists:0000003f .LVUS2
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:79     .text._Z9playNotesP4Note:00000012 .LBB41
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:118    .text._Z9playNotesP4Note:00000020 .LBE41
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2958   .debug_loclists:0000004d .LLST3
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2955   .debug_loclists:0000004b .LVUS3
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2970   .debug_loclists:0000005a .LLST4
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2965   .debug_loclists:00000056 .LVUS4
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:83     .text._Z9playNotesP4Note:00000014 .LBI42
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:82     .text._Z9playNotesP4Note:00000014 .LBB42
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:97     .text._Z9playNotesP4Note:00000016 .LBE42
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:107    .text._Z9playNotesP4Note:0000001e .LBI44
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:106    .text._Z9playNotesP4Note:0000001e .LBB44
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:117    .text._Z9playNotesP4Note:00000020 .LBE44
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2989   .debug_loclists:0000006e .LLST5
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2986   .debug_loclists:0000006c .LVUS5
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:149    .text._Z9playNotesP4Note:00000042 .LBI46
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:148    .text._Z9playNotesP4Note:00000042 .LBB46
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:193    .text._Z9playNotesP4Note:00000050 .LBE46
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3001   .debug_loclists:0000007e .LLST6
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:2998   .debug_loclists:0000007c .LVUS6
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:152    .text._Z9playNotesP4Note:00000042 .LBB47
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:190    .text._Z9playNotesP4Note:00000050 .LBE47
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3016   .debug_loclists:0000008e .LLST7
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3013   .debug_loclists:0000008c .LVUS7
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3028   .debug_loclists:0000009b .LLST8
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3023   .debug_loclists:00000097 .LVUS8
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:156    .text._Z9playNotesP4Note:00000044 .LBI48
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:155    .text._Z9playNotesP4Note:00000044 .LBB48
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:169    .text._Z9playNotesP4Note:00000046 .LBE48
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:179    .text._Z9playNotesP4Note:0000004e .LBI50
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:178    .text._Z9playNotesP4Note:0000004e .LBB50
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:189    .text._Z9playNotesP4Note:00000050 .LBE50
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3047   .debug_loclists:000000af .LLST9
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3044   .debug_loclists:000000ad .LVUS9
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:200    .text._Z9playNotesP4Note:00000052 .LBI52
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:199    .text._Z9playNotesP4Note:00000052 .LBB52
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:224    .text._Z9playNotesP4Note:00000064 .LBE52
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3059   .debug_loclists:000000bf .LLST10
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3056   .debug_loclists:000000bd .LVUS10
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3071   .debug_loclists:000000cf .LLST11
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3068   .debug_loclists:000000cd .LVUS11
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3083   .debug_loclists:000000df .LLST12
-GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s 			page 44
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:214    .text._Z9playNotesP4Note:00000058 .L11
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:72     .text._Z9playNotesP4Note:00000012 .L4
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2001   .debug_abbrev:00000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3169   .debug_rnglists:0000000c .LLRL17
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3179   .debug_line:00000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:38     .text._Z9playNotesP4Note:00000000 .LFB57
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:306    .text._Z9playNotesP4Note:0000009c .LFE57
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2902   .debug_loclists:00000010 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2897   .debug_loclists:0000000c .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2929   .debug_loclists:0000002d .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2924   .debug_loclists:00000029 .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:75     .text._Z9playNotesP4Note:00000012 .LBI40
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:74     .text._Z9playNotesP4Note:00000012 .LBB40
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:121    .text._Z9playNotesP4Note:00000020 .LBE40
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2947   .debug_loclists:00000041 .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2944   .debug_loclists:0000003f .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:79     .text._Z9playNotesP4Note:00000012 .LBB41
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:118    .text._Z9playNotesP4Note:00000020 .LBE41
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2958   .debug_loclists:0000004d .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2955   .debug_loclists:0000004b .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2970   .debug_loclists:0000005a .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2965   .debug_loclists:00000056 .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:83     .text._Z9playNotesP4Note:00000014 .LBI42
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:82     .text._Z9playNotesP4Note:00000014 .LBB42
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:97     .text._Z9playNotesP4Note:00000016 .LBE42
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:107    .text._Z9playNotesP4Note:0000001e .LBI44
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:106    .text._Z9playNotesP4Note:0000001e .LBB44
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:117    .text._Z9playNotesP4Note:00000020 .LBE44
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2989   .debug_loclists:0000006e .LLST5
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2986   .debug_loclists:0000006c .LVUS5
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:149    .text._Z9playNotesP4Note:00000042 .LBI46
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:148    .text._Z9playNotesP4Note:00000042 .LBB46
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:193    .text._Z9playNotesP4Note:00000050 .LBE46
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3001   .debug_loclists:0000007e .LLST6
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:2998   .debug_loclists:0000007c .LVUS6
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:152    .text._Z9playNotesP4Note:00000042 .LBB47
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:190    .text._Z9playNotesP4Note:00000050 .LBE47
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3016   .debug_loclists:0000008e .LLST7
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3013   .debug_loclists:0000008c .LVUS7
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3028   .debug_loclists:0000009b .LLST8
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3023   .debug_loclists:00000097 .LVUS8
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:156    .text._Z9playNotesP4Note:00000044 .LBI48
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:155    .text._Z9playNotesP4Note:00000044 .LBB48
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:169    .text._Z9playNotesP4Note:00000046 .LBE48
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:179    .text._Z9playNotesP4Note:0000004e .LBI50
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:178    .text._Z9playNotesP4Note:0000004e .LBB50
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:189    .text._Z9playNotesP4Note:00000050 .LBE50
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3047   .debug_loclists:000000af .LLST9
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3044   .debug_loclists:000000ad .LVUS9
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:200    .text._Z9playNotesP4Note:00000052 .LBI52
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:199    .text._Z9playNotesP4Note:00000052 .LBB52
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:224    .text._Z9playNotesP4Note:00000064 .LBE52
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3059   .debug_loclists:000000bf .LLST10
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3056   .debug_loclists:000000bd .LVUS10
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3071   .debug_loclists:000000cf .LLST11
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3068   .debug_loclists:000000cd .LVUS11
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3083   .debug_loclists:000000df .LLST12
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s 			page 44
 
 
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3080   .debug_loclists:000000dd .LVUS12
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:237    .text._Z9playNotesP4Note:00000070 .LBI54
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:236    .text._Z9playNotesP4Note:00000070 .LBB54
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:281    .text._Z9playNotesP4Note:0000007e .LBE54
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3095   .debug_loclists:000000ef .LLST13
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3092   .debug_loclists:000000ed .LVUS13
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:240    .text._Z9playNotesP4Note:00000070 .LBB55
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:278    .text._Z9playNotesP4Note:0000007e .LBE55
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3106   .debug_loclists:000000fb .LLST14
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3103   .debug_loclists:000000f9 .LVUS14
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3118   .debug_loclists:00000108 .LLST15
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3113   .debug_loclists:00000104 .LVUS15
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:244    .text._Z9playNotesP4Note:00000072 .LBI56
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:243    .text._Z9playNotesP4Note:00000072 .LBB56
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:257    .text._Z9playNotesP4Note:00000074 .LBE56
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:267    .text._Z9playNotesP4Note:0000007c .LBI58
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:266    .text._Z9playNotesP4Note:0000007c .LBB58
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:277    .text._Z9playNotesP4Note:0000007e .LBE58
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3137   .debug_loclists:0000011c .LLST16
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:3134   .debug_loclists:0000011a .LVUS16
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:134    .text._Z9playNotesP4Note:00000032 .LVL7
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:288    .text._Z9playNotesP4Note:00000088 .LVL20
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:15     .text._Z7getTickv:00000000 .LFB32
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:31     .text._Z7getTickv:00000008 .LFE32
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:37     .text._Z9playNotesP4Note:00000000 .LVL0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:65     .text._Z9playNotesP4Note:0000000e .LVL1
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:71     .text._Z9playNotesP4Note:00000012 .LVL2
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:81     .text._Z9playNotesP4Note:00000014 .LVL3
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:93     .text._Z9playNotesP4Note:00000016 .LVL4
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:104    .text._Z9playNotesP4Note:0000001e .LVL5
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:539    .debug_info:00000000 .Ldebug_info0
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:147    .text._Z9playNotesP4Note:00000042 .LVL8
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:154    .text._Z9playNotesP4Note:00000044 .LVL9
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:165    .text._Z9playNotesP4Note:00000046 .LVL10
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:176    .text._Z9playNotesP4Note:0000004e .LVL11
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:197    .text._Z9playNotesP4Note:00000052 .LVL13
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:235    .text._Z9playNotesP4Note:00000070 .LVL15
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:242    .text._Z9playNotesP4Note:00000072 .LVL16
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:253    .text._Z9playNotesP4Note:00000074 .LVL17
-C:\Users\kenne\AppData\Local\Temp\ccKoKEG2.s:264    .text._Z9playNotesP4Note:0000007c .LVL18
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3080   .debug_loclists:000000dd .LVUS12
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:237    .text._Z9playNotesP4Note:00000070 .LBI54
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:236    .text._Z9playNotesP4Note:00000070 .LBB54
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:281    .text._Z9playNotesP4Note:0000007e .LBE54
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3095   .debug_loclists:000000ef .LLST13
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3092   .debug_loclists:000000ed .LVUS13
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:240    .text._Z9playNotesP4Note:00000070 .LBB55
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:278    .text._Z9playNotesP4Note:0000007e .LBE55
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3106   .debug_loclists:000000fb .LLST14
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3103   .debug_loclists:000000f9 .LVUS14
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3118   .debug_loclists:00000108 .LLST15
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3113   .debug_loclists:00000104 .LVUS15
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:244    .text._Z9playNotesP4Note:00000072 .LBI56
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:243    .text._Z9playNotesP4Note:00000072 .LBB56
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:257    .text._Z9playNotesP4Note:00000074 .LBE56
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:267    .text._Z9playNotesP4Note:0000007c .LBI58
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:266    .text._Z9playNotesP4Note:0000007c .LBB58
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:277    .text._Z9playNotesP4Note:0000007e .LBE58
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3137   .debug_loclists:0000011c .LLST16
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:3134   .debug_loclists:0000011a .LVUS16
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:134    .text._Z9playNotesP4Note:00000032 .LVL7
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:288    .text._Z9playNotesP4Note:00000088 .LVL20
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:15     .text._Z7getTickv:00000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:31     .text._Z7getTickv:00000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:37     .text._Z9playNotesP4Note:00000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:65     .text._Z9playNotesP4Note:0000000e .LVL1
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:71     .text._Z9playNotesP4Note:00000012 .LVL2
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:81     .text._Z9playNotesP4Note:00000014 .LVL3
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:93     .text._Z9playNotesP4Note:00000016 .LVL4
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:104    .text._Z9playNotesP4Note:0000001e .LVL5
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:539    .debug_info:00000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:147    .text._Z9playNotesP4Note:00000042 .LVL8
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:154    .text._Z9playNotesP4Note:00000044 .LVL9
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:165    .text._Z9playNotesP4Note:00000046 .LVL10
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:176    .text._Z9playNotesP4Note:0000004e .LVL11
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:197    .text._Z9playNotesP4Note:00000052 .LVL13
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:235    .text._Z9playNotesP4Note:00000070 .LVL15
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:242    .text._Z9playNotesP4Note:00000072 .LVL16
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:253    .text._Z9playNotesP4Note:00000074 .LVL17
+C:\Users\kenne\AppData\Local\Temp\ccBQeVEf.s:264    .text._Z9playNotesP4Note:0000007c .LVL18
 
 UNDEFINED SYMBOLS
 timer1

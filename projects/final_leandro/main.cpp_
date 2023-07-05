@@ -1,0 +1,27 @@
+#define F_CPU 16000000UL
+
+#include "funsape/globalDefines.hpp"
+#include "funsape/device/hd44780.hpp"
+
+int main()
+{
+
+    // Hd44780 lcd;
+
+    // setBit(DDRB, PB5);
+
+    // lcd.dataPortSet(&DDRD, PD4);
+    // lcd.controlPortSet(&DDRB, PB1, PB0);
+    // lcd.init(Hd44780::Size::LCD_16X2, Hd44780::Font::FONT_5X8, true, false);
+    // lcd.stdio();
+
+    // printf("  Teste do LCD  \n");
+    // printf("   04/07/2023   \n");
+
+    while(1) {
+        // cplBit(PORTB, PB5);
+        // delayMs(500);
+    }
+
+    return 0;
+}

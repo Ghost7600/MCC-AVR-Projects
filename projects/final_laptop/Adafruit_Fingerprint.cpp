@@ -28,7 +28,7 @@
 
 #include "Adafruit_Fingerprint.h"
 #include "kbitbang1.hpp"
-
+//#define FINGERPRINT_DEBUG
 //#define FINGERPRINT_DEBUG
 
 /*!
@@ -518,24 +518,24 @@ void Adafruit_Fingerprint::writeStructuredPacket(
     mySerial->write((uint8_t)(wire_length & 0xFF));
 
 #ifdef FINGERPRINT_DEBUG
-    Serial.print("-> 0x");
-    Serial.print((uint8_t)(packet.start_code >> 8), HEX);
-    Serial.print(", 0x");
-    Serial.print((uint8_t)(packet.start_code & 0xFF), HEX);
-    Serial.print(", 0x");
-    Serial.print(packet.address[0], HEX);
-    Serial.print(", 0x");
-    Serial.print(packet.address[1], HEX);
-    Serial.print(", 0x");
-    Serial.print(packet.address[2], HEX);
-    Serial.print(", 0x");
-    Serial.print(packet.address[3], HEX);
-    Serial.print(", 0x");
-    Serial.print(packet.type, HEX);
-    Serial.print(", 0x");
-    Serial.print((uint8_t)(wire_length >> 8), HEX);
-    Serial.print(", 0x");
-    Serial.print((uint8_t)(wire_length & 0xFF), HEX);
+    sendstring("-> 0x");
+    sendstring((uint8_t)(packet.start_code >> 8), HEX);
+    sendstring(", 0x");
+    sendstring((uint8_t)(packet.start_code & 0xFF), HEX);
+    sendstring(", 0x");
+    sendstring(packet.address[0], HEX);
+    sendstring(", 0x");
+    sendstring(packet.address[1], HEX);
+    sendstring(", 0x");
+    sendstring(packet.address[2], HEX);
+    sendstring(", 0x");
+    sendstring(packet.address[3], HEX);
+    sendstring(", 0x");
+    sendstring(packet.type, HEX);
+    sendstring(", 0x");
+    sendstring((uint8_t)(wire_length >> 8), HEX);
+    sendstring(", 0x");
+    sendstring((uint8_t)(wire_length & 0xFF), HEX);
 #endif
 
     uint16_t sum = ((wire_length) >> 8) + ((wire_length) & 0xFF) + packet.type;
@@ -543,8 +543,8 @@ void Adafruit_Fingerprint::writeStructuredPacket(
         mySerial->write(packet.data[i]);
         sum += packet.data[i];
 #ifdef FINGERPRINT_DEBUG
-        Serial.print(", 0x");
-        Serial.print(packet.data[i], HEX);
+        sendstring(", 0x");
+        sendstring(packet.data[i], HEX);
 #endif
     }
 
@@ -552,10 +552,10 @@ void Adafruit_Fingerprint::writeStructuredPacket(
     mySerial->write((uint8_t)(sum & 0xFF));
 
 #ifdef FINGERPRINT_DEBUG
-    Serial.print(", 0x");
-    Serial.print((uint8_t)(sum >> 8), HEX);
-    Serial.print(", 0x");
-    Serial.println((uint8_t)(sum & 0xFF), HEX);
+    sendstring(", 0x");
+    sendstring((uint8_t)(sum >> 8), HEX);
+    sendstring(", 0x");
+    sendstringln((uint8_t)(sum & 0xFF), HEX);
 #endif
 
     return;
@@ -576,10 +576,13 @@ uint8_t Adafruit_Fingerprint::getStructuredPacket(Adafruit_Fingerprint_Packet *p
         uint16_t timeout)
 {
     uint8_t byte;
+    char temp[1];
+    char cast[8];
     uint16_t idx = 0, timer = 0;
+    uint16_t segura =0;
 
 #ifdef FINGERPRINT_DEBUG
-    Serial.print("<- ");
+    sendstring("<- ");
 #endif
 
     while(true) {
@@ -588,58 +591,79 @@ uint8_t Adafruit_Fingerprint::getStructuredPacket(Adafruit_Fingerprint_Packet *p
         timer++;
         if(timer >= timeout) {
 #ifdef FINGERPRINT_DEBUG
-            Serial.println("Timed out");
+            sendstringln("Timed out");
 #endif
+            sendstring("Timed out");
             return FINGERPRINT_TIMEOUT;
         }
         // }
         // byte = mySerial->read(); FUNÇÃO ORIGINAL
         mySerial->read(&byte); //Problema pode estar aqui
+        sprintf(cast,"%02X",byte);
+
 #ifdef FINGERPRINT_DEBUG
-        Serial.print("0x");
-        Serial.print(byte, HEX);
-        Serial.print(", ");
+        sendstring("0x");
+        sendstring(byte, HEX);
+        sendstring(", ");
 #endif
-        switch(idx) {
-        case 0:
-            if(byte != (FINGERPRINT_STARTCODE >> 8)) {
-                continue;
+        if (0){
+            segura++;
+        }
+        else
+        {
+                        sendstring("-");
+            //sendstring(cast);
+            switch(idx) {
+            case 0:
+                if(byte != (FINGERPRINT_STARTCODE >> 8)) {
+                    sendstring("\n received startcode");
+                    continue;
+                }
+                packet->start_code = (uint16_t)byte << 8;
+                break;
+            case 1:
+                packet->start_code |= byte;
+                if(packet->start_code != FINGERPRINT_STARTCODE) {
+                    sendstring("\n return badpacket ");
+                    return FINGERPRINT_BADPACKET;
+                }
+                break;
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                sendstring("case 5 \n");
+                sendstring("package ");
+                sprintf(temp,"%02X",idx-2);
+                sendstring(temp); sendstring("=");
+                sendstring(cast);sendstring("; \n");
+                packet->address[idx - 2] = byte;
+                break;
+            case 6:
+                sendstring("case 6");
+                packet->type = byte;
+                break;
+            case 7:
+                packet->length = (uint16_t)byte << 8;
+                break;
+            case 8:
+                packet->length |= byte;
+                break;
+            default:
+                packet->data[idx - 9] = byte;
+                if((idx - 8) == packet->length) {
+    #ifdef FINGERPRINT_DEBUG
+                    sendstringln(" OK ");
+    #endif
+                    sendstring("\n return fingerprint ok ");
+                    return FINGERPRINT_OK;
+                }
+                break;
             }
-            packet->start_code = (uint16_t)byte << 8;
-            break;
-        case 1:
-            packet->start_code |= byte;
-            if(packet->start_code != FINGERPRINT_STARTCODE) {
-                return FINGERPRINT_BADPACKET;
-            }
-            break;
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-            packet->address[idx - 2] = byte;
-            break;
-        case 6:
-            packet->type = byte;
-            break;
-        case 7:
-            packet->length = (uint16_t)byte << 8;
-            break;
-        case 8:
-            packet->length |= byte;
-            break;
-        default:
-            packet->data[idx - 9] = byte;
-            if((idx - 8) == packet->length) {
-#ifdef FINGERPRINT_DEBUG
-                Serial.println(" OK ");
-#endif
-                return FINGERPRINT_OK;
-            }
-            break;
         }
         idx++;
         if((idx + 9) >= sizeof(packet->data)) {
+            sendstring("\n return badpacket ");
             return FINGERPRINT_BADPACKET;
         }
     }

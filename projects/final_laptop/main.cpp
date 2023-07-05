@@ -20,7 +20,6 @@
 
 
 
-
 unsigned char uartgetchar()
 {
     // Local variables
@@ -203,7 +202,7 @@ int main()
     sendstring("hello");
 
     // set the data rate for the sensor serial port
-//   finger.begin(57600);
+    //finger.begin(57600);
 //   delayMs(5);
 //   if (finger.verifyPassword()) {
 //     sendstring("Found fingerprint sensor!");
@@ -211,41 +210,44 @@ int main()
 //     sendstring("Did not find fingerprint sensor :(");
 //     while (1) { delayMs(1); }
 //   }
+    finger.LEDcontrol(false);
+    // delayMs(300);
+    // finger.LEDcontrol(1);
+    // sendstring("Reading sensor parameters");
+    // delayMs(20);
+    // finger.getParameters();
+    // sprintf(rcvmsg, "%02X", finger.status_reg);
+    // sendstring("Status: 0x"); sendstring(rcvmsg);
+    // delayMs(20);
+    // bitbang(finger.status_reg);
+    // sprintf(rcvmsg, "%02X", finger.system_id);
+    // sendstring("Sys ID: 0x"); sendstring(rcvmsg);
+    // sprintf(rcvmsg, "%02X", finger.capacity);
+    // sendstring("Capacity: "); sendstring(rcvmsg);
+    // sprintf(rcvmsg, "%02X", finger.security_level);
+    // sendstring("Security level: "); sendstring(rcvmsg);
+    // sprintf(rcvmsg, "%02X", finger.device_addr);
+    // sendstring("Device address: "); sendstring(rcvmsg);
+    // sprintf(rcvmsg, "%02X", finger.packet_len);
+    // sendstring("Packet len: "); sendstring(rcvmsg);
+    // sprintf(rcvmsg, "%02X", finger.baud_rate);
+    // sendstring("Baud rate: "); sendstring(rcvmsg);
 
-    sendstring("Reading sensor parameters");
-    delayMs(20);
-    finger.getParameters();
-    sprintf(rcvmsg, "%02X", finger.status_reg);
-    sendstring("Status: 0x"); sendstring(rcvmsg);
-    delayMs(20);
-    bitbang(finger.status_reg);
-    sprintf(rcvmsg, "%02X", finger.system_id);
-    sendstring("Sys ID: 0x"); sendstring(rcvmsg);
-    sprintf(rcvmsg, "%02X", finger.capacity);
-    sendstring("Capacity: "); sendstring(rcvmsg);
-    sprintf(rcvmsg, "%02X", finger.security_level);
-    sendstring("Security level: "); sendstring(rcvmsg);
-    sprintf(rcvmsg, "%02X", finger.device_addr);
-    sendstring("Device address: "); sendstring(rcvmsg);
-    sprintf(rcvmsg, "%02X", finger.packet_len);
-    sendstring("Packet len: "); sendstring(rcvmsg);
-    sprintf(rcvmsg, "%02X", finger.baud_rate);
-    sendstring("Baud rate: "); sendstring(rcvmsg);
+    // finger.getTemplateCount();
 
-    finger.getTemplateCount();
-
-    if(finger.templateCount == 0) {
-        sendstring("Sensor doesn't contain any fingerprint data. Please run the 'enroll' example.");
-    } else {
-        sendstring("Waiting for valid finger...");
-        sendstring("Sensor contains ");
-        sprintf(rcvmsg, "%02X", finger.templateCount);
-        sendstring(rcvmsg); sendstring(" templates");
-    }
+    // if(finger.templateCount == 0) {
+    //     sendstring("Sensor doesn't contain any fingerprint data. Please run the 'enroll' example.");
+    // } else {
+    //     sendstring("Waiting for valid finger...");
+    //     sendstring("Sensor contains ");
+    //     sprintf(rcvmsg, "%02X", finger.templateCount);
+    //     sendstring(rcvmsg); sendstring(" templates");
+    // }
 
 
     while(1) {
         sendstring("teste");
+        sendstring("\n");
         getFingerprintID(&finger);
         //mandando endereo do sensor
         //signalbegin();

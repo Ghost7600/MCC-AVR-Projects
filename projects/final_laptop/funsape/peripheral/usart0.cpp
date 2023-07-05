@@ -471,7 +471,7 @@ bool_t Usart0::read(uint8_t *data_p)
     // }
 
     // Gets received byte
-    *data_p |= UDR0;
+    *data_p = UDR0;
 
     // Returns successfully
     this->_lastError = Error::NONE;

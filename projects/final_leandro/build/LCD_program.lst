@@ -1,0 +1,26 @@
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cch6UZrF.s 			page 1
+
+
+   1               		.file	"LCD_program.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               	.Ltext0:
+   9               		.cfi_sections	.debug_frame
+  10               		.file 0 "C:\\D\\IFSC\\MCC\\projects\\final_leandro" "src/LCD_program.c"
+  11               	.Letext0:
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\cch6UZrF.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 LCD_program.c
+C:\Users\kenne\AppData\Local\Temp\cch6UZrF.s:2      *ABS*:0000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\cch6UZrF.s:3      *ABS*:0000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\cch6UZrF.s:4      *ABS*:0000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\cch6UZrF.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\cch6UZrF.s:6      *ABS*:00000001 __zero_reg__
+
+NO UNDEFINED SYMBOLS

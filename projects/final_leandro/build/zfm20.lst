@@ -1,0 +1,2712 @@
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 1
+
+
+   1               		.file	"zfm20.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               	.Ltext0:
+   9               		.cfi_sections	.debug_frame
+  10               		.file 0 "C:\\D\\IFSC\\MCC\\projects\\final_leandro" "zfm20.cpp"
+  11               		.section	.text._Z7getTickv,"ax",@progbits
+  12               		.weak	_Z7getTickv
+  14               	_Z7getTickv:
+  15               	.LFB32:
+  16               		.file 1 "funsape/globalDefines.hpp"
+   1:funsape/globalDefines.hpp **** //!
+   2:funsape/globalDefines.hpp **** //! \file           globalDefines.hpp
+   3:funsape/globalDefines.hpp **** //! \brief          Global definitions file
+   4:funsape/globalDefines.hpp **** //! \author         Leandro Schwarz (bladabuska+funsapeavr8lib@gmail.com)
+   5:funsape/globalDefines.hpp **** //! \date           2023-04-05
+   6:funsape/globalDefines.hpp **** //! \version        23.04
+   7:funsape/globalDefines.hpp **** //! \copyright      license
+   8:funsape/globalDefines.hpp **** //! \details        Global definitions file.
+   9:funsape/globalDefines.hpp **** //! \todo           Todo list
+  10:funsape/globalDefines.hpp **** //!
+  11:funsape/globalDefines.hpp **** 
+  12:funsape/globalDefines.hpp **** // =============================================================================
+  13:funsape/globalDefines.hpp **** // Include guard (START)
+  14:funsape/globalDefines.hpp **** // =============================================================================
+  15:funsape/globalDefines.hpp **** 
+  16:funsape/globalDefines.hpp **** #ifndef __GLOBAL_DEFINES_HPP
+  17:funsape/globalDefines.hpp **** #define __GLOBAL_DEFINES_HPP                    2304
+  18:funsape/globalDefines.hpp **** 
+  19:funsape/globalDefines.hpp **** // =============================================================================
+  20:funsape/globalDefines.hpp **** // Basic definitions
+  21:funsape/globalDefines.hpp **** // =============================================================================
+  22:funsape/globalDefines.hpp **** 
+  23:funsape/globalDefines.hpp **** #ifndef F_CPU
+  24:funsape/globalDefines.hpp **** #   define F_CPU    16000000UL
+  25:funsape/globalDefines.hpp **** #endif
+  26:funsape/globalDefines.hpp **** 
+  27:funsape/globalDefines.hpp **** // =============================================================================
+  28:funsape/globalDefines.hpp **** // Dependencies
+  29:funsape/globalDefines.hpp **** // =============================================================================
+  30:funsape/globalDefines.hpp **** 
+  31:funsape/globalDefines.hpp **** //     //////////////////     AVR STANDARD LIBRARY     //////////////////     //
+  32:funsape/globalDefines.hpp **** #include <avr/io.h>
+  33:funsape/globalDefines.hpp **** #include <avr/interrupt.h>
+  34:funsape/globalDefines.hpp **** #include <util/delay.h>
+  35:funsape/globalDefines.hpp **** #include <util/atomic.h>
+  36:funsape/globalDefines.hpp **** 
+  37:funsape/globalDefines.hpp **** //     ///////////////////     STANDARD C LIBRARY     ///////////////////     //
+  38:funsape/globalDefines.hpp **** #include <stddef.h>
+  39:funsape/globalDefines.hpp **** #include <stdint.h>
+  40:funsape/globalDefines.hpp **** #include <stdio.h>
+  41:funsape/globalDefines.hpp **** #include <stdlib.h>
+  42:funsape/globalDefines.hpp **** #include <string.h>
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 2
+
+
+  43:funsape/globalDefines.hpp **** 
+  44:funsape/globalDefines.hpp **** //     //////////////////     LIBRARY DEPENDENCIES     //////////////////     //
+  45:funsape/globalDefines.hpp **** #include "pinout.hpp"
+  46:funsape/globalDefines.hpp **** #if !defined(__PINOUT_HPP)
+  47:funsape/globalDefines.hpp **** #   error "Header file (pinout.hpp) is corrupted!"
+  48:funsape/globalDefines.hpp **** #elif __PINOUT_HPP != __GLOBAL_DEFINES_HPP
+  49:funsape/globalDefines.hpp **** #   error "Version mismatch between header file and library dependency (pinout.hpp)!"
+  50:funsape/globalDefines.hpp **** #endif
+  51:funsape/globalDefines.hpp **** 
+  52:funsape/globalDefines.hpp **** // =============================================================================
+  53:funsape/globalDefines.hpp **** // Undefining previous definitions
+  54:funsape/globalDefines.hpp **** // =============================================================================
+  55:funsape/globalDefines.hpp **** 
+  56:funsape/globalDefines.hpp **** // NONE
+  57:funsape/globalDefines.hpp **** 
+  58:funsape/globalDefines.hpp **** // =============================================================================
+  59:funsape/globalDefines.hpp **** // Constant definitions
+  60:funsape/globalDefines.hpp **** // =============================================================================
+  61:funsape/globalDefines.hpp **** 
+  62:funsape/globalDefines.hpp **** #define inlined                         inline __attribute__((always_inline))
+  63:funsape/globalDefines.hpp **** #define weakened                        __attribute__((weak))
+  64:funsape/globalDefines.hpp **** 
+  65:funsape/globalDefines.hpp **** // =============================================================================
+  66:funsape/globalDefines.hpp **** // New data types
+  67:funsape/globalDefines.hpp **** // =============================================================================
+  68:funsape/globalDefines.hpp **** 
+  69:funsape/globalDefines.hpp **** //     ////////////////////     BASIC VARIABLES     /////////////////////     //
+  70:funsape/globalDefines.hpp **** typedef bool                            bool_t;
+  71:funsape/globalDefines.hpp **** typedef char                            char_t;
+  72:funsape/globalDefines.hpp **** 
+  73:funsape/globalDefines.hpp **** //     ///////////////////     CONSTANT VARIABLES    ////////////////////     //
+  74:funsape/globalDefines.hpp **** typedef const bool_t                    cbool_t;
+  75:funsape/globalDefines.hpp **** typedef const char_t                    cchar_t;
+  76:funsape/globalDefines.hpp **** typedef const int8_t                    cint8_t;
+  77:funsape/globalDefines.hpp **** typedef const int16_t                   cint16_t;
+  78:funsape/globalDefines.hpp **** typedef const int32_t                   cint32_t;
+  79:funsape/globalDefines.hpp **** typedef const int64_t                   cint64_t;
+  80:funsape/globalDefines.hpp **** typedef const uint8_t                   cuint8_t;
+  81:funsape/globalDefines.hpp **** typedef const uint16_t                  cuint16_t;
+  82:funsape/globalDefines.hpp **** typedef const uint32_t                  cuint32_t;
+  83:funsape/globalDefines.hpp **** typedef const uint64_t                  cuint64_t;
+  84:funsape/globalDefines.hpp **** 
+  85:funsape/globalDefines.hpp **** //     ///////////////////     VOLATILE VARIABLES    ////////////////////     //
+  86:funsape/globalDefines.hpp **** typedef volatile bool_t                 vbool_t;
+  87:funsape/globalDefines.hpp **** typedef volatile char_t                 vchar_t;
+  88:funsape/globalDefines.hpp **** typedef volatile int8_t                 vint8_t;
+  89:funsape/globalDefines.hpp **** typedef volatile int16_t                vint16_t;
+  90:funsape/globalDefines.hpp **** typedef volatile int32_t                vint32_t;
+  91:funsape/globalDefines.hpp **** typedef volatile int64_t                vint64_t;
+  92:funsape/globalDefines.hpp **** typedef volatile uint8_t                vuint8_t;
+  93:funsape/globalDefines.hpp **** typedef volatile uint16_t               vuint16_t;
+  94:funsape/globalDefines.hpp **** typedef volatile uint32_t               vuint32_t;
+  95:funsape/globalDefines.hpp **** typedef volatile uint64_t               vuint64_t;
+  96:funsape/globalDefines.hpp **** 
+  97:funsape/globalDefines.hpp **** //     /////////////////     AVR PLATFORM VARIABLES    //////////////////     //
+  98:funsape/globalDefines.hpp **** typedef int16_t                         int_t;          // 16-bit (AVR)
+  99:funsape/globalDefines.hpp **** typedef uint16_t                        uint_t;         // 16-bit (AVR)
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 3
+
+
+ 100:funsape/globalDefines.hpp **** typedef cint16_t                        cint_t;         // 16-bit (AVR)
+ 101:funsape/globalDefines.hpp **** typedef cuint16_t                       cuint_t;        // 16-bit (AVR)
+ 102:funsape/globalDefines.hpp **** typedef vint16_t                        vint_t;         // 16-bit (AVR)
+ 103:funsape/globalDefines.hpp **** typedef vuint16_t                       vuint_t;        // 16-bit (AVR)
+ 104:funsape/globalDefines.hpp **** typedef uint8_t                         ioPinIndex_t;   // 8-bit (AVR)
+ 105:funsape/globalDefines.hpp **** typedef vuint8_t                       *ioRegAddress_t; // 8-bit address (AVR)
+ 106:funsape/globalDefines.hpp **** 
+ 107:funsape/globalDefines.hpp **** //     //////////////////     BINARY ENUMERATIONS     ///////////////////     //
+ 108:funsape/globalDefines.hpp **** enum class Activation : cbool_t {
+ 109:funsape/globalDefines.hpp ****     OFF                                 = false,
+ 110:funsape/globalDefines.hpp ****     ON                                  = true
+ 111:funsape/globalDefines.hpp **** };
+ 112:funsape/globalDefines.hpp **** 
+ 113:funsape/globalDefines.hpp **** enum class DisplayOrientation : cbool_t {
+ 114:funsape/globalDefines.hpp ****     LANDSCAPE                           = false,
+ 115:funsape/globalDefines.hpp ****     PORTRAIT                            = true
+ 116:funsape/globalDefines.hpp **** };
+ 117:funsape/globalDefines.hpp **** 
+ 118:funsape/globalDefines.hpp **** enum class DriverMode : cbool_t {
+ 119:funsape/globalDefines.hpp ****     PUSH_PULL                           = false,
+ 120:funsape/globalDefines.hpp ****     OPEN_DRAIN                          = true,
+ 121:funsape/globalDefines.hpp **** };
+ 122:funsape/globalDefines.hpp **** 
+ 123:funsape/globalDefines.hpp **** enum class Edge : cbool_t {
+ 124:funsape/globalDefines.hpp ****     FALLING                             = false,
+ 125:funsape/globalDefines.hpp ****     RISING                              = true
+ 126:funsape/globalDefines.hpp **** };
+ 127:funsape/globalDefines.hpp **** 
+ 128:funsape/globalDefines.hpp **** enum class IoOperation : cbool_t {
+ 129:funsape/globalDefines.hpp ****     WRITE                               = false,
+ 130:funsape/globalDefines.hpp ****     READ                                = true
+ 131:funsape/globalDefines.hpp **** };
+ 132:funsape/globalDefines.hpp **** 
+ 133:funsape/globalDefines.hpp **** enum class LogicLevel : cbool_t {
+ 134:funsape/globalDefines.hpp ****     LOW                                 = false,
+ 135:funsape/globalDefines.hpp ****     HIGH                                = true
+ 136:funsape/globalDefines.hpp **** };
+ 137:funsape/globalDefines.hpp **** 
+ 138:funsape/globalDefines.hpp **** enum class PinDirection : cbool_t {
+ 139:funsape/globalDefines.hpp ****     INPUT                               = false,
+ 140:funsape/globalDefines.hpp ****     OUTPUT                              = true,
+ 141:funsape/globalDefines.hpp **** };
+ 142:funsape/globalDefines.hpp **** 
+ 143:funsape/globalDefines.hpp **** enum class Rotation : cbool_t {
+ 144:funsape/globalDefines.hpp ****     CLOCKWISE                           = false,
+ 145:funsape/globalDefines.hpp ****     COUNTERCLOCKWISE                    = true
+ 146:funsape/globalDefines.hpp **** };
+ 147:funsape/globalDefines.hpp **** 
+ 148:funsape/globalDefines.hpp **** enum class State : cbool_t {
+ 149:funsape/globalDefines.hpp ****     OFF                                 = false,
+ 150:funsape/globalDefines.hpp ****     ON                                  = true
+ 151:funsape/globalDefines.hpp **** };
+ 152:funsape/globalDefines.hpp **** 
+ 153:funsape/globalDefines.hpp **** //     ///////////////////     PLAIN ENUMERATIONS    ////////////////////     //
+ 154:funsape/globalDefines.hpp **** enum class Axis : cuint8_t {
+ 155:funsape/globalDefines.hpp ****     //                                     Z-AXIS     Y-AXIS     X-AXIS
+ 156:funsape/globalDefines.hpp ****     NONE                                = (0 << 2) | (0 << 1) | (0 << 0),
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 4
+
+
+ 157:funsape/globalDefines.hpp ****     X                                   = (0 << 2) | (0 << 1) | (1 << 0),
+ 158:funsape/globalDefines.hpp ****     Y                                   = (0 << 2) | (1 << 1) | (0 << 0),
+ 159:funsape/globalDefines.hpp ****     XY                                  = (0 << 2) | (1 << 1) | (1 << 0),
+ 160:funsape/globalDefines.hpp ****     Z                                   = (1 << 2) | (0 << 1) | (0 << 0),
+ 161:funsape/globalDefines.hpp ****     XZ                                  = (1 << 2) | (0 << 1) | (1 << 0),
+ 162:funsape/globalDefines.hpp ****     YZ                                  = (1 << 2) | (1 << 1) | (0 << 0),
+ 163:funsape/globalDefines.hpp ****     ALL                                 = (1 << 2) | (1 << 1) | (1 << 0)
+ 164:funsape/globalDefines.hpp **** };
+ 165:funsape/globalDefines.hpp **** 
+ 166:funsape/globalDefines.hpp **** inlined Axis operator|(Axis a, Axis b)
+ 167:funsape/globalDefines.hpp **** {
+ 168:funsape/globalDefines.hpp ****     return static_cast<Axis>(static_cast<cint8_t>(a) | static_cast<uint8_t>(b));
+ 169:funsape/globalDefines.hpp **** }
+ 170:funsape/globalDefines.hpp **** 
+ 171:funsape/globalDefines.hpp **** inlined Axis &operator|=(Axis &a, Axis b)
+ 172:funsape/globalDefines.hpp **** {
+ 173:funsape/globalDefines.hpp ****     return a = static_cast<Axis>(static_cast<uint8_t>(a) | static_cast<uint8_t>(b));
+ 174:funsape/globalDefines.hpp **** }
+ 175:funsape/globalDefines.hpp **** 
+ 176:funsape/globalDefines.hpp **** inlined Axis operator&(Axis a, Axis b)
+ 177:funsape/globalDefines.hpp **** {
+ 178:funsape/globalDefines.hpp ****     return static_cast<Axis>(static_cast<uint8_t>(a) & static_cast<uint8_t>(b));
+ 179:funsape/globalDefines.hpp **** }
+ 180:funsape/globalDefines.hpp **** 
+ 181:funsape/globalDefines.hpp **** inlined Axis &operator&=(Axis &a, Axis b)
+ 182:funsape/globalDefines.hpp **** {
+ 183:funsape/globalDefines.hpp ****     return a = static_cast<Axis>(static_cast<uint8_t>(a) & static_cast<uint8_t>(b));
+ 184:funsape/globalDefines.hpp **** }
+ 185:funsape/globalDefines.hpp **** 
+ 186:funsape/globalDefines.hpp **** enum class Direction : cuint8_t {
+ 187:funsape/globalDefines.hpp ****     LEFT                                = 0,
+ 188:funsape/globalDefines.hpp ****     RIGHT                               = 1,
+ 189:funsape/globalDefines.hpp ****     UP                                  = 2,
+ 190:funsape/globalDefines.hpp ****     DOWN                                = 3
+ 191:funsape/globalDefines.hpp **** };
+ 192:funsape/globalDefines.hpp **** 
+ 193:funsape/globalDefines.hpp **** enum class InterfaceMode : cuint8_t {
+ 194:funsape/globalDefines.hpp ****     BLOCKING_MODE                       = 0,
+ 195:funsape/globalDefines.hpp ****     INTERRUPT_MODE                      = 1,
+ 196:funsape/globalDefines.hpp ****     DMA_MODE                            = 2
+ 197:funsape/globalDefines.hpp **** };
+ 198:funsape/globalDefines.hpp **** 
+ 199:funsape/globalDefines.hpp **** enum class ThermometricScale : cuint8_t {
+ 200:funsape/globalDefines.hpp ****     CELSIUS                             = 0,
+ 201:funsape/globalDefines.hpp ****     DELISLE                             = 1,
+ 202:funsape/globalDefines.hpp ****     FAHRENHEIT                          = 2,
+ 203:funsape/globalDefines.hpp ****     KELVIN                              = 3,
+ 204:funsape/globalDefines.hpp ****     NEWTON                              = 4,
+ 205:funsape/globalDefines.hpp ****     RANKINE                             = 5,
+ 206:funsape/globalDefines.hpp ****     REAUMUR                             = 6,
+ 207:funsape/globalDefines.hpp ****     ROMER                               = 7
+ 208:funsape/globalDefines.hpp **** };
+ 209:funsape/globalDefines.hpp **** 
+ 210:funsape/globalDefines.hpp **** enum class Error : cuint16_t {
+ 211:funsape/globalDefines.hpp ****     // General error codes
+ 212:funsape/globalDefines.hpp ****     NONE                                                = 0x0000,   // Success - No errors occurred
+ 213:funsape/globalDefines.hpp ****     AXIS_INVALID                                        = 0x0001,   // Invalid axis
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 5
+
+
+ 214:funsape/globalDefines.hpp ****     NOT_IMPLEMENTED                                     = 0x0002,   // Not implemented yet
+ 215:funsape/globalDefines.hpp ****     UNDER_DEVELOPMENT                                   = 0x0003,   // This part of the code is sti
+ 216:funsape/globalDefines.hpp ****     NOT_INITIALIZED                                     = 0x0004,   // Not initialized
+ 217:funsape/globalDefines.hpp ****     // BUSY                                                = 0x0005,   // TODO: Describe parameter
+ 218:funsape/globalDefines.hpp ****     // DEVICE_NOT_SUPPORTED                                = 0x0006,   // Device is not currently s
+ 219:funsape/globalDefines.hpp ****     FEATURE_NOT_SUPPORTED                               = 0x0007,   // Unsupported feature or confi
+ 220:funsape/globalDefines.hpp ****     // FUNCTION_POINTER_NULL                               = 0x0008,   // TODO: Describe parameter
+ 221:funsape/globalDefines.hpp ****     // INSTANCE_INVALID                                    = 0x0009,   // Invalid instance
+ 222:funsape/globalDefines.hpp ****     // LOCKED                                              = 0x000A,   // Accessed a locked device
+ 223:funsape/globalDefines.hpp ****     MEMORY_ALLOCATION                                   = 0x000B,   // Memory allocation failed
+ 224:funsape/globalDefines.hpp ****     // MODE_NOT_SUPPORTED                                  = 0x000C,   // Mode is not currently sup
+ 225:funsape/globalDefines.hpp ****     // NOT_READY                                           = 0x000D,   // TODO: Describe parameter
+ 226:funsape/globalDefines.hpp ****     // READ_PROTECTED                                      = 0x000E,   // Tried to read a read prot
+ 227:funsape/globalDefines.hpp ****     // WRITE_PROTECTED                                     = 0x000F,   // Tried to write a write pr
+ 228:funsape/globalDefines.hpp **** 
+ 229:funsape/globalDefines.hpp ****     // Function arguments related error codes
+ 230:funsape/globalDefines.hpp ****     ARGUMENT_CANNOT_BE_ZERO                             = 0x0010,   // TODO: Describe parameter
+ 231:funsape/globalDefines.hpp ****     ARGUMENT_POINTER_NULL                               = 0x0011,   // NULL pointer was passed as a
+ 232:funsape/globalDefines.hpp ****     ARGUMENT_VALUE_INVALID                              = 0x0012,   // TODO: Describe parameter
+ 233:funsape/globalDefines.hpp ****     // ARGUMENTS_MISMATCH                                  = 0x0013,   // A function was called wit
+ 234:funsape/globalDefines.hpp ****     // ARGUMENTS_WRONG_NUMBER                              = 0x0014,   // A function was called wit
+ 235:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_5                            = 0x0015,   // Generic error (use only o
+ 236:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_6                            = 0x0016,   // Generic error (use only o
+ 237:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_7                            = 0x0017,   // Generic error (use only o
+ 238:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_8                            = 0x0018,   // Generic error (use only o
+ 239:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_9                            = 0x0019,   // Generic error (use only o
+ 240:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_10                           = 0x001A,   // Generic error (use only o
+ 241:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_11                           = 0x001B,   // Generic error (use only o
+ 242:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_12                           = 0x001C,   // Generic error (use only o
+ 243:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_13                           = 0x001D,   // Generic error (use only o
+ 244:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR_14                           = 0x001E,   // Generic error (use only o
+ 245:funsape/globalDefines.hpp ****     // ARGUMENT_GENERIC_ERROR                              = 0x001F,   // Generic error (use only o
+ 246:funsape/globalDefines.hpp **** 
+ 247:funsape/globalDefines.hpp ****     // Buffer related error codes
+ 248:funsape/globalDefines.hpp ****     // BUFFER_EMPTY                                        = 0x0020,   // Buffer is empty
+ 249:funsape/globalDefines.hpp ****     BUFFER_FULL                                         = 0x0021,   // Buffer is full
+ 250:funsape/globalDefines.hpp ****     // BUFFER_NOT_ENOUGH_ELEMENTS                          = 0x0022,   // Not enough space in buffe
+ 251:funsape/globalDefines.hpp ****     // BUFFER_NOT_ENOUGH_SPACE                             = 0x0023,   // Not enough space in buffe
+ 252:funsape/globalDefines.hpp ****     // BUFFER_POINTER_NULL                                 = 0x0024,   // Buffer size was set to ze
+ 253:funsape/globalDefines.hpp ****     BUFFER_SIZE_TOO_LARGE                               = 0x0025,   // Buffer size was set to a lar
+ 254:funsape/globalDefines.hpp ****     BUFFER_SIZE_TOO_SMALL                               = 0x0026,   // Buffer size was set to a ver
+ 255:funsape/globalDefines.hpp ****     BUFFER_SIZE_ZERO                                    = 0x0027,   // Buffer size was set to zero
+ 256:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_8                              = 0x0028,   // Generic error (use only o
+ 257:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_9                              = 0x0029,   // Generic error (use only o
+ 258:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_10                             = 0x002A,   // Generic error (use only o
+ 259:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_11                             = 0x002B,   // Generic error (use only o
+ 260:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_12                             = 0x002C,   // Generic error (use only o
+ 261:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_13                             = 0x002D,   // Generic error (use only o
+ 262:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_14                             = 0x002E,   // Generic error (use only o
+ 263:funsape/globalDefines.hpp ****     // BUFFER_GENERIC_ERROR_15                             = 0x002F,   // Generic error (use only o
+ 264:funsape/globalDefines.hpp **** 
+ 265:funsape/globalDefines.hpp ****     // Clock configuration related error codes
+ 266:funsape/globalDefines.hpp ****     CLOCK_PRESCALER_CHANGE_FAILED                       = 0x0030,   // Clock prescaler change faile
+ 267:funsape/globalDefines.hpp ****     CLOCK_PRESCALER_NOT_SUPPORTED                       = 0x0031,   // Clock prescaler configuratio
+ 268:funsape/globalDefines.hpp ****     CLOCK_SPEED_TOO_HIGH                                = 0x0032,   // TODO: Describe parameter
+ 269:funsape/globalDefines.hpp ****     CLOCK_SPEED_TOO_LOW                                 = 0x0033,   // TODO: Describe parameter
+ 270:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_4                               = 0x0034,   // Generic error (use only o
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 6
+
+
+ 271:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_5                               = 0x0035,   // Generic error (use only o
+ 272:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_6                               = 0x0036,   // Generic error (use only o
+ 273:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_7                               = 0x0037,   // Generic error (use only o
+ 274:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_8                               = 0x0038,   // Generic error (use only o
+ 275:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_9                               = 0x0039,   // Generic error (use only o
+ 276:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_10                              = 0x003A,   // Generic error (use only o
+ 277:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_11                              = 0x003B,   // Generic error (use only o
+ 278:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_12                              = 0x003C,   // Generic error (use only o
+ 279:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_13                              = 0x003D,   // Generic error (use only o
+ 280:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_14                              = 0x003E,   // Generic error (use only o
+ 281:funsape/globalDefines.hpp ****     // CLOCK_GENERIC_ERROR_15                              = 0x003F,   // Generic error (use only o
+ 282:funsape/globalDefines.hpp **** 
+ 283:funsape/globalDefines.hpp ****     // Communication related error codes
+ 284:funsape/globalDefines.hpp ****     COMMUNICATION_FAILED                                = 0x0040,   // TODO: Describe parameter
+ 285:funsape/globalDefines.hpp ****     COMMUNICATION_NO_DEVICE_SELECTED                    = 0x0041,   // TODO: Describe parameter
+ 286:funsape/globalDefines.hpp ****     // COMMUNICATION_PORT_NOT_SET                          = 0x0042,   // TODO: Describe parameter
+ 287:funsape/globalDefines.hpp ****     COMMUNICATION_TIMEOUT                               = 0x0043,   // The operation timed out
+ 288:funsape/globalDefines.hpp ****     // COMMUNICATION_DEVICE_ID_MATCH_FAILED                = 0x0044,   // TODO: Describe parameter
+ 289:funsape/globalDefines.hpp ****     CHECKSUM_ERROR                                      = 0x0045,   // TODO: Describe parameter
+ 290:funsape/globalDefines.hpp ****     FRAME_ERROR                                         = 0x0046,   // TODO: Describe parameter
+ 291:funsape/globalDefines.hpp ****     PACKAGE_AWAITING                                    = 0x0047,   // Try to write data to a ready
+ 292:funsape/globalDefines.hpp ****     // PACKAGE_NOT_READY                                   = 0x0048,   // Try to read data from a n
+ 293:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_9                       = 0x0049,   // Generic error (use only o
+ 294:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_10                      = 0x004A,   // Generic error (use only o
+ 295:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_11                      = 0x004B,   // Generic error (use only o
+ 296:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_12                      = 0x004C,   // Generic error (use only o
+ 297:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_13                      = 0x004D,   // Generic error (use only o
+ 298:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_14                      = 0x004E,   // Generic error (use only o
+ 299:funsape/globalDefines.hpp ****     // COMMUNICATION_GENERIC_ERROR_15                      = 0x004F,   // Generic error (use only o
+ 300:funsape/globalDefines.hpp **** 
+ 301:funsape/globalDefines.hpp ****     // DateTime class related error codes
+ 302:funsape/globalDefines.hpp ****     DATE_NOT_INITIALIZED                                = 0x0050,   // TODO: Describe parameter
+ 303:funsape/globalDefines.hpp ****     // HOUR_INVALID                                        = 0x0051,   // TODO: Describe parameter
+ 304:funsape/globalDefines.hpp ****     // MILLISECOND_INVALID                                 = 0x0052,   // TODO: Describe parameter
+ 305:funsape/globalDefines.hpp ****     // MINUTE_INVALID                                      = 0x0053,   // TODO: Describe parameter
+ 306:funsape/globalDefines.hpp ****     // MONTH_DAY_INVALID                                   = 0x0054,   // TODO: Describe parameter
+ 307:funsape/globalDefines.hpp ****     // MONTH_INVALID                                       = 0x0055,   // TODO: Describe parameter
+ 308:funsape/globalDefines.hpp ****     // SECOND_INVALID                                      = 0x0056,   // TODO: Describe parameter
+ 309:funsape/globalDefines.hpp ****     TIME_NOT_INITIALIZED                                = 0x0057,   // TODO: Describe parameter
+ 310:funsape/globalDefines.hpp ****     // TIMEZONE_INVALID                                    = 0x0058,   // TODO: Describe parameter
+ 311:funsape/globalDefines.hpp ****     // YEAR_INVALID                                        = 0x0059,   // TODO: Describe parameter
+ 312:funsape/globalDefines.hpp ****     DATE_INVALID                                        = 0x005A,   // TODO: Describe parameter
+ 313:funsape/globalDefines.hpp ****     TIME_INVALID                                        = 0x005B,   // TODO: Describe parameter
+ 314:funsape/globalDefines.hpp ****     // GENERIC_ERROR_13                                    = 0x005C,   // Generic error (use only o
+ 315:funsape/globalDefines.hpp ****     // GENERIC_ERROR_14                                    = 0x005D,   // Generic error (use only o
+ 316:funsape/globalDefines.hpp ****     // GENERIC_ERROR_15                                    = 0x005F,   // Generic error (use only o
+ 317:funsape/globalDefines.hpp **** 
+ 318:funsape/globalDefines.hpp ****     // Handler related error codes
+ 319:funsape/globalDefines.hpp ****     BUS_HANDLER_NOT_SUPPORTED                           = 0x0060,   // TODO: Describe parameter
+ 320:funsape/globalDefines.hpp ****     BUS_HANDLER_POINTER_NULL                            = 0x0061,   // TODO: Describe parameter
+ 321:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_2                             = 0x0062,   // Generic error (use only o
+ 322:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_3                             = 0x0063,   // Generic error (use only o
+ 323:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_4                             = 0x0064,   // Generic error (use only o
+ 324:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_5                             = 0x0065,   // Generic error (use only o
+ 325:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_6                             = 0x0066,   // Generic error (use only o
+ 326:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_7                             = 0x0067,   // Generic error (use only o
+ 327:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_8                             = 0x0068,   // Generic error (use only o
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 7
+
+
+ 328:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_9                             = 0x0069,   // Generic error (use only o
+ 329:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_10                            = 0x006A,   // Generic error (use only o
+ 330:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_11                            = 0x006B,   // Generic error (use only o
+ 331:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_12                            = 0x006C,   // Generic error (use only o
+ 332:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_13                            = 0x006D,   // Generic error (use only o
+ 333:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_14                            = 0x006E,   // Generic error (use only o
+ 334:funsape/globalDefines.hpp ****     // HANDLER_GENERIC_ERROR_15                            = 0x006F,   // Generic error (use only o
+ 335:funsape/globalDefines.hpp **** 
+ 336:funsape/globalDefines.hpp ****     // External interrupts related error codes
+ 337:funsape/globalDefines.hpp ****     // INTERRUPT_NOT_AVAILABLE                             = 0x0070,   // TODO: Describe parameter
+ 338:funsape/globalDefines.hpp ****     // INTERRUPT_PORT_OUTPUT_MODE_NOT_SUPPORTED            = 0x0071,   // TODO: Describe parameter
+ 339:funsape/globalDefines.hpp ****     // INTERRUPT_SENSE_MODE_NOT_SUPPORTED                  = 0x0072,   // TODO: Describe parameter
+ 340:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_3                           = 0x0073,   // Generic error (use only o
+ 341:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_4                           = 0x0074,   // Generic error (use only o
+ 342:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_5                           = 0x0075,   // Generic error (use only o
+ 343:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_6                           = 0x0076,   // Generic error (use only o
+ 344:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_7                           = 0x0077,   // Generic error (use only o
+ 345:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_8                           = 0x0078,   // Generic error (use only o
+ 346:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_9                           = 0x0079,   // Generic error (use only o
+ 347:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_10                          = 0x007A,   // Generic error (use only o
+ 348:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_11                          = 0x007B,   // Generic error (use only o
+ 349:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_12                          = 0x007C,   // Generic error (use only o
+ 350:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_13                          = 0x007D,   // Generic error (use only o
+ 351:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_14                          = 0x007E,   // Generic error (use only o
+ 352:funsape/globalDefines.hpp ****     // INTERRUPT_GENERIC_ERROR_15                          = 0x007F,   // Generic error (use only o
+ 353:funsape/globalDefines.hpp **** 
+ 354:funsape/globalDefines.hpp **** 
+ 355:funsape/globalDefines.hpp ****     // Package API class related error codes
+ 356:funsape/globalDefines.hpp ****     // PACKAGE_API_PACKAGE_DATA_FULL                       = 0x0080,   // TODO: Describe parameter
+ 357:funsape/globalDefines.hpp ****     // PACKAGE_API_PACKAGE_NOT_READY                       = 0x0081,   // TODO: Describe parameter
+ 358:funsape/globalDefines.hpp ****     // PACKAGE_API_PAYLOAD_DATA_NULL                       = 0x0082,   // TODO: Describe parameter
+ 359:funsape/globalDefines.hpp ****     // PACKAGE_API_PAYLOAD_SIZE_NULL                       = 0x0083,   // TODO: Describe parameter
+ 360:funsape/globalDefines.hpp ****     // PACKAGE_API_SOURCE_ADDRESS_INVALID                  = 0x0084,   // TODO: Describe parameter
+ 361:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_5                         = 0x0085,   // Generic error (use only o
+ 362:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_6                         = 0x0086,   // Generic error (use only o
+ 363:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_7                         = 0x0087,   // Generic error (use only o
+ 364:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_8                         = 0x0088,   // Generic error (use only o
+ 365:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_9                         = 0x0089,   // Generic error (use only o
+ 366:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_10                        = 0x008A,   // Generic error (use only o
+ 367:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_11                        = 0x008B,   // Generic error (use only o
+ 368:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_12                        = 0x008C,   // Generic error (use only o
+ 369:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_13                        = 0x008D,   // Generic error (use only o
+ 370:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_14                        = 0x008E,   // Generic error (use only o
+ 371:funsape/globalDefines.hpp ****     // PACKAGE_API_GENERIC_ERROR_15                        = 0x008F,   // Generic error (use only o
+ 372:funsape/globalDefines.hpp **** 
+ 373:funsape/globalDefines.hpp ****     // SPI related error codes
+ 374:funsape/globalDefines.hpp ****     // SPI_BUSY_FLAG                                       = 0x0090,   // TODO: Describe parameter
+ 375:funsape/globalDefines.hpp ****     // SPI_CRC                                             = 0x0091,   // TODO: Describe parameter
+ 376:funsape/globalDefines.hpp ****     // SPI_DMA                                             = 0x0092,   // TODO: Describe parameter
+ 377:funsape/globalDefines.hpp ****     // SPI_MODE_FAULT                                      = 0x0093,   // TODO: Describe parameter
+ 378:funsape/globalDefines.hpp ****     // SPI_OVERRUN                                         = 0x0094,   // TODO: Describe parameter
+ 379:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_5                                 = 0x0095,   // Generic error (use only o
+ 380:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_6                                 = 0x0096,   // Generic error (use only o
+ 381:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_7                                 = 0x0097,   // Generic error (use only o
+ 382:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_8                                 = 0x0098,   // Generic error (use only o
+ 383:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_9                                 = 0x0099,   // Generic error (use only o
+ 384:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_10                                = 0x009A,   // Generic error (use only o
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 8
+
+
+ 385:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_11                                = 0x009B,   // Generic error (use only o
+ 386:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_12                                = 0x009C,   // Generic error (use only o
+ 387:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_13                                = 0x009D,   // Generic error (use only o
+ 388:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_14                                = 0x009E,   // Generic error (use only o
+ 389:funsape/globalDefines.hpp ****     // SPI_GENERIC_ERROR_15                                = 0x009F,   // Generic error (use only o
+ 390:funsape/globalDefines.hpp **** 
+ 391:funsape/globalDefines.hpp ****     // TWI related error codes
+ 392:funsape/globalDefines.hpp ****     // TWI_AF_FLAG                                         = 0x00A0,   // TWI AF flag error
+ 393:funsape/globalDefines.hpp ****     // TWI_ARBITRATION_LOST                                = 0x00A1,   // TWI bus arbitration lost
+ 394:funsape/globalDefines.hpp ****     // TWI_BUS_ERROR                                       = 0x00A2,   // TWI bus error
+ 395:funsape/globalDefines.hpp ****     // TWI_DMA                                             = 0x00A3,   // DMA parameter error
+ 396:funsape/globalDefines.hpp ****     // TWI_DMA_PARAM                                       = 0x00A4,   // DMA transfer error
+ 397:funsape/globalDefines.hpp ****     // TWI_OVERRUN                                         = 0x00A5,   // TWI overrun
+ 398:funsape/globalDefines.hpp ****     // TWI_SIZE_MANAGEMENT_ERROR                           = 0x00A6,   // Size management error
+ 399:funsape/globalDefines.hpp ****     // TWI_INVALID_DEVICE_ADDRESS                          = 0x00A7,   // TODO: Describe parameter
+ 400:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_8                                 = 0x00A8,   // Generic error (use only o
+ 401:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_9                                 = 0x00A9,   // Generic error (use only o
+ 402:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_10                                = 0x00AA,   // Generic error (use only o
+ 403:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_11                                = 0x00AB,   // Generic error (use only o
+ 404:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_12                                = 0x00AC,   // Generic error (use only o
+ 405:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_13                                = 0x00AD,   // Generic error (use only o
+ 406:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_14                                = 0x00AE,   // Generic error (use only o
+ 407:funsape/globalDefines.hpp ****     // TWI_GENERIC_ERROR_15                                = 0x00AF,   // Generic error (use only o
+ 408:funsape/globalDefines.hpp **** 
+ 409:funsape/globalDefines.hpp ****     // USART related error codes
+ 410:funsape/globalDefines.hpp ****     USART_BAUD_RATE_NOT_SUPPORTED                       = 0x00B0,   // TODO: Describe parameter
+ 411:funsape/globalDefines.hpp ****     // USART_CONFIGURATION_PARAMETER_WRONG                 = 0x00B1,   // TODO: Describe parameter
+ 412:funsape/globalDefines.hpp ****     USART_DATA_SIZE_NOT_SUPPORTED                       = 0x00B2,   // TODO: Describe parameter
+ 413:funsape/globalDefines.hpp ****     USART_FRAME_FORMAT_NOT_SUPPORTED                    = 0x00B3,   // TODO: Describe parameter
+ 414:funsape/globalDefines.hpp ****     USART_PARITY_NOT_SUPPORTED                          = 0x00B4,   // TODO: Describe parameter
+ 415:funsape/globalDefines.hpp ****     USART_STOP_BIT_NOT_SUPPORTED                        = 0x00B5,   // TODO: Describe parameter
+ 416:funsape/globalDefines.hpp ****     USART_MODE_NOT_SUPPORTED                            = 0x00B6,   // TODO: Describe parameter
+ 417:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_7                               = 0x00B7,   // Generic error (use only o
+ 418:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_8                               = 0x00B8,   // Generic error (use only o
+ 419:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_9                               = 0x00B9,   // Generic error (use only o
+ 420:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_10                              = 0x00BA,   // Generic error (use only o
+ 421:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_11                              = 0x00BB,   // Generic error (use only o
+ 422:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_12                              = 0x00BC,   // Generic error (use only o
+ 423:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_13                              = 0x00BD,   // Generic error (use only o
+ 424:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_14                              = 0x00BE,   // Generic error (use only o
+ 425:funsape/globalDefines.hpp ****     // USART_GENERIC_ERROR_15                              = 0x00BF,   // Generic error (use only o
+ 426:funsape/globalDefines.hpp **** 
+ 427:funsape/globalDefines.hpp ****     // LCD related error codes
+ 428:funsape/globalDefines.hpp ****     // LCD_CONTROL_PORT_NOT_SET                            = 0x00C0,   // TODO: Describe parameter
+ 429:funsape/globalDefines.hpp ****     // LCD_CONTROL_PIN_E_INVALID                           = 0x00C1,   // TODO: Describe parameter
+ 430:funsape/globalDefines.hpp ****     // LCD_CONTROL_PIN_RS_INVALID                          = 0x00C2,   // TODO: Describe parameter
+ 431:funsape/globalDefines.hpp ****     // LCD_CONTROL_PIN_RW_INVALID                          = 0x00C3,   // TODO: Describe parameter
+ 432:funsape/globalDefines.hpp ****     // LCD_DATA_PORT_NOT_SET                               = 0x00C4,   // TODO: Describe parameter
+ 433:funsape/globalDefines.hpp ****     // LCD_DATA_PIN_INDEX_OUT_OF_BOUNDARIES                = 0x00C5,   // TODO: Describe parameter
+ 434:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_6                                 = 0x00C6,   // Generic error (use only o
+ 435:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_7                                 = 0x00C7,   // Generic error (use only o
+ 436:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_8                                 = 0x00C8,   // Generic error (use only o
+ 437:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_9                                 = 0x00C9,   // Generic error (use only o
+ 438:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_10                                = 0x00CA,   // Generic error (use only o
+ 439:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_11                                = 0x00CB,   // Generic error (use only o
+ 440:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_12                                = 0x00CC,   // Generic error (use only o
+ 441:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_13                                = 0x00CD,   // Generic error (use only o
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 9
+
+
+ 442:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_14                                = 0x00CE,   // Generic error (use only o
+ 443:funsape/globalDefines.hpp ****     // LCD_GENERIC_ERROR_15                                = 0x00CF,   // Generic error (use only o
+ 444:funsape/globalDefines.hpp **** 
+ 445:funsape/globalDefines.hpp ****     // GPIO related error codes
+ 446:funsape/globalDefines.hpp ****     GPIO_PORT_NOT_SET                                   = 0x00D0,   // Gpio port was not set before
+ 447:funsape/globalDefines.hpp ****     GPIO_DATA_PORT_NOT_SET                              = 0x00D1,   // Gpio data port was not set b
+ 448:funsape/globalDefines.hpp ****     GPIO_CONTROL_PORT_NOT_SET                           = 0x00D2,   // Gpio control port was not se
+ 449:funsape/globalDefines.hpp ****     GPIO_PORT_INVALID                                   = 0x00D3,   // Gpio port address is invalid
+ 450:funsape/globalDefines.hpp ****     GPIO_DATA_PORT_INVALID                              = 0x00D4,   // Gpio data port address is in
+ 451:funsape/globalDefines.hpp ****     GPIO_CONTROL_PORT_INVALID                           = 0x00D5,   // Gpio control port address is
+ 452:funsape/globalDefines.hpp ****     GPIO_PIN_INDEX_INVALID                              = 0x00D6,   // Invalid GPIO Pin
+ 453:funsape/globalDefines.hpp ****     GPIO_PIN_INDEX_OUT_OF_BOUNDARIES                    = 0x00D7,   // Gpio pin index was out of bo
+ 454:funsape/globalDefines.hpp ****     // GPIO_NO_PIN_SET                                     = 0x00D8,   // No pin selected at Gpio p
+ 455:funsape/globalDefines.hpp ****     // GPIO_ADDRESS_INVALID                                = 0x00D9,   // Invalid GPIO Port
+ 456:funsape/globalDefines.hpp ****     // GPIO_PORT_LOGIC_CONTENTION                          = 0x00DA,   // TODO: Describe parameter
+ 457:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_11                               = 0x00DB,   // Generic error (use only o
+ 458:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_12                               = 0x00DC,   // Generic error (use only o
+ 459:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_13                               = 0x00DD,   // Generic error (use only o
+ 460:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_14                               = 0x00DE,   // Generic error (use only o
+ 461:funsape/globalDefines.hpp ****     // GPIO_GENERIC_ERROR_15                               = 0x00DF,   // Generic error (use only o
+ 462:funsape/globalDefines.hpp **** 
+ 463:funsape/globalDefines.hpp ****     // HAL related error codes
+ 464:funsape/globalDefines.hpp ****     // HAL_UNKNOWN_ERROR                                   = 0x00E0,   // TODO: Describe parameter
+ 465:funsape/globalDefines.hpp ****     // HAL_STATUS_ERROR                                    = 0x00E1,   // TODO: Describe parameter
+ 466:funsape/globalDefines.hpp ****     // HAL_STATUS_BUSY                                     = 0x00E2,   // TODO: Describe parameter
+ 467:funsape/globalDefines.hpp ****     // HAL_STATUS_TIMEOUT                                  = 0x00E3,   // TODO: Describe parameter
+ 468:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_4                                 = 0x00E4,   // Generic error (use only o
+ 469:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_5                                 = 0x00E5,   // Generic error (use only o
+ 470:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_6                                 = 0x00E6,   // Generic error (use only o
+ 471:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_7                                 = 0x00E7,   // Generic error (use only o
+ 472:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_8                                 = 0x00E8,   // Generic error (use only o
+ 473:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_9                                 = 0x00E9,   // Generic error (use only o
+ 474:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_10                                = 0x00EA,   // Generic error (use only o
+ 475:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_11                                = 0x00EB,   // Generic error (use only o
+ 476:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_12                                = 0x00EC,   // Generic error (use only o
+ 477:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_13                                = 0x00ED,   // Generic error (use only o
+ 478:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_14                                = 0x00EE,   // Generic error (use only o
+ 479:funsape/globalDefines.hpp ****     // HAL_GENERIC_ERROR_15                                = 0x00EF,   // Generic error (use only o
+ 480:funsape/globalDefines.hpp **** 
+ 481:funsape/globalDefines.hpp ****     // System related error codes
+ 482:funsape/globalDefines.hpp ****     // SYSTEM_US_TIMER_HANDLER_NULL                        = 0x00F0,   // TODO: Describe parameter
+ 483:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_1                              = 0x00F1,   // Generic error (use only o
+ 484:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_2                              = 0x00F2,   // Generic error (use only o
+ 485:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_3                              = 0x00F3,   // Generic error (use only o
+ 486:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_4                              = 0x00F4,   // Generic error (use only o
+ 487:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_5                              = 0x00F5,   // Generic error (use only o
+ 488:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_6                              = 0x00F6,   // Generic error (use only o
+ 489:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_7                              = 0x00F7,   // Generic error (use only o
+ 490:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_8                              = 0x00F8,   // Generic error (use only o
+ 491:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_9                              = 0x00F9,   // Generic error (use only o
+ 492:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_10                             = 0x00FA,   // Generic error (use only o
+ 493:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_11                             = 0x00FB,   // Generic error (use only o
+ 494:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_12                             = 0x00FC,   // Generic error (use only o
+ 495:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_13                             = 0x00FD,   // Generic error (use only o
+ 496:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_14                             = 0x00FE,   // Generic error (use only o
+ 497:funsape/globalDefines.hpp ****     // SYSTEM_GENERIC_ERROR_15                             = 0x00FF,   // Generic error (use only o
+ 498:funsape/globalDefines.hpp **** 
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 10
+
+
+ 499:funsape/globalDefines.hpp ****     // FatFs related error codes
+ 500:funsape/globalDefines.hpp ****     // FAT_FS_UNKNOWN_ERROR                                = 0x0100,   // TODO: Describe parameter
+ 501:funsape/globalDefines.hpp ****     // FAT_FS_DRIVE_UNSUPPORTED                            = 0x0101,   // TODO: Describe parameter
+ 502:funsape/globalDefines.hpp ****     // FAT_FS_DISK_NOT_INSERTED                            = 0x0102,   // TODO: Describe parameter
+ 503:funsape/globalDefines.hpp ****     // FAT_FS_INITIALIZATION_FAILED                        = 0x0103,   // TODO: Describe parameter
+ 504:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_4                              = 0x0104,   // Generic error (use only o
+ 505:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_5                              = 0x0105,   // Generic error (use only o
+ 506:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_6                              = 0x0106,   // Generic error (use only o
+ 507:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_7                              = 0x0107,   // Generic error (use only o
+ 508:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_8                              = 0x0108,   // Generic error (use only o
+ 509:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_9                              = 0x0109,   // Generic error (use only o
+ 510:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_10                             = 0x010A,   // Generic error (use only o
+ 511:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_11                             = 0x010B,   // Generic error (use only o
+ 512:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_12                             = 0x010C,   // Generic error (use only o
+ 513:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_13                             = 0x010D,   // Generic error (use only o
+ 514:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_14                             = 0x010E,   // Generic error (use only o
+ 515:funsape/globalDefines.hpp ****     // FAT_FS_GENERIC_ERROR_15                             = 0x010F,   // Generic error (use only o
+ 516:funsape/globalDefines.hpp **** 
+ 517:funsape/globalDefines.hpp ****     // Uncategorized error codes
+ 518:funsape/globalDefines.hpp ****     // LCD_OUT_OF_BOUNDARIES                               = 0xFFF1,   // TODO: Describe parameter
+ 519:funsape/globalDefines.hpp ****     // CONTROLLER_NOT_SUPPORTED                            = 0xFFF2,   // Unsupported controller
+ 520:funsape/globalDefines.hpp ****     // DEVICE_ID_MATCH_FAILED                              = 0xFFF3,   // Device ID doesn't match
+ 521:funsape/globalDefines.hpp ****     // DMA_NOT_SUPPORTED                                   = 0xFFF4,   // DMA interface mode is not
+ 522:funsape/globalDefines.hpp ****     // DMA_TRANSFER_ERROR                                  = 0xFFF5,   // DMA transfer error
+ 523:funsape/globalDefines.hpp ****     // MESSAGE_TOO_LONG                                    = 0xFFF6,   // Message is to long to be 
+ 524:funsape/globalDefines.hpp ****     // VALID_DATA_NOT_AVAILABLE                            = 0xFFF7,   // Valid data was unavailabl
+ 525:funsape/globalDefines.hpp ****     // PERIPHERAL_NOT_READY                                = 0xFFF8,   // TODO: Describe parameter
+ 526:funsape/globalDefines.hpp ****     // STOPWATCH_NOT_STARTED                               = 0xFFF9,   // TODO: Describe parameter
+ 527:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_10                      = 0xFFFA,   // Generic error (use only o
+ 528:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_11                      = 0xFFFB,   // Generic error (use only o
+ 529:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_12                      = 0xFFFC,   // Generic error (use only o
+ 530:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_13                      = 0xFFFD,   // Generic error (use only o
+ 531:funsape/globalDefines.hpp ****     // UNCATEGORIZED_GENERIC_ERROR_14                      = 0xFFFE,   // Generic error (use only o
+ 532:funsape/globalDefines.hpp **** 
+ 533:funsape/globalDefines.hpp ****     KEYPAD_COLUMNS_PIN_INDEX_INVALID                    = 0xFFF9,
+ 534:funsape/globalDefines.hpp ****     KEYPAD_LINES_PIN_INDEX_INVALID                      = 0xFFFA,
+ 535:funsape/globalDefines.hpp **** 
+ 536:funsape/globalDefines.hpp ****     KEYPAD_LINES_GPIO_PORT_INVALID                      = 0xFFFB,
+ 537:funsape/globalDefines.hpp ****     KEYPAD_COLUMNS_GPIO_PORT_INVALID                    = 0xFFFC,
+ 538:funsape/globalDefines.hpp ****     KEYPAD_TYPE_UNSUPPORTED                             = 0xFFFD,
+ 539:funsape/globalDefines.hpp ****     KEY_VALUES_NOT_SET                                  = 0xFFFE,
+ 540:funsape/globalDefines.hpp ****     // "I don't have the slightest idea" error code
+ 541:funsape/globalDefines.hpp ****     UNKNOWN                                             = 0xFFFF,   // Unknown error - Ops!!!!
+ 542:funsape/globalDefines.hpp **** };
+ 543:funsape/globalDefines.hpp **** 
+ 544:funsape/globalDefines.hpp **** // =============================================================================
+ 545:funsape/globalDefines.hpp **** // Macrofunctions
+ 546:funsape/globalDefines.hpp **** // =============================================================================
+ 547:funsape/globalDefines.hpp **** 
+ 548:funsape/globalDefines.hpp **** //     //////////////////////     DATA VALIDITY    //////////////////////     //
+ 549:funsape/globalDefines.hpp **** #define isGpioAddressValid(gpioPort)    (       \
+ 550:funsape/globalDefines.hpp ****         (IS_GPIO_ALL_INSTANCE(gpioPort))        \
+ 551:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
+ 552:funsape/globalDefines.hpp ****         : (bool_t)false)
+ 553:funsape/globalDefines.hpp **** #define isGpioPinIndexValid(gpioPin)    (       \
+ 554:funsape/globalDefines.hpp ****         (IS_GPIO_ALL_PIN_NUMBER(gpioPin))       \
+ 555:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 11
+
+
+ 556:funsape/globalDefines.hpp ****         : (bool_t)false)
+ 557:funsape/globalDefines.hpp **** #define isPointerValid(ptr)             (       \
+ 558:funsape/globalDefines.hpp ****         ((void *)(ptr))                         \
+ 559:funsape/globalDefines.hpp ****         ? (bool_t)true                          \
+ 560:funsape/globalDefines.hpp ****         : (bool_t)false)
+ 561:funsape/globalDefines.hpp **** 
+ 562:funsape/globalDefines.hpp **** //     //////////////////////     BIT HANDLING     //////////////////////     //
+ 563:funsape/globalDefines.hpp **** #ifndef setBit
+ 564:funsape/globalDefines.hpp **** #   define setBit(reg, bit)                     ((reg) |= (1 << (bit)))
+ 565:funsape/globalDefines.hpp **** #endif
+ 566:funsape/globalDefines.hpp **** #ifndef clrBit
+ 567:funsape/globalDefines.hpp **** #   define clrBit(reg, bit)                     ((reg) &= ~(1 << (bit)))
+ 568:funsape/globalDefines.hpp **** #endif
+ 569:funsape/globalDefines.hpp **** #ifndef cplBit
+ 570:funsape/globalDefines.hpp **** #   define cplBit(reg, bit)                     ((reg) ^= (1 << (bit)))
+ 571:funsape/globalDefines.hpp **** #endif
+ 572:funsape/globalDefines.hpp **** 
+ 573:funsape/globalDefines.hpp **** //     ///////////////////////     BIT TESTING    ///////////////////////     //
+ 574:funsape/globalDefines.hpp **** #ifndef isBitSet
+ 575:funsape/globalDefines.hpp **** #   define isBitSet(reg, bit)                   (((reg) >> (bit)) & 1)
+ 576:funsape/globalDefines.hpp **** #endif
+ 577:funsape/globalDefines.hpp **** #ifndef isBitClr
+ 578:funsape/globalDefines.hpp **** #   define isBitClr(reg, bit)                   (!isBitSet(reg,bit))
+ 579:funsape/globalDefines.hpp **** #endif
+ 580:funsape/globalDefines.hpp **** 
+ 581:funsape/globalDefines.hpp **** //     ///////////////////////     BIT LOOPING    ///////////////////////     //
+ 582:funsape/globalDefines.hpp **** #ifndef waitUntilBitIsSet
+ 583:funsape/globalDefines.hpp **** #   define waitUntilBitIsSet(reg, bit)          do{     \
+ 584:funsape/globalDefines.hpp ****         doNothing();                                    \
+ 585:funsape/globalDefines.hpp ****     } while (isBitClr((reg), (bit)))
+ 586:funsape/globalDefines.hpp **** #endif
+ 587:funsape/globalDefines.hpp **** #ifndef waitUntilBitIsClear
+ 588:funsape/globalDefines.hpp **** #   define waitUntilBitIsClear(reg, bit)        do{     \
+ 589:funsape/globalDefines.hpp ****         doNothing();                                    \
+ 590:funsape/globalDefines.hpp ****     }while(isBitSet((reg), (bit)))
+ 591:funsape/globalDefines.hpp **** #endif
+ 592:funsape/globalDefines.hpp **** 
+ 593:funsape/globalDefines.hpp **** //     ////////////////////     BIT MASK HANDLING    ////////////////////     //
+ 594:funsape/globalDefines.hpp **** #ifndef setMask
+ 595:funsape/globalDefines.hpp **** #   define setMask(reg, mask)                   ((reg) |= (mask))
+ 596:funsape/globalDefines.hpp **** #endif
+ 597:funsape/globalDefines.hpp **** #ifndef clrMask
+ 598:funsape/globalDefines.hpp **** #   define clrMask(reg, mask)                   ((reg) &= ~(mask))
+ 599:funsape/globalDefines.hpp **** #endif
+ 600:funsape/globalDefines.hpp **** #ifndef cplMask
+ 601:funsape/globalDefines.hpp **** #   define cplMask(reg, mask)                   ((reg) ^= (mask))
+ 602:funsape/globalDefines.hpp **** #endif
+ 603:funsape/globalDefines.hpp **** 
+ 604:funsape/globalDefines.hpp **** //     ////////////////     BIT MASK OFFSET HANDLING     ////////////////     //
+ 605:funsape/globalDefines.hpp **** #ifndef setMaskOffset
+ 606:funsape/globalDefines.hpp **** #   define setMaskOffset(reg, mask, offset)     ((reg) |= ((mask) << (offset)))
+ 607:funsape/globalDefines.hpp **** #endif
+ 608:funsape/globalDefines.hpp **** #ifndef clrMaskOffset
+ 609:funsape/globalDefines.hpp **** #   define clrMaskOffset(reg, mask, offset)     ((reg) &= ~((mask) << (offset)))
+ 610:funsape/globalDefines.hpp **** #endif
+ 611:funsape/globalDefines.hpp **** #ifndef cplMaskOffset
+ 612:funsape/globalDefines.hpp **** #   define cplMaskOffset(reg, mask, offset)     ((reg) ^= ((mask) << (offset)))
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 12
+
+
+ 613:funsape/globalDefines.hpp **** #endif
+ 614:funsape/globalDefines.hpp **** 
+ 615:funsape/globalDefines.hpp **** //     /////////////     DATA MANIPULATION (8-BITS WIDE)    /////////////     //
+ 616:funsape/globalDefines.hpp **** #define byteGetNibble1(dataByte)        (((dataByte) >> 4) & 0x0F)
+ 617:funsape/globalDefines.hpp **** #define byteGetNibble0(dataByte)        ((dataByte) & 0x0F)
+ 618:funsape/globalDefines.hpp **** #define byteSwitchNibbles(dataByte)     ((byteGetNibble0(dataByte) << 4) | \
+ 619:funsape/globalDefines.hpp ****         (byteGetNibble1(dataByte)))
+ 620:funsape/globalDefines.hpp **** 
+ 621:funsape/globalDefines.hpp **** //     ////////////     DATA MANIPULATION (16-BITS WIDE)     ////////////     //
+ 622:funsape/globalDefines.hpp **** #define hwordGetByte1(dataHword)        (((dataHword) >> 8) & 0x00FF)
+ 623:funsape/globalDefines.hpp **** #define hwordGetByte0(dataHword)        ((dataHword) & 0x00FF)
+ 624:funsape/globalDefines.hpp **** #define hwordSwitchBytes(dataHword)     ((hwordGetByte0(dataHword) << 8) | \
+ 625:funsape/globalDefines.hpp ****         (hwordGetByte1(dataHword)))
+ 626:funsape/globalDefines.hpp **** 
+ 627:funsape/globalDefines.hpp **** //     ////////////     DATA MANIPULATION (32-BITS WIDE)     ////////////     //
+ 628:funsape/globalDefines.hpp **** #define wordGetByte3(dataWord)          (((dataWord) >> 24) & 0x000000FF)
+ 629:funsape/globalDefines.hpp **** #define wordGetByte2(dataWord)          (((dataWord) >> 16) & 0x000000FF)
+ 630:funsape/globalDefines.hpp **** #define wordGetByte1(dataWord)          (((dataWord) >> 8) & 0x000000FF)
+ 631:funsape/globalDefines.hpp **** #define wordGetByte0(dataWord)          ((dataWord) & 0x000000FF)
+ 632:funsape/globalDefines.hpp **** #define wordSwitchBytes(dataWord)       ((wordGetByte0(dataWord) << 24)  | \
+ 633:funsape/globalDefines.hpp ****         (wordGetByte1(dataWord) << 16) | \
+ 634:funsape/globalDefines.hpp ****         (wordGetByte2(dataWord) << 8)  | \
+ 635:funsape/globalDefines.hpp ****         (wordGetByte3(dataWord)))
+ 636:funsape/globalDefines.hpp **** #define wordGetHword1(dataWord)         (((dataWord) >> 16) & 0x0000FFFF)
+ 637:funsape/globalDefines.hpp **** #define wordGetHword0(dataWord)         ((dataWord) & 0x0000FFFF)
+ 638:funsape/globalDefines.hpp **** #define wordSwitchHwords(dataWord)      ((wordGetHword0(dataWord) << 16) | \
+ 639:funsape/globalDefines.hpp ****         (wordGetHword1(dataWord)))
+ 640:funsape/globalDefines.hpp **** 
+ 641:funsape/globalDefines.hpp **** //     ////////////     DATA MANIPULATION (64-BITS WIDE)     ////////////     //
+ 642:funsape/globalDefines.hpp **** #define dwordGetByte7(dataDword)        (((dataDword) >> 56) & 0x00000000000000FF)
+ 643:funsape/globalDefines.hpp **** #define dwordGetByte6(dataDword)        (((dataDword) >> 48) & 0x00000000000000FF)
+ 644:funsape/globalDefines.hpp **** #define dwordGetByte5(dataDword)        (((dataDword) >> 40) & 0x00000000000000FF)
+ 645:funsape/globalDefines.hpp **** #define dwordGetByte4(dataDword)        (((dataDword) >> 32) & 0x00000000000000FF)
+ 646:funsape/globalDefines.hpp **** #define dwordGetByte3(dataDword)        (((dataDword) >> 24) & 0x00000000000000FF)
+ 647:funsape/globalDefines.hpp **** #define dwordGetByte2(dataDword)        (((dataDword) >> 16) & 0x00000000000000FF)
+ 648:funsape/globalDefines.hpp **** #define dwordGetByte1(dataDword)        (((dataDword) >> 8) & 0x00000000000000FF)
+ 649:funsape/globalDefines.hpp **** #define dwordGetByte0(dataDword)        ((dataDword) & 0x00000000000000FF)
+ 650:funsape/globalDefines.hpp **** #define dwordSwitchBytes(dataDword)     ((dwordGetByte0(dataDword) << 56)  | \
+ 651:funsape/globalDefines.hpp ****         (dwordGetByte1(dataDword) << 48) | \
+ 652:funsape/globalDefines.hpp ****         (dwordGetByte2(dataDword) << 40) | \
+ 653:funsape/globalDefines.hpp ****         (dwordGetByte3(dataDword) << 32) | \
+ 654:funsape/globalDefines.hpp ****         (dwordGetByte4(dataDword) << 24) | \
+ 655:funsape/globalDefines.hpp ****         (dwordGetByte5(dataDword) << 16) | \
+ 656:funsape/globalDefines.hpp ****         (dwordGetByte6(dataDword) << 8)  | \
+ 657:funsape/globalDefines.hpp ****         (dwordGetByte7(dataDword)))
+ 658:funsape/globalDefines.hpp **** #define dwordGetHword3(dataDword)       ((dataDword >> 48) & 0x000000000000FFFF)
+ 659:funsape/globalDefines.hpp **** #define dwordGetHword2(dataDword)       ((dataDword >> 32) & 0x000000000000FFFF)
+ 660:funsape/globalDefines.hpp **** #define dwordGetHword1(dataDword)       ((dataDword >> 16) & 0x000000000000FFFF)
+ 661:funsape/globalDefines.hpp **** #define dwordGetHword0(dataDword)       ((dataDword >> 0) & 0x000000000000FFFF)
+ 662:funsape/globalDefines.hpp **** #define dwordSwitchHwords(dataDword)    ((dwordGetHword0(dataDword) << 48)  | \
+ 663:funsape/globalDefines.hpp ****         (dwordGetHword1(dataDword) << 32) | \
+ 664:funsape/globalDefines.hpp ****         (dwordGetHword2(dataDword) << 16) | \
+ 665:funsape/globalDefines.hpp ****         (dwordGetHword3(dataDword)))
+ 666:funsape/globalDefines.hpp **** #define dwordGetWord1(dataDword)         (((dataDword) >> 32) & 0x00000000FFFFFFFF)
+ 667:funsape/globalDefines.hpp **** #define dwordGetWord0(dataDword)         ((dataDword) & 0x00000000FFFFFFFF)
+ 668:funsape/globalDefines.hpp **** #define dwordSwitchWords(dataDword)     ((dwordGetWord0(dataDword) << 32)  | \
+ 669:funsape/globalDefines.hpp ****         (dwordGetWord1(dataDword)))
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 13
+
+
+ 670:funsape/globalDefines.hpp **** 
+ 671:funsape/globalDefines.hpp **** //     /////////////////////     TRUNCATE VALUES    /////////////////////     //
+ 672:funsape/globalDefines.hpp **** #define getMaximumOf(var1, var2)        (       \
+ 673:funsape/globalDefines.hpp ****         ((var1) > (var2))                       \
+ 674:funsape/globalDefines.hpp ****         ? (var1)                                \
+ 675:funsape/globalDefines.hpp ****         : (var2))
+ 676:funsape/globalDefines.hpp **** #define getMinimumOf(var1, var2)        (       \
+ 677:funsape/globalDefines.hpp ****         ((var1) < (var2))                       \
+ 678:funsape/globalDefines.hpp ****         ? (var1)                                \
+ 679:funsape/globalDefines.hpp ****         : (var2))
+ 680:funsape/globalDefines.hpp **** #define truncateBetween(var, min, max)  (       \
+ 681:funsape/globalDefines.hpp ****         ((var) < (min))                         \
+ 682:funsape/globalDefines.hpp ****         ? (min)                                 \
+ 683:funsape/globalDefines.hpp ****         : (((var) > (max))                      \
+ 684:funsape/globalDefines.hpp ****                 ? (max)                         \
+ 685:funsape/globalDefines.hpp ****                 : (var)                         \
+ 686:funsape/globalDefines.hpp ****         ))
+ 687:funsape/globalDefines.hpp **** 
+ 688:funsape/globalDefines.hpp **** //     //////////////////////     STRINGIFYING    ///////////////////////     //
+ 689:funsape/globalDefines.hpp **** #define stringifyName(constant)         #constant
+ 690:funsape/globalDefines.hpp **** #define stringifyValue(constant)        stringifyName(constant)
+ 691:funsape/globalDefines.hpp **** 
+ 692:funsape/globalDefines.hpp **** // =============================================================================
+ 693:funsape/globalDefines.hpp **** // Extern global variables
+ 694:funsape/globalDefines.hpp **** // =============================================================================
+ 695:funsape/globalDefines.hpp **** 
+ 696:funsape/globalDefines.hpp **** // NONE
+ 697:funsape/globalDefines.hpp **** 
+ 698:funsape/globalDefines.hpp **** // =============================================================================
+ 699:funsape/globalDefines.hpp **** // Inline functions declaration
+ 700:funsape/globalDefines.hpp **** // =============================================================================
+ 701:funsape/globalDefines.hpp **** 
+ 702:funsape/globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
+ 703:funsape/globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p);
+ 704:funsape/globalDefines.hpp **** char_t inlined toUpperCase(cchar_t character_p);
+ 705:funsape/globalDefines.hpp **** 
+ 706:funsape/globalDefines.hpp **** //     /////////////////////     DATA VALIDITY     //////////////////////     //
+ 707:funsape/globalDefines.hpp **** bool_t inlined isAsciiLowerCaseLetter(cchar_t character_p);
+ 708:funsape/globalDefines.hpp **** bool_t inlined isAsciiUpperCaseLetter(cchar_t character_p);
+ 709:funsape/globalDefines.hpp **** bool_t inlined isAsciiCommand(cchar_t character_p);
+ 710:funsape/globalDefines.hpp **** bool_t inlined isAsciiLetter(cchar_t character_p);
+ 711:funsape/globalDefines.hpp **** bool_t inlined isAsciiNumber(cchar_t character_p);
+ 712:funsape/globalDefines.hpp **** bool_t inlined isAsciiSymbol(cchar_t character_p);
+ 713:funsape/globalDefines.hpp **** 
+ 714:funsape/globalDefines.hpp **** //     /////////////////////     SYSTEM ACTIONS    //////////////////////     //
+ 715:funsape/globalDefines.hpp **** void inlined die(Error errorCode_p);
+ 716:funsape/globalDefines.hpp **** void inlined doNop(void);
+ 717:funsape/globalDefines.hpp **** void inlined doNothing(void);
+ 718:funsape/globalDefines.hpp **** void inlined systemHalt(void (*function_p)(void) = nullptr);
+ 719:funsape/globalDefines.hpp **** 
+ 720:funsape/globalDefines.hpp **** // =============================================================================
+ 721:funsape/globalDefines.hpp **** // Inline functions definitions
+ 722:funsape/globalDefines.hpp **** // =============================================================================
+ 723:funsape/globalDefines.hpp **** 
+ 724:funsape/globalDefines.hpp **** //     ///////////////////     CHARACTER HANDLING    ////////////////////     //
+ 725:funsape/globalDefines.hpp **** char_t inlined toLowerCase(cchar_t character_p)
+ 726:funsape/globalDefines.hpp **** {
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 14
+
+
+ 727:funsape/globalDefines.hpp ****     return ((isAsciiUpperCaseLetter(character_p)) ? (character_p + 0x20) : character_p);
+ 728:funsape/globalDefines.hpp **** }
+ 729:funsape/globalDefines.hpp **** 
+ 730:funsape/globalDefines.hpp **** char_t inlined toUpperCase(cchar_t character_p)
+ 731:funsape/globalDefines.hpp **** {
+ 732:funsape/globalDefines.hpp ****     return ((isAsciiLowerCaseLetter(character_p)) ? (character_p - 0x20) : character_p);
+ 733:funsape/globalDefines.hpp **** }
+ 734:funsape/globalDefines.hpp **** 
+ 735:funsape/globalDefines.hpp **** //     /////////////////////     DATA VALIDITY     //////////////////////     //
+ 736:funsape/globalDefines.hpp **** bool_t inlined isAsciiLowerCaseLetter(cchar_t character_p)
+ 737:funsape/globalDefines.hpp **** {
+ 738:funsape/globalDefines.hpp ****     return ((bool_t)(((character_p >= 'a') && (character_p <= 'z')) ? true : false));
+ 739:funsape/globalDefines.hpp **** }
+ 740:funsape/globalDefines.hpp **** 
+ 741:funsape/globalDefines.hpp **** bool_t inlined isAsciiUpperCaseLetter(cchar_t character_p)
+ 742:funsape/globalDefines.hpp **** {
+ 743:funsape/globalDefines.hpp ****     return ((bool_t)(((character_p >= 'A') && (character_p <= 'Z')) ? true : false));
+ 744:funsape/globalDefines.hpp **** }
+ 745:funsape/globalDefines.hpp **** 
+ 746:funsape/globalDefines.hpp **** bool_t inlined isAsciiCommand(cchar_t character_p)
+ 747:funsape/globalDefines.hpp **** {
+ 748:funsape/globalDefines.hpp ****     return ((bool_t)((character_p < ' ') ? true : false));
+ 749:funsape/globalDefines.hpp **** }
+ 750:funsape/globalDefines.hpp **** 
+ 751:funsape/globalDefines.hpp **** bool_t inlined isAsciiLetter(cchar_t character_p)
+ 752:funsape/globalDefines.hpp **** {
+ 753:funsape/globalDefines.hpp ****     return ((bool_t)((isAsciiLowerCaseLetter(character_p) || (isAsciiUpperCaseLetter(character_p)) 
+ 754:funsape/globalDefines.hpp **** }
+ 755:funsape/globalDefines.hpp **** 
+ 756:funsape/globalDefines.hpp **** bool_t inlined isAsciiNumber(cchar_t character_p)
+ 757:funsape/globalDefines.hpp **** {
+ 758:funsape/globalDefines.hpp ****     return ((bool_t)(((character_p >= '0') && (character_p <= '9')) ? true : false));
+ 759:funsape/globalDefines.hpp **** }
+ 760:funsape/globalDefines.hpp **** 
+ 761:funsape/globalDefines.hpp **** bool_t inlined isAsciiSymbol(cchar_t character_p)
+ 762:funsape/globalDefines.hpp **** {
+ 763:funsape/globalDefines.hpp ****     return ((bool_t)(((!isAsciiNumber(character_p)) && (!isAsciiCommand(character_p)) &&
+ 764:funsape/globalDefines.hpp ****                                     (!isAsciiLetter(character_p))) ? true : false));
+ 765:funsape/globalDefines.hpp **** }
+ 766:funsape/globalDefines.hpp **** 
+ 767:funsape/globalDefines.hpp **** //     /////////////////////     SYSTEM ACTIONS    //////////////////////     //
+ 768:funsape/globalDefines.hpp **** void inlined die(Error errorCode_p)
+ 769:funsape/globalDefines.hpp **** {
+ 770:funsape/globalDefines.hpp ****     printf("Failed with error=%u (0x%04x).\r", (cuint16_t)errorCode_p, (cuint16_t)errorCode_p);
+ 771:funsape/globalDefines.hpp ****     systemHalt();
+ 772:funsape/globalDefines.hpp **** 
+ 773:funsape/globalDefines.hpp ****     return;
+ 774:funsape/globalDefines.hpp **** }
+ 775:funsape/globalDefines.hpp **** 
+ 776:funsape/globalDefines.hpp **** void inlined doNop(void)
+ 777:funsape/globalDefines.hpp **** {
+ 778:funsape/globalDefines.hpp ****     asm volatile("nop");
+ 779:funsape/globalDefines.hpp **** 
+ 780:funsape/globalDefines.hpp ****     return;
+ 781:funsape/globalDefines.hpp **** }
+ 782:funsape/globalDefines.hpp **** 
+ 783:funsape/globalDefines.hpp **** void inlined doNothing(void)
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 15
+
+
+ 784:funsape/globalDefines.hpp **** {
+ 785:funsape/globalDefines.hpp ****     return;
+ 786:funsape/globalDefines.hpp **** }
+ 787:funsape/globalDefines.hpp **** 
+ 788:funsape/globalDefines.hpp **** void inlined systemHalt(void (*function_p)(void))
+ 789:funsape/globalDefines.hpp **** {
+ 790:funsape/globalDefines.hpp ****     if(isPointerValid(function_p)) {
+ 791:funsape/globalDefines.hpp ****         function_p();
+ 792:funsape/globalDefines.hpp ****     }
+ 793:funsape/globalDefines.hpp ****     while(1) {
+ 794:funsape/globalDefines.hpp ****         doNothing();
+ 795:funsape/globalDefines.hpp ****     }
+ 796:funsape/globalDefines.hpp **** 
+ 797:funsape/globalDefines.hpp ****     return;
+ 798:funsape/globalDefines.hpp **** }
+ 799:funsape/globalDefines.hpp **** 
+ 800:funsape/globalDefines.hpp **** // =============================================================================
+ 801:funsape/globalDefines.hpp **** // Public functions weakly defined
+ 802:funsape/globalDefines.hpp **** // =============================================================================
+ 803:funsape/globalDefines.hpp **** 
+ 804:funsape/globalDefines.hpp **** #define delayMs(time_p)                 _delay_ms(time_p)
+ 805:funsape/globalDefines.hpp **** #define delayUs(time_p)                 _delay_us(time_p)
+ 806:funsape/globalDefines.hpp **** 
+ 807:funsape/globalDefines.hpp **** weakened uint32_t getTick(void)
+ 808:funsape/globalDefines.hpp **** {
+  17               		.loc 1 808 1 view -0
+  18               		.cfi_startproc
+  19               	/* prologue: function */
+  20               	/* frame size = 0 */
+  21               	/* stack size = 0 */
+  22               	.L__stack_usage = 0
+ 809:funsape/globalDefines.hpp ****     // TODO
+ 810:funsape/globalDefines.hpp ****     return 0;
+  23               		.loc 1 810 5 view .LVU1
+ 811:funsape/globalDefines.hpp **** }
+  24               		.loc 1 811 1 is_stmt 0 view .LVU2
+  25 0000 60E0      		ldi r22,0
+  26 0002 70E0      		ldi r23,0
+  27 0004 CB01      		movw r24,r22
+  28               	/* epilogue start */
+  29 0006 0895      		ret
+  30               		.cfi_endproc
+  31               	.LFE32:
+  33               		.section	.text._ZN5Zfm20C2Ev,"ax",@progbits
+  34               	.global	_ZN5Zfm20C2Ev
+  36               	_ZN5Zfm20C2Ev:
+  37               	.LVL0:
+  38               	.LFB75:
+  39               		.file 2 "zfm20.cpp"
+   1:zfm20.cpp     **** 
+   2:zfm20.cpp     **** #include "zfm20.hpp"
+   3:zfm20.cpp     **** 
+   4:zfm20.cpp     **** Zfm20::Zfm20(void)
+  40               		.loc 2 4 1 is_stmt 1 view -0
+  41               		.cfi_startproc
+  42               	/* prologue: function */
+  43               	/* frame size = 0 */
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 16
+
+
+  44               	/* stack size = 0 */
+  45               	.L__stack_usage = 0
+  46               		.loc 2 4 1 is_stmt 0 view .LVU4
+  47 0000 E82F      		mov r30,r24
+  48 0002 F92F      		mov r31,r25
+  49               	.LBB2:
+   5:zfm20.cpp     **** {
+   6:zfm20.cpp     ****     // Resets data members
+   7:zfm20.cpp     ****     this->_packageData      = nullptr;
+  50               		.loc 2 7 5 is_stmt 1 view .LVU5
+  51               		.loc 2 7 29 is_stmt 0 view .LVU6
+  52 0004 1182      		std Z+1,__zero_reg__
+  53 0006 1082      		st Z,__zero_reg__
+   8:zfm20.cpp     ****     this->_packageIndex     = 0;
+  54               		.loc 2 8 5 is_stmt 1 view .LVU7
+  55               		.loc 2 8 29 is_stmt 0 view .LVU8
+  56 0008 1282      		std Z+2,__zero_reg__
+   9:zfm20.cpp     ****     this->_packageLength    = 0;
+  57               		.loc 2 9 5 is_stmt 1 view .LVU9
+  58               		.loc 2 9 29 is_stmt 0 view .LVU10
+  59 000a 1382      		std Z+3,__zero_reg__
+  10:zfm20.cpp     ****     this->_packageMaxSize   = 0;
+  60               		.loc 2 10 5 is_stmt 1 view .LVU11
+  61               		.loc 2 10 29 is_stmt 0 view .LVU12
+  62 000c 1482      		std Z+4,__zero_reg__
+  11:zfm20.cpp     ****     this->_initialized      = false;
+  63               		.loc 2 11 5 is_stmt 1 view .LVU13
+  64               		.loc 2 11 29 is_stmt 0 view .LVU14
+  65 000e 1582      		std Z+5,__zero_reg__
+  12:zfm20.cpp     ****     this->_deviceAddress    = 0xFFFFFFFF;
+  66               		.loc 2 12 5 is_stmt 1 view .LVU15
+  67               		.loc 2 12 29 is_stmt 0 view .LVU16
+  68 0010 8FEF      		ldi r24,lo8(-1)
+  69 0012 9FEF      		ldi r25,lo8(-1)
+  70 0014 DC01      		movw r26,r24
+  71               	.LVL1:
+  72               		.loc 2 12 29 view .LVU17
+  73 0016 8087      		std Z+8,r24
+  74 0018 9187      		std Z+9,r25
+  75 001a A287      		std Z+10,r26
+  76 001c B387      		std Z+11,r27
+  13:zfm20.cpp     **** 
+  14:zfm20.cpp     ****     // Returns successfully
+  15:zfm20.cpp     ****     this->_lastError = Error::NONE;
+  77               		.loc 2 15 5 is_stmt 1 view .LVU18
+  78               		.loc 2 15 22 is_stmt 0 view .LVU19
+  79 001e 1782      		std Z+7,__zero_reg__
+  80 0020 1682      		std Z+6,__zero_reg__
+  16:zfm20.cpp     ****     return;
+  81               		.loc 2 16 5 is_stmt 1 view .LVU20
+  82               	/* epilogue start */
+  83               	.LBE2:
+  17:zfm20.cpp     **** }
+  84               		.loc 2 17 1 is_stmt 0 view .LVU21
+  85 0022 0895      		ret
+  86               		.cfi_endproc
+  87               	.LFE75:
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 17
+
+
+  89               	.global	_ZN5Zfm20C1Ev
+  90               		.set	_ZN5Zfm20C1Ev,_ZN5Zfm20C2Ev
+  91               		.section	.text._ZN5Zfm204initEh,"ax",@progbits
+  92               	.global	_ZN5Zfm204initEh
+  94               	_ZN5Zfm204initEh:
+  95               	.LVL2:
+  96               	.LFB77:
+  18:zfm20.cpp     **** 
+  19:zfm20.cpp     **** bool_t Zfm20::init(cuint8_t bufferSize_p)
+  20:zfm20.cpp     **** {
+  97               		.loc 2 20 1 is_stmt 1 view -0
+  98               		.cfi_startproc
+  99               		.loc 2 20 1 is_stmt 0 view .LVU23
+ 100 0000 1F93      		push r17
+ 101               		.cfi_def_cfa_offset 3
+ 102               		.cfi_offset 17, -2
+ 103 0002 CF93      		push r28
+ 104               		.cfi_def_cfa_offset 4
+ 105               		.cfi_offset 28, -3
+ 106 0004 DF93      		push r29
+ 107               		.cfi_def_cfa_offset 5
+ 108               		.cfi_offset 29, -4
+ 109               	/* prologue: function */
+ 110               	/* frame size = 0 */
+ 111               	/* stack size = 3 */
+ 112               	.L__stack_usage = 3
+ 113 0006 C82F      		mov r28,r24
+ 114 0008 D92F      		mov r29,r25
+ 115 000a 162F      		mov r17,r22
+  21:zfm20.cpp     ****     // Checks for errors
+  22:zfm20.cpp     ****     if(bufferSize_p < 12) {
+ 116               		.loc 2 22 5 is_stmt 1 view .LVU24
+ 117 000c 6C30      		cpi r22,lo8(12)
+ 118 000e 00F0      		brlo .L8
+  23:zfm20.cpp     ****         // Returns error
+  24:zfm20.cpp     ****         this->_lastError = Error::BUFFER_SIZE_TOO_SMALL;
+  25:zfm20.cpp     ****         return false;
+  26:zfm20.cpp     ****     }
+  27:zfm20.cpp     **** 
+  28:zfm20.cpp     ****     // Deallocates previously allocated memory
+  29:zfm20.cpp     ****     if(isPointerValid(this->_packageData)) {
+ 119               		.loc 2 29 5 view .LVU25
+ 120               		.loc 2 29 8 is_stmt 0 view .LVU26
+ 121 0010 8881      		ld r24,Y
+ 122 0012 9981      		ldd r25,Y+1
+ 123               	.LVL3:
+ 124               		.loc 2 29 8 view .LVU27
+ 125 0014 0097      		sbiw r24,0
+ 126 0016 01F0      		breq .L6
+  30:zfm20.cpp     ****         free(this->_packageData);
+ 127               		.loc 2 30 9 is_stmt 1 view .LVU28
+ 128               		.loc 2 30 13 is_stmt 0 view .LVU29
+ 129 0018 0E94 0000 		call free
+ 130               	.LVL4:
+  31:zfm20.cpp     ****         this->_packageData = nullptr;
+ 131               		.loc 2 31 9 is_stmt 1 view .LVU30
+ 132               		.loc 2 31 28 is_stmt 0 view .LVU31
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 18
+
+
+ 133 001c 1982      		std Y+1,__zero_reg__
+ 134 001e 1882      		st Y,__zero_reg__
+ 135               	.L6:
+  32:zfm20.cpp     ****     }
+  33:zfm20.cpp     **** 
+  34:zfm20.cpp     ****     // Allocates memory
+  35:zfm20.cpp     ****     this->_packageData = (uint8_t *)calloc(bufferSize_p, sizeof(uint8_t));
+ 136               		.loc 2 35 5 is_stmt 1 view .LVU32
+ 137               		.loc 2 35 43 is_stmt 0 view .LVU33
+ 138 0020 61E0      		ldi r22,lo8(1)
+ 139 0022 70E0      		ldi r23,0
+ 140 0024 812F      		mov r24,r17
+ 141 0026 90E0      		ldi r25,0
+ 142 0028 0E94 0000 		call calloc
+ 143               	.LVL5:
+ 144 002c 282F      		mov r18,r24
+ 145 002e 392F      		mov r19,r25
+ 146               		.loc 2 35 24 view .LVU34
+ 147 0030 3983      		std Y+1,r19
+ 148 0032 2883      		st Y,r18
+  36:zfm20.cpp     ****     if(!isPointerValid(this->_packageData)) {
+ 149               		.loc 2 36 5 is_stmt 1 view .LVU35
+ 150 0034 232B      		or r18,r19
+ 151 0036 01F0      		breq .L9
+  37:zfm20.cpp     ****         // Returns error
+  38:zfm20.cpp     ****         this->_lastError = Error::MEMORY_ALLOCATION;
+  39:zfm20.cpp     ****         return false;
+  40:zfm20.cpp     ****     }
+  41:zfm20.cpp     **** 
+  42:zfm20.cpp     ****     // Updates data members
+  43:zfm20.cpp     ****     this->_initialized      = true;
+ 152               		.loc 2 43 5 view .LVU36
+ 153               		.loc 2 43 29 is_stmt 0 view .LVU37
+ 154 0038 81E0      		ldi r24,lo8(1)
+ 155 003a 8D83      		std Y+5,r24
+  44:zfm20.cpp     ****     this->_packageMaxSize   = bufferSize_p;
+ 156               		.loc 2 44 5 is_stmt 1 view .LVU38
+ 157               		.loc 2 44 29 is_stmt 0 view .LVU39
+ 158 003c 1C83      		std Y+4,r17
+  45:zfm20.cpp     **** 
+  46:zfm20.cpp     ****     // Returns successfully
+  47:zfm20.cpp     ****     this->_lastError = Error::NONE;
+ 159               		.loc 2 47 5 is_stmt 1 view .LVU40
+ 160               		.loc 2 47 22 is_stmt 0 view .LVU41
+ 161 003e 1F82      		std Y+7,__zero_reg__
+ 162 0040 1E82      		std Y+6,__zero_reg__
+  48:zfm20.cpp     ****     return true;
+ 163               		.loc 2 48 5 is_stmt 1 view .LVU42
+ 164               	.L3:
+ 165               	/* epilogue start */
+  49:zfm20.cpp     **** }
+ 166               		.loc 2 49 1 is_stmt 0 view .LVU43
+ 167 0042 DF91      		pop r29
+ 168 0044 CF91      		pop r28
+ 169 0046 1F91      		pop r17
+ 170               	.LVL6:
+ 171               		.loc 2 49 1 view .LVU44
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 19
+
+
+ 172 0048 0895      		ret
+ 173               	.LVL7:
+ 174               	.L8:
+  24:zfm20.cpp     ****         return false;
+ 175               		.loc 2 24 9 is_stmt 1 view .LVU45
+  24:zfm20.cpp     ****         return false;
+ 176               		.loc 2 24 26 is_stmt 0 view .LVU46
+ 177 004a 86E2      		ldi r24,lo8(38)
+ 178 004c 90E0      		ldi r25,0
+ 179               	.LVL8:
+  24:zfm20.cpp     ****         return false;
+ 180               		.loc 2 24 26 view .LVU47
+ 181 004e 9F83      		std Y+7,r25
+ 182 0050 8E83      		std Y+6,r24
+  25:zfm20.cpp     ****     }
+ 183               		.loc 2 25 9 is_stmt 1 view .LVU48
+  25:zfm20.cpp     ****     }
+ 184               		.loc 2 25 16 is_stmt 0 view .LVU49
+ 185 0052 80E0      		ldi r24,0
+ 186 0054 00C0      		rjmp .L3
+ 187               	.L9:
+  38:zfm20.cpp     ****         return false;
+ 188               		.loc 2 38 9 is_stmt 1 view .LVU50
+  38:zfm20.cpp     ****         return false;
+ 189               		.loc 2 38 26 is_stmt 0 view .LVU51
+ 190 0056 8BE0      		ldi r24,lo8(11)
+ 191 0058 90E0      		ldi r25,0
+ 192 005a 9F83      		std Y+7,r25
+ 193 005c 8E83      		std Y+6,r24
+  39:zfm20.cpp     ****     }
+ 194               		.loc 2 39 9 is_stmt 1 view .LVU52
+  39:zfm20.cpp     ****     }
+ 195               		.loc 2 39 16 is_stmt 0 view .LVU53
+ 196 005e 80E0      		ldi r24,0
+ 197 0060 00C0      		rjmp .L3
+ 198               		.cfi_endproc
+ 199               	.LFE77:
+ 201               		.section	.text._ZN5Zfm2010setAddressEm,"ax",@progbits
+ 202               	.global	_ZN5Zfm2010setAddressEm
+ 204               	_ZN5Zfm2010setAddressEm:
+ 205               	.LVL9:
+ 206               	.LFB78:
+  50:zfm20.cpp     **** 
+  51:zfm20.cpp     **** bool_t Zfm20::setAddress(cuint32_t deviceAddress_p)
+  52:zfm20.cpp     **** {
+ 207               		.loc 2 52 1 is_stmt 1 view -0
+ 208               		.cfi_startproc
+ 209               	/* prologue: function */
+ 210               	/* frame size = 0 */
+ 211               	/* stack size = 0 */
+ 212               	.L__stack_usage = 0
+ 213               		.loc 2 52 1 is_stmt 0 view .LVU55
+ 214 0000 E82F      		mov r30,r24
+ 215 0002 F92F      		mov r31,r25
+  53:zfm20.cpp     ****     // TODO: Checks if there are any forbidden addresses
+  54:zfm20.cpp     **** 
+  55:zfm20.cpp     ****     // Updates data members
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 20
+
+
+  56:zfm20.cpp     ****     this->_deviceAddress = deviceAddress_p;
+ 216               		.loc 2 56 5 is_stmt 1 view .LVU56
+ 217               		.loc 2 56 26 is_stmt 0 view .LVU57
+ 218 0004 4087      		std Z+8,r20
+ 219 0006 5187      		std Z+9,r21
+ 220 0008 6287      		std Z+10,r22
+ 221 000a 7387      		std Z+11,r23
+  57:zfm20.cpp     **** 
+  58:zfm20.cpp     ****     // Returns successfully
+  59:zfm20.cpp     ****     this->_lastError = Error::NONE;
+ 222               		.loc 2 59 5 is_stmt 1 view .LVU58
+ 223               		.loc 2 59 22 is_stmt 0 view .LVU59
+ 224 000c 1782      		std Z+7,__zero_reg__
+ 225 000e 1682      		std Z+6,__zero_reg__
+  60:zfm20.cpp     ****     return true;
+ 226               		.loc 2 60 5 is_stmt 1 view .LVU60
+  61:zfm20.cpp     **** }
+ 227               		.loc 2 61 1 is_stmt 0 view .LVU61
+ 228 0010 81E0      		ldi r24,lo8(1)
+ 229               	.LVL10:
+ 230               	/* epilogue start */
+ 231               		.loc 2 61 1 view .LVU62
+ 232 0012 0895      		ret
+ 233               		.cfi_endproc
+ 234               	.LFE78:
+ 236               		.section	.text._ZN5Zfm2013createPackageENS_2IdEPhh,"ax",@progbits
+ 237               	.global	_ZN5Zfm2013createPackageENS_2IdEPhh
+ 239               	_ZN5Zfm2013createPackageENS_2IdEPhh:
+ 240               	.LVL11:
+ 241               	.LFB79:
+  62:zfm20.cpp     **** 
+  63:zfm20.cpp     **** bool_t Zfm20::createPackage(Id packageId_p, uint8_t *packageData_p, uint8_t packageSize_p)
+  64:zfm20.cpp     **** {
+ 242               		.loc 2 64 1 is_stmt 1 view -0
+ 243               		.cfi_startproc
+ 244               		.loc 2 64 1 is_stmt 0 view .LVU64
+ 245 0000 0F93      		push r16
+ 246               		.cfi_def_cfa_offset 3
+ 247               		.cfi_offset 16, -2
+ 248 0002 1F93      		push r17
+ 249               		.cfi_def_cfa_offset 4
+ 250               		.cfi_offset 17, -3
+ 251 0004 CF93      		push r28
+ 252               		.cfi_def_cfa_offset 5
+ 253               		.cfi_offset 28, -4
+ 254 0006 DF93      		push r29
+ 255               		.cfi_def_cfa_offset 6
+ 256               		.cfi_offset 29, -5
+ 257               	/* prologue: function */
+ 258               	/* frame size = 0 */
+ 259               	/* stack size = 4 */
+ 260               	.L__stack_usage = 4
+ 261 0008 E82F      		mov r30,r24
+ 262 000a F92F      		mov r31,r25
+ 263 000c 042F      		mov r16,r20
+ 264 000e 152F      		mov r17,r21
+  65:zfm20.cpp     ****     uint16_t auxChecksum = 0;
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 21
+
+
+ 265               		.loc 2 65 5 is_stmt 1 view .LVU65
+ 266               	.LVL12:
+  66:zfm20.cpp     **** 
+  67:zfm20.cpp     ****     // Checks for errors
+  68:zfm20.cpp     ****     if(!this->_initialized) {
+ 267               		.loc 2 68 5 view .LVU66
+ 268               		.loc 2 68 15 is_stmt 0 view .LVU67
+ 269 0010 8581      		ldd r24,Z+5
+ 270               	.LVL13:
+ 271               		.loc 2 68 5 view .LVU68
+ 272 0012 8823      		tst r24
+ 273 0014 01F4      		brne .+2
+ 274 0016 00C0      		rjmp .L19
+  69:zfm20.cpp     ****         // Returns error
+  70:zfm20.cpp     ****         this->_lastError = Error::NOT_INITIALIZED;
+  71:zfm20.cpp     ****         return false;
+  72:zfm20.cpp     ****     }
+  73:zfm20.cpp     ****     if(!isPointerValid(packageData_p)) {
+ 275               		.loc 2 73 5 is_stmt 1 view .LVU69
+ 276 0018 0115      		cp r16,__zero_reg__
+ 277 001a 1105      		cpc r17,__zero_reg__
+ 278 001c 01F4      		brne .+2
+ 279 001e 00C0      		rjmp .L20
+  74:zfm20.cpp     ****         // Returns error
+  75:zfm20.cpp     ****         this->_lastError = Error::ARGUMENT_POINTER_NULL;
+  76:zfm20.cpp     ****         return false;
+  77:zfm20.cpp     ****     }
+  78:zfm20.cpp     ****     if(packageSize_p == 0) {
+ 280               		.loc 2 78 5 view .LVU70
+ 281 0020 2223      		tst r18
+ 282 0022 01F4      		brne .+2
+ 283 0024 00C0      		rjmp .L21
+  79:zfm20.cpp     ****         // Returns error
+  80:zfm20.cpp     ****         this->_lastError = Error::BUFFER_SIZE_ZERO;
+  81:zfm20.cpp     ****         return false;
+  82:zfm20.cpp     ****     }
+  83:zfm20.cpp     ****     if(packageSize_p > (this->_packageMaxSize - 11)) {
+ 284               		.loc 2 83 5 view .LVU71
+ 285               		.loc 2 83 31 is_stmt 0 view .LVU72
+ 286 0026 A481      		ldd r26,Z+4
+ 287               		.loc 2 83 22 view .LVU73
+ 288 0028 AA50      		subi r26,10
+ 289 002a BB0B      		sbc r27,r27
+ 290               		.loc 2 83 8 view .LVU74
+ 291 002c 422F      		mov r20,r18
+ 292               	.LVL14:
+ 293               		.loc 2 83 8 view .LVU75
+ 294 002e 50E0      		ldi r21,0
+ 295               		.loc 2 83 5 view .LVU76
+ 296 0030 4A17      		cp r20,r26
+ 297 0032 5B07      		cpc r21,r27
+ 298 0034 04F0      		brlt .+2
+ 299 0036 00C0      		rjmp .L22
+  84:zfm20.cpp     ****         // Returns error
+  85:zfm20.cpp     ****         this->_lastError = Error::BUFFER_SIZE_TOO_LARGE;
+  86:zfm20.cpp     ****         return false;
+  87:zfm20.cpp     ****     }
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 22
+
+
+  88:zfm20.cpp     **** 
+  89:zfm20.cpp     ****     // Creates package
+  90:zfm20.cpp     ****     this->_packageIndex = 0;
+ 300               		.loc 2 90 5 is_stmt 1 view .LVU77
+ 301               		.loc 2 90 25 is_stmt 0 view .LVU78
+ 302 0038 1282      		std Z+2,__zero_reg__
+  91:zfm20.cpp     ****     this->_packageLength = 0;
+ 303               		.loc 2 91 5 is_stmt 1 view .LVU79
+ 304               		.loc 2 91 26 is_stmt 0 view .LVU80
+ 305 003a 1382      		std Z+3,__zero_reg__
+  92:zfm20.cpp     ****     auxChecksum = 0;
+ 306               		.loc 2 92 5 is_stmt 1 view .LVU81
+  93:zfm20.cpp     ****     // Header (2 bytes)
+  94:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = 0xEF;
+ 307               		.loc 2 94 5 view .LVU82
+ 308               		.loc 2 94 11 is_stmt 0 view .LVU83
+ 309 003c A081      		ld r26,Z
+ 310 003e B181      		ldd r27,Z+1
+ 311               		.loc 2 94 43 view .LVU84
+ 312 0040 91E0      		ldi r25,lo8(1)
+ 313 0042 9283      		std Z+2,r25
+ 314               		.loc 2 94 47 view .LVU85
+ 315 0044 3FEE      		ldi r19,lo8(-17)
+ 316 0046 3C93      		st X,r19
+  95:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = 0x01;
+ 317               		.loc 2 95 5 is_stmt 1 view .LVU86
+ 318               		.loc 2 95 11 is_stmt 0 view .LVU87
+ 319 0048 A081      		ld r26,Z
+ 320 004a B181      		ldd r27,Z+1
+ 321               		.loc 2 95 30 view .LVU88
+ 322 004c 3281      		ldd r19,Z+2
+ 323               		.loc 2 95 43 view .LVU89
+ 324 004e C1E0      		ldi r28,lo8(1)
+ 325 0050 C30F      		add r28,r19
+ 326 0052 C283      		std Z+2,r28
+ 327               		.loc 2 95 45 view .LVU90
+ 328 0054 A30F      		add r26,r19
+ 329 0056 B11D      		adc r27,__zero_reg__
+ 330               		.loc 2 95 47 view .LVU91
+ 331 0058 9C93      		st X,r25
+  96:zfm20.cpp     ****     // Address (4 bytes)
+  97:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = wordGetByte3(this->_deviceAddress);
+ 332               		.loc 2 97 5 is_stmt 1 view .LVU92
+ 333               		.loc 2 97 49 is_stmt 0 view .LVU93
+ 334 005a 3385      		ldd r19,Z+11
+ 335               		.loc 2 97 11 view .LVU94
+ 336 005c A081      		ld r26,Z
+ 337 005e B181      		ldd r27,Z+1
+ 338               		.loc 2 97 30 view .LVU95
+ 339 0060 9281      		ldd r25,Z+2
+ 340               		.loc 2 97 43 view .LVU96
+ 341 0062 C1E0      		ldi r28,lo8(1)
+ 342 0064 C90F      		add r28,r25
+ 343 0066 C283      		std Z+2,r28
+ 344               		.loc 2 97 45 view .LVU97
+ 345 0068 A90F      		add r26,r25
+ 346 006a B11D      		adc r27,__zero_reg__
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 23
+
+
+ 347               		.loc 2 97 47 view .LVU98
+ 348 006c 3C93      		st X,r19
+  98:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = wordGetByte2(this->_deviceAddress);
+ 349               		.loc 2 98 5 is_stmt 1 view .LVU99
+ 350               		.loc 2 98 49 is_stmt 0 view .LVU100
+ 351 006e 3285      		ldd r19,Z+10
+ 352               		.loc 2 98 11 view .LVU101
+ 353 0070 A081      		ld r26,Z
+ 354 0072 B181      		ldd r27,Z+1
+ 355               		.loc 2 98 30 view .LVU102
+ 356 0074 9281      		ldd r25,Z+2
+ 357               		.loc 2 98 43 view .LVU103
+ 358 0076 C1E0      		ldi r28,lo8(1)
+ 359 0078 C90F      		add r28,r25
+ 360 007a C283      		std Z+2,r28
+ 361               		.loc 2 98 45 view .LVU104
+ 362 007c A90F      		add r26,r25
+ 363 007e B11D      		adc r27,__zero_reg__
+ 364               		.loc 2 98 47 view .LVU105
+ 365 0080 3C93      		st X,r19
+  99:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = wordGetByte1(this->_deviceAddress);
+ 366               		.loc 2 99 5 is_stmt 1 view .LVU106
+ 367               		.loc 2 99 49 is_stmt 0 view .LVU107
+ 368 0082 3185      		ldd r19,Z+9
+ 369               		.loc 2 99 11 view .LVU108
+ 370 0084 A081      		ld r26,Z
+ 371 0086 B181      		ldd r27,Z+1
+ 372               		.loc 2 99 30 view .LVU109
+ 373 0088 9281      		ldd r25,Z+2
+ 374               		.loc 2 99 43 view .LVU110
+ 375 008a C1E0      		ldi r28,lo8(1)
+ 376 008c C90F      		add r28,r25
+ 377 008e C283      		std Z+2,r28
+ 378               		.loc 2 99 45 view .LVU111
+ 379 0090 A90F      		add r26,r25
+ 380 0092 B11D      		adc r27,__zero_reg__
+ 381               		.loc 2 99 47 view .LVU112
+ 382 0094 3C93      		st X,r19
+ 100:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = wordGetByte0(this->_deviceAddress);
+ 383               		.loc 2 100 5 is_stmt 1 view .LVU113
+ 384               		.loc 2 100 49 is_stmt 0 view .LVU114
+ 385 0096 3085      		ldd r19,Z+8
+ 386               		.loc 2 100 11 view .LVU115
+ 387 0098 A081      		ld r26,Z
+ 388 009a B181      		ldd r27,Z+1
+ 389               		.loc 2 100 30 view .LVU116
+ 390 009c 9281      		ldd r25,Z+2
+ 391               		.loc 2 100 43 view .LVU117
+ 392 009e C1E0      		ldi r28,lo8(1)
+ 393 00a0 C90F      		add r28,r25
+ 394 00a2 C283      		std Z+2,r28
+ 395               		.loc 2 100 45 view .LVU118
+ 396 00a4 A90F      		add r26,r25
+ 397 00a6 B11D      		adc r27,__zero_reg__
+ 398               		.loc 2 100 47 view .LVU119
+ 399 00a8 3C93      		st X,r19
+ 101:zfm20.cpp     ****     // Id (1 byte)
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 24
+
+
+ 102:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = (uint8_t)packageId_p;
+ 400               		.loc 2 102 5 is_stmt 1 view .LVU120
+ 401               		.loc 2 102 11 is_stmt 0 view .LVU121
+ 402 00aa A081      		ld r26,Z
+ 403 00ac B181      		ldd r27,Z+1
+ 404               		.loc 2 102 30 view .LVU122
+ 405 00ae 9281      		ldd r25,Z+2
+ 406               		.loc 2 102 43 view .LVU123
+ 407 00b0 31E0      		ldi r19,lo8(1)
+ 408 00b2 390F      		add r19,r25
+ 409 00b4 3283      		std Z+2,r19
+ 410               		.loc 2 102 45 view .LVU124
+ 411 00b6 A90F      		add r26,r25
+ 412 00b8 B11D      		adc r27,__zero_reg__
+ 413               		.loc 2 102 47 view .LVU125
+ 414 00ba 6C93      		st X,r22
+ 103:zfm20.cpp     ****     auxChecksum += (uint16_t)packageId_p;
+ 415               		.loc 2 103 5 is_stmt 1 view .LVU126
+ 416               		.loc 2 103 20 is_stmt 0 view .LVU127
+ 417 00bc A62F      		mov r26,r22
+ 418 00be B72F      		mov r27,r23
+ 419               	.LVL15:
+ 104:zfm20.cpp     ****     // Length (2 bytes)
+ 105:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte1(packageSize_p + 2);
+ 420               		.loc 2 105 5 is_stmt 1 view .LVU128
+ 421               		.loc 2 105 49 is_stmt 0 view .LVU129
+ 422 00c0 4E5F      		subi r20,-2
+ 423 00c2 5F4F      		sbci r21,-1
+ 424 00c4 652F      		mov r22,r21
+ 425 00c6 7727      		clr r23
+ 426               	.LVL16:
+ 427               		.loc 2 105 11 view .LVU130
+ 428 00c8 C081      		ld r28,Z
+ 429 00ca D181      		ldd r29,Z+1
+ 430               		.loc 2 105 30 view .LVU131
+ 431 00cc 9281      		ldd r25,Z+2
+ 432               		.loc 2 105 43 view .LVU132
+ 433 00ce 31E0      		ldi r19,lo8(1)
+ 434 00d0 390F      		add r19,r25
+ 435 00d2 3283      		std Z+2,r19
+ 436               		.loc 2 105 45 view .LVU133
+ 437 00d4 C90F      		add r28,r25
+ 438 00d6 D11D      		adc r29,__zero_reg__
+ 439               		.loc 2 105 47 view .LVU134
+ 440 00d8 6883      		st Y,r22
+ 106:zfm20.cpp     ****     auxChecksum += (uint16_t)hwordGetByte1(packageSize_p + 2);
+ 441               		.loc 2 106 5 is_stmt 1 view .LVU135
+ 442               		.loc 2 106 17 is_stmt 0 view .LVU136
+ 443 00da 6A0F      		add r22,r26
+ 444 00dc 7B1F      		adc r23,r27
+ 445               	.LVL17:
+ 107:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(packageSize_p + 2);
+ 446               		.loc 2 107 5 is_stmt 1 view .LVU137
+ 447               		.loc 2 107 11 is_stmt 0 view .LVU138
+ 448 00de A081      		ld r26,Z
+ 449 00e0 B181      		ldd r27,Z+1
+ 450               		.loc 2 107 30 view .LVU139
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 25
+
+
+ 451 00e2 9281      		ldd r25,Z+2
+ 452               		.loc 2 107 43 view .LVU140
+ 453 00e4 31E0      		ldi r19,lo8(1)
+ 454 00e6 390F      		add r19,r25
+ 455 00e8 3283      		std Z+2,r19
+ 456               		.loc 2 107 45 view .LVU141
+ 457 00ea A90F      		add r26,r25
+ 458 00ec B11D      		adc r27,__zero_reg__
+ 459               		.loc 2 107 47 view .LVU142
+ 460 00ee 92E0      		ldi r25,lo8(2)
+ 461 00f0 920F      		add r25,r18
+ 462 00f2 9C93      		st X,r25
+ 108:zfm20.cpp     ****     auxChecksum += (uint16_t)hwordGetByte0(packageSize_p + 2);
+ 463               		.loc 2 108 5 is_stmt 1 view .LVU143
+ 464               		.loc 2 108 17 is_stmt 0 view .LVU144
+ 465 00f4 640F      		add r22,r20
+ 466 00f6 711D      		adc r23,__zero_reg__
+ 467               	.LVL18:
+ 109:zfm20.cpp     ****     // Data ('packageSize_p' bytes)
+ 110:zfm20.cpp     ****     for(uint8_t i = 0; i < packageSize_p; i++) {
+ 468               		.loc 2 110 5 is_stmt 1 view .LVU145
+ 469               	.LBB3:
+ 470               		.loc 2 110 17 is_stmt 0 view .LVU146
+ 471 00f8 90E0      		ldi r25,0
+ 472               		.loc 2 110 5 view .LVU147
+ 473 00fa 00C0      		rjmp .L17
+ 474               	.LVL19:
+ 475               	.L19:
+ 476               		.loc 2 110 5 view .LVU148
+ 477               	.LBE3:
+  70:zfm20.cpp     ****         return false;
+ 478               		.loc 2 70 9 is_stmt 1 view .LVU149
+  70:zfm20.cpp     ****         return false;
+ 479               		.loc 2 70 26 is_stmt 0 view .LVU150
+ 480 00fc 24E0      		ldi r18,lo8(4)
+ 481 00fe 30E0      		ldi r19,0
+ 482               	.LVL20:
+  70:zfm20.cpp     ****         return false;
+ 483               		.loc 2 70 26 view .LVU151
+ 484 0100 3783      		std Z+7,r19
+ 485 0102 2683      		std Z+6,r18
+  71:zfm20.cpp     ****     }
+ 486               		.loc 2 71 9 is_stmt 1 view .LVU152
+ 487               	.LVL21:
+ 488               	.L11:
+ 489               	/* epilogue start */
+ 111:zfm20.cpp     ****         this->_packageData[this->_packageIndex++] = packageData_p[i];
+ 112:zfm20.cpp     ****         auxChecksum += (uint16_t)packageData_p[i];
+ 113:zfm20.cpp     ****     }
+ 114:zfm20.cpp     ****     // Checksum (2 bytes)
+ 115:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte1(auxChecksum);
+ 116:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(auxChecksum);
+ 117:zfm20.cpp     **** 
+ 118:zfm20.cpp     ****     // Updates data members
+ 119:zfm20.cpp     ****     this->_packageLength = this->_packageIndex;
+ 120:zfm20.cpp     **** 
+ 121:zfm20.cpp     ****     //FULL PACKAGE
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 26
+
+
+ 122:zfm20.cpp     **** 
+ 123:zfm20.cpp     **** 
+ 124:zfm20.cpp     ****     // Returns successfully
+ 125:zfm20.cpp     ****     this->_lastError = Error::NONE;
+ 126:zfm20.cpp     ****     return true;
+ 127:zfm20.cpp     **** }
+ 490               		.loc 2 127 1 is_stmt 0 view .LVU153
+ 491 0104 DF91      		pop r29
+ 492 0106 CF91      		pop r28
+ 493 0108 1F91      		pop r17
+ 494 010a 0F91      		pop r16
+ 495 010c 0895      		ret
+ 496               	.LVL22:
+ 497               	.L20:
+  75:zfm20.cpp     ****         return false;
+ 498               		.loc 2 75 9 is_stmt 1 view .LVU154
+  75:zfm20.cpp     ****         return false;
+ 499               		.loc 2 75 26 is_stmt 0 view .LVU155
+ 500 010e 81E1      		ldi r24,lo8(17)
+ 501 0110 90E0      		ldi r25,0
+ 502 0112 9783      		std Z+7,r25
+ 503 0114 8683      		std Z+6,r24
+  76:zfm20.cpp     ****     }
+ 504               		.loc 2 76 9 is_stmt 1 view .LVU156
+  76:zfm20.cpp     ****     }
+ 505               		.loc 2 76 16 is_stmt 0 view .LVU157
+ 506 0116 80E0      		ldi r24,0
+ 507 0118 00C0      		rjmp .L11
+ 508               	.L21:
+  80:zfm20.cpp     ****         return false;
+ 509               		.loc 2 80 9 is_stmt 1 view .LVU158
+  80:zfm20.cpp     ****         return false;
+ 510               		.loc 2 80 26 is_stmt 0 view .LVU159
+ 511 011a 87E2      		ldi r24,lo8(39)
+ 512 011c 90E0      		ldi r25,0
+ 513 011e 9783      		std Z+7,r25
+ 514 0120 8683      		std Z+6,r24
+  81:zfm20.cpp     ****     }
+ 515               		.loc 2 81 9 is_stmt 1 view .LVU160
+  81:zfm20.cpp     ****     }
+ 516               		.loc 2 81 16 is_stmt 0 view .LVU161
+ 517 0122 80E0      		ldi r24,0
+ 518 0124 00C0      		rjmp .L11
+ 519               	.LVL23:
+ 520               	.L22:
+  85:zfm20.cpp     ****         return false;
+ 521               		.loc 2 85 9 is_stmt 1 view .LVU162
+  85:zfm20.cpp     ****         return false;
+ 522               		.loc 2 85 26 is_stmt 0 view .LVU163
+ 523 0126 85E2      		ldi r24,lo8(37)
+ 524 0128 90E0      		ldi r25,0
+ 525 012a 9783      		std Z+7,r25
+ 526 012c 8683      		std Z+6,r24
+  86:zfm20.cpp     ****     }
+ 527               		.loc 2 86 9 is_stmt 1 view .LVU164
+  86:zfm20.cpp     ****     }
+ 528               		.loc 2 86 16 is_stmt 0 view .LVU165
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 27
+
+
+ 529 012e 80E0      		ldi r24,0
+ 530 0130 00C0      		rjmp .L11
+ 531               	.LVL24:
+ 532               	.L18:
+ 533               	.LBB4:
+ 111:zfm20.cpp     ****         auxChecksum += (uint16_t)packageData_p[i];
+ 534               		.loc 2 111 9 is_stmt 1 discriminator 3 view .LVU166
+ 111:zfm20.cpp     ****         auxChecksum += (uint16_t)packageData_p[i];
+ 535               		.loc 2 111 68 is_stmt 0 discriminator 3 view .LVU167
+ 536 0132 E801      		movw r28,r16
+ 537 0134 C90F      		add r28,r25
+ 538 0136 D11D      		adc r29,__zero_reg__
+ 539 0138 4881      		ld r20,Y
+ 111:zfm20.cpp     ****         auxChecksum += (uint16_t)packageData_p[i];
+ 540               		.loc 2 111 15 discriminator 3 view .LVU168
+ 541 013a A081      		ld r26,Z
+ 542 013c B181      		ldd r27,Z+1
+ 111:zfm20.cpp     ****         auxChecksum += (uint16_t)packageData_p[i];
+ 543               		.loc 2 111 34 discriminator 3 view .LVU169
+ 544 013e 3281      		ldd r19,Z+2
+ 111:zfm20.cpp     ****         auxChecksum += (uint16_t)packageData_p[i];
+ 545               		.loc 2 111 47 discriminator 3 view .LVU170
+ 546 0140 51E0      		ldi r21,lo8(1)
+ 547 0142 530F      		add r21,r19
+ 548 0144 5283      		std Z+2,r21
+ 111:zfm20.cpp     ****         auxChecksum += (uint16_t)packageData_p[i];
+ 549               		.loc 2 111 49 discriminator 3 view .LVU171
+ 550 0146 A30F      		add r26,r19
+ 551 0148 B11D      		adc r27,__zero_reg__
+ 111:zfm20.cpp     ****         auxChecksum += (uint16_t)packageData_p[i];
+ 552               		.loc 2 111 51 discriminator 3 view .LVU172
+ 553 014a 4C93      		st X,r20
+ 112:zfm20.cpp     ****     }
+ 554               		.loc 2 112 9 is_stmt 1 discriminator 3 view .LVU173
+ 112:zfm20.cpp     ****     }
+ 555               		.loc 2 112 49 is_stmt 0 discriminator 3 view .LVU174
+ 556 014c 3881      		ld r19,Y
+ 112:zfm20.cpp     ****     }
+ 557               		.loc 2 112 21 discriminator 3 view .LVU175
+ 558 014e 630F      		add r22,r19
+ 559 0150 711D      		adc r23,__zero_reg__
+ 560               	.LVL25:
+ 110:zfm20.cpp     ****         this->_packageData[this->_packageIndex++] = packageData_p[i];
+ 561               		.loc 2 110 5 is_stmt 1 discriminator 3 view .LVU176
+ 562 0152 9F5F      		subi r25,lo8(-(1))
+ 563               	.LVL26:
+ 564               	.L17:
+ 110:zfm20.cpp     ****         this->_packageData[this->_packageIndex++] = packageData_p[i];
+ 565               		.loc 2 110 26 discriminator 1 view .LVU177
+ 566 0154 9217      		cp r25,r18
+ 567 0156 00F0      		brlo .L18
+ 110:zfm20.cpp     ****         this->_packageData[this->_packageIndex++] = packageData_p[i];
+ 568               		.loc 2 110 26 is_stmt 0 discriminator 1 view .LVU178
+ 569               	.LBE4:
+ 115:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(auxChecksum);
+ 570               		.loc 2 115 5 is_stmt 1 view .LVU179
+ 115:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(auxChecksum);
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 28
+
+
+ 571               		.loc 2 115 11 is_stmt 0 view .LVU180
+ 572 0158 A081      		ld r26,Z
+ 573 015a B181      		ldd r27,Z+1
+ 115:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(auxChecksum);
+ 574               		.loc 2 115 30 view .LVU181
+ 575 015c 9281      		ldd r25,Z+2
+ 576               	.LVL27:
+ 115:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(auxChecksum);
+ 577               		.loc 2 115 43 view .LVU182
+ 578 015e 21E0      		ldi r18,lo8(1)
+ 579               	.LVL28:
+ 115:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(auxChecksum);
+ 580               		.loc 2 115 43 view .LVU183
+ 581 0160 290F      		add r18,r25
+ 582 0162 2283      		std Z+2,r18
+ 115:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(auxChecksum);
+ 583               		.loc 2 115 45 view .LVU184
+ 584 0164 A90F      		add r26,r25
+ 585 0166 B11D      		adc r27,__zero_reg__
+ 115:zfm20.cpp     ****     this->_packageData[this->_packageIndex++] = hwordGetByte0(auxChecksum);
+ 586               		.loc 2 115 47 view .LVU185
+ 587 0168 7C93      		st X,r23
+ 116:zfm20.cpp     **** 
+ 588               		.loc 2 116 5 is_stmt 1 view .LVU186
+ 116:zfm20.cpp     **** 
+ 589               		.loc 2 116 11 is_stmt 0 view .LVU187
+ 590 016a A081      		ld r26,Z
+ 591 016c B181      		ldd r27,Z+1
+ 116:zfm20.cpp     **** 
+ 592               		.loc 2 116 30 view .LVU188
+ 593 016e 9281      		ldd r25,Z+2
+ 116:zfm20.cpp     **** 
+ 594               		.loc 2 116 43 view .LVU189
+ 595 0170 21E0      		ldi r18,lo8(1)
+ 596 0172 290F      		add r18,r25
+ 597 0174 2283      		std Z+2,r18
+ 116:zfm20.cpp     **** 
+ 598               		.loc 2 116 45 view .LVU190
+ 599 0176 A90F      		add r26,r25
+ 600 0178 B11D      		adc r27,__zero_reg__
+ 116:zfm20.cpp     **** 
+ 601               		.loc 2 116 47 view .LVU191
+ 602 017a 6C93      		st X,r22
+ 119:zfm20.cpp     **** 
+ 603               		.loc 2 119 5 is_stmt 1 view .LVU192
+ 119:zfm20.cpp     **** 
+ 604               		.loc 2 119 34 is_stmt 0 view .LVU193
+ 605 017c 9281      		ldd r25,Z+2
+ 119:zfm20.cpp     **** 
+ 606               		.loc 2 119 26 view .LVU194
+ 607 017e 9383      		std Z+3,r25
+ 125:zfm20.cpp     ****     return true;
+ 608               		.loc 2 125 5 is_stmt 1 view .LVU195
+ 125:zfm20.cpp     ****     return true;
+ 609               		.loc 2 125 22 is_stmt 0 view .LVU196
+ 610 0180 1782      		std Z+7,__zero_reg__
+ 611 0182 1682      		std Z+6,__zero_reg__
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 29
+
+
+ 126:zfm20.cpp     **** }
+ 612               		.loc 2 126 5 is_stmt 1 view .LVU197
+ 126:zfm20.cpp     **** }
+ 613               		.loc 2 126 12 is_stmt 0 view .LVU198
+ 614 0184 00C0      		rjmp .L11
+ 615               		.cfi_endproc
+ 616               	.LFE79:
+ 618               		.section	.rodata._ZN5Zfm205debugEv.str1.1,"aMS",@progbits,1
+ 619               	.LC0:
+ 620 0000 5369 7A65 		.string	"Size: %u\r\n"
+ 620      3A20 2575 
+ 620      0D0A 00
+ 621               	.LC1:
+ 622 000b 4461 7461 		.string	"Data: "
+ 622      3A20 00
+ 623               	.LC2:
+ 624 0012 2530 3258 		.string	"%02X "
+ 624      2000 
+ 625               	.LC3:
+ 626 0018 0D0A 0D00 		.string	"\r\n\r"
+ 627               		.section	.text._ZN5Zfm205debugEv,"ax",@progbits
+ 628               	.global	_ZN5Zfm205debugEv
+ 630               	_ZN5Zfm205debugEv:
+ 631               	.LVL29:
+ 632               	.LFB80:
+ 128:zfm20.cpp     **** 
+ 129:zfm20.cpp     **** void Zfm20::debug(void)
+ 130:zfm20.cpp     **** {
+ 633               		.loc 2 130 1 is_stmt 1 view -0
+ 634               		.cfi_startproc
+ 635               		.loc 2 130 1 is_stmt 0 view .LVU200
+ 636 0000 0F93      		push r16
+ 637               		.cfi_def_cfa_offset 3
+ 638               		.cfi_offset 16, -2
+ 639 0002 1F93      		push r17
+ 640               		.cfi_def_cfa_offset 4
+ 641               		.cfi_offset 17, -3
+ 642 0004 CF93      		push r28
+ 643               		.cfi_def_cfa_offset 5
+ 644               		.cfi_offset 28, -4
+ 645               	/* prologue: function */
+ 646               	/* frame size = 0 */
+ 647               	/* stack size = 3 */
+ 648               	.L__stack_usage = 3
+ 649 0006 082F      		mov r16,r24
+ 650 0008 192F      		mov r17,r25
+ 131:zfm20.cpp     ****     printf("Size: %u\r\n", this->_packageLength);
+ 651               		.loc 2 131 5 is_stmt 1 view .LVU201
+ 652               		.loc 2 131 34 is_stmt 0 view .LVU202
+ 653 000a D801      		movw r26,r16
+ 654 000c 1396      		adiw r26,3
+ 655 000e 8C91      		ld r24,X
+ 656               	.LVL30:
+ 657               		.loc 2 131 11 view .LVU203
+ 658 0010 1F92      		push __zero_reg__
+ 659               		.cfi_def_cfa_offset 6
+ 660 0012 8F93      		push r24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 30
+
+
+ 661               		.cfi_def_cfa_offset 7
+ 662 0014 80E0      		ldi r24,lo8(.LC0)
+ 663 0016 90E0      		ldi r25,hi8(.LC0)
+ 664 0018 9F93      		push r25
+ 665               		.cfi_def_cfa_offset 8
+ 666 001a 8F93      		push r24
+ 667               		.cfi_def_cfa_offset 9
+ 668 001c 0E94 0000 		call printf
+ 669               	.LVL31:
+ 132:zfm20.cpp     ****     printf("Data: ");
+ 670               		.loc 2 132 5 is_stmt 1 view .LVU204
+ 671               		.loc 2 132 11 is_stmt 0 view .LVU205
+ 672 0020 80E0      		ldi r24,lo8(.LC1)
+ 673 0022 90E0      		ldi r25,hi8(.LC1)
+ 674 0024 9F93      		push r25
+ 675               		.cfi_def_cfa_offset 10
+ 676 0026 8F93      		push r24
+ 677               		.cfi_def_cfa_offset 11
+ 678 0028 0E94 0000 		call printf
+ 679               	.LVL32:
+ 133:zfm20.cpp     ****     for(uint8_t i = 0; i < this->_packageLength; i++) {
+ 680               		.loc 2 133 5 is_stmt 1 view .LVU206
+ 681               	.LBB5:
+ 682               		.loc 2 133 5 is_stmt 0 view .LVU207
+ 683 002c 0F90      		pop __tmp_reg__
+ 684 002e 0F90      		pop __tmp_reg__
+ 685 0030 0F90      		pop __tmp_reg__
+ 686 0032 0F90      		pop __tmp_reg__
+ 687 0034 0F90      		pop __tmp_reg__
+ 688 0036 0F90      		pop __tmp_reg__
+ 689               		.cfi_def_cfa_offset 5
+ 690               		.loc 2 133 17 view .LVU208
+ 691 0038 C0E0      		ldi r28,0
+ 692               		.loc 2 133 5 view .LVU209
+ 693 003a 00C0      		rjmp .L24
+ 694               	.LVL33:
+ 695               	.L25:
+ 134:zfm20.cpp     ****         printf("%02X ", this->_packageData[i]);
+ 696               		.loc 2 134 9 is_stmt 1 discriminator 3 view .LVU210
+ 697               		.loc 2 134 31 is_stmt 0 discriminator 3 view .LVU211
+ 698 003c D801      		movw r26,r16
+ 699 003e ED91      		ld r30,X+
+ 700 0040 FC91      		ld r31,X
+ 701               		.loc 2 134 45 discriminator 3 view .LVU212
+ 702 0042 EC0F      		add r30,r28
+ 703 0044 F11D      		adc r31,__zero_reg__
+ 704 0046 8081      		ld r24,Z
+ 705               		.loc 2 134 15 discriminator 3 view .LVU213
+ 706 0048 1F92      		push __zero_reg__
+ 707               		.cfi_def_cfa_offset 6
+ 708 004a 8F93      		push r24
+ 709               		.cfi_def_cfa_offset 7
+ 710 004c 80E0      		ldi r24,lo8(.LC2)
+ 711 004e 90E0      		ldi r25,hi8(.LC2)
+ 712 0050 9F93      		push r25
+ 713               		.cfi_def_cfa_offset 8
+ 714 0052 8F93      		push r24
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 31
+
+
+ 715               		.cfi_def_cfa_offset 9
+ 716 0054 0E94 0000 		call printf
+ 717               	.LVL34:
+ 133:zfm20.cpp     ****     for(uint8_t i = 0; i < this->_packageLength; i++) {
+ 718               		.loc 2 133 5 is_stmt 1 discriminator 3 view .LVU214
+ 719 0058 CF5F      		subi r28,lo8(-(1))
+ 720               	.LVL35:
+ 133:zfm20.cpp     ****     for(uint8_t i = 0; i < this->_packageLength; i++) {
+ 721               		.loc 2 133 5 is_stmt 0 discriminator 3 view .LVU215
+ 722 005a 0F90      		pop __tmp_reg__
+ 723 005c 0F90      		pop __tmp_reg__
+ 724 005e 0F90      		pop __tmp_reg__
+ 725 0060 0F90      		pop __tmp_reg__
+ 726               		.cfi_def_cfa_offset 5
+ 727               	.LVL36:
+ 728               	.L24:
+ 133:zfm20.cpp     ****     for(uint8_t i = 0; i < this->_packageLength; i++) {
+ 729               		.loc 2 133 26 is_stmt 1 discriminator 1 view .LVU216
+ 133:zfm20.cpp     ****     for(uint8_t i = 0; i < this->_packageLength; i++) {
+ 730               		.loc 2 133 34 is_stmt 0 discriminator 1 view .LVU217
+ 731 0062 F801      		movw r30,r16
+ 732 0064 8381      		ldd r24,Z+3
+ 133:zfm20.cpp     ****     for(uint8_t i = 0; i < this->_packageLength; i++) {
+ 733               		.loc 2 133 26 discriminator 1 view .LVU218
+ 734 0066 C817      		cp r28,r24
+ 735 0068 00F0      		brlo .L25
+ 736               	.LBE5:
+ 135:zfm20.cpp     ****     }
+ 136:zfm20.cpp     ****     printf("\r\n\r\n");
+ 737               		.loc 2 136 5 is_stmt 1 view .LVU219
+ 738               		.loc 2 136 11 is_stmt 0 view .LVU220
+ 739 006a 80E0      		ldi r24,lo8(.LC3)
+ 740 006c 90E0      		ldi r25,hi8(.LC3)
+ 741 006e 0E94 0000 		call puts
+ 742               	.LVL37:
+ 743               	/* epilogue start */
+ 137:zfm20.cpp     **** }
+ 744               		.loc 2 137 1 view .LVU221
+ 745 0072 CF91      		pop r28
+ 746               	.LVL38:
+ 747               		.loc 2 137 1 view .LVU222
+ 748 0074 1F91      		pop r17
+ 749 0076 0F91      		pop r16
+ 750 0078 0895      		ret
+ 751               		.cfi_endproc
+ 752               	.LFE80:
+ 754               		.section	.rodata._ZN5Zfm2011receive_pkgEP6Usart0.str1.1,"aMS",@progbits,1
+ 755               	.LC5:
+ 756 0000 2530 3258 		.string	"%02X"
+ 756      00
+ 757               	.LC4:
+ 758 0005 FFFF FFFF 		.string	"\377\377\377\377\377\377\377\377\377\377\377\377"
+ 758      FFFF FFFF 
+ 758      FFFF FFFF 
+ 758      00
+ 759               		.section	.text._ZN5Zfm2011receive_pkgEP6Usart0,"ax",@progbits
+ 760               	.global	_ZN5Zfm2011receive_pkgEP6Usart0
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 32
+
+
+ 762               	_ZN5Zfm2011receive_pkgEP6Usart0:
+ 763               	.LVL39:
+ 764               	.LFB81:
+ 138:zfm20.cpp     **** 
+ 139:zfm20.cpp     **** 
+ 140:zfm20.cpp     **** uint8_t Zfm20::receive_pkg(Usart0* usart)
+ 141:zfm20.cpp     **** {
+ 765               		.loc 2 141 1 is_stmt 1 view -0
+ 766               		.cfi_startproc
+ 767               		.loc 2 141 1 is_stmt 0 view .LVU224
+ 768 0000 CF93      		push r28
+ 769               		.cfi_def_cfa_offset 3
+ 770               		.cfi_offset 28, -2
+ 771 0002 DF93      		push r29
+ 772               		.cfi_def_cfa_offset 4
+ 773               		.cfi_offset 29, -3
+ 774 0004 CDB7      		in r28,__SP_L__
+ 775 0006 DEB7      		in r29,__SP_H__
+ 776               		.cfi_def_cfa_register 28
+ 777 0008 6E97      		sbiw r28,30
+ 778               		.cfi_def_cfa_offset 34
+ 779 000a 0FB6      		in __tmp_reg__,__SREG__
+ 780 000c F894      		cli
+ 781 000e DEBF      		out __SP_H__,r29
+ 782 0010 0FBE      		out __SREG__,__tmp_reg__
+ 783 0012 CDBF      		out __SP_L__,r28
+ 784               	/* prologue: function */
+ 785               	/* frame size = 30 */
+ 786               	/* stack size = 32 */
+ 787               	.L__stack_usage = 32
+ 788 0014 E62E      		mov r14,r22
+ 789 0016 F72E      		mov r15,r23
+ 142:zfm20.cpp     ****     //sendstring("entrou receivepkg \n");
+ 143:zfm20.cpp     ****     uint16_t byte= 0xFF;
+ 790               		.loc 2 143 5 is_stmt 1 view .LVU225
+ 791               		.loc 2 143 14 is_stmt 0 view .LVU226
+ 792 0018 8FEF      		ldi r24,lo8(-1)
+ 793 001a 90E0      		ldi r25,0
+ 794               	.LVL40:
+ 795               		.loc 2 143 14 view .LVU227
+ 796 001c 9A83      		std Y+2,r25
+ 797 001e 8983      		std Y+1,r24
+ 144:zfm20.cpp     ****     uint8_t data[12] = {255,255,255,255,255,255,255,255,255,255,255,255};
+ 798               		.loc 2 144 5 is_stmt 1 view .LVU228
+ 799               		.loc 2 144 13 is_stmt 0 view .LVU229
+ 800 0020 8CE0      		ldi r24,lo8(12)
+ 801 0022 E0E0      		ldi r30,lo8(.LC4)
+ 802 0024 F0E0      		ldi r31,hi8(.LC4)
+ 803 0026 DE01      		movw r26,r28
+ 804 0028 1396      		adiw r26,3
+ 805               		0:
+ 806 002a 0190      		ld r0,Z+
+ 807 002c 0D92      		st X+,r0
+ 808 002e 8A95      		dec r24
+ 809 0030 01F4      		brne 0b
+ 145:zfm20.cpp     ****     //int i=11;
+ 146:zfm20.cpp     ****     uint8_t response;
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 33
+
+
+ 810               		.loc 2 146 5 is_stmt 1 view .LVU230
+ 147:zfm20.cpp     ****     uint8_t i =0;
+ 811               		.loc 2 147 5 view .LVU231
+ 812               	.LVL41:
+ 148:zfm20.cpp     ****     uint8_t ii=40;
+ 813               		.loc 2 148 5 view .LVU232
+ 149:zfm20.cpp     ****     char c[16];
+ 814               		.loc 2 149 5 view .LVU233
+ 150:zfm20.cpp     ****     bool_t go = 1;
+ 815               		.loc 2 150 5 view .LVU234
+ 151:zfm20.cpp     ****     while (go = 1)
+ 816               		.loc 2 151 5 view .LVU235
+ 817               	.L27:
+ 818               		.loc 2 151 15 view .LVU236
+ 152:zfm20.cpp     ****     {
+ 153:zfm20.cpp     ****         //sendstring("entrou no while");
+ 154:zfm20.cpp     ****         usart->receiveData(&byte);
+ 819               		.loc 2 154 9 view .LVU237
+ 820               		.loc 2 154 27 is_stmt 0 view .LVU238
+ 821 0032 BE01      		movw r22,r28
+ 822 0034 6F5F      		subi r22,-1
+ 823 0036 7F4F      		sbci r23,-1
+ 824 0038 8E2D      		mov r24,r14
+ 825 003a 9F2D      		mov r25,r15
+ 826 003c 0E94 0000 		call _ZN6Usart011receiveDataEPj
+ 827               	.LVL42:
+ 155:zfm20.cpp     ****         //sendstring("passou da leitura");
+ 156:zfm20.cpp     ****         if (i==8) //Checking for instruction length
+ 828               		.loc 2 156 9 is_stmt 1 view .LVU239
+ 157:zfm20.cpp     ****         {
+ 158:zfm20.cpp     ****             ii=byte;
+ 159:zfm20.cpp     ****         }
+ 160:zfm20.cpp     ****         if(i==9) // getting return value
+ 161:zfm20.cpp     ****         {
+ 162:zfm20.cpp     ****             response=byte;
+ 163:zfm20.cpp     ****         }
+ 164:zfm20.cpp     ****         if (ii=0)
+ 829               		.loc 2 164 9 view .LVU240
+ 165:zfm20.cpp     ****         {
+ 166:zfm20.cpp     ****             go = 0;
+ 167:zfm20.cpp     ****         }
+ 168:zfm20.cpp     ****         i++;
+ 830               		.loc 2 168 9 view .LVU241
+ 169:zfm20.cpp     ****         ii--;
+ 831               		.loc 2 169 9 view .LVU242
+ 170:zfm20.cpp     ****         // sendstring("i =");
+ 171:zfm20.cpp     ****         // sprintf(c,"%02X",i);
+ 172:zfm20.cpp     ****         // sendstring(c);
+ 173:zfm20.cpp     ****         // sendstring("byte = ");
+ 174:zfm20.cpp     ****         sprintf(c,"%02X",byte);
+ 832               		.loc 2 174 9 view .LVU243
+ 833               		.loc 2 174 16 is_stmt 0 view .LVU244
+ 834 0040 2A81      		ldd r18,Y+2
+ 835 0042 2F93      		push r18
+ 836 0044 2981      		ldd r18,Y+1
+ 837 0046 2F93      		push r18
+ 838 0048 20E0      		ldi r18,lo8(.LC5)
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 34
+
+
+ 839 004a 30E0      		ldi r19,hi8(.LC5)
+ 840 004c 3F93      		push r19
+ 841 004e 2F93      		push r18
+ 842 0050 8E01      		movw r16,r28
+ 843 0052 015F      		subi r16,-15
+ 844 0054 1F4F      		sbci r17,-1
+ 845 0056 1F93      		push r17
+ 846 0058 0F93      		push r16
+ 847 005a 0E94 0000 		call sprintf
+ 848               	.LVL43:
+ 175:zfm20.cpp     ****         sendstring(c);
+ 849               		.loc 2 175 9 is_stmt 1 view .LVU245
+ 850               		.loc 2 175 19 is_stmt 0 view .LVU246
+ 851 005e C801      		movw r24,r16
+ 852 0060 0E94 0000 		call _Z10sendstringPc
+ 853               	.LVL44:
+ 854 0064 0F90      		pop __tmp_reg__
+ 855 0066 0F90      		pop __tmp_reg__
+ 856 0068 0F90      		pop __tmp_reg__
+ 857 006a 0F90      		pop __tmp_reg__
+ 858 006c 0F90      		pop __tmp_reg__
+ 859 006e 0F90      		pop __tmp_reg__
+ 860 0070 00C0      		rjmp .L27
+ 861               		.cfi_endproc
+ 862               	.LFE81:
+ 864               		.section	.text._ZN5Zfm2011sendPackageEP6Usart0,"ax",@progbits
+ 865               	.global	_ZN5Zfm2011sendPackageEP6Usart0
+ 867               	_ZN5Zfm2011sendPackageEP6Usart0:
+ 868               	.LVL45:
+ 869               	.LFB82:
+ 176:zfm20.cpp     ****     }
+ 177:zfm20.cpp     ****     return response;
+ 178:zfm20.cpp     **** 
+ 179:zfm20.cpp     **** 
+ 180:zfm20.cpp     ****     // for (int i = 12; i < 0; i--)
+ 181:zfm20.cpp     ****     // //TODO, make it able to read variable size
+ 182:zfm20.cpp     ****     // {
+ 183:zfm20.cpp     ****     //     usart->receiveData(&byte);
+ 184:zfm20.cpp     ****     //     data[i] = (uint8_t)byte;
+ 185:zfm20.cpp     ****     //     switch (i)
+ 186:zfm20.cpp     ****     //     {
+ 187:zfm20.cpp     ****     //     case 11:
+ 188:zfm20.cpp     ****     //         sendstring("case 11 ");
+ 189:zfm20.cpp     ****     //         v8bit = byte;
+ 190:zfm20.cpp     ****     //         if (v8bit == (uint8_t)SByteValues::BYTE1 ){
+ 191:zfm20.cpp     ****     //         this->_lastError=Error::FRAME_ERROR;
+ 192:zfm20.cpp     ****     //         sendstring("Primeiro byte não corresponde ao endereço ");
+ 193:zfm20.cpp     ****     //         }
+ 194:zfm20.cpp     ****     //         break;
+ 195:zfm20.cpp     ****     //     default:
+ 196:zfm20.cpp     ****     //         sendstring("default do switch case");
+ 197:zfm20.cpp     ****     //         break;
+ 198:zfm20.cpp     ****     //     }
+ 199:zfm20.cpp     ****     // }
+ 200:zfm20.cpp     ****     // sprintf(c,"%02X",data);
+ 201:zfm20.cpp     ****     // //sendstring(c);
+ 202:zfm20.cpp     ****     // return data[12];
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 35
+
+
+ 203:zfm20.cpp     **** }
+ 204:zfm20.cpp     **** 
+ 205:zfm20.cpp     **** bool_t Zfm20::sendPackage(Usart0* usart){
+ 870               		.loc 2 205 41 is_stmt 1 view -0
+ 871               		.cfi_startproc
+ 872               		.loc 2 205 41 is_stmt 0 view .LVU248
+ 873 0000 EF92      		push r14
+ 874               		.cfi_def_cfa_offset 3
+ 875               		.cfi_offset 14, -2
+ 876 0002 FF92      		push r15
+ 877               		.cfi_def_cfa_offset 4
+ 878               		.cfi_offset 15, -3
+ 879 0004 0F93      		push r16
+ 880               		.cfi_def_cfa_offset 5
+ 881               		.cfi_offset 16, -4
+ 882 0006 1F93      		push r17
+ 883               		.cfi_def_cfa_offset 6
+ 884               		.cfi_offset 17, -5
+ 885 0008 CF93      		push r28
+ 886               		.cfi_def_cfa_offset 7
+ 887               		.cfi_offset 28, -6
+ 888 000a DF93      		push r29
+ 889               		.cfi_def_cfa_offset 8
+ 890               		.cfi_offset 29, -7
+ 891               	/* prologue: function */
+ 892               	/* frame size = 0 */
+ 893               	/* stack size = 6 */
+ 894               	.L__stack_usage = 6
+ 895 000c 082F      		mov r16,r24
+ 896 000e 192F      		mov r17,r25
+ 897 0010 E62E      		mov r14,r22
+ 898 0012 F72E      		mov r15,r23
+ 206:zfm20.cpp     ****     //printf("%",this->_packageData);
+ 207:zfm20.cpp     ****     for (int i = 0; i < this->_packageLength; i++)
+ 899               		.loc 2 207 5 is_stmt 1 view .LVU249
+ 900               	.LVL46:
+ 901               	.LBB6:
+ 902               		.loc 2 207 14 is_stmt 0 view .LVU250
+ 903 0014 C0E0      		ldi r28,0
+ 904 0016 D0E0      		ldi r29,0
+ 905               		.loc 2 207 5 view .LVU251
+ 906 0018 00C0      		rjmp .L29
+ 907               	.LVL47:
+ 908               	.L30:
+ 208:zfm20.cpp     ****     {
+ 209:zfm20.cpp     ****         usart->sendData(this->_packageData[i]);
+ 909               		.loc 2 209 9 is_stmt 1 discriminator 3 view .LVU252
+ 910               		.loc 2 209 31 is_stmt 0 discriminator 3 view .LVU253
+ 911 001a D801      		movw r26,r16
+ 912 001c ED91      		ld r30,X+
+ 913 001e FC91      		ld r31,X
+ 914               		.loc 2 209 45 discriminator 3 view .LVU254
+ 915 0020 EC0F      		add r30,r28
+ 916 0022 FD1F      		adc r31,r29
+ 917 0024 6081      		ld r22,Z
+ 918               		.loc 2 209 24 discriminator 3 view .LVU255
+ 919 0026 70E0      		ldi r23,0
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 36
+
+
+ 920 0028 8E2D      		mov r24,r14
+ 921 002a 9F2D      		mov r25,r15
+ 922 002c 0E94 0000 		call _ZN6Usart08sendDataEj
+ 923               	.LVL48:
+ 207:zfm20.cpp     ****     {
+ 924               		.loc 2 207 5 is_stmt 1 discriminator 3 view .LVU256
+ 925 0030 2196      		adiw r28,1
+ 926               	.LVL49:
+ 927               	.L29:
+ 207:zfm20.cpp     ****     {
+ 928               		.loc 2 207 23 discriminator 1 view .LVU257
+ 207:zfm20.cpp     ****     {
+ 929               		.loc 2 207 31 is_stmt 0 discriminator 1 view .LVU258
+ 930 0032 F801      		movw r30,r16
+ 931 0034 2381      		ldd r18,Z+3
+ 932 0036 30E0      		ldi r19,0
+ 207:zfm20.cpp     ****     {
+ 933               		.loc 2 207 23 discriminator 1 view .LVU259
+ 934 0038 C217      		cp r28,r18
+ 935 003a D307      		cpc r29,r19
+ 936 003c 04F0      		brlt .L30
+ 937               	.LBE6:
+ 210:zfm20.cpp     ****     }
+ 211:zfm20.cpp     ****     return 1;
+ 938               		.loc 2 211 5 is_stmt 1 view .LVU260
+ 212:zfm20.cpp     **** }
+ 939               		.loc 2 212 1 is_stmt 0 view .LVU261
+ 940 003e 81E0      		ldi r24,lo8(1)
+ 941               	/* epilogue start */
+ 942 0040 DF91      		pop r29
+ 943 0042 CF91      		pop r28
+ 944               	.LVL50:
+ 945               		.loc 2 212 1 view .LVU262
+ 946 0044 1F91      		pop r17
+ 947 0046 0F91      		pop r16
+ 948 0048 FF90      		pop r15
+ 949 004a EF90      		pop r14
+ 950 004c 0895      		ret
+ 951               		.cfi_endproc
+ 952               	.LFE82:
+ 954               		.section	.text._ZN5Zfm2016checkFingerPrintEP6Usart0,"ax",@progbits
+ 955               	.global	_ZN5Zfm2016checkFingerPrintEP6Usart0
+ 957               	_ZN5Zfm2016checkFingerPrintEP6Usart0:
+ 958               	.LVL51:
+ 959               	.LFB83:
+ 213:zfm20.cpp     **** 
+ 214:zfm20.cpp     ****  bool_t Zfm20::checkFingerPrint (Usart0* usart){
+ 960               		.loc 2 214 48 is_stmt 1 view -0
+ 961               		.cfi_startproc
+ 962               		.loc 2 214 48 is_stmt 0 view .LVU264
+ 963 0000 CF93      		push r28
+ 964               		.cfi_def_cfa_offset 3
+ 965               		.cfi_offset 28, -2
+ 966 0002 DF93      		push r29
+ 967               		.cfi_def_cfa_offset 4
+ 968               		.cfi_offset 29, -3
+ 969 0004 0F92      		push __tmp_reg__
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 37
+
+
+ 970               		.cfi_def_cfa_offset 5
+ 971 0006 CDB7      		in r28,__SP_L__
+ 972 0008 DEB7      		in r29,__SP_H__
+ 973               		.cfi_def_cfa_register 28
+ 974               	/* prologue: function */
+ 975               	/* frame size = 1 */
+ 976               	/* stack size = 3 */
+ 977               	.L__stack_usage = 3
+ 978 000a 082F      		mov r16,r24
+ 979 000c 192F      		mov r17,r25
+ 980 000e E62E      		mov r14,r22
+ 981 0010 F72E      		mov r15,r23
+ 215:zfm20.cpp     ****     //makes package with instruction
+ 216:zfm20.cpp     ****     uint8_t auxString[]={0x1};
+ 982               		.loc 2 216 5 is_stmt 1 view .LVU265
+ 983               		.loc 2 216 13 is_stmt 0 view .LVU266
+ 984 0012 81E0      		ldi r24,lo8(1)
+ 985               	.LVL52:
+ 986               		.loc 2 216 13 view .LVU267
+ 987 0014 8983      		std Y+1,r24
+ 217:zfm20.cpp     ****     uint8_t buffer =33;
+ 988               		.loc 2 217 5 is_stmt 1 view .LVU268
+ 989               	.LVL53:
+ 218:zfm20.cpp     ****     char c[8];
+ 990               		.loc 2 218 5 view .LVU269
+ 219:zfm20.cpp     ****     this->createPackage(Zfm20::Id::COMMAND, auxString, 1);
+ 991               		.loc 2 219 5 view .LVU270
+ 992               		.loc 2 219 24 is_stmt 0 view .LVU271
+ 993 0016 21E0      		ldi r18,lo8(1)
+ 994 0018 AE01      		movw r20,r28
+ 995 001a 4F5F      		subi r20,-1
+ 996 001c 5F4F      		sbci r21,-1
+ 997 001e 61E0      		ldi r22,lo8(1)
+ 998 0020 70E0      		ldi r23,0
+ 999               	.LVL54:
+ 1000               		.loc 2 219 24 view .LVU272
+ 1001 0022 802F      		mov r24,r16
+ 1002 0024 0E94 0000 		call _ZN5Zfm2013createPackageENS_2IdEPhh
+ 1003               	.LVL55:
+ 220:zfm20.cpp     **** 
+ 221:zfm20.cpp     ****     //sends the package
+ 222:zfm20.cpp     ****     this->sendPackage(usart);
+ 1004               		.loc 2 222 5 is_stmt 1 view .LVU273
+ 1005               		.loc 2 222 22 is_stmt 0 view .LVU274
+ 1006 0028 6E2D      		mov r22,r14
+ 1007 002a 7F2D      		mov r23,r15
+ 1008 002c 802F      		mov r24,r16
+ 1009 002e 912F      		mov r25,r17
+ 1010 0030 0E94 0000 		call _ZN5Zfm2011sendPackageEP6Usart0
+ 1011               	.LVL56:
+ 223:zfm20.cpp     **** 
+ 224:zfm20.cpp     ****     //gets response
+ 225:zfm20.cpp     **** 
+ 226:zfm20.cpp     ****     buffer=this->receive_pkg(usart);
+ 1012               		.loc 2 226 5 is_stmt 1 view .LVU275
+ 1013               		.loc 2 226 29 is_stmt 0 view .LVU276
+ 1014 0034 6E2D      		mov r22,r14
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 38
+
+
+ 1015 0036 7F2D      		mov r23,r15
+ 1016 0038 802F      		mov r24,r16
+ 1017 003a 912F      		mov r25,r17
+ 1018 003c 0E94 0000 		call _ZN5Zfm2011receive_pkgEP6Usart0
+ 1019               	.LVL57:
+ 1020               		.cfi_endproc
+ 1021               	.LFE83:
+ 1023               		.text
+ 1024               	.Letext0:
+ 1025               		.file 3 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdint.h"
+ 1026               		.file 4 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\lib\\gcc\\avr\\12.1.0\\include\\stdd
+ 1027               		.file 5 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdio.h"
+ 1028               		.file 6 "funsape/peripheral/usart0.hpp"
+ 1029               		.file 7 "zfm20.hpp"
+ 1030               		.file 8 "kbitbang.hpp"
+ 1031               		.file 9 "c:\\d\\ifsc\\vscodeleandro\\ex\\toolchains\\avr-gcc\\avr\\include\\stdlib.h"
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 39
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 zfm20.cpp
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:2      *ABS*:0000003e __SP_H__
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3      *ABS*:0000003d __SP_L__
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4      *ABS*:0000003f __SREG__
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:14     .text._Z7getTickv:00000000 _Z7getTickv
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:17     .text._Z7getTickv:00000000 .Loc.0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:18     .text._Z7getTickv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:23     .text._Z7getTickv:00000000 .Loc.1
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:24     .text._Z7getTickv:00000000 .Loc.2
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:30     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:36     .text._ZN5Zfm20C2Ev:00000000 _ZN5Zfm20C2Ev
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:40     .text._ZN5Zfm20C2Ev:00000000 .Loc.3
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:41     .text._ZN5Zfm20C2Ev:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:46     .text._ZN5Zfm20C2Ev:00000000 .Loc.4
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:50     .text._ZN5Zfm20C2Ev:00000004 .Loc.5
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:51     .text._ZN5Zfm20C2Ev:00000004 .Loc.6
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:54     .text._ZN5Zfm20C2Ev:00000008 .Loc.7
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:55     .text._ZN5Zfm20C2Ev:00000008 .Loc.8
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:57     .text._ZN5Zfm20C2Ev:0000000a .Loc.9
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:58     .text._ZN5Zfm20C2Ev:0000000a .Loc.10
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:60     .text._ZN5Zfm20C2Ev:0000000c .Loc.11
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:61     .text._ZN5Zfm20C2Ev:0000000c .Loc.12
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:63     .text._ZN5Zfm20C2Ev:0000000e .Loc.13
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:64     .text._ZN5Zfm20C2Ev:0000000e .Loc.14
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:66     .text._ZN5Zfm20C2Ev:00000010 .Loc.15
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:67     .text._ZN5Zfm20C2Ev:00000010 .Loc.16
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:72     .text._ZN5Zfm20C2Ev:00000016 .Loc.17
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:77     .text._ZN5Zfm20C2Ev:0000001e .Loc.18
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:78     .text._ZN5Zfm20C2Ev:0000001e .Loc.19
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:81     .text._ZN5Zfm20C2Ev:00000022 .Loc.20
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:84     .text._ZN5Zfm20C2Ev:00000022 .Loc.21
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:86     .text._ZN5Zfm20C2Ev:00000024 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:36     .text._ZN5Zfm20C2Ev:00000000 _ZN5Zfm20C1Ev
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:94     .text._ZN5Zfm204initEh:00000000 _ZN5Zfm204initEh
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:97     .text._ZN5Zfm204initEh:00000000 .Loc.22
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:98     .text._ZN5Zfm204initEh:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:99     .text._ZN5Zfm204initEh:00000000 .Loc.23
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:116    .text._ZN5Zfm204initEh:0000000c .Loc.24
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:119    .text._ZN5Zfm204initEh:00000010 .Loc.25
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:120    .text._ZN5Zfm204initEh:00000010 .Loc.26
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:124    .text._ZN5Zfm204initEh:00000014 .Loc.27
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:127    .text._ZN5Zfm204initEh:00000018 .Loc.28
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:128    .text._ZN5Zfm204initEh:00000018 .Loc.29
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:131    .text._ZN5Zfm204initEh:0000001c .Loc.30
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:132    .text._ZN5Zfm204initEh:0000001c .Loc.31
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:136    .text._ZN5Zfm204initEh:00000020 .Loc.32
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:137    .text._ZN5Zfm204initEh:00000020 .Loc.33
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:146    .text._ZN5Zfm204initEh:00000030 .Loc.34
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:149    .text._ZN5Zfm204initEh:00000034 .Loc.35
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:152    .text._ZN5Zfm204initEh:00000038 .Loc.36
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:153    .text._ZN5Zfm204initEh:00000038 .Loc.37
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:156    .text._ZN5Zfm204initEh:0000003c .Loc.38
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:157    .text._ZN5Zfm204initEh:0000003c .Loc.39
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:159    .text._ZN5Zfm204initEh:0000003e .Loc.40
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 40
+
+
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:160    .text._ZN5Zfm204initEh:0000003e .Loc.41
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:163    .text._ZN5Zfm204initEh:00000042 .Loc.42
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:166    .text._ZN5Zfm204initEh:00000042 .Loc.43
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:171    .text._ZN5Zfm204initEh:00000048 .Loc.44
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:175    .text._ZN5Zfm204initEh:0000004a .Loc.45
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:176    .text._ZN5Zfm204initEh:0000004a .Loc.46
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:180    .text._ZN5Zfm204initEh:0000004e .Loc.47
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:183    .text._ZN5Zfm204initEh:00000052 .Loc.48
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:184    .text._ZN5Zfm204initEh:00000052 .Loc.49
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:188    .text._ZN5Zfm204initEh:00000056 .Loc.50
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:189    .text._ZN5Zfm204initEh:00000056 .Loc.51
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:194    .text._ZN5Zfm204initEh:0000005e .Loc.52
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:195    .text._ZN5Zfm204initEh:0000005e .Loc.53
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:198    .text._ZN5Zfm204initEh:00000062 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:204    .text._ZN5Zfm2010setAddressEm:00000000 _ZN5Zfm2010setAddressEm
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:207    .text._ZN5Zfm2010setAddressEm:00000000 .Loc.54
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:208    .text._ZN5Zfm2010setAddressEm:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:213    .text._ZN5Zfm2010setAddressEm:00000000 .Loc.55
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:216    .text._ZN5Zfm2010setAddressEm:00000004 .Loc.56
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:217    .text._ZN5Zfm2010setAddressEm:00000004 .Loc.57
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:222    .text._ZN5Zfm2010setAddressEm:0000000c .Loc.58
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:223    .text._ZN5Zfm2010setAddressEm:0000000c .Loc.59
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:226    .text._ZN5Zfm2010setAddressEm:00000010 .Loc.60
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:227    .text._ZN5Zfm2010setAddressEm:00000010 .Loc.61
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:231    .text._ZN5Zfm2010setAddressEm:00000012 .Loc.62
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:233    .text._ZN5Zfm2010setAddressEm:00000014 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:239    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000000 _ZN5Zfm2013createPackageENS_2IdEPhh
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:242    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000000 .Loc.63
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:243    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:244    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000000 .Loc.64
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:265    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000010 .Loc.65
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:267    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000010 .Loc.66
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:268    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000010 .Loc.67
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:271    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000012 .Loc.68
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:273    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000016 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:275    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000018 .Loc.69
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:278    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000001e L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:280    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000020 .Loc.70
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:282    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000024 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:284    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000026 .Loc.71
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:285    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000026 .Loc.72
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:287    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000028 .Loc.73
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:290    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000002c .Loc.74
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:293    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000002e .Loc.75
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:295    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000030 .Loc.76
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:298    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000036 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:300    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000038 .Loc.77
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:301    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000038 .Loc.78
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:303    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000003a .Loc.79
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:304    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000003a .Loc.80
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:306    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000003c .Loc.81
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:307    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000003c .Loc.82
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:308    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000003c .Loc.83
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:311    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000040 .Loc.84
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:314    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000044 .Loc.85
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:317    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000048 .Loc.86
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:318    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000048 .Loc.87
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 41
+
+
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:321    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000004c .Loc.88
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:323    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000004e .Loc.89
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:327    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000054 .Loc.90
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:330    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000058 .Loc.91
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:332    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000005a .Loc.92
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:333    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000005a .Loc.93
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:335    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000005c .Loc.94
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:338    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000060 .Loc.95
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:340    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000062 .Loc.96
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:344    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000068 .Loc.97
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:347    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000006c .Loc.98
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:349    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000006e .Loc.99
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:350    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000006e .Loc.100
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:352    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000070 .Loc.101
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:355    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000074 .Loc.102
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:357    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000076 .Loc.103
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:361    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000007c .Loc.104
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:364    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000080 .Loc.105
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:366    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000082 .Loc.106
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:367    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000082 .Loc.107
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:369    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000084 .Loc.108
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:372    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000088 .Loc.109
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:374    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000008a .Loc.110
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:378    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000090 .Loc.111
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:381    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000094 .Loc.112
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:383    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000096 .Loc.113
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:384    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000096 .Loc.114
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:386    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000098 .Loc.115
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:389    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000009c .Loc.116
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:391    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000009e .Loc.117
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:395    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000a4 .Loc.118
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:398    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000a8 .Loc.119
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:400    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000aa .Loc.120
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:401    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000aa .Loc.121
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:404    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000ae .Loc.122
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:406    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000b0 .Loc.123
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:410    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000b6 .Loc.124
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:413    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000ba .Loc.125
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:415    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000bc .Loc.126
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:416    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000bc .Loc.127
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:420    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000c0 .Loc.128
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:421    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000c0 .Loc.129
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:427    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000c8 .Loc.130
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:430    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000cc .Loc.131
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:432    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000ce .Loc.132
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:436    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000d4 .Loc.133
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:439    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000d8 .Loc.134
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:441    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000da .Loc.135
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:442    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000da .Loc.136
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:446    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000de .Loc.137
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:447    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000de .Loc.138
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:450    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000e2 .Loc.139
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:452    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000e4 .Loc.140
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:456    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000ea .Loc.141
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:459    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000ee .Loc.142
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:463    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000f4 .Loc.143
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:464    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000f4 .Loc.144
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 42
+
+
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:468    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000f8 .Loc.145
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:470    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000f8 .Loc.146
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:472    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000fa .Loc.147
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:476    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000fc .Loc.148
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:478    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000fc .Loc.149
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:479    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000fc .Loc.150
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:483    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000100 .Loc.151
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:486    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000104 .Loc.152
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:490    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000104 .Loc.153
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:498    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000010e .Loc.154
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:499    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000010e .Loc.155
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:504    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000116 .Loc.156
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:505    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000116 .Loc.157
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:509    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000011a .Loc.158
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:510    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000011a .Loc.159
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:515    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000122 .Loc.160
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:516    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000122 .Loc.161
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:521    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000126 .Loc.162
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:522    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000126 .Loc.163
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:527    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000012e .Loc.164
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:528    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000012e .Loc.165
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:534    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000132 .Loc.166
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:535    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000132 .Loc.167
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:540    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000013a .Loc.168
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:543    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000013e .Loc.169
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:545    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000140 .Loc.170
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:549    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000146 .Loc.171
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:552    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000014a .Loc.172
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:554    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000014c .Loc.173
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:555    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000014c .Loc.174
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:557    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000014e .Loc.175
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:561    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000152 .Loc.176
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:565    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000154 .Loc.177
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:568    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000158 .Loc.178
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:570    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000158 .Loc.179
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:571    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000158 .Loc.180
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:574    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000015c .Loc.181
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:577    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000015e .Loc.182
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:580    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000160 .Loc.183
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:583    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000164 .Loc.184
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:586    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000168 .Loc.185
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:588    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000016a .Loc.186
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:589    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000016a .Loc.187
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:592    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000016e .Loc.188
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:594    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000170 .Loc.189
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:598    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000176 .Loc.190
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:601    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000017a .Loc.191
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:603    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000017c .Loc.192
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:604    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000017c .Loc.193
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:606    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000017e .Loc.194
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:608    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000180 .Loc.195
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:609    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000180 .Loc.196
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:612    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000184 .Loc.197
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:613    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000184 .Loc.198
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:615    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000186 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:630    .text._ZN5Zfm205debugEv:00000000 _ZN5Zfm205debugEv
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:633    .text._ZN5Zfm205debugEv:00000000 .Loc.199
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 43
+
+
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:634    .text._ZN5Zfm205debugEv:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:635    .text._ZN5Zfm205debugEv:00000000 .Loc.200
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:651    .text._ZN5Zfm205debugEv:0000000a .Loc.201
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:652    .text._ZN5Zfm205debugEv:0000000a .Loc.202
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:657    .text._ZN5Zfm205debugEv:00000010 .Loc.203
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:670    .text._ZN5Zfm205debugEv:00000020 .Loc.204
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:671    .text._ZN5Zfm205debugEv:00000020 .Loc.205
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:680    .text._ZN5Zfm205debugEv:0000002c .Loc.206
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:682    .text._ZN5Zfm205debugEv:0000002c .Loc.207
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:690    .text._ZN5Zfm205debugEv:00000038 .Loc.208
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:692    .text._ZN5Zfm205debugEv:0000003a .Loc.209
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:696    .text._ZN5Zfm205debugEv:0000003c .Loc.210
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:697    .text._ZN5Zfm205debugEv:0000003c .Loc.211
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:701    .text._ZN5Zfm205debugEv:00000042 .Loc.212
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:705    .text._ZN5Zfm205debugEv:00000048 .Loc.213
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:718    .text._ZN5Zfm205debugEv:00000058 .Loc.214
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:721    .text._ZN5Zfm205debugEv:0000005a .Loc.215
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:729    .text._ZN5Zfm205debugEv:00000062 .Loc.216
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:730    .text._ZN5Zfm205debugEv:00000062 .Loc.217
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:733    .text._ZN5Zfm205debugEv:00000066 .Loc.218
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:737    .text._ZN5Zfm205debugEv:0000006a .Loc.219
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:738    .text._ZN5Zfm205debugEv:0000006a .Loc.220
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:744    .text._ZN5Zfm205debugEv:00000072 .Loc.221
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:747    .text._ZN5Zfm205debugEv:00000074 .Loc.222
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:751    .text._ZN5Zfm205debugEv:0000007a L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:762    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000000 _ZN5Zfm2011receive_pkgEP6Usart0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:765    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000000 .Loc.223
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:766    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:767    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000000 .Loc.224
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:790    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000018 .Loc.225
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:791    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000018 .Loc.226
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:795    .text._ZN5Zfm2011receive_pkgEP6Usart0:0000001c .Loc.227
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:798    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000020 .Loc.228
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:799    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000020 .Loc.229
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:810    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.230
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:811    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.231
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:813    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.232
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:814    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.233
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:815    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.234
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:816    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.235
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:818    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.236
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:819    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.237
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:820    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .Loc.238
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:828    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000040 .Loc.239
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:829    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000040 .Loc.240
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:830    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000040 .Loc.241
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:831    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000040 .Loc.242
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:832    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000040 .Loc.243
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:833    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000040 .Loc.244
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:849    .text._ZN5Zfm2011receive_pkgEP6Usart0:0000005e .Loc.245
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:850    .text._ZN5Zfm2011receive_pkgEP6Usart0:0000005e .Loc.246
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:861    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000072 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:867    .text._ZN5Zfm2011sendPackageEP6Usart0:00000000 _ZN5Zfm2011sendPackageEP6Usart0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:870    .text._ZN5Zfm2011sendPackageEP6Usart0:00000000 .Loc.247
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:871    .text._ZN5Zfm2011sendPackageEP6Usart0:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:872    .text._ZN5Zfm2011sendPackageEP6Usart0:00000000 .Loc.248
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:899    .text._ZN5Zfm2011sendPackageEP6Usart0:00000014 .Loc.249
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 44
+
+
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:902    .text._ZN5Zfm2011sendPackageEP6Usart0:00000014 .Loc.250
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:905    .text._ZN5Zfm2011sendPackageEP6Usart0:00000018 .Loc.251
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:909    .text._ZN5Zfm2011sendPackageEP6Usart0:0000001a .Loc.252
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:910    .text._ZN5Zfm2011sendPackageEP6Usart0:0000001a .Loc.253
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:914    .text._ZN5Zfm2011sendPackageEP6Usart0:00000020 .Loc.254
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:918    .text._ZN5Zfm2011sendPackageEP6Usart0:00000026 .Loc.255
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:924    .text._ZN5Zfm2011sendPackageEP6Usart0:00000030 .Loc.256
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:928    .text._ZN5Zfm2011sendPackageEP6Usart0:00000032 .Loc.257
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:929    .text._ZN5Zfm2011sendPackageEP6Usart0:00000032 .Loc.258
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:933    .text._ZN5Zfm2011sendPackageEP6Usart0:00000038 .Loc.259
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:938    .text._ZN5Zfm2011sendPackageEP6Usart0:0000003e .Loc.260
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:939    .text._ZN5Zfm2011sendPackageEP6Usart0:0000003e .Loc.261
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:945    .text._ZN5Zfm2011sendPackageEP6Usart0:00000044 .Loc.262
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:951    .text._ZN5Zfm2011sendPackageEP6Usart0:0000004e L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:957    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000000 _ZN5Zfm2016checkFingerPrintEP6Usart0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:960    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000000 .Loc.263
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:961    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:962    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000000 .Loc.264
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:982    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000012 .Loc.265
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:983    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000012 .Loc.266
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:986    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000014 .Loc.267
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:988    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000016 .Loc.268
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:990    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000016 .Loc.269
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:991    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000016 .Loc.270
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:992    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000016 .Loc.271
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1000   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000022 .Loc.272
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1004   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000028 .Loc.273
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1005   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000028 .Loc.274
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1012   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000034 .Loc.275
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1013   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000034 .Loc.276
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1020   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000040 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:33     .text._Z7getTickv:00000008 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:91     .text._ZN5Zfm20C2Ev:00000024 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:201    .text._ZN5Zfm204initEh:00000062 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:236    .text._ZN5Zfm2010setAddressEm:00000014 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:618    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000186 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:754    .text._ZN5Zfm205debugEv:0000007a L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:864    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000072 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:954    .text._ZN5Zfm2011sendPackageEP6Usart0:0000004e L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1023   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000040 L0
+                     .debug_frame:00000000 L0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:174    .text._ZN5Zfm204initEh:0000004a .L8
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:135    .text._ZN5Zfm204initEh:00000020 .L6
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:187    .text._ZN5Zfm204initEh:00000056 .L9
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:164    .text._ZN5Zfm204initEh:00000042 .L3
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:475    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000fc .L19
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:497    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000010e .L20
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:508    .text._ZN5Zfm2013createPackageENS_2IdEPhh:0000011a .L21
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:520    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000126 .L22
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:564    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000154 .L17
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:488    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000104 .L11
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:532    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000132 .L18
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:728    .text._ZN5Zfm205debugEv:00000062 .L24
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:695    .text._ZN5Zfm205debugEv:0000003c .L25
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:805    .text._ZN5Zfm2011receive_pkgEP6Usart0:0000002a .L1
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:817    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .L27
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:927    .text._ZN5Zfm2011sendPackageEP6Usart0:00000032 .L29
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 45
+
+
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:908    .text._ZN5Zfm2011sendPackageEP6Usart0:0000001a .L30
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:2896   .debug_abbrev:00000000 .Ldebug_abbrev0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4660   .debug_rnglists:00000018 .LLRL22
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4691   .debug_line:00000000 .Ldebug_line0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:959    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000000 .LFB83
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1021   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000040 .LFE83
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3910   .debug_loclists:00000010 .LLST20
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3905   .debug_loclists:0000000c .LVUS20
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3937   .debug_loclists:0000002c .LLST21
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3932   .debug_loclists:00000028 .LVUS21
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1003   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000028 .LVL55
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1011   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000034 .LVL56
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1019   .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000040 .LVL57
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:869    .text._ZN5Zfm2011sendPackageEP6Usart0:00000000 .LFB82
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:952    .text._ZN5Zfm2011sendPackageEP6Usart0:0000004e .LFE82
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3964   .debug_loclists:00000048 .LLST17
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3959   .debug_loclists:00000044 .LVUS17
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3991   .debug_loclists:00000064 .LLST18
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:3986   .debug_loclists:00000060 .LVUS18
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:901    .text._ZN5Zfm2011sendPackageEP6Usart0:00000014 .LBB6
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:937    .text._ZN5Zfm2011sendPackageEP6Usart0:0000003e .LBE6
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4018   .debug_loclists:00000080 .LLST19
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4013   .debug_loclists:0000007c .LVUS19
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:923    .text._ZN5Zfm2011sendPackageEP6Usart0:00000030 .LVL48
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:764    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000000 .LFB81
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:862    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000072 .LFE81
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4043   .debug_loclists:0000009a .LLST13
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4038   .debug_loclists:00000096 .LVUS13
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4070   .debug_loclists:000000b6 .LLST14
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4065   .debug_loclists:000000b2 .LVUS14
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4095   .debug_loclists:000000d0 .LLST15
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4092   .debug_loclists:000000ce .LVUS15
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4110   .debug_loclists:000000e0 .LLST16
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4103   .debug_loclists:000000da .LVUS16
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:827    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000040 .LVL42
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:848    .text._ZN5Zfm2011receive_pkgEP6Usart0:0000005e .LVL43
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:853    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000064 .LVL44
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:632    .text._ZN5Zfm205debugEv:00000000 .LFB80
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:752    .text._ZN5Zfm205debugEv:0000007a .LFE80
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4139   .debug_loclists:000000fe .LLST11
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4134   .debug_loclists:000000fa .LVUS11
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:681    .text._ZN5Zfm205debugEv:0000002c .LBB5
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:736    .text._ZN5Zfm205debugEv:0000006a .LBE5
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4166   .debug_loclists:0000011a .LLST12
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4161   .debug_loclists:00000116 .LVUS12
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:717    .text._ZN5Zfm205debugEv:00000058 .LVL34
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:669    .text._ZN5Zfm205debugEv:00000020 .LVL31
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:679    .text._ZN5Zfm205debugEv:0000002c .LVL32
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:742    .text._ZN5Zfm205debugEv:00000072 .LVL37
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:241    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000000 .LFB79
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:616    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000186 .LFE79
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4186   .debug_loclists:0000012f .LLST4
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4181   .debug_loclists:0000012b .LVUS4
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4221   .debug_loclists:00000154 .LLST5
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4208   .debug_loclists:00000148 .LVUS5
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4292   .debug_loclists:000001a7 .LLST6
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4279   .debug_loclists:0000019b .LVUS6
+GAS LISTING C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s 			page 46
+
+
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4359   .debug_loclists:000001f4 .LLST7
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4350   .debug_loclists:000001ec .LVUS7
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4402   .debug_loclists:00000227 .LLST8
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4389   .debug_loclists:0000021b .LVUS8
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4650   .debug_rnglists:0000000c .LLRL9
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4459   .debug_loclists:0000026c .LLST10
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4454   .debug_loclists:00000268 .LVUS10
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:206    .text._ZN5Zfm2010setAddressEm:00000000 .LFB78
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:234    .text._ZN5Zfm2010setAddressEm:00000014 .LFE78
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4479   .debug_loclists:00000281 .LLST3
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4474   .debug_loclists:0000027d .LVUS3
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:96     .text._ZN5Zfm204initEh:00000000 .LFB77
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:199    .text._ZN5Zfm204initEh:00000062 .LFE77
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4510   .debug_loclists:000002a1 .LLST1
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4501   .debug_loclists:00000299 .LVUS1
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4559   .debug_loclists:000002d3 .LLST2
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4550   .debug_loclists:000002cb .LVUS2
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:130    .text._ZN5Zfm204initEh:0000001c .LVL4
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:143    .text._ZN5Zfm204initEh:0000002c .LVL5
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:38     .text._ZN5Zfm20C2Ev:00000000 .LFB75
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:87     .text._ZN5Zfm20C2Ev:00000024 .LFE75
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4591   .debug_loclists:000002f4 .LLST0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:4586   .debug_loclists:000002f0 .LVUS0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:15     .text._Z7getTickv:00000000 .LFB32
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:31     .text._Z7getTickv:00000008 .LFE32
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:958    .text._ZN5Zfm2016checkFingerPrintEP6Usart0:00000000 .LVL51
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:868    .text._ZN5Zfm2011sendPackageEP6Usart0:00000000 .LVL45
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:900    .text._ZN5Zfm2011sendPackageEP6Usart0:00000014 .LVL46
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:763    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000000 .LVL39
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:812    .text._ZN5Zfm2011receive_pkgEP6Usart0:00000032 .LVL41
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:631    .text._ZN5Zfm205debugEv:00000000 .LVL29
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:240    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000000 .LVL11
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:266    .text._ZN5Zfm2013createPackageENS_2IdEPhh:00000010 .LVL12
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:467    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000f8 .LVL18
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:205    .text._ZN5Zfm2010setAddressEm:00000000 .LVL9
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:95     .text._ZN5Zfm204initEh:00000000 .LVL2
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:37     .text._ZN5Zfm20C2Ev:00000000 .LVL0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:1033   .debug_info:00000000 .Ldebug_info0
+C:\Users\kenne\AppData\Local\Temp\ccROzSMI.s:469    .text._ZN5Zfm2013createPackageENS_2IdEPhh:000000f8 .LBB3
+
+UNDEFINED SYMBOLS
+free
+calloc
+printf
+puts
+_ZN6Usart011receiveDataEPj
+sprintf
+_Z10sendstringPc
+_ZN6Usart08sendDataEj
+__do_copy_data
